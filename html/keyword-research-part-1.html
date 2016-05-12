@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>The Kissmetrics Guide To Keyword Research - Part I: Keyword Discovery</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; The Kissmetrics Guide To Keyword Research &#8211; Part I: Keyword Discovery Comments Feed" href="https://blog.kissmetrics.com/keyword-research-part-1/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How to (Finally) Make Web Analytics Work for You' href='https://blog.kissmetrics.com/make-web-analytics-work/' />
+<link rel='next' title='The Ten Commandments of an Awesome Lead-Generating Website' href='https://blog.kissmetrics.com/lead-generating-website/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/keyword-research-part-1/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=7928' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fkeyword-research-part-1%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fkeyword-research-part-1%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,374] -->
+<meta name="description" content="Keyword research should be the basis of any online marketing campaign. The simple goal of keyword research is to find out what your target audience is searching and what it will take to actually rank for those keywords and phrases." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/118321989430962111396/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='The Kissmetrics Guide To Keyword Research - Part I: Keyword Discovery' />
+<meta property='og:url' content='https://blog.kissmetrics.com/keyword-research-part-1/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Keyword research should be the basis of any online marketing campaign.  The simple goal of keyword research is to find out what your target audience is searching and what it will take to actually rank for those keywords and phrases.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The Kissmetrics Guide To Keyword Research - Part I: Keyword Discovery" />
+    <meta name="twitter:description" content="Keyword research should be the basis of any online marketing campaign.  The simple goal of keyword research is to find out what your target audience is searching and what it will take to actually rank for those keywords and phrases." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-7928 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'The Kissmetrics Guide To Keyword Research &#8211; Part I: Keyword Discovery',
+						'Post Category': 'SEO',
+						'Post URL': 'https://blog.kissmetrics.com/keyword-research-part-1/'
+		}
+	]);
+</script>
+
+<article id="post-7928" class="single-post post-7928 post type-post status-publish format-standard has-post-thumbnail hentry category-seo" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">The Kissmetrics Guide To Keyword Research &#8211; Part I: Keyword Discovery</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Keyword research should be the basis of any online marketing campaign.  The simple goal of keyword research is to find out what your target audience is searching and what it will take to actually rank for those keywords and phrases.  Without knowing what keywords you should be targeting, how will you effectively optimize your website, target phrases for link building, or know what content to develop for your audience?  </p>
+<p>The following is the first of a three part series to help you set up a spreadsheet for your keyword research and discover the best keywords / phrases for both your main website&#8217;s search engine optimization and topics for content development.   The next posts in the series will cover what data will help you choose the best keywords to target and additional resources you can use to learn more about keyword research.</p>
+<h2>Spreadsheet Set Up</h2>
+<p>The first thing you will want to do is set up a spreadsheet to record your data within.  I have set up a basic spreadsheet that you can access at <a href="http://bit.ly/kwrgoogledoc" target="_blank" rel="nofollow">http://bit.ly/kwrgoogledoc</a>.  This document has columns for data using all tools mentioned in the first two parts of this series.  You can add or delete columns as you wish in order to match your keyword research needs.  The columns included are as follows.</p>
+<ul>
+<li> Keyword</li>
+<li>GAKT &#8211; Competition (Google AdWords Keyword Tool)</li>
+<li>GAKT &#8211; Global Monthly Searches (Google AdWords Keyword Tool)</li>
+<li>GAKT &#8211; Local Monthly Searches (Google AdWords Keyword Tool)</li>
+<li>GAKT &#8211; Approximate CPC (Google AdWords Keyword Tool)</li>
+<li>SEOmoz KA &#8211; Difficulty (SEOmoz Keyword Analysis)</li>
+<li>SEOmoz KA &#8211;  Competitor 1 (SEOmoz Keyword Analysis)</li>
+<li>SEOmoz KA &#8211; Competitor 1 DA (SEOmoz Keyword Analysis)</li>
+<li>SEOmoz KA &#8211; Competitor 1 RDLRD (SEOmoz Keyword Analysis)</li>
+<li>SEOmoz KA &#8211;  Competitor 2 (SEOmoz Keyword Analysis)</li>
+<li>SEOmoz KA &#8211; Competitor 2 DA (SEOmoz Keyword Analysis)</li>
+<li>SEOmoz KA &#8211; Competitor 2 RDLRD (SEOmoz Keyword Analysis)</li>
+<li>SEOmoz KA &#8211;  Competitor 3 (SEOmoz Keyword Analysis)</li>
+<li>SEOmoz KA &#8211; Competitor 3 DA (SEOmoz Keyword Analysis)</li>
+<li>SEOmoz KA &#8211; Competitor 3 RDLRD (SEOmoz Keyword Analysis)</li>
+</ul>
+<p>In this post, we&#8217;ll cover filling up the columns with keyword and Google AdWords Keyword Tool data.  In the following post, we&#8217;ll look at how to narrow down those keywords using the SEOmoz Keyword Analysis tool (or some alternative methods if you are not a Pro member).  </p>
+<p><strong>Saving the Google Docs Version</strong></p>
+<p>If you are signed into your Google account, simply use the File > Save option to save it to your documents and start filling it in with your information.</p>
+<p><strong>Downloading Excel and Open Office Versions</strong></p>
+<p>If you don’t have Google Docs, or would prefer to save it on your local machine, go to the Google Docs version and use the File > Download As to save it as your desired file type. I’d suggest Excel for best possible functionality.</p>
+<h2>Keyword Discovery</h2>
+<p>The first phase of keyword research involves coming up with new keyword ideas.  Sometimes this is the most difficult part of the process as many people unfamiliar with keyword competition will select very broad words to target such as pizza, hotel, or Los Angeles.  Others will pick obscure phrases that no one will likely search such as SEO/Link Building/Social Media (yes, I&#8217;ve seen people trying to similarly over-punctuated phrases).  So the first thing you will need to do is find suitable, related phrases for their business.</p>
+<p>You can always start with some simple brainstorming.  Look at what the main focuses are on the website and jotting down keywords.  I would suggest doing so within Microsoft Excel or another spreadsheet application.  Then, whenever you are ready to expand on those ideas, continue on to some great keyword tools.</p>
+<h2>Keyword Discovery Tools</h2>
+<p>The following are a great collection of free and premium tools that will help you discover new keywords related to your website or business.</p>
+<p><strong>SEMrush</strong></p>
+<p>Your next option is to check out the keywords competitors are using.  One great tool for this is <a href="http://www.semrush.com" target="_Blank">SEMrush</a>.  Simply enter a domain to see the top organic and ads keywords the website is getting traffic from.  </p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/Keyword-Research-SEMrush-Keyword-Ideas.png" alt="Keyword Research SEMrush Keyword Ideas" title="Keyword-Research-SEMrush-Keyword-Ideas" class="aligncenter size-full wp-image-7936" srcset="https://blog.kissmetrics.com/wp-content/uploads/2011/11/Keyword-Research-SEMrush-Keyword-Ideas-300x242.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2011/11/Keyword-Research-SEMrush-Keyword-Ideas.png 570w" sizes="(max-width: 570px) 100vw, 570px" /></p>
+<p>If you are not a PRO member (which costs $79.95 per month), you can only see the first ten keywords under organic keywords or ads keywords by clicking on the Full Report link under each.  </p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/Keyword-Research-SEMrush-Adwords.png" alt="Keyword Research SEMrush Adwords" title="Keyword-Research-SEMrush-Adwords" class="aligncenter size-full wp-image-7939" srcset="https://blog.kissmetrics.com/wp-content/uploads/2011/11/Keyword-Research-SEMrush-Adwords-300x171.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2011/11/Keyword-Research-SEMrush-Adwords.png 570w" sizes="(max-width: 570px) 100vw, 570px" /></p>
+<p>This is a great way to go if you are absolute uncertain what keywords you or your client should be targeting.  It can definitely point you in the right direction.</p>
+<p><strong>Google Search Suggestions</strong></p>
+<p>Once you have some basic ideas to start with, you can expand upon them by using the freely available suggested search.  Simply visit <a href="https://www.google.com/" target="_blank">Google.com</a> and start typing in a keyword in the search box.  You will then see ten phrases related to your keyword pop up below as more targeted, suggested searches.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/keyword-research-google-suggested-search.png" alt="keyword research google suggested search" title="keyword-research-google-suggested-search" class="aligncenter size-full wp-image-7933" /></p>
+<p>You can continue typing to get more detailed suggestions.  As you can see, this will help you with long-tail and, in some cases, even local keyword phrases.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/keyword-research-google-suggested-search-expanded.png" alt="keyword research google suggested search expanded" title="keyword-research-google-suggested-search-expanded" class="aligncenter size-full wp-image-7934" /></p>
+<p>Be sure if you are working with a local client that you change your Google settings to reflect results from their location as Google will assume you are looking in your location.  This is when it is important to be signed out of your Google account for non-personalized recommendations.  To change your location for local keyword suggestions, go to your search settings and add a city / state as your default location.  Just be sure to change it back before doing some local searches for your own personal needs.</p>
+<p><strong>Alternative Search Suggestions</strong></p>
+<p>Looking for alternative suggested search boxes?  The following search engines have similar suggested search options that appear below the search box when you start typing in keywords.  Depending on your keyword, each search engine will offer different suggestions.</p>
+<ul>
+<li><a href="http://www.yahoo.com/" target="_Blank">Yahoo</a></li>
+<li><a href="http://www.bing.com/" target="_blank">Bing</a></li>
+<li><a href="http://blekko.com/" target="_Blank">Blekko</a></li>
+<li><a href="http://www.ask.com/" target="_Blank">Ask</a></li>
+<li><a href="http://www.dogpile.com/" target="_Blank">Dogpile</a></li>
+</ul>
+<p>Most people stick with Google as that is the main search engine to target, but it still doesn&#8217;t hurt to get additional keyword ideas from elsewhere.</p>
+<p><strong>Google AdWords Keyword Tool</strong></p>
+<p>The next tool up is the commonly referenced <a href="https://adwords.google.com/o/Targeting/Explorer?__u=1000000000&#038;__c=1000000000&#038;ideaRequestType=KEYWORD_IDEAS" target="_BlanK">Google AdWords Keyword Tool</a>.   If you have a Google account and, better yet, an AdWords account, I would suggest signing in to those once you arrive on the Google AdWords Keyword Tool to get better results.  To give you an idea, I searched for social media when I was not logged into my account and received 100 keyword ideas.  I searched for it again when logged in and received 800.  </p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-adwords-keyword-tool.png" alt="google adwords keyword tool" title="google-adwords-keyword-tool" class="aligncenter size-full wp-image-7943" /></p>
+<p>My suggestion is if you are looking for keywords just for your static website and not interested in the cost per click pricing (CPC), go with the results without logging into Google AdWords.  If you are interested in the CPC pricing and also getting keyword ideas to help with content development, go with the results while logged into Google AdWords.</p>
+<p>Here is what each of the columns displayed in the Google AdWords Keyword Tool will tell you about each of the keyword ideas displayed.  </p>
+<ul>
+<li><strong>Competition</strong> &#8211; &#8220;The Competition column gives you a sense of how many advertisers are bidding for a particular keyword. This data can help you determine how competitive the ad placement is.&#8221; </li>
+<li><strong>Global Monthly Searches</strong> &#8211; &#8220;The approximate 12-month average of user queries for the keyword on Google search.&#8221;</li>
+<li><strong>Local Monthly Searches</strong> &#8211; &#8220;If you specified a country or language for your search, this is the approximate 12-month average number of user queries for the keyword for those countries and languages.&#8221;</li>
+<li><strong>Approximate CPC</strong> &#8211; &#8220;This is the approximate cost-per-click you might pay if you were to bid on the keyword. The CPC is averaged over all the ad positions.&#8221;</li>
+</ul>
+<p>You can learn more about the search traffic statistics shown in this tool in Google <a href="https://adwords.google.com/support/aw/bin/answer.py?hl=en&#038;ctx=tltp&#038;answer=96571" target="_blank">AdWords Help</a>.</p>
+<p>You can also select specific Match Types in the left side of the screen to further narrow down your information.  This will change the traffic volume for Global and Local Monthly Searches based on the approximation of traffic that a keyword gets on Google based on the following types.</p>
+<ul>
+<li><strong>Broad</strong> &#8211; The sum of the search volumes for the keyword idea, related grammatical forms, synonyms and related words.  If you were doing PPC and targeted the broad match for <em>social media</em>, ads would show with any searches including social or media.  Organic results would include the same.</li>
+<li><strong>[Exact]</strong> The search volume for that keyword idea.  If you were doing PPC and targeted the exact match for <em>social media</em>, ads would only show if someone typed in <em>social media</em> but not any other variation of that phrase.</li>
+<li><strong>&#8220;Phrase&#8221; &#8211; </strong> The sum of the search volumes for all terms that include that whole phrase.  If you were doing PPC and targeted the phrase match for <em>pizza dough</em>, ads would show for anyone who typed in <em>social media</em>, with or without additional keywords such as <em>social media marketing</em> or <em>about social media</em>.  Organic results would include only results including the exact phrase <em>social media</em>.</li>
+</ul>
+<p>You can learn more about match types in <a href="https://adwords.google.com/support/aw/bin/answer.py?hl=en&#038;ctx=tltp&#038;answer=6100" target="_blank">AdWords Help</a>.  You can also see the difference in data based on the three match types using the phrase <em>social media</em> in order of broad, &#8220;phrase&#8221;, and [exact].</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-adwords-keyword-tool-match-type-data-comparison.png" alt="google adwords keyword tool match type data comparison" title="google-adwords-keyword-tool-match-type-data-comparison" class="aligncenter size-full wp-image-7941" srcset="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-adwords-keyword-tool-match-type-data-comparison-300x66.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-adwords-keyword-tool-match-type-data-comparison.png 570w" sizes="(max-width: 570px) 100vw, 570px" /></p>
+<p>And if you were to use these match types in a search, you would get 419 million results for a  broad match search for <em>social media</em> and only 304 million results for a phrase match search for <em>&#8220;social media&#8221;</em>.  </p>
+<p>Going back to the generic term <em>social media</em>, you might want to remove certain words from the keyword ideas.  For example, you may not want to target anything about social media jobs, so you could add the word job under Exclude terms in the left side of the screen.  </p>
+<p>To export this data, use the Download button and export to your preferred format.  You can then copy the data from the exported spreadsheet to your keyword research spreadsheet.  You can also get this data for the keyword ideas you generated using SEMrush and suggested search by copying and pasting those keywords into the Word or phrase box and checking the box to only show ideas closely related to my search terms.  Then export the data for those keywords and phrases by checking the boxes next to them under the Search Terms section.</p>
+<p><em>At this point, you probably have a lot of great keyword ideas.  In the next post, I will cover how to use the SEOmoz Keyword Analysis Tool (or an alternative method to get the same information if you are not a Pro member) to get additional data and then narrow down your keywords to the ones that you should most likely focus upon for your online marketing strategy.</em></p>
+<h2>Next Up: Part II &#8211; Analyzing and Choosing the Best Keywords</h2>
+<p><a href="https://blog.kissmetrics.com/keyword-research-part-2/">Click here to read the second post in this series.</a></p>
+<p><strong>About the Author:</strong> Kristi Hines is a freelance writer, blogger, and social media enthusiast. Her blog Kikolani focuses on <a href="http://kikolani.com/" rel="nofollow">blog marketing</a>, including social networking strategies and blogging tips.</em></p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fkeyword-research-part-1%2F&source=tweetbutton&text=The+Kissmetrics+Guide+To+Keyword+Research+%26%238211%3B+Part+I%3A+Keyword+Discovery&url=https%3A%2F%2Fblog.kissmetrics.com%2Fkeyword-research-part-1%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fkeyword-research-part-1%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=The Kissmetrics Guide To Keyword Research &#8211; Part I: Keyword Discovery&amp;body=https://blog.kissmetrics.com/keyword-research-part-1/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-7928 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-11564">
+    <div id="comment-11564" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Gregory Ciotti</cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-11564" class="comment-date">Nov 09, 2011 at 10:01 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Another great article Kristi.</p>
+<p>I&#8217;d like to add a tool I&#8217;ve been loving recently: serpIQ.</p>
+<p>First heard about it via the founder on Reddit, and it&#8217;s been a huge help in keyword research, for me at least.</p>
+<p>Also the old classic Market Samurai, slow, but still has it&#8217;s uses.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=11564#respond' onclick='return addComment.moveForm( "comment-11564", "11564", "respond", "7928" )' aria-label='Reply to Gregory Ciotti'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-11574">
+    <div id="comment-11574" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/kikolani' rel='external nofollow' class='url'>Kristi Hines</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-11574" class="comment-date">Nov 09, 2011 at 2:38 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;ll have to check that out.  Market Samurai is pretty good too &#8211; I like to focus on the freebie tools when possible (or alternatives to them at least).  :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=11574#respond' onclick='return addComment.moveForm( "comment-11574", "11574", "respond", "7928" )' aria-label='Reply to Kristi Hines'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even depth-2" id="li-comment-13739">
+    <div id="comment-13739" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Leatrice</cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-13739" class="comment-date">Dec 14, 2011 at 8:01 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I apprceiate you taking to time to contribute That&#8217;s very helpful.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=13739#respond' onclick='return addComment.moveForm( "comment-13739", "13739", "respond", "7928" )' aria-label='Reply to Leatrice'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-11575">
+    <div id="comment-11575" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">James Hussey</cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-11575" class="comment-date">Nov 09, 2011 at 2:59 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hubba hubba &#8211; loved it.  (The &#8216;hubba hubba&#8217; is the attrocious sound I make when geeking out over SEO research&#8230;I just loved it!)</p>
+<p>Love that you used free tools for it.  Definitely good idea for the competitors to be on the list, too &#8211; thanks again for another stellar resource.</p>
+<p>I hope you got a fat paycheck for this post.  Just sayin.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=11575#respond' onclick='return addComment.moveForm( "comment-11575", "11575", "respond", "7928" )' aria-label='Reply to James Hussey'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-11638">
+    <div id="comment-11638" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/kikolani' rel='external nofollow' class='url'>Kristi Hines</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-11638" class="comment-date">Nov 10, 2011 at 4:33 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks James!  :)  Next post I&#8217;ll have a premium tool but the alternative to it as well!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=11638#respond' onclick='return addComment.moveForm( "comment-11638", "11638", "respond", "7928" )' aria-label='Reply to Kristi Hines'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-11591">
+    <div id="comment-11591" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Birger</cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-11591" class="comment-date">Nov 10, 2011 at 12:35 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great blog post and thank you for the spreadsheet. I&#8217;ve already made a copy. :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=11591#respond' onclick='return addComment.moveForm( "comment-11591", "11591", "respond", "7928" )' aria-label='Reply to Birger'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-11640">
+    <div id="comment-11640" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/kikolani' rel='external nofollow' class='url'>Kristi Hines</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-11640" class="comment-date">Nov 10, 2011 at 4:46 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>You&#8217;re welcome Birger!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=11640#respond' onclick='return addComment.moveForm( "comment-11640", "11640", "respond", "7928" )' aria-label='Reply to Kristi Hines'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-11639">
+    <div id="comment-11639" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/kikolani' rel='external nofollow' class='url'>Kristi Hines</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-11639" class="comment-date">Nov 10, 2011 at 4:34 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>While I am going to base the second part around the SEOmoz tool, there&#8217;s a way to get most of the information for free which just takes longer, but I&#8217;ll throw it out there too.  Also thanks for the suggestion on Soovle &#8211; will check it out! :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=11639#respond' onclick='return addComment.moveForm( "comment-11639", "11639", "respond", "7928" )' aria-label='Reply to Kristi Hines'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-12684">
+    <div id="comment-12684" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Edd Salter</cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-12684" class="comment-date">Nov 30, 2011 at 8:36 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great post Kristi,</p>
+<p>I was using your spreadhseet and found a lot of search term duplication, so thought it worth mentioning that to you can use conditional formatting to highlight thema s follows: </p>
+<p>First highlight all the rows/cells on which you to work (the keyword column)<br />
+Then choose the &#8220;conditional formatting&#8221; option from the toolbar.<br />
+The find &#8220;Highlight rules&#8221; and then select &#8220;duplicate values&#8221;<br />
+Then choose the color in which you want to highlight.<br />
+After this click on &#8220;Apply&#8221;.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=12684#respond' onclick='return addComment.moveForm( "comment-12684", "12684", "respond", "7928" )' aria-label='Reply to Edd Salter'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-12841">
+    <div id="comment-12841" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Brian D. Hawkins</cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-12841" class="comment-date">Dec 04, 2011 at 2:12 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Kristi, Keyword research is one of my biggest interests right now. Thanks for providing the spreadsheet. I&#8217;ve been saving the Google AdWords Keyword Tool results into a spreadsheet but that doesn&#8217;t allow for including other tools without adding new columns every time. </p>
+<p>One thing I&#8217;ve noticed about Google&#8217;s AdWords Keyword Tool is the competition rating seems to be way off and very unreliable. Many times you can check what is showing &#8220;low&#8221; competition and find the serps contain 5 out of the top five sites with high PageRank and search traffic. I wonder if they&#8217;ll update the tool to reflect new search advancements such as the inclusion of social sharing (1+) when it comes to evaluating the competition?</p>
+<p>BTW, great use of Google&#8217;s instant search results feature. It&#8217;s a cool way of discovering keyword phrases to research.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=12841#respond' onclick='return addComment.moveForm( "comment-12841", "12841", "respond", "7928" )' aria-label='Reply to Brian D. Hawkins'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-13288">
+    <div id="comment-13288" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jomson George</cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-13288" class="comment-date">Dec 10, 2011 at 6:14 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I am learning all the tips about blogging through the link you have given in your page. Keyword research very very essential to get more traffic is what i learning now. Thanks Kristi:) I was suggested by my friend to use only limited keywords. How much i can use approximately for a 800 words article..?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=13288#respond' onclick='return addComment.moveForm( "comment-13288", "13288", "respond", "7928" )' aria-label='Reply to Jomson George'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-26559">
+    <div id="comment-26559" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-26559" class="comment-date">Apr 20, 2012 at 11:53 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>For researching competitors, I simply pick up the top 10 and put them in duckduckgo with slashing seo in the end of search bar. DDG will inform you how many backlinks they have. You just decide whether you can beat them or not.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=26559#respond' onclick='return addComment.moveForm( "comment-26559", "26559", "respond", "7928" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-32688">
+    <div id="comment-32688" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dee</cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-32688" class="comment-date">Jul 19, 2012 at 2:24 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for the great post.  I do most of my keyword research using free versions of some tools like Samurai and Traffic Travis and, of course, Google.  Some of the paid keyword research tools sell themselves on the point that Google keyword tool numbers are &#8220;just wrong&#8221;.  I&#8217;d counter that on the basis that I&#8217;d rather have imperfect numbers from the entity that&#8217;s generating those numbers in the first place rather than a secondary source.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=32688#respond' onclick='return addComment.moveForm( "comment-32688", "32688", "respond", "7928" )' aria-label='Reply to Dee'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-502801">
+    <div id="comment-502801" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">MaxRyan</cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-502801" class="comment-date">Sep 01, 2014 at 8:40 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks a lot Kristi Hines. It was very well-presented and approachable. Good job and looking forward to more tips. Your tips really helpful to the new bloggers like me.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=502801#respond' onclick='return addComment.moveForm( "comment-502801", "502801", "respond", "7928" )' aria-label='Reply to MaxRyan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-934877">
+    <div id="comment-934877" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/keyword-research-part-1/#comment-934877" class="comment-date">Oct 27, 2014 at 4:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Following the keyword research tool spreadsheet concept is awesome and thank you so much for sharing the great article. Data must be intermittent, so having the statistics or analysis over keyword will help to give a solution for driving huge traffic on webpage.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/keyword-research-part-1/?replytocom=934877#respond' onclick='return addComment.moveForm( "comment-934877", "934877", "respond", "7928" )' aria-label='Reply to '>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">98 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/keyword-research-part-1/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='7928' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="75705cbe0b" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="55"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'The Kissmetrics Guide To Keyword Research &#8211; Part I: Keyword Discovery', 'Post URL':'https://blog.kissmetrics.com/keyword-research-part-1/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/make-web-analytics-work/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/lead-generating-website/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/keyword-research-part-1/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/keyword-research-part-1/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/keyword-research-part-1/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="The Kissmetrics Guide To Keyword Research &#8211; Part I: Keyword Discovery" data-url="http://blog.kissmetrics.com/keyword-research-part-1/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'The Kissmetrics Guide To Keyword Research &#8211; Part I: Keyword Discovery', 'Post URL':'https://blog.kissmetrics.com/keyword-research-part-1/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'The Kissmetrics Guide To Keyword Research &#8211; Part I: Keyword Discovery', 'Post URL':'https://blog.kissmetrics.com/keyword-research-part-1/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'The Kissmetrics Guide To Keyword Research &#8211; Part I: Keyword Discovery', 'Post URL':'https://blog.kissmetrics.com/keyword-research-part-1/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":437,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

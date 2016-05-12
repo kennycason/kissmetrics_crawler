@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>How Desktop Applications Like Backblaze Can Use KISSmetrics</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; How Desktop Applications Like Backblaze Can Use Kissmetrics Comments Feed" href="https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='3 Marketing Hacks for the Struggling Startup' href='https://blog.kissmetrics.com/hacks-for-the-struggling-startup/' />
+<link rel='next' title='The Beginner&#8217;s Guide to Customer Feedback' href='https://blog.kissmetrics.com/beginners-guide-to-feedback/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=27401' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fdesktop-applications-and-kissmetrics%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fdesktop-applications-and-kissmetrics%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,358] -->
+<meta name="description" content="All desktop applications can use KISSmetrics. Simply connect with our API, and then track when people install and use specific features." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/117750912206547874889/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='How Desktop Applications Like Backblaze Can Use KISSmetrics' />
+<meta property='og:url' content='https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='All desktop applications can use KISSmetrics. Simply connect with our API, and then track when people install and use specific features. ' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How Desktop Applications Like Backblaze Can Use KISSmetrics" />
+    <meta name="twitter:description" content="All desktop applications can use KISSmetrics. Simply connect with our API, and then track when people install and use specific features. " />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-27401 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog ">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy active">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--academy">
+          <h1>Kissmetrics Academy</h1>
+          <h2>Learn how Kissmetrics can optimize your marketing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'How Desktop Applications Like Backblaze Can Use Kissmetrics',
+						'Post Category': 'Academy',
+						'Post URL': 'https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/'
+		}
+	]);
+</script>
+
+<article id="post-27401" class="single-post post-27401 post type-post status-publish format-standard hentry category-academy" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">How Desktop Applications Like Backblaze Can Use Kissmetrics</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p><a href="https://www.backblaze.com/">Backblaze</a> provides unlimited data backup for $5 per month. Competing against some of the larger incumbents like Carbonite, they&#8217;ve carved out a nice wedge of the market for themselves by keeping their value proposition and product simple and effective.</p>
+<p>How can a company like Backblaze use Kissmetrics? We have a variety of reports they can use, but in this post we&#8217;ll be showing how they could:</p>
+<ul>
+<li>Use a funnel report on signup flow to identify any major roadblocks and determine how to alleviate them with A/B testing.</li>
+<li>Create a cohort report that provides insights to help reduce churn.</li>
+<li>Quickly pull up a list of canceled customers using People Search.</li>
+</ul>
+<p>All desktop applications can use Kissmetrics. Simply connect with <a href="http://support.kissmetrics.com/apis/specifications.html">our API</a>, and then track when people install and use specific features. Backblaze provides a great example of how to use Kissmetrics in this type of environment.</p>
+<p>Before we get into it, we need to be clear about one thing: Backblaze is not a customer of ours. All the data you&#8217;ll see is completely hypothetical. The purpose of this post is to show how companies like Backblaze (desktop apps) can use Kissmetrics.</p>
+<p>Let&#8217;s begin with a funnel report.</p>
+<h2>Signup Funnel</h2>
+<p>Every website has a set of steps visitors must go through before they can purchase. This is known as a funnel. With the <a href="https://blog.kissmetrics.com/saas-companies-kissmetrics-funnels/">Kissmetrics Funnel Report</a>, marketers can track how each person converts through the funnel.</p>
+<p>Backblaze has a unique funnel because they need to get users to install a program on their computer. Let&#8217;s run through it and mark each step of the funnel.</p>
+<p>We&#8217;ll go to the Backblaze homepage, and in doing so, we’ll complete step one (Visited Site) of the funnel.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-homepage-step-one.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-homepage-step-one.png" alt="backblaze homepage step one" class="aligncenter size-full wp-image-27405" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-homepage-step-one-300x230.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-homepage-step-one-1024x785.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-homepage-step-one.png 1039w" sizes="(max-width: 1039px) 100vw, 1039px" /></a></p>
+<p>We&#8217;ll enter our email and a password to create our Backblaze account.</p>
+<p>We&#8217;ll click the &#8220;Start Backing Up&#8221; button and complete step two (Registration) of the funnel. Immediately after pressing the button, we are sent the download file for Backblaze.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/download-backblaze.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/download-backblaze.png" alt="download backblaze" class="aligncenter size-full wp-image-27406" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/download-backblaze-300x250.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/download-backblaze.png 923w" sizes="(max-width: 923px) 100vw, 923px" /></a></p>
+<p>We’ll click “Save File” to download the file.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-modal-download.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-modal-download.png" alt="backblaze modal download" class="aligncenter size-full wp-image-27407" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-modal-download-287x300.png 287w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-modal-download.png 565w" sizes="(max-width: 565px) 100vw, 565px" /></a></p>
+<p>Once we download the file, we have completed step three (Download) of the funnel. Now, we’ll install it and complete step four (Installation) of the funnel.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-desktop-signup.jpg"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-desktop-signup.jpg" alt="backblaze desktop signup" class="aligncenter size-full wp-image-27408" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-desktop-signup-300x252.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-desktop-signup.jpg 534w" sizes="(max-width: 534px) 100vw, 534px" /></a></p>
+<p>After installation, we&#8217;ll begin backing up, and that will complete the fifth and final step (Backup) of the funnel. Backup triggers after the user has backed up all their data. This can take a couple of days to complete.</p>
+<p>Here&#8217;s how this kind of funnel would look in Kissmetrics, using hypothetical data:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-funnel-step-one.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-funnel-step-one.png" alt="backblaze funnel step one" class="aligncenter size-full wp-image-27409" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-funnel-step-one-300x90.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-funnel-step-one-1024x306.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-funnel-step-one.png 1370w" sizes="(max-width: 1370px) 100vw, 1370px" /></a></p>
+<p>The funnel report shows four steps per view. To view the final step and the overall conversion, we&#8217;ll click on the forward arrow.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-funnel-step-two.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-funnel-step-two.png" alt="backblaze funnel step two" class="aligncenter size-full wp-image-27410" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-funnel-step-two-300x90.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-funnel-step-two-1024x308.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-funnel-step-two.png 1358w" sizes="(max-width: 1358px) 100vw, 1358px" /></a></p>
+<p>We end up with about 7.6% of people converting to backing up.</p>
+<p>This would be a pretty solid funnel. The clear bottleneck is getting people to register for an account. Most people who register continue along the funnel, with more than half of them converting to Backup. If the company could increase their initial conversion of Visited Site &gt; Registration, they would have a linear increase by the end of their funnel. If this were Backblaze&#8217;s actual funnel, their first focus would need to be on getting more people to register.</p>
+<p>The best way to increase signups with the same amount of traffic is by A/B testing. With the <a href="https://blog.kissmetrics.com/kissmetrics-ab-testing-report/">A/B test report</a>, marketers can track the results of their test in Kissmetrics. Let&#8217;s run through an example test and track it in Kissmetrics.</p>
+<p>We’ll create a variation of the Backblaze homepage, set up the test in our favorite A/B testing tool that <a href="http://support.kissmetrics.com/a-b-testing/integration/">integrates with Kissmetrics</a>, and launch the test. </p>
+<p>Here&#8217;s the variation of the homepage we&#8217;ll test:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-alternate.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-alternate.png" alt="backblaze alternate" class="aligncenter size-full wp-image-27430" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-alternate-300x166.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-alternate.png 928w" sizes="(max-width: 928px) 100vw, 928px" /></a></p>
+<p>We&#8217;ll simply test shortening the homepage copy a bit to see if it increases conversions.</p>
+<p>If we&#8217;re tracking the test in Kissmetrics, we&#8217;ll set up a new A/B test report and select our “conversion event” and “experiment.”</p>
+<p>“Conversion event” is what makes the A/B test report so valuable. You can select for <em>any </em>outcome in your funnel (initial registrations, paid signups, etc.).</p>
+<p>This is an A/B test that begins at the top of the funnel, and we&#8217;ll start with testing for Registration. We&#8217;ll also go deeper into the funnel and test for signups.</p>
+<p>“Experiment” is the name of the A/B test.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-setup.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-setup.png" alt="ab test report setup" class="aligncenter size-full wp-image-27411" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-setup-300x168.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-setup.png 975w" sizes="(max-width: 975px) 100vw, 975px" /></a></p>
+<p>We&#8217;ll select Registration as our conversion event, and pick our A/B test.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-set.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-set.png" alt="ab test report set" class="aligncenter size-full wp-image-27412" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-set-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-set.png 698w" sizes="(max-width: 698px) 100vw, 698px" /></a></p>
+<p>We’ll click Run Report and get our data:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-ab-test-report-kissmetrics-fake-data.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-ab-test-report-kissmetrics-fake-data.png" alt="backblaze ab test report kissmetrics fake data" class="aligncenter size-full wp-image-27413" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-ab-test-report-kissmetrics-fake-data-300x280.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/backblaze-ab-test-report-kissmetrics-fake-data.png 964w" sizes="(max-width: 964px) 100vw, 964px" /></a></p>
+<p>The top of the report shows us the report metrics: how long the test ran, the number of people in the experiment, the total number of conversions, the improvement the variation had over the baseline, and the certainty that the test is not a false positive.</p>
+<p>In the middle, we get a graphical view of the test. There&#8217;s the baseline, the y axis with the percentage improvement, and the x axis with the time the test covered.</p>
+<p>The bottom of the report gets into the specifics for each variation. We see the number of people in each test, how many people converted in each variation, the average conversion rate for each, the improvement of each variation, and its certainty.</p>
+<p>Our variation earned a 31.93% increase in conversions over the original at nearly 100% certainty. This is good news. The variation homepage got more people to register. But to see if it impacted signups (which triggers when a payment is received), we&#8217;ll have to choose &#8220;Sign up&#8221; as our conversion event.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/signup-ab-test-kissmetrics-report.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/signup-ab-test-kissmetrics-report.png" alt="signup ab test kissmetrics report" class="aligncenter size-full wp-image-27414" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/signup-ab-test-kissmetrics-report-300x151.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/signup-ab-test-kissmetrics-report.png 796w" sizes="(max-width: 796px) 100vw, 796px" /></a></p>
+<p>We&#8217;ll click Run Report and get our data:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-backblaze-kissmetrics-fake-data.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-backblaze-kissmetrics-fake-data.png" alt="ab test report backblaze kissmetrics fake data" class="aligncenter size-full wp-image-27415" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-backblaze-kissmetrics-fake-data-300x279.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/ab-test-report-backblaze-kissmetrics-fake-data.png 959w" sizes="(max-width: 959px) 100vw, 959px" /></a></p>
+<p>This shows us that the original delivered more signups than the variation. <b>While the variation did bring more registrants, it didn&#8217;t actually impact where it matters</b>. In fact, it delivered fewer signups than the original.</p>
+<p>This shows us the value of the A/B test report. Most A/B testing tools show only the conversion to the next step. They can&#8217;t go into the funnel. If we were using one of those tools, we would have decided to present the variant to 100% of visitors, but that would negatively affect the bottom line.</p>
+<p>The opposite can also occur. A variant may lead to fewer conversions early in the funnel, but by the end of the funnel, it may have more conversions (if a larger percentage of the fewer conversions early in the funnel convert at the end of the funnel).</p>
+<p>We can also run A/B tests further into our funnel. We don&#8217;t have to stick to homepage tests. We can run a test anywhere in the funnel and track it for any outcome.</p>
+<h2>Cohort Report on Restore Feature</h2>
+<p>Every successful company needs to have &#8220;magical moments&#8221; within their product when a user discovers the value of the product and is hooked.</p>
+<p>For Facebook, it&#8217;s finding your friends. For Airbnb, it&#8217;s finding a place to stay. For Backblaze, it&#8217;s restoring data. When a customer successfully restores their lost data, they reach the magical moment and discover the value of Backblaze.</p>
+<p>If Backblaze knew when most people restore their data, they could push their new customers to stay until the average restore point. This would increase customer loyalty and reduce cancellations.</p>
+<p>To find out when customers restore data, we&#8217;ll load a cohort report and set our two events to &#8220;Sign up&#8221; and &#8220;Restore.&#8221; Sign up triggers when a customer signs up (converts from their free trial to a paying customer). Restore triggers when a customer restores their data.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/cohort-set-up-restore.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/cohort-set-up-restore.png" alt="cohort set up restore" class="aligncenter size-full wp-image-27416" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/cohort-set-up-restore-300x147.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/cohort-set-up-restore.png 787w" sizes="(max-width: 787px) 100vw, 787px" /></a></p>
+<p>We&#8217;ll go to Advanced options and put people who signed up in monthly buckets. We’ll group their Restore events by months.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/report-config-missing-1.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/report-config-missing-1.png" alt="report config missing 1" class="aligncenter size-full wp-image-27422" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/report-config-missing-1-300x246.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/report-config-missing-1.png 660w" sizes="(max-width: 660px) 100vw, 660px" /></a></p>
+<p>We&#8217;ll hit Run report and get our data:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/missing-cohort-report-2.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/missing-cohort-report-2.png" alt="missing cohort report 2" class="aligncenter size-full wp-image-27423" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/missing-cohort-report-2-300x194.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/missing-cohort-report-2.png 975w" sizes="(max-width: 975px) 100vw, 975px" /></a></p>
+<p>We can see that a few months after signup, only a small percentage of customers have used the Restore feature. The percentage increases as time goes by, but reaches its peak after 12 months. This means that for most customers, the magical moment doesn&#8217;t occur until at least a year after signing up. If this were the case with Backblaze, they&#8217;d need to continuously reinforce their value proposition and try to retain customers at least a year, until they reach the point where they need to use the Restore feature.</p>
+<h2>Cohort Report on Cancellations</h2>
+<p>A constant problem for nearly all subscription companies is customer cancellations, also known as churn. It&#8217;s the proverbial thorn in the side because it&#8217;s so difficult to keep it consistently low. It&#8217;s like a leak in a ship. If the leak is too big, it will sink the ship. Churn can stall growth. If churn is left unchecked, it can kill a company.</p>
+<p>Here&#8217;s a chart showing just how detrimental a 10% monthly churn is. Even if you&#8217;re acquiring 100 customers, losing 10 of them every month will quickly stall growth:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/churn-ramp-of-death.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/churn-ramp-of-death.png" alt="churn ramp of death" class="aligncenter size-full wp-image-27419" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/churn-ramp-of-death-300x182.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/churn-ramp-of-death-1024x621.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/churn-ramp-of-death.png 1152w" sizes="(max-width: 1152px) 100vw, 1152px" /></a></p>
+<p>This is a tough problem for subscription companies like Backblaze, and generally each company has to find their own approach to tackle it. One thing that will help all companies is being better able to predict churn before it happens. And it doesn&#8217;t require any data science magic; it can be done right inside Kissmetrics.</p>
+<p>What we&#8217;ll do is create a cohort report that tells us about how long after signup customers request cancellation. If most customers request cancellation 6 months after signup, then we will want to focus on reinforcing our value proposition to each customer before they hit the 6-month mark.</p>
+<p>The first step is setting our two events. We&#8217;ll first be looking at people who sign up, and then those who request a cancellation. The Request Cancellation event triggers when a customer on a monthly payment plan cancels or when a customer on an annual payment plan requests cancellation and does not want renewal for another year.</p>
+<p>Signed up and Request Cancellation are not automatically tracked events in Kissmetrics, but Backblaze can set them up with a little help from a developer.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/signed-up-request-cancel.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/signed-up-request-cancel.png" alt="signed up request cancel" class="aligncenter size-full wp-image-27420" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/signed-up-request-cancel-300x149.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/signed-up-request-cancel-1024x508.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/signed-up-request-cancel.png 1068w" sizes="(max-width: 1068px) 100vw, 1068px" /></a></p>
+<p>We&#8217;ll select Advanced options and set more details for our report:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/request-cancellation-advanced-cohort1.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/request-cancellation-advanced-cohort1.png" alt="request cancellation advanced cohort" class="aligncenter size-full wp-image-27421" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/request-cancellation-advanced-cohort1-300x259.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/request-cancellation-advanced-cohort1.png 891w" sizes="(max-width: 891px) 100vw, 891px" /></a></p>
+<p>We&#8217;re splitting people who signed up into monthly buckets. We’ll group their cancellation events by months. We&#8217;ll click Run report and get our data:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/cohort-backblaze-request-cancelation-redo-3.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/cohort-backblaze-request-cancelation-redo-3.png" alt="cohort backblaze request cancelation redo 3" class="aligncenter size-full wp-image-27418" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/cohort-backblaze-request-cancelation-redo-3-300x194.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/cohort-backblaze-request-cancelation-redo-3-1024x662.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/cohort-backblaze-request-cancelation-redo-3.png 1245w" sizes="(max-width: 1245px) 100vw, 1245px" /></a></p>
+<p>On the left side, signups are shown in monthly buckets. The people column contains the number of signups for each month. The columns on the right are grouping people by when they either canceled or, in the case of annual contracts, requested cancellation.</p>
+<p>This data shows that the largest percentage of people request cancellation 8 months after signing up. If this were real data, to alleviate this surge in cancellations, Backblaze should learn what causes people to churn (if they don&#8217;t already know). There are a number of ways to gather this feedback: talk to customers who canceled, ask canceling customers to fill out a short survey at the time of cancellation, and/or view company support data to see if customers had any unresolved issues.</p>
+<p>If people say they can&#8217;t foresee their hard drive failing, the company could remind them of how often hard drives fail and reinforce the Backblaze value proposition.</p>
+<p>Also, about half a year after signup, Backblaze could send customers an email reminding them why they signed up for Backblaze to begin with: to save and never lose photos, documents, and other files. The company could explain that one hard drive failure could cause them to lose all this but that they don&#8217;t have to worry because they are backed up.</p>
+<p>The solution should be based on the feedback received from users.</p>
+<p>The company can also ask customers if they&#8217;re having any issues. It&#8217;s better to fix issues before a cancellation than try to resurrect a canceled customer.</p>
+<p>Cancellations are inevitable, but if Backblaze can manage to reduce the 8-month cancellation surge, they&#8217;ll find they have better revenue growth.</p>
+<h2>Find Canceled Customers in Just a Few Clicks</h2>
+<p>Building a product people want requires companies to gather feedback from customers. There are a number of ways to <a href="https://blog.kissmetrics.com/best-ways-to-get-feedback/">get feedback from customers</a> – surveys, feedback boxes, customer development, analytics, usability tests, etc.</p>
+<p>Whom should you reach out to? There are various segments of users: your customers, free trial users, free trial users who didn&#8217;t convert to paying, power users, canceled customers, etc. The easiest way to find these people is with Kissmetrics&#8217;s People Search.</p>
+<p>Let’s focus on searching for canceled customers.</p>
+<p>Typically, canceled customers are thrown in a database that&#8217;s nearly impossible to access without getting help from an engineer. With Kissmetrics, marketers can run a People Search and get a list of canceled customers within a few seconds.</p>
+<p>To start, we load the People Search setup.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/people-search-kissmetrics-setup.png-.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/people-search-kissmetrics-setup.png-.png" alt="people search kissmetrics setup.png" class="aligncenter size-full wp-image-27424" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/people-search-kissmetrics-setup.png--300x177.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/people-search-kissmetrics-setup.png-.png 643w" sizes="(max-width: 643px) 100vw, 643px" /></a></p>
+<p>We&#8217;ll “Add a condition” for people who have “Canceled.” The “Canceled” event triggers when a customer cancels their account with Backblaze. It&#8217;s not an automatically tracked event in Kissmetrics, but it can be created with a little help from a developer. We&#8217;ll set the date range to the last 30 days. You can make the date range as long as you&#8217;d like, and even set a custom date range.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/kissmetrics-people-search-canceled-customers.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/kissmetrics-people-search-canceled-customers.png" alt="kissmetrics people search canceled customers" class="aligncenter size-full wp-image-27425" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/kissmetrics-people-search-canceled-customers-300x229.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/kissmetrics-people-search-canceled-customers.png 700w" sizes="(max-width: 700px) 100vw, 700px" /></a></p>
+<p>We’ll click Search and get our hypothetical data. Keep in mind these are not actual customers, but merely a list of fabricated email addresses. Any similarity to a real email address is coincidence.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/people-search-kissmetrics-email-address.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/people-search-kissmetrics-email-address.png" alt="people search kissmetrics email address" class="aligncenter size-full wp-image-27426" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/people-search-kissmetrics-email-address-300x297.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/people-search-kissmetrics-email-address.png 677w" sizes="(max-width: 677px) 100vw, 677px" /></a></p>
+<p>Now, we have a list of people we can get solid feedback from.</p>
+<p>If we want to view more details about any person, we can click on an email address and view a <a href="https://blog.kissmetrics.com/people-events-and-properties/">Person Details report</a>. This shows us any events the person did leading up to cancellation, which can help us identify if they ran into any issues that made them want to cancel.</p>
+<p>Let&#8217;s click on blurred-out-address@espn.com:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/person-details-kissmetrics-timeline.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/person-details-kissmetrics-timeline.png" alt="person details kissmetrics timeline" class="aligncenter size-full wp-image-27431" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/person-details-kissmetrics-timeline-294x300.png 294w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/person-details-kissmetrics-timeline.png 940w" sizes="(max-width: 940px) 100vw, 940px" /></a></p>
+<p>At the top of the report, we get some metrics about this person: how many times they&#8217;ve visited, when they last visited, and how much revenue we&#8217;ve received from them. The top right shows us some details about their acquisition. The bottom portion shows the timeline of events they&#8217;ve triggered every day. We can see in the days leading up to cancellation that they saw an error message nearly every day. Let&#8217;s click on the &#8220;Events&#8221; tab to see how many times they&#8217;ve seen this message.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/04/events-tab-person-details-backblaze.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/04/events-tab-person-details-backblaze.png" alt="events tab person details backblaze" class="aligncenter size-full wp-image-27429" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/04/events-tab-person-details-backblaze-300x162.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/04/events-tab-person-details-backblaze.png 937w" sizes="(max-width: 937px) 100vw, 937px" /></a></p>
+<p>I&#8217;ve highlighted three of the events in the left column: saw error message, search engine hit, and submitted help ticket. We&#8217;ll focus on the error message and help ticket.</p>
+<p>This person has seen the error message 89 times. The first time it appeared was December 7, 2014, and the most recent time was March 17, 2015, the day the person canceled. They submitted their first help ticket shortly after receiving the first error message.</p>
+<p>The next step is to look up the support tickets this person submitted and see if they are related to the error message. This could be an issue where the customer canceled because the error message was never resolved.</p>
+<p>A good way to reduce churn or resurrect canceled customers is to set up a process like this. Use People Search to find canceled customers, look for trends in the Person Details report, and act on the data.</p>
+<h2>Why Kissmetrics is a Great Tool for Companies like Backblaze</h2>
+<p>Let&#8217;s review some of the main points:</p>
+<ul>
+<li>Backblaze is an online backup company. Kissmetrics is a SaaS tool for marketers. Backblaze can install Kissmetrics into their desktop and online platforms and use Kissmetrics to optimize their business.</li>
+<li>A funnel report can be used to track signup flow and identify any major blocks to conversion. Backblaze can run an A/B test and track it with the A/B test report. The company can track any conversion event, no matter how far down the funnel. In fact, they can see the impact a homepage test has on signups by simply changing the conversion event.</li>
+<li>Every product needs a &#8220;magical moment&#8221; when users discover the value of the product. If users don&#8217;t discover this soon enough, they become much more likely to cancel. For Backblaze, their magical moment is when customers use the Restore feature to recover their data. Backblaze can track when users trigger this feature by setting up a cohort report. If they see that the majority of restores happen after a year, they know they need to keep customers for at least a year until they discover the value of the product.</li>
+<li>A cohort report can be set up to show when users typically request to cancel their accounts. If trends can be spotted (for example, many users request to cancel around 8 months after signup), Backblaze can try to avert cancellations by reinforcing their value proposition around the time users typically cancel.</li>
+<li>Often, it&#8217;s difficult to find a list of your canceled customers. You have to bug an engineer every time because the list is lodged in some SQL database. With Kissmetrics&#8217;s People Search, you just search for people who have canceled within a designated time frame and you get your list within a few seconds. From there, you can email the canceled customer or view their Person Details report, which may help you figure out why the customer canceled.</li>
+</ul>
+<p><i>Improve your conversion funnels and know what A/B tests are actually helping your business. <a href="https://www.kissmetrics.com/signup?utm_source=blog&#038;utm_medium=academy&#038;utm_campaign=backblaze">Dive into Kissmetrics right now.</a></i></p>
+<p><strong>About the Author:</strong> Zach Bulygo (<a href="https://twitter.com/zachcb1" target="_blank">Twitter</a>) is a Content Writer at Kissmetrics.</p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/people-events-and-properties/">The Foundation of Kissmetrics: People, Events, and Properties</a></li>
+<li><a href="https://blog.kissmetrics.com/launch-website-tests-successfully/">How to Launch Your Website Tests Successfully with Kissmetrics</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fdesktop-applications-and-kissmetrics%2F&source=tweetbutton&text=How+Desktop+Applications+Like+Backblaze+Can+Use+Kissmetrics&url=https%3A%2F%2Fblog.kissmetrics.com%2Fdesktop-applications-and-kissmetrics%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fdesktop-applications-and-kissmetrics%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=How Desktop Applications Like Backblaze Can Use Kissmetrics&amp;body=https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-27401 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-1094764">
+    <div id="comment-1094764" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ruben</cite>
+        
+        <a href="https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/#comment-1094764" class="comment-date">Apr 16, 2015 at 2:49 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Good suggestions!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/?replytocom=1094764#respond' onclick='return addComment.moveForm( "comment-1094764", "1094764", "respond", "27401" )' aria-label='Reply to Ruben'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1095524">
+    <div id="comment-1095524" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Beatrix Willius</cite>
+        
+        <a href="https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/#comment-1095524" class="comment-date">Apr 17, 2015 at 3:47 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Way cool! I hadn&#8217;t known that. The API looks very easy to use.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/?replytocom=1095524#respond' onclick='return addComment.moveForm( "comment-1095524", "1095524", "respond", "27401" )' aria-label='Reply to Beatrix Willius'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1095956">
+    <div id="comment-1095956" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/#comment-1095956" class="comment-date">Apr 17, 2015 at 9:32 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Wonderful articles in this post it’s very beneficial for me. Thanks to share this post.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/?replytocom=1095956#respond' onclick='return addComment.moveForm( "comment-1095956", "1095956", "respond", "27401" )' aria-label='Reply to '>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">3 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/desktop-applications-and-kissmetrics/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='27401' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="59f59b21ba" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="32"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'How Desktop Applications Like Backblaze Can Use Kissmetrics', 'Post URL':'https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/hacks-for-the-struggling-startup/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/beginners-guide-to-feedback/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="How Desktop Applications Like Backblaze Can Use Kissmetrics" data-url="https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'How Desktop Applications Like Backblaze Can Use Kissmetrics', 'Post URL':'https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'How Desktop Applications Like Backblaze Can Use Kissmetrics', 'Post URL':'https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'How Desktop Applications Like Backblaze Can Use Kissmetrics', 'Post URL':'https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":355,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

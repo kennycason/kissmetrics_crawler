@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>How We Acquired 100K Early Bird Signups with Zero Marketing Budget</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; How We Acquired 100K Early Bird Signups with Zero Marketing Budget Comments Feed" href="https://blog.kissmetrics.com/100k-early-bird-signups/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='The Universal Analytics Video Guide – Part 2' href='https://blog.kissmetrics.com/universal-analytics-video-guide-part-2/' />
+<link rel='next' title='There’s Only One SaaS Sales Strategy You Really Need' href='https://blog.kissmetrics.com/only-one-saas-strategy/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/100k-early-bird-signups/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=21911' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2F100k-early-bird-signups%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2F100k-early-bird-signups%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,365] -->
+<meta name="description" content="While there has been no rocket or viral growth for us yet, we gain a steady stream of new users every day. We have grown from 0 to 100K signups in 10 months – spending zero." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='How We Acquired 100K Early Bird Signups with Zero Marketing Budget' />
+<meta property='og:url' content='https://blog.kissmetrics.com/100k-early-bird-signups/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='While there has been no rocket or viral growth for us yet, we gain a steady stream of new users every day. We have grown from 0 to 100K signups in 10 months – spending zero.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How We Acquired 100K Early Bird Signups with Zero Marketing Budget" />
+    <meta name="twitter:description" content="While there has been no rocket or viral growth for us yet, we gain a steady stream of new users every day. We have grown from 0 to 100K signups in 10 months – spending zero." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-21911 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'How We Acquired 100K Early Bird Signups with Zero Marketing Budget',
+						'Post Category': 'Launch Strategies',
+						'Post URL': 'https://blog.kissmetrics.com/100k-early-bird-signups/'
+		}
+	]);
+</script>
+
+<article id="post-21911" class="single-post post-21911 post type-post status-publish format-standard hentry category-launch-strategies" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">How We Acquired 100K Early Bird Signups with Zero Marketing Budget</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Most startups dream about immense organic traffic at their launch. While there has been no rocket or viral growth for us yet, we gain a steady stream of new users every day. We have grown from 0 to 100K signups in 10 months – spending zero – practicing the methods described in this post.</p>
+<p><i><b>Editor&#8217;s Note:</b> We haven&#8217;t looked at the signup data mentioned by the guest author, however the conclusions drawn in this post appear to be sound advice. Obviously it&#8217;s up to you to use this as a guide and measure your own traffic and signups to see if the takeaways in this post work for you. Today&#8217;s post is about RealtimeBoard &#8211; a collaboration whiteboard for teams.</i></p>
+<h2>First, Prepare to Listen</h2>
+<p>Before you introduce your product in the market and acquire users, arrange to obtain feedback, because lots of advantages accrue from listening to customers:</p>
+<ul>
+<li>You find out <b>if your product brings real value</b> for the target audience</li>
+<li>Users feel you&#8217;re alive and they&#8217;re not alone</li>
+<li>The first feedback providers are your trusted community and <b>loyal promoters</b></li>
+<li>You have an opportunity to find and <b>work out bugs</b></li>
+<li>A question that is answered once may be <b>used as a guide (FAQ)</b> many more times</li>
+<li>Users generate great ideas and <b>topics for your blog</b></li>
+<li>You can use the <b>insightful testimonials</b> on your website to establish credibility</li>
+</ul>
+<p>We can’t stress enough how much the above benefits help with that initial boost in growth. It’s easy to get buried in a sea of feature development and not spend any time listening and interacting with early adopters.</p>
+<p>To collect feedback, we&#8217;ve been using several tools:</p>
+<ul>
+<li><b>A Feedback Forum</b> – on a visible area of the website and inside the product. (We&#8217;re using the <a href="http://userecho.com/">UserEcho</a> widget, but there&#8217;s a variety of tools on the market to consider.)</li>
+</ul>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/10/1-forum-software.jpg" alt="forum software" class="aligncenter size-full wp-image-21912" srcset="https://blog.kissmetrics.com/wp-content/uploads/2013/10/1-forum-software-300x151.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2013/10/1-forum-software.jpg 559w" sizes="(max-width: 559px) 100vw, 559px" /></p>
+<ul>
+<li><b>Social Media</b> – Twitter and Facebook pages to assist users outside the product.</li>
+<li><b>Email</b> (<span style="text-decoration: underline;">Feedback@yourbrandname.com</span>) – to respond to private questions which may contain personal information.</li>
+</ul>
+<p><i>The following are the methods we used to acquire users, divided into these first three minor steps, then two bigger steps, and finally, one big leap&#8230;</i></p>
+<h2>1. Start with Your Strongest Side — Your Existing Network</h2>
+<p>The network you have is a great place to start acquiring early birds. Pitch your product to everyone you know and meet, and let them use your product:</p>
+<ul>
+<li>online and offline friends</li>
+<li>former colleagues</li>
+<li>university mates</li>
+<li>business partners</li>
+<li>family</li>
+</ul>
+<p>Later on, they might assist you in word-of-mouth, publishing articles through their media outlets, inviting you to events where your target audience might be present, guest blogging and/or whatever makes sense for your startup! It doesn’t bring much in terms of the number of signups, but, by doing this, we obtained <i>loyal recommendations</i>.</p>
+<h2>2. Let Your Product Be Used in Workshops and in Academia</h2>
+<p>When you&#8217;re entering a new market, it&#8217;s not only about acquisition. It&#8217;s also about educating your audience about your product. <b>We&#8217;ve found that the offline workshops for designers, creative teams, and educators work great for us</b>. They let you interact closely with the audience, understand the way they think and use your product, and <i>see the reaction right away</i>. You have a great chance to catch their attention.</p>
+<p>Another way is to connect with organizers of educational events and let them use the product. They gather audience at their channels and <b>bring credibility</b> to your product.</p>
+<p>Moreover, some organizers were glad to introduce our logo on their websites, write posts, and embed our video, which brought us online users and backlinks. So, open Google, type in &#8220;[your audience] workshops&#8221; into the search box, and go. Again, your current network might help a lot here.</p>
+<h2>3. Earn Reviews and Blog Posts from Users</h2>
+<p>This point works like a snowball. Once your product is referred to in a blog, you’ll continue to receive new reviews every month. In fact, five months after our launch, our brand was backlinked at over 700 websites and that gave us over 100,000 visitors.</p>
+<p>At the very start, we found users like to write about our product. Most of the posts were educational posts, like <a href="http://freetech4teachers.com">freetech4teachers.com</a>, <a href="http://scoop.it">scoop.it</a>, <a href="http://educacontic.es">educacontic.es</a>. Others were about productivity and technology. One of the posts was published at the largest Russian techie community and brought us more than 2K signups per night when we least expected it.</p>
+<p>Sometimes we pushed articles (but never paid), connecting with the bloggers via email or twitter at wwwatsnew.com, makeuseof.com, and others. The authors were thrilled with the product and wrote about us.</p>
+<p>You can use Google Analytics to get the freshest blog posts where your product has been backlinked. Don&#8217;t forget to thank the authors and share their articles through social media. Most probably, they&#8217;ll mention you again in later blog posts.</p>
+<p><i>Now, here are the <b>two bigger steps</b> I told you about&#8230;</i></p>
+<h2>4. Work on Your PR</h2>
+<p>We’ve been visiting journalist-attended events and participating in startup competitions, which have been giving us another snowball effect. This tactic has played a significant role in our acquisition process. Apart from a busy offline network, <b>an event may be a bridge to the most popular media</b>. That worked for us to get published at TechCrunch, Venturebeat, and Cloudtweaks, having no network out of there. These are the following types of events you might participate in:</p>
+<ul>
+<li>Startup competitions</li>
+<li>Startup alleys and exhibitions</li>
+<li>Techie competitions (if you have a savvy technology)</li>
+<li>Education for startups</li>
+</ul>
+<p>Before deciding whether to visit, make sure that big media outlets are going to be there, too. This tactic also <b>works great for your SEO</b> in terms of link building at the sites with the higher page rank.</p>
+<h2>5. Use Your Product as a Viral Springboard</h2>
+<p>Which part or your product can make it <i>sharable</i> organically? Until now, we’ve used the following ways:</p>
+<ul>
+<li>Peer-to-peer invitations via email</li>
+<li>Peer-to-peer invitations via Facebook</li>
+<li>Embed sharing at outer websites and blogs</li>
+<li>“Post to Facebook” option</li>
+</ul>
+<p>These altogether so far have brought about 15% of total signups, and there’s room to grow. What&#8217;s more, this channel has given us higher quality users; i.e., higher percentages of active and paying customers and revenue per paying user.</p>
+<p><i>Now, here is the big leap I told you about&#8230;</i></p>
+<h2>6. Getting Broader Audience — We&#8217;ve Found the Perfect Platform</h2>
+<p>After getting enough users for testing the beta version, it was time to broaden our acquisition channels. A year and a half earlier, Google had announced its free web application platform for developers, <b>Chrome Web Store</b>. As our application is for desktop users and browser-based, we found this store ideal to match the right audience. It took a few hours to make the extension and a couple of days to get approved by Google, and now this platform still brings the lion’s share of new visitors to the website</p>
+<p>These are the tactics that let us grow from this platform:</p>
+<ul>
+<li><b>Keyword Optimization</b>. Once we showed up in the Chrome Web Store, we&#8217;ve been changing the headline and short description, which turned out to be efficient and raised the number of visitors. We tried adding the words &#8220;education,&#8221; &#8220;collaboration,&#8221; &#8220;free version,&#8221; &#8220;online whiteboards,&#8221; and &#8220;business tool,&#8221; measured the results, and picked the best one.</li>
+<li><b>The Cover Photo</b>. The top search results in Chrome Web Store are displayed in pictures. So make it catchy, outstanding, and understandable. Don&#8217;t forget to test and figure out the best option.</li>
+</ul>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2013/10/chrome-web-store.jpg"><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/10/chrome-web-store.jpg" alt="chrome web store" class="aligncenter size-full wp-image-21913" srcset="https://blog.kissmetrics.com/wp-content/uploads/2013/10/chrome-web-store-1024x565.jpg 1024w, https://blog.kissmetrics.com/wp-content/uploads/2013/10/chrome-web-store.jpg 1196w" sizes="(max-width: 1196px) 100vw, 1196px" /></a></p>
+<ul>
+<li><b>Categories</b>. Don&#8217;t narrow your traffic by restricting it to one category. Find out which categories are relevant to represent your product and go there. We’ve found out that &#8220;Business tools,&#8221; &#8220;Education,&#8221; &#8220;Productivity,&#8221; and &#8220;Google Drive&#8221; categories work great for us.</li>
+<li><b>Relevant Integrations</b>. As we targeted chrome browser users, we&#8217;ve added Google Drive integration as the valuable feature for Chrome users.</li>
+<li><b>Current Users</b>. Enhancing the current user base to install the extension plays a big role in getting higher rating positions and gives you the chance to appear in the “Popular” tab. To inform the current users, we sent an email, wrote on our blog, and notified our followers on social media. Later on, we mentioned the Chrome Store application in a welcome letter to inform just-registered users.</li>
+<li><b>Multiple Language Version of Chrome Store</b>. This description trick shocked us with its results. It boosted traffic by 2,000% for a few days and helped us expand to the global area. After the growth, the average number of daily visitors doubled.</li>
+</ul>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/10/3-traffic-doubled.png" alt="traffic doubled" class="aligncenter size-full wp-image-21914" srcset="https://blog.kissmetrics.com/wp-content/uploads/2013/10/3-traffic-doubled-300x187.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2013/10/3-traffic-doubled.png 520w" sizes="(max-width: 520px) 100vw, 520px" /></p>
+<ul>
+<li><b>Ratings and Comments</b>. Unfortunately, some users may get dissatisfied and rate your product as one-starred. It&#8217;s not final, though. Get in touch with the commenters and find out if you may help solve a problem. In a while, they may change their mind and re-star. The higher score will raise you in search results.</li>
+<li><b>Landing Page Optimization</b>. We&#8217;ve figured out that directing visitors to the sign-up page results in a 15% increase in signup conversions, rather than leading visitors to the homepage first.</li>
+</ul>
+<h2>Conclusion: Don&#8217;t Stop Here</h2>
+<p>Every point I&#8217;ve mentioned is a never-ending process. There&#8217;s plenty of virgin fields for us to work, such as SEO, content marketing, cross-platform availability, PPC, integrations, and so on. That’s not a rigid framework, though. You might experience your unique acquisition path even better than we did. Find out your strongest side, search the opportunities to best market your product, and take actions to get real results.</p>
+<p><b>About the Author:</b> Kseniya Maksimova is a marketing manager at <a href="http://realtimeboard.com/" rel="nofollow">RealtimeBoard</a>, a collaboration whiteboard for teams. You may find the LinkedIn profile <a href="http://www.linkedin.com/in/maksimova">here</a>.</p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/user-onboarding/">How to Get Users to Embrace Your Offer (Without Resorting to Shady Marketing Techniques)</a></li>
+<li><a href="https://blog.kissmetrics.com/how-we-bootstrapped-our-chrome-extension/">How We Bootstrapped Our Chrome Extension To 10,000 Installs In 6 Months</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2F100k-early-bird-signups%2F&source=tweetbutton&text=How+We+Acquired+100K+Early+Bird+Signups+with+Zero+Marketing+Budget&url=https%3A%2F%2Fblog.kissmetrics.com%2F100k-early-bird-signups%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2F100k-early-bird-signups%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=How We Acquired 100K Early Bird Signups with Zero Marketing Budget&amp;body=https://blog.kissmetrics.com/100k-early-bird-signups/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-21911 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-126995">
+    <div id="comment-126995" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Marcio</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-126995" class="comment-date">Oct 23, 2013 at 10:33 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great job!!!!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=126995#respond' onclick='return addComment.moveForm( "comment-126995", "126995", "respond", "21911" )' aria-label='Reply to Marcio'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-127001">
+    <div id="comment-127001" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.linkedin.com/in/maksimova' rel='external nofollow' class='url'>Kseniya Maksimova</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127001" class="comment-date">Oct 23, 2013 at 12:34 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you, Marcio!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127001#respond' onclick='return addComment.moveForm( "comment-127001", "127001", "respond", "21911" )' aria-label='Reply to Kseniya Maksimova'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-127006">
+    <div id="comment-127006" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ricky</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127006" class="comment-date">Oct 23, 2013 at 2:02 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks so much for this article. Massive eye opener for my product coming soon :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127006#respond' onclick='return addComment.moveForm( "comment-127006", "127006", "respond", "21911" )' aria-label='Reply to Ricky'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-127023">
+    <div id="comment-127023" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.linkedin.com/in/maksimova' rel='external nofollow' class='url'>Kseniya Maksimova</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127023" class="comment-date">Oct 23, 2013 at 8:19 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you for the kind words, Ricky :)</p>
+<p>I&#8217;m glad you&#8217;ve found my post helpful!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127023#respond' onclick='return addComment.moveForm( "comment-127023", "127023", "respond", "21911" )' aria-label='Reply to Kseniya Maksimova'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-127010">
+    <div id="comment-127010" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Gregg Anderson</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127010" class="comment-date">Oct 23, 2013 at 3:43 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Kseniya, </p>
+<p>Great insights. I tried signing up for your site, but it&#8217;s giving my the spinning wheel of death&#8230; should I try signing up manually, instead of through Google? </p>
+<p>Thanks! Looks like an awesome product! Great job. </p>
+<p>Respectfully,<br />
+-Gregg Anderson<br />
+Anderson Marketing Consulting</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127010#respond' onclick='return addComment.moveForm( "comment-127010", "127010", "respond", "21911" )' aria-label='Reply to Gregg Anderson'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-127024">
+    <div id="comment-127024" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kseniya Maksimova</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127024" class="comment-date">Oct 23, 2013 at 8:28 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Gregg</p>
+<p>Thanks for the feedback. Let&#8217;s figure out what might be wrong with signing-up.</p>
+<p>We&#8217;ll need more details though:<br />
+&#8211; Step-by-step actions you made during signing-up process<br />
+&#8211; A screenshot of the spinning wheel of death :)</p>
+<p>I think it would be more appropriate to send these details to <a href="mailto:feedback@realtimeboard.com">feedback@realtimeboard.com</a></p>
+<p>I hope, we&#8217;ll be able to help you.<br />
+Thank you!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127024#respond' onclick='return addComment.moveForm( "comment-127024", "127024", "respond", "21911" )' aria-label='Reply to Kseniya Maksimova'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-127030">
+    <div id="comment-127030" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Steven Hex</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127030" class="comment-date">Oct 23, 2013 at 9:17 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great resources. Those steps given it take sometimes to work it out but definitely worth it eventually. Thanks</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127030#respond' onclick='return addComment.moveForm( "comment-127030", "127030", "respond", "21911" )' aria-label='Reply to Steven Hex'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-127048">
+    <div id="comment-127048" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127048" class="comment-date">Oct 24, 2013 at 1:43 am</a>      </div><!-- /.comment-meta -->
+
+      <p>We think you&#8217;ve hit the gold spot here as many startups are not leveraging Chrome Web Store early on and it&#8217;s a great way to get signups and clients since people are always looking for productivity extensions and apps there.</p>
+<p>Keep up the good work :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127048#respond' onclick='return addComment.moveForm( "comment-127048", "127048", "respond", "21911" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-127060">
+    <div id="comment-127060" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kameel Vohra</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127060" class="comment-date">Oct 24, 2013 at 6:11 am</a>      </div><!-- /.comment-meta -->
+
+      <p>The idea of getting away from your keyboard and in to events, workshops and other related spaces is great. It&#8217;s an incredible medium, even if just for gathering initial feedback. It&#8217;s a tactic that led to some of my first few paying customers.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127060#respond' onclick='return addComment.moveForm( "comment-127060", "127060", "respond", "21911" )' aria-label='Reply to Kameel Vohra'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-127096">
+    <div id="comment-127096" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Shoemoney</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127096" class="comment-date">Oct 24, 2013 at 7:15 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Aaaaaaaand snubbed</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127096#respond' onclick='return addComment.moveForm( "comment-127096", "127096", "respond", "21911" )' aria-label='Reply to Shoemoney'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-127114">
+    <div id="comment-127114" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Raffaele Gaito</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127114" class="comment-date">Oct 25, 2013 at 12:27 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Kseniya,<br />
+thanks a lot for this great post!<br />
+I would like to have more details about the Chrome Store part.<br />
+We are testing it a lot for our game.</p>
+<p>I have two questions:<br />
+&#8211; did you create several version of your app in different categories or you just continuously changed the category until you found the best one?<br />
+&#8211; idem for keywords and preview photo.</p>
+<p>Thanks in advance!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127114#respond' onclick='return addComment.moveForm( "comment-127114", "127114", "respond", "21911" )' aria-label='Reply to Raffaele Gaito'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-127119">
+    <div id="comment-127119" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.linkedin.com/in/maksimova' rel='external nofollow' class='url'>Kseniya Maksimova</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127119" class="comment-date">Oct 25, 2013 at 2:36 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for the kind words, Raffaele!</p>
+<p>Great questions, which I missed in the post.</p>
+<p>1 &#8211; we&#8217;ve created one app version and tested different categories<br />
+2 &#8211; concerning the keywords and preview photo &#8211; the same is here, we tested the keywords within one app version until we found the best one</p>
+<p>Hope you&#8217;ll find this helpful :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127119#respond' onclick='return addComment.moveForm( "comment-127119", "127119", "respond", "21911" )' aria-label='Reply to Kseniya Maksimova'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-127137">
+    <div id="comment-127137" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Arbaz K</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127137" class="comment-date">Oct 25, 2013 at 6:59 am</a>      </div><!-- /.comment-meta -->
+
+      <p>A 100K signups with zero marketing!<br />
+This is something really awesome. I know that the existing network and promotions on blog posts and reviews are a great way to generate some hype but getting to the mark of 100K is simply superb.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127137#respond' onclick='return addComment.moveForm( "comment-127137", "127137", "respond", "21911" )' aria-label='Reply to Arbaz K'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-127462">
+    <div id="comment-127462" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Derick</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127462" class="comment-date">Oct 28, 2013 at 8:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;ll surely keep all the points in mind. Social networks work wonder. In fact, listening is surely is the key to success. If possible customize your product as your customers want. Don&#8217;t forget about getting reviews from satisfied customers.If you get a negative review, don&#8217;t take in negatively. Try to rectify the shortcoming. This will help you improve the product and also make the customer satisfied.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127462#respond' onclick='return addComment.moveForm( "comment-127462", "127462", "respond", "21911" )' aria-label='Reply to Derick'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-127485">
+    <div id="comment-127485" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Zach</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127485" class="comment-date">Oct 28, 2013 at 10:24 am</a>      </div><!-- /.comment-meta -->
+
+      <p>How big was your social network while trying to get these signups?</p>
+<p>I imagine you would need around 10M people to receive 100K signups.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127485#respond' onclick='return addComment.moveForm( "comment-127485", "127485", "respond", "21911" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-127851">
+    <div id="comment-127851" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dare</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-127851" class="comment-date">Oct 31, 2013 at 3:20 am</a>      </div><!-- /.comment-meta -->
+
+      <p>This is unbelievable !! somehow hard to believe.</p>
+<p>I thought that the only magic to this is through white paper, use of social media signals.</p>
+<p>If true, I&#8217;m definitely going to implement this on my new blog to attract traffic</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=127851#respond' onclick='return addComment.moveForm( "comment-127851", "127851", "respond", "21911" )' aria-label='Reply to Dare'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-133449">
+    <div id="comment-133449" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Aman Sharma</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-133449" class="comment-date">Nov 27, 2013 at 11:15 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>There is gold in each sentence here, thanks a lot for the post!<br />
+I&#8217;m taking notes immediately, and presenting it to the team. This will give us direction.<br />
+Being a student start-up and running lean, such strategies and growth hacking tactics are the way to go for us.</p>
+<p>One question though.. how big should a social network be in its beta to test stickiness?</p>
+<p>Thanks in advance!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=133449#respond' onclick='return addComment.moveForm( "comment-133449", "133449", "respond", "21911" )' aria-label='Reply to Aman Sharma'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-138454">
+    <div id="comment-138454" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dilip Malave</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-138454" class="comment-date">Dec 10, 2013 at 8:41 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great insight and thanks for sharing&#8230;we are adopting and implementing most of what has been shared here for our startup: qwikdial.com. We have a few hundred businesses signed-up but getting the word out to users and onboarding them has been tough. But this article confirms a lot of known techniques and so we will continue working on these. Thanks Kseniya</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=138454#respond' onclick='return addComment.moveForm( "comment-138454", "138454", "respond", "21911" )' aria-label='Reply to Dilip Malave'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-145531">
+    <div id="comment-145531" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">George N.</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-145531" class="comment-date">Jan 02, 2014 at 12:45 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>100,000 signups in 10 months? With zero marketing budget? You guys are awesome!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=145531#respond' onclick='return addComment.moveForm( "comment-145531", "145531", "respond", "21911" )' aria-label='Reply to George N.'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-153942">
+    <div id="comment-153942" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Pravin K Gupta</cite>
+        
+        <a href="https://blog.kissmetrics.com/100k-early-bird-signups/#comment-153942" class="comment-date">Jan 20, 2014 at 10:22 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great Idea for generated free visitor &#8230; WOW. this articles help for any buddy start-up begin then used this idea . I sour for getting more visitor and boost of without any cast &#8230; But I think about make a time for this idea&#8230; don&#8217;t have easy way becoz more guy&#8217;s want a instantly&#8230;. when, this work have a time for research of audiance, root of way and educational research with place, mid map of user.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100k-early-bird-signups/?replytocom=153942#respond' onclick='return addComment.moveForm( "comment-153942", "153942", "respond", "21911" )' aria-label='Reply to Pravin K Gupta'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">26 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/100k-early-bird-signups/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='21911' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="79af46638a" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="14"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'How We Acquired 100K Early Bird Signups with Zero Marketing Budget', 'Post URL':'https://blog.kissmetrics.com/100k-early-bird-signups/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/universal-analytics-video-guide-part-2/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/only-one-saas-strategy/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/100k-early-bird-signups/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/100k-early-bird-signups/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/100k-early-bird-signups/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="How We Acquired 100K Early Bird Signups with Zero Marketing Budget" data-url="http://blog.kissmetrics.com/100k-early-bird-signups/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'How We Acquired 100K Early Bird Signups with Zero Marketing Budget', 'Post URL':'https://blog.kissmetrics.com/100k-early-bird-signups/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'How We Acquired 100K Early Bird Signups with Zero Marketing Budget', 'Post URL':'https://blog.kissmetrics.com/100k-early-bird-signups/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'How We Acquired 100K Early Bird Signups with Zero Marketing Budget', 'Post URL':'https://blog.kissmetrics.com/100k-early-bird-signups/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":601,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

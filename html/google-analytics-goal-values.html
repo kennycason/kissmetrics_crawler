@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>When to Use Google Analytics Goal Values</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; When to Use Google Analytics Goal Values Comments Feed" href="https://blog.kissmetrics.com/google-analytics-goal-values/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How to Present like Steve Jobs' href='https://blog.kissmetrics.com/present-like-steve-jobs/' />
+<link rel='next' title='Create A YouTube Traffic Jam With These 4 Simple Optimization Tips' href='https://blog.kissmetrics.com/youtube-channel-optimization/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/google-analytics-goal-values/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=12517' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-goal-values%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-goal-values%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,339] -->
+<meta name="description" content="Wouldn’t you like to know how much money you make from organic search? Or your marketing campaigns? Read here to learn how to use Google Analytics to do just that!" />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/u/0/+LarsLofgren"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='When to Use Google Analytics Goal Values' />
+<meta property='og:url' content='https://blog.kissmetrics.com/google-analytics-goal-values/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Wouldn’t you like to know how much money you make from organic search? Or your marketing campaigns? Read here to learn how to use Google Analytics to do just that!' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="When to Use Google Analytics Goal Values" />
+    <meta name="twitter:description" content="Wouldn’t you like to know how much money you make from organic search? Or your marketing campaigns? Read here to learn how to use Google Analytics to do just that!" />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-12517 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'When to Use Google Analytics Goal Values',
+						'Post Category': 'Analytics',
+						'Post URL': 'https://blog.kissmetrics.com/google-analytics-goal-values/'
+		}
+	]);
+</script>
+
+<article id="post-12517" class="single-post post-12517 post type-post status-publish format-standard has-post-thumbnail hentry category-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">When to Use Google Analytics Goal Values</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Wouldn’t you like to know how much money you make from organic search? Or your marketing campaigns? Google Analytics Goals do a great job at telling you where customers came from but they don’t immediately tell you how much money you actually made.</p>
+<p>Google Analytics has one little setting that will calculate all of this for you. You’ll be able to break down your revenue by campaign, keyword, or referral. You’ll even have the per visit value of every traffic source. That sounds like some delicious data if you ask me.</p>
+<p>It’s called <b>goal values</b>. Google Analytics allows us to define goal values for each of our goals and populates our reports with data on where our revenue is coming from.</p>
+<h2>How to Setup Goal Values</h2>
+<p>This is pretty straightforward:</p>
+<ol>
+<li>Go to your Google Analytics standard reports</li>
+<li>Click on the &#8220;Admin&#8221; button in the top right</li>
+<li>Click on &#8220;Goals&#8221;</li>
+<li>From one of the Goal sets, click “+ Goal” (goal sets are just a way for you to easily group goals) if you’re setting up a new goal. For a goal you’ve already created, click on the goal you want to edit.</li>
+</ol>
+<p>For each goal type, you have the option of entering a goal value. If the goal value is $10, simply punch in 10 and Google Analytics will handle the rest.</p>
+<p>Here’s where to find the Goal Value setting for each type of event:</p>
+<h3>URL Goals</h3>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/04/Goal_Values_URL.png" alt="Google Analytics Goal Values URL" title="Goal_Values_URL" class="aligncenter size-full wp-image-12524" /></p>
+<h3>Visit Duration</h3>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/04/Goal_Values_Visit_Duration.png" alt="Google Analytics Goal Values Visit Duration" title="Goal_Values_Visit_Duration" class="aligncenter size-full wp-image-12525" srcset="https://blog.kissmetrics.com/wp-content/uploads/2012/04/Goal_Values_Visit_Duration-230x300.png 230w, https://blog.kissmetrics.com/wp-content/uploads/2012/04/Goal_Values_Visit_Duration.png 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<h3>Pages/Visit</h3>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/04/Goal_Values_Pages_Visit.png" alt="Google Analytics Goal Values Pages Visit" title="Goal_Values_Pages_Visit" class="aligncenter size-full wp-image-12526" srcset="https://blog.kissmetrics.com/wp-content/uploads/2012/04/Goal_Values_Pages_Visit-245x300.png 245w, https://blog.kissmetrics.com/wp-content/uploads/2012/04/Goal_Values_Pages_Visit.png 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<h3>Events</h3>
+<p>On events, you can choose to have the Goal Value use the Event Value, which you define when you create the event. For the lowdown on events and how to set them up, check out <a href="http://code.google.com/apis/analytics/docs/tracking/eventTrackerGuide.html">Google’s Event Tracking Guide</a>.</p>
+<p>If you’re having trouble finding the Event Goals, make sure you’re in the new version of Google Analytics (v5). Events Goals are a new feature and weren’t available in prior versions.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/04/Goal_Values_Event.png" alt="Google Analytics Goal Values Event" title="Goal_Values_Event" class="aligncenter size-full wp-image-12527" srcset="https://blog.kissmetrics.com/wp-content/uploads/2012/04/Goal_Values_Event-214x300.png 214w, https://blog.kissmetrics.com/wp-content/uploads/2012/04/Goal_Values_Event.png 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<h2>Always Use Ecommerce Tracking First</h2>
+<p>Goal values are not a substitute for ecommerce tracking in Google Analytics. So if you have an ecommerce site, don’t try to use use goals values to track revenue. Your ecommerce reports give you much better insights on your products, transactions, and how long it takes your customers to purchase. Seriously, these reports are a goldmine. You can practically mint money with this data.</p>
+<p>And if you already have ecommerce tracking set up, there’s no reason to use goal values (or goals) for your transactions. Google Analytics does all the work for you.</p>
+<p>If you have an ecommerce site, take the time and get ecommerce tracking set up. Go to <a href="https://www.upwork.com">Upwork</a> and find someone to do this for you.</p>
+<h2>Single Product Websites (The One Exception)</h2>
+<p>There&#8217;s one situation where it makes sense to ignore my recommendation to use ecommerce tracking over goal values. And that&#8217;s if you have a single product website. But for this to work, your site must truly have a single product. You can&#8217;t have alternate versions or upsells. One product, one SKU, one price.</p>
+<p>In fact, I actually recommend doing this if you&#8217;re testing a new product. In this case, you’re not even sure if your idea is going to work. So don’t invest any more money that you absolutely have to. Instead of paying a developer in India to set up ecommerce tracking, just punch in the goal value and find out if you can actually make money. Keep it simple when you’re just starting. Then spend the money on getting ecommerce tracking enabled once you&#8217;re committed to your new business model.</p>
+<p>If this is the case, take the price of your product and use it as the goal value.</p>
+<h2>The Most Popular Use for Goal Values: Leads</h2>
+<p>Leads are perfect for goal values. There&#8217;s no purchase so ecommerce tracking isn&#8217;t an option. And since leads are generally easy to quantify, let’s bust out those goal values.</p>
+<p>To figure out your goal value for a lead, work backwards.</p>
+<p>Let&#8217;s use a travel agency in Southeast Asia as an example. They received 10 leads during the month which produced $12,500 in revenue. Take the total revenue ($12,500) and divide it by the number of leads (10) which means each lead is worth $1,250. That’s the goal value.</p>
+<p>Now, this example assumes that ALL their leads came from their site. Your sales funnel is probably a bit more complicated. When calculating your total revenue and the number of leads you received, don&#8217;t include leads that come from any other source like word-of-mouth referrals, social media, affiliates, etc. This keeps your data as clean as possible so you can make better business decisions later.</p>
+<p>If you have multiple ways for people to become a lead on your site (like a newsletter and a contact form), separate the data you have on your leads and calculate goal values for each.</p>
+<p>When calculating your revenue and leads, use data from the past month or quarter.</p>
+<p><strong>Bonus Point Round:</strong> If you want your goal values to be as accurate as possible, there&#8217;s another step.</p>
+<p>Instead of calculating the goal value based on the average value of the first order, you calculate it using the average Lifetime Value (LTV) of your customers.</p>
+<p>Most businesses have repeat customers. And lifetime value is the total amount that customers spend on your products or services before they move on. This data isn&#8217;t easy to track, you&#8217;ll need a solid customer database. Talk to your finance and IT teams about tracking lifetime value, they&#8217;ll be able to point you in the right direction. If you&#8217;re small enough that you don&#8217;t have finance and IT teams, just worry about the first sale.</p>
+<h3>Other Examples of Using Goal Values for Leads</h3>
+<p><strong>Newsletters:</strong> Take the total revenue you receive from newsletter subscribers and divide it by the total number of subscribers you have. BAM, that’s your goal value for a new subscriber.</p>
+<p><strong>Document Downloads:</strong> Maybe you give away a free ebook or white paper to draw in leads. Calculate how much you made from leads generated from the document and divide it by the total downloads.</p>
+<p><strong>Webinar Signups:</strong> Find out how many people click through to your webinar signup page and how much you make from a typical webinar. Divide your revenue by your clicks.</p>
+<p><strong>Affiliate Links:</strong> You’ll have to go into your affiliate program for this one (Amazon, Commission Junction, ClickBank, etc). Find your total revenue and divide that by the number of clicks your affiliate links received. If you want to be a power user, calculate this for each link and assign individual values to each link through Event Goals.</p>
+<p><strong>Trial/Free Accounts:</strong> Figure out how much revenue you generate on upgrades to paid accounts. Then divide by the number of trial/free accounts you have.</p>
+<h3>What if you don’t have this data?</h3>
+<p>Then you don’t have enough customers. If you’re building a business and it’s small enough that you don’t receive regular leads or purchases through your site, stop worrying about Google Analytics goal values and go get more customers.</p>
+<h2>Update Your Goal Values Regularly</h2>
+<p>All of your business metrics will change over time. Just about every industry deals with seasonality. You’ll also have to cope with business cycles (economic booms and busts). So you’ll need to revisit your goals regularly and recalculate everything. If you don’t, your data will slowly drift off course. And over time, your reports will become completely useless.</p>
+<p>You should update your goals monthly. But many of us don’t have this luxury simple due to time constraints. At a bare minimum, update your goals every 3 months. Stick a reminder in your calendar and make sure this happens.</p>
+<h2>Don&#8217;t Create Goal Values for Kicks And Giggles</h2>
+<p>For every example we&#8217;ve discussed so far, the goal had a clearly defined impact on your bottom line. What about other goals like pages per visit, time on site, and other types of &#8220;engagement&#8221;? It’s simple: don&#8217;t assign goal values.</p>
+<p>Why? Because it makes it impossible to pull out insights from your data.</p>
+<p>Say we decide that getting someone to view 5 pages on your site is worth $1. But you don&#8217;t sell ad space, you have B2B lead generation site. Then we discover that Google Organic search traffic produced $1,382 for the month (the most on your site). Should we dump our marketing budget into SEO? Maybe. Just because someone viewed 5 pages on your site doesn’t mean they’ll become a customer.</p>
+<p>When we create goal values that aren’t based on real business outcomes, it gets much more difficult to figure out how to grow your business. If you’re having trouble calculating your goal value, don’t guess. We tend to vastly overestimate the value of our marketing. The entire point of goal values is to give us an accurate assessment of where the money is coming from.</p>
+<p>Keep your data clean so you can easily see where you’re making money. This is especially important for small businesses that don’t employ a web analytics team. Focus your efforts exclusively on business outcomes that can be quantified. Leave the ROI-of-a-Facebook-Like calculations for later.</p>
+<p>Unless you really know what you’re doing, avoid assigning goal values to these metrics:</p>
+<ul>
+<li>Visit Duration</li>
+<li>Pages/Visit</li>
+<li>Social Media actions</li>
+<li>Comments</li>
+<li>Any action on your site that doesn’t directly produce a lead or purchase</li>
+</ul>
+<p>Go get your goal values set up so you can start tracking the ROI of your website. This is a high priority task for you and your team.</p>
+<p>How else have you used goal values? Tell us in the comments</p>
+<p><strong>About the Author:</strong> Lars Lofgren is the Kissmetrics Marketing Analyst and has his Google Analytics Individual Qualification (he’s certified). Learn how to grow your business at his <a href="http://larslofgren.com/" rel="nofollow">marketing blog</a> or follow him on Twitter <a href="http://twitter.com/LarsLofgren">@larslofgren</a>.</p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-goal-values%2F&source=tweetbutton&text=When+to+Use+Google+Analytics+Goal+Values&url=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-goal-values%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-goal-values%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=When to Use Google Analytics Goal Values&amp;body=https://blog.kissmetrics.com/google-analytics-goal-values/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-12517 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-31765">
+    <div id="comment-31765" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Alex Blum</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-goal-values/#comment-31765" class="comment-date">Jun 29, 2012 at 8:19 am</a>      </div><!-- /.comment-meta -->
+
+      <p>When you change your goal values will it update your old data to the new values or are you starting over with the new values each time you change them?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-goal-values/?replytocom=31765#respond' onclick='return addComment.moveForm( "comment-31765", "31765", "respond", "12517" )' aria-label='Reply to Alex Blum'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-33366">
+    <div id="comment-33366" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Alex</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-goal-values/#comment-33366" class="comment-date">Aug 02, 2012 at 2:04 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Good question Alex. I want to know the same thing.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-goal-values/?replytocom=33366#respond' onclick='return addComment.moveForm( "comment-33366", "33366", "respond", "12517" )' aria-label='Reply to Alex'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-33894">
+    <div id="comment-33894" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ben McCarty</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-goal-values/#comment-33894" class="comment-date">Aug 11, 2012 at 6:32 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Alex &amp; Alex, I believe historic GA data will reflect your values as they were in place at any given time &#8211; if it was $2 in June of 2010, it will always be recorded as such. The only confirmation I can find online is from a blog post on seo-hongkong.com :</p>
+<p>&#8220;So we just have to bear in mind that when we make changes in Goals or URLs, we only need to look at upcoming reports because historical data is not included on these changes we make.&#8221;</p>
+<p>Lars, I was curious if there was a negative impact to constantly evolving/updating your Goal values in Google Analytics. Do you feel it ever confuses the issue if you&#8217;re reporting over a period of time longer than a month and the values are not constant throughout? I guess I&#8217;m just wondering, do you see a downside to the practice?</p>
+<p>Thank you for the great article,<br />
+Ben</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-goal-values/?replytocom=33894#respond' onclick='return addComment.moveForm( "comment-33894", "33894", "respond", "12517" )' aria-label='Reply to Ben McCarty'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-35748">
+    <div id="comment-35748" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">King Rosales</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-goal-values/#comment-35748" class="comment-date">Sep 11, 2012 at 12:43 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Lars,<br />
+Thanks for this post. I noticed that I put a Goal Value as &#8220;1&#8221; because I was showing a Goal Value of &#8220;$1&#8221; in my Goals report and didn&#8217;t make sense. I agree, for E-Commerce sites with multiple products, it makes sense to leave the optional field empty.<br />
+Cheers!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-goal-values/?replytocom=35748#respond' onclick='return addComment.moveForm( "comment-35748", "35748", "respond", "12517" )' aria-label='Reply to King Rosales'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-85258">
+    <div id="comment-85258" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Trevor Green</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-goal-values/#comment-85258" class="comment-date">Nov 13, 2012 at 1:14 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Without being able to change values after the fact, tracking the value of lead is completely arbitrary. Really upsetting. You need to be able to go for a month and then put in a value that represents your revenue / leads. Then use that for predictions. Then update again with the new revenue the next month. </p>
+<p>I hate the that you seem force to create garbage data.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-goal-values/?replytocom=85258#respond' onclick='return addComment.moveForm( "comment-85258", "85258", "respond", "12517" )' aria-label='Reply to Trevor Green'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1136413">
+    <div id="comment-1136413" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">jenny</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-goal-values/#comment-1136413" class="comment-date">Jul 12, 2015 at 11:00 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>can i add more then goals in single web analytic account without having any issue</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-goal-values/?replytocom=1136413#respond' onclick='return addComment.moveForm( "comment-1136413", "1136413", "respond", "12517" )' aria-label='Reply to jenny'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1234603">
+    <div id="comment-1234603" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kaitlyn</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-goal-values/#comment-1234603" class="comment-date">Mar 23, 2016 at 8:34 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Would it work if I calculate a goal value by yearly revenue / #of transactions and apply that to the # of registrations we receive on our website? hmmm</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-goal-values/?replytocom=1234603#respond' onclick='return addComment.moveForm( "comment-1234603", "1234603", "respond", "12517" )' aria-label='Reply to Kaitlyn'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">20 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/google-analytics-goal-values/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='12517' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="457fbf3b32" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="42"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'When to Use Google Analytics Goal Values', 'Post URL':'https://blog.kissmetrics.com/google-analytics-goal-values/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/present-like-steve-jobs/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/youtube-channel-optimization/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/google-analytics-goal-values/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/google-analytics-goal-values/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/google-analytics-goal-values/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="When to Use Google Analytics Goal Values" data-url="http://blog.kissmetrics.com/google-analytics-goal-values/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'When to Use Google Analytics Goal Values', 'Post URL':'https://blog.kissmetrics.com/google-analytics-goal-values/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'When to Use Google Analytics Goal Values', 'Post URL':'https://blog.kissmetrics.com/google-analytics-goal-values/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'When to Use Google Analytics Goal Values', 'Post URL':'https://blog.kissmetrics.com/google-analytics-goal-values/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":371,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

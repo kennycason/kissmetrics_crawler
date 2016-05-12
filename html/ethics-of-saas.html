@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>The Ethics of SaaS</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; The Ethics of SaaS Comments Feed" href="https://blog.kissmetrics.com/ethics-of-saas/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='5 Google Products That Failed and What Startups Can Learn From It' href='https://blog.kissmetrics.com/google-products-that-failed/' />
+<link rel='next' title='5 Ways to Automate Your Pinterest Marketing Strategy' href='https://blog.kissmetrics.com/automate-pinterest-marketing/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/ethics-of-saas/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=19570' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fethics-of-saas%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fethics-of-saas%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,317] -->
+<meta name="description" content="There are plenty of obstacles for people in the SaaS business to contend with. You have to worry about a customer’s privacy, security and ethics concerns, along with the fact that they might not trust you initially—and that you need to earn their trust." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='The Ethics of SaaS' />
+<meta property='og:url' content='https://blog.kissmetrics.com/ethics-of-saas/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='There are plenty of obstacles for people in the SaaS business to contend with. You have to worry about a customer’s privacy, security and ethics concerns, along with the fact that they might not trust you initially—and that you need to earn their trust.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The Ethics of SaaS" />
+    <meta name="twitter:description" content="There are plenty of obstacles for people in the SaaS business to contend with. You have to worry about a customer’s privacy, security and ethics concerns, along with the fact that they might not trust you initially—and that you need to earn their trust." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-19570 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'The Ethics of SaaS',
+						'Post Category': 'Marketing',
+						'Post URL': 'https://blog.kissmetrics.com/ethics-of-saas/'
+		}
+	]);
+</script>
+
+<article id="post-19570" class="single-post post-19570 post type-post status-publish format-standard has-post-thumbnail hentry category-marketing" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">The Ethics of SaaS</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>There are plenty of obstacles for people in the SaaS business to contend with. You have to worry about a customer’s privacy, security and ethics concerns, along with the fact that they might not trust you initially—and that you need to earn their trust.</p>
+<p>A potential customer needs to know that you’re not going to treat their data like some sort of $1 peepshow (“Step right up and take a look!), and that you actually care about the safety of their information.</p>
+<p>You do care, of course, but if a customer is experiencing a nightmare about competitors stealing his data and becoming rich from his ideas, it’s your job to rock him back to sleep and assure him that it was just a bad dream.</p>
+<p>You have to slay these figurative monsters—found both in closets and under beds—and your ethics are your only weapons. You’re dedicated to providing a high quality service with admirable values and an ear toward what the customer needs, but you need to show the customer that you do care. That display starts with your core ethics and your attitude toward SaaS.</p>
+<h2>What are SaaS Ethics?</h2>
+<p>You know what ethics are, and you run your business by a very strict code, but it’s important that you take a moment to really think about them. Your ethics are something you just inherently live by, but sometimes it helps from a customer-interaction standpoint to actually put them down on paper.</p>
+<p>Blow them up and super impose them over a picture of a waterfall, frame the picture and put it by the receptionist’s desk. Or take an Instagram photo of a post-it note (I personally recommend the ‘1977’ filter for that rustic, ‘Aunt Mabel’s stained kitchen linoleum’ feel. Also, there’s a privacy and ethics joke somewhere in this suggestion)—the point is that writing it down gets you to really think about it.</p>
+<ul>
+<li><strong>Privacy</strong> &#8211; There are three levels to privacy as it pertains to SaaS. The first is your business’ commitment to your client’s privacy, and how far you’re willing to go to keep their data private. Your privacy standard should be high. The next level comes in the form of your actual procedures—the day to day operations that determine how you’re going to ensure that privacy. The third level pertains to, and actually bleeds over into, security.</li>
+<li><strong>Security</strong> – There’s a lot to consider here, and it’s mostly technical. Encryption, data transfer methods, firewalls and security audits are all important, so make sure you’re on the same page as your tech staff and developers. They’ll know how to make your security vision a reality.</li>
+<li><strong>Transparency</strong> – This is pretty simple—how are you handling your client’s data? Can they see what you’re doing? Do you have shared documents? How are you sharing their information and who can view it? Can they hold you accountable?</li>
+<li><strong>The Law</strong> – It gets complicated here, but the trick is to make sure your ethics match up with the law (which they most assuredly do… it’s just that sometimes figuring out the details isn’t easy). Contracts, outsourcing and liability are all areas of the law that might make a big impact on what you do, and an even bigger impact on how much your client trusts you.</li>
+</ul>
+<h2>Customer Concerns</h2>
+<p>Your ethics are the key to calming customer concerns, but before we talk about how that works we need to discuss what your client is worried about. “But I would never let any of these things happen!” you exclaim, spilling a cup that’s mostly full of hazelnut Coffee-mate on your shirt, “Get real, client!”</p>
+<p>Of course you wouldn’t let these things happen, but you need to understand your customer’s ethics-based concerns if you’re going to fight them effectively.</p>
+<ul>
+<li><strong>Paranoia</strong> – You know the old saying about paranoia and someone actually being out to get you. To some degree, a client’s paranoia is reasonable. It can quickly cross over into tinfoil hat territory, but it does need to be addressed. Clients are scared that their sure-to-be-a-hit housecat-based MMO, entitled ‘Kitty Kingdom’ is going to fall into the hands of their competitors under the name ‘Crazy Cat Castle.’ More realistically, they’re afraid of losing sensitive records and innovative strategies.</li>
+<li><strong>Cloud Safety</strong> – Your potential client is worried that unnecessary people have access to their data. They’re worried about encryption and who they should hold accountable if there’s a problem. More technologically-inclined clients will be worried about specifics, especially when it comes to data transmission and firewalls.</li>
+<li><strong>Old vs. New</strong> – There will also be customers who think doing things “the old way” is always the superior way. Sometimes they’re right. When was the last time you updated an app or a piece of software and were frustrated by the changes? Sometimes companies fix what wasn’t broken in the first place. A customer might view your whole operation as an unnecessary fix.</li>
+</ul>
+<h2>Reasoning</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/ibm.jpg" alt="ibm"></p>
+<p>Reasoning with an apprehensive client isn’t easy, but there’s an approach that always works well—address their concerns ahead of time. As you can see above, that little diagram from <a href="http://www.research.ibm.com/trl/projects/web20sec/web20sec_e.htm">IBM</a> addresses some customers’ fears. They lay those to rest in the text surrounding the graphic. Your clients are smart people; they just need to know that you’re an ethically sound company and that your values line up with theirs.</p>
+<ul>
+<li>Tell them you understand where they’re coming from because you’ve thought about all of those things, too.</li>
+<li>Tell them why you’re in the business. Tell them what it means to you and what their business means to you. Don’t kiss their ass or be a cheeseball—just be honest.</li>
+<li>Tell them you have documentation, you’re transparent and that you’re happy to talk to them about their concerns. Tell them that privacy, security and transparency are important to you. Mean it.</li>
+</ul>
+<h2>Marketing SaaS Ethics</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/bmc3.jpg"></p>
+<p><a href="http://www.bmc.com/">BMC</a> does a great job of addressing customer concerns up front, and then using that same block of text (and accompanying graphics) to market themselves as an ethical company. They use their promotional materials to both address ethics concerns and to market themselves as innovators in the industry. The reasoning process is the foot in the door, but marketing yourself as the kind of company that shares your client’s values goes a little bit further. The marketing channels and exact methods can be tailored to your whims, but focusing on these issues should help win over:</p>
+<h3>Honesty</h3>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/honesty-cloudshare.jpg"></p>
+<p>Tell the customer what you do with their data and how you’ll use it. Be specific.</li>
+<h3>Integrity</h3>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/integrity-eucalyptus.jpg"></p>
+<p>Stick to your guns and follow your code of ethics. When you mess up or step out of line, own the mistake and move on.</p>
+<h3>Security/Safety</h3>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/security-pistoncloud_openstack.jpg"></p>
+<p>This is basically your number one priority from an ethical standpoint. Be as specific about your security measures and privacy standards as your client wants you to be.</p>
+<h3>Examples</h3>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/examples-buddymedia.jpg"></p>
+<p>This is another big one. Demonstrate to your client that other big players in their niche (or just companies that they’re likely to admire) use SaaS to great success. Or it could be something even simpler, such as “Google Docs are great, but we offer you much more security, privacy and functionality. Here’s how.” Tell them how you fit their needs and brag a little bit if you need to.</p>
+<h3>Mission Statement</h3>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/missionstatement-pistoncloud_openstack.jpg"></p>
+<p>State your mission and values clearly, and focus on what sets you apart. Pretend you’re on trial. In fact, pretend you’re in a courtroom like the one on <em>Star Trek: TNG</em>’s “Encounter at Farpoint,” where you’re being put on trial by some omniscient being. Picard was confident in his own values and Starfleet’s mission statement, so he saved humanity. You’ll earn yourself a loyal client that respects your business and everything you do, which is nearly as good.</p>
+<h3>Values Sync</h3>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/valuesync-alienvault.jpg"></p>
+<p>Go beyond telling your client what your values are—listen to his. Take the time to figure out where your values overlap, and assure him that you can excel in those key areas.</p>
+<p>Cloud computing is relatively new. It’s exciting, versatile and full of great, world-changing possibilities (especially the positive environmental implications). Some potential clients are understandably nervous, so it’s up to you to show them that you’re an ethical company with their best interests in mind. Your industry is not a flash in the pan and you’re not a one night stand—you provide something valuable. It’s your duty, through discussion and through example, to show potential clients that you’re an ethically viable entity. Take a look at that framed values statement or blurry Instagram photo of a post-it note and know that your approach and your values will win over even the stodgiest, most ‘old school’ customer. It’s just a matter of dialogue.</p>
+<p><b>About the Author:</b> <a href="https://plus.google.com/107315169610590323153?rel=author">Dustin Verburg</a> is a writer and musician based in Boise, ID. When he&#8217;s not playing guitar at a third grade level or looking for discounts on beard styling products, he writes about internet ethics, small business marketing and the human side of SEO.  Dustin writes for Page One Power, a <a href="http://pageonepower.com/link-building-service/" rel="nofollow">link building firm</a> that focuses on relevancy and transparency.</p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fethics-of-saas%2F&source=tweetbutton&text=The+Ethics+of+SaaS&url=https%3A%2F%2Fblog.kissmetrics.com%2Fethics-of-saas%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fethics-of-saas%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=The Ethics of SaaS&amp;body=https://blog.kissmetrics.com/ethics-of-saas/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-19570 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-89572">
+    <div id="comment-89572" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">jessica</cite>
+        
+        <a href="https://blog.kissmetrics.com/ethics-of-saas/#comment-89572" class="comment-date">Jan 06, 2013 at 1:25 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Honesty is one of the best thing in business.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ethics-of-saas/?replytocom=89572#respond' onclick='return addComment.moveForm( "comment-89572", "89572", "respond", "19570" )' aria-label='Reply to jessica'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-89917">
+    <div id="comment-89917" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">DePuy Pinnacle Hip Updates</cite>
+        
+        <a href="https://blog.kissmetrics.com/ethics-of-saas/#comment-89917" class="comment-date">Jan 11, 2013 at 6:57 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Your way of describing the whole thing in this piece of writing is in fact fastidious. Thanks a lot.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ethics-of-saas/?replytocom=89917#respond' onclick='return addComment.moveForm( "comment-89917", "89917", "respond", "19570" )' aria-label='Reply to DePuy Pinnacle Hip Updates'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-90503">
+    <div id="comment-90503" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kent Morris</cite>
+        
+        <a href="https://blog.kissmetrics.com/ethics-of-saas/#comment-90503" class="comment-date">Jan 19, 2013 at 12:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Such a very helpful release. I  really enjoyed spending reading your post.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ethics-of-saas/?replytocom=90503#respond' onclick='return addComment.moveForm( "comment-90503", "90503", "respond", "19570" )' aria-label='Reply to Kent Morris'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">4 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ethics-of-saas/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='19570' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="0bac030d47" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="0"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'The Ethics of SaaS', 'Post URL':'https://blog.kissmetrics.com/ethics-of-saas/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/google-products-that-failed/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/automate-pinterest-marketing/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/ethics-of-saas/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/ethics-of-saas/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/ethics-of-saas/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="The Ethics of SaaS" data-url="http://blog.kissmetrics.com/ethics-of-saas/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'The Ethics of SaaS', 'Post URL':'https://blog.kissmetrics.com/ethics-of-saas/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'The Ethics of SaaS', 'Post URL':'https://blog.kissmetrics.com/ethics-of-saas/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'The Ethics of SaaS', 'Post URL':'https://blog.kissmetrics.com/ethics-of-saas/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":346,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

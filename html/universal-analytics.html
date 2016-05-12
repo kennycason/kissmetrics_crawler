@@ -1,0 +1,2011 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>Universal Analytics: Switching to the Next Version of Google Analytics</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; Universal Analytics: Switching to the Next Version of Google Analytics Comments Feed" href="https://blog.kissmetrics.com/universal-analytics/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='The Future of Content Marketing Revealed' href='https://blog.kissmetrics.com/future-of-content-marketing/' />
+<link rel='next' title='The Definitive Guide to Influencer Targeting' href='https://blog.kissmetrics.com/guide-to-influencer-targeting/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/universal-analytics/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=20416' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Funiversal-analytics%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Funiversal-analytics%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,369] -->
+<meta name="description" content="Back in October 2012, Google announced Universal Analytics as the next version of Google Analytics. The tracking code has been overhauled completely, and there are plenty of back-end improvements." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/u/0/+LarsLofgren"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='Universal Analytics: Switching to the Next Version of Google Analytics' />
+<meta property='og:url' content='https://blog.kissmetrics.com/universal-analytics/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Back in October 2012, Google announced Universal Analytics as the next version of Google Analytics. The tracking code has been overhauled completely, and there are plenty of back-end improvements.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Universal Analytics: Switching to the Next Version of Google Analytics" />
+    <meta name="twitter:description" content="Back in October 2012, Google announced Universal Analytics as the next version of Google Analytics. The tracking code has been overhauled completely, and there are plenty of back-end improvements." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-20416 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'Universal Analytics: Switching to the Next Version of Google Analytics',
+						'Post Category': 'Analytics',
+						'Post URL': 'https://blog.kissmetrics.com/universal-analytics/'
+		}
+	]);
+</script>
+
+<article id="post-20416" class="single-post post-20416 post type-post status-publish format-standard hentry category-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">Universal Analytics: Switching to the Next Version of Google Analytics</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Back in October 2012, Google announced <strong>Universal Analytics</strong> as the next version of Google Analytics. The tracking code has been overhauled completely, and there are plenty of back-end improvements.</p>
+<p>And they just opened up the beta to the public.</p>
+<p>Even though there aren’t any new reports (yet), you’ll need to switch over to Universal Analytics sooner or later if you want to keep getting access to the improvements in Google Analytics.</p>
+<p><em>Full disclosure</em>: moving to Universal Analytics isn’t a quick upgrade. You’ll need to set up a new property and replace all of the Google Analytics code on your site.</p>
+<p>First, we’ll cover how to get Universal Analytics running.</p>
+<p>Then, I’ll walk you through the changes so you can make the call on whether you want to switch right away or hold off a bit.</p>
+<h2>How Accounts Are Structured in Google Analytics</h2>
+<p>Before we jump into how to set up Universal Analytics, we need to clarify a few things about Google Analytics accounts.</p>
+<p>Remember, there are three levels when you log into Google Analytics:</p>
+<ol>
+<li>Accounts &#8211; Keeps your sites organized and separated.</li>
+<li>Properties &#8211; This is where your data is sent. Each property has a unique ID (that looks like UA-XXXXXX-X) so your data is sent to the right place.</li>
+<li>Profiles &#8211; These allow you to control how your data appears in your reports.</li>
+</ol>
+<p>When you pull up a report in Google Analytics, you’re looking at a profile that has pulled data from one of your properties. And this property is within one of your accounts. This is what they look like in Google Analytics:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/04/Google_Analytics-Accounts.png" alt="Google Analytics Accounts"></p>
+<p>So what does this mean for Universal Analytics?</p>
+<h2>Setting up Universal Analytics</h2>
+<p>You need to set up a whole new property for Universal Analytics. This will send all of your site data to a new location. You won’t lose your old data. It will just get split up between two different properties. However, <b>you will be starting over from scratch with your new &#8220;Universal&#8221; data.</b></p>
+<p>Google might come up with a way to migrate all of your old data into the new Universal Analytics properties. However, for the time being, I recommend using both versions of the tracking code (standard Google Analytics and Universal Analytics). This way, you will be sure to have as much data to work with as possible, regardless of how Google decides to manage this transition.</p>
+<h3>How to Create a New Property for Universal Analytics</h3>
+<p><b>Step 1:</b> Log into Google Analytics and click on the Admin button on the top right.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/04/Google-Analytics-Admin.png" alt="Google Analytics Admin"></p>
+<p><b>Step 2:</b> Pick the account that has the site for which you want to use Universal Analytics.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/04/Google-Analytics-Pick-Account.png" alt="Google Analytics Pick Account"></p>
+<p><b>Step 3:</b> Click on the “+ New Property” button.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/04/Google-Analytics-New-Property.png" alt="Google Analytics New Property"></p>
+<p><b>Step 4:</b> Make sure you select the “Web Site” option, which will let you choose between Universal Analytics and regular Google Analytics. Select Universal Analytics.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/04/Google-Analytics-Pick-Universal-Analytics.png" alt="Google Analytics Pick Universal Analytics"></p>
+<p><b>Step 5:</b> On the same page, enter in some basic information about your new property. Give it a new name, the domain you’ll use it on, the industry you’re in, and the time zone you want to use. When you are ready, click the “Get Tracking ID” button at the bottom.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/04/Google-Analytics-Property-Info.png" alt="Google Analytics Property Info"></p>
+<p>You’ve created your new Universal Analytics property. Woohoo!</p>
+<h2>Installing Universal Analytics</h2>
+<p>With your new property, you’ll have a completely new version of the tracking code, which will look like this:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/04/Universal-Analytics-Tracking-Code.png" alt="Universal Analytics Tracking Code"></p>
+<p>As soon as you’ve created your new property, you’ll be taken to the tracking code that you’ll need to install on your own site. Make sure to place it right before your &lt;/head&gt; tag.</p>
+<p>Here’s the thing: ALL of the Google Analytics code has been revamped. The tracking code, events, custom variables (which now are called custom dimensions), social plugins, the ecommerce tracking code – all of it.</p>
+<p><b>Every line of Google Analytics code on your site will need to be updated.</b></p>
+<p>So if you want to use Universal Analytics and Google Analytics at the same time, you’ll have to track everything twice.</p>
+<p>Let’s say that you have already have the normal Google Analytics ecommerce tracking set up on your site. To get Universal Analytics working also, you’ll need to install the new Universal Analytics Tracking Code and set up the new Universal Analytics ecommerce tracking. You’d be recording each transaction twice. Once for your Google Analytics property and once for your Universal Analytics property.</p>
+<p>To migrate completely to Universal Analytics without using the old Google Analytics, simply replace all your Google Analytics code with the new Universal Analytics code. </p>
+<p>For a complete breakdown on all of the new code, check out the <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/">Google Developer’s Guide on Analytics.js (Universal Analytics).</a></p>
+<h2>What’s New in Universal Analytics</h2>
+<p>The interface is almost identical to the current version of Google Analytics. Unless you&#8217;ve spent a lot of time in Google Analytics, you probably won’t notice the changes. The <a href="http://support.google.com/analytics/answer/2790010?hl=en">official overview is here</a>.</p>
+<p>These are the few major differences in Universal Analytics:</p>
+<h3>A. More Control over Settings</h3>
+<p>If you’re willing to dive into code, you can take control of all sorts of things. For example, visitor sessions last 30 minutes by default, but a few edits will change the session length.</p>
+<p>Universal Analytics lets you control more of these settings right from your account. To find these new settings:</p>
+<ol>
+<li>From one of your reports, click on “Admin” in the top right.</li>
+<li>Click on “Tracking Info.”</li>
+<li>There are tabs for each of these within the “Tracking Info” section.</li>
+</ol>
+<p><b>Session Timeouts</b></p>
+<p>A session dictates how long a visit lasts (and impacts many of your metrics like pages/visit, conversions, etc.). If a visitor doesn’t generate any new data within 30 minutes, the next piece of data they generate will be part of a new visit.</p>
+<p>Now you can change the duration of the session to whatever you want. The minimum is 1 minute and the maximum is 4 hours.</p>
+<p><b>Campaign Timeouts</b></p>
+<p>We use AdWords auto-tagging and campaign UTM parameters to keep track of which campaigns visitors are coming from. By default, this information lasts for 6 months. So if I visit your site today using one of your campaigns, wait 5 months, visit your site again by entering in your URL (a direct visit), then purchase something, Google Analytics will attribute the sale to that campaign.</p>
+<p>Remember that Google Analytics attributes conversions and revenue to the most recent traffic source that isn’t direct.</p>
+<p>Just like session timeouts, we now can change the duration of campaign timeouts from within Google Analytics. The minimum is 1 day and the maximum is 24 months.</p>
+<p><b>Adding Search Engines</b></p>
+<p>Google Analytics tracks quite a few search engines by default (<a href="https://developers.google.com/analytics/devguides/collection/gajs/gaTrackingTraffic">the whole list is here</a>). Now you can track search terms from search engines that are not on this list without needing to mess with any code.</p>
+<p>If you get a lot of traffic from a search engine that isn’t recognized by Google, all the traffic comes up as referrals instead of organic search traffic. So it’s worth adding extra search engines to Google Analytics when it comes up. <a href="https://support.google.com/analytics/answer/2795821?hl=en&#038;utm_id=ad">Google’s official documentation on this is here.</a></p>
+<p><b>Excluding Referrals</b></p>
+<p>Aren’t referrals a good thing? Absolutely. But there are a few cases where you’ll get bad referral data.</p>
+<p>For example, just about every site I’ve ever looked at has self-referrals. This is a referral from your own domain. When you haven’t installed the tracking code on every page of your site, it’s possible for people to visit a page without being tracked. Then, when they move to a page that is tracking visitors, it will look like they came from your own domain.</p>
+<p>But be warned, this will impact how sessions are calculated throughout your data. If you have a complicated install or want to be careful with your sessions, read through the <a href="https://support.google.com/analytics/answer/2795830?hl=en&#038;ref_topic=2790009">documentation here.</a></p>
+<p><b>Excluding Search Terms</b></p>
+<p>We now can exclude search terms from our data.</p>
+<p>Subsequently, any traffic that uses that search term will be classified as direct traffic and NOT organic search traffic.</p>
+<p>Some people might use this to clean up their search data a bit. On a lot of sites, the majority of search traffic comes from branded keywords. In those cases, you’re not really pulling in search traffic – people are just using Google as a navigational tool to find your site. But permanently removing this data from your reports might be going a little overboard. A better option is to create a new channel for branded search traffic in your Multi-Channel Reports.</p>
+<p>Here’s all the <a href="https://support.google.com/analytics/answer/2795833?hl=en&#038;ref_topic=2790009">information on excluding search terms.</a></p>
+<h3>B. Custom Dimensions and Metrics</h3>
+<p>In the standard Google Analytics, we had the option to create custom variables. Basically, they let us assign whatever data we wanted to visitors, sessions, or one-time events. Then we could pull this data up in Google Analytics.</p>
+<p>In Universal Analytics, custom variables are called custom dimensions. We also have the option to create custom metrics. Regular Google Analytics accounts are limited to 20 of each. (Premium accounts are limited to 200 of each.)</p>
+<p>There is one constraint with these. Every time you record a dimension or metric, you have to record it WITH another data type in Universal Analytics (like a pageview, event, or ecommerce transaction). You cannot record dimensions and metrics on their own.</p>
+<p>To set up a custom dimension or metric, you need to complete two steps.</p>
+<p><b>Step 1: Define the dimension or metric within your Universal Analytics account. </b></p>
+<p>From one of your reports, go to Admin and then “Custom Definitions.” From here, you’ll be able to create new dimensions and metrics from within Google Analytics.</p>
+<p>For dimensions, you’ll need to assign a name, a scope, and make sure the active box is checked.</p>
+<p>So what’s scope? Scope dictates what level the custom dimension will apply to. Here’s how they break down:</p>
+<ul>
+<li><strong>Hit</strong>: the dimension is added to a single action only.</li>
+<li><strong>Session</strong>: every action made during that session will have the dimension added.</li>
+<li><strong>User</strong>: the dimension is added to the current and future sessions from that visitor.</li>
+</ul>
+<p>Metrics are a bit easier, you’ll need to define the minimum and maximum values while deciding whether it’s an integer, currency, or time.</p>
+<p>Google has a pretty <a href="https://developers.google.com/analytics/devguides/platform/features/customdimsmets?hl=en_US">lengthy guide (along with some examples) on custom dimensions and metrics here.</a></p>
+<p><b>Step 2: Install JavaScript on your site to track dimensions and metrics.</b></p>
+<p>Setting up the dimensions and metrics doesn’t send data into Google Analytics. It just helps Google figure out what’s going on when you do send data into your account. So you’ll need to install on your site the code that sends the custom dimensions and metrics when they’re triggered.</p>
+<p>Remember, you can’t fire a custom dimension or metric by itself. It needs to be attached to a pageview, event, ecommerce transaction, or some other data type that’s already getting sent to Google Analytics. <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/custom-dims-mets">Check out the code here for examples on how to do this.</a></p>
+<h3>C. The New Measurement Protocol</h3>
+<p>The Measurement Protocol lets you send data into Google Analytics from just about any device you want. Using an HTTP request, you now can send data from call centers, point of sale systems, or other devices.</p>
+<p>Most small businesses won’t need to set this up. But if you’ve been looking for ways to get data from other systems into Google Analytics, this is one of the best options to do it.</p>
+<p>More <a href="https://developers.google.com/analytics/devguides/collection/protocol/v1/devguide">information on how to get this working is here.</a></p>
+<h3>D. Other Odds and Ends</h3>
+<p>There also are a few more changes that have been made with Universal Analytics.</p>
+<ul>
+<li>Universal Analytics uses a new cookie to identify users and it lasts 2 years. This expiration gets pushed back with each visit.</li>
+<li>The new user cookie also works across all subdomains so you no longer have to do a lot of customization to track people between different subdomains. It&#8217;s built right into the standard tracking code.</li>
+<li>Content experiments, AdSense, and Remarketing aren’t enabled for Universal Analytics yet. If you heavily depend on these, you’ll have to wait for them to become available.</li>
+<li>The ecommerce tracking code is a separate block of code now. Previously, it was embedded into the standard Google Analytics Tracking Code.</li>
+</ul>
+<h2>Should You Switch?</h2>
+<p>Whether you should switch to Universal Analytics depends on how much customization you’ve already done to Google Analytics and how experienced your team is.</p>
+<p>If you haven’t done much with Google Analytics beyond installing the standard tracking code, setting up a few events, and ecommerce tracking, getting Universal Analytics going won’t be too much trouble. In this case, I’d start collecting data with a Universal Analytics property as soon as possible. The current changes won’t impact your business much, but we’ll all be forced to switch sooner or later as the old version gets phased out. And, hopefully, Google has some bigger improvements in the pipeline.</p>
+<p>But other sites have gone pretty deep with Google Analytics. They have hundreds of events set up, virtual pageviews, custom variables, and modifications to the tracking code.</p>
+<p>If you have an in-house analytics team that manages all of this for you (or even a single developer that handles the analytics implementation), cut them loose on it. Send these links over to them and have them start working through the transition.</p>
+<p>I’d keep all of the old Google Analytics code working for now, just in case Google puts together a decent migration. There’s no sense in permanently splitting up your data unless you have to.</p>
+<p>But what if you have a complicated install and you don’t have anyone to help you with the transition? Then I’d hold off for the time being and wait until Google releases more features. You also might want to find some room in your budget to get a <a href="http://www.google.com/analytics/partners/index.html">Google Analytics Partner</a> to help you through everything.</p>
+<p>What other changes have we missed? Definitely let us know in the comments!</p>
+<p><b>About the Authors:</b> Zach Bulygo is a content writer for Kissmetrics. You can find him on Twitter <a href="https://twitter.com/#!/zachcb1">here</a>.</p>
+<p>Lars Lofgren is the <a href="http://www.kissmetrics.com/">Kissmetrics</a> Marketing Analyst and has his Google Analytics Individual Qualification (he’s certified). Learn how to grow your business at his <a href="http://larslofgren.com/" rel="nofollow">marketing blog</a> or follow him on Twitter <a href="https://twitter.com/LarsLofgren">@larslofgren</a>.</p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Funiversal-analytics%2F&source=tweetbutton&text=Universal+Analytics%3A+Switching+to+the+Next+Version+of+Google+Analytics&url=https%3A%2F%2Fblog.kissmetrics.com%2Funiversal-analytics%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Funiversal-analytics%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=Universal Analytics: Switching to the Next Version of Google Analytics&amp;body=https://blog.kissmetrics.com/universal-analytics/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-20416 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-100614">
+    <div id="comment-100614" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-100614" class="comment-date">Apr 10, 2013 at 10:04 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hy, I also noticed Universal Analytics. I am really excited to check out this. But moving to Universal Analytics is time consuming task as you said and I need to manually change code</p>
+<p>Thanks</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=100614#respond' onclick='return addComment.moveForm( "comment-100614", "100614", "respond", "20416" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-100618">
+    <div id="comment-100618" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-100618" class="comment-date">Apr 10, 2013 at 10:14 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Yeah, changing all the code will take a lot of time for sites that have done a bunch of custom work in Google Analytics.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=100618#respond' onclick='return addComment.moveForm( "comment-100618", "100618", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even depth-2" id="li-comment-101461">
+    <div id="comment-101461" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-101461" class="comment-date">Apr 14, 2013 at 10:58 am</a>      </div><!-- /.comment-meta -->
+
+      <p>It will kill time but get better results. Universal Analytics is better than previous one.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=101461#respond' onclick='return addComment.moveForm( "comment-101461", "101461", "respond", "20416" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-100643">
+    <div id="comment-100643" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Vademecum</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-100643" class="comment-date">Apr 10, 2013 at 12:25 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Lars, this is by far the most complete description I&#8217;ve read about Universal Analytics. After reading your post I can say that for me these new features within the Universal Analytics are not enough to go through the hassle of changing all the codes. I guess I&#8217;ll wait. Thanks.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=100643#respond' onclick='return addComment.moveForm( "comment-100643", "100643", "respond", "20416" )' aria-label='Reply to Vademecum'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-100644">
+    <div id="comment-100644" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-100644" class="comment-date">Apr 10, 2013 at 12:27 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks! For the moment, it&#8217;s probably best to wait until some bigger improvements come out that will justify the work to migrate everything.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=100644#respond' onclick='return addComment.moveForm( "comment-100644", "100644", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-100675">
+    <div id="comment-100675" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kyle Wild</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-100675" class="comment-date">Apr 10, 2013 at 3:33 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This article is awesome.  In a past life, I wrote guide content inside of the Google Analytics team, and I must say, this is much better than anything I put out there.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=100675#respond' onclick='return addComment.moveForm( "comment-100675", "100675", "respond", "20416" )' aria-label='Reply to Kyle Wild'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-100677">
+    <div id="comment-100677" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-100677" class="comment-date">Apr 10, 2013 at 3:37 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Kyle!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=100677#respond' onclick='return addComment.moveForm( "comment-100677", "100677", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-100782">
+    <div id="comment-100782" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Gemma Holloway</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-100782" class="comment-date">Apr 11, 2013 at 7:29 am</a>      </div><!-- /.comment-meta -->
+
+      <p>An excellent explanation of Universal Analytics with some particularly helpful links yo help you set things up.</p>
+<p>I&#8217;ll definitely be bookmarking this post for future reference.</p>
+<p>Thanks Lars.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=100782#respond' onclick='return addComment.moveForm( "comment-100782", "100782", "respond", "20416" )' aria-label='Reply to Gemma Holloway'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-100792">
+    <div id="comment-100792" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-100792" class="comment-date">Apr 11, 2013 at 8:47 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Gemma!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=100792#respond' onclick='return addComment.moveForm( "comment-100792", "100792", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-101025">
+    <div id="comment-101025" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-101025" class="comment-date">Apr 12, 2013 at 2:49 am</a>      </div><!-- /.comment-meta -->
+
+      <p>A very comprehensive post thanks.<br />
+I&#8217;ve just installed the beta into a few test sites today. Going to give it a week to populate them with some data then really going to get my teeth stuck into them.<br />
+Can&#8217;t wait.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=101025#respond' onclick='return addComment.moveForm( "comment-101025", "101025", "respond", "20416" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-101088">
+    <div id="comment-101088" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-101088" class="comment-date">Apr 12, 2013 at 8:31 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Good luck Net66! Let us know how it goes.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=101088#respond' onclick='return addComment.moveForm( "comment-101088", "101088", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-101156">
+    <div id="comment-101156" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Benjamin Mangold</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-101156" class="comment-date">Apr 12, 2013 at 7:44 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Universal Analytics also allows you to blend online and offline interactions. For example, if you had a loyalty card, you could track an individuals in-store and online purchases using Google Analytics.</p>
+<p>We created a demo to help show the full potential of Universal Analytics. See how we tracked coffee, tea and more into Google Analytics: <a href="http://www.youtube.com/watch?v=C27yMQOS8n0" rel="nofollow">http://www.youtube.com/watch?v=C27yMQOS8n0</a></p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=101156#respond' onclick='return addComment.moveForm( "comment-101156", "101156", "respond", "20416" )' aria-label='Reply to Benjamin Mangold'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-101746">
+    <div id="comment-101746" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-101746" class="comment-date">Apr 15, 2013 at 2:54 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Nice integration of the fridge, coffee, and tea tracking. :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=101746#respond' onclick='return addComment.moveForm( "comment-101746", "101746", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-101460">
+    <div id="comment-101460" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-101460" class="comment-date">Apr 14, 2013 at 10:56 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you for sharing this information. How does it effects on SEO? Is there any negetive impact on existing SEO?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=101460#respond' onclick='return addComment.moveForm( "comment-101460", "101460", "respond", "20416" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-101745">
+    <div id="comment-101745" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-101745" class="comment-date">Apr 15, 2013 at 2:49 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Using Universal Analytics or the standard Google Analytics won&#8217;t have any impact on your SEO.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=101745#respond' onclick='return addComment.moveForm( "comment-101745", "101745", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-102160">
+    <div id="comment-102160" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/carmenmardiros' rel='external nofollow' class='url'>Carmen Mardiros</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-102160" class="comment-date">Apr 17, 2013 at 5:21 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great intro. Can&#8217;t wait to get my hands dirty. </p>
+<p>In many ways migrating to Universal Analytics is a good time to start using Tag Management to send events and seamlessly integrate with many other analytics tools. Lots of work to do upfront (on a case by case basis) but in the long run, it will pay dividends in terms of future costs and speed of getting analytics implemented and reducing reliance on IT support.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=102160#respond' onclick='return addComment.moveForm( "comment-102160", "102160", "respond", "20416" )' aria-label='Reply to Carmen Mardiros'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-102234">
+    <div id="comment-102234" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-102234" class="comment-date">Apr 17, 2013 at 11:36 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I completely agree, this is a perfect time to also start using the Google Tag Manager if you aren&#8217;t already.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=102234#respond' onclick='return addComment.moveForm( "comment-102234", "102234", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-103398">
+    <div id="comment-103398" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">frank</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-103398" class="comment-date">Apr 24, 2013 at 5:53 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Looks like kissMetrics can kiss away its overpriced business model.   With the combination of server side tracking and universal analytics, there is no need to pay for Kiss any longer.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=103398#respond' onclick='return addComment.moveForm( "comment-103398", "103398", "respond", "20416" )' aria-label='Reply to frank'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-103430">
+    <div id="comment-103430" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-103430" class="comment-date">Apr 24, 2013 at 9:47 am</a>      </div><!-- /.comment-meta -->
+
+      <p>So far, the updates in Universal Analytics haven&#8217;t included any of the main benefits of KISSmetrics.</p>
+<p>For example:<br />
+-Being able to update or add historical data.<br />
+-First-touch attribution only extends to 60 days before purchase in Universal Analytics, there are no limits in KISSmetrics.<br />
+-Because you can&#8217;t track multiple purchases, you don&#8217;t get metrics like Lifetime Value, Monthly Recurring Revenue, or Churn. You get all of these in KISSmetrics.<br />
+-You can easily add any data you want to KISSmetrics using a MySQL database or CSV file.<br />
+-When people become a customer, all of their historical and anonymous data gets connected to their customer profile.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=103430#respond' onclick='return addComment.moveForm( "comment-103430", "103430", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-3" id="li-comment-103550">
+    <div id="comment-103550" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Pieter-Paul</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-103550" class="comment-date">Apr 25, 2013 at 6:51 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Are you sure that this: </p>
+<p>&#8220;When people become a customer, all of their historical and anonymous data gets connected to their customer profile&#8221;</p>
+<p>Is legal? Storing anonymous data on a personal level isn&#8217;t.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=103550#respond' onclick='return addComment.moveForm( "comment-103550", "103550", "respond", "20416" )' aria-label='Reply to Pieter-Paul'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even depth-3" id="li-comment-103558">
+    <div id="comment-103558" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-103558" class="comment-date">Apr 25, 2013 at 8:17 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Yes, it&#8217;s legal.</p>
+<p>No personal data is collected on anonymous traffic.</p>
+<p>People are only identified AFTER they become a customer or user. For example, they might give you their info by creating an account on your site, purchasing something, or signing up for an email newsletter. At this point, we combine their previously anonymous data into their customer profile. But for everyone else that hasn&#8217;t signed up yet, they remain anonymous.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=103558#respond' onclick='return addComment.moveForm( "comment-103558", "103558", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-103445">
+    <div id="comment-103445" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Alastair McDermott</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-103445" class="comment-date">Apr 24, 2013 at 11:30 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Does anyone know how well the new Universal Analytics code works with Analytics trackEvent push code?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=103445#respond' onclick='return addComment.moveForm( "comment-103445", "103445", "respond", "20416" )' aria-label='Reply to Alastair McDermott'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-103446">
+    <div id="comment-103446" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-103446" class="comment-date">Apr 24, 2013 at 11:37 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Yup, tracking events will work with Universal Analytics. They still function the same way but you will need to update the tracking code for them. You can find examples of the new code here: <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/events" rel="nofollow">https://developers.google.com/analytics/devguides/collection/analyticsjs/events</a></p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=103446#respond' onclick='return addComment.moveForm( "comment-103446", "103446", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-103745">
+    <div id="comment-103745" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-103745" class="comment-date">Apr 26, 2013 at 8:57 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you for information about Universal Analytics. I was thinking how can I implement new analytics code into my site and now I&#8217;m very happy to know it :))</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=103745#respond' onclick='return addComment.moveForm( "comment-103745", "103745", "respond", "20416" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-105091">
+    <div id="comment-105091" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-105091" class="comment-date">May 06, 2013 at 6:34 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi,</p>
+<p>Great post. Can anybody tell me how to push offline conversion as custom dimension?</p>
+<p>Thanks in advance.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=105091#respond' onclick='return addComment.moveForm( "comment-105091", "105091", "respond", "20416" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-105440">
+    <div id="comment-105440" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kenold Beauplan</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-105440" class="comment-date">May 08, 2013 at 7:16 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great post! Very detailed info here. I&#8217;m planning to set up cross-domain tracking for 2 different domains for a friend. Domain 1 is using the Universal GA code but domain 2 is using the Classic version. Will it still work? Also how would I add setDomainName in the Universal code? (see below) Thanks</p>
+<p>  ga(&#8216;create&#8217;, &#8216;UA-xxxxxxx-2&#8217;, &#8216;domain1.com&#8217;);<br />
+  ga(&#8216;send&#8217;, &#8216;pageview&#8217;);</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=105440#respond' onclick='return addComment.moveForm( "comment-105440", "105440", "respond", "20416" )' aria-label='Reply to Kenold Beauplan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-105475">
+    <div id="comment-105475" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-105475" class="comment-date">May 08, 2013 at 1:37 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Right now, it&#8217;s not even possible to migrate an old Google Analytics profile to a Universal Analytics Profile. So you won&#8217;t be able to setup cross-domain tracking using each version. This may change in the future.</p>
+<p>But in general, it&#8217;s best to use the same version of the Google Analytics Tracking Code across all the domains and subdomains that you&#8217;re tracking with a single profile. Each new version gets major updates and you&#8217;ll want consistency across your data.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=105475#respond' onclick='return addComment.moveForm( "comment-105475", "105475", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-105601">
+    <div id="comment-105601" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-105601" class="comment-date">May 09, 2013 at 5:00 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi,</p>
+<p>Can anybody tell me how to push custom metrics in Universal Analytics.</p>
+<p>I have tried this way:</p>
+<p>ga(‘set’, ‘metric1′, 1);</p>
+<p>And</p>
+<p>ga(‘send’, ‘Lead’, ‘Offline’, ‘Lead’, {‘metric1′: 1});</p>
+<p>But its not seems working.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=105601#respond' onclick='return addComment.moveForm( "comment-105601", "105601", "respond", "20416" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-108128">
+    <div id="comment-108128" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jack Dill</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-108128" class="comment-date">May 24, 2013 at 7:59 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great information, but I think I&#8217;m missing something regarding using Universal Analytics and Google Analytics &#8220;at the same time.&#8221;  </p>
+<p>If I create a 2nd property (under my GA account), then install the new tracking code (by replacing all the old tracking code on my site), how can Google continue to track information associated with the old property?</p>
+<p>Wouldn&#8217;t tracking for the old property stop as soon as the new tracking code was installed on the site, and only continue for the new property?</p>
+<p>Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=108128#respond' onclick='return addComment.moveForm( "comment-108128", "108128", "respond", "20416" )' aria-label='Reply to Jack Dill'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-108137">
+    <div id="comment-108137" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-108137" class="comment-date">May 24, 2013 at 9:08 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Jack!</p>
+<p>Yes, by completely replacing the standard Google Analytics Tracking Code with the new Universal Analytics Tracking Code in a new profile, the old profile will stop collecting data.</p>
+<p>If you want to collect data in both profiles, you&#8217;ll have to use both versions of the Google Analytics code at the same time. This means you&#8217;ll have two versions of everything. If you were to track an event for example, you&#8217;d have to track it twice (once for each version). And you&#8217;ll need to install both versions of the Tracking Code on every page of your site.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=108137#respond' onclick='return addComment.moveForm( "comment-108137", "108137", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-3" id="li-comment-108813">
+    <div id="comment-108813" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anshul Kumar</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-108813" class="comment-date">May 28, 2013 at 9:38 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi,</p>
+<p>In fact i have put both traditionals and Universal analytics codes on the site, but i am experiencing that universal is collecting higher numbers from my old version.</p>
+<p>What could be the reason for this?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=108813#respond' onclick='return addComment.moveForm( "comment-108813", "108813", "respond", "20416" )' aria-label='Reply to Anshul Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt depth-2" id="li-comment-170673">
+    <div id="comment-170673" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Rachel Factor</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-170673" class="comment-date">Mar 07, 2014 at 2:25 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Jack,</p>
+<p>Hopefully you get this, but it&#8217;s pretty old. I have an issue where a client wants to place both tags on their site so they can have remarketing functionality in classic GA and demographic data in Universal GA. Did you ever figure this out? Was it possible to run both tags on your site? I would really appreciate any help on this issue.</p>
+<p>Thanks,</p>
+<p>Rachel</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=170673#respond' onclick='return addComment.moveForm( "comment-170673", "170673", "respond", "20416" )' aria-label='Reply to Rachel Factor'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-108130">
+    <div id="comment-108130" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jack Dill</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-108130" class="comment-date">May 24, 2013 at 8:09 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Another question, but slightly off topic. My site was created a couple years ago and contains the following GA code: </p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+<p>_uacct = &#8220;UA-1234567-1&#8221;;<br />
+urchinTracker();</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+<p>When I go into my GA account and view the tracking code available today, it looks quite different. My question is, what happens to my GA history (if anything) if I replace the current code above with the new code (below)?</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+<p>  var _gaq = _gaq || [];<br />
+  _gaq.push([&#8216;_setAccount&#8217;, &#8216;UA-1234567-1&#8217;]);<br />
+  _gaq.push([&#8216;_trackPageview&#8217;]);</p>
+<p>  (function() {<br />
+    var ga = document.createElement(&#8216;script&#8217;); ga.type = &#8216;text/javascript&#8217;; ga.async = true;<br />
+    ga.src = (&#8216;https:&#8217; == document.location.protocol ? &#8216;https://ssl&#8217; : &#8216;http://www&#8217;) + &#8216;.google-analytics.com/ga.js&#8217;;<br />
+    var s = document.getElementsByTagName(&#8216;script&#8217;)[0]; s.parentNode.insertBefore(ga, s);<br />
+  })();</p>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+<p>Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=108130#respond' onclick='return addComment.moveForm( "comment-108130", "108130", "respond", "20416" )' aria-label='Reply to Jack Dill'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-108135">
+    <div id="comment-108135" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-108135" class="comment-date">May 24, 2013 at 9:04 am</a>      </div><!-- /.comment-meta -->
+
+      <p>That&#8217;s a very old version of the tracking code. Regardless of what you decide to do with Universal Analytics, you should update it to the asynchronous version of the standard Google Analytics Tracking Code. This won&#8217;t impact your historical data at all.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=108135#respond' onclick='return addComment.moveForm( "comment-108135", "108135", "respond", "20416" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-108156">
+    <div id="comment-108156" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-108156" class="comment-date">May 24, 2013 at 12:21 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Excellent guide the new Google Analytics, thanks for the input, it is certainly a great help to understand everything new we can do with this update. thanks</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=108156#respond' onclick='return addComment.moveForm( "comment-108156", "108156", "respond", "20416" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-108687">
+    <div id="comment-108687" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Afzal</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-108687" class="comment-date">May 28, 2013 at 9:47 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Wow. This is the most useful article I’ve seen in a while. Thanks for posting!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=108687#respond' onclick='return addComment.moveForm( "comment-108687", "108687", "respond", "20416" )' aria-label='Reply to Afzal'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-108815">
+    <div id="comment-108815" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anshul Kumar</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-108815" class="comment-date">May 28, 2013 at 9:40 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi,</p>
+<p>I am using both traditional and universal codes on the site, the admin tweaking powers are great, but i am experiencing higher numbers with the new universal analytics compared to the older version.</p>
+<p>I am using both the codes together, still getting this difference, </p>
+<p>Anyone out there who is experiencing the same, do tell me?</p>
+<p>anshul</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=108815#respond' onclick='return addComment.moveForm( "comment-108815", "108815", "respond", "20416" )' aria-label='Reply to Anshul Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-110882">
+    <div id="comment-110882" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Christine</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-110882" class="comment-date">Jun 12, 2013 at 9:54 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;m new at this, and this may sound dumb, but&#8230; I added the Universal Analytics code to an XHTML 1.0 Transitional page, and when I run it through the W3 validator it shows an error that the  at the beginning is missing the type=&#8221;text/javascript&#8221; and therefore the page won&#8217;t validate. Will this be a problem? Thanks.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=110882#respond' onclick='return addComment.moveForm( "comment-110882", "110882", "respond", "20416" )' aria-label='Reply to Christine'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-115659">
+    <div id="comment-115659" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Lifan Shiu</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-115659" class="comment-date">Jul 24, 2013 at 2:38 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;ve been using Google Tag Manager to implement both the old Google Analytics tag and Google Univeral Analytics and it works great! I also see that the numbers of Universal Analytics is slightly lower, but that would mean that it works perfect since UA looks at an user visit through multiple devices/ browsers/ platforms.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=115659#respond' onclick='return addComment.moveForm( "comment-115659", "115659", "respond", "20416" )' aria-label='Reply to Lifan Shiu'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-120050">
+    <div id="comment-120050" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">maria del riccio</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-120050" class="comment-date">Aug 30, 2013 at 5:28 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi,<br />
+I have implemented UA on a couple of sites but I see a big discrepancy between the traffic reported in UA and on the Asynchronous version. The UA account is reporting much less traffic.<br />
+I have been googling a lot but haven&#8217;t found anything about it. Does anyone have the same experience?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=120050#respond' onclick='return addComment.moveForm( "comment-120050", "120050", "respond", "20416" )' aria-label='Reply to maria del riccio'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-125399">
+    <div id="comment-125399" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">John Warden</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-125399" class="comment-date">Oct 08, 2013 at 10:14 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I have the same issue.  I have both tags on my site and the old account is reporting 60-80% more traffic across all pages on the site.</p>
+<p>Have you figured anything else.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=125399#respond' onclick='return addComment.moveForm( "comment-125399", "125399", "respond", "20416" )' aria-label='Reply to John Warden'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-125236">
+    <div id="comment-125236" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Lav</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-125236" class="comment-date">Oct 06, 2013 at 11:03 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi,</p>
+<p>Is it possible to track the visitors who has subscribed for a blog wither through email or through Rss feed without using a third party tool.</p>
+<p>For example:</p>
+<p>Blog Subscription<br />
+via RSS Feed<br />
+via Email:</p>
+<p>Regards,</p>
+<p>Lav</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=125236#respond' onclick='return addComment.moveForm( "comment-125236", "125236", "respond", "20416" )' aria-label='Reply to Lav'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-125237">
+    <div id="comment-125237" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Lav</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-125237" class="comment-date">Oct 06, 2013 at 11:04 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi, Is it possible to get visitors details by industry/organization in google analytics ?</p>
+<p>Can we get visitors location on a smaller scale i.e. lesser then city i.e. USA -&gt; Chicago &#8211; &gt; naperville, so here i need to see &#8220;neperville&#8221; in my google analytics report. Is it possible to do this?</p>
+<p>Please reply for this.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=125237#respond' onclick='return addComment.moveForm( "comment-125237", "125237", "respond", "20416" )' aria-label='Reply to Lav'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-126375">
+    <div id="comment-126375" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Riana</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-126375" class="comment-date">Oct 16, 2013 at 7:38 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi, I have the same question as the last comments on this post. I have also implemented both versions of the codes but the UA numbers are far less than the GA numbers. Does anybody have any information regarding this?<br />
+thanks<br />
+Riana</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=126375#respond' onclick='return addComment.moveForm( "comment-126375", "126375", "respond", "20416" )' aria-label='Reply to Riana'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-126377">
+    <div id="comment-126377" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Riana</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-126377" class="comment-date">Oct 16, 2013 at 8:18 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Found the issue, the PC data for both were very close. We weren&#8217;t tracking mobile website and mobile pages correctly. So my conclusion is that the two profiles data should be close.. if not, try and find the implementation issue.<br />
+Riana</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=126377#respond' onclick='return addComment.moveForm( "comment-126377", "126377", "respond", "20416" )' aria-label='Reply to Riana'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-128699">
+    <div id="comment-128699" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Lakshmi</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-128699" class="comment-date">Nov 07, 2013 at 7:05 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi , </p>
+<p>We are planning in implementing universal Analytic&#8217;s for our clients. My question is can we have both classic as well as UA codes for e-comm tracking? </p>
+<p>Would that be an issue? Please help.</p>
+<p>Thanks, in advance.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=128699#respond' onclick='return addComment.moveForm( "comment-128699", "128699", "respond", "20416" )' aria-label='Reply to Lakshmi'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-129909">
+    <div id="comment-129909" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-129909" class="comment-date">Nov 16, 2013 at 11:17 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Lakshmi,<br />
+ You actually have to replace the Classical Analytics code with the new Universal Analytics tracking code. You can only use one. I hope this comment helps!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=129909#respond' onclick='return addComment.moveForm( "comment-129909", "129909", "respond", "20416" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-143347">
+    <div id="comment-143347" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Lee Blankenship</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-143347" class="comment-date">Dec 26, 2013 at 11:11 am</a>      </div><!-- /.comment-meta -->
+
+      <p>There is another solution to retagging your site that eliminates the conversation on whether or not UA was worth the effort. Our team created a free open source JavaScript library called Airlock.js that automatically turns your asynchronous Google Analytics calls into Universal Analytics calls. It also works with tag management systems (we built Satellite TMS which is now Adobe DTM) This removes the burden of having to re-implement all that event tracking when upgrading to Universal Analytics and allows you to focus on taking advantage of the new features UA offers until such time as you want to retag everything.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=143347#respond' onclick='return addComment.moveForm( "comment-143347", "143347", "respond", "20416" )' aria-label='Reply to Lee Blankenship'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-144431">
+    <div id="comment-144431" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Pankaj Malik</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-144431" class="comment-date">Dec 30, 2013 at 3:52 am</a>      </div><!-- /.comment-meta -->
+
+      <p>It is totally fine using both the codes &#8211; UA and Standard GA. It is mentioned in google developers section</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=144431#respond' onclick='return addComment.moveForm( "comment-144431", "144431", "respond", "20416" )' aria-label='Reply to Pankaj Malik'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-146850">
+    <div id="comment-146850" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Rajesh</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-146850" class="comment-date">Jan 05, 2014 at 10:01 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>With Google providing a new Universal GA code , would like to know if existing events tracking codes will automatically work for the new GA code or is there a need to update the events tracking codes as well. If it is the latter, how does one get to update the new event tracking code(s)?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=146850#respond' onclick='return addComment.moveForm( "comment-146850", "146850", "respond", "20416" )' aria-label='Reply to Rajesh'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-151543">
+    <div id="comment-151543" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jurik</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-151543" class="comment-date">Jan 15, 2014 at 5:04 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Did you try to just set a dimension and later fire an event? Somehow it doesn&#8217;t work for me &#8211; results don&#8217;t show up.</p>
+<p>But documentations says: </p>
+<p>&#8220;In some cases, you might want to send a custom dimension or metric with all the hits on a given page (or for the lifetime of the tracker object). In this case, you can set the custom dimension or metrics using the set command:</p>
+<p>ga(&#8216;set&#8217;, &#8216;dimension5&#8217;, &#8216;custom data&#8217;);&#8221;</p>
+<p>First I set a dimension, then I fire an event &#8211; now I expect that my dimension will get send to GA too &#8211; but it won&#8217;t. Any ideas why?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=151543#respond' onclick='return addComment.moveForm( "comment-151543", "151543", "respond", "20416" )' aria-label='Reply to Jurik'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-155476">
+    <div id="comment-155476" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Robin</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-155476" class="comment-date">Jan 22, 2014 at 11:49 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I ran into the same problem. I changed my code from ga(&#8216;set&#8217;, &#8216;dimension1&#8217;, &#8216;Employee&#8217;) to ga(&#8216;send&#8217;, &#8216;pageview&#8217;, &#8216;dimension1&#8217;, &#8216;Employee&#8217;). That should trigger to send the custom dimension on every pageview.</p>
+<p>Hopes this helps you!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=155476#respond' onclick='return addComment.moveForm( "comment-155476", "155476", "respond", "20416" )' aria-label='Reply to Robin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-3" id="li-comment-155493">
+    <div id="comment-155493" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Robin</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-155493" class="comment-date">Jan 23, 2014 at 12:07 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Oops! Not quite the right code, try this ga(‘send’, ‘pageview’, {‘dimension1′: ‘Employee’})</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=155493#respond' onclick='return addComment.moveForm( "comment-155493", "155493", "respond", "20416" )' aria-label='Reply to Robin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-152307">
+    <div id="comment-152307" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Hareesh</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-152307" class="comment-date">Jan 16, 2014 at 10:55 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi, </p>
+<p>Is there any way to shift from Universal analytic to Classic analytic in Google Analytic?<br />
+Reason : Trying to track demography info in universal analytic in GA. Got to know that this is not possible.</p>
+<p>Appreciate your reply<br />
+Hareesh</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=152307#respond' onclick='return addComment.moveForm( "comment-152307", "152307", "respond", "20416" )' aria-label='Reply to Hareesh'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-154010">
+    <div id="comment-154010" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Rick</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-154010" class="comment-date">Jan 20, 2014 at 1:32 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>The switch is permanent.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=154010#respond' onclick='return addComment.moveForm( "comment-154010", "154010", "respond", "20416" )' aria-label='Reply to Rick'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-154076">
+    <div id="comment-154076" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jacky Qi</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-154076" class="comment-date">Jan 20, 2014 at 5:12 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi all,</p>
+<p>Does anyone have an idea when remarketing list will be supported by Universal Analytics? Or can I just revert to the last version where I can use Remarketing list?</p>
+<p>Thanks</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=154076#respond' onclick='return addComment.moveForm( "comment-154076", "154076", "respond", "20416" )' aria-label='Reply to Jacky Qi'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-156479">
+    <div id="comment-156479" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Oscar Ochoa</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-156479" class="comment-date">Jan 24, 2014 at 12:57 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This article is great thanks for the explanation very complete but&#8230; </p>
+<p>///Looking at your website (kissmetrics.com) website, I noticed that you already installed the Google tag manager code, however, the snnipet is installed right after the head tag, conr=trary to what you mentioned in the article above, Is there any particular reason why this is happening</p>
+<p>Thanks!<br />
+Oscar</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=156479#respond' onclick='return addComment.moveForm( "comment-156479", "156479", "respond", "20416" )' aria-label='Reply to Oscar Ochoa'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-157932">
+    <div id="comment-157932" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Alex</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-157932" class="comment-date">Jan 29, 2014 at 8:41 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Should the tracking code be before the  tag or right after the  tag?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=157932#respond' onclick='return addComment.moveForm( "comment-157932", "157932", "respond", "20416" )' aria-label='Reply to Alex'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-157937">
+    <div id="comment-157937" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Alex</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-157937" class="comment-date">Jan 29, 2014 at 8:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hello</p>
+<p>I noticed my comment did not appear as I expected. Here is the corrected version:</p>
+<p>Should the tracking code be before the closed &#8216;head&#8217; tag or right after the opening &#8216;body&#8217; tag?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=157937#respond' onclick='return addComment.moveForm( "comment-157937", "157937", "respond", "20416" )' aria-label='Reply to Alex'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-160581">
+    <div id="comment-160581" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dane Trbovic</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-160581" class="comment-date">Feb 12, 2014 at 5:08 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Lars,<br />
+we have switched to Universal Analytics about 24h ago, and today we have around 50% less traffic and events triggered than before.<br />
+Is there any way we have missed something, or did something wrong?<br />
+Thank you,<br />
+King Regards</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=160581#respond' onclick='return addComment.moveForm( "comment-160581", "160581", "respond", "20416" )' aria-label='Reply to Dane Trbovic'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-161189">
+    <div id="comment-161189" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-161189" class="comment-date">Feb 14, 2014 at 3:51 am</a>      </div><!-- /.comment-meta -->
+
+      <p>For us marketeers the new Analytic`s it`s great, I love the flow data.  I also at the same time get emails from clients who are genuinely confused with all the additional options, it`s a little to much for them to take in.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=161189#respond' onclick='return addComment.moveForm( "comment-161189", "161189", "respond", "20416" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-165284">
+    <div id="comment-165284" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Greg Schudel</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-165284" class="comment-date">Feb 25, 2014 at 12:16 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Is there a difference between GA Version 5 and Google Analytics Universal?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=165284#respond' onclick='return addComment.moveForm( "comment-165284", "165284", "respond", "20416" )' aria-label='Reply to Greg Schudel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-178607">
+    <div id="comment-178607" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Deepika</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-178607" class="comment-date">Mar 22, 2014 at 10:43 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I have not used Universal analytics for any of my sites. This information is going to help me a lot as I want to use universal analytics in one of my website.</p>
+<p>Thanx for the information</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=178607#respond' onclick='return addComment.moveForm( "comment-178607", "178607", "respond", "20416" )' aria-label='Reply to Deepika'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-179685">
+    <div id="comment-179685" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Marc Levesque</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-179685" class="comment-date">Mar 26, 2014 at 6:23 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great post Zack!  We&#8217;ve had to create quite a few more accounts &amp; profiles for clients lately and I&#8217;ve been hesitant about whether or not we should them adopt Universal Analytics right away.  This&#8217;ll is a great resource which I&#8217;ll be happy to share with them.<br />
+Thanks for the great article.<br />
+&#8211; M</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=179685#respond' onclick='return addComment.moveForm( "comment-179685", "179685", "respond", "20416" )' aria-label='Reply to Marc Levesque'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-180562">
+    <div id="comment-180562" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Eithne</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-180562" class="comment-date">Mar 31, 2014 at 5:32 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you for explaining it so clearly and showing how to change these options.  It was exactly what I was looking for.  So many others explained bounce rate etc but did not give information on how you could actually change the settings.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=180562#respond' onclick='return addComment.moveForm( "comment-180562", "180562", "respond", "20416" )' aria-label='Reply to Eithne'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-184098">
+    <div id="comment-184098" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Conrad O'Connell</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-184098" class="comment-date">Apr 15, 2014 at 8:22 am</a>      </div><!-- /.comment-meta -->
+
+      <p>This is very detailed and makes me want to double check all my analytics installs &#8211; always a good thing that we don&#8217;t do enough of.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=184098#respond' onclick='return addComment.moveForm( "comment-184098", "184098", "respond", "20416" )' aria-label='Reply to Conrad O&#039;Connell'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-184397">
+    <div id="comment-184397" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Omar</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-184397" class="comment-date">Apr 16, 2014 at 7:51 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Good post I stumbled upon whilst looking for a live date for Demographic data, that up until now has only worked with the old Google Analytics script (yes kind of silly that the new features don&#8217;t work with the new script yet).</p>
+<p>Anyone heard when the new universal analytics code will deliver the new demographic data?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=184397#respond' onclick='return addComment.moveForm( "comment-184397", "184397", "respond", "20416" )' aria-label='Reply to Omar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-186510">
+    <div id="comment-186510" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Heather Physioc</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-186510" class="comment-date">Apr 23, 2014 at 2:01 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;ve been eager to try out Universal on some of my highest trafficked properties, but the process of adding/switching is too much of a hassle at this point. Also, it&#8217;s still missing many of the core features like AdSense integration and Google Content Experiments at this point. In a perfect world, I&#8217;d be able to flip a switch, update my code, and it would be like Google Analytics + Awesome Universal Stuff. I suppose that would be too logical. :) </p>
+<p>On the bright side, I am really eager to have accurate referral data &#8211; that would be outstanding if it works as planned. Love the idea of adding search engines, too, when GA can&#8217;t put those in the right bucket. (Wish GA was also rolling out improvements to better dump traffic in the right channel buckets without my marketers having to think about proper UTM parameters all the time.) Particularly excited about the Measurement Protocol stuff and its implications for importing things like call center data, could be really revealing I think. </p>
+<p>The splitting up of the data thing, and losing GCE in the meantime, it&#8217;s definitely a big obstacle to me making the switch right now.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=186510#respond' onclick='return addComment.moveForm( "comment-186510", "186510", "respond", "20416" )' aria-label='Reply to Heather Physioc'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-186732">
+    <div id="comment-186732" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-186732" class="comment-date">Apr 24, 2014 at 9:23 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Heather, thanks for the great feedback. Please let us know if there is any way we can help you out. Looking forward to hearing more from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=186732#respond' onclick='return addComment.moveForm( "comment-186732", "186732", "respond", "20416" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-189820">
+    <div id="comment-189820" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Paul</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-189820" class="comment-date">May 08, 2014 at 8:54 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi, i have recently started analysing the data from universal analytics and comparing it to the legacy data.  What i am noticing is that UA is attributing a chunk of &#8220;referral&#8221; traffic to paid search. whilst on the surface this seems to be a good thing, is this actually correct?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=189820#respond' onclick='return addComment.moveForm( "comment-189820", "189820", "respond", "20416" )' aria-label='Reply to Paul'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-191220">
+    <div id="comment-191220" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sean</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-191220" class="comment-date">May 13, 2014 at 9:25 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I have a question more than a comment. The developers I work with do not like to add anything to the head tag of the sites as this can slow things down. Does Universal Analytics have to be in the Head tag? What will happen if it is not? I just want to see if anyone knows before I get started because I will need to change all of this on about 50 sites and am not looking forward to the work it will take.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=191220#respond' onclick='return addComment.moveForm( "comment-191220", "191220", "respond", "20416" )' aria-label='Reply to Sean'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-191612">
+    <div id="comment-191612" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>Neil Patel</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-191612" class="comment-date">May 14, 2014 at 1:23 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Almost all analytical tags go into the head tag as it makes the data more accurate from a reporting perspective. Scripts that are asynchronous should slow down the site much&#8230; and most 3rd parties optimize their script so it doesn&#8217;t slow down your site much at all.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=191612#respond' onclick='return addComment.moveForm( "comment-191612", "191612", "respond", "20416" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-966489">
+    <div id="comment-966489" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Vijay Pashte</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-966489" class="comment-date">Nov 23, 2014 at 8:56 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Neil,</p>
+<p>Just a quick question, On my website there&#8217;s an asynchronous analytics code is present and I haven&#8217;t made any customizations in it. </p>
+<p>We want to install new universal analytics code so, Is it compulsory to add new property in my account or If I can just replace the old code with new one would be okay?</p>
+<p>Please help me out with this query.</p>
+<p>Thanks &amp; Regards,<br />
+Vijay Pashte</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=966489#respond' onclick='return addComment.moveForm( "comment-966489", "966489", "respond", "20416" )' aria-label='Reply to Vijay Pashte'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1099751">
+    <div id="comment-1099751" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kim</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-1099751" class="comment-date">Apr 23, 2015 at 11:28 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Lars,<br />
+Just wondering if there is a limit on the number of GA accounts that you can have access to in your own GA?<br />
+Look forward to hearing back from you.<br />
+Many Thanks, Kim</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=1099751#respond' onclick='return addComment.moveForm( "comment-1099751", "1099751", "respond", "20416" )' aria-label='Reply to Kim'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1148785">
+    <div id="comment-1148785" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Avi</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-1148785" class="comment-date">Aug 18, 2015 at 9:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi,<br />
+We&#8217;ve installed Universal Analytics. We have a web interface and an iPhone app both of which have similar functionality, but there are good reasons why users might switch back and forth between web and app. Both require logging in. </p>
+<p>We&#8217;d like to track active users (daily, weekly, monthly) across devices. At the moment, our Analytics Dashboard seems to display active users on the app and active users on the site separately for each platform. To do the tracking we want, do we have to set up custom metrics or is this naturally supported since the tracking code is already in there? Any help on how we get this data would be super-helpful.</p>
+<p>Thanks!<br />
+Avi</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=1148785#respond' onclick='return addComment.moveForm( "comment-1148785", "1148785", "respond", "20416" )' aria-label='Reply to Avi'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1215434">
+    <div id="comment-1215434" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Trevor Gordon</cite>
+        
+        <a href="https://blog.kissmetrics.com/universal-analytics/#comment-1215434" class="comment-date">Feb 05, 2016 at 2:17 am</a>      </div><!-- /.comment-meta -->
+
+      <p>My Google analytics looks nothing like the one you are using for your example.</p>
+<p>Mine has &#8211; Home &#8211; Reporting &#8211; Customisation &#8211; Admin.</p>
+<p>How can can I tell which version i am using?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/universal-analytics/?replytocom=1215434#respond' onclick='return addComment.moveForm( "comment-1215434", "1215434", "respond", "20416" )' aria-label='Reply to Trevor Gordon'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">119 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/universal-analytics/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='20416' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5db21c6cba" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="199"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'Universal Analytics: Switching to the Next Version of Google Analytics', 'Post URL':'https://blog.kissmetrics.com/universal-analytics/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/future-of-content-marketing/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/guide-to-influencer-targeting/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/universal-analytics/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/universal-analytics/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/universal-analytics/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="Universal Analytics: Switching to the Next Version of Google Analytics" data-url="http://blog.kissmetrics.com/universal-analytics/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'Universal Analytics: Switching to the Next Version of Google Analytics', 'Post URL':'https://blog.kissmetrics.com/universal-analytics/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'Universal Analytics: Switching to the Next Version of Google Analytics', 'Post URL':'https://blog.kissmetrics.com/universal-analytics/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'Universal Analytics: Switching to the Next Version of Google Analytics', 'Post URL':'https://blog.kissmetrics.com/universal-analytics/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":1111,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

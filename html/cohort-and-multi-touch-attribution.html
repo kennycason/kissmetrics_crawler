@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>The Case for Cohort Analysis and Multi-Touch Attribution Analysis</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; Learning More About That Other Half: The Case for Cohort Analysis and Multi-Touch Attribution Analysis Comments Feed" href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Infographic: Why Baby Boomers Need to be Included in Your Marketing Strategy' href='https://blog.kissmetrics.com/baby-boomers-internet-usage/' />
+<link rel='next' title='What Can Sending 2 Billion Emails Tell Us About Mobile Email Habits?' href='https://blog.kissmetrics.com/2-billion-emails/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=23689' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fcohort-and-multi-touch-attribution%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fcohort-and-multi-touch-attribution%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,401] -->
+<meta name="description" content="In B2B SaaS, there are two techniques that I feel are particularly important but not used widely enough – cohort analysis and multi-touch attribution analysis." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='The Case for Cohort Analysis and Multi-Touch Attribution Analysis' />
+<meta property='og:url' content='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='In B2B SaaS, there are two techniques that I feel are particularly important but not used widely enough – cohort analysis and multi-touch attribution analysis.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The Case for Cohort Analysis and Multi-Touch Attribution Analysis" />
+    <meta name="twitter:description" content="In B2B SaaS, there are two techniques that I feel are particularly important but not used widely enough – cohort analysis and multi-touch attribution analysis." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-23689 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'Learning More About That Other Half: The Case for Cohort Analysis and Multi-Touch Attribution Analysis',
+						'Post Category': 'Analytics',
+						'Post URL': 'https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/'
+		}
+	]);
+</script>
+
+<article id="post-23689" class="single-post post-23689 post type-post status-publish format-standard hentry category-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">Learning More About That Other Half: The Case for Cohort Analysis and Multi-Touch Attribution Analysis</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Anyone who has ever worked in marketing or advertising has heard the quote, “Half the money I spend on advertising is wasted; the trouble is I don&#8217;t know which half.” It is from <a href="http://en.wikipedia.org/wiki/John_Wanamaker">John Wanamaker</a> and dates back to the 19th century.</p>
+<p>Fortunately, the industry has come a long way since then; and, especially in the last 10 to 20 years, new technologies have made advertising more measurable than ever. However, there’s still a considerable gap between what people <em>could</em> measure and what they actually <em>are</em> measuring, and that leads to significant under-optimization of advertising and marketing dollars.</p>
+<p>In B2B SaaS, there are two techniques that I feel are particularly important but not used widely enough – <strong>cohort analysis</strong> and <strong>multi-touch attribution analysis</strong>. In this post, I’ll try to provide a brief introduction to both methodologies and explain why I think they are so important.</p>
+<h2>1. Cohort Analysis</h2>
+<h3>A Quick Primer</h3>
+<p>If you’re new to the topic, a cohort analysis can be broadly defined as a dissection of the activities of a group of people (such as customers), who share a common characteristic, over time. In SaaS businesses, the most frequently used common characteristic for grouping customers is “join date”; that is, people who signed up or became paying customers in the same period of time (such as a month).</p>
+<p>Let’s look at an example, and it will become much clearer:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/05/1-cohort-analysis.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/05/1-cohort-analysis.png" alt="cohort analysis" class="aligncenter size-full wp-image-23690" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/05/1-cohort-analysis-300x90.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/05/1-cohort-analysis.png 842w" sizes="(max-width: 842px) 100vw, 842px" /></a></p>
+<p>In this cohort analysis, each row represents all signups that converted to become paying customers in a given month. Each column represents a month in your customer’s life. The cells show the percentage of retained customers of the respective cohort in the respective “lifetime month.”</p>
+<h3>So What?</h3>
+<p>Why is it so important to do a cohort analysis when looking at usage metrics or retention and churn? The answer is that if you look at only the overall numbers, such as your overall churn in a calendar month, the number will be a blend of the churn rate of older and newer customers, <em>which can lead to erroneous conclusions</em>.</p>
+<p>For example, let’s consider a SaaS business with very high churn in the first few lifetime months and much lower churn from older customers, which isn’t unusual in SaaS. If the company starts to grow faster, the blended churn rate will go up, simply because the percentage of newer customers out of all customers will grow. So, if they look at only the blended churn rate, they might start to panic. They would have to do a cohort analysis to see what’s really going on.</p>
+<p>What else can you see in a cohort analysis? Whatever the key metrics are in your particular business, a cohort analysis lets you see how those metrics develop over the customer lifetime as well as over what might be called product lifetime:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/05/2-retention-over-user-lifetime.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/05/2-retention-over-user-lifetime.png" alt="retention over user lifetime" class="aligncenter size-full wp-image-23691" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/05/2-retention-over-user-lifetime-300x148.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/05/2-retention-over-user-lifetime.png 634w" sizes="(max-width: 634px) 100vw, 634px" /></a></p>
+<p>If you read the chart above <em>horizontally</em>, you can see how your retention develops over the customer lifetime, presumably something that you can link to the quality of your product, operations, and customer support. Reading it <em>vertically</em> shows you the retention at a given lifetime month for different customer cohorts. This might be called product lifetime; and, especially if you look at early lifetime months, it can be linked to the quality of your onboarding experience and the performance of your customer success team.</p>
+<h3>The Holy Grail of SaaS!</h3>
+<p>Maybe most importantly, a cohort analysis is the best way to estimate CLT (customer lifetime) and CLTV (<a href="https://blog.kissmetrics.com/how-to-calculate-lifetime-value/">customer lifetime value</a>), which informs your decision on how much you can spend to acquire a new customer. As mentioned above, churn usually isn’t distributed linearly over the customer lifetime, so calculating it based on the blended churn rate of the last month doesn’t give you the best estimate. A better way is shown in the second tab of <a href="https://www.dropbox.com/s/cbegrp1ohchgtj5/ChristophJanz_SaaSCohortAnalysisb.xlsx">this spreadsheet</a>, where I calculated/estimated the CLT of different cohorts.</p>
+<p>A cohort analysis is even more essential when it comes to CLTV. Looking at how revenues of customer cohorts develop over time lets you see the impact of churn, downgrades/contractions, and upgrades/expansions:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/05/3-percent-of-retained-mmr-in-lifetime-month.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/05/3-percent-of-retained-mmr-in-lifetime-month.png" alt="percent of retained mmr in lifetime month" class="aligncenter size-full wp-image-23692" /></a></p>
+<p>This chart shows a cohort analysis of MRR (monthly recurring revenue) of a fictional SaaS business. As you can see in the green cells, it’s a happy fictional SaaS business as it has recently started to enjoy <em>negative</em> churn, which many regard as the holy grail in SaaS.</p>
+<p>Still not convinced that you need cohort analyses to understand your SaaS business? :-) Let me know in the comments.</p>
+<h2>2. Multi-touch Attribution Analysis</h2>
+<h3>Giving Some Credit to the “Assist”</h3>
+<p>Multi-touch attribution, as defined in this <a href="http://www.seotakeaways.com/attribution-modeling-google-analytics-ultimate-guide">good and detailed post</a>, is “the process of understanding and assigning credit to marketing channels that eventually lead to conversions. An attribution model is a set of rules that determine how credit for conversions should be attributed to various touch points in conversion paths.”</p>
+<p>It’s easier than it sounds; and, since this is the year of the World Cup, let me explain it using a soccer analogy. Multi-touch attribution gives the credit for a goal to not only the scorer but also (gives some credit to) the players who prepared the goal, too. Soccer player statistics often calculate scores based on the goals and the assists of the players. That means the statistics are based on what could be called a double-touch analysis that takes into account the last touch and the touch before the last one.</p>
+<p>Since the default model in marketing still seems to be “last touch” only, it looks like soccer has overtaken marketing in terms of analytical sophistication. :-)</p>
+<h3>Time for Marketing to Strike Back!</h3>
+<p>If you are evaluating the performance of a marketing campaign solely based on the number of conversions, you are missing a large piece of the picture. Like a great midfielder who doesn’t score many goals himself but prepares goals for the strikers, a marketing channel might not be delivering many conversions but could be playing an important role in initiating the conversion process or assisting in the eventual conversion.</p>
+<p>This is especially true for B2B SaaS where sales cycles are much longer than in, say, consumer e-commerce. When you’re selling a SaaS solution to a business customer, it’s not unusual for there to be several touch points before a company becomes a qualified lead, and then many more before the lead becomes a paying customer. The process could easily look like this:</p>
+<ul>
+<li>A piece of content that you produced comes up as an organic search result and the searcher clicks on it</li>
+<li>A few days later, the person who looked at the content piece sees a retargeting ad</li>
+<li>A few days later, she sees another retargeting ad, visits your website, and signs up for your newsletter</li>
+<li>A week after that, she clicks on a link in your newsletter</li>
+<li>A few days later, she receives an invitation to a webinar, signs up for it, and attends the webinar</li>
+<li>After the webinar, she signs up for a trial</li>
+<li>The next day, one of your customer advocates gives her a call</li>
+<li>Close to the end of her trial, your lead does some more research, happens to click on one of your AdWords ads, and signs up for a paid subscription</li>
+</ul>
+<p>If you look at this conversion path, it becomes clear that if you attribute the customer to only the first touch point (SEO) or to the last one (PPC), you’ll draw incorrect conclusions. And keep in mind that the example above is still quite simple. In reality, the number of marketing channels and touch points that contribute to a conversion can be much higher.</p>
+<h3>Data Integration in a Multi-device World</h3>
+<p>Maybe you use Google Analytics or Kissmetrics for Web analytics, Salesforce.com for CRM, and Zendesk for customer service. If you want to get a (more or less) complete picture of your user’s journey, you need to get and integrate the data from all of the major tools you’re using and track user interactions.</p>
+<p>A big complicating factor here is that we now live in a “multi-device world.” It’s very possible that the person in the example conversion path above used a tablet device, a smartphone, and two different computers to access your content and visit your website. Since tracking cookies are tied to one device, there’s no simple way to know that all of these touch points belong to the same person, at least not until the person registers.</p>
+<p>Going deeper into the data integration and multi-device attribution problem would go beyond the scope of this post, but there’s a lot of valuable information available on the Web. And, please feel free to ask questions or share experiences in the comments section.</p>
+<h3>Toward a Better Attribution Model</h3>
+<p>The next question to tackle is how credit should be distributed to touch points in a conversion path. A simple approach is to use one of these rules:</p>
+<ul>
+<li>Linear attribution – Each interaction gets equal credit</li>
+<li>Time decay – More recent interactions get more credit than older ones</li>
+<li>Position based – 40% credit goes to the first interaction, 40% to the last one, and 20% to the ones in the middle</li>
+</ul>
+<p>While using one of these rules is a big improvement over a “first touch only” or “last touch only” model, the problem is that all of the rules are based on assumptions as opposed to real data. If you’re using “linear attribution,” you’re saying “I don’t know how much credit each touch point should get, so let’s give each one equal credit.” If you’re using “time decay” or “position based,” you’re making an assumption that some touch points are more valuable than others, but whether that assumption is true is not certain.</p>
+<p>A more sophisticated approach is to use a tool like <a href="http://www.convertro.com">Convertro</a>, which takes a look at all touch points of all users (including those who didn’t convert!) and then uses a statistical algorithm to distribute attribution credit. The advantage of this approach is that the model gets continuously adjusted based on new incoming data. Explaining exactly how it works, again, would go beyond the scope of this post, but there’s more information available on Convertro’s website, and I assume there are additional tools like this on the market.</p>
+<h3>Is It Worth It?</h3>
+<p>Implementing a sophisticated multi-touch attribution model is obviously a large project, and so the next question is whether it’s worth it. The answer depends mainly on these variables:</p>
+<ul>
+<li>Product complexity and sales cycle – The more complex your product and the longer the sales cycle, the more likely you are to have several touch points before a conversion happens</li>
+<li>Number of simultaneous campaigns and size of marketing budget – The more campaigns you’re running in parallel and the more you’re spending on marketing, the more important it is to account for multi-touch attribution</li>
+</ul>
+<p>While cohort analysis is something you should do as soon as you launch your product, I think multi-touch attribution analysis can usually wait until you’re spending larger amounts of money on advertising. Until then, spending too much money or time getting your attribution model right probably is not the best use of your resources. So, as an early-stage SaaS startup, don’t worry too much about it just yet. Just remember to take your single-touch attribution CACs with a grain of salt.</p>
+<p><b>About the Author</b>: Christoph Janz is a renowned SaaS expert and founder and partner of <a href="http://www.pointninecap.com/" rel="nofollow">Point Nine Capital</a>. He’s an investor in <a href="http://www.zendesk.com/" rel="nofollow">Zendesk</a>, <a href="http://www.geckoboard.com/" rel="nofollow">Geckoboard</a>, <a href="http://unbounce.com/" rel="nofollow">Unbounce</a>, <a href="http://www.typeform.com" rel="nofollow">Typeform</a>, and more than 15 other SaaS companies. <a href="http://christophjanz.blogspot.com/" rel="nofollow">Check out his blog for further SaaS tips and resources</a>, and <a href="http://www.twitter.com/chrija">follow him on Twitter</a>.</p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/how-to-calculate-lifetime-value/">How To Calculate Lifetime Value - The Infographic</a></li>
+<li><a href="https://blog.kissmetrics.com/the-first-5-minutes/">A Simple Guide to Increasing Customer Lifetime Value: Focus on the First 5 Minutes</a></li>
+<li><a href="https://blog.kissmetrics.com/increasing-customer-ltv-and-loyalty/">10 Tactics For Increasing Your Customer Lifetime Value and Loyalty</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fcohort-and-multi-touch-attribution%2F&source=tweetbutton&text=Learning+More+About+That+Other+Half%3A+The+Case+for+Cohort+Analysis+and+Multi-Touch+Attribution+Analysis&url=https%3A%2F%2Fblog.kissmetrics.com%2Fcohort-and-multi-touch-attribution%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fcohort-and-multi-touch-attribution%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=Learning More About That Other Half: The Case for Cohort Analysis and Multi-Touch Attribution Analysis&amp;body=https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-23689 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-232492">
+    <div id="comment-232492" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Lewis LaLanne</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-232492" class="comment-date">May 29, 2014 at 3:05 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Almost nobody likes doing the math for their business. </p>
+<p>Most people just hope the math works out in their favor at the end of every month. But business is math + psychology and for those of us who would only like to focus on the psychology part &#8211; selling and marketing, we&#8217;re lucky to have sites/resources like yours that help us keep our eyes on the other half of the equation so that our marketing and selling can be as effective as possible. </p>
+<p>I&#8217;m very much looking forward to Multi- touch attribution reaching the point where it is easily implemented as I know that strategic marketing campaigns are so much better than just doing random acts of marketing.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=232492#respond' onclick='return addComment.moveForm( "comment-232492", "232492", "respond", "23689" )' aria-label='Reply to Lewis LaLanne'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel odd alt depth-2" id="li-comment-234741">
+    <div id="comment-234741" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-234741" class="comment-date">May 30, 2014 at 8:20 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Lewis, it&#8217;s true. It&#8217;s tough to keep up with a lot of things. Looking forward to hearing more from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=234741#respond' onclick='return addComment.moveForm( "comment-234741", "234741", "respond", "23689" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-234820">
+    <div id="comment-234820" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mike</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-234820" class="comment-date">May 30, 2014 at 8:57 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Both concepts are very important. This was a great article! Thanks for posting it.</p>
+<p>As you mention, an algorithmic solution is ideal, but even a rules-based or linear model gives you better information (imho) than last/first click. However, B2B sales typically have longer, more complex sales cycles, which typically result in a lower volume of results with higher price tags (than an e-commerce site). </p>
+<p>Would you have any insight on what the minimum size a data set needs to be to generate a reliable algorithmic model? Could a potential solution be to push the &#8220;conversion&#8221; further up the funnel and attempt to tie a dollar value to it based off of LTV &amp; funnel stage conversion rates?</p>
+<p>Again, great article!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=234820#respond' onclick='return addComment.moveForm( "comment-234820", "234820", "respond", "23689" )' aria-label='Reply to Mike'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-235369">
+    <div id="comment-235369" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/chrija' rel='external nofollow' class='url'>Christoph Janz</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-235369" class="comment-date">May 30, 2014 at 1:14 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Mike, thank you for your comments, glad you like the article!</p>
+<p>Unfortunately I don&#8217;t have an answer to your question, but maybe the guys over at Convertro can help you.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=235369#respond' onclick='return addComment.moveForm( "comment-235369", "235369", "respond", "23689" )' aria-label='Reply to Christoph Janz'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-3" id="li-comment-235456">
+    <div id="comment-235456" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mike</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-235456" class="comment-date">May 30, 2014 at 1:53 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for following up, Christoph! I&#8217;ll head over to Converto&#8217;s website and see what I can learn / who I can talk to.</p>
+<p>Have a great weekend.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=235456#respond' onclick='return addComment.moveForm( "comment-235456", "235456", "respond", "23689" )' aria-label='Reply to Mike'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-238581">
+    <div id="comment-238581" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Tom Grubb</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-238581" class="comment-date">May 31, 2014 at 2:48 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>In the world of marketing automation, Marketo does a decent job of enabling marketers to determine multi-touch attribution.  Marketo works backwards starting with named individuals attached to sales opportunities, then looking back to all the programs that touched those individuals prior to the point in time when the opportunity was created. </p>
+<p>But even with a simple methodology like this, I see many marketers struggle to get reliable MT analytics for these simple but critical reasons:</p>
+<p>1.	Not setting systems up right in order to capture MT data properly and continuously<br />
+2.	Everyone in marketing not following the same definitions for channels and tactics, and/or not giving leads credit for marketing successes some or all of the time<br />
+3.	Sales not adding contacts to sales opportunities.  Without marketing leads to trace back to marketing programs, it is impossible to determine MT – or any marketing attribution<br />
+4.	Not adding all contacts involved in a deal to an opportunity when there’s more than one<br />
+5.	Creating new (duplicate) contacts instead of searching for existing leads or contacts that have a long trail of marketing associated with them already – that will never get the credit they deserve when newly created duplicate contacts take their rightful place at the attribution table.</p>
+<p>It amazes me how often this happens.  Investors and executives demand to know marketing’s contribution, but too many aren’t ready or willing to address the underlying upstream data quality issues that need to be fixed to get to good attribution.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=238581#respond' onclick='return addComment.moveForm( "comment-238581", "238581", "respond", "23689" )' aria-label='Reply to Tom Grubb'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-241356">
+    <div id="comment-241356" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-241356" class="comment-date">Jun 01, 2014 at 2:43 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Tom, thanks for these great in-depth insights. I think the reasons you outlined are all very valid and accurate. It&#8217;s tough to get the right mix when you are tracking large data sets. We look forward to hearing more from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=241356#respond' onclick='return addComment.moveForm( "comment-241356", "241356", "respond", "23689" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-243227">
+    <div id="comment-243227" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Grant Grigorian</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-243227" class="comment-date">Jun 02, 2014 at 10:07 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks &#8211; this is a great case for cohort and multi-attribution analysis.</p>
+<p>To address the B2B case though, you have to move away from a single &#8220;conversion&#8221; event to a series of multiple &#8220;progressions&#8221; through the funnel. So you have visitors becoming leads, and then leads becoming qualified, and so on until the sale. There are cohort metrics for each of the step-conversions &#8211; and the most sophisticated of the marketers know how to build systems to track and analyze all of this information &#8211; and find it a very worthwhile exercise because they begin to understand what&#8217;s happening to each prospect at each stage of their journey to become a customer.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=243227#respond' onclick='return addComment.moveForm( "comment-243227", "243227", "respond", "23689" )' aria-label='Reply to Grant Grigorian'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-245726">
+    <div id="comment-245726" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-245726" class="comment-date">Jun 03, 2014 at 11:01 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Grant, thanks for these great points. Looking forward to hearing more from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=245726#respond' onclick='return addComment.moveForm( "comment-245726", "245726", "respond", "23689" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-246014">
+    <div id="comment-246014" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Elliot Suiter</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-246014" class="comment-date">Jun 03, 2014 at 1:23 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>The reason I clicked through was because I&#8217;m currently reading the lean startup which I high recommend and I know Neil, you do too. Slightly off topic and to make the post better from a user point of view could be to add a few anchored text links as there is some terminology I don&#8217;t know. Wikipedia do a good job of this. Sorry it&#8217;s a little off topic but thought it may be good feedback. Great post overall, certainly good metrics to keep track instead of vanity metrics.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=246014#respond' onclick='return addComment.moveForm( "comment-246014", "246014", "respond", "23689" )' aria-label='Reply to Elliot Suiter'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-248298">
+    <div id="comment-248298" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-248298" class="comment-date">Jun 04, 2014 at 8:50 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Elliot, thanks for the great feedback. We look forward to hearing more from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=248298#respond' onclick='return addComment.moveForm( "comment-248298", "248298", "respond", "23689" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-249979">
+    <div id="comment-249979" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jeroen Arts</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-249979" class="comment-date">Jun 04, 2014 at 9:22 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great Article! I understand that Cohort Analysis is great practice for SAAS, however (how) would it be applicable for services like Uber and Airbnb? Or would you recommend a different kind of analysis? Would love to hear your thoughts.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=249979#respond' onclick='return addComment.moveForm( "comment-249979", "249979", "respond", "23689" )' aria-label='Reply to Jeroen Arts'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-251587">
+    <div id="comment-251587" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Christoph Janz</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-251587" class="comment-date">Jun 05, 2014 at 7:53 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Jeroen, thank you for your comment. IMO cohort analysis is essential for any type of business which spends money on acquiring users and monetizes those users over a longer period of time – which is true for almost all online businesses.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=251587#respond' onclick='return addComment.moveForm( "comment-251587", "251587", "respond", "23689" )' aria-label='Reply to Christoph Janz'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-256847">
+    <div id="comment-256847" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dave</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-256847" class="comment-date">Jun 07, 2014 at 11:41 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I totally agree, SaaS companies (not just B2B) need multi-touch attribution. Bizible.com tracked all the marketing touches for nearly 500,000 leads and found big differences between first and last touch attribution for SaaS companies. One highlight is that 18% of SaaS first touches came from referral (highest of any industry) and only 36% from paid search (lowest of any industry). You can see the highlights of the results in MarketingLand at <a href="http://marketingland.com/first-touch-attribution-search-tops-lead-generation-social-shortens-cycles-77622" rel="nofollow">http://marketingland.com/first-touch-attribution-search-tops-lead-generation-social-shortens-cycles-77622</a></p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=256847#respond' onclick='return addComment.moveForm( "comment-256847", "256847", "respond", "23689" )' aria-label='Reply to Dave'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-256964">
+    <div id="comment-256964" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-256964" class="comment-date">Jun 07, 2014 at 1:19 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Dave, thanks for sharing your feedback. We look forward to hearing more from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=256964#respond' onclick='return addComment.moveForm( "comment-256964", "256964", "respond", "23689" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1053357">
+    <div id="comment-1053357" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">KC</cite>
+        
+        <a href="https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/#comment-1053357" class="comment-date">Feb 25, 2015 at 12:00 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi, thank you for the wonderful explanations here.</p>
+<p>I notice that for many Time Decay Attribution model examples, the sum of attribution is always 100%. I want to understand why.</p>
+<p>Say the half life is set to 1 day, and there is 1 conversion. And for this conversion, there is an exposure 1 day prior to the conversion, Therefore, this exposure gets attribution of 50%. But there is also an exposure 2 days prior, so that exposure should get attribution of 25%. This adds up to 75%.</p>
+<p>The way I see it, decay of each exposure is independent of one another. There is no guarantee the attribution total will be 100%. The only way I can see it being 100% is if you always attribute the remaining attribution to the direct conversion. So, in my example, direct conversion gets 25%.</p>
+<p>So if the time between conversion and exposure is really long, then attribution for that exposure should be small, and therefore direct conversion gets more fraction of the total attribution.</p>
+<p>Is my understanding correct?</p>
+<p>Thanks for your explanation.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/?replytocom=1053357#respond' onclick='return addComment.moveForm( "comment-1053357", "1053357", "respond", "23689" )' aria-label='Reply to KC'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">19 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/cohort-and-multi-touch-attribution/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='23689' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="3719d1cc4f" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="11"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'Learning More About That Other Half: The Case for Cohort Analysis and Multi-Touch Attribution Analysis', 'Post URL':'https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/baby-boomers-internet-usage/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/2-billion-emails/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/cohort-and-multi-touch-attribution/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/cohort-and-multi-touch-attribution/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/cohort-and-multi-touch-attribution/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="Learning More About That Other Half: The Case for Cohort Analysis and Multi-Touch Attribution Analysis" data-url="http://blog.kissmetrics.com/cohort-and-multi-touch-attribution/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'Learning More About That Other Half: The Case for Cohort Analysis and Multi-Touch Attribution Analysis', 'Post URL':'https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'Learning More About That Other Half: The Case for Cohort Analysis and Multi-Touch Attribution Analysis', 'Post URL':'https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'Learning More About That Other Half: The Case for Cohort Analysis and Multi-Touch Attribution Analysis', 'Post URL':'https://blog.kissmetrics.com/cohort-and-multi-touch-attribution/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":473,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>How Loading Time Affects Your Bottom Line</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; How Loading Time Affects Your Bottom Line Comments Feed" href="https://blog.kissmetrics.com/loading-time/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='5 Simple Tips To Help You Increase User Sign Ups' href='https://blog.kissmetrics.com/increase-user-sign-ups/' />
+<link rel='next' title='You vs. The Data: When to Stop Optimizing and Start Thinking.' href='https://blog.kissmetrics.com/you-vs-the-data/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/loading-time/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=3510' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Floading-time%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Floading-time%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,340] -->
+<meta name="description" content="Page loading time is obviously an important part of any website’s user experience. And many times we’ll let it slide to accommodate better aesthetic design, new nifty functionality or to add more content to web pages." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/100079854367548017120/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='How Loading Time Affects Your Bottom Line' />
+<meta property='og:url' content='https://blog.kissmetrics.com/loading-time/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Page loading time is obviously an important part of any website’s user experience.  And many times we’ll let it slide to accommodate better aesthetic design, new nifty functionality or to add more content to web pages. ' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How Loading Time Affects Your Bottom Line" />
+    <meta name="twitter:description" content="Page loading time is obviously an important part of any website’s user experience.  And many times we’ll let it slide to accommodate better aesthetic design, new nifty functionality or to add more content to web pages. " />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-3510 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'How Loading Time Affects Your Bottom Line',
+						'Post Category': 'Conversion',
+						'Post URL': 'https://blog.kissmetrics.com/loading-time/'
+		}
+	]);
+</script>
+
+<article id="post-3510" class="single-post post-3510 post type-post status-publish format-standard has-post-thumbnail hentry category-conversion category-seo" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">How Loading Time Affects Your Bottom Line</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Page loading time is obviously an important part of any website’s user experience.  And many times we’ll let it slide to accommodate better aesthetic design, new nifty functionality or to add more content to web pages. Unfortunately, website visitors tend to care more about speed than all the bells and whistles we want to add to our websites. Additionally, page loading time is becoming a more important factor when it comes to search engine rankings.</p>
+<p>Next week we’ll post our complementary article: “<a href="https://blog.kissmetrics.com/speed-is-a-killer/">Speed Is A Killer &#8211; Why Decreasing Page Load Time Can Drastically Increase Conversions</a>” to elaborate more on this topic. For now, please enjoy and share the infographic below.</p>
+<p><a href="https://blog.kissmetrics.com/loading-time/?wide=1"><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/04/loading-time-sml.jpg" alt="How Loading Time Affects Your Bottom Line" title="loading-time-sml" class="aligncenter size-full wp-image-3514" /></a></p>
+<p><center><a href="https://blog.kissmetrics.com/loading-time/?wide=1">View an enlarged version of this Infographic »</a></center></p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2011/04/loading-time.pdf">Click here to download a .pdf version of this infographic.</a></center></p>
+<p>&nbsp;</p>
+<h2>Facts and Stats to Tweet:</h2>
+<ul>
+<li>73% of mobile internet users say that they’ve encountered a website that was too slow to load. <a href="http://clicktotweet.com/dNhfy">»tweet«</a></li>
+<li>51% of mobile internet users say that they’ve encountered a website that crashed, froze, or received an error. <a href="http://clicktotweet.com/9eMkg">»tweet«</a></li>
+<li>38% of mobile internet users say that they’ve encountered a website that wasn’t available. <a href="http://clicktotweet.com/4AaF2">»tweet«</a></li>
+<li>47% of consumers expect a web page to load in 2 seconds or less. <a href="http://clicktotweet.com/53O1f">»tweet«</a></li>
+<li>40% of people abandon a website that takes more than 3 seconds to load. <a href="http://clicktotweet.com/3Utdx">»tweet«</a></li>
+<li>A 1 second delay in page response can result in a 7% reduction in conversions. <a href="http://clicktotweet.com/R62K0">»tweet«</a></li>
+<li>If an e-commerce site is making $100,000 per day, a 1 second page delay could potentially cost you $2.5 million in lost sales every year. <a href="http://clicktotweet.com/6hv87">»tweet«</a></li>
+</ul>
+<p><b>About The Author:</b> <a href="http://seanvwork.com">Sean Work</a> is the Minister of Propaganda at Kissmetrics. Follow him on twitter (<a href="http://twitter.com/seanvwork">@seanvwork</a>) or on <a rel="author" href="https://plus.google.com/100079854367548017120?rel=author">Google Plus</a>.</p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Floading-time%2F&source=tweetbutton&text=How+Loading+Time+Affects+Your+Bottom+Line&url=https%3A%2F%2Fblog.kissmetrics.com%2Floading-time%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Floading-time%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=How Loading Time Affects Your Bottom Line&amp;body=https://blog.kissmetrics.com/loading-time/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-3510 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-5632">
+    <div id="comment-5632" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Orion Jensen</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5632" class="comment-date">Apr 28, 2011 at 9:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>The current tool set for evaluating these types of correlations are extremely limited in my experience.  We have been closely working with gomez, akamai, and other vendors in the past and no one has a solution here in my opinion.  A good way to monitor web application performance and correlate conversion rates is what we would love to see.  I am curious about where your numbers come from, I see your references and I have been asking both these companies for a way to measure our site for months.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5632#respond' onclick='return addComment.moveForm( "comment-5632", "5632", "respond", "3510" )' aria-label='Reply to Orion Jensen'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-5717">
+    <div id="comment-5717" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5717" class="comment-date">May 04, 2011 at 3:44 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>No one has gotten back to you?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5717#respond' onclick='return addComment.moveForm( "comment-5717", "5717", "respond", "3510" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even depth-2" id="li-comment-89330">
+    <div id="comment-89330" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sahil</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-89330" class="comment-date">Jan 02, 2013 at 10:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Absolutely true Orion. There are tools which help one to focus on conversions, improving user experience like heatmaps etc., I still think that not focusing on &#8220;page load time&#8221; and doing all the other stuff to impress the user makes no sense. Interactive graphics developed using javascript, jquery or flash will be of no use if one cant make the site load faster to the user. Hence as Orion said a tool to monitor web application performance and correlate conversion rates is a big void yet to be filled.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=89330#respond' onclick='return addComment.moveForm( "comment-89330", "89330", "respond", "3510" )' aria-label='Reply to Sahil'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-3" id="li-comment-91808">
+    <div id="comment-91808" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">pinki</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-91808" class="comment-date">Feb 06, 2013 at 2:00 am</a>      </div><!-- /.comment-meta -->
+
+      <p>you can combine the stake simply by discovering a blending of book of ra up to several numbers. The images must seem all around on the showcase. Thus, a sequence of profits are equipped to be yours, incorporating an enactment of ten unlimited diversions. In addition, the stake ordinarily utilized as a part of default amusement might be connected into this amusement. <a href="http://www.officeinkpros.com/" rel="nofollow">Ink print cartridges</a></p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=91808#respond' onclick='return addComment.moveForm( "comment-91808", "91808", "respond", "3510" )' aria-label='Reply to pinki'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even depth-2" id="li-comment-1151694">
+    <div id="comment-1151694" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Nick</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1151694" class="comment-date">Aug 28, 2015 at 3:50 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Pinged you with the solution to this problem, exactly why we where created to diagnose, solve and prove page load times across all devices.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1151694#respond' onclick='return addComment.moveForm( "comment-1151694", "1151694", "respond", "3510" )' aria-label='Reply to Nick'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt depth-2" id="li-comment-1259056">
+    <div id="comment-1259056" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Al Saisi</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1259056" class="comment-date">May 11, 2016 at 1:52 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>How about performance testing the applications by simulating real world network environments? This would allow the developers to optimize code for disparate networks prior to going in production.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1259056#respond' onclick='return addComment.moveForm( "comment-1259056", "1259056", "respond", "3510" )' aria-label='Reply to Al Saisi'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-5635">
+    <div id="comment-5635" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jonathan</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5635" class="comment-date">Apr 28, 2011 at 11:54 am</a>      </div><!-- /.comment-meta -->
+
+      <p>The irony is that the infographic loaded too slowly on my iPhone, and I abandoned it. Read it later on the computer instead.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5635#respond' onclick='return addComment.moveForm( "comment-5635", "5635", "respond", "3510" )' aria-label='Reply to Jonathan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-5639">
+    <div id="comment-5639" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://kissmetrics.com' rel='external nofollow' class='url'>Ian Main</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5639" class="comment-date">Apr 28, 2011 at 5:39 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for the feedback Jonathan, we optimizied the files however that will always be an issue with infographics, they have no set standards to follow. I think we&#8217;ll need to look into how to cater better for mobile web users.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5639#respond' onclick='return addComment.moveForm( "comment-5639", "5639", "respond", "3510" )' aria-label='Reply to Ian Main'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even depth-2" id="li-comment-5693">
+    <div id="comment-5693" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Matt</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5693" class="comment-date">May 04, 2011 at 12:57 am</a>      </div><!-- /.comment-meta -->
+
+      <p>best thing to look at it on your computer&#8230; it has not been optimised for iphones&#8230;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5693#respond' onclick='return addComment.moveForm( "comment-5693", "5693", "respond", "3510" )' aria-label='Reply to Matt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-5718">
+    <div id="comment-5718" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5718" class="comment-date">May 04, 2011 at 3:44 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Lol, yeah, mobile is definitely an avenue people must begin to explorer more and more.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5718#respond' onclick='return addComment.moveForm( "comment-5718", "5718", "respond", "3510" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-5643">
+    <div id="comment-5643" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Billy Hoffman</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5643" class="comment-date">Apr 29, 2011 at 6:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Orion,</p>
+<p>This is because solutions from vendors like Gomez, Keynote, etc only tell you how slow or fast your pages are. They don&#8217;t identify the what&#8217;s making them slow or things you can do to make them faster.</p>
+<p>For that you want to couple the insight from KISSMetrics, Google analytics with a tool to find specific perfrmance problems. Take a look at free tools like YSlow, PageSpeed, WebPageTest, as well as the free scanning service offered by my start-up Zoompf. Really helpful to find ways to improve your landing pages or pages with high drop-off rates.</p>
+<p>Good Luck</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5643#respond' onclick='return addComment.moveForm( "comment-5643", "5643", "respond", "3510" )' aria-label='Reply to Billy Hoffman'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-5671">
+    <div id="comment-5671" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Rashmi Sinha</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5671" class="comment-date">May 02, 2011 at 12:41 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I was very interested in the topic, but could not be bothered to look through the infographic for interesting bits. Would have much more preferred a well written blog post.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5671#respond' onclick='return addComment.moveForm( "comment-5671", "5671", "respond", "3510" )' aria-label='Reply to Rashmi Sinha'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-1102406">
+    <div id="comment-1102406" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dan</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1102406" class="comment-date">Apr 30, 2015 at 8:15 am</a>      </div><!-- /.comment-meta -->
+
+      <p>what a retarded comment! infographics are proven to be more engaging, hence their popularity&#8230;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1102406#respond' onclick='return addComment.moveForm( "comment-1102406", "1102406", "respond", "3510" )' aria-label='Reply to Dan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-5672">
+    <div id="comment-5672" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Abs Farah</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5672" class="comment-date">May 02, 2011 at 12:45 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks, a very useful infograph.</p>
+<p>&#8220;A 1 second delay in page response can result in a 7% reduction in conversions.&#8221; &#8211; this is a powerful statement!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5672#respond' onclick='return addComment.moveForm( "comment-5672", "5672", "respond", "3510" )' aria-label='Reply to Abs Farah'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-5673">
+    <div id="comment-5673" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Tim dorr</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5673" class="comment-date">May 02, 2011 at 1:31 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>&#8220;40% of people abandon a website that takes more than 3 seconds to load.&#8221; But the graph shows around 20%. Which is it?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5673#respond' onclick='return addComment.moveForm( "comment-5673", "5673", "respond", "3510" )' aria-label='Reply to Tim dorr'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-seanwork odd alt depth-2" id="li-comment-5674">
+    <div id="comment-5674" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://twitter.com/seanvwork' rel='external nofollow' class='url'>Sean Work</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5674" class="comment-date">May 02, 2011 at 5:46 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Tim, the 40% is for website visitors inside a shopping cart or in the middle of a shopping experience. The 20% is for general web surfing.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5674#respond' onclick='return addComment.moveForm( "comment-5674", "5674", "respond", "3510" )' aria-label='Reply to Sean Work'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-5684">
+    <div id="comment-5684" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">elkirkmo</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5684" class="comment-date">May 03, 2011 at 11:12 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I wish this was a little bit more clear, like do people abandon a partially loaded page after 3 seconds? Or do they leave because the wheel is turning but there&#8217;s nothing but a blank screen. </p>
+<p>I hate slow sites as much as anyone else, but I find I&#8217;m only ever inclined to leave when it takes too long and all I see is white. If it&#8217;s showing part of the site, I&#8217;ll usually hit refresh or wait, because I&#8217;m really not in that big of a hurry.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5684#respond' onclick='return addComment.moveForm( "comment-5684", "5684", "respond", "3510" )' aria-label='Reply to elkirkmo'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-5687">
+    <div id="comment-5687" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Scott</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5687" class="comment-date">May 03, 2011 at 12:37 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>58.3% of statistics are made up &#8211; That&#8217;s how this infographic makes me feel. Just tossing out blanket statements like &#8220;A 1 second delay in page response can result in a 7% reduction in conversions.&#8221; without any data or details as to which page, etc. to back it up, makes me very skeptical of this whole set of information. KISSmetrics, your better than this.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5687#respond' onclick='return addComment.moveForm( "comment-5687", "5687", "respond", "3510" )' aria-label='Reply to Scott'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-5695">
+    <div id="comment-5695" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Maciej</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5695" class="comment-date">May 04, 2011 at 2:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>As a website owner I think it is important to be weary about how you operate on your site. The thing is that many people who do not know anything about load time or even the technical aspects of a website and own blogs might be using images that are way too large and not even knowing it.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5695#respond' onclick='return addComment.moveForm( "comment-5695", "5695", "respond", "3510" )' aria-label='Reply to Maciej'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-5728">
+    <div id="comment-5728" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kris Noble</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5728" class="comment-date">May 05, 2011 at 4:23 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Nice, but I&#8217;m a bit confused by the &#8220;Mobile vs Desktop&#8221; figures.</p>
+<p>31% thought their phone would be &#8220;a bit slower&#8221;, while 25% said they thought their phone would be &#8220;almost as fast&#8221;. </p>
+<p>To my mind those two phrases have the same meaning, so in effect we&#8217;re left with 56% of people expecting slightly longer loading times on their phones?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5728#respond' onclick='return addComment.moveForm( "comment-5728", "5728", "respond", "3510" )' aria-label='Reply to Kris Noble'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar even depth-2" id="li-comment-5780">
+    <div id="comment-5780" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5780" class="comment-date">May 09, 2011 at 1:13 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Even thought the responses are similar, they are still giving two answers. Just like when you do a survey and you get answers like very satisfied and somewhat of satisfied. They are similar, but different.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5780#respond' onclick='return addComment.moveForm( "comment-5780", "5780", "respond", "3510" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-5729">
+    <div id="comment-5729" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">James</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5729" class="comment-date">May 05, 2011 at 4:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Yaah, really Page loading time is obviously an important part of any website’s user experience. And many times we’ll let it slide to accommodate better aesthetic design, new nifty functionality or to add more content to web pages.This is one of the great post to increase our knowledge and decrese our problems.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5729#respond' onclick='return addComment.moveForm( "comment-5729", "5729", "respond", "3510" )' aria-label='Reply to James'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar even depth-2" id="li-comment-5781">
+    <div id="comment-5781" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5781" class="comment-date">May 09, 2011 at 1:14 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>The more you know and understand this, the better you&#8217;ll be able to manage your sites.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5781#respond' onclick='return addComment.moveForm( "comment-5781", "5781", "respond", "3510" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-5983">
+    <div id="comment-5983" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-5983" class="comment-date">May 18, 2011 at 10:52 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>We read all point, Psychology experiments can range from simple to complex, but there are some basic terms and concepts that all students of psychology should understand. and important one is data time effect. Time effect of a data set refers to a time interval in &#8230; decomposition, the time effect of the new data will change..</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=5983#respond' onclick='return addComment.moveForm( "comment-5983", "5983", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar even depth-2" id="li-comment-6177">
+    <div id="comment-6177" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-6177" class="comment-date">May 25, 2011 at 8:05 am</a>      </div><!-- /.comment-meta -->
+
+      <p>You&#8217;re right with the the psychology involved as it definitely affects a users decision to bounce off the site.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=6177#respond' onclick='return addComment.moveForm( "comment-6177", "6177", "respond", "3510" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-7459">
+    <div id="comment-7459" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-7459" class="comment-date">Jul 19, 2011 at 10:56 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I appreciate the statistics you gave. It&#8217;s amazing to know that 47% of consumers expect a web page to load in about 2 seconds.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=7459#respond' onclick='return addComment.moveForm( "comment-7459", "7459", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-7866">
+    <div id="comment-7866" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Paul Cook</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-7866" class="comment-date">Aug 06, 2011 at 5:36 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Not sure this page passes the 2 second rule but  great infographic all the same.</p>
+<p>The 7% loss every second is a Forrester stat. We published a study a while back that found traffic leaves a page at 1% as second.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=7866#respond' onclick='return addComment.moveForm( "comment-7866", "7866", "respond", "3510" )' aria-label='Reply to Paul Cook'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-8428">
+    <div id="comment-8428" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-8428" class="comment-date">Aug 21, 2011 at 4:51 am</a>      </div><!-- /.comment-meta -->
+
+      <p>that&#8217;s why I love KissMetrics:<br />
+&#8211; easy navigation<br />
+&#8211; friendly interface<br />
+&#8211; fast loading<br />
+&#8211; (this hould be #1) great content</p>
+<p>haven&#8217;t tried to read the blogposts with infographics from my iphone, yet, but they work great on any of my laptops/pc&#8217;s</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=8428#respond' onclick='return addComment.moveForm( "comment-8428", "8428", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-9600">
+    <div id="comment-9600" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-9600" class="comment-date">Sep 19, 2011 at 12:38 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Another aspect is that page load time may affect Google rankings isn&#8217;t it?</p>
+<p>For ordinary sites many people says that load time affects search engine ranking Most of my pages for all of my sites load in less than 1.5 seconds and I rank very well. I would aim for the 1,5 mark as set forth in Google Webmaster tools page speed graph.</p>
+<p>Yet for more i am not sure. But it may depend of niche  for sites that have a lot of pictures Google may expect slower loading time.</p>
+<p>Also i agree for buyer traffic these people who buys usually have fast internet connection and they expect for load times to be very fast.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=9600#respond' onclick='return addComment.moveForm( "comment-9600", "9600", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-10354">
+    <div id="comment-10354" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dan</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-10354" class="comment-date">Oct 15, 2011 at 1:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>This is nteresting&#8230;Was Wthe percent of users with slow Internet connection (which I guess is decreasing) and mobile devices was taken into account? There must be a certain boundary when optimizing loading speed is not cost-effective yet.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=10354#respond' onclick='return addComment.moveForm( "comment-10354", "10354", "respond", "3510" )' aria-label='Reply to Dan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-10407">
+    <div id="comment-10407" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-10407" class="comment-date">Oct 17, 2011 at 4:34 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Loving this infographic! Thanks Guys!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=10407#respond' onclick='return addComment.moveForm( "comment-10407", "10407", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-10504">
+    <div id="comment-10504" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-10504" class="comment-date">Oct 19, 2011 at 3:13 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Today almost 10% of searches are made through mobile devices (in USA). SO it is becoming more and more important to be sure to use gzip for the text data compression as well as smaller images on mobile version of your site. Also sites shouldn&#8217;t be &#8220;to big&#8221; because even better phones such as Android have quite slow processor when comparing to desktop so sites with too many elements are going to have large load time. Also wireless connection is slower worse, and it already has huge ping.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=10504#respond' onclick='return addComment.moveForm( "comment-10504", "10504", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-11572">
+    <div id="comment-11572" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-11572" class="comment-date">Nov 09, 2011 at 2:29 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>The info is impression. I should tweak my website much more as it is mainly served image to visitor.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=11572#respond' onclick='return addComment.moveForm( "comment-11572", "11572", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-20780">
+    <div id="comment-20780" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-20780" class="comment-date">Jan 17, 2012 at 6:07 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great, easy navigation and friendly interface</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=20780#respond' onclick='return addComment.moveForm( "comment-20780", "20780", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-22931">
+    <div id="comment-22931" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jaz</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-22931" class="comment-date">Feb 24, 2012 at 8:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Anyone care to guess the page speed of this page?  Chrome dev tools shows load time is ~6 seconds, generating 269 HTTP requests.</p>
+<p>A really slow page that tells you about how important page speed is pretty much the definition of irony.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=22931#respond' onclick='return addComment.moveForm( "comment-22931", "22931", "respond", "3510" )' aria-label='Reply to Jaz'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-23616">
+    <div id="comment-23616" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-23616" class="comment-date">Mar 05, 2012 at 11:51 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Lesser the loading time lesser the bounce rate. So one must really watch out for the loading site of the website.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=23616#respond' onclick='return addComment.moveForm( "comment-23616", "23616", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-25776">
+    <div id="comment-25776" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-25776" class="comment-date">Apr 04, 2012 at 4:15 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Interesting infographics. And it is so true: the load speed is now a factor for SERP.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=25776#respond' onclick='return addComment.moveForm( "comment-25776", "25776", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-26243">
+    <div id="comment-26243" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">marie</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-26243" class="comment-date">Apr 14, 2012 at 7:57 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Yes, search engines will push down results with slow load times.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=26243#respond' onclick='return addComment.moveForm( "comment-26243", "26243", "respond", "3510" )' aria-label='Reply to marie'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-26991">
+    <div id="comment-26991" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">NICCAI</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-26991" class="comment-date">May 01, 2012 at 4:52 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Too bad cloudfront doesn&#8217;t support gzipping. I&#8217;d like to see KM come to our site gzipped.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=26991#respond' onclick='return addComment.moveForm( "comment-26991", "26991", "respond", "3510" )' aria-label='Reply to NICCAI'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-26992">
+    <div id="comment-26992" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">NICCAI</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-26992" class="comment-date">May 01, 2012 at 4:56 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Well, I guess it does with a custom origin&#8230;;)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=26992#respond' onclick='return addComment.moveForm( "comment-26992", "26992", "respond", "3510" )' aria-label='Reply to NICCAI'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-27469">
+    <div id="comment-27469" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mann Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-27469" class="comment-date">May 08, 2012 at 9:55 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>hey,</p>
+<p>this data shows the concentration about mobile users point of view to see the mobile website&#8230;</p>
+<p>very well said in last&#8230;<br />
+good info&#8230;<br />
+Mann</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=27469#respond' onclick='return addComment.moveForm( "comment-27469", "27469", "respond", "3510" )' aria-label='Reply to Mann Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-29654">
+    <div id="comment-29654" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">anthonydpaul</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-29654" class="comment-date">Jun 05, 2012 at 8:31 am</a>      </div><!-- /.comment-meta -->
+
+      <p>&#8220;If an e-commerce site is making $100,000 per day, a 1 second page delay could potentially cost you $2.5 million in lost sales every year.&#8221;</p>
+<p>I am guessing this was a direct mashup of abandonment rates versus conversion rates. Recognizing &#8220;potentially&#8221; is used, the likely scenario would not be hitting that ceiling. Patrons who are predisposed to buying are also predisposed to being more patient (their desire outweighs the hurdle). The potential customer who would most be affected by a slow load time tends to also be the customer who abandons due to lack of interest in the product (the window shopper).</p>
+<p>Load time affects shopping cart attrition, I won&#8217;t argue, but the relationship of the two statistics is much more complex than a mashup of the two numbers.</p>
+<p>It follows the same philosophy of security, where employing a little security only dissuades people who really don&#8217;t have interest in breaking through your security anyway. In the end, your number of break-ins is relatively unchanged.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=29654#respond' onclick='return addComment.moveForm( "comment-29654", "29654", "respond", "3510" )' aria-label='Reply to anthonydpaul'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-52363">
+    <div id="comment-52363" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Bellb</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-52363" class="comment-date">Oct 03, 2012 at 1:05 am</a>      </div><!-- /.comment-meta -->
+
+      <p>People today are becoming more and more impatient :)<br />
+As a business owner I understand how important it is that my website will be fast (on the mobile as well as on the desktop).. that’s why I chose to build my website with exai.com..</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=52363#respond' onclick='return addComment.moveForm( "comment-52363", "52363", "respond", "3510" )' aria-label='Reply to Bellb'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-84163">
+    <div id="comment-84163" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Clinton Skakun</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-84163" class="comment-date">Nov 01, 2012 at 12:28 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;m almost wondering if having graphics on a mobile blog is even necessary. Obviously for a post like this it&#8217;s pretty important as the graphic makes up most of the post content. However, most images in blog posts don&#8217;t contribute that much to the content. I&#8217;m sure no one&#8217;s going to leave because there&#8217;s no image.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=84163#respond' onclick='return addComment.moveForm( "comment-84163", "84163", "respond", "3510" )' aria-label='Reply to Clinton Skakun'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-85075">
+    <div id="comment-85075" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-85075" class="comment-date">Nov 11, 2012 at 9:43 am</a>      </div><!-- /.comment-meta -->
+
+      <p>hey,<br />
+This is true that your loading time plays an important role on your website. Loading time also plays an important role in SEO.</p>
+<p>Thank you</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=85075#respond' onclick='return addComment.moveForm( "comment-85075", "85075", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-87399">
+    <div id="comment-87399" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-87399" class="comment-date">Dec 05, 2012 at 4:32 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>You&#8217;re right.. but sometimes the graphic needed to make the website look appealing does take time to load. My site takes over 2-3 seconds&#8230;. any suggestion on improving that?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=87399#respond' onclick='return addComment.moveForm( "comment-87399", "87399", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-88012">
+    <div id="comment-88012" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sandeep</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-88012" class="comment-date">Dec 14, 2012 at 2:48 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Excellent info and every eCommerce guys should should take ultimate care about this as it matters them most&#8230;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=88012#respond' onclick='return addComment.moveForm( "comment-88012", "88012", "respond", "3510" )' aria-label='Reply to Sandeep'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-90757">
+    <div id="comment-90757" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mirel</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-90757" class="comment-date">Jan 23, 2013 at 3:47 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I really didn&#8217;t knew that page loading really affected the way visitors were staying or not on my website. I guess I&#8217;ll take a look again on my page speed loads and also play with some kiss metrics :).</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=90757#respond' onclick='return addComment.moveForm( "comment-90757", "90757", "respond", "3510" )' aria-label='Reply to Mirel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-91666">
+    <div id="comment-91666" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Hassaan Khan</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-91666" class="comment-date">Feb 04, 2013 at 11:41 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Nice and useful post. I am certainly looking forward to work on load time. I did in the recent past on my blog but looking something to do more. Thanks Sean!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=91666#respond' onclick='return addComment.moveForm( "comment-91666", "91666", "respond", "3510" )' aria-label='Reply to Hassaan Khan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-91873">
+    <div id="comment-91873" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Robin</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-91873" class="comment-date">Feb 06, 2013 at 5:53 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Quiet true.<br />
+Even google says that Loading Speed is one of the parameter for the SEO.<br />
+If a designer thinks like a front end developer or taught to do so, that would be ideal.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=91873#respond' onclick='return addComment.moveForm( "comment-91873", "91873", "respond", "3510" )' aria-label='Reply to Robin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-92076">
+    <div id="comment-92076" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sandeep Kumar</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-92076" class="comment-date">Feb 08, 2013 at 7:30 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This is really interesting data…with the increment of more and more internet users, This ought to be considered the most considerable facts for website owners. btw is there any standard, I mean how much second load time is the best. I have dtp load time of around 3.06 seconds. Is this good or bad?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=92076#respond' onclick='return addComment.moveForm( "comment-92076", "92076", "respond", "3510" )' aria-label='Reply to Sandeep Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-95603">
+    <div id="comment-95603" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Casey Dennison</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-95603" class="comment-date">Mar 10, 2013 at 5:14 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>As mentioned in the infographic, mobile users expect their browsing experience to be close to what they would expect from a laptop/desktop.</p>
+<p>I clicked on the infographic (using my phone) and it took way to long to load up &#8211; leaving me no choice but to abandon the page.</p>
+<p>Perfect example!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=95603#respond' onclick='return addComment.moveForm( "comment-95603", "95603", "respond", "3510" )' aria-label='Reply to Casey Dennison'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-96573">
+    <div id="comment-96573" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-96573" class="comment-date">Mar 17, 2013 at 9:19 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Loading Time is on the factor that affect your site improvement, at current time google consider every single thing to rank you website in SERP, so here in article all mentioned things are really helpful to every webmaster to improve them loading time as well as improvement of website in SERP.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=96573#respond' onclick='return addComment.moveForm( "comment-96573", "96573", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-100318">
+    <div id="comment-100318" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-100318" class="comment-date">Apr 09, 2013 at 6:02 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Kissmetrics is one of the best blogs about marketing out there, folks, I am telling you.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=100318#respond' onclick='return addComment.moveForm( "comment-100318", "100318", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-831815">
+    <div id="comment-831815" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Khuram</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-831815" class="comment-date">Oct 17, 2014 at 12:41 am</a>      </div><!-- /.comment-meta -->
+
+      <p>This is amazing website when i read your posts one by one  i dont feel to go any other blog or website for information and links i think this is enough data</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=831815#respond' onclick='return addComment.moveForm( "comment-831815", "831815", "respond", "3510" )' aria-label='Reply to Khuram'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-965083">
+    <div id="comment-965083" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ankita Agrawal</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-965083" class="comment-date">Nov 21, 2014 at 9:56 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great analysis. I have been working hard to come up with the kind of stuff you have done. Great Work</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=965083#respond' onclick='return addComment.moveForm( "comment-965083", "965083", "respond", "3510" )' aria-label='Reply to Ankita Agrawal'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-989324">
+    <div id="comment-989324" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-989324" class="comment-date">Dec 16, 2014 at 1:22 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Over the last year Google and their applications (like YouTube) have made a consistent effort to reward businesses with fast load times. I think now it&#8217;s something like  3 seconds on your site, and less than 2 minutes on YouTube to make an impression on SERPS and visiting users. Technical SEO is going to be huge in 2015!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=989324#respond' onclick='return addComment.moveForm( "comment-989324", "989324", "respond", "3510" )' aria-label='Reply to '>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-991803">
+    <div id="comment-991803" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ivonia</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-991803" class="comment-date">Dec 18, 2014 at 5:19 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great analysis.<br />
+People now love fast and simple website.<br />
+Too crowded and slow website = people will leave.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=991803#respond' onclick='return addComment.moveForm( "comment-991803", "991803", "respond", "3510" )' aria-label='Reply to Ivonia'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1080062">
+    <div id="comment-1080062" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Brother Aandeel</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1080062" class="comment-date">Mar 27, 2015 at 3:26 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great analysis. I always thought that loading time didn&#8217;t matter. Well thank you for this post. I am much wiser now.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1080062#respond' onclick='return addComment.moveForm( "comment-1080062", "1080062", "respond", "3510" )' aria-label='Reply to Brother Aandeel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1110051">
+    <div id="comment-1110051" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Julian</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1110051" class="comment-date">May 13, 2015 at 3:17 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Of course loading time is important to avoid bounce &#8211; but so is navigation and appearance.<br />
+Too many sites (apparently) re-designed for mobile Users suck for desktop Users.<br />
+Principally unclear navigation and too much scrolling.</p>
+<p>Recently re-designed sites often strip out the visual clues that distinguish an active link from a passive header.<br />
+Details are no longer there such as borders between contents items, shaded Tabs, different fonts for active text versus passive, shading to indicate depth where panel/window hierarchy is helpful, rounded buttons.<br />
+Without such visual clues, Contents now look little more than a text list.<br />
+Is that row of plain text a menu bar?<br />
+A monotone rectangle: Is it a header or a button?</p>
+<p>Surely the extra seconds the User needs to discover with the pointer what is active is just as discouraging a extra load time?</p>
+<p>Aesthetics is a fancy word for taste.<br />
+For some minimalism is cool. For others lack of detail says &#8220;lazy&#8221;, &#8220;can&#8217;t be bothered&#8221;.<br />
+Is it surprising that some Users find returning to flat, empty or monotone site unappealing?</p>
+<p>A successful business once said. &#8220;We do all the work so you don&#8217;t have to.&#8221;</p>
+<p>So why make the User scroll? (especially if the amount of scrolling is either unpredictyable or inconsistent from page to page)<br />
+Why hide so much info and so many links below the fold?<br />
+How much value to the User is there in an initial view of a HUGE photo or panel with LARGE but uninformative text?</p>
+<p>What is so wrong with maximising (within reason) the amount of info in the first view?<br />
+Surely something will whet the appetite?<br />
+The human eye and brain is capable of assimilating a large amount of info. at a glance.<br />
+Minimalist sites with large photos and panels look dumbed-down, treating vistors as less than children.<br />
+If asked to scroll down many views to see just crumbs of info, surely the User might think &#8220;I&#8217;ll go somewhere where I can get the same info in just 1 or 2 pages.</p>
+<p>Compared to an extra second load time, sites with the (lack of) features described seem way more likely to suffer &#8220;bounce&#8221;.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1110051#respond' onclick='return addComment.moveForm( "comment-1110051", "1110051", "respond", "3510" )' aria-label='Reply to Julian'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1117851">
+    <div id="comment-1117851" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Manidipa</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1117851" class="comment-date">May 27, 2015 at 8:58 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Sean,</p>
+<p>A very helpful infographic. </p>
+<p>Site speed is one of few very important considerations of any website. A faster web site always means a better experience for the reader or visitor. </p>
+<p>Whereas a slow site can grow the bounce rate out of a poor user experience. Which means drop in page views &amp; most important, huge loss in revenue. The worst impacted are the e-commerce sites. Thanks for sharing the analysis.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1117851#respond' onclick='return addComment.moveForm( "comment-1117851", "1117851", "respond", "3510" )' aria-label='Reply to Manidipa'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1135690">
+    <div id="comment-1135690" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jhoun</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1135690" class="comment-date">Jul 10, 2015 at 9:00 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Too many sites have re-designed for all kinds of apps and divices Users, site speeds have come down. This is really interesting data surely the extra seconds count a lot in this fast world.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1135690#respond' onclick='return addComment.moveForm( "comment-1135690", "1135690", "respond", "3510" )' aria-label='Reply to Jhoun'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1148602">
+    <div id="comment-1148602" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ilya</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1148602" class="comment-date">Aug 17, 2015 at 7:28 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article. I can&#8217;t believe I haven&#8217;t found this earlier. I always thought the &#8220;load time story&#8221; was pushed by people who want to sell expensive hosting and website upgrades. This article makes a very convincing case. Time to do some work on my website :-)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1148602#respond' onclick='return addComment.moveForm( "comment-1148602", "1148602", "respond", "3510" )' aria-label='Reply to Ilya'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-1152743">
+    <div id="comment-1152743" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Andrew</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1152743" class="comment-date">Sep 01, 2015 at 11:27 am</a>      </div><!-- /.comment-meta -->
+
+      <p>the data is seriously out of date (years to be exact), especially the mobile user data. Users are far more demanding these days.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1152743#respond' onclick='return addComment.moveForm( "comment-1152743", "1152743", "respond", "3510" )' aria-label='Reply to Andrew'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1150133">
+    <div id="comment-1150133" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mb</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1150133" class="comment-date">Aug 22, 2015 at 10:24 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>The info graphic states that most people would wait 6-10 seconds for a page to load. The percentage who responded to this is 30%. This actually means that most people (70%) would wait a length of time that is outside the range of 6-10 seconds. </p>
+<p>The information is great, but the claims are misleading.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1150133#respond' onclick='return addComment.moveForm( "comment-1150133", "1150133", "respond", "3510" )' aria-label='Reply to Mb'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-1150258">
+    <div id="comment-1150258" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1150258" class="comment-date">Aug 23, 2015 at 1:56 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Mb,<br />
+What the infographic means is that the biggest *group* of people (30%) 6-10 seconds.  30% is the highest percentage, and that range (6-10 seconds) is what most people said they&#8217;d be willing to wait. So, yes, other people said they&#8217;d wait 11-15 seconds, or 20+ seconds, etc. But most people said they&#8217;d wait 6-10 seconds than any other range. </p>
+<p>I can, however, see how you may find this misleading.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1150258#respond' onclick='return addComment.moveForm( "comment-1150258", "1150258", "respond", "3510" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1163642">
+    <div id="comment-1163642" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1163642" class="comment-date">Oct 03, 2015 at 6:58 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Absolutely right. Page loading affects business at greater extent. Nowadays, mobile users are more than desktop users, and they doesn&#8217;t have patience to wait for the page to load. Once they find page is slow, they will close the site and move to competitor sites. Yourself you are making way for competitor to grow business. They may remember the site, and even next time too they may ignore site thinking its slow. </p>
+<p>This is one of the major factor to be resolved for business owners. Make sure to optimize site to have page load less than 3 seconds. Else your business would be at great risk of losing customers.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1163642#respond' onclick='return addComment.moveForm( "comment-1163642", "1163642", "respond", "3510" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1174039">
+    <div id="comment-1174039" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">andy J</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1174039" class="comment-date">Nov 02, 2015 at 4:16 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>page loading times can be identified (time) and issues on your own IT estate can be sorted (with the various toolkits that are out there), though this can be hit and miss.</p>
+<p>There is no current toolkit out there that can do the analysis across the multiple hops between the customer and your IT estate&#8230;&#8230;</p>
+<p>we are looking at a toolkit that can do it, though&#8230;clever analytics as a service</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1174039#respond' onclick='return addComment.moveForm( "comment-1174039", "1174039", "respond", "3510" )' aria-label='Reply to andy J'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1175194">
+    <div id="comment-1175194" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Micky Weis</cite>
+        
+        <a href="https://blog.kissmetrics.com/loading-time/#comment-1175194" class="comment-date">Nov 05, 2015 at 6:38 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi guys </p>
+<p>Another great piece of content! I always dig your content, and love to keep following your journey! I actually just wrote an article (5000 words+) on LinkedIn, and included this great article about speed on websites. </p>
+<p>You can find it here:<br />
+<a href="https://www.linkedin.com/pulse/5-secret-data-driven-ways-kill-your-competitors-content-micky-weis" rel="nofollow">https://www.linkedin.com/pulse/5-secret-data-driven-ways-kill-your-competitors-content-micky-weis</a></p>
+<p>Hopefully one day I will have a client using kissmetrics, and then I will let you know what I think! :)</p>
+<p>Best regards<br />
+Micky Weis</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/loading-time/?replytocom=1175194#respond' onclick='return addComment.moveForm( "comment-1175194", "1175194", "respond", "3510" )' aria-label='Reply to Micky Weis'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">1,237 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/loading-time/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='3510' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="97c6164db3" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="192"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'How Loading Time Affects Your Bottom Line', 'Post URL':'https://blog.kissmetrics.com/loading-time/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/increase-user-sign-ups/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/you-vs-the-data/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/loading-time/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/loading-time/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/loading-time/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="How Loading Time Affects Your Bottom Line" data-url="http://blog.kissmetrics.com/loading-time/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'How Loading Time Affects Your Bottom Line', 'Post URL':'https://blog.kissmetrics.com/loading-time/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'How Loading Time Affects Your Bottom Line', 'Post URL':'https://blog.kissmetrics.com/loading-time/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'How Loading Time Affects Your Bottom Line', 'Post URL':'https://blog.kissmetrics.com/loading-time/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":1780,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

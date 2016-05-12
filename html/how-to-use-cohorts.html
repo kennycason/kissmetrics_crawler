@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>How to Use Cohorts in Kissmetrics to Track Your True Conversion Rate</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; How to Use Cohorts to Track Your True Conversion Rate Comments Feed" href="https://blog.kissmetrics.com/how-to-use-cohorts/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='4 Factors That Correlate With Higher Search Rankings (Infographic)' href='https://blog.kissmetrics.com/four-factors-higher-rankings/' />
+<link rel='next' title='The Ultimate Pinterest Marketing Guide: How to Improve Your Reach and Promote Your Brand' href='https://blog.kissmetrics.com/ultimate-pinterest-marketing-guide/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/how-to-use-cohorts/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=26278' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-to-use-cohorts%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-to-use-cohorts%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,352] -->
+<meta name="description" content="When you can put people into different groups based on their activity and track them over long periods of time, you will get an idea of what works and what doesn’t." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/117750912206547874889/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='How to Use Cohorts in Kissmetrics to Track Your True Conversion Rate' />
+<meta property='og:url' content='https://blog.kissmetrics.com/how-to-use-cohorts/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='When you can put people into different groups based on their activity and track them over long periods of time, you will get an idea of what works and what doesn’t.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How to Use Cohorts in Kissmetrics to Track Your True Conversion Rate" />
+    <meta name="twitter:description" content="When you can put people into different groups based on their activity and track them over long periods of time, you will get an idea of what works and what doesn’t." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-26278 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog ">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy active">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--academy">
+          <h1>Kissmetrics Academy</h1>
+          <h2>Learn how Kissmetrics can optimize your marketing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'How to Use Cohorts to Track Your True Conversion Rate',
+						'Post Category': 'Academy',
+						'Post URL': 'https://blog.kissmetrics.com/how-to-use-cohorts/'
+		}
+	]);
+</script>
+
+<article id="post-26278" class="single-post post-26278 post type-post status-publish format-standard hentry category-academy category-conversation-rate-optimization" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">How to Use Cohorts to Track Your True Conversion Rate</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>A cohort is a group of people who share a common characteristic or experience within a defined period of time.</p>
+<p>Part of what distinguishes cohort analysis from other data analysis methods is that it allows you to track groups of people over long periods of time. In most cases, when you&#8217;re tracking data, everyone is blended together. You can segment people, but you can&#8217;t group them together and track their activity apart from other groups.</p>
+<p><strong><em>Why does this matter?</em></strong></p>
+<p>When you can put people into different groups based on their activity and track them over long periods of time, you will get an idea of what works and what doesn&#8217;t. For example:</p>
+<ul>
+<li>Did one group see one marketing message that the other didn&#8217;t?</li>
+<li>Are free trial users who submit support tickets more likely to convert to customers?</li>
+<li>Which features or products do customers keep coming back to use or buy?</li>
+<li>How &#8220;sticky&#8221; is your product for new users?</li>
+</ul>
+<p>These questions can be answered with cohorts.</p>
+<h2>The One Major Advantage of Cohorts over Funnels</h2>
+<p>You&#8217;re probably thinking to yourself: <em>Why not just use funnels to track conversions?</em></p>
+<p>The big reason is that cohorts keep people separated over time. Funnel reports blend people together and can&#8217;t separate them. Use funnels for the primary purpose of identifying bottlenecks and roadblocks where people get stuck.</p>
+<p>Let&#8217;s say you want to track how long it takes people to sign up after visiting your site. With a funnel report, the only thing you can do is select a date range and find the conversions within that time frame. In a cohort report, you can see the exact minute, hour, day, week, or month they converted.</p>
+<p>Below is a simplified cohort report that tracks conversions from “visited site” to “signed up.” We&#8217;re using it to show you how cohorts work.</p>
+<p>People are grouped by the month they visited, and they are split into buckets by the percentage of them who signed up each month:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/Cohort_Simple.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/Cohort_Simple.png" alt="Cohort Simple" class="aligncenter size-full wp-image-26279" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/Cohort_Simple-300x164.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/Cohort_Simple-1024x559.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/Cohort_Simple.png 2242w" sizes="(max-width: 2242px) 100vw, 2242px" /></a></p>
+<p>On the left side of the report, we see six months (groups) along with the number of people who visited the site during that month. People are sorted by when they first visited the site. So, if someone visits in April and again in June (and doesn&#8217;t sign up), they&#8217;ll be kept in the April group.</p>
+<p>On the right, we see the percentage of people in each group who signed up after they visited the site. They are sorted by month. If they visited the site and signed up within a month, they are put in the &#8220;1 month&#8221; bucket.</p>
+<p>Viewing the data, we see that most people sign up within a month of visiting the site for the first time.</p>
+<p>Putting people into these groups allows us to better understand the effectiveness of marketing activities. We see that April-June had higher first-month conversions. The July-September first-month conversions were not as strong, but 50% of the people who visited in August signed up within four months. If you were testing different marketing practices during those months, you&#8217;d see just how that marketing affected conversion rates.</p>
+<h2>The Kissmetrics Cohort Report</h2>
+<p>The core of Kissmetrics is its people-tracking platform. It doesn&#8217;t track sessions or visits. It tracks the real people who visit your site.</p>
+<p>From the very first time a person visits your site until the last time, all the visits get counted and recorded as one person in Kissmetrics. As long as you have some way of identifying users, you can track people in Kissmetrics.</p>
+<p>And, it doesn&#8217;t matter if the person visits your site on their tablet, phone, and/or desktop. Once the person is identified, all the visits merge and you&#8217;ll see exactly what the person did.</p>
+<p>When running a cohort report, you&#8217;ll need to keep people straight. No one should be counted more than once, and no user activity should be automatically deleted after a certain time period. As we&#8217;ve seen, measuring cohorts can take months. If you&#8217;re using a platform that doesn&#8217;t track people or doesn&#8217;t remember them after a certain time period, you&#8217;ll end up with bad data.</p>
+<p>Whichever cohort groups you use, you&#8217;ll need to be sure they are super accurate and data isn&#8217;t limited. <strong>What makes Kissmetrics&#8217;s Cohort Report so wonderful is that your data is accurate and the data doesn&#8217;t expire</strong>. It is exact and granular. You can drill down and see the exact people in each group and bucket. This allows you to reach out and get feedback from any user group you want to target. Without the people tracking you get in Kissmetrics, you wouldn&#8217;t have this flexibility.</p>
+<h3>Create a Cohort Report</h3>
+<p>To create a Kissmetrics Cohort Report, go to the &#8220;Reports&#8221; tab:</p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/reports-tab-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/reports-tab-kissmetrics.png" alt="reports-tab-kissmetrics" class="alignnone size-full wp-image-30407" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/reports-tab-kissmetrics-300x34.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/reports-tab-kissmetrics.png 911w" sizes="(max-width: 911px) 100vw, 911px" /></a></center></p>
+<p>Go to &#8220;Create New Report&#8221; and select &#8220;Cohort Report&#8221;:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/create-new-cohort-report.jpg" alt="create-new-cohort-report" class="aligncenter size-full wp-image-26282" /></p>
+<p>You&#8217;ll be presented with your report configuration:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-report-configuration.jpg"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-report-configuration.jpg" alt="cohort report configuration" class="aligncenter size-full wp-image-26283" /></a></p>
+<p>This is where you set the parameters of what you want to track, as follows:</p>
+<ol>
+<li>Choose the two events you want to track. In the example above, we&#8217;re tracking the people who visited the site and converted to signed up. “Visited site” is an automatically tracked event, while “Signed up” is not. You&#8217;ll want to be sure to get your tracking set up and get many of your events and properties in place before you begin creating a report.</li>
+<li>The date range is not limited to 30 days. You can choose one week, two weeks, a month, ninety days, six months, twelve months, or you can pick a custom date range.</li>
+<li>Choose the time frame for the buckets you want to split the &#8220;Signed up&#8221; people into. We can split them by minute, hour, day, week, or month. What we split them by cannot exceed the date range. So, in our case, since we&#8217;re looking at the last 30 days, we cannot split them into months because that would exceed the 30-day range we&#8217;ve set.</li>
+<li>We can choose to count people who did the event &#8220;Signed up&#8221; every time or just the first time. Since people sign up only once, we&#8217;ll stick with &#8220;First Time Only.&#8221; (In  some cases, you&#8217;ll want to choose &#8220;Every time.&#8221; For example, if you&#8217;re interested in tracking how often people log in, you&#8217;ll set it to &#8220;Every time.&#8221;)</li>
+<li>Choose whether to group people by time or property. <a href="https://blog.kissmetrics.com/people-events-and-properties/">Properties tell us various things about each person</a> and are used to segment people. We&#8217;ll get into more detail later about which properties can help provide the best insights for specific reports.</li>
+<li>If we choose to group people by time, we can group them by day, week, or month. If we choose to group people by property, we’ll get four options:</li>
+</ol>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/group-people-by-property-options.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/group-people-by-property-options.png" alt="group people by property options" class="aligncenter size-full wp-image-26284" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/group-people-by-property-options-300x88.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/group-people-by-property-options.png 923w" sizes="(max-width: 923px) 100vw, 923px" /></a></p>
+<p>These options apply to any property you choose. They are not exclusive to the Referrer property. Here are definitions/explanations of each of the four options:</p>
+<ol>
+<li><strong>First</strong> &#8211; When this option is selected, you&#8217;ll be viewing the first ever occurrence of the property. In this example, we&#8217;re looking at the Referrer property, which groups people by the URL that referred them. Whatever their first referrer was, gets grouped here. So, if they first came to the site on July 4, 2012 from espn.com, they&#8217;ll be grouped by that referrer.</li>
+<li><strong>Last</strong> &#8211; This will give you the most recent value for the property. In the case of the Referrer property, it&#8217;s the last site that the person came from regardless of the date range on the cohort.</li>
+<li><strong>First (starting date range)</strong> &#8211; This referrer is the first one within the selected date range. The first ever referrer is ignored. Whoever the person’s first referrer was within the date range is the one used here.</li>
+<li><strong>Last (ending date range)</strong> &#8211; In this sorting, people are grouped by the last referrer within the date range.</li>
+</ol>
+<p>Before we run our report, we&#8217;ll change the date range to the last 6 months (step 2. above). This way, we&#8217;ll get a bigger sample size than we would from the last 30 days we previously set. Also, since the length of our date range is 6 months, we’ll make a change under “Advanced options.” We&#8217;ll group the people who did the event &#8220;Visited site&#8221; across months, not weeks (step 6. above). Here’s how the revised report configuration looks:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/new-report-config-setup.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/new-report-config-setup.png" alt="new report config setup" class="aligncenter size-full wp-image-26285" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/new-report-config-setup-1024x822.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/new-report-config-setup.png 1230w" sizes="(max-width: 1230px) 100vw, 1230px" /></a></p>
+<h3>Run a Cohort Report and View Your Data</h3>
+<p>We&#8217;ll click &#8220;Run report&#8221; and get our data:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-report-walkthrough.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-report-walkthrough.png" alt="cohort report walkthrough" class="aligncenter size-full wp-image-26286" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-report-walkthrough-300x130.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-report-walkthrough-1024x444.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-report-walkthrough.png 1855w" sizes="(max-width: 1855px) 100vw, 1855px" /></a></p>
+<p>On the left, we&#8217;re looking at the number of people who visited the site during a specified month (group). To the right, we&#8217;re looking at the percentage of people who signed up after they visited the site (split into weekly buckets). Below the chart, we have a range of display options:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/display-options-cohort-walkthrough.png" alt="display options cohort walkthrough" class="aligncenter size-full wp-image-26287" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/display-options-cohort-walkthrough-300x112.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/display-options-cohort-walkthrough.png 520w" sizes="(max-width: 520px) 100vw, 520px" /></p>
+<ol>
+<li><strong>Number of people</strong> &#8211; This display will show the number of people in each bucket. Use this if you don&#8217;t necessarily care about a strict conversion percentage and just want the raw numbers.</li>
+<li><strong>Percentage of people</strong> &#8211; This is what we used in the above example. If you are interested in tracking conversion rates over time, use this.</li>
+<li><strong>Cumulative number of people</strong> &#8211; When this option is chosen, each bucket will include the data before it. It will add up over time (assuming you don&#8217;t have 0) and give you the running totals. Use this when you want to see if the totals are increasing with each new batch of people.</li>
+<li><strong>Cumulative percentage of people</strong> &#8211; The exact same as above, except with percentages. Use this to see how your conversion rate progresses through time.</li>
+</ol>
+<p>We can hover over various buckets within the report to get a quick synopsis:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/hover-over-bucket-cohort.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/hover-over-bucket-cohort.png" alt="hover over bucket cohort" class="aligncenter size-full wp-image-26288" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/hover-over-bucket-cohort-1024x87.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/hover-over-bucket-cohort.png 1493w" sizes="(max-width: 1493px) 100vw, 1493px" /></a></p>
+<p>If we click on a bucket, we get the option to view the exact people who signed up during the time frame:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/click-on-bucket-view-people-cohort.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/click-on-bucket-view-people-cohort.png" alt="click on bucket view people cohort" class="aligncenter size-full wp-image-26289" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/click-on-bucket-view-people-cohort-1024x173.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/click-on-bucket-view-people-cohort.png 1380w" sizes="(max-width: 1380px) 100vw, 1380px" /></a></p>
+<p>Remember, Kissmetrics connects all your data to real people. This means you can instantly pull a list of people who are in any particular cohort. To see who these people are, just click on the &#8220;View the 3 people&#8221; link, and you’ll get a list of the people and their email addresses.</p>
+<p>Then, you can click on each person and get a person details report. (If you want to get more information on our person details report, check out our <a href="https://blog.kissmetrics.com/people-events-and-properties/">People, Events, and Properties post</a>, which covers this in depth.)</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/blurred-screenshot.png" alt="blurred screenshot" class="aligncenter size-full wp-image-26308" /></p>
+<p>Now that we&#8217;ve discussed how to set up and read the Kissmetrics Cohort Report, let&#8217;s get into detail about how these reports can benefit your business.</p>
+<h2>Use the Cohort Report to Measure Retention</h2>
+<p>Businesses live and die by their ability to acquire and retain customers. Acquisition and retention need to be balanced for a business to survive and grow. If you can&#8217;t do either well enough, growth will stagnate, and the business could eventually die.</p>
+<p>So how do you avoid this?</p>
+<p>In both acquisition and retention, the Kissmetrics Cohort Report is one of the best tools you&#8217;ll come across. It&#8217;s included in every Kissmetrics plan and is super easy to set up and use. Let&#8217;s run through some examples of how you can use this report to help you understand and improve your acquisition and retention.</p>
+<h3>Track Signup Rates</h3>
+<p>When tracking your signup conversion rates, you&#8217;ll want to use two separate reports:</p>
+<ul>
+<li><a href="https://blog.kissmetrics.com/saas-companies-kissmetrics-funnels/">Funnel Report</a> &#8211; Use this report to identify roadblocks to conversion.</li>
+<li>Cohort Report &#8211; Use this to put people into groups and learn the amount of time it takes them to convert.</li>
+</ul>
+<p>To set up a cohort group for signup conversions, load the Cohort Report in Kissmetrics. Select the events &#8220;Visited Site&#8221; and &#8220;Signed Up&#8221;:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-sign-up-events.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-sign-up-events.png" alt="cohort sign up events" class="aligncenter size-full wp-image-26291" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-sign-up-events-1024x593.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-sign-up-events.png 1204w" sizes="(max-width: 1204px) 100vw, 1204px" /></a></p>
+<p>We&#8217;ll want to get a good sample size, so we&#8217;ll change our date range from the last 30 days (as shown above) to the last 12 months. We&#8217;ll also need to make a change under the &#8220;Advanced options&#8221;:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-sign-up-advanced-options.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-sign-up-advanced-options.png" alt="cohort sign up advanced options" class="aligncenter size-full wp-image-26292" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-sign-up-advanced-options-300x260.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-sign-up-advanced-options-1024x888.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-sign-up-advanced-options.png 1060w" sizes="(max-width: 1060px) 100vw, 1060px" /></a></p>
+<p>Since the length of our date range is 12 months, we&#8217;ll group people across months instead of weeks (as shown above):</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/new-report-xx.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/new-report-xx.png" alt="new report xx" class="aligncenter size-full wp-image-26293" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/new-report-xx-300x235.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/new-report-xx.png 580w" sizes="(max-width: 580px) 100vw, 580px" /></a></p>
+<p>We’ll click “Run report” and get our data:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-cohort.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-cohort.png" alt="visited site signed up cohort" class="aligncenter size-full wp-image-26295" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-cohort-300x194.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-cohort-1024x662.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-cohort.png 1398w" sizes="(max-width: 1398px) 100vw, 1398px" /></a></p>
+<p>We see that in every month (group) shown in the list on the left, the bulk of signups occurred within the first week. Any time after one week, there&#8217;s only a small chance of conversions.</p>
+<p>The good news is that conversions improved as the months went by. In December, .3% of visitors converted to Signed up within the first week (bucket). Then, up until June, conversions stayed within .4% and .5%. Beginning with July, conversion rates nearly doubled from where they were previously.</p>
+<p>Let&#8217;s change our &#8220;Visited site&#8221; grouping from time to property. We&#8217;ll look at the Channel property to see how different channels affect conversions. (We’ll look at the channel of the person’s first ever visit.) The Channel property categorizes your traffic referrals into 7 groups:</p>
+<ul>
+<li>Direct &#8211; Visits from direct referrers, typing your site into the browser, or bookmarks</li>
+<li>Organic &#8211; Visits from search engines</li>
+<li>Referral &#8211; Visits from other domains</li>
+<li>Email &#8211; Visits from emails</li>
+<li>Paid &#8211; Visits from paid sources such as cpc, cpm, display, ppc, and more</li>
+<li>Social &#8211; Visits from social networks/sites</li>
+<li>None &#8211; Anyone who doesn&#8217;t fit into any of the above channels will be put here</li>
+</ul>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/property-channel-cohort.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/property-channel-cohort.png" alt="property channel cohort" class="aligncenter size-full wp-image-26296" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/property-channel-cohort-300x265.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/property-channel-cohort.png 938w" sizes="(max-width: 938px) 100vw, 938px" /></a></p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-percent-people-cohort.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-percent-people-cohort.png" alt="visited site signed up percent people cohort" class="aligncenter size-full wp-image-26297" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-percent-people-cohort-300x140.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-percent-people-cohort-1024x479.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-percent-people-cohort.png 1239w" sizes="(max-width: 1239px) 100vw, 1239px" /></a></p>
+<p>To get more concrete numbers, we&#8217;ll change the display option below the chart from &#8220;Percentage of people&#8221; to &#8220;Number of People&#8221;:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-nop.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-nop.png" alt="visited site signed up nop" class="aligncenter size-full wp-image-26298" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-nop-300x142.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-nop-1024x485.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/visited-site-signed-up-nop.png 1403w" sizes="(max-width: 1403px) 100vw, 1403px" /></a></p>
+<p>Viewing both the percentage of people and the number of people, we see that organic delivers the most visitors and the most signups. But, compared with the other channels, organic has an average conversion rate. Referral has more than double the percentage of conversions of any other channel.</p>
+<h3>Actions to Take Based on These Insights</h3>
+<p>Given that referral is such a strong group in the Channel property, you&#8217;ll need to do what you can to increase the number of referrals you get from other sites. PR, outreach campaigns, and guest blogging should all be in the cards.</p>
+<h3>Measure Login Retention after Signup</h3>
+<p>Let&#8217;s say you&#8217;re a SaaS company and you want to know how many people log back in after signing up. This will help you understand the &#8220;stickiness&#8221; of your product and the effectiveness of your new user onboarding.</p>
+<p>To start, load the Cohort Report and select the events &#8220;Signed Up&#8221; and &#8220;Logged In.&#8221; These events are not automatically tracked in Kissmetrics, so you&#8217;ll have to set them up yourself.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/selecting-events-cohort-report-kissmetrics.jpg"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/selecting-events-cohort-report-kissmetrics.jpg" alt="selecting events cohort report kissmetrics" class="aligncenter size-full wp-image-26299" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/selecting-events-cohort-report-kissmetrics-300x158.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/selecting-events-cohort-report-kissmetrics-1024x540.jpg 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/selecting-events-cohort-report-kissmetrics.jpg 1325w" sizes="(max-width: 1325px) 100vw, 1325px" /></a></p>
+<p>This report will show us the people who visited the site and eventually signed up.</p>
+<p>Since we&#8217;re interested in new user login retention, we&#8217;ll change our date range to the last 90 days. We&#8217;ll also take a look at the Advanced options:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/date-advanced-options-cohort-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/date-advanced-options-cohort-kissmetrics.png" alt="date advanced options cohort kissmetrics" class="aligncenter size-full wp-image-26300" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/date-advanced-options-cohort-kissmetrics-300x268.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/date-advanced-options-cohort-kissmetrics-1024x916.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/date-advanced-options-cohort-kissmetrics.png 1028w" sizes="(max-width: 1028px) 100vw, 1028px" /></a></p>
+<p>Since the length of our date range is only 90 days, we&#8217;ll split people into daily buckets.</p>
+<p>We&#8217;ll count people who “Logged in” &#8220;Every time&#8221; (instead of “First Time Only” as shown above).</p>
+<p>We&#8217;ll group people who “Signed up” across weeks.</p>
+<p>We&#8217;ll click “Run report” and get our data:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-signed-up-logged-in.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-signed-up-logged-in.png" alt="cohort signed up logged in" class="aligncenter size-full wp-image-26294" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-signed-up-logged-in-1024x698.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/cohort-signed-up-logged-in.png 1389w" sizes="(max-width: 1389px) 100vw, 1389px" /></a></p>
+<p>On the left side, we&#8217;re grouping people who signed up by week. We see a week (group) along with the number of people who signed up during that week. On the right, we see the percentage of people who logged in after signing up (split into weekly buckets). We selected &#8220;Every time&#8221; under the Advanced options, so we&#8217;re tracking each time a person logs in.</p>
+<p>It&#8217;s not surprising that most people log in the same day they sign up. But, after the first day, we see a big drop off, and the retention continues to drop off as the days go by. The &#8220;&gt;12&#8221; column is the percentage of people who continue to log in after 12 days of signing up.</p>
+<p>To get more insight out of this report, let&#8217;s group those people who signed up by the plan they selected. To do this, we go back to our report setup (report configuration). Under Advanced options, we go to our options for the way we group people. We change the way we group people from time to property, and we select &#8220;Subscription plan level&#8221; as our property. This property is not automatically tracked in Kissmetrics, so you&#8217;ll have to set it up yourself. (We’ll look at the Subscription plan level of the person’s first ever plan.)</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/subcription-property-kissmetrics-cohort.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/subcription-property-kissmetrics-cohort.png" alt="subcription property kissmetrics cohort" class="aligncenter size-full wp-image-26301" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/subcription-property-kissmetrics-cohort-300x127.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/subcription-property-kissmetrics-cohort.png 778w" sizes="(max-width: 778px) 100vw, 778px" /></a></p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/signed-up-logged-in-plan-property.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/signed-up-logged-in-plan-property.png" alt="signed up logged in plan property" class="aligncenter size-full wp-image-26302" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/signed-up-logged-in-plan-property-300x200.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/signed-up-logged-in-plan-property-1024x684.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/signed-up-logged-in-plan-property.png 1137w" sizes="(max-width: 1137px) 100vw, 1137px" /></a></p>
+<p>Here, we have all the plans (groups) listed along with the number of people in each plan. On the far right, we see that our top four plans have relatively solid engagement, with anywhere from 35.8% to 70.6% of people continuing to log in after 12 days of signing up.</p>
+<p>The other plans have a much smaller sample size. We shouldn&#8217;t pay too much attention to those because they make up a small percentage of users, and there really aren’t enough people in those groups to get reliable insights. To make informed decisions based on data, we&#8217;ll definitely need more than 10 people in each group.</p>
+<p>The Basic plan has solid retention. The majority of people who sign up for this plan are still logging in 12 days later.</p>
+<p>Medium and Professional plans both have a good number of users; but after 12 days, their retention isn&#8217;t as solid as the Basic plan.</p>
+<p><b>Actions to Take Based on These Insights</b></p>
+<p>To get inactive users logging in with the product, you could send them emails asking if they have any questions or feedback. You also could test a new onboarding system to try to get more people logging in and getting use out of the product.</p>
+<h3>Track Repurchase Rate</h3>
+<p>Repurchase rate is a critical retention metric for ecommerce companies. It tracks how often a customer repurchases and really signifies how solid your business is in terms of service and pricing. Also, it can warn you ahead of time if purchases begin to dwindle.</p>
+<p>We&#8217;ll track the event &#8220;Purchase&#8221; twice. This event is not automatically tracked in Kissmetrics, so you&#8217;ll have to set it up yourself. We&#8217;ll set our date range at the last 12 months. For ecommerce companies, repurchase rates can vary greatly depending on industry. If you sell diapers, you&#8217;ll ideally have a much higher repurchase rate than a company selling windows.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-setup-cohort.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-setup-cohort.png" alt="repurchase rate setup cohort" class="aligncenter size-full wp-image-26303" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-setup-cohort-300x143.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-setup-cohort.png 920w" sizes="(max-width: 920px) 100vw, 920px" /></a></p>
+<p>Under Advanced options, we&#8217;ll split people into weekly buckets. Again, this really depends on the type of ecommerce store.</p>
+<p>Since we&#8217;re tracking the repurchase rate, we&#8217;ll need to count “Every time” a person purchases.</p>
+<p>We’ll group people by time across months.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-advanced-cohort.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-advanced-cohort.png" alt="repurchase rate advanced cohort" class="aligncenter size-full wp-image-26304" /></a></p>
+<p>Now, let’s click on “Run report” and get our data:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-cohort-report-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-cohort-report-kissmetrics.png" alt="repurchase rate cohort report kissmetrics" class="aligncenter size-full wp-image-26305" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-cohort-report-kissmetrics-300x195.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-cohort-report-kissmetrics-1024x665.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-cohort-report-kissmetrics.png 1123w" sizes="(max-width: 1123px) 100vw, 1123px" /></a></p>
+<p>We see that customers who purchased in December had a high likelihood of repurchasing in the weeks afterward. For the bulk of the other months (groups), repurchases are high within the first few weeks; but after that, they fall to around 5%. Then, after 12 weeks, repurchases reach slightly above 10%.</p>
+<p>Keep in mind that we&#8217;re counting every time a person purchases. If they purchased in January and then they purchased again 2 weeks later and 6 weeks later, they&#8217;ll be counted in both the 2<sup>nd</sup> and 6<sup>th</sup> buckets.</p>
+<p>To get more insight out of this report, let’s group people by product category to see if any category increases the likelihood of repurchase. To do this, we go back to our report setup (report configuration). Under Advanced options, we go to our options for the way we group people. We change the way we group people from time to property, and we select “Product Category” as our property. (We&#8217;ll look at the product category of the person’s first ever purchase.)</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/product-category-cohort.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/product-category-cohort.png" alt="product category cohort" class="aligncenter size-full wp-image-26306" /></a></p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-product-category.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-product-category.png" alt="repurchase rate product category" class="aligncenter size-full wp-image-26307" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-product-category-1024x730.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/repurchase-rate-product-category.png 1094w" sizes="(max-width: 1094px) 100vw, 1094px" /></a></p>
+<p>This data is grouping people by their product category. We see the most popular categories at the top, with the majority of people ordering button-ups. Pajamas, belts, shoe laces, and button-ups are some of our most popular repurchase items.</p>
+<p><strong>Actions to Take Based on These Insights</strong></p>
+<p>The data reveals the most popular product categories that lead to consistent repurchasing. You may want to consider expanding these product categories by adding more products and promoting them more aggressively through emails and paid channels. You also could feature them more throughout the site. Trying these tactics will likely lead to increased sales.</p>
+<h2>The Three Takeaways You Need to Know about Cohorts</h2>
+<p>A quick summary of the main points:</p>
+<ul>
+<li>Cohorts allow you to track and group people over long periods of time. This makes cohorts a great tool for tracking conversions. Funnels do not separate people over time. They throw them all under one umbrella. Use funnels to identify the roadblocks to conversion.</li>
+<li>Cohorts can provide insights for both acquisition and retention. SaaS companies can track signup rates, feature engagement, upgrade rates, and whatever else matters to their business. Ecommerce companies can track purchase rates, repurchase rates, and acquisition time (add to cart &gt; purchase), etc. Slice and dice your data by time or property to maximize your insights.</li>
+<li>The Kissmetrics Cohort Report is awesome because it tracks people, the data is accurate, and the data doesn&#8217;t expire. This makes it possible to look as far as you&#8217;ve been tracking to see how behaviors have changed over time. You don&#8217;t need to worry about accuracy because Kissmetrics ties all your data to real people. In view of that, you can get very granular with your data and see each person in a report. Rest easy knowing you don&#8217;t have time constraints on your data and it&#8217;s all accurate.</li>
+</ul>
+<h2>Two-Minute Demo</h2>
+<p>Want to see the Cohort Report in action? Just click play below.</p>
+<p><iframe src="//fast.wistia.net/embed/iframe/b1ptf62dbx?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen></iframe><script src="//fast.wistia.net/assets/external/E-v1.js"></script></p>
+<p><i>To find out your true conversion rates, <a href="https://www.kissmetrics.com/signup?utm_source=blog&#038;utm_medium=academy&#038;utm_campaign=cohortreport">login or sign up for a Kissmetrics account</a> now.</i></p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/using-channels-in-kissmetrics/">Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From</a></li>
+<li><a href="https://blog.kissmetrics.com/kissmetrics-path-report/">How the Kissmetrics Path Report Helps You Discover the Events That Lead to Conversion</a></li>
+<li><a href="https://blog.kissmetrics.com/what-marketers-need-to-know-about-cohorts/">What Marketers Need to Know About Cohorts</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-to-use-cohorts%2F&source=tweetbutton&text=How+to+Use+Cohorts+to+Track+Your+True+Conversion+Rate&url=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-to-use-cohorts%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-to-use-cohorts%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=How to Use Cohorts to Track Your True Conversion Rate&amp;body=https://blog.kissmetrics.com/how-to-use-cohorts/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-26278 -->
+        
+        <div id="comments">
+		
+							<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">No comments yet <small><a rel="nofollow" id="cancel-comment-reply-link" href="/how-to-use-cohorts/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='26278' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="03df460656" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="209"/></p>				</form>
+					</div><!-- #respond -->
+				
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'How to Use Cohorts to Track Your True Conversion Rate', 'Post URL':'https://blog.kissmetrics.com/how-to-use-cohorts/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/four-factors-higher-rankings/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/ultimate-pinterest-marketing-guide/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="https://blog.kissmetrics.com/how-to-use-cohorts/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="https://blog.kissmetrics.com/how-to-use-cohorts/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="https://blog.kissmetrics.com/how-to-use-cohorts/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="How to Use Cohorts to Track Your True Conversion Rate" data-url="https://blog.kissmetrics.com/how-to-use-cohorts/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'How to Use Cohorts to Track Your True Conversion Rate', 'Post URL':'https://blog.kissmetrics.com/how-to-use-cohorts/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'How to Use Cohorts to Track Your True Conversion Rate', 'Post URL':'https://blog.kissmetrics.com/how-to-use-cohorts/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'How to Use Cohorts to Track Your True Conversion Rate', 'Post URL':'https://blog.kissmetrics.com/how-to-use-cohorts/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":336,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

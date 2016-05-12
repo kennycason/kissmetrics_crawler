@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>The Foundation of Kissmetrics: People, Events, and Properties</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; The Foundation of Kissmetrics: People, Events, and Properties Comments Feed" href="https://blog.kissmetrics.com/people-events-and-properties/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='7 Experts Tell You How To Create Winning Marketing Surveys' href='https://blog.kissmetrics.com/create-winning-marketing-surveys/' />
+<link rel='next' title='How to Get Users to Share Social Data with You' href='https://blog.kissmetrics.com/get-users-to-share/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/people-events-and-properties/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=24764' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fpeople-events-and-properties%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fpeople-events-and-properties%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,360] -->
+<meta name="description" content="The best way to get started with KISSmetrics is to understand people, events, and properties." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/117750912206547874889/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='The Foundation of Kissmetrics: People, Events, and Properties' />
+<meta property='og:url' content='https://blog.kissmetrics.com/people-events-and-properties/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='The best way to get started with KISSmetrics is to understand people, events, and properties.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The Foundation of Kissmetrics: People, Events, and Properties" />
+    <meta name="twitter:description" content="The best way to get started with KISSmetrics is to understand people, events, and properties." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-24764 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog ">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy active">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--academy">
+          <h1>Kissmetrics Academy</h1>
+          <h2>Learn how Kissmetrics can optimize your marketing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'The Foundation of Kissmetrics: People, Events, and Properties',
+						'Post Category': 'Academy',
+						'Post URL': 'https://blog.kissmetrics.com/people-events-and-properties/'
+		}
+	]);
+</script>
+
+<article id="post-24764" class="single-post post-24764 post type-post status-publish format-standard hentry category-academy category-the-basics-of-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">The Foundation of Kissmetrics: People, Events, and Properties</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>The best way to get started with Kissmetrics is to understand people, events, and properties. People are the actual people (not pageviews) who visit your site, events are any important actions they take, and properties are any additional information about those people.</p>
+<p>In this post, we&#8217;ll break down these three types of data. We&#8217;ll start by explaining how Kissmetrics tracks actual people. Then, we&#8217;ll move on to explaining what events and properties are and how to use them to gather insight-rich data. Throughout the entire post, you&#8217;ll see how people, events, and properties all tie in to one another.</p>
+<p>Let&#8217;s start by discussing People.</p>
+<h2>People</h2>
+<p>The cornerstone of Kissmetrics is that it&#8217;s a <a href="https://blog.kissmetrics.com/tracking-people-with-analytics/">people-tracking</a> platform. Every person who comes to your website gets recorded as a person, not a pageview. Throughout the entire Kissmetrics product, you can view a report and see exactly who took which actions. All the events an individual performs (and all the properties tied to the individual) get connected to a person. It doesn&#8217;t matter if the person connects via a desktop or a mobile device. And, with any report you run, you&#8217;ll be able to drill down and see each person in the report.</p>
+<p>Our Person Details Report shows all the events a person has done on your website. Here&#8217;s how it looks:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-details-report-timeline-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-details-report-timeline-kissmetrics.png" alt="person details report timeline kissmetrics" class="alignnone size-full wp-image-24772" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-details-report-timeline-kissmetrics-1024x798.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-details-report-timeline-kissmetrics.png 1104w" sizes="(max-width: 1104px) 100vw, 1104px" /></a></p>
+<p>Here we are looking at the activity this person has done in one day. It starts at the top, where we see they came to us from Google. As we move on down, we see the exact steps this person has taken to our website. Every time they come to our website, their session activity gets recorded, and we can see all the events they&#8217;ve done.</p>
+<p>Why is it important to get this granular with your data?</p>
+<p>Because in order to grow your business, you need to understand people. Throughout the customer lifecycle, understanding how each person interacts with your business is crucial to learning how to improve it.</p>
+<p>Let&#8217;s go through pre- and post-purchase customer activities to see how having a deep understanding of people can provide insights to grow your business.</p>
+<h3>Pre-Purchase</h3>
+<p>A customer acquisition funnel tracks the number of people who come to your site and end up purchasing. The best way to go about improving this funnel is to understand the people who purchased as well as those who did <em>not</em> purchase.</p>
+<p><em>Why do we need to learn about the people who purchased from us? What do we need to learn about them?</em></p>
+<p>We need to learn about our customers and the path they took pre-purchase. By understanding pre-purchase behavior, we learn about what they&#8217;re interested in, what goes in to their buying decision, and what areas of our website convert visitors to customers.</p>
+<p>Where did these customers come from?</p>
+<p>What areas of our website did they visit before deciding to purchase? Why did they visit those areas?</p>
+<p>What were the pages that led to the conversion?</p>
+<p>What made them decide to buy from us?</p>
+<p>What common characteristics do our customers share?</p>
+<p>When we have answers to these questions, we&#8217;ll know more about our customers. We&#8217;ll know what areas of our website are the strongest in leading to conversions. We&#8217;ll know what to focus on to get more customers.</p>
+<p><em>Why do we need to learn about the customers who did not purchase from us? What do we need to learn about them?</em></p>
+<p>Understanding why customers did not purchase from us is just as important as understanding why customers did purchase.</p>
+<p>What were their barriers to purchasing?</p>
+<p>What made them choose to not purchase?</p>
+<p>What was the path they took through our website?</p>
+<p>What was the last page they visited before dropping off?</p>
+<p>Where did these visitors come from?</p>
+<p>What are the differences between those who purchased and those who did not?</p>
+<p>By understanding why people don&#8217;t purchase from us, we&#8217;ll know what our key barriers to customer acquisition are. We&#8217;ll also have some ideas about how to fix them.</p>
+<h3>Post-Purchase</h3>
+<p>Once we have customers, we need to understand how to keep them and how to acquire more. With Kissmetrics, we can understand how our customers use our products and services.</p>
+<p>Want to know which features customers first discover? Use the Kissmetrics People Search Report.</p>
+<p>Want to know which features are used the most? Use the Kissmetrics People Search Report.</p>
+<p>Want to know which features your best (most loyal) customers use? Use the Kissmetrics Person Details Report.</p>
+<p>Want to know where your customers are coming from? Use the Revenue Report and segment by Channel.</p>
+<p>People are the lifeblood of your business. If you don&#8217;t have an understanding of how they use your products or which products they buy, then you&#8217;re left in the dark. You won&#8217;t know how to grow your business because you don&#8217;t know your customers.</p>
+<p>Throughout this post, you&#8217;ll see examples of how all your data is tied to people. In each section, we&#8217;ll run through reports and show how everything gets connected back to actual people.</p>
+<p>Let&#8217;s move on to events and see how they tie back to people.</p>
+<h2>Events</h2>
+<p>If you run a website, there likely are some important actions you have for visitors. These actions may be visiting a specific URL, signing up for an email newsletter, submitting a form, or placing an order. In Kissmetrics, these important actions are called events. Nearly everything you&#8217;ll do in Kissmetrics will be centered around events.</p>
+<p>You track events and then string these events together to gather insights. Let&#8217;s run through four examples.</p>
+<h3>1. Funnel Reports</h3>
+<p>A common use of events is to put together a funnel report. Below is an example funnel report for an e-commerce company. We&#8217;re putting together three events – visited site, placed an item in cart, and placed an order.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-1.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-1.png" alt="Untitled 1" class="alignnone size-full wp-image-24795" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-1-300x121.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-1.png 700w" sizes="(max-width: 700px) 100vw, 700px" /></a></p>
+<p>In this funnel report, we&#8217;re tracking the percentage of people who come to our site and end up buying a product. It doesn&#8217;t matter if people visit multiple times, they are counted only once. So, if one person viewed your home page 10 times, they are counted as only one person in this funnel report. This allows you to get the actual conversion rate of people who visited the home page, placed an item in their cart, and placed an order.</p>
+<p>We can see there&#8217;s a big bottleneck in getting people to actually put items in the cart. With this knowledge, we can run experiments aimed at getting people who are interested in the products to put a product in the cart.</p>
+<p>These funnel reports can be used for anything you want to track. Some common funnel reports:</p>
+<ul>
+<li>Visited Site &gt; Signed up for Newsletter</li>
+<li>Visited Site &gt; Placed Order (e-commerce or SaaS)</li>
+<li>Visited Site &gt; Signed up (SaaS)</li>
+<li>Opened App &gt; Used Feature (Mobile or SaaS)</li>
+<li>Visited Site &gt; Filled out Lead Form</li>
+</ul>
+<p>The list is endless. Whatever goals you have for your site, you can set up a funnel report to see how many people actually convert to taking that important action.</p>
+<p>Let&#8217;s move on to discussing another useful Kissmetrics report.</p>
+<h3>2. Cohort Reports</h3>
+<p>A cohort is a group of people who share a common characteristic or experience within a defined period.</p>
+<p>For a SaaS app (or anything that requires a login) you can track login retention over time using the Kissmetrics Cohort Report. Here&#8217;s how that would look:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/KISSmetrics-cohort.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/KISSmetrics-cohort.png" alt="KISSmetrics cohort" class="alignnone size-full wp-image-24774" /></a></p>
+<p align="center"><em>The Cohort Report puts people into &#8220;buckets.&#8221; Each bucket represents a group of people who signed up during the same week and logged in during the same week.</em></p>
+<p>In this report, we&#8217;re tracking two events: Signed up and Logged in. We&#8217;re tracking people who signed up between March 31, 2013 &#8211; June 1, 2013. Then, we&#8217;re tracking their engagement with a product during the specified signup weeks (on the left). For the people in the respective weeks, we&#8217;re tracking how many logged in again, from 1 week after up to 12 weeks after.</p>
+<p>The biggest benefit for this report is to see how good your app is. It gives you solid engagement and tells you whether or not you really have product/market fit. If logins continue to drop (like they do in this report), people don’t really get much value out of your product. They’ll always drop a bit in the first few weeks, but you should see them stabilize.</p>
+<p>Cohorts are useful for other reports as well. Here are a few ideas:</p>
+<ul>
+<li>Track how often people open a mobile or SaaS app. This can be tracked by hour, day, week, etc.</li>
+<li>Track your conversion rates over time. You can group people by the hours, days, weeks, months that they signed up, or any properties.</li>
+<li>Track how quickly users discover new features in a product. You can set this up by having one event as &#8220;Signed Up&#8221; and then a corresponding event that triggers when a user tries the new feature.</li>
+</ul>
+<p>And with any report you run, you&#8217;ll be able to see exactly who fell into which bucket. Just click on a bucket and select that you want to view the people:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/view-people-in-cohort.png" alt="view people in cohort" class="alignnone size-full wp-image-24775" /></p>
+<p>Click on &#8220;View the 433 people&#8221; and you&#8217;ll see a list of the actual people in that bucket:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/list-people-from-cohort-report.png" alt="list people from cohort report" class="alignnone size-full wp-image-24777" /></p>
+<p>You can click on any email address to see details about the activity that person has done on your site. Let&#8217;s choose ashley@google.com as an example. We click on that email address and are presented with this:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-details-cohort.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-details-cohort.png" alt="person details cohort" class="alignnone size-full wp-image-24778" /></a></p>
+<p>This is our Person Report. Anything they&#8217;ve done on your site will be shown here. And you can get this data on any person.</p>
+<p>Let&#8217;s move on to discussing our People Reports.</p>
+<h3>3. People Reports</h3>
+<p>Let&#8217;s say you run a SaaS app and you want to find out how many people used a particular feature this month. With Kissmetrics, you set up an event and call it &#8220;Used Feature,&#8221; or whatever else you want to name it. This event triggers anytime a user visits a particular URL.</p>
+<p>After it is set up, you run a People Search to look at the people who have used your app this month:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/used-feature-kissmetrics-people-report.png" alt="used feature kissmetrics people report" class="alignnone size-full wp-image-24779" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/used-feature-kissmetrics-people-report-194x300.png 194w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/used-feature-kissmetrics-people-report.png 596w" sizes="(max-width: 596px) 100vw, 596px" /></p>
+<p>We get a list of people who have done that event (and the number of times they&#8217;ve done it) in the past month.</p>
+<p>You can run this report for any event, whether it&#8217;s using a feature, visiting a site, paying you, placing an order, submitting a form, etc. Any event you can think of, you can track with Kissmetrics.</p>
+<h3>4. A/B Test Report</h3>
+<p>Using the Kissmetrics A/B Test Report, you can set up your tests to run in a 3rd party tool like Optimizely or Visual Website Optimizer, and you can track the tests in Kissmetrics.</p>
+<p>To set up a test, just create a new A/B Test Report.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-2.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-2.png" alt="Untitled 2" class="alignnone size-full wp-image-24796" /></a></p>
+<p>We first need to select our conversion event. We&#8217;ll choose &#8220;Signed Up&#8221;:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-3.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-3.png" alt="Untitled 3" class="alignnone size-full wp-image-24797" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-3-300x199.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-3.png 624w" sizes="(max-width: 624px) 100vw, 624px" /></a></p>
+<p>Then, we need to select our experiment. We run a search for the test we&#8217;re running in Optimizely:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-4.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-4.png" alt="Untitled 4" class="alignnone size-full wp-image-24798" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-4-300x122.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-4.png 624w" sizes="(max-width: 624px) 100vw, 624px" /></a></p>
+<p>And we run our report:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-5.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-5.png" alt="Untitled 5" class="alignnone size-full wp-image-24799" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-5-300x196.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-5.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p>The great thing about our A/B Test Report is that you&#8217;ll be able to see each person in the test. Just hover over one of the test bars and choose which people you&#8217;d like to see:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-6.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-6.png" alt="Untitled 6" class="alignnone size-full wp-image-24800" /></a></p>
+<p>You can do this with <em>any</em> event. If you&#8217;re an e-commerce company, you can run the test with the event &#8220;Placed Order&#8221; to see how an A/B test actually affects your business. Or if you&#8217;re a consultancy that wants people to fill out a lead generation form, create that event and track the results with Kissmetrics. No matter your website goals, just create an event, run a test, and see how it affects your business.</p>
+<p>Now let&#8217;s look at our final data point, properties, and see how each person is tagged with various properties.</p>
+<h2>Properties</h2>
+<p>Properties tell you various additional information about each person. They are primarily useful for segmenting people into groups.</p>
+<p>Remember the e-commerce funnel report from earlier? We can view some of the properties in that report to tell us where our visitors came from.</p>
+<p>Here&#8217;s that report, this time showing the referrer property:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-funnel-report-properties.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-funnel-report-properties.png" alt="kissmetrics funnel report properties" class="alignnone size-full wp-image-24781" /></a></p>
+<p align="center"><em>This referrer property is showing us the sites that referred visitors to us. It&#8217;s the first-ever referrer, meaning these sites drove users for their first visit. Any referrer after that is not included.</em></p>
+<p>This report is showing us our top referrers. We can see how each referrer performs throughout the funnel. We see that we have a high conversion percentage from Facebook and t.co (Twitter), meaning that our social strategy is very targeted and getting good traction. We also see that our blog sends us a better-than-average conversion rate, so it may be worthwhile to continue with the blogging effort, or even ramp it up.</p>
+<p>One common property is to segment people all together into Channels. This groups all traffic sources into categories. The funnel report below is for the month of June, and we&#8217;re viewing the Channels property.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-funnel-report-channel.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-funnel-report-channel.png" alt="kissmetrics funnel report by channel" class="alignnone size-full wp-image-24782" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-funnel-report-channel-300x266.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-funnel-report-channel.png 716w" sizes="(max-width: 716px) 100vw, 716px" /></a></p>
+<p>For a background on how we get this data, <a href="http://support.kissmetrics.com/tools/channel-definition/">check out our Channel Definitions page</a>.</p>
+<p>We can see that we get a good amount of traffic from organic and direct. Organic has a better-than-average conversion rate, while direct has less than average. We also get a good conversion rate from social. With this data in mind, we know that people who come to us from a search engine generally convert well, so adding more content on our website would possibly add more traffic, and thus more customers (if conversions remain the same). We also got 23 orders from social, so it makes sense for us to continue our social strategy.</p>
+<p>We also can view how many of these people are new or returning:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-returning-people-property.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-returning-people-property.png" alt="kissmetrics returning people property" class="alignnone size-full wp-image-24783" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-returning-people-property-300x195.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-returning-people-property.png 741w" sizes="(max-width: 741px) 100vw, 741px" /></a></p>
+<p>We see that many of our customers are returning, and we also got a new batch of customers.</p>
+<h3>Viewing Each Person Throughout the Funnel</h3>
+<p>Throughout each step of the funnel, we can see who converted as well as who didn&#8217;t convert. We just hover over one of the steps.</p>
+<p>We want to know where our customers came from. To do this, we&#8217;ll first need to look at the people who placed an order (customers). So, we hover over the &#8220;Placed Order&#8221; step and click on the people who completed it:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/view-people-in-step-funnel-kissmetrics.png" alt="view people in step funnel kissmetrics" class="alignnone size-full wp-image-24785" /></p>
+<p>We get a list of people who have placed orders (customers):</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-list-people.png" alt="kissmetrics list people" class="alignnone size-full wp-image-24776" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-list-people-238x300.png 238w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-list-people.png 520w" sizes="(max-width: 520px) 100vw, 520px" /></p>
+<p>We want to know which campaign these customers came from. To do this, we&#8217;ll need to add a column and add the property &#8220;Campaign source.&#8221;</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/campaign-source-property.png" alt="campaign source property" class="alignnone size-full wp-image-24786" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/campaign-source-property-300x137.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/campaign-source-property.png 520w" sizes="(max-width: 520px) 100vw, 520px" /></p>
+<p>We select it and press Search:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/campaign-source-property-search-kissmetrics.png" alt="campaign source property search kissmetrics" class="alignnone size-full wp-image-24787" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/campaign-source-property-search-kissmetrics-244x300.png 244w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/campaign-source-property-search-kissmetrics.png 545w" sizes="(max-width: 545px) 100vw, 545px" /></p>
+<p align="center"><em>Clicking on Export Data leads to a CSV file that is emailed to us. (</em><em>Note that these email addresses and details are made up and not intended to identify any real people.)</em></p>
+<p>We have customer email addresses, and we can click on a person to view how they&#8217;ve interacted with our website.</p>
+<p>Let&#8217;s start by viewing courtney@gmail.com. All we do is click on her email:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-details-report-kissmetrics-1.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-details-report-kissmetrics-1.png" alt="person details report kissmetrics 1" class="alignnone size-full wp-image-24788" /></a></p>
+<p>We get a ton of data on our new customer. We can see how much revenue we&#8217;ve received from them, how many times they&#8217;ve visited our website, and what events they did on each of their visits.</p>
+<p>We can get a breakdown of events and properties by each day. Let’s see what they did on Saturday, June 14. To see this, we click on the &#8220;Show details&#8221; link. Here&#8217;s what it shows us:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/one-day-timeline.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/one-day-timeline.png" alt="one day timeline" class="alignnone size-full wp-image-24789" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/one-day-timeline-269x300.png 269w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/one-day-timeline.png 759w" sizes="(max-width: 759px) 100vw, 759px" /></a></p>
+<p>This Person Details Report shows us everything a person did, broken down by day. It starts at the top, where we see that Courtney came to us via a Google search. From there we can see how she moved around through our site.</p>
+<p>By viewing the Timeline, we can see which products she searched for, which products she viewed, which products she added to the cart, and which products she decided to buy.</p>
+<p>We can also view just the Events or just the Properties. Let&#8217;s check out Events to see what important actions Courtney took on our website:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-search-event.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-search-event.png" alt="person search event" class="alignnone size-full wp-image-24790" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-search-event-300x203.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/person-search-event.png 956w" sizes="(max-width: 956px) 100vw, 956px" /></a></p>
+<p>Now, when we click on Properties, we see various information about this person:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/people-report-properties.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/people-report-properties.png" alt="people report properties" class="alignnone size-full wp-image-24791" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/people-report-properties-300x256.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/people-report-properties.png 948w" sizes="(max-width: 948px) 100vw, 948px" /></a></p>
+<p>We can see this is their second visit, as the Returning property has a 1 value, with an x1 next to it, meaning they&#8217;ve returned once, for a total of 2 visits. We know this is the first purchase they made (since we&#8217;ve been tracking) as there is only one value in the Order Amount row. If we hover over the x1, we can see when they placed the order:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/properties-details-kissmetrics.png" alt="properties details kissmetrics" class="alignnone size-full wp-image-24792" /></p>
+<p>We can send Courtney an email thanking her for her purchase and offering a 10% off coupon for the next time she purchases. And because we use Kissmetrics, we can set up an event for any time a person uses that coupon code. So, we&#8217;ll be able to see when/if Courtney uses the coupon. If we can make her a loyal customer, her Events tab may look like this after a year:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-7.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Untitled-7.png" alt="Untitled 7" class="alignnone size-full wp-image-24794" /></a></p>
+<p>We can get this data for every person. Yes, you can look at every person who has visited your website and see exactly what they&#8217;ve done as well as the properties for that person.</p>
+<h3>Automatically Tracked Events and Properties</h3>
+<p>There are some events and properties that are automatically tracked when you set up Kissmetrics using the JavaScript code snippet. Here&#8217;s a list of those events and associated properties:</p>
+<p><b>Visited Site event</b></p>
+<ul>
+<li>Referrer property indicates the URL the referrer came from</li>
+<li>URL property indicates the URL of the page they started browsing the site</li>
+<li>Returning property triggers when a person comes back and visits the site</li>
+</ul>
+<p><b>Pageviews</b></p>
+<ul>
+<li>This event is not turned on by default; users can turn it on by visiting their Kissmetrics account settings</li>
+</ul>
+<p><b>Ad Campaign Hit (Google Ad Campaign)</b></p>
+<p>Works with UTM parameters; for example, the URL http://kissmetrics.com/?utm_source=semintrotopayperclicksearchmarketing&#038;utm_medium=PDF&#038;utm_term=PPC&#038;utm_content=semintrotopayperclicksearchmarketing&#038;utm_campaign=guides has the following properties:</p>
+<ul>
+<li>Campaign medium = PDF</li>
+<li>Campaign name = guides</li>
+<li>Campaign source = semintrotopayperclicksearchmarketing</li>
+<li>Campaign content = semintrotopayperclicksearchmarketing</li>
+<li>Campaign term = ppc</li>
+<li>These all trigger as properties in Kissmetrics</li>
+</ul>
+<p><b>Search engine hit</b></p>
+<ul>
+<li>Search Engine property indicates which search engine was used</li>
+<li>Search Terms indicate which search terms were used; since Google encrypts search data, many search terms will return as &#8220;Not Provided&#8221;</li>
+</ul>
+<p>You’ll want to set some events and properties yourself. A few ideas for e-commerce sites:</p>
+<ul>
+<li><em>Product search terms</em> property indicates what search terms were used by the visitor (in the product search bar)</li>
+<li><em>Viewed product</em> event triggers when a visitor visits a product</li>
+<li><em>Add to cart</em> event triggers when a product is placed in the shopping cart; associated properties can be <em>product added</em> (to indicate the name of the property), <em>variation </em>(to indicate what color, size, or model of the product), and <em>quantity </em>(to indicate how many of that product they placed in their cart)</li>
+<li><em>Promo code </em>triggers when a customer enters a coupon/promo code during checkout</li>
+<li><em>Order total </em>indicates the total monetary amount that was spent on an order</li>
+<li><em>Returned product name </em>triggers when a customer returns a product</li>
+<li><em>Price </em>indicates the price of the returned product(s)</li>
+</ul>
+<p>You can check out many more events and properties to set up with our <a href="http://support.kissmetrics.com/best-practices/ecommerce-essentials.html">E-Commerce essentials</a>.</p>
+<p>For a SaaS business, you&#8217;ll want to consider setting up these events and properties:</p>
+<ul>
+<li>Signed Up event triggers when a visitor signs up for a free trial (if applicable) or begins paying</li>
+<li>Plan name indicates the plan the visitor signed up for</li>
+<li>Subscription upgraded indicates when the customer upgrades their plan</li>
+<ul>
+<li>Subscription billing amount indicates the new amount the customer is paying</li>
+<li>Subscription billing length indicates how frequently in months they are billed</li>
+<li>Subscription plan level indicates the new plan the customer is on</li>
+</ul>
+<li>Trial description indicates the trial description such as 14-day trial, 30-day trial, etc.</li>
+</ul>
+<p>For more events and properties to set up, view our <a href="http://support.kissmetrics.com/best-practices/saas-essentials.html">SaaS essentials</a>.</p>
+<h2>Events, Properties, and People Are the Foundation of Kissmetrics</h2>
+<p>As you can see, all the insights Kissmetrics delivers come from this trifecta of events, properties, and people. After you get these set up, you&#8217;ll be able to build reports that will help you understand the people who interact with your website. And, once you understand these people, you&#8217;ll know how to grow your business.</p>
+<p><i>To get started using people data, <a href="https://www.kissmetrics.com/signup?utm_source=blog&#038;utm_medium=academy&#038;utm_campaign=peopleeventsproperties">login or sign up for a Kissmetrics account</a> now.</i></p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/rivaliq-on-kissmetrics/">How Rival IQ Uses Kissmetrics for Social Media, Content Marketing, and Feature Releases</a></li>
+<li><a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/">What is the Difference Between Google Analytics and Kissmetrics?</a></li>
+<li><a href="https://blog.kissmetrics.com/desktop-applications-and-kissmetrics/">How Desktop Applications Like Backblaze Can Use Kissmetrics</a></li>
+<li><a href="https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/">How to Use Kissmetrics to Improve an E-commerce Checkout Funnel</a></li>
+<li><a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/">Supercharge Your Testing With The New Kissmetrics A/B Test Report</a></li>
+<li><a href="https://blog.kissmetrics.com/the-kissmetrics-revenue-report/">Unlock Your Marketing Data to Reap its Full Potential with the Kissmetrics Revenue Report</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fpeople-events-and-properties%2F&source=tweetbutton&text=The+Foundation+of+Kissmetrics%3A+People%2C+Events%2C+and+Properties&url=https%3A%2F%2Fblog.kissmetrics.com%2Fpeople-events-and-properties%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fpeople-events-and-properties%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=The Foundation of Kissmetrics: People, Events, and Properties&amp;body=https://blog.kissmetrics.com/people-events-and-properties/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-24764 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+					</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">3 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/people-events-and-properties/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='24764' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="db64b48801" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="50"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'The Foundation of Kissmetrics: People, Events, and Properties', 'Post URL':'https://blog.kissmetrics.com/people-events-and-properties/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/create-winning-marketing-surveys/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/get-users-to-share/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="https://blog.kissmetrics.com/people-events-and-properties/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="https://blog.kissmetrics.com/people-events-and-properties/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="https://blog.kissmetrics.com/people-events-and-properties/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="The Foundation of Kissmetrics: People, Events, and Properties" data-url="https://blog.kissmetrics.com/people-events-and-properties/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'The Foundation of Kissmetrics: People, Events, and Properties', 'Post URL':'https://blog.kissmetrics.com/people-events-and-properties/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'The Foundation of Kissmetrics: People, Events, and Properties', 'Post URL':'https://blog.kissmetrics.com/people-events-and-properties/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'The Foundation of Kissmetrics: People, Events, and Properties', 'Post URL':'https://blog.kissmetrics.com/people-events-and-properties/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":356,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

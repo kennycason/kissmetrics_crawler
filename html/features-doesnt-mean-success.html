@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>Why More Features Doesn't Mean More Success</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; Why More Features Doesn&#8217;t Mean More Success Comments Feed" href="https://blog.kissmetrics.com/features-doesnt-mean-success/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Are You Measuring Your Actual SEO Return on Investment?' href='https://blog.kissmetrics.com/measure-actual-seo-roi/' />
+<link rel='next' title='How to Run A/B Tests That Give Your Business Big Wins' href='https://blog.kissmetrics.com/ab-tests-big-wins/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/features-doesnt-mean-success/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=19354' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Ffeatures-doesnt-mean-success%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Ffeatures-doesnt-mean-success%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,348] -->
+<meta name="description" content="In this blog post, we’ll be discussing why having more features doesn’t correlate with better product and doesn’t guarantee success." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/117750912206547874889/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='Why More Features Doesn&#039;t Mean More Success' />
+<meta property='og:url' content='https://blog.kissmetrics.com/features-doesnt-mean-success/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='In this blog post, we’ll be discussing why having more features doesn’t correlate with better product and doesn’t guarantee success.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Why More Features Doesn't Mean More Success" />
+    <meta name="twitter:description" content="In this blog post, we’ll be discussing why having more features doesn’t correlate with better product and doesn’t guarantee success." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-19354 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'Why More Features Doesn&#8217;t Mean More Success',
+						'Post Category': 'Design',
+						'Post URL': 'https://blog.kissmetrics.com/features-doesnt-mean-success/'
+		}
+	]);
+</script>
+
+<article id="post-19354" class="single-post post-19354 post type-post status-publish format-standard has-post-thumbnail hentry category-design" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">Why More Features Doesn&#8217;t Mean More Success</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Instagram: Bought for $1 billion, <a href="http://mashable.com/2012/09/11/instagram-100-million/">over 100 million users</a></p>
+<p>Dropbox: Worth $4 billion, <a href="http://www.quora.com/How-many-users-does-Dropbox-have">over 100 million users</a></p>
+<p>Foursquare: <a href="http://online.wsj.com/article/SB10001424127887324712504578131384140607240.html">Worth $760 million</a>, 25 million users</p>
+<p>Twitter: <a href="http://www.guardian.co.uk/technology/2011/aug/02/twitter-valued-8bn-large-investment">Worth $8 billion</a>, <a href="http://www.mediabistro.com/alltwitter/500-million-registered-users_b18842">more than 500 million users</a></p>
+<p>What do all of these products have in common? Outside of being wildly successful, <b>they are simple and have a small feature set</b>. The companies keep their product to the core function and reduce noise by maintaining simplicity.</p>
+<p>Are these companies successful solely because they have a small feature set? No, they are successful because of execution, and product is part of execution.</p>
+<p>In this blog post, we’ll be discussing why having more features doesn’t correlate with better product and doesn’t guarantee success. I’ll run through why it’s important to keep your product to the core function and how any loss of focus can negatively affect your business. And I’ll close with some tips that you can use in your own business.</p>
+<h2>More Features = Better Product?</h2>
+<p><em>“If I just add this feature, I’ll be a step closer to the competition and that much more likely to get customers.”</em></p>
+<p>Your product is designed to solve a problem. If you’re adding a feature that doesn’t contribute to the solution, you may be wasting your time and worsening your product in the process. Let’s examine this in deeper detail:</p>
+<p>Dropbox is designed to help people access their files on any device. Previously, people would have to carry around USB drives or email themselves files. With Dropbox, all that has become unnecessary. All you have to do now is upload it to the cloud.</p>
+<p>For the most part, Dropbox has remained the same since its inception. There haven’t been many features added or any major design overhauls. It still integrates with your computer and runs in the background. Competitors have come and gone, each offering their own unique twist on cloud storage. <a href="http://www.minus.com/">Minus</a> is one that offers 5x the storage of Dropbox and has a social component, too. Yet, in my opinion, by adding a social component, they’re taking away from the core of the product, which I interpret as cloud storage. I like Minus, but I find the social component makes the product less desirable.</p>
+<p>And Dropbox still remains the same. They have a mechanism which customers can use to <a href="https://www.dropbox.com/login?cont=https%3A//www.dropbox.com/votebox/all">request and vote on features</a>, but overall the product hasn’t changed.</p>
+<p>To illustrate how little Dropbox has changed throughout the years, here’s an example of their homepage when they were in beta:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/06/getdropbox_home.jpg" alt="Dropbox Home"></p>
+<p>Here it is currently:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/06/dropbox-now.png" alt="dropbox now"></p>
+<p>For Dropbox, the core is the core, and there are no valueless features.</p>
+<p>So how can a product get to be worth $4 billion when it doesn’t change or add new features? Because it has actually <strong>solved</strong> the problem that many people had. Anything additional may detract from the original solution. As CEO Drew Houston <a href="http://www.slideshare.net/gueste94e4c/dropbox-startup-lessons-learned-3836587">has said</a>, <em>“Keep the main thing the main thing.”</em></p>
+<p>I like to think of Netflix and Dropbox as similar companies. Dropbox makes it unnecessary to carry around a USB drive by putting files in the cloud, while Netflix is hoping that all movies go in the cloud and become available from any device.</p>
+<p>Beyond their cloud similarity, they also seem to have similar product philosophies. For example, think about some of the features Netflix could add:</p>
+<p>Social networking &#8211; A social platform devoted only to movies and discussion around movies.</p>
+<p>Tickets &#8211; A place to buy tickets to movies in theaters or a place to look up show times. This would create another revenue stream for Netflix.</p>
+<p>Organized queue &#8211; A system to allow people to organize their movie queue into different folders, sorted by the user.</p>
+<p>But would any of these add to the core value of the product? People are customers of Netflix because it has a massive DVD collection, no late fees, and a big streaming library. None of the features suggested above is any good because none of them adds anything substantial to Netflix’s core value. People would much rather have a great movie or TV series added to the Netflix streaming library than have another option to purchase movie tickets.</p>
+<p>An organized queue doesn’t add any meaningful value to the majority of users. Perhaps for the rare few, but the majority wouldn’t touch a feature like that.</p>
+<p>Customers go to Netflix to pick movies to watch, not to discuss movies. Similarly, people use Dropbox as a place to store and share files; that’s it. If the company adds a valueless feature, such as a social component, that would make the user jump through a few extra hoops just to be able to use the core product.</p>
+<p>There’s a difference between making a feature and making a feature that enhances the core of the product. Dropbox, Netflix, and many other top companies know their users and their needs and exclusively build features that enhance the core.</p>
+<h2>Your Company’s Product Philosophy</h2>
+<p>What is your company’s product philosophy? How do you garner customer feedback and decide what to build and what not to build? Do you know what areas of your product are most popular? If not, you may want to get the data for this and have a richer understanding of your customers.</p>
+<p>Here’s my thinking on product and feature development:</p>
+<p>Your product needs to stay to the core solution. What is your product used for? Say, for example, that you sell men’s dress shirts online. These dress shirts are your own, designed by your company and sold exclusively by your company. </p>
+<p>Your business is going quite well, making about $10k per month. But you and your team have decided that your goal for the upcoming year is to get sales at around $25k per month. So your company decides to offer a complete selection of men’s clothes and a couple of women’s items as well. On top of that, you offer a subscription where people can receive clothes monthly, wear them for a couple months, and then send them back or buy them.</p>
+<p>Unfortunately, a couple of months into the experiment, things are not going so well. People have heard of you because of your dress shirts, but they become confused by the variety of items offered. They cannot determine on your website which ones you are known for and become annoyed at being pushed to purchase your subscription service. Out of frustration, users exit your site and shop elsewhere.</p>
+<p>The same thing can happen with an internet product. A focus away from the core can frustrate users and drive them away.</p>
+<p>For an analogy, look at your product like a calculator. Most calculators are used for pretty basic functions: adding, subtracting, dividing, and multiplying. But when calculators get like this:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/calculator.jpg"></p>
+<p>They can get infinitely more complex. There are uses for heavy duty calculators like this, but it’s ultimately for a minority of users. Granted, the people who aren’t going to use more advanced functions aren’t buying that kind of calculator, but the problem is you probably have just one product that isn’t tiered for beginner-advanced users.</p>
+<p>Many products can become too bogged down and bloated with excess, like this calculator. The majority of people who use a calculator really only need or want basic math functions. When your product is complicated, like this calculator, then you’re weighing users down with things that the majority of them never asked for or needed.</p>
+<h2>Your Product</h2>
+<p>In this final section, I’d like to give you some ideas for your product. Read through them and see if any appeal to you:</p>
+<h3>Kill a Feature</h3>
+<p>Angel investor Dave McClure encourages entrepreneurs to <a href="http://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-fowa-london-oct-2009/17">kill a feature</a> every week and see if users notice that the feature is missing. By doing this, you’ll have a better understanding of how users use your products and which aspects of it they value.</p>
+<h3>Surveys</h3>
+<p>If you survey users, you’ll have an understanding of their objectives and needs. You can take that knowledge into your product and find some areas in your product to improve upon and other areas to take away.</p>
+<h3>Deep Understanding of Users</h3>
+<p>With surveying and looking at user behavior, you’ll get insights into what areas are most pressing for users. Customer demographics change all the time for every company, nothing stays constant. But the persona of your customer doesn’t change much over time. So by knowing your customers and their behaviors, you can get a sense of what they may like and what they may not like.</p>
+<p>For instance, ESPN is in the business of sports. Because they know their customers are sports fans, they know it wouldn’t make sense to broadcast and discuss world issues or hold political debates. There are plenty of other outlets for that. They know people go to their station and website to watch sports and get sports news, so they tailor their product to fit their customer. They can also take this knowledge about their viewer into building any future products. They know what customers may like, may not like, <a href="http://allthingsd.com/20120919/espn-takes-a-design-page-from-twitters-playbook/">and they may even try experimenting</a> with a few things.</p>
+<h3>Don’t Build Anything without Talking to Customers</h3>
+<p>You’re building and iterating on your product for customers, so it doesn’t make sense to ignore them when you’re building a new feature or iterating on a current one. If you have an idea, whether it’s crazy or not, it’s always a good plan to ask your customers. Tell them about the general idea that you’re proposing and get their feedback on it.</p>
+<h3>Take a Different Mindset</h3>
+<p>A lot of people (I’ve done it myself) make the mistake of thinking:</p>
+<p><em>“If I can just get __ I’ll be so much happier/better/wealthier/etc.”</em></p>
+<p>As people often find out, getting the ___ doesn’t mean more ____.</p>
+<p>I think it’s the same with products. Companies think that if they add a feature, it’ll mean a better product and more customers. Yet it’s often not the case. Once the mindset shifts from:</p>
+<p><em>“What new feature can we build?”</em></p>
+<p>to</p>
+<p><em>“What can we learn from our customers today?”</em></p>
+<p>you’ll be closer to finding success.</p>
+<h3>It’s Better to be Great at a Few Things than OK at 100 Things</h3>
+<p><em>“Focusing on just one or two features <a href="http://justshanemac.tumblr.com/post/27224869989/all-your-new-features-dont-mean-anything">is really important.</a>”</em> Angel Investor, Mike Maples</p>
+<p>As I mentioned in my calculator analogy, most people use a product for only a few functions. There are advanced functions for the minority; but for the majority, those go untouched. For instance, most people never use the picture-in-picture feature on their TV, in part because it may be too difficult.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/complicating-tv-remote.png" alt="Complicating TV remote"></p>
+<p>Most people never used the <a href="http://techcrunch.com/2012/10/19/facebook-questions-shut-down/">Facebook Questions</a> feature, perhaps because many of them were too used to posting text-only status updates.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/facebook-questions.png" alt="Facebook Questions"></p>
+<p>A lot of people didn’t use Apple’s MobileMe, perhaps because it wasn’t a true Apple product and most people don’t see Apple offering a service like that. They view it as a computer and device company, not an internet services company:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/MobileMe.png" alt="Mobile Me"></p>
+<p>Don’t overbuild your product. Stick to your core function when building the product. Anything new should be a mechanism to enhance the solution. Randomly adding features without focus, direction, or vision is a recipe for failure.</p>
+<p>Just because a small minority of people wants a feature doesn’t mean that you should build it. There’s value in constraint. I have no doubt that everyday Instagram employees are flooded with <a href="http://socialfresh.com/instagram-feature-suggestions/">requests for new features</a>. I don’t think it’s any different for Dropbox, Netflix, Twitter, or any other company. But in my opinion, the great companies have discipline to stay focused on the core. New features are developed after heavy discussion with customers and a free flowing dialogue in the company. I don’t think any great company makes a habit of brainstorming and internally developing new features, not even the ultra-secret Apple.</p>
+<p>So before you build your new feature, hold off and see if it actually will benefit your product. Apple sold millions of iPods without an FM radio player, while its competitors sold half as many that had double the features. Take a lesson from Apple. Focus on design and excellence in a few areas, rather than trying to satisfy every need for every user. You’ll end up with a better product.</p>
+<p><b>About the Author:</b> Zach Bulygo is a blogger for KISSmetrics, you can find him on Twitter <a href="https://twitter.com/#!/zachcb1">here</a>. You can also follow him on <a href="https://plus.google.com/117750912206547874889?rel=author">Google+</a>.</p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Ffeatures-doesnt-mean-success%2F&source=tweetbutton&text=Why+More+Features+Doesn%26%238217%3Bt+Mean+More+Success&url=https%3A%2F%2Fblog.kissmetrics.com%2Ffeatures-doesnt-mean-success%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Ffeatures-doesnt-mean-success%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=Why More Features Doesn&#8217;t Mean More Success&amp;body=https://blog.kissmetrics.com/features-doesnt-mean-success/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-19354 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-87670">
+    <div id="comment-87670" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Nissim Elias</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-87670" class="comment-date">Dec 10, 2012 at 2:41 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>You have me convinced, and you have done it with very strong claims.</p>
+<p>We see this same philosophy practiced in business areas such as the elevator pitch that requires a short to the point message.<br />
+This is the same well known practice when it comes to marketing, writing, publishing and etc.</p>
+<p>Whenever we want people to focus on us, we got to be focused ourselves.</p>
+<p>It has been very interesting to see this philosophy practiced on projects and services as well, and in contrary to believers of more and more features.<br />
+I definitely agree &#8211; “more is less”.<br />
+Thank you for your wonderful post.<br />
+Nissim Elias</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=87670#respond' onclick='return addComment.moveForm( "comment-87670", "87670", "respond", "19354" )' aria-label='Reply to Nissim Elias'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-87673">
+    <div id="comment-87673" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-87673" class="comment-date">Dec 10, 2012 at 3:38 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Well said, Nissim!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=87673#respond' onclick='return addComment.moveForm( "comment-87673", "87673", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-87674">
+    <div id="comment-87674" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Matt Giovanisci</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-87674" class="comment-date">Dec 10, 2012 at 4:18 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Excellent post, Zach!</p>
+<p>I worked for a small software start-up that was building a project management system for contractors. My boss was not a software guy, he was a contractor. I was with the company for 2 years and we never launched because he kept insisting on adding features before it was launched.</p>
+<p>I believe they are still developing it and on their 3rd year with no product to market and a software that is so full of bugs and features that I don&#8217;t see it becoming very successful. They are trying to please everyone and will end up pleasing no one.</p>
+<p>With that said, I totally understand and agree with everything you&#8217;re saying in this article and I hope everyone can learn from it.</p>
+<p>I am a website developer and designer and I take many of these philosophies when I design.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=87674#respond' onclick='return addComment.moveForm( "comment-87674", "87674", "respond", "19354" )' aria-label='Reply to Matt Giovanisci'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-87730">
+    <div id="comment-87730" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-87730" class="comment-date">Dec 11, 2012 at 8:53 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Matt,<br />
+Why would he try to add so many features before it even launches? To try and impress people? </p>
+<p>Did you ever introduce him to the Minimum Viable Product? This could help him a lot, then again he may be a guy who wouldn&#8217;t even bother listening. </p>
+<p>&#8220;They are trying to please everyone and will end up pleasing no one.&#8221;</p>
+<p>Well said!</p>
+<p>Thanks for the input and your kind words&#8230;..</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=87730#respond' onclick='return addComment.moveForm( "comment-87730", "87730", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-87675">
+    <div id="comment-87675" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ed Fry</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-87675" class="comment-date">Dec 10, 2012 at 4:39 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Sure, keep products simple&#8230; but there&#8217;s not much validity in cherry picking a selection of simple single/small-feature products who have made it, and saying &#8220;go do likewise&#8221;. Apple, Google and Facebook&#8217;s products are wildly more complex than either of those, and yet have a different magnitude of revenue and profit. They can make complex features simple, but they&#8217;re not single feature products. Any of them.</p>
+<p>Google Search&#8230;<br />
+Apple MacBook&#8230;<br />
+Facebook Events&#8230;</p>
+<p>It comes down to what your users want.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=87675#respond' onclick='return addComment.moveForm( "comment-87675", "87675", "respond", "19354" )' aria-label='Reply to Ed Fry'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-87682">
+    <div id="comment-87682" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-87682" class="comment-date">Dec 10, 2012 at 5:40 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Ed,<br />
+I&#8217;m glad you brought up Facebook, I was hoping someone would.</p>
+<p>So Facebook certainly doesn&#8217;t have a small feature set. They even have a couple features that aren&#8217;t totally necessary, such as notifying a sender if the receiver has read a message. But the thing with Facebook is that they implement is all so beautifully that everything seems to fit and work well together. So you can have a hundred different features, but if they don&#8217;t work well or aren&#8217;t organized, it&#8217;s just going to slow down and confuse users. In this sense features are almost like parts of a car, they have to work well together and be in the right place otherwise if anything goes bad it can ruin everything. So it is possible to have a lot of features in a product and keep it simple, it&#8217;s just really difficult.</p>
+<p>You bring up Google search. I would say the search product is remarkably simple, even when you compare it to something like Bing.</p>
+<p>It does come down to what users want, but if a small minority want a feature it probably won&#8217;t be built. And the product likely won&#8217;t be any worse off without, depending of course on what that product does.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=87682#respond' onclick='return addComment.moveForm( "comment-87682", "87682", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-3" id="li-comment-93693">
+    <div id="comment-93693" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kevin</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-93693" class="comment-date">Feb 27, 2013 at 4:45 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I hardly use Facebook at all, I find the GUI extremely confusing (I design GUIs for a living). When I log onto it all I want to do is see a thumbnail list of my friends so I can click on their name and either see their latest wall posts or send them a message. Lately it takes me forever to figure out how to just see my list of friends. If they made it simple where you just log on, see a thumbnail list of all your friends with a drop-down below to &#8220;send them a message&#8221;, &#8220;see what they&#8217;ve been up to&#8221; (see their wall post), &#8220;see their photo albums&#8221; then I&#8217;d be able to instantly do what I want to do on Facebook without all of the confusion. Really the only valuable service Facebook has to me is keeping a contact list of all my friends in one place where I can send them messages, they should really just focus on that functionality and I&#8217;d be using it all of the time rather than logging on once a month when my friend verbally tells me to check out what they posted when I am meeting with them in person.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=93693#respond' onclick='return addComment.moveForm( "comment-93693", "93693", "respond", "19354" )' aria-label='Reply to Kevin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-87692">
+    <div id="comment-87692" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Blasko</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-87692" class="comment-date">Dec 10, 2012 at 9:31 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Having a complex system does not mean deviating from the core. Google search, Netflix etc have complex systems but are focused on the core delivery which is presented simply. And that is the key. </p>
+<p>That can be said also for products and professional services. When Steve Jobs came back to Apple he reduced 100s of products into 4. Neither of these products were simple but were focused on their core deliverables and were simple to use. </p>
+<p>I am currently consulting a company with around 3000 people workforce that is loosing money because they are not clear what space they occupy and their clients have even less clarity on what this accompany can do.</p>
+<p>So well done for the post, I totally agree and see it with my service and my cleint&#8217;s fortune and not</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=87692#respond' onclick='return addComment.moveForm( "comment-87692", "87692", "respond", "19354" )' aria-label='Reply to Blasko'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-87844">
+    <div id="comment-87844" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-87844" class="comment-date">Dec 12, 2012 at 1:40 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Yeah, it&#8217;s important to hide the technology and the complexity from the user so they can just use the product. Most don&#8217;t care about what kind of technology is in a product, they just want it to work.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=87844#respond' onclick='return addComment.moveForm( "comment-87844", "87844", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-87700">
+    <div id="comment-87700" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Rob Rawson</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-87700" class="comment-date">Dec 11, 2012 at 1:40 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Totally agree, but also think it&#8217;s way more difficult than it seems. What is the core? How do you know which feature is the core? What if people really want all the features you have now and they want more features and keep asking you for them? </p>
+<p>I&#8217;m constantly thinking about how to simplify our product but also find it very difficult to do.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=87700#respond' onclick='return addComment.moveForm( "comment-87700", "87700", "respond", "19354" )' aria-label='Reply to Rob Rawson'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-88132">
+    <div id="comment-88132" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88132" class="comment-date">Dec 15, 2012 at 1:39 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Rob,<br />
+The core is the solution and what your products main objective is. </p>
+<p>For example, I&#8217;ll use Dropbox as an example because they&#8217;re so easy. </p>
+<p>The core of Dropbox is to let users access their files from anywhere. That&#8217;s why they exist and do what they do. If they made a feature (let&#8217;s say they added a social component) it would take away, or distract, from the core. Because adding a social component does not help users access their files from anywhere. Now, if they added support for Android (I know they already do) then they are adding to the core because they&#8217;re helping users achieve the objective of Dropbox. </p>
+<p>If you don&#8217;t know what your core is, you may be in trouble. It&#8217;s why you&#8217;re in business and do what you do. </p>
+<p>With your last question, it&#8217;s tough. You have to know which features are right and which are not. I&#8217;d suggest talking to customers everyday and getting a good understanding of how they use your product and any feedback they have. You can then take that in and have more knowledge about what to build ad what not to build. </p>
+<p>Sorry for the delay in getting back to you.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88132#respond' onclick='return addComment.moveForm( "comment-88132", "88132", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-3" id="li-comment-90694">
+    <div id="comment-90694" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Luis Del Castillo</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-90694" class="comment-date">Jan 22, 2013 at 8:06 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Or either you can make some surveys or interviews in order to get customer&#8217;s need and get what are the three to five problems or objects that your buyer persona dedicates time, budget,etc&#8230;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=90694#respond' onclick='return addComment.moveForm( "comment-90694", "90694", "respond", "19354" )' aria-label='Reply to Luis Del Castillo'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-87852">
+    <div id="comment-87852" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kumar Gauraw</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-87852" class="comment-date">Dec 12, 2012 at 4:57 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I completely enjoye this entire article full of interesting details and strong claims. There is a substance in your post and it is true that adding features is not the reason a product becomes successful or not. It is actually the problem that it solves that makes the whole difference.</p>
+<p>Ford and GM are the examples of that principle as well.</p>
+<p>Having a complex system does not mean Success. Google search, Netflix are powerful. They are awesome and the reason? They solve a problem! </p>
+<p>Thank you for sharing.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=87852#respond' onclick='return addComment.moveForm( "comment-87852", "87852", "respond", "19354" )' aria-label='Reply to Kumar Gauraw'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-88386">
+    <div id="comment-88386" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88386" class="comment-date">Dec 19, 2012 at 10:37 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I absolutely agree Kumar!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88386#respond' onclick='return addComment.moveForm( "comment-88386", "88386", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-88105">
+    <div id="comment-88105" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">J</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88105" class="comment-date">Dec 15, 2012 at 3:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>How succesfull are those companies? How much are they making actual money or profit? </p>
+<p>Based on quick search&#8230;please correct if wrong</p>
+<p>Dropbox made good revenue of 250M, but couldn&#8217;t find how much profit or loss.<br />
+Foursquare has some revenues apparently but likely to make no profit either.<br />
+Instagram had no revenue but made over 2M losses.<br />
+Twitter is doing several losses tens of millions, several years in a row</p>
+<p>So they seem to be popular services but not that succesful business though! At least not yet :-)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88105#respond' onclick='return addComment.moveForm( "comment-88105", "88105", "respond", "19354" )' aria-label='Reply to J'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-88388">
+    <div id="comment-88388" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88388" class="comment-date">Dec 19, 2012 at 10:47 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey J,<br />
+All those companies I listed are private and none of them talk too openly about their financials. So we don&#8217;t know if they are in the black or not. I have no doubt that if one or more of them aren&#8217;t making money, they will soon enough. </p>
+<p>If Instagram wanted to make money, all they would need to do is put a banner ad next to every image on a webpage. Although that would take away from the product and make it less appealing. </p>
+<p>The good thing is is that it is possible to have a limited feature set and still be cash flow positive. More features certainly doesn&#8217;t mean more revenue or guarantee profit.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88388#respond' onclick='return addComment.moveForm( "comment-88388", "88388", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-88176">
+    <div id="comment-88176" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">jessica</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88176" class="comment-date">Dec 16, 2012 at 10:34 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey!</p>
+<p>Personally i used dropbox two days before and i don&#8217;t thing so it is good for saving your data in images form.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88176#respond' onclick='return addComment.moveForm( "comment-88176", "88176", "respond", "19354" )' aria-label='Reply to jessica'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-88538">
+    <div id="comment-88538" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88538" class="comment-date">Dec 20, 2012 at 1:50 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>It&#8217;s not good for saving images or sharing photos?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88538#respond' onclick='return addComment.moveForm( "comment-88538", "88538", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-88284">
+    <div id="comment-88284" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Alfonso de la Nuez</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88284" class="comment-date">Dec 18, 2012 at 12:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>In general I agree with this and I&#8217;m a &#8216;less is more&#8217; kind of person, but not just for software, but for LIFE! However, the real challenge is to really define your FOCUS. Adding more features around the same focus could be great and help you get more users and increase stickiness. If the initial set of features doesn&#8217;t get you enough users and/or usage, you need to find new ways to increase numbers. </p>
+<p>Obviously, if you find a lot of users + usage with one basic product and set of features at the right time and with very little competition, you can go out and play the lottery because your&#8217;re one lucky SOB. I just don&#8217;t think there&#8217;s that many out there and even then, you&#8217;ll soon need to be innovating. But most companies, I figure, need to keep moving and building features and most importantly, VALUE. As long as those are true to your FOCUS and the user group is pretty much the same, I see nothing wrong with it.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88284#respond' onclick='return addComment.moveForm( "comment-88284", "88284", "respond", "19354" )' aria-label='Reply to Alfonso de la Nuez'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-88540">
+    <div id="comment-88540" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88540" class="comment-date">Dec 20, 2012 at 2:01 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I agree with pretty much all of this, Alfonso. You say &#8216;focus&#8217; I say &#8216;core&#8217;. </p>
+<p>Thanks for adding your thoughts!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88540#respond' onclick='return addComment.moveForm( "comment-88540", "88540", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-88285">
+    <div id="comment-88285" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Alfonso de la Nuez</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88285" class="comment-date">Dec 18, 2012 at 12:48 am</a>      </div><!-- /.comment-meta -->
+
+      <p>And let me add to the previous comment that one way to really know your focus (or like someone called it &#8216;core&#8217; earlier) is to be very much engaged with your users. User research and analytics pre, during and post design is the KEY. It&#8217;ll give you a lot of inspiration. </p>
+<p>Now, I know Steve Jobs always spoke about users not knowing what they want. I agree. But in this case I&#8217;m talking about understanding your FOCUS and for that you need to really engage and see what&#8217;s valuable, what&#8217;s not, why, etc.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88285#respond' onclick='return addComment.moveForm( "comment-88285", "88285", "respond", "19354" )' aria-label='Reply to Alfonso de la Nuez'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-88327">
+    <div id="comment-88327" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">John Peltier</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88327" class="comment-date">Dec 18, 2012 at 5:12 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>These examples are businesses that have ruthlessly prioritized by having a clear understanding of not only which problem they&#8217;re solving, but for which market segment and persona.</p>
+<p>Until last year&#8217;s introduction of Dropbox For Teams, Dropbox solely focused on sharing needs of the individual with multiple devices.  Sharing needs of workgroups was deferred until the product was rock solid for individuals.  </p>
+<p>Interesting to bring up Netflix, as they fundamentally misread who their customer is with their Qwikster misstep.  .</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88327#respond' onclick='return addComment.moveForm( "comment-88327", "88327", "respond", "19354" )' aria-label='Reply to John Peltier'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-88542">
+    <div id="comment-88542" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88542" class="comment-date">Dec 20, 2012 at 2:10 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Yeah, so I think Dropbox grew their user base before introducing their team plan. This was intentional, not accidental. Lure people in with the free plan, gather user feedback and see if people are interested in a team plan. People needed to accustomed to storing and sharing files in the cloud. </p>
+<p>They screwed up with Qwikster, but it appears (at least according to their financials) that the damage was minimal.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88542#respond' onclick='return addComment.moveForm( "comment-88542", "88542", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-88458">
+    <div id="comment-88458" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Gilly</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88458" class="comment-date">Dec 20, 2012 at 12:16 am</a>      </div><!-- /.comment-meta -->
+
+      <p>A great article and very timely as we&#8217;re updating our website with new features so I will put everything on hold until we have some customer feedback. We try to keep to our core business and I know you can get drawn into going to broad so this has just reminded me of what I thought but good to hear that staying to a simple model is good.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88458#respond' onclick='return addComment.moveForm( "comment-88458", "88458", "respond", "19354" )' aria-label='Reply to Gilly'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-88965">
+    <div id="comment-88965" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88965" class="comment-date">Dec 27, 2012 at 11:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Wow &#8211; that&#8217;s awesome Gilly! Glad I was able to provide some ideas. </p>
+<p>Yeah, I firmly believe that sticking to your core and focusing on it is important. Diverting from that core might do more harm than good.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88965#respond' onclick='return addComment.moveForm( "comment-88965", "88965", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-88498">
+    <div id="comment-88498" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ozgur</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88498" class="comment-date">Dec 20, 2012 at 8:20 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Very useful article&#8230; I think the key point is the complexity of consumer behaviour&#8230; although some people might be interested in thousands of choices etc&#8230; most people like guidance when they choose a product and they wouldn&#8217;t want to be overwhelmed with choices and being put in a situation where they have to decide and compare several factors&#8230; Therefore, smart approach will be the educational guidance and channelling to the right solution based on the consumer&#8217;s needs&#8230; Of course this subject depends on the kind of products and the type of audience and demographics&#8230; At the end of the day nothing is simple.. You can have a look at the below link to give you an idea of raising awareness to consumer needs;<br />
+<a href="http://www.aloftuniforms.com/9325/cargo-scrub-pants.htm" rel="nofollow">http://www.aloftuniforms.com/9325/cargo-scrub-pants.htm</a></p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88498#respond' onclick='return addComment.moveForm( "comment-88498", "88498", "respond", "19354" )' aria-label='Reply to Ozgur'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-88970">
+    <div id="comment-88970" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88970" class="comment-date">Dec 27, 2012 at 12:34 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Yeah it definitely varies. There are a ton of consumers who don&#8217;t want to research and just want to be presented with a product. This is where Apple products are really nice &#8211; the prices are pretty much the same everywhere and there&#8217;s very few models of each product. </p>
+<p>Others, like me, take a lot of time to research just about every product. I&#8217;m certainly not a typical consumer. I research everything I buy, even down to something seemingly so insignificant as household cleaners. </p>
+<p>Companies need to educate consumers and differentiate themselves from their consumers. It doesn&#8217;t matter what the product is and everyone puts different factors into each product. Not everyone will buy a product because it&#8217;s cheap, not everyone will buy a product because the product label is fancy. It depends on each persons unique buying habits.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88970#respond' onclick='return addComment.moveForm( "comment-88970", "88970", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-88657">
+    <div id="comment-88657" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Matt</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88657" class="comment-date">Dec 22, 2012 at 2:40 am</a>      </div><!-- /.comment-meta -->
+
+      <p>hey Zach!<br />
+you have highlighted very nice points. and here is a thing that if you are offering lots of products/features then you should make realize the customer that what benefits each product have in it for you otherwise the number of products you offered will  be in vain. because some times the customer himself don&#8217;t know about his exactly needs. What do you think about this idea??<br />
+Matt</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88657#respond' onclick='return addComment.moveForm( "comment-88657", "88657", "respond", "19354" )' aria-label='Reply to Matt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-88966">
+    <div id="comment-88966" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88966" class="comment-date">Dec 27, 2012 at 12:12 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Yeah, there&#8217;s definitely something to the notion that &#8220;customers don&#8217;t know what they want until you show them something&#8221;. Perhaps the biggest example of this would be the iPhone. Most people already had internet on their phone and didn&#8217;t see a benefit to getting a $500 phone that had almost the exact same underlaying as many of the blackberry phones. Until they saw it &#8211; and then they wanted it. </p>
+<p>So I think there is something to it &#8211; but it obviously has to be a great product. Once you show them a new feature you&#8217;ll definitely need to show them how to use it. A good onboarding process is very important. After you release this feature, you&#8217;ll see how users use it and if they keep coming back to it. You can then take these insights to decide where to take the feature.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88966#respond' onclick='return addComment.moveForm( "comment-88966", "88966", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-88708">
+    <div id="comment-88708" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ngaire</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88708" class="comment-date">Dec 22, 2012 at 8:50 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I completely agree. My website is nice and simple and I like it that way. I think it means that I appeal to the most people possible, that they dont have to think when they come to the site so they find what they want easily. It means they are more likely to come back to have that experience repeated.<br />
+I also see websites redesign themselves so often- which I think is a killer too- people should do their best to stick with what they have &#8211; as changing loses trust and traffic. Just my opinion. Great post!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88708#respond' onclick='return addComment.moveForm( "comment-88708", "88708", "respond", "19354" )' aria-label='Reply to Ngaire'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-88969">
+    <div id="comment-88969" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88969" class="comment-date">Dec 27, 2012 at 12:28 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for the comment Ngaire. </p>
+<p>As far as changing design, you may be losing out on more revenue if you don&#8217;t change your design every so often (no more than once a year). For example, if you&#8217;re converting 2% of visitors to signup right now, a new design may convert 5% of visitors to signup. But if you&#8217;re company is resistent to change, then you may lose revenue. </p>
+<p>See what I&#8217;m saying?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88969#respond' onclick='return addComment.moveForm( "comment-88969", "88969", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-88802">
+    <div id="comment-88802" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">John</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-88802" class="comment-date">Dec 24, 2012 at 6:34 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Excellent post. I guess they have set their goals and they keep on updating things for example twitter and four square !</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=88802#respond' onclick='return addComment.moveForm( "comment-88802", "88802", "respond", "19354" )' aria-label='Reply to John'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-89342">
+    <div id="comment-89342" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-89342" class="comment-date">Jan 02, 2013 at 12:32 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Yeah, consistent iteration on your product is very important.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=89342#respond' onclick='return addComment.moveForm( "comment-89342", "89342", "respond", "19354" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-89732">
+    <div id="comment-89732" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jonathan Campbell</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-89732" class="comment-date">Jan 08, 2013 at 11:59 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hello, Zach,</p>
+<p>        I&#8217;ve been a software engineer for mroe than 40 years. You are right on target. The company I worked for longest &#8211; Digital Equipment &#8211; was successful for the reasons you state, and later failed for the reasons you state. When they focused on their core &#8211; systems (VMS, which was the predecessor of modern Windows), disks (they had 10-100x the density of any competitor), databases (eventually sold to Oracle) and network technology (they had gigabit routers in 1990), they made tons of money and supplied the systems and base software for much of the Fortune-500. When they decided to become all things to all people (I can&#8217;t even remember all of the failed products) and first buck against and then attempt to emulate the IBM PC architecture, the whole thing went south really fast. VMS became Windows-NT, and the rest was sold off to whoever would take it.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=89732#respond' onclick='return addComment.moveForm( "comment-89732", "89732", "respond", "19354" )' aria-label='Reply to Jonathan Campbell'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-99485">
+    <div id="comment-99485" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">rapidoSEO</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-99485" class="comment-date">Apr 04, 2013 at 6:41 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I agree, simplicity is key.</p>
+<p>Thing is, you can&#8217;t give customers what they want, when they want and how they want it. You need to have a solid structure in place which shows you constantly release updates but not too much where you start over delivering. Then, customers will be asking for ridiculous things, things that will start making your company go downhill.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=99485#respond' onclick='return addComment.moveForm( "comment-99485", "99485", "respond", "19354" )' aria-label='Reply to rapidoSEO'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1105975">
+    <div id="comment-1105975" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Zia</cite>
+        
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/#comment-1105975" class="comment-date">May 07, 2015 at 2:22 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I fully agree, As I see this many companies add features for a specific regional audience and everyone else in the world see no value in those newly added features..</p>
+<p>Companies should really focus on their primary purpose, to me it make more sense to add battery lifetime to a mobile phone than a chinese touchscreen.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/features-doesnt-mean-success/?replytocom=1105975#respond' onclick='return addComment.moveForm( "comment-1105975", "1105975", "respond", "19354" )' aria-label='Reply to Zia'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">46 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/features-doesnt-mean-success/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='19354' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="635e1dbe25" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="83"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'Why More Features Doesn&#8217;t Mean More Success', 'Post URL':'https://blog.kissmetrics.com/features-doesnt-mean-success/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/measure-actual-seo-roi/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/ab-tests-big-wins/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/features-doesnt-mean-success/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/features-doesnt-mean-success/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/features-doesnt-mean-success/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="Why More Features Doesn&#8217;t Mean More Success" data-url="http://blog.kissmetrics.com/features-doesnt-mean-success/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'Why More Features Doesn&#8217;t Mean More Success', 'Post URL':'https://blog.kissmetrics.com/features-doesnt-mean-success/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'Why More Features Doesn&#8217;t Mean More Success', 'Post URL':'https://blog.kissmetrics.com/features-doesnt-mean-success/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'Why More Features Doesn&#8217;t Mean More Success', 'Post URL':'https://blog.kissmetrics.com/features-doesnt-mean-success/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":497,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

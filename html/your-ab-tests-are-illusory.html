@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>Most of Your A/B Test Results Are Illusory and That’s Okay</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; Most of Your A/B Test Results Are Illusory and That’s Okay Comments Feed" href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Are You an Inbound Marketing Expert? Take the Quiz!' href='https://blog.kissmetrics.com/inbound-marketing-expert-quiz/' />
+<link rel='next' title='67 Tools That Will Help You Grow Your Email List' href='https://blog.kissmetrics.com/67-tools-email-list/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=23213' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fyour-ab-tests-are-illusory%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fyour-ab-tests-are-illusory%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,359] -->
+<meta name="description" content="Not All Winners Are Winners. A really phenomenal white paper titled “Most Winning A/B Test Results Are Illusory,” published by Qubit, was making the rounds a few weeks ago." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='Most of Your A/B Test Results Are Illusory and That’s Okay' />
+<meta property='og:url' content='https://blog.kissmetrics.com/your-ab-tests-are-illusory/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Not All Winners Are Winners. A really phenomenal white paper titled “Most Winning A/B Test Results Are Illusory,” published by Qubit, was making the rounds a few weeks ago.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Most of Your A/B Test Results Are Illusory and That’s Okay" />
+    <meta name="twitter:description" content="Not All Winners Are Winners. A really phenomenal white paper titled “Most Winning A/B Test Results Are Illusory,” published by Qubit, was making the rounds a few weeks ago." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-23213 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'Most of Your A/B Test Results Are Illusory and That’s Okay',
+						'Post Category': 'Testing',
+						'Post URL': 'https://blog.kissmetrics.com/your-ab-tests-are-illusory/'
+		}
+	]);
+</script>
+
+<article id="post-23213" class="single-post post-23213 post type-post status-publish format-standard hentry category-testing" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">Most of Your A/B Test Results Are Illusory and That’s Okay</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<h2>Not All Winners Are Winners</h2>
+<p>A really phenomenal white paper titled “<a href="http://www.qubitproducts.com/sites/default/files/pdf/most_winning_ab_test_results_are_illusory.pdf">Most Winning A/B Test Results Are Illusory</a>,” published by Qubit, was making the rounds a few weeks ago. If A/B testing is part of your daily life, then you really must take a few minutes to read through it. The gist of the paper is that many people call their A/B tests way too soon, which can cause the inferior variant to appear superior because of simple bad luck.</p>
+<p>To understand how this can happen, imagine you have two fair coins (50% chance of landing on heads). You want to see whether your left or right hand is superior at getting heads, so you will know which hand to use when making a heads/tails bet in the future. You flip the coin in each hand 16 times, and you get these results:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/ab-test-example-coin-toss.png" alt="ab test example coin toss" class="aligncenter size-full wp-image-23214" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/ab-test-example-coin-toss-300x144.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/ab-test-example-coin-toss.png 520w" sizes="(max-width: 520px) 100vw, 520px" /></p>
+<p>Since we know the coin is fair, we know that getting 11 heads and 5 tails is just as likely as getting 11 tails and 5 heads. However, if we plug this result into a t-test to calculate our confidence, we find that we’re 96.6% certain that our right hand is superior at flipping the coin! Now, we know this is absurd since, in our example, knowing that the coin is fair, we could arbitrarily say that heads were tails, and vice versa.</p>
+<p>If our coin flipping example were an A/B test, we would have gone ahead with the “right hand” variant. This wouldn’t have been a major loss, but it wouldn’t have been a win, either. The scary part is that this same thing can happen when the variant is actually worse! This means you can move forward with a “winning” variant, and watch your conversion rate drop!</p>
+<h2>Doing It Right</h2>
+<p>So what’s the problem? Why is this happening?</p>
+<p>A/B tests are designed to imitate scientific experiments, but most marketers running A/B Tests do not live in a world that is anything like a lab at a university. The stumbling point is that people running A/B tests are supposed to wait and not peak at the results until the test is done, but many marketers won’t do that.</p>
+<p>Let’s outline the classic setup for running an experiment:</p>
+<ol>
+<li>Decide the minimum improvement you care about. (Do you care if a variant results in an improvement of less than 10%?)</li>
+<li>Determine <a href="http://www.evanmiller.org/ab-testing/sample-size.html">how many samples you need</a> in order to know within a tolerable percentage of certainty that the variant is better than the original by at least the amount you decided in step 1.</li>
+<li>Start your test but DO NOT look at the results until you have the number of examples you determined you need in step 2.</li>
+<li>Set a certainty of improvement that you want to use to determine if the variant is better (usually 95%).</li>
+<li>After you have seen the observations decided in step 2, then put your results into <a href="http://www.evanmiller.org/ab-testing/t-test.html">a t-test</a> (or other favorite significance test) and see if your confidence is greater than the threshold set in step 4.</li>
+<li>If the results of step 5 indicate that your variant is better, go with it. Otherwise, keep the original.</li>
+</ol>
+<p>I recommend you play with the sample size calculator in step 2. If these steps seem straightforward to you, and the sample sizes you come up with seem easily achievable, then you can stop reading here and go get better results from your A/B tests. This approach works and will give you good results.</p>
+<p>If, however, you read the above and thought “I also should eat more veggies and work out more…” then read on!</p>
+<h2>Marketers are NOT Scientists</h2>
+<p>I believe the reason marketers tend not to follow through with proper methodology when it comes to A/B testing has less to do with ignorance of the procedure and more to do with real world rewards and constraints. For scientists working in a lab, the most important thing is that the results must be correct. Running a test takes a relatively small chunk of time, while getting an incorrect answer that eventually finds its way into publication can have consequences that range from being embarrassing to costing lives.</p>
+<p>Marketers have almost the opposite pressures. Management wants results as soon as possible, but you may have a long list of features and designs waiting to be tested, and you don’t want to waste time testing minor improvements if someone has something that could be a major improvement. Most important: marketers are concerned with growth! Being correct is useful only insofar as it leads to growth.</p>
+<p>So, now, we have the question: “Is there a way to run A/B tests that acknowledges the world marketers have to exist in?”</p>
+<h2>Simulating Strategies</h2>
+<p>Whenever I’m studying interesting questions involving probabilities that don’t have an obvious analytical solution, I turn to Monte Carlo simulations! A Monte Carlo simulation is simply a way for us to answer questions by running simulations enough times to get an answer. All we have to do is model our problem. Then, we can model different strategies and see how they perform.</p>
+<p>For our A/B testing model, we’re going to make some assumptions. In this case, we’re going to have a page that starts with a 5% conversion rate. We then assume that variants can have conversion rates that are normally distributed around 5%. In practical terms, this means that any given variant is equally likely to be better or worse than the original, and that small improvements are much more common than really large ones.</p>
+<p>Finally, we address perhaps the most important constraint: each strategy gets only a total of 1 million observations. As you collect more data, you get more certain; but if you need 100,000 results to be certain, then how many tests have you wasted? No one has unlimited visitors to sample from. In our model, the more careful testing strategy might be penalized because it wastes too much time on poor performers and never gets to a really good variant.</p>
+<h2>The Scientist and The Impatient Marketer</h2>
+<p>Let’s start by modeling the strategy of “The Scientist.” This strategy follows all of the steps for proper testing outlined above. We can see the results of a single simulation run below:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/conversion-rate-vs-observations.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/conversion-rate-vs-observations.png" alt="conversion rate VS. observations" class="aligncenter size-full wp-image-23216" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/conversion-rate-vs-observations-300x196.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/conversion-rate-vs-observations.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p>What we see is quite clear. The Scientist has continuous improvement and will stay at a good conversion rate until another improvement is found; rarely, if ever, choosing the inferior variant by mistake. After 1,000,000 people, The Scientist has run around 20 tests and has bumped the conversion rate from 5% to 6.7% at the end.</p>
+<p>Now, let’s look at a strategy we’ll call “The Impatient Marketer.” The Impatient Marketer is an extreme case of sloppy A/B testing, but it is an important step toward understanding how we can model a strategy for marketers that is both sane and provides good results. The Impatient Marketer checks constantly (as opposed to waiting), stops the test as soon as it reaches 95% confidence, and gets bored after 500 observations, at which point the test is stopped in favor of the original.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/the-impatient-marketer.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/the-impatient-marketer.png" alt="the impatient marketer" class="aligncenter size-full wp-image-23217" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/the-impatient-marketer-300x196.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/the-impatient-marketer.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p>Here we see something very different from The Scientist. The Impatient Marketer has results all over the board. Many tests are inferior to their predecessor and many are worse than the first page!</p>
+<p>But there are some pluses here as well. In this case, The Impatient Marketer reached a peak of 7.8% conversion and still ended close to The Scientist at 6.3%! It’s also worth noting that if this simulation is run over and over again, we find that The Impatient Marketer consistently does better than the baseline.</p>
+<h2>The Realist</h2>
+<p>Now, let’s make The Impatient Marketer a little less impatient and a little more realistic. Our new strategy is “The Realist.” The Realist wants results fast, but doesn’t want to make a lot of mistakes, and also doesn’t want to follow a 6-step process for each test. The Realist waits until 99% confidence to make the call, but will wait for only 2,000 observations. This strategy is very simple, but much less reckless than that of The Impatient Marketer.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/the-realist-conversion-rates.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/the-realist-conversion-rates.png" alt="the realist conversion rates" class="aligncenter size-full wp-image-23218" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/the-realist-conversion-rates-300x196.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/the-realist-conversion-rates.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p>In this sample run, The Realist is doing much better than The Impatient Marketer. The Realist occasionally does make a wrong choice, but only very briefly drops below the original. The Realist ends at 6.3% but has spent a lot of time with a variant that achieved 7.4%. Because The Realist is always trying out new ideas, this strategy is able to sometimes find better variants that The Scientist never gets to!</p>
+<h2>Measuring Strategies</h2>
+<p>In the above images, all we have is a single sample path. How do we judge how well each strategy performs? Maybe The Scientist does even better, or maybe The Impatient Marketer’s gains make up for the losses?</p>
+<p>The way we’ll approach this is by measuring the area under the curve. If you imagine just sticking to the original, there would be a straight line at 0.05 across the entire plot, giving an area of 0.05 x 1,000,000 = 50,000. If we measure the area under each point, then we can compare. And, to get a fair assessment, we’ll simulate this process thousands of times and take the average. After we do that, here are our results:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/strategy-and-scores.png" alt="strategy and scores" class="aligncenter size-full wp-image-23219" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/strategy-and-scores-300x144.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/strategy-and-scores.png 520w" sizes="(max-width: 520px) 100vw, 520px" /></p>
+<p>There are a couple of really fascinating results here. Perhaps most remarkable, The Impatient Marketer does surprisingly well! Now, of course, if you actually look, The Impatient Marketer does an unrealistic number of A/B Tests. However, if you have a low traffic site that simply will never see a well-designed test converge, there’s definitely a useful insight here: A/B testing is useful even if you don’t have much data, but you have to continuously run tests to avoid getting stuck too long at a poor conversion rate.</p>
+<p>But most interesting to everyday marketers running A/B tests is that The Realist and The Scientist do about the same in the long run! Now, it is important to note that we know these conclusions hold true only for the assumptions of our model. Still, there is an important takeaway that, if you’re thoughtful, you can make tradeoffs in your testing methodology and still get great results.</p>
+<h2>Takeaways</h2>
+<p>The biggest assumption in our model is that these tests are running back to back without breaks. Veering away from classical tests works only if acting on inferior information is made up for by always having another test ready to go.</p>
+<p>If you want to end your test early because a design for the next round is ready, go for it! If other office pressure is making you want to end a test early, feel free to stop, but make sure you have another test ready to go. Additionally, if you have good cause for stopping early, lean toward being more conservative with your results. You assume a lot of risk if you go with a variant that isn’t a clear winner.</p>
+<p>Conversely, if you have no pressure to stop early, stick with the traditional testing setup outlined above! Run the sample size calculator and see if the number of samples needed is in a range you can gather in a reasonable time frame. If so, there’s no reason to break what works; and, in fact, you may find your time best spent exploring other, mathematically sound, approaches to running tests.</p>
+<p>In all of our models, being vigilant and continuously running tests is a sure way to minimize any limitations in the testing methodology.</p>
+<p><b>About the Author:</b> Will Kurt is a Data Scientist/Growth Engineer at Kissmetrics. You can reach out to him on twitter <a href="http://twitter.com/willkurt">@willkurt</a> and see what he’s hacking on at <a href="https://github.com/willkurt">github.com/willkurt</a>. </p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/ab-testing-introduction/">A Beginner's Guide To A/B Testing: An Introduction</a></li>
+<li><a href="https://blog.kissmetrics.com/19-obvious-ab-tests/">19 Obvious A/B Tests You Should Run on Your Website</a></li>
+<li><a href="https://blog.kissmetrics.com/conversions-statistical-confidence/">Conversions and Statistical Confidence – What Does it Mean?</a></li>
+<li><a href="https://blog.kissmetrics.com/modeling-churn/">Why Modeling Churn is Difficult</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fyour-ab-tests-are-illusory%2F&source=tweetbutton&text=Most+of+Your+A%2FB+Test+Results+Are+Illusory+and+That%E2%80%99s+Okay&url=https%3A%2F%2Fblog.kissmetrics.com%2Fyour-ab-tests-are-illusory%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fyour-ab-tests-are-illusory%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=Most of Your A/B Test Results Are Illusory and That’s Okay&amp;body=https://blog.kissmetrics.com/your-ab-tests-are-illusory/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-23213 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-185840">
+    <div id="comment-185840" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mark</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-185840" class="comment-date">Apr 21, 2014 at 6:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Awesome post guys, thanks. I have often wondered about the most effective way to handle the statistics of split testing. We as an agency often work with businesses with relatively little traffic, so taking the ideal scientific approach isn&#8217;t always viable.</p>
+<p>Of course, one great way to speed up the process is by testing big ideas and setting a threshold of at least a 50% improvement. The wins don&#8217;t come as often, but we find the pay off is worth it when they do.</p>
+<p>This also means that you can drop unsuccessful variations faster because you don&#8217;t need to be sure whether they beat the original &#8211; just that they haven&#8217;t beat the original by at least 50%.</p>
+<p>It&#8217;s good to know that the realist still gets good results in the long-run anyway. Post Tweeted.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=185840#respond' onclick='return addComment.moveForm( "comment-185840", "185840", "respond", "23213" )' aria-label='Reply to Mark'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel odd alt depth-2" id="li-comment-185869">
+    <div id="comment-185869" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-185869" class="comment-date">Apr 21, 2014 at 8:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Mark, thanks for the great feedback and for sharing your experience. We look forward to hearing more from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=185869#respond' onclick='return addComment.moveForm( "comment-185869", "185869", "respond", "23213" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-185879">
+    <div id="comment-185879" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">S.M. Kamran</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-185879" class="comment-date">Apr 21, 2014 at 9:24 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hello Neil Patel,</p>
+<p>Nice post as described properly. Do you think that A/B test is more important for small business marketing..??</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=185879#respond' onclick='return addComment.moveForm( "comment-185879", "185879", "respond", "23213" )' aria-label='Reply to S.M. Kamran'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel odd alt depth-2" id="li-comment-186137">
+    <div id="comment-186137" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186137" class="comment-date">Apr 22, 2014 at 9:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I think it is just as important for large businesses. It&#8217;s all about seeing what works best.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186137#respond' onclick='return addComment.moveForm( "comment-186137", "186137", "respond", "23213" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-185996">
+    <div id="comment-185996" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Brian</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-185996" class="comment-date">Apr 22, 2014 at 12:43 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I really have problems when it comes down to split testing. Normally I would rank a website in the SERPS but I really suck at making money from it. I am using VWO btw, do you think that is a good idea?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=185996#respond' onclick='return addComment.moveForm( "comment-185996", "185996", "respond", "23213" )' aria-label='Reply to Brian'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-186218">
+    <div id="comment-186218" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186218" class="comment-date">Apr 22, 2014 at 2:15 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>In my simulations one of the biggest things I found was that being more conservative with what you call a winning variant tends to help, especially if you’re not willing/able to wait for a test to run a long time. So if the tool you&#8217;re using provides any sort of probability of improvement wait until it is 99% rather than 95%. Variants that are truly superior will show high significance early on, even if you’re not following a strict testing methodology.</p>
+<p>Thanks for the question!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186218#respond' onclick='return addComment.moveForm( "comment-186218", "186218", "respond", "23213" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-186138">
+    <div id="comment-186138" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Abdul Sattar</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186138" class="comment-date">Apr 22, 2014 at 9:50 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I read first A/B Test on Moz about Social Signals and after that&#8230; more &amp; more..</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186138#respond' onclick='return addComment.moveForm( "comment-186138", "186138", "respond", "23213" )' aria-label='Reply to Abdul Sattar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-186216">
+    <div id="comment-186216" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186216" class="comment-date">Apr 22, 2014 at 2:05 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>A/B testing really is a surprisingly deep topic. I plan to have a lot more posts in the future exploring some of the more interesting questions A/B testing brings up! Thanks for your comment!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186216#respond' onclick='return addComment.moveForm( "comment-186216", "186216", "respond", "23213" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-186435">
+    <div id="comment-186435" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186435" class="comment-date">Apr 23, 2014 at 9:56 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Abdul, awesome! It&#8217;s a growing field :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186435#respond' onclick='return addComment.moveForm( "comment-186435", "186435", "respond", "23213" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-186141">
+    <div id="comment-186141" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Pardeep Goyal</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186141" class="comment-date">Apr 22, 2014 at 9:55 am</a>      </div><!-- /.comment-meta -->
+
+      <p>We at schoolgennie.com are doing similar tests. This article provides in depth analysis of A/B testing. Next month we are going to run tests with some softwares. I will appreciate if you can write something on choosing good tools.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186141#respond' onclick='return addComment.moveForm( "comment-186141", "186141", "respond", "23213" )' aria-label='Reply to Pardeep Goyal'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-186210">
+    <div id="comment-186210" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186210" class="comment-date">Apr 22, 2014 at 2:00 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>It would definitely be interesting to apply this simulation method to the variety of existing tools out there! There are many subtleties in the methods use to calculate results, and I myself am very curious what the impact these different methods have on decision making. I’ll definitely look into this for a possible future post!</p>
+<p>Thanks for your feedback!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186210#respond' onclick='return addComment.moveForm( "comment-186210", "186210", "respond", "23213" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment byuser comment-author-npatel odd alt depth-2" id="li-comment-186434">
+    <div id="comment-186434" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186434" class="comment-date">Apr 23, 2014 at 9:55 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Pardeep, will definitely keep you in mind for our next post :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186434#respond' onclick='return addComment.moveForm( "comment-186434", "186434", "respond", "23213" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-186192">
+    <div id="comment-186192" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Reece</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186192" class="comment-date">Apr 22, 2014 at 12:46 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great post and very interesting analysis. As a trained astrophysicist working in online marketing I find the application of scientific rigour an interesting challenge. A third way is definitely worth some consideration. Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186192#respond' onclick='return addComment.moveForm( "comment-186192", "186192", "respond", "23213" )' aria-label='Reply to Reece'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-186208">
+    <div id="comment-186208" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186208" class="comment-date">Apr 22, 2014 at 1:55 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Reece!</p>
+<p>A/B Testing is one of those great problems whose initial phrasing “Is B greater than A?” seems trivial to solve and then opens up a really fascinating range of trickier problems. I plan to continue exploring these problems in future posts and look forward to more feedback!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186208#respond' onclick='return addComment.moveForm( "comment-186208", "186208", "respond", "23213" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-186432">
+    <div id="comment-186432" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186432" class="comment-date">Apr 23, 2014 at 9:54 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Reece, thanks for the feedback. We can definitely use some tips from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186432#respond' onclick='return addComment.moveForm( "comment-186432", "186432", "respond", "23213" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-186196">
+    <div id="comment-186196" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/cometrico' rel='external nofollow' class='url'>Brian Lang</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186196" class="comment-date">Apr 22, 2014 at 12:53 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Brilliant post, thanks so much for putting it together.</p>
+<p>The problem I&#8217;ve seen with many marketers is they just look at the averages. You can’t measure the “true” conversion rate, you can only measure the mean +/- the margin of error. This means you can’t say, “We are 95% confident that the conversion rate is X%”, you can only say, “We are 95% confident that the conversion rate is X% +/- Y%”. Many marketers drop that last part (margin of error), and simply stick to the averages – this is bad! </p>
+<p>To highlight how big of a problem this can be, let’s relate it to the coin flip example you gave. Let’s say that “heads” equates to a “successful conversion”, while “tails” equates to “no conversion”. Based on this, the right hand’s conversion rate is 31% (5/16), while the left hand’s conversion rate is 69% (11/16) – as you’ve noted, the t-test comes back significant, even though we know there really isn’t any difference. The test has misled you. If you look past the averages, and take into account the margin of error, you see a different story, one that likely will make you question your confidence in the test results, and have you wondering, “What’s going on here?”. </p>
+<p>The winner (left hand), who’s conversion rate of  69% was 120% higher (relative) when compared to the right hand’s conversion rate of 31%, has a 95% confidence interval of 44% (lower) to 85.8% (upper). Yes, the average conversion rate is 69%, but the 95% confidence is +/- 42% around the average. Wow. You are suddenly a lot less confident in your measurement. What if weatherman said they are 95% confident that the max temp for today will be between 44 degrees and 86 degrees? I wouldn’t even know what to do – do you wear shorts and sandals, or put on a cold-weather coat? </p>
+<p>It is important that marketers provide a complete picture of what’s going on, and make decisions accordingly.</p>
+<p>Thanks again for a great post!</p>
+<p>Brian (twitter.com/cometrico)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186196#respond' onclick='return addComment.moveForm( "comment-186196", "186196", "respond", "23213" )' aria-label='Reply to Brian Lang'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-186199">
+    <div id="comment-186199" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/cometrico' rel='external nofollow' class='url'>Brian Lang</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186199" class="comment-date">Apr 22, 2014 at 1:07 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Whoops, slight correction (it won&#8217;t let me edit the comment) &#8211; it should read there is a 42% difference between upper and lower confidence interval. </p>
+<p>Brian</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186199#respond' onclick='return addComment.moveForm( "comment-186199", "186199", "respond", "23213" )' aria-label='Reply to Brian Lang'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt depth-2" id="li-comment-186205">
+    <div id="comment-186205" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186205" class="comment-date">Apr 22, 2014 at 1:47 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for your feedback!</p>
+<p>I&#8217;ve noticed this issue myself, many people tend to misunderstand what a mean truly represents. Your comment makes this point quite well. The problem I&#8217;ve found is that when presented with the 95% confidence interval people see this as adding uncertainty to the decision making process and things become more confusing for them. I think one solution to this issue would be to simulate decision making processes that take this into account. Then come up with an easy set of rules that incorporate this knowledge into the process yielding better results.</p>
+<p>I hope to address this in a future post, and also plan on doing a series of posts laying out the math in clear terms so that people can become more aware of how important this issue is. Thanks again!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186205#respond' onclick='return addComment.moveForm( "comment-186205", "186205", "respond", "23213" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-186430">
+    <div id="comment-186430" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186430" class="comment-date">Apr 23, 2014 at 9:53 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Brian, thanks for this in-depth feedback. I like the way you broke everything down in an easy to digest manner. Looking forward to hearing more of the same from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186430#respond' onclick='return addComment.moveForm( "comment-186430", "186430", "respond", "23213" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-186308">
+    <div id="comment-186308" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Stuart G. Hall</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186308" class="comment-date">Apr 23, 2014 at 1:21 am</a>      </div><!-- /.comment-meta -->
+
+      <p>The first use of the word &#8216;peak&#8217; should read &#8216;peek&#8217; though to be fair the unintended typo kinda makes sense, in that its tempting to jump on the first apparently significant result (hence &#8216;a peak&#8217;) rather than see out the experiment.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186308#respond' onclick='return addComment.moveForm( "comment-186308", "186308", "respond", "23213" )' aria-label='Reply to Stuart G. Hall'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-186390">
+    <div id="comment-186390" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186390" class="comment-date">Apr 23, 2014 at 8:33 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for the catch! I also spent a lot of time looking for the peak of probability density functions so perhaps my brain has that spelling hard wired when discussing A/B tests!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186390#respond' onclick='return addComment.moveForm( "comment-186390", "186390", "respond", "23213" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment byuser comment-author-npatel odd alt depth-2" id="li-comment-186425">
+    <div id="comment-186425" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186425" class="comment-date">Apr 23, 2014 at 9:49 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Stuart, thanks for catching that :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186425#respond' onclick='return addComment.moveForm( "comment-186425", "186425", "respond", "23213" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-186812">
+    <div id="comment-186812" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Geo</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186812" class="comment-date">Apr 24, 2014 at 11:58 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I wouldn&#8217;t really call the whitepaper &#8220;phenomenal&#8221; since this is statistical ABC. However, given that online marketers are generally oblivious to the scientific method and to error statistics as the basis of the empirical part of it, it certainly deserves appraisal. In fact, we are also trying to educate online marketers about the very same things with the toolkit we&#8217;ve just launched so I myself hold this cause most dearly.</p>
+<p>I&#8217;d like to note one critical mistake in the paper: &#8220;Rather than a scattergun approach, it’s best to perform a small number of focused and well-grounded tests, all of which have adequate statistical power.&#8221;. While I can agree with that as preferable to running a hundred ungrounded tests that tell you nothing, it sounds to me as if he says &#8211; doing many tests causes troubles with their power, so you better stick to doing just a few.</p>
+<p>The problem with that is that #1 even if you do just a few tests with a couple of variations each at a time, you can still run into the exact same problem if you are testing similar changes each time. #2 if you have grounds for doing multiple tests with many variations at once, you should definitely do it. Just make sure that you adjust your significance levels so that you account for the multiplicity problem.</p>
+<p>For #2 I&#8217;ve found that the False Discovery Method by Hochberd, Benjamini and Yekutieli works best for real-world questions and I&#8217;ve built a multiple-comparison statistical significance calculator around that. You can check it out here: analytics-toolkit.com/statistical-calculators/</p>
+<p>Back to you post: you say &#8220;Marketers are NOT Scientists&#8221; and I regretfully agree. But then you go on and it seems to me that you suggest that the problems marketers face are somehow different than those faced by scientists and I completely disagree if that is indeed the case. The problems are exactly the same and require exactly the same approach. The scientific method is the only framework that allows us to tell true from false with regards to ANYTHING in the real world.</p>
+<p>Thus, when you ask &#8220;Is there a way to run A/B tests that acknowledges the world marketers have to exist in?&#8221; my answer would be &#8211; yes, do your science right and simply pick a significance level that reflects the cost/benefit calculations that you work with. 95% is not some magical number. Many scientific tests are in fact looking aiming for a 99.99% confidence level. In the same time for a bunch of marketers being 90% confident that they are not committing a type I error may be perfectly fine.</p>
+<p>I argue that adjusting the significance level is all that needs to be done. No need for complex strategies and Monte Carlo simulations.</p>
+<p>Having said that &#8211; your post only shows a few sample runs and compares them. However, what is the statistical power of such a comparison. It seems very very flimsy to me or maybe I&#8217;m missing your point?</p>
+<p>Would love to hear back from you, Will.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186812#respond' onclick='return addComment.moveForm( "comment-186812", "186812", "respond", "23213" )' aria-label='Reply to Geo'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-186905">
+    <div id="comment-186905" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186905" class="comment-date">Apr 25, 2014 at 10:51 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Geo!</p>
+<p>The problem with just focusing on significance levels alone is that it accounts for neither the magnitude of effect nor the costs associated with gathering samples, and certainly not the challenges of reasoning about statistical significance for people with little stats background. The reason for the MC simulations is because I wanted to compare strategies even if they’re not phrased in terms of traditional experiment design. Certainly turning the parameters of The Scientist strategy could give you nearly identical decision making as The Realist or Impatient Marketer, but what I wanted to test is precisely a “rule of thumb” approach. As other comments have mentioned many people don’t really understand the confidence interval in relation to the observed mean. Rather than increase the cognitive overhead of experiment design for people in this group I would much rather arrive at a set of useful heuristics, even if these heuristics don’t lead to a truly optimal approach. Also for the results table each strategy was run 3,000 times over 1,000,000 samples. Even though the exact means contain some variation at only 3,000 runs, the relative ordering of the strategies remained consistent (and the ordering is all I am in interested in for comparing strategies).</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186905#respond' onclick='return addComment.moveForm( "comment-186905", "186905", "respond", "23213" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-3" id="li-comment-186944">
+    <div id="comment-186944" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Geo</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-186944" class="comment-date">Apr 25, 2014 at 2:36 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Will,</p>
+<p>&#8220;The problem with just focusing on significance levels alone is that it accounts for neither the magnitude of effect nor the costs associated with gathering samples, and certainly not the challenges of reasoning about statistical significance for people with little stats background.&#8221;</p>
+<p>Well, these are not statistical issues, but test design issues. I&#8217;m very tempted to quote from an excellent article called &#8220;Error Statistics&#8221; (2010):</p>
+<p>&#8220;Criticism (#3) is often phrased as “statistical significance is not substantive significance”. What counts as substantive significance is a matter of the context. What the severity construal of tests will do is tell us which discrepancies are and are not indicated, thereby avoiding the confusion between statistical and substantive significance.&#8221;</p>
+<p>It&#8217;s mathematically much easier (and thus in practice &#8211; cheaper) to achieve a significant result when the substantive significance is higher. Thus, you quickly arrive at the result and the cost of gathering samples is lower and you can quickly start receiving the benefits. &#8220;higher&#8221; and &#8220;lower&#8221; here are in comparison to a situation where you have little substantive significance: you would need a larger sample size and the cost of that would be higher. However the cost of gathering that vs the benefits of switching before achieving significance is really the same as in the first case (given same significance level), due to the much lower magnitude of the expected result.</p>
+<p>Thus I think choosing a properly strict significance level ensures you don&#8217;t overspend on sample gathering and in reality balances between your cost and your missed potential benefits.</p>
+<p>As far as &#8220;challenges of reasoning about statistical significance&#8221;, my prediction is that people with &#8220;little stats background&#8221; will start seeing their positions in peril as the companies they work for start loosing money because of their non-empirical approach (compared to the new wave of internet marketers, which, I believe, will bring to the scene a much more scientific approach). It&#8217;s all based upon the simple fact that I&#8217;ll restate: &#8220;The scientific method is the only framework that allows us to tell true from false with regards to ANYTHING in the real world.&#8221;.</p>
+<p>Now, with that in mind, if you look at your &#8220;Realist&#8221; strategy &#8211; what you&#8217;ve done by setting a threshold at 2000 observations and having the distribution the same as with the other two strategies is in fact almost the same as setting a confidence level. I&#8217;m a bit too lazy to do the proper math right now, but with such a sample size I&#8217;m estimating that it has enough power to detect 25-30% uplift from the 5% conversion rate base with ~95% certainty. And this power only grows as the marketer achieves a better &#8220;base&#8221; conversion rate. Yes, the other condition &#8211; the 99% confidence level, with or without power, is something that skews this but still, in effect, by imposing this threshold you are trying to do and actually doing what should be done by setting up a proper significance level.</p>
+<p>Let me know if my reasoning is incorrect, I&#8217;d love to be schooled on such matters as I deem them of highest importance.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=186944#respond' onclick='return addComment.moveForm( "comment-186944", "186944", "respond", "23213" )' aria-label='Reply to Geo'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-187785">
+    <div id="comment-187785" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Geo</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-187785" class="comment-date">Apr 29, 2014 at 11:27 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I think I might have been too vague in my previous comment. To put it simply: having a fixed threshold after which to stop is a rudimentary approach to statistical power at a given significance level. Since statistical power depends on the chosen significance level, the best way to achieve what the rudimentary approach of the &#8220;Realist&#8221;is trying to achieve would be to adjust the significance level so that it isn&#8217;t too stringent. &#8220;Too stringent&#8221; here can only be defined by the person doing the test, based on the expected cost/benefit tradeoff.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=187785#respond' onclick='return addComment.moveForm( "comment-187785", "187785", "respond", "23213" )' aria-label='Reply to Geo'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-187903">
+    <div id="comment-187903" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-187903" class="comment-date">Apr 30, 2014 at 11:20 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Geo, thanks for the clarification. We look forward to hearing more from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=187903#respond' onclick='return addComment.moveForm( "comment-187903", "187903", "respond", "23213" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-191311">
+    <div id="comment-191311" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ryan</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-191311" class="comment-date">May 13, 2014 at 3:37 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This is why I&#8217;ve started using Bayesian Statistics. If you handed me two coins that looked identical and felt like other coins I&#8217;ve seen in the past, I would have a high degree of confidence that they are identical and my prior would represent that. 16 iterations with one having 11 heads and the other 11 tails would not cause me to think one is different.</p>
+<p>For different A/B tests, I have different standards for what is a winner. In one instance I wanted to change the structure of a landing page so that I could run more tests without the need for dev resources. My criteria for this test was to be reasonably certain that the B version was not significantly worse. Bayesian Statistics is much better at answering these questions.</p>
+<p>From a philosophical standpoint I am in full agreement with your main point. I&#8217;m a former scientist, yet I know that my goal is not to publish results, it is to maximize the profits. My time and opportunity costs have to be factored into my decisions.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=191311#respond' onclick='return addComment.moveForm( "comment-191311", "191311", "respond", "23213" )' aria-label='Reply to Ryan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-191577">
+    <div id="comment-191577" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-191577" class="comment-date">May 14, 2014 at 10:37 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Ryan, thanks for these great insights. If you have any additional points we are all ears :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=191577#respond' onclick='return addComment.moveForm( "comment-191577", "191577", "respond", "23213" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment byuser comment-author-npatel odd alt depth-2" id="li-comment-191648">
+    <div id="comment-191648" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-191648" class="comment-date">May 14, 2014 at 4:58 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Ryan, awesome. I think you discussed the same topic on the other blog. Would definitely love to hear more about it from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=191648#respond' onclick='return addComment.moveForm( "comment-191648", "191648", "respond", "23213" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-3" id="li-comment-194155">
+    <div id="comment-194155" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Reilly Dunn</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-194155" class="comment-date">May 15, 2014 at 12:51 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Reilly from Qubit here&#8211;and you&#8217;re absolutely right. Qubit&#8217;s model employs Bayesian Priors, as opposed to many of the other models out there. Good call on that one!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=194155#respond' onclick='return addComment.moveForm( "comment-194155", "194155", "respond", "23213" )' aria-label='Reply to Reilly Dunn'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt depth-2" id="li-comment-196509">
+    <div id="comment-196509" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://twitter.com/cometrico' rel='external nofollow' class='url'>Brian Lang</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-196509" class="comment-date">May 16, 2014 at 7:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>&#8220;Reasonably certain&#8221; is rather subjective, isn&#8217;t it? It’s all about tolerance, and what the cost of making an “incorrect” decision are. If your cost of being wrong is low, then sure you can set a lower level on your confidence interval / statistical significance level, requiring less data / time. I like Bayesian Stats due to the fact that where the frequentist approach (through significance testing) can only provide you with whether a treatment was “better”, “worse” or “different”, a Bayesian approach (through use of Monte Carlo simulations) can give you the probability that variation A beats B based on the data you have &#8211; the problem with this, though, is your results can vary significantly based upon the amount of data you collected.</p>
+<p>The coin example sounds great in theory, because a fair coin has two sides with equal probability of landing on each side – this doesn’t translate as well in a practical sense of website optimization. The problem with priors in the real world (such as a business setting) is they are prone to bias by whoever is setting the prior.</p>
+<p>You hit the nail on the head here with, “… goal is not to publish results, it is to maximize the profits” – so true. I feel if more people grasped this we’d see a push for the major tools to adopt and offer a multi-armed bandit approach to minimize regret.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=196509#respond' onclick='return addComment.moveForm( "comment-196509", "196509", "respond", "23213" )' aria-label='Reply to Brian Lang'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-194998">
+    <div id="comment-194998" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">materi bahan tayang</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-194998" class="comment-date">May 15, 2014 at 7:37 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Someone essentially lend a hand to make significantly posts I would state. This is the first time I frequented your web page and so far? I amazed with the analysis you made to create this particular post extraordinary. Fantastic task!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=194998#respond' onclick='return addComment.moveForm( "comment-194998", "194998", "respond", "23213" )' aria-label='Reply to materi bahan tayang'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel odd alt depth-2" id="li-comment-196417">
+    <div id="comment-196417" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-196417" class="comment-date">May 16, 2014 at 7:12 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Materi, glad you liked the post. Appreciate the feedback :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=196417#respond' onclick='return addComment.moveForm( "comment-196417", "196417", "respond", "23213" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1093713">
+    <div id="comment-1093713" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">dave</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-1093713" class="comment-date">Apr 14, 2015 at 10:55 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Do you have the code for this simulation?  (in the graphs) That would be very helpful deciminating your findings!  please email it if you do.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=1093713#respond' onclick='return addComment.moveForm( "comment-1093713", "1093713", "respond", "23213" )' aria-label='Reply to dave'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1099022">
+    <div id="comment-1099022" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Avinash Pathak</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-1099022" class="comment-date">Apr 23, 2015 at 12:57 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I have done A/B test a month ago and got negative results on my variation page. So, I need to do multiple tests on design elements of site. Can you please suggest me that I have to go with A/B test or multivariant test because I need results as soon as fast. I really suck of making choice&#8230; which one nicer and this time I don&#8217;t want negative result on my variation page. Please advice me</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=1099022#respond' onclick='return addComment.moveForm( "comment-1099022", "1099022", "respond", "23213" )' aria-label='Reply to Avinash Pathak'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1213826">
+    <div id="comment-1213826" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Eric Martin</cite>
+        
+        <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/#comment-1213826" class="comment-date">Feb 01, 2016 at 8:42 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for the great article. Why do you think Google and Facebook both try to declare winners in ads seemingly much more quickly than the scientist or the realistic marketer? Do they know something we don&#8217;t know?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/your-ab-tests-are-illusory/?replytocom=1213826#respond' onclick='return addComment.moveForm( "comment-1213826", "1213826", "respond", "23213" )' aria-label='Reply to Eric Martin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">50 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/your-ab-tests-are-illusory/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='23213' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="b3ecee547b" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="206"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'Most of Your A/B Test Results Are Illusory and That’s Okay', 'Post URL':'https://blog.kissmetrics.com/your-ab-tests-are-illusory/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/inbound-marketing-expert-quiz/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/67-tools-email-list/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/your-ab-tests-are-illusory/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/your-ab-tests-are-illusory/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/your-ab-tests-are-illusory/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="Most of Your A/B Test Results Are Illusory and That’s Okay" data-url="http://blog.kissmetrics.com/your-ab-tests-are-illusory/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'Most of Your A/B Test Results Are Illusory and That’s Okay', 'Post URL':'https://blog.kissmetrics.com/your-ab-tests-are-illusory/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'Most of Your A/B Test Results Are Illusory and That’s Okay', 'Post URL':'https://blog.kissmetrics.com/your-ab-tests-are-illusory/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'Most of Your A/B Test Results Are Illusory and That’s Okay', 'Post URL':'https://blog.kissmetrics.com/your-ab-tests-are-illusory/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":506,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

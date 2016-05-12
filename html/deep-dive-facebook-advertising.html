@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>A Deep Dive Into Facebook Advertising - Learn How To Make It Work For Your Business!</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; A Deep Dive Into Facebook Advertising Comments Feed" href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How Your Customers Hold The Key That Unlocks Your Amazing Product' href='https://blog.kissmetrics.com/unlock-your-amazing-product/' />
+<link rel='next' title='The Ultimate Guide To Creating Viral Content' href='https://blog.kissmetrics.com/creating-viral-content/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=16598' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fdeep-dive-facebook-advertising%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fdeep-dive-facebook-advertising%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,336] -->
+<meta name="description" content="In this guide, you’ll learn which businesses are the best fit for Facebook ads and how to run successful campaigns. We’ll cover the most common mistake marketers make and the biggest factor in your ad’s success." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='A Deep Dive Into Facebook Advertising - Learn How To Make It Work For Your Business!' />
+<meta property='og:url' content='https://blog.kissmetrics.com/deep-dive-facebook-advertising/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='In this guide, you’ll learn which businesses are the best fit for Facebook ads and how to run successful campaigns. We’ll cover the most common mistake marketers make and the biggest factor in your ad’s success.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="A Deep Dive Into Facebook Advertising - Learn How To Make It Work For Your Business!" />
+    <meta name="twitter:description" content="In this guide, you’ll learn which businesses are the best fit for Facebook ads and how to run successful campaigns. We’ll cover the most common mistake marketers make and the biggest factor in your ad’s success." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-16598 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'A Deep Dive Into Facebook Advertising',
+						'Post Category': 'Facebook',
+						'Post URL': 'https://blog.kissmetrics.com/deep-dive-facebook-advertising/'
+		}
+	]);
+</script>
+
+<article id="post-16598" class="single-post post-16598 post type-post status-publish format-standard has-post-thumbnail hentry category-facebook" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">A Deep Dive Into Facebook Advertising</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>As a savvy internet user you might think no one clicks on Facebook ads.</p>
+<p>Wrong.</p>
+<p>Facebook is on track to make over $4 <strong><em>billion</em></strong> in revenue this year from advertising. Someone’s clicking.</p>
+<p>How do you get them to click <em>your</em> ads? More importantly, how do you get them to buy your product?</p>
+<p>Many marketers who have tried Facebook ads, especially in their early days, decided that Facebook advertising doesn’t work. Don’t believe them.</p>
+<p>If you’re totally new to Facebook, start with this <a href="https://blog.kissmetrics.com/facebook-marketing/">Facebook Marketing Guide</a>. Then come back to this post for a deep dive into advertising.</p>
+<p>In this guide, you’ll learn which businesses are the best fit for Facebook ads and how to run successful campaigns. We’ll cover the most common mistake marketers make and the biggest factor in your ad’s success.</p>
+<p>You can learn more and create your first ad at <a href="https://www.facebook.com/advertising">Facebook.com/advertising</a>.</p>
+<h2>How Do Facebook Ads Work?</h2>
+<p>Facebook ads now come in several varieties. You can promote your Page, posts on your Page, actions users took, or your website itself. Despite Facebook’s increasing focus on native ads and keeping traffic on its site, you can still be successful sending users to <em>your website</em>.</p>
+<p>Facebook ads are targeted to users based on their location, demographic, and profile information. Many of these options are only available on Facebook. After creating an ad, you set a budget and bid for each click or thousand impressions that your ad will receive.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/08/facebook-ad-targeting-options.jpg" alt="asdsf" title="facebook-ad-targeting-options" class="aligncenter size-full wp-image-16602" /></p>
+<p align="center"><i>Facebook&#8217;s most important ad targeting options</i></p>
+<p>Users then see your ads in the sidebar on Facebook.com.</p>
+<p>This guide will walk you through the best practices for creating CPC ads that drive traffic to your website. Facebook’s other ad options are great for driving engagement and brand awareness, but ads driving users off site are still the best option for direct response advertisers looking to make a sale.</p>
+<h2>Who Should Advertise on Facebook?</h2>
+<p>Many businesses fail at Facebook advertising because they are not a good fit. You should always test new marketing channels, especially before demand drives up prices, but make sure to consider your business model’s fit to the network.</p>
+<p>Facebook ads are more like display ads than search ads. <b>They should be used to <em>generate</em> demand, not fulfill it.</b> Users are on Facebook to connect with their friends, not to find products to buy.</p>
+<h3>Low-Friction Conversions</h3>
+<p>The businesses that succeed with Facebook ads ask users to sign up, not to buy. You must use a low-friction conversion to be successful.</p>
+<p>A visitor to your website wasn’t <em>looking</em> for your product. He clicked your ad on a whim. If you’re relying on him to immediately buy something to make your ad ROI positive, you will fail.</p>
+<p>Facebook users are fickle and likely to click back to Facebook if you ask for a big commitment (purchase) up front. Instead, stick to simple conversions like signing up for your service, filling out a short lead form, or submitting an email address.</p>
+<p>Even if you sell products, not services, you should consider focusing on an intermediate conversion like a newsletter signup. Then you can upsell later through email marketing.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/08/living-social-landing-page.jpg" alt="asdf" title="living-social-landing-page" class="aligncenter size-full wp-image-16604" srcset="https://blog.kissmetrics.com/wp-content/uploads/2012/08/living-social-landing-page-300x195.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2012/08/living-social-landing-page.jpg 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p align="center"><i>Living Social&#8217;s landing page with email sign up</i></p>
+<p>Daily deal sites like Groupon, AppSumo, and Fab are good examples of businesses that can succeed with Facebook advertising. After you click one of their ads, they just ask for your email address. They’ll sell you on a deal later.</p>
+<h3>Business Model</h3>
+<p>Even if you only ask for an email address initially, you’ll need to eventually make money from these users if your ads are to be profitable.</p>
+<p>The best business model that fits for Facebook ads earn revenue from their users over time, not all at once. A user may have given you her email, but you’ll need to build more trust before she buys anything.</p>
+<p>You shouldn’t depend on one big purchase from her. Several smaller purchases are ideal.</p>
+<p>Daily deal and subscription sites are great examples of business models that can thrive on Facebook. Both have customers whose <a href="https://blog.kissmetrics.com/how-to-calculate-lifetime-value/">lifetime value</a> is spread out over six months or more.</p>
+<p>At <a href="http://www.udemy.com/?tc=referrers.kissmetrics">Udemy</a>, we focus on getting users to sign up on their first visit. By aiming to be profitable on ad spend in <em>six months</em> (not one day), we can turn Facebook users into long-term customers. We target a 20% payback on ad spend on day one and 100% payback in six months. These numbers can serve as a rough guide for your business.</p>
+<h2>How to Target Facebook Ads</h2>
+<p>The #1 mistake most marketers make with Facebook ads is not targeting them correctly.</p>
+<p>Facebook’s ad targeting options are unparalleled. On Facebook, you can target users by:</p>
+<ul>
+<li>Location</li>
+<li>Age</li>
+<li>Gender</li>
+<li>Interests</li>
+<li>Connections</li>
+<li>Relationship Status</li>
+<li>Languages</li>
+<li>Education</li>
+<li>Workplaces</li>
+</ul>
+<p>Each option can be useful, depending on your audience. Most marketers should focus on location, age, gender, and interests.</p>
+<p><strong>Location</strong> allows you to targets users in the country, state, city, or zip code that you service.</p>
+<p><strong>Age</strong> and <strong>gender</strong> targeting should be based on your existing customers. If women 25-44 are the bulk of your customers, start out only targeting them. If they prove to be profitable, you can then expand your targeting.</p>
+<p><strong>Interest targeting</strong> is the most powerful but misused feature of Facebook ads. When creating an ad, you have two options: broad categories or precise interests.</p>
+<h3>Broad Category Targeting</h3>
+<p>Broad categories include topics like Gardening, Horror Movies, and Consumer Electronics. Recently, Facebook has added newer targets like Engaged (1 year), Expecting Parents, Away from Hometown, and Has Birthday in 1 Week.</p>
+<p>Broad interests may seem like an efficient way to reach a large audience. However, these users often cost more and spend less. Avoid using Broad Category targeting.</p>
+<h3>Precise Interest Targeting</h3>
+<p>Precise Interest Targeting allows you to target users based on information in their profile including “listed likes and interests, the Pages they like, apps they use, and other profile (timeline) content they’ve provided” (<a href="https://www.facebook.com/help/?faq=188888021162119#How-are-interests-identified?">Facebook</a>). You’ll find the best ROI using Precise Interest targeting.</p>
+<p>Facebook has an amazing array of interests to target from Harry Potter to underwater rugby. <strong>The hard part is choosing the right ones.</strong></p>
+<p>When targeting precise interests, Facebook provides the size of the audience and other suggested likes and interests. You won’t have any competitive data. Once you select interests for an ad, Facebook will show an aggregate suggested bid.</p>
+<p>Many marketers target the largest groups possible. <b>This is a mistake.</b> These groups are more expensive and less targeted.</p>
+<p>Rather than target <em>broad</em> terms for your niche like “yoga” or “digital photography,” focus on specific interests. Research which magazines and blogs your customers read, who they follow on Twitter, and which related products they buy. If you use laser-focused interests like these, you’ll reach the people who are most interested in your topic and the most willing to spend money on it.</p>
+<p>For example, when we added a new DJ course on Udemy, we didn’t just target the interest “disc jockey.”</p>
+<p>Instead, created ads targeting DJ publications like DJ Magazine and Mixmag. Then created another ad targeting DJ brands like Traktor and Vestax. Combine smaller, related interests into a group with an audience of 50,000 to 1M+. This structure will create ads with large audiences that are likely to convert.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/08/facebook-interest-group-targeting.jpg" alt="asdf" title="facebook-interest-group-targeting" class="aligncenter size-full wp-image-16606" srcset="https://blog.kissmetrics.com/wp-content/uploads/2012/08/facebook-interest-group-targeting-300x161.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2012/08/facebook-interest-group-targeting.jpg 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p>Example interest group of DJ-focused brands</p>
+<p><em>Advanced tip:</em> Use Facebook Connect as a sign up option on your site. When users connect via Facebook, you’ll be able to analyze their interests. Index these interests against the number of fans of their respective Facebook Pages. You’ll be left with your high-affinity interests. Using this method, we created a target group that has been our best performer (out of hundreds of test groups) for nearly a year.</p>
+<h2>Images for Facebook Ads</h2>
+<p>The <strong>most important part of your ad</strong> is the image. You can write the most brilliant copy in the world, but if your image doesn’t catch a user’s eye, you won’t get any clicks.</p>
+<p>Don’t use low-quality images, generic stock photography, or any images that you don’t have the rights to use. Don’t steal anything from Google Images. Unless you’re a famous brand, don’t use your logo.</p>
+<p>Now that we have the no’s out of the way, how should advertisers find images to use? Buy them, create them yourself, or use ones with a Creative Commons license.</p>
+<p>Below you’ll learn which types of images work best and where specifically to find them.</p>
+<h3>People</h3>
+<p>Images of people work best. Preferably their faces. Use close-ups of attractive faces that resemble your target audience.</p>
+<p>Younger isn’t always better. If you’re targeting retirees, test pictures of people over 60. Using a pretty 25 year old girl wouldn’t make sense.</p>
+<p>Facebook ad images are small (100 x 72 pixels). Make sure to focus on a person’s face and crop it if necessary. Don’t use a blurry or dark picture.</p>
+<p><em>Advanced tip:</em> Use images of people facing to the right. Users will follow the subject’s line of sight and be more likely to read your ad text.</p>
+<p>Aside from models, you can also feature the people behind your business and showcase some of your customers (with their permission, of course).</p>
+<h3>Typography</h3>
+<p>Clear, readable type can also attract clicks. Bright colors will help your ad stand out.</p>
+<p>Just like with text copy, use a question or express a benefit to the user. Treat the text in the image as an extension of your copy.</p>
+<h3>Funny</h3>
+<p>Crazy or funny pictures definitely attract clicks. See I Can Has Cheeseburger, 9GAG, or any popular meme.</p>
+<p>Unfortunately, even with descriptive ad text, these ads don’t always convert well. If you use this type of ad, set a low budget and track the performance closely. You’ll often attract lots of curiosity clicks that won’t convert.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/08/ad-screenshots.jpg" alt="saf" title="ad-screenshots" class="aligncenter size-full wp-image-16608" srcset="https://blog.kissmetrics.com/wp-content/uploads/2012/08/ad-screenshots-300x172.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2012/08/ad-screenshots.jpg 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<h3>How to Create Images</h3>
+<p>You have three options to find images: buy them, find ones that are already licensed, or create them yourself.</p>
+<p>You can buy stock photography at many sites including <a href="http://www.istockphoto.com/">iStockPhoto</a> or <a href="http://www.bigstockphoto.com/">Big Stock</a>. <a href="https://blog.kissmetrics.com/boost-conversions-using-images/">Don’t use stock photos that looks like stock photos</a>. No generic businessmen or stark white backgrounds, please.</p>
+<p>Users recognize stock photos and will ignore them. Instead, find unique photos and give them personality by cropping or editing them and applying filters. You can use <a href="http://pixlr.com/">Pixlr</a>, an online image editor, for both.</p>
+<p>If you don’t have the money to buy photos, you can search for <a href="http://search.creativecommons.org/">Creative Commons licensed images</a>.</p>
+<p>The third option is to create the images yourself. If you’re a graphic designer, this is easy. If you aren’t, you can still create typographic images or use basic image editing to create something original from existing pictures.</p>
+<h3>Rotating Ads</h3>
+<p>Each campaign should have at least three ads with the same interest targets. Using a small number of ads will allow you to gather data on each one. For a given campaign, only 1-2 ads will get a lot of impressions, so don’t bother running too many at once.</p>
+<p>After a few days, delete the ads with the lowest click-through rates (CTRs) and keep iterating on the winners to continually increase your CTR. Aim for 0.1% as a benchmark. You’ll likely start out closer to the average of 0.04%.</p>
+<h2>Writing Facebook Ad Copy</h2>
+<p>After seeing your image, users will (hopefully) read your ad text. Here you can sell them on your product or service and earn their click.</p>
+<p>Despite the 25 character headline and 90 character body text limits, we can still use the famous copywriting formula AIDA.</p>
+<p><strong>(A)ttention</strong>: Draw users into the ad with an <a href="https://blog.kissmetrics.com/how-to-write-headlines/">attention-grabbing headline</a>.<br />
+<strong>(I)nterest</strong>: Get the user interested in your product by briefly describing the most important benefit of using it.<br />
+<strong>(D)esire</strong>: Create immediate desire for your product with a discount, free trial, or limited time offer.<br />
+<strong>(A)ction</strong>: End the ad with a call to action.</p>
+<p>AIDA is a lot to fit into 115 characters. Write 5-10 ads until you’re able to fit a succinct sales pitch into the ad.</p>
+<p>Here’s an example for an online programming course:</p>
+<p><strong>Become a Web Developer</strong><br />
+Learn everything you need to become a web developer from scratch.<br />
+Save 65%. Enroll now!</p>
+<h2>Bidding on Facebook Ads</h2>
+<p>Like on any ad network, strategic bidding can mean the difference between profit and a failed test.</p>
+<p>After you create your ad, Facebook will provide a suggested bid range. When you’re just starting out, set your bid near the low end of this range.</p>
+<p>Your CTR will quickly start to dictate the price you’ll need to pay for traffic. If your CTR is high, your suggested bids will decrease. If your CTR is low, you’ll need to bid more for each click. <b>Optimize your ads and targets to continually increase your CTR.</b></p>
+<p>In addition to click volume, your bid will also dictate how much of your target audience you’re able to reach. Facebook provides a great chart for every campaign showing the size of your target audience and how much of that audience you’ve reached.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/08/facebook-audience-reach.png" alt="asd" title="facebook-audience-reach" class="aligncenter size-full wp-image-16609" srcset="https://blog.kissmetrics.com/wp-content/uploads/2012/08/facebook-audience-reach-300x138.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2012/08/facebook-audience-reach.png 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p align="center"><i>Facebook chart showing how much of your target audience your campaign has reached</i></p>
+<p>Increasing your bid will help your ad reach more of your target audience. If your ad is performing well but you’re reaching less than 75% of your target audience, you can increase your bid to get more clicks.</p>
+<p>If your audience penetration is high, increasing your <em>budget</em> will increase your ad’s frequency: how many times a targeted user will see it.</p>
+<h2>Landing Pages</h2>
+<p>Getting a click is only the beginning. You still need the visitor to convert.</p>
+<p>Make sure to send him to a targeted, <a href="https://blog.kissmetrics.com/beginners-guide-to-landing-pages/">high-converting landing page</a>. You know his age, gender, and interests, so show him a page that will solve his problems.</p>
+<p>The landing page should also contain the registration form or email submit box that you’ll track as a conversion. Focus the landing page on <em>this</em> action, not the later sale. If you want visitors to sign up for your newsletter, <b>show them the benefits</b> or offer a free gift for their email.</p>
+<h2>How to Track Performance</h2>
+<p>Facebook no longer offers conversion tracking. <a href="https://blog.kissmetrics.com/guide-to-facebook-insights/">Facebook Insights</a> are great for data within Facebook but can’t provide information on users who have left the site.</p>
+<p>To properly track the performance of your Facebook campaigns, you’ll need to use an analytics program like <a href="http://kissmetrics.com/?utm_source=blog&#038;utm_medium=post&#038;utm_campaign=deep-dive-facebook-advertising/">KISSmetrics</a>, Google Analytics, or your own back end system. <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/">Tag your links</a> using Google’s URL builder or your own tracking tags.</p>
+<h3>Conversion Tracking</h3>
+<p>As mentioned above, make sure to separate campaigns by interest groups so that you can see how each one performs.</p>
+<p>You can track them using the <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/">utm_campaign parameter</a>. Use the utm_content parameter to differentiate between ads. Ad-level tracking is useful when testing eye-catching images and before you’ve established a baseline CTR and conversion rate.</p>
+<h3>Performance Tracking</h3>
+<p>You will also need to monitor your performance within the Facebook interface. The most important metric to track is click-through rate. Your CTR affects both the number of clicks you’ll receive and the amount you will pay per click.</p>
+<p><b>Ads with a low CTR will stop serving or become more expensive.</b> Ads with a high CTR will generate as many clicks as will fit within your budget. They will also cost less. Keep a close eye on CTR by interests and ads to learn which audiences work best and which ads resonate with them.</p>
+<p><i>Even the best ad’s performance will decline over time.</i> The smaller your target audience is, the faster this will happen. Usually you’ll see your traffic start to drop off in 3-10 days.</p>
+<p>When it does, refresh the ads with new images and copy. Duplicate your existing ads then change the image and ad text. <strong>Do not</strong> edit the existing ad. Delete any existing ads not getting clicks. By the next day, you’ll see the new ads accruing impressions and clicks.</p>
+<p>Monitor the images’ performance over time to see which ones generate the best CTR and maintain their traffic the longest. You can rotate high-performing images back in every few weeks until they stop getting clicked at all.</p>
+<h2>Conclusion</h2>
+<p>Despite the learning curve, Facebook advertising can be a great marketing channel for the right business. The most important points to remember are target specific interests, use eye catching images, give users a low-friction conversion, and track everything.</p>
+<p>After a week or two of learning what works for your business, you’ll be able to generate a steady source of conversions from the world’s largest social network.</p>
+<p>What are your best Facebook advertising tips? Share them in the comments.</p>
+<p><b>About the Author:</b> Fred Perrotta is a Marketing Manager at Udemy, where experts teach the world. You can learn more about <a href="http://www.udemy.com/curated/kissmetrics-facebook/?tc=referrers.kissmetrics" rel="nofollow">Facebook advertising</a> at <a href="http://www.udemy.com/?tc=referrers.kissmetrics" rel="nofollow">Udemy.com</a>.</p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/guide-to-ab-testing" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fdeep-dive-facebook-advertising%2F&source=tweetbutton&text=A+Deep+Dive+Into+Facebook+Advertising&url=https%3A%2F%2Fblog.kissmetrics.com%2Fdeep-dive-facebook-advertising%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fdeep-dive-facebook-advertising%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=A Deep Dive Into Facebook Advertising&amp;body=https://blog.kissmetrics.com/deep-dive-facebook-advertising/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-16598 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-33946">
+    <div id="comment-33946" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Verna</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-33946" class="comment-date">Aug 12, 2012 at 9:24 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Having read this I believed it was really enlightening.<br />
+I appreciate you spending some time and effort to put this content together.</p>
+<p>I once again find myself spending way too much time both reading<br />
+and leaving comments. But so what, it was still worth it!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=33946#respond' onclick='return addComment.moveForm( "comment-33946", "33946", "respond", "16598" )' aria-label='Reply to Verna'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-35349">
+    <div id="comment-35349" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Fred Perrotta</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-35349" class="comment-date">Sep 04, 2012 at 2:08 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks, Verna. If you learned something and can apply it, I don&#8217;t think it&#8217;s a waste of time.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=35349#respond' onclick='return addComment.moveForm( "comment-35349", "35349", "respond", "16598" )' aria-label='Reply to Fred Perrotta'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-34006">
+    <div id="comment-34006" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Earl</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-34006" class="comment-date">Aug 13, 2012 at 12:03 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;ve been researching some stuff on social media but have never really considered directly advertising. This should give me a few ideas. Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=34006#respond' onclick='return addComment.moveForm( "comment-34006", "34006", "respond", "16598" )' aria-label='Reply to Earl'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-35350">
+    <div id="comment-35350" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Fred Perrotta</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-35350" class="comment-date">Sep 04, 2012 at 2:09 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Glad I could influence your thinking. Good luck with your ads!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=35350#respond' onclick='return addComment.moveForm( "comment-35350", "35350", "respond", "16598" )' aria-label='Reply to Fred Perrotta'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-34235">
+    <div id="comment-34235" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Gokce</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-34235" class="comment-date">Aug 16, 2012 at 9:02 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This is one of the best Facebook advertising guide I have ever read. I really appreciate your time and effort to put such a great detailed resource. I will start implementing some of these ideas right away in my business. Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=34235#respond' onclick='return addComment.moveForm( "comment-34235", "34235", "respond", "16598" )' aria-label='Reply to Gokce'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-35354">
+    <div id="comment-35354" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Fred Perrotta</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-35354" class="comment-date">Sep 04, 2012 at 2:13 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks, Gokce!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=35354#respond' onclick='return addComment.moveForm( "comment-35354", "35354", "respond", "16598" )' aria-label='Reply to Fred Perrotta'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-34303">
+    <div id="comment-34303" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kaushal Shah</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-34303" class="comment-date">Aug 18, 2012 at 10:20 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I have taken interview of many people when we have requirement for PPC campaign manager. At that time my first question to them was &#8220;Is facebook advertising is beneficial ?&#8221;. Most of the time I got the answer &#8220;No&#8221;. All have the common answer &#8220;We have tried it but didn&#8217;t get conversion from it&#8221;. The best thing I like about facebook advertising is that I can target more targeted audience compare to other advertising network.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=34303#respond' onclick='return addComment.moveForm( "comment-34303", "34303", "respond", "16598" )' aria-label='Reply to Kaushal Shah'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-35351">
+    <div id="comment-35351" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Fred Perrotta</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-35351" class="comment-date">Sep 04, 2012 at 2:10 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>You probably won&#8217;t find many people with Facebook ad experience, much less ones that were successful. If you do, you&#8217;ve hit the jackpot!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=35351#respond' onclick='return addComment.moveForm( "comment-35351", "35351", "respond", "16598" )' aria-label='Reply to Fred Perrotta'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-34309">
+    <div id="comment-34309" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Phil</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-34309" class="comment-date">Aug 18, 2012 at 12:10 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;m at a loss in terms of precise Interests and I&#8217;m hoping someone with more FB ads knowledge could help.  I want to target fan&#8217;s of a specific fan page. When I type that fan page into the &#8220;Precise Interests&#8221; It can&#8217;t find the page and &#8220;deletes&#8221; my text.  Am I doing something wrong? Or is there a way to override this?<br />
+Thanks</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=34309#respond' onclick='return addComment.moveForm( "comment-34309", "34309", "respond", "16598" )' aria-label='Reply to Phil'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-35352">
+    <div id="comment-35352" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Fred Perrotta</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-35352" class="comment-date">Sep 04, 2012 at 2:12 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This happens fairly often, especially if the page is small. You should target a handful of related interests for each ad. You can find similar pages by doing research online or seeing which pages your target page has &#8220;liked.&#8221;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=35352#respond' onclick='return addComment.moveForm( "comment-35352", "35352", "respond", "16598" )' aria-label='Reply to Fred Perrotta'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-34391">
+    <div id="comment-34391" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Petar Tchavdarov</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-34391" class="comment-date">Aug 20, 2012 at 6:32 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Superb guide, Fred! I just want to add something from my own experience. We have tried facebook ads for our ecommerce shop and we got amazing results. Likes skyrocketed and we were both delighted and bewildered of the effect. And then it struck us. A large portion of the accounts that liked our page were ghost and bot accounts carrying no value for our business whatsoever. I did a bit of research and it showed that most of facebook campaigns follow to the same result. I reckon the problem is going to worsen if facebook does not implement something drastic to overcome it.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=34391#respond' onclick='return addComment.moveForm( "comment-34391", "34391", "respond", "16598" )' aria-label='Reply to Petar Tchavdarov'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-35353">
+    <div id="comment-35353" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Fred Perrotta</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-35353" class="comment-date">Sep 04, 2012 at 2:13 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Allegedly they will be cracking down on these accounts soon. You can avoid some of these problems through geo and demographic targeting.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=35353#respond' onclick='return addComment.moveForm( "comment-35353", "35353", "respond", "16598" )' aria-label='Reply to Fred Perrotta'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-51358">
+    <div id="comment-51358" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guy Manningham</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-51358" class="comment-date">Oct 02, 2012 at 6:08 am</a>      </div><!-- /.comment-meta -->
+
+      <p>We&#8217;ve found the highest CTR is from Facebook ads targeted at our current fans. It&#8217;s an increase of about 700%. Obviously, we try to direct them to our website and not our Facebook page, but it does work well and I think it&#8217;s a missed opportunity for a lot of other companies.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=51358#respond' onclick='return addComment.moveForm( "comment-51358", "51358", "respond", "16598" )' aria-label='Reply to Guy Manningham'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-51361">
+    <div id="comment-51361" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-51361" class="comment-date">Oct 02, 2012 at 6:12 am</a>      </div><!-- /.comment-meta -->
+
+      <p>The biggest advice we can give for running Facebook ads would be test your images before publishing. Do a focus group or simply ask around the office, giving people a choice of at least 4 images. You want to ensure you have captivating creative.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=51361#respond' onclick='return addComment.moveForm( "comment-51361", "51361", "respond", "16598" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-67236">
+    <div id="comment-67236" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-67236" class="comment-date">Oct 10, 2012 at 4:31 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>i think you can use both broad targeting and precise interests together now.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=67236#respond' onclick='return addComment.moveForm( "comment-67236", "67236", "respond", "16598" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-75672">
+    <div id="comment-75672" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Steven</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-75672" class="comment-date">Oct 15, 2012 at 5:03 am</a>      </div><!-- /.comment-meta -->
+
+      <p>The problem i see is not knowing or understanding which attribute to split your campaign into. For example, do you create 3-4 different groups by campaign? Then by interests? I think discussing the structure of a campaign would be beneficial as the platform is very reactive so the campaign needs to be the same whereas google is static for the most part.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=75672#respond' onclick='return addComment.moveForm( "comment-75672", "75672", "respond", "16598" )' aria-label='Reply to Steven'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-1097225">
+    <div id="comment-1097225" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Eddison</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-1097225" class="comment-date">Apr 20, 2015 at 8:28 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hello Steven,</p>
+<p>As an avid user of Facebook ads, I think that it really depends on the situation. Really the structure of an Ad campaign is a way to BOOST your efficiency with creating ads and also help you with effectively testing certain variables while keeping others constant. It will also help you with finding what sorts of changes in your ads (targeting, pricing, ad image) are creating.</p>
+<p>For example, you can create a campaign for website visits, and then proceed to segmenting to driving customers who respond to different value propositions. One set within the campaign can be devoted to &#8220;Free Shipping&#8221;, while another set within a campaign can be devoted  to &#8220;Expert Customer Service&#8221;. By segmenting groups  (while not segmenting for every single detail) you will be able to rationalize changes in your ad based on these details.</p>
+<p>Segmenting your campaign well will lead you to enormous long term benefits. When you see success with Facebook ads and start running multiple campaigns, it will be very difficult to keep track of advertisements with a poorly structured ad profile. </p>
+<p>Also, with a structured ad campaign you will be able to track your metric on google analytics easily. For more information on tracking website views on google analytics, Facebook has this awesome resource here on how to do it. </p>
+<p>facebook.com/business/google-analytics</p>
+<p>Be sure to keep it consistent, or else your tracking will become very messy and you will be unsure of which ad traffic is being tracked.</p>
+<p>Bottom line is that you can structure your campaign in any which way you like. Make sure that it is consistent and that you know exactly where everything is.</p>
+<p>Remember that INFORMATION IS KEY in all forms of advertising. By generating a well structured Facebook ad campaign, you will be able to track information easily, thus improving your ROI. Good luck Steve I hope this helped!</p>
+<p>Eddison</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=1097225#respond' onclick='return addComment.moveForm( "comment-1097225", "1097225", "respond", "16598" )' aria-label='Reply to Eddison'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-78823">
+    <div id="comment-78823" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jordyn</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-78823" class="comment-date">Oct 17, 2012 at 8:33 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you for this awesome article! As a new marketer at a new startup I&#8217;ve been struggling with how to begin advertising on Facebook. This article offered so much valuable information for a newbie like me and I am beyond excited to apply all of this information today! I will definitely be checking out more articles.</p>
+<p>Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=78823#respond' onclick='return addComment.moveForm( "comment-78823", "78823", "respond", "16598" )' aria-label='Reply to Jordyn'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-84357">
+    <div id="comment-84357" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kara Holzer</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-84357" class="comment-date">Nov 03, 2012 at 10:17 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article. One of the most comprehensive I&#8217;ve seen on the subject.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=84357#respond' onclick='return addComment.moveForm( "comment-84357", "84357", "respond", "16598" )' aria-label='Reply to Kara Holzer'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-87193">
+    <div id="comment-87193" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Steve</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-87193" class="comment-date">Dec 03, 2012 at 10:35 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Quick question &#8211; in the audience graph (the bubble graph, if you will), I understand that &#8220;targeted&#8221; section is how many you COULD reach if you upped your bids, budget, etc. &#8211; but why is the targeted number in that audience graph several times higher than the actual targeted number that I;m shown to the right of my ads &#8211; especially when I bid CPM?  </p>
+<p>For example, I have 2 identical campaigns with the only difference being that one is CPM and one is CPC.  In the audience graph on the CPC campaign, that targeted number is 30,520 &#8211; the same number that shows to the right of the ads.  But in the CPM campaign, that number jumps to over 166,000 &#8211; despite the fact that the number to the right of the ads is the 30,520 number?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=87193#respond' onclick='return addComment.moveForm( "comment-87193", "87193", "respond", "16598" )' aria-label='Reply to Steve'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-88714">
+    <div id="comment-88714" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">jessica</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-88714" class="comment-date">Dec 23, 2012 at 4:10 am</a>      </div><!-- /.comment-meta -->
+
+      <p>This is a best way to get more and more traffic on your site and increase in sale.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=88714#respond' onclick='return addComment.moveForm( "comment-88714", "88714", "respond", "16598" )' aria-label='Reply to jessica'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-89015">
+    <div id="comment-89015" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Nik</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-89015" class="comment-date">Dec 28, 2012 at 2:41 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;ve been doing advertising for over 7 months now (for more than 250 clients) and most of the things you have mentioned in your article I had to find out by myself. Still, I found a few really good points which added to my knowledge! </p>
+<p>Facebook advertising does work when it&#8217;s done properly with a set goal.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=89015#respond' onclick='return addComment.moveForm( "comment-89015", "89015", "respond", "16598" )' aria-label='Reply to Nik'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-91641">
+    <div id="comment-91641" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">manish</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-91641" class="comment-date">Feb 04, 2013 at 5:54 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Good Stuff</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=91641#respond' onclick='return addComment.moveForm( "comment-91641", "91641", "respond", "16598" )' aria-label='Reply to manish'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-100151">
+    <div id="comment-100151" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jo</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-100151" class="comment-date">Apr 08, 2013 at 9:51 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article. I do have a question though. You said &#8220;Use Facebook Connect as a sign up option on your site. When users connect via Facebook, you’ll be able to analyze their interests. &#8220;. We have this set up but I&#8217;m not sure how can I access this interests data. I&#8217;d think it would be under Insights-&gt;Users on the developers&#8217; site but it&#8217;s not there. Where should I look? Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=100151#respond' onclick='return addComment.moveForm( "comment-100151", "100151", "respond", "16598" )' aria-label='Reply to Jo'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-105001">
+    <div id="comment-105001" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Molly Mickel</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-105001" class="comment-date">May 05, 2013 at 3:48 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I cannot find the option for &#8220;Precise Interests&#8221; in the FB advertising. Do you need a certain number of &#8220;likes&#8221; to get this option?</p>
+<p>Thanks for your blog post.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=105001#respond' onclick='return addComment.moveForm( "comment-105001", "105001", "respond", "16598" )' aria-label='Reply to Molly Mickel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-105099">
+    <div id="comment-105099" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-105099" class="comment-date">May 06, 2013 at 8:15 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Each website has its unique design, content, markup, features, functionality, and in myriad other ways.</p>
+<p>If you want to use the same content from some website,<br />
+make sure that you state the source. Depending on the layout<br />
+and positioning of keywords and phrases, the search engine will then rate your page and place it in a ranking order.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=105099#respond' onclick='return addComment.moveForm( "comment-105099", "105099", "respond", "16598" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1020414">
+    <div id="comment-1020414" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mark</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-1020414" class="comment-date">Jan 19, 2015 at 3:55 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Excellent article, we are just looking into facebook advertising and this has helped no end, hoping that it&#8217;s still relevant as 2 years has passed.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=1020414#respond' onclick='return addComment.moveForm( "comment-1020414", "1020414", "respond", "16598" )' aria-label='Reply to Mark'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1040034">
+    <div id="comment-1040034" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Zoe</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-1040034" class="comment-date">Feb 08, 2015 at 2:31 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>HI Fred,</p>
+<p>Great article! Lately, I&#8217;ve been having issues with running Facebook conversion ads&#8230;I might have an audience of 110,000 (lookalike site visitors) and nothing happens! The ad just doesnt get served to anyone? I wondered if you might know why Facebook would not serve an ad? The creative has been approved so all good there :)</p>
+<p>I&#8217;m also finding conversion rates are very high at the moment with some as high as $14 per conversion&#8230;yet I hear it is possible to get $1-$2 conversions&#8230;just wondering what your experience is with this (I get that there are alot of variables including competition etc)</p>
+<p>Thanks!<br />
+Zoe</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=1040034#respond' onclick='return addComment.moveForm( "comment-1040034", "1040034", "respond", "16598" )' aria-label='Reply to Zoe'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-1063563">
+    <div id="comment-1063563" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">sonibvc</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-1063563" class="comment-date">Mar 10, 2015 at 7:00 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Zoe,</p>
+<p>Facebook ads do not work for most businesses&#8230;unless you are offering something truly new and interesting &#8211;  99% of the businesses do not offer such products/services.  I currently run an ad campaign on something new and rather interesting.  I get 12% CTR and my conversions are 67%.  This is super rare.  I have had over 68 businesses and FB ads never worked for me.  I have not changed or learned anything new about the FB advertising but coming up with a good and innovative idea is what did it for my ads. My banner is a 5$ ugly graphic with a cheesy line. FB ads only work for facebook that occasionally maintains the hype with articles &#8220;you can do it, only if you know how!&#8221;  If you are running a normal, common sense business do not do FB ads&#8230;its a waste of money.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=1063563#respond' onclick='return addComment.moveForm( "comment-1063563", "1063563", "respond", "16598" )' aria-label='Reply to sonibvc'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1068657">
+    <div id="comment-1068657" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Michel</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-1068657" class="comment-date">Mar 16, 2015 at 5:29 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi there,</p>
+<p>I have a quick question. If I go for CPA solution, I would need to pay the &#8220;conversion value&#8221;.</p>
+<p>But why does Facebook ask me for &#8220;a budget&#8221; and &#8220;then&#8221; tells me about the cost per click?</p>
+<p>Thanks for your help!</p>
+<p>Michel</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=1068657#respond' onclick='return addComment.moveForm( "comment-1068657", "1068657", "respond", "16598" )' aria-label='Reply to Michel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1147126">
+    <div id="comment-1147126" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Raymond</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-1147126" class="comment-date">Aug 12, 2015 at 4:39 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I found this site very interesting and informative. It is very much useful for beginners. Hope every body like it very much</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=1147126#respond' onclick='return addComment.moveForm( "comment-1147126", "1147126", "respond", "16598" )' aria-label='Reply to Raymond'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1157721">
+    <div id="comment-1157721" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Heidi</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-1157721" class="comment-date">Sep 17, 2015 at 4:31 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Wow! A lot of great information! Thank you so much! One question. How much money would you suggest starting out with?</p>
+<p>Thanks again&#8221;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=1157721#respond' onclick='return addComment.moveForm( "comment-1157721", "1157721", "respond", "16598" )' aria-label='Reply to Heidi'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1177689">
+    <div id="comment-1177689" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Caleb</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-1177689" class="comment-date">Nov 11, 2015 at 3:36 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Very helpful, thanks. Question: when my friend Jill clicks on my paid FB ad, and I have selected the option to deliver to my friends and their friends, does this mean Jill&#8217;s friends are more likely to then see my ad over my friend Bob and his friends, when Bob has not clicked? Or are my friends weighted significantly higher than the friends of a friend who clicked? Thanks.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=1177689#respond' onclick='return addComment.moveForm( "comment-1177689", "1177689", "respond", "16598" )' aria-label='Reply to Caleb'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1208406">
+    <div id="comment-1208406" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Claire Defays</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-1208406" class="comment-date">Jan 19, 2016 at 3:45 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Just take care with facebook ads. My account has been hacked by someone who found a way to make himself an admin of my account. Within minutes he had switched on various ads and within hours I had to pay more than 100CHF.<br />
+Facebook did not deactivate my account because I had an outstanding invoice, and therefore I couldn&#8217;t delete my credit card details either&#8230;<br />
+Two weeks later, and now that I eventually got rid of this guy, facebook does block my account (that&#8217;s fast reaction!!!) and refuses to reopen it because they have noticed &#8220;unusual movements on my account&#8221;. Wow!<br />
+Not sure I want them to reopen my account any longer! So yes, facebook ads can be really nice, but keep an eye constantly on your account and be ready for lots of troubles with facebook itself if you ever have an issue that they need to solve.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=1208406#respond' onclick='return addComment.moveForm( "comment-1208406", "1208406", "respond", "16598" )' aria-label='Reply to Claire Defays'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1233477">
+    <div id="comment-1233477" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sagar</cite>
+        
+        <a href="https://blog.kissmetrics.com/deep-dive-facebook-advertising/#comment-1233477" class="comment-date">Mar 21, 2016 at 8:49 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Nice article. But again is there something more on INTEREST section. I have followed all your points and also on INTEREST but I see all new Likes are low quality. I dont know where actually my FB ADS would be displayed infront off. On checking thier profile, looks like spam/fake FB accounts with low friends, low updates..</p>
+<p>Kind of disappointing.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/deep-dive-facebook-advertising/?replytocom=1233477#respond' onclick='return addComment.moveForm( "comment-1233477", "1233477", "respond", "16598" )' aria-label='Reply to Sagar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">98 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/deep-dive-facebook-advertising/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='16598' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a456f7145d" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="60"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'A Deep Dive Into Facebook Advertising', 'Post URL':'https://blog.kissmetrics.com/deep-dive-facebook-advertising/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/unlock-your-amazing-product/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/creating-viral-content/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/deep-dive-facebook-advertising/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/deep-dive-facebook-advertising/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/deep-dive-facebook-advertising/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="A Deep Dive Into Facebook Advertising" data-url="http://blog.kissmetrics.com/deep-dive-facebook-advertising/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'A Deep Dive Into Facebook Advertising', 'Post URL':'https://blog.kissmetrics.com/deep-dive-facebook-advertising/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'A Deep Dive Into Facebook Advertising', 'Post URL':'https://blog.kissmetrics.com/deep-dive-facebook-advertising/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'A Deep Dive Into Facebook Advertising', 'Post URL':'https://blog.kissmetrics.com/deep-dive-facebook-advertising/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":559,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

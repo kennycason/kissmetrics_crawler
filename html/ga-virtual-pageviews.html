@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>How to Set Up Virtual Pageviews in Google Analytics (The Video)</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; How to Set Up Virtual Pageviews in Google Analytics (The Video) Comments Feed" href="https://blog.kissmetrics.com/ga-virtual-pageviews/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How to Make Your Mobile App Visible in the Ever-Expanding App Market' href='https://blog.kissmetrics.com/make-your-app-visible/' />
+<link rel='next' title='Infographic: Social Media, OS &#038; Browser Leaders of the Past Decade' href='https://blog.kissmetrics.com/internet-war-decade/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/ga-virtual-pageviews/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=22073' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fga-virtual-pageviews%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fga-virtual-pageviews%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,362] -->
+<meta name="description" content="First we will simply go over how virtual pageviews work. Then we’ll move on and show you how to insert virtual pageview tracking into event handler code..." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='How to Set Up Virtual Pageviews in Google Analytics (The Video)' />
+<meta property='og:url' content='https://blog.kissmetrics.com/ga-virtual-pageviews/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='First we will simply go over how virtual pageviews work. Then we’ll move on and show you how to insert virtual pageview tracking into event handler code...' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How to Set Up Virtual Pageviews in Google Analytics (The Video)" />
+    <meta name="twitter:description" content="First we will simply go over how virtual pageviews work. Then we’ll move on and show you how to insert virtual pageview tracking into event handler code..." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-22073 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'How to Set Up Virtual Pageviews in Google Analytics (The Video)',
+						'Post Category': 'Analytics',
+						'Post URL': 'https://blog.kissmetrics.com/ga-virtual-pageviews/'
+		}
+	]);
+</script>
+
+<article id="post-22073" class="single-post post-22073 post type-post status-publish format-standard hentry category-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">How to Set Up Virtual Pageviews in Google Analytics (The Video)</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>In our <a href="https://blog.kissmetrics.com/ga-conversion-funnels-video/">last video</a>, we went over how to set up conversion funnels in Google Analytics. Today, we continue and cover how to set up virtual pageviews. Virtual pageviews allow you to track:</p>
+<ul>
+<li>Button, image and link clicks.</li>
+<li>Video stops, pauses or volume changes.</li>
+<li>How much of a video has been watched.</li>
+<li>File downloads and basically any action a user can take on a webpage.</li>
+</ul>
+<p>First we will simply go over how virtual pageviews work. Then we&#8217;ll move on and show you how to insert virtual pageview tracking into event handler code, so that you can learn how to do it on your own website.</p>
+
+<div class="fve-video-wrapper fve-image-embed fve-thumbnail-image youtube" style="padding-bottom:56.25%;">
+    <iframe src="//www.youtube.com/embed/rwtn8_ddVPM?wmode=transparent&modestbranding=1&autohide=1&showinfo=0&rel=0" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>    </div>
+
+
+<h2>More Resources</h2>
+<ul>
+<li><a href="http://www.youtube.com/watch?v=6IzxqN0WLjM">How to Set Up Conversion Funnels in Google Analytics</a></li>
+<li><a href="https://blog.kissmetrics.com/conversion-funnel-survival-guide/">The Google Analytics Conversion Funnel Survival Guide</a></li>
+</ul>
+<h2>Video Transcription</h2>
+<p><i>[music]</p>
+<p>Bryan:  Hi, I&#8217;m Bryan with KISSmetrics, and I&#8217;m here to help you get the most out of your Google Analytics account.</p>
+<p>Last week, we talked about sales funnels. </p>
+<p>Today, I&#8217;m going to show you a cool trick that allows you to track and analyze how your users interact with the forms that are embedded on your website. First, I&#8217;ll introduce you to the concept of virtual page views, and then we&#8217;ll cover how to integrate these with conversion tracking funnels to give you greater insights into your site. So, let&#8217;s get going.</p>
+<p>First, let&#8217;s talk about virtual page views. We all know how normal page view tracking works. First, you install the big, nasty block of code at the bottom of every page on your site, and then anytime a visitor comes to your site, that block of code recognizes it and registers that person as being a visitor on your site.</p>
+<p>So, when you go to the back end of your Google Analytics reports, you can see how many visitors have come to your site. Virtual page views work exactly the same way, except with virtual page views you&#8217;re able to track anything that a user does on your site instead of just the fact that they visited the site at all.</p>
+<p>So, let&#8217;s consider two examples to see what that looks like in real life. Suppose that you have a video embedded on your website. Normal page view tracking will tell you if a visitor has seen the page with the video, but it won&#8217;t tell you how many times the user has pressed the play button, the pause button, changed the volume, or how much of the video they have actually watched. All it will tell you is that a visitor has seen the page.</p>
+<p>With virtual page views, we can change that. We can track each one of those things. We can know how many times they&#8217;ve played, how many times they&#8217;ve paused, the changing of the volume button, and the duration of the time that they have watched the video.</p>
+<p>Or suppose that you have a file download on your site. The normal steps to download would be for a visitor to come to the page and then click a link or a button that automatically starts downloading that file. With normal page view tracking, the act of a user downloading the file would go untracked. However, we can track every instance of a user downloading a file as a page view with virtual page view tracking.</p>
+<p>Those are the basics of how virtual page views operate. Now, let&#8217;s look at how to install them and set them up on your own website.</p>
+<p>It&#8217;s actually fairly simple. Just like installing the main Google Analytics code, we&#8217;re going to take a predefined block of code and put it in each instance that we want to track. Now all you have to do is copy and paste it into whatever event handler that you want to use to initiate the page view.</p>
+<p>So, if you want to track the play button, simply paste this code into the event handler that controls the play button, and every time a user clicks the play button it will be registered as a page view in your Google Analytics account.</p>
+<p>You will need to modify this section of the code. This parameter gives the virtual page view a name, and this will be the name of the page that is reported in your page view tracking report.</p>
+<p>All right, let&#8217;s do a quick recap. Now we know what virtual page views are. We know how to set &#8217;em up and install them on our website. Now let&#8217;s look specifically at how to set them up inside of a form and then tie that form to a conversion tracking funnel so we can see where we can improve.</p>
+<p>We&#8217;re going to start by looking at a basic form. To install virtual page view tracking into a form field, we&#8217;ll include the parameter onBlur=. onBlur is an event handler that is called when a visitor clicks the mouse or enters a keystroke outside of this field.</p>
+<p>Next, we&#8217;ll look at the second section of this code. This part simply states that if the form field is not empty, then do whatever comes next. So, if the user has entered any data into this specific form field, then do the next part, but if he hasn&#8217;t, don&#8217;t do anything at all.</p>
+<p>And then lastly, we&#8217;re going to paste in our virtual page view code that we looked at earlier and give this specific form field a name. Calling the trackPageView function with the corresponding field name generates a virtual page view for the completion of that field.</p>
+<p>So, if somebody enters a value in there and then goes to the next section or clicks off of that section, as soon as they do that, that code sends a note to Google and says, &#8220;Hey, that was a page view. Count it as a page view,&#8221; and then you can see that page view in your Google Analytics reporting.</p>
+<p>You don&#8217;t have to submit the form. All you have to do is fill out the form field, and then take the focus off of that form field, and this code registers that as a page view. Now, we&#8217;re simply going to do this for each field in the entire form [pause] and we&#8217;re all set up.</p>
+<p>Now that all of our tracking code is installed, we can set up a conversion funnel to give us an easy to use report for how our users are interacting with the form. To do this, we&#8217;ll first go to Admin. Then we&#8217;ll select the property and profile for the site that we&#8217;re working on.</p>
+<p>Next, choose Goals underneath the profile column. And now select Create a Goal, and then we will enter the name we want to use to refer to this funnel. For our purposes, we&#8217;ll call it the Contact Us funnel. We&#8217;ll now choose destination as the type and press Next Step.</p>
+<p>The destination field will be the page name that we gave to our submit button. Since our submit button is the last item in this form, we want to track it as the goal. In our case, we named it &#8220;submit button,&#8221; so we&#8217;ll enter that here. Next, turn the funnel option to On. And now we&#8217;ll enter the URL for each field in our form in the order that they appear in the form. Then, lastly, press Create Goal, and we&#8217;re all done.</p>
+<p>All right, that&#8217;s it! We&#8217;re all finished. We now know what virtual page views are, we&#8217;ve seen how to install them and set them up on our website, and we also know how to tie them to conversion funnels to track the interaction with forms on our website.</p>
+<p>If you want to see the in depth reporting on your funnel, simply go to the funnel visualization report in the reporting section of your Google Analytic account. That&#8217;s it for this week. Happy virtual page viewing.<br />
+</i></p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fga-virtual-pageviews%2F&source=tweetbutton&text=How+to+Set+Up+Virtual+Pageviews+in+Google+Analytics+%28The+Video%29&url=https%3A%2F%2Fblog.kissmetrics.com%2Fga-virtual-pageviews%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fga-virtual-pageviews%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=How to Set Up Virtual Pageviews in Google Analytics (The Video)&amp;body=https://blog.kissmetrics.com/ga-virtual-pageviews/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-22073 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-129737">
+    <div id="comment-129737" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Csilla Incze</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-129737" class="comment-date">Nov 15, 2013 at 12:16 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great video, but I for one would recommend setting up events for those actions, instead of &#8220;artificially&#8221; increasing pageviews&#8230; In your opinion are there situations when virtual pageviews are more recommended than events?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=129737#respond' onclick='return addComment.moveForm( "comment-129737", "129737", "respond", "22073" )' aria-label='Reply to Csilla Incze'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-129739">
+    <div id="comment-129739" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jon</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-129739" class="comment-date">Nov 15, 2013 at 12:24 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I love the article!, My question is this is great for inline coding if you only have a few video or forms.  What if you have many videos &amp; pdf files?  Do you have a good reference to writing a script that handles all these functions instead from inline?</p>
+<p>Cheers!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=129739#respond' onclick='return addComment.moveForm( "comment-129739", "129739", "respond", "22073" )' aria-label='Reply to Jon'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-129740">
+    <div id="comment-129740" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-129740" class="comment-date">Nov 15, 2013 at 12:30 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Please help, how can I activate this? I think I&#8217;m using a different version of Analytics :(</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=129740#respond' onclick='return addComment.moveForm( "comment-129740", "129740", "respond", "22073" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-129763">
+    <div id="comment-129763" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Henk</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-129763" class="comment-date">Nov 15, 2013 at 4:31 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi &#8211; great video, I also agree with Csilla Incze that these should really be used as event tracking rather than increasing page views when they are not.</p>
+<p>Google tag manager makes this really easy now.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=129763#respond' onclick='return addComment.moveForm( "comment-129763", "129763", "respond", "22073" )' aria-label='Reply to Henk'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-130047">
+    <div id="comment-130047" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Michael McMahon</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-130047" class="comment-date">Nov 17, 2013 at 8:50 am</a>      </div><!-- /.comment-meta -->
+
+      <p>+1</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=130047#respond' onclick='return addComment.moveForm( "comment-130047", "130047", "respond", "22073" )' aria-label='Reply to Michael McMahon'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-129891">
+    <div id="comment-129891" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kamlesh Nishad</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-129891" class="comment-date">Nov 16, 2013 at 9:05 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Awesome post&#8230;. well explained.Thanks for sharing&#8230;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=129891#respond' onclick='return addComment.moveForm( "comment-129891", "129891", "respond", "22073" )' aria-label='Reply to Kamlesh Nishad'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-130008">
+    <div id="comment-130008" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ann Smarty</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-130008" class="comment-date">Nov 17, 2013 at 1:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Wow &#8211; great quick, helpful tip.  Thanks.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=130008#respond' onclick='return addComment.moveForm( "comment-130008", "130008", "respond", "22073" )' aria-label='Reply to Ann Smarty'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-130045">
+    <div id="comment-130045" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Michael McMahon</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-130045" class="comment-date">Nov 17, 2013 at 8:49 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Unless KISS metrics only works with pageviews and not goals/events, I&#8217;m also confused about why you wouldn&#8217;t use events.  Does anyone have any ideas about why you&#8217;d want to use virtual pageviews?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=130045#respond' onclick='return addComment.moveForm( "comment-130045", "130045", "respond", "22073" )' aria-label='Reply to Michael McMahon'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-130062">
+    <div id="comment-130062" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Heather</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-130062" class="comment-date">Nov 17, 2013 at 10:56 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great post and really helpful video, thanks for it!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=130062#respond' onclick='return addComment.moveForm( "comment-130062", "130062", "respond", "22073" )' aria-label='Reply to Heather'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-130157">
+    <div id="comment-130157" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">James A</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-130157" class="comment-date">Nov 18, 2013 at 12:09 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article. Like most other people commenting, I am a little confused as to why you would use virtual page views for tracking video or file download rather than utilising the Event Tracking Function.</p>
+<p>However, your process for developing virtual page views for the form was interesting &#8211; is this your work-round for developing and managing form analytics?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=130157#respond' onclick='return addComment.moveForm( "comment-130157", "130157", "respond", "22073" )' aria-label='Reply to James A'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-130203">
+    <div id="comment-130203" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Siddharth Sharma</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-130203" class="comment-date">Nov 18, 2013 at 4:39 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Wow! A Very Helpful post is here on Kiss Metrics blog! I&#8217;m glad to see this article here. because this will help me in Analytics too much.</p>
+<p>Thanks to share this awesome Tricks :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=130203#respond' onclick='return addComment.moveForm( "comment-130203", "130203", "respond", "22073" )' aria-label='Reply to Siddharth Sharma'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-130457">
+    <div id="comment-130457" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Bryan Harris</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-130457" class="comment-date">Nov 19, 2013 at 9:12 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey guys,</p>
+<p>Good pickup on the Virtual Page View vs. Event tracking conundrum. There are pros and cons to using both.</p>
+<p>One of the big pros to using Virtual Page View is the ability to tie it to Funnel Tracking. This gives you super reporting into how your users are navigating through the form fields. </p>
+<p>Certainly this isn&#8217;t needed in every use case but it is one of the big reasons we use it in this instance.</p>
+<p>Here are three articles you can checkout that go into more detail on some of the nuances of which is better for your particular use case:</p>
+<p><a href="http://searchengineland.com/virtual-pageviews-or-event-tracking-%E2%80%93-which-is-right-for-you-125615" rel="nofollow">http://searchengineland.com/virtual-pageviews-or-event-tracking-%E2%80%93-which-is-right-for-you-125615</a></p>
+<p><a href="http://www.webseoanalytics.com/blog/google-analytics-event-tracking-vs-virtual-pageviews/" rel="nofollow">http://www.webseoanalytics.com/blog/google-analytics-event-tracking-vs-virtual-pageviews/</a></p>
+<p> <a href="http://blog.intlock.com/event-tracking-vs-virtual-pageviews/" rel="nofollow">http://blog.intlock.com/event-tracking-vs-virtual-pageviews/</a></p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=130457#respond' onclick='return addComment.moveForm( "comment-130457", "130457", "respond", "22073" )' aria-label='Reply to Bryan Harris'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-134687">
+    <div id="comment-134687" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Nderto</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-134687" class="comment-date">Nov 30, 2013 at 5:43 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey nice tutorial, but I am not sure why I got this problem. After following the tutorial and adding the fields to one of my forms about 5-10 minutes after that GA doesn&#8217;t track visits. The real time tracking stopped for the all the pages. Am I missing something or what?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=134687#respond' onclick='return addComment.moveForm( "comment-134687", "134687", "respond", "22073" )' aria-label='Reply to Nderto'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-142853">
+    <div id="comment-142853" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://www.facebook.com/SERPConsultancyService' rel='external nofollow' class='url'>Atanu Das</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-142853" class="comment-date">Dec 23, 2013 at 10:16 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hello, This video is something unique what i was looking for. This is really helpful for the Digital Marketing People. Goal-Funnel setup, Conversion setup &#8211; some of the important topics about Google Analytics. This Tutorial will really help the SEO people. Thanks for sharing and Keep it up! I have tweeted this to my followers.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=142853#respond' onclick='return addComment.moveForm( "comment-142853", "142853", "respond", "22073" )' aria-label='Reply to Atanu Das'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-175169">
+    <div id="comment-175169" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dominic Hurst</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-175169" class="comment-date">Mar 14, 2014 at 7:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Informative video guys. Virtual page views has it&#8217;s positives (can track something we previously didn&#8217;t) however id use event tracking to avoid skewed metrics</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=175169#respond' onclick='return addComment.moveForm( "comment-175169", "175169", "respond", "22073" )' aria-label='Reply to Dominic Hurst'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-608471">
+    <div id="comment-608471" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Albert</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-608471" class="comment-date">Sep 24, 2014 at 11:26 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hello,</p>
+<p>Once all the code mentioned in the video is copied, how/where can I see on Google Analytics the keywords that users have typed on the form?</p>
+<p>Thanks and great article!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=608471#respond' onclick='return addComment.moveForm( "comment-608471", "608471", "respond", "22073" )' aria-label='Reply to Albert'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-614110">
+    <div id="comment-614110" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guillermo</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-614110" class="comment-date">Sep 25, 2014 at 8:18 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Good morning!</p>
+<p>I have a question regarding your &#8220;How to Set Up Virtual Pageviews in Google Analytics&#8221; article. My website doesnt have a query parameter, in fact the URL for every keyword searched is /Search.</p>
+<p>I included all the javascript code in my .html page inside my input tag. My question is:</p>
+<p>When configuring the new Goal in Google Analytics, what do I have to type in the Destination input form? Is it the &#8220;form-field-data&#8221; name inside de _gaq.push()?</p>
+<p>Also, where exactly will I be able to see the Search terms once it is finally working?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=614110#respond' onclick='return addComment.moveForm( "comment-614110", "614110", "respond", "22073" )' aria-label='Reply to Guillermo'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-938505">
+    <div id="comment-938505" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Tomasz</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-938505" class="comment-date">Oct 28, 2014 at 9:14 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi,</p>
+<p>what about a situation when I want to fire a virtual pageview only when the form is submitted, that is when there is no error in the form? I want to be sure that a virtual pageview will be not fired when a user will click on the submit button, but only when the form will be submitted.</p>
+<p>Thanks in advance for suggestions.</p>
+<p>Best,<br />
+Tomasz</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=938505#respond' onclick='return addComment.moveForm( "comment-938505", "938505", "respond", "22073" )' aria-label='Reply to Tomasz'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1047782">
+    <div id="comment-1047782" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">jade webster</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-1047782" class="comment-date">Feb 17, 2015 at 4:56 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi,</p>
+<p>I have tried implementing this on one of my websites. but i can&#8217;t see the pageviews in Google Analytics.</p>
+<p>I am trying to track the number of applications we receive. Here is the code I have added (i was originally tracking it as an event, but once this funnel has been created, i will turn this off)</p>
+<p>_gaq.push([&#8216;_trackEvent&#8217;, &#8216;Job application completed&#8217;, &#8216;click&#8217;, &#8216;Job application completed&#8217;]);_gaq.push(&#8216;_trackPageview&#8217;,&#8217;Job-application-completed-PV&#8217;);</p>
+<p>Can some please help!?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=1047782#respond' onclick='return addComment.moveForm( "comment-1047782", "1047782", "respond", "22073" )' aria-label='Reply to jade webster'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1048928">
+    <div id="comment-1048928" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-1048928" class="comment-date">Feb 19, 2015 at 12:34 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi, </p>
+<p>I am trying to implement virtual pageviews (to track affiliate link clicks) on my site protrampolines.com but after following your advice I only found out that it is not working.<br />
+I am using Universal analytics code but after code implementation on link and setting up goals there is no change whatsoever.</p>
+<p>Any advice?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=1048928#respond' onclick='return addComment.moveForm( "comment-1048928", "1048928", "respond", "22073" )' aria-label='Reply to '>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1069706">
+    <div id="comment-1069706" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">danilo alba</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-1069706" class="comment-date">Mar 17, 2015 at 5:51 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi, i am struggling to add a virtual page associate to a banner click, using Google Tag Manager, without access to the code. anybody can help?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=1069706#respond' onclick='return addComment.moveForm( "comment-1069706", "1069706", "respond", "22073" )' aria-label='Reply to danilo alba'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1231179">
+    <div id="comment-1231179" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://www.facebook.com/magosfrancis' rel='external nofollow' class='url'>Francis Magos</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-1231179" class="comment-date">Mar 17, 2016 at 1:24 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi! Thank you for this! I do have a question for this amazing way to track forms. What if I have more than 20 different forms with different field names in my website to track in Google Analytics, how can I track this since GA Goals can just cater 20 goals?</p>
+<p>Thanks for your help.</p>
+<p>Have a good day ahead.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=1231179#respond' onclick='return addComment.moveForm( "comment-1231179", "1231179", "respond", "22073" )' aria-label='Reply to Francis Magos'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1239777">
+    <div id="comment-1239777" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Nikki</cite>
+        
+        <a href="https://blog.kissmetrics.com/ga-virtual-pageviews/#comment-1239777" class="comment-date">Mar 31, 2016 at 11:49 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Is this still up to date?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ga-virtual-pageviews/?replytocom=1239777#respond' onclick='return addComment.moveForm( "comment-1239777", "1239777", "respond", "22073" )' aria-label='Reply to Nikki'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">25 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ga-virtual-pageviews/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='22073' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="45f2e3ee07" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="190"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'How to Set Up Virtual Pageviews in Google Analytics (The Video)', 'Post URL':'https://blog.kissmetrics.com/ga-virtual-pageviews/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/make-your-app-visible/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/internet-war-decade/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/ga-virtual-pageviews/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/ga-virtual-pageviews/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/ga-virtual-pageviews/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="How to Set Up Virtual Pageviews in Google Analytics (The Video)" data-url="http://blog.kissmetrics.com/ga-virtual-pageviews/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'How to Set Up Virtual Pageviews in Google Analytics (The Video)', 'Post URL':'https://blog.kissmetrics.com/ga-virtual-pageviews/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'How to Set Up Virtual Pageviews in Google Analytics (The Video)', 'Post URL':'https://blog.kissmetrics.com/ga-virtual-pageviews/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'How to Set Up Virtual Pageviews in Google Analytics (The Video)', 'Post URL':'https://blog.kissmetrics.com/ga-virtual-pageviews/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":456,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

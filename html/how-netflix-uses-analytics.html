@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>How Netflix Uses Analytics To Select Movies, Create Content, & Make Multimillion Dollar Decisions</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; How Netflix Uses Analytics To Select Movies, Create Content, and Make Multimillion Dollar Decisions Comments Feed" href="https://blog.kissmetrics.com/how-netflix-uses-analytics/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='9 Must-See Marketing Panels at SXSW 2014' href='https://blog.kissmetrics.com/marketing-panels-sxsw-2014/' />
+<link rel='next' title='Find Which Social Media Links Perform Best in Google Analytics with UTM Parameters' href='https://blog.kissmetrics.com/social-media-utm-parameters/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/how-netflix-uses-analytics/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=21570' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-netflix-uses-analytics%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-netflix-uses-analytics%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,398] -->
+<meta name="description" content="Read on to learn more about the future of television programming and how analytics is helping Netflix become a better business and service." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/117750912206547874889/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='How Netflix Uses Analytics To Select Movies, Create Content, &amp; Make Multimillion Dollar Decisions' />
+<meta property='og:url' content='https://blog.kissmetrics.com/how-netflix-uses-analytics/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Read on to learn more about the future of television programming and how analytics is helping Netflix become a better business and service.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How Netflix Uses Analytics To Select Movies, Create Content, & Make Multimillion Dollar Decisions" />
+    <meta name="twitter:description" content="Read on to learn more about the future of television programming and how analytics is helping Netflix become a better business and service." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-21570 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'How Netflix Uses Analytics To Select Movies, Create Content, and Make Multimillion Dollar Decisions',
+						'Post Category': 'Analytics',
+						'Post URL': 'https://blog.kissmetrics.com/how-netflix-uses-analytics/'
+		}
+	]);
+</script>
+
+<article id="post-21570" class="single-post post-21570 post type-post status-publish format-standard hentry category-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">How Netflix Uses Analytics To Select Movies, Create Content, and Make Multimillion Dollar Decisions</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>In 2006 Netflix announced the Netflix Prize, a competition for creating an algorithm that would &#8220;<a href="http://www.netflixprize.com/">substantially improve the accuracy of predictions</a> about how much someone is going to enjoy a movie based on their movie preferences.&#8221; There was a winner, which improved the algorithm by 10%. However, Netflix never did implement the algorithm, saying:</p>
+<blockquote><p>&#8220;<a href="http://techblog.netflix.com/2012/04/netflix-recommendations-beyond-5-stars.html">We evaluated some of the new methods offline</a> but the additional accuracy gains that we measured did not seem to justify the engineering effort needed to bring them into a production environment.&#8221;</p></blockquote>
+<p>But Netflix didn&#8217;t shun all algorithm and data efforts.</p>
+<p>To the uninitiated, it may seem that Netflix&#8217;s analytics go only as far as views. They may also think that the show <i>House of Cards</i> was chosen because Netflix &#8220;thought subscribers might like it.&#8221; But the truth is much, much deeper. The $100 million show wasn&#8217;t green-lighted solely because it seemed like a good plot. The decision was based on a number of factors and seemingly almost entirely on data.</p>
+<p>The reality is that Netflix is a data-driven company. Saying that Netflix chooses new content based on &#8220;whoever they can get a license with&#8221; is a very thin and vague statement. Netflix does need licenses from studios, but they don’t just pick movies and television shows at random.</p>
+<p>Read on to learn more about the future of television programming and how analytics is helping Netflix become a better business and service.</p>
+<h2>Analytics at Netflix</h2>
+<p>The core job of analytics is to help companies gain insight into their customers. Then, the companies can optimize their marketing and deliver a better product. (Without analytics, companies are in the dark about their customers.) Analytics gives businesses the quantitative data they need to make better, more informed decisions and improve their services.</p>
+<p>So how does Netflix use analytics?</p>
+<p align="center"><i>“There are 33 million different versions of Netflix.&#8221;</i></p>
+<p align="center">&#8211; Joris Evers, Director of Global Communications</p>
+<p>At current count, Netflix has <a href="http://files.shareholder.com/downloads/NFLX/1378700698x0x870685/C6213FF9-5498-4084-A0FF-74363CEE35A1/Q4_15_Letter_to_Shareholders_-_COMBINED.pdf">74.76 million worldwide streaming customers</a>. Having this large user base allows Netflix to gather a tremendous amount of data. With this data, Netflix can make better decisions and ultimately make users happier with their service.</p>
+<p>Traditional television networks don&#8217;t have these kinds of privileges in their broadcasting. Ratings are just approximations, green-lighting a pilot is based on tradition and intuition. Netflix has the advantage, because being an internet company allows Netflix to know their customers well, not just have a &#8220;persona&#8221; or &#8220;idea&#8221; of what their average customer is like. Let&#8217;s look at an example.</p>
+<p>If you&#8217;re watching a series like <i>Arrested Development</i>, Netflix is able to see (on a large scale) the &#8220;completion rate&#8221; (for lack of a better term) of users. For example, the people at Netflix could ask themselves &#8220;How many users who started <i>Arrested Development</i> (from season 1) finished it to the end of season 3?&#8221; Then they get an answer. Let&#8217;s say it&#8217;s 70%.</p>
+<p>Then they ask &#8220;Where was the common cut off point for users? What did the other 30% of users do? How big of a &#8216;time gap&#8217; was there between when consumers watched one episode and when they watched the next? We need to get a good idea of the overall engagement of this show.&#8221;</p>
+<p>They then gather this data and see user trends to understand engagement at a deep level. If Netflix saw that 70% of users watched all seasons available of a cancelled show, that may provoke some interest in restarting <i>Arrested Development</i>. They know there&#8217;s a good chance users will watch the new season.</p>
+<p>But the data gets deeper than that. Here&#8217;s a look at some of the &#8220;events&#8221; Netflix tracks:</p>
+<ul>
+<li>When you pause, rewind, or fast forward</li>
+<li>What day you watch content (Netflix has found people watch TV shows during the week and movies during the weekend.)</li>
+<li>The date you watch</li>
+<li>What time you watch content</li>
+<li>Where you watch (zip code)</li>
+<li>What device you use to watch (Do you like to use your tablet for TV shows and your Roku for movies? Do people access the Just for Kids feature more on their iPads, etc.?)</li>
+<li>When you pause and leave content (and if you ever come back)</li>
+<li>The ratings given (about 4 million per day)</li>
+<li>Searches (about 3 million per day)</li>
+<li>Browsing and scrolling behavior</li>
+<li>Netflix also looks at data within movies. They take various &#8220;screen shots&#8221; to look at &#8220;in the moment&#8221; characteristics. Netflix has confirmed they know when the credits start rolling; but there&#8217;s far more to it than just that. <a href="http://gigaom.com/2012/06/14/netflix-analyzes-a-lot-of-data-about-your-viewing-habits/">Some have figured</a> these characteristics may be the volume, colors, and scenery that help Netflix find out what users like.</li>
+</ul>
+<p>Why does Netflix want to know when the credits roll? They probably want to see what users do afterward. Do they leave the app or go back to browsing? Notice how Netflix now offers movie recommendations (they have personalization algorithms that aim to accurately predict what users will watch next) soon after credits start (or, for television shows, they <a href="http://www.pcmag.com/article2/0,2817,2408550,00.asp">automatically play the next episode</a>).</p>
+<p>Because if users leave the app after watching a show, that may mean they are more likely to cancel. Allow me to explain:</p>
+<p>Through their analytics, Netflix may know how much content users need to watch in order to be less likely to cancel. For instance, maybe they know &#8220;If we can get each user to watch at least 15 hours of content each month, they are 75% less likely to cancel. If they drop below 5 hours, there is a 95% chance they will cancel.&#8221;</p>
+<p>So now that they have this data, they can ask themselves &#8220;How do we help users watch at least 15 hours of content per month?&#8221; One idea: enable post-play, which automatically plays the next episode of a TV show unless the user opts out. For movies, show movie suggestions (based on the rating of the movie just watched) right after the credits start rolling and allow users to press play right from that screen. Netflix can add this feature to their web and mobile apps and, again, through analytics, see the results.</p>
+<p>This is only a theory of how Netflix came to the decision to implement post-play and an example of how analytics can help Netflix make decisions. I don&#8217;t have any inside information.</p>
+<p>So all of this data and the large user base allow Netflix to quickly see trends and formulate opinions. Later, we&#8217;ll get into the factors that made them green-light <i>House of Cards</i>.</p>
+<h3>The Recommendation Algorithm</h3>
+<p>As part of the on-boarding process, Netflix asks new users to rate their interest in movie genres and rate any movies they&#8217;ve already seen. Why do they do this right up front? Because helping users discover new movies and TV shows they&#8217;ll enjoy is integral to Netflix&#8217;s success.</p>
+<p>If people run out of movies they want to watch and have no way to find new movies, they&#8217;ll cancel. It&#8217;s important that Netflix puts a lot of focus on making sure they have an accurate algorithm for this rather than having users rely on outside sources to find new movies.</p>
+<p>Is the recommendation algorithm accurate and successful?</p>
+<p>Since <a href="https://twitter.com/netflix/status/365577591563882496">75% of viewer activity is based on these suggestions</a>, I&#8217;d say it works pretty well for them.</p>
+<p>But now that more users are moving to streaming, what they actually watch is more important than ratings. When it was DVD-by-mail, Netflix users had to wait, and the rating was a &#8220;thought process.&#8221; Netflix engineers Xavier Amatriain and Carlos Gomez-Uribe explain:</p>
+<p>Amatriain:</p>
+<blockquote><p>&#8220;When we were a DVD-by-mail company and people gave us a rating, they were expressing a thought process. You added something to your queue because you wanted to watch it a few days later; there was a cost in your decision and a delayed reward. With instant streaming, you start playing something, you don’t like it, you just switch. Users don’t really perceive the benefit of giving explicit feedback, so they invest less effort.&#8221;</p></blockquote>
+<p>Gomez-Uribe:</p>
+<blockquote><p>&#8220;Testing has shown that the predicted ratings aren’t actually super-useful, while what you’re actually playing is. We’re going from focusing exclusively on ratings and rating predictions to depending on a </i><a href="http://www.wired.com/underwire/2013/08/qq_netflix-algorithm/">more complex ecosystem of algorithms</a>.&#8221;</p></blockquote>
+<p>As we can see, the algorithm is evolving. There are entire teams (Netflix has over 800 developers in total) working on it. It&#8217;s not static because user behavior and the Netflix product are changing.</p>
+<p>For a deeper description of the algorithm, <a href="http://techblog.netflix.com/2012/04/netflix-recommendations-beyond-5-stars.html">check out this post</a> written by the people who design and work on it.</p>
+<h2>How Big Data Factored into <i>House of Cards</i></h2>
+<p>In 2011 Netflix made one of the biggest decisions they&#8217;ll ever make. It wasn&#8217;t anything material, but rather it was about content. They <a href="http://www.deadline.com/2011/03/netflix-to-enter-original-programming-with-mega-deal-for-david-fincher-kevin-spacey-drama-series-house-of-cards/">outbid top television channels like HBO and AMC to earn the rights for a U.S. version of <i>House of Cards</i></a>, giving them 2 seasons with 13 episodes in each season.</p>
+<p>At a cost of $4 million to $6 million an episode, this 2-season price tag is over $100 million. Netflix has undoubtedly made other big money investments before (shipping centers, postage costs, etc.), but nothing like this on the content side. So why did they make such a big bet, and how did analytics factor into the decision? Let&#8217;s get into it.</p>
+<h3>Pre-Green-light</h3>
+<p>Before green-lighting <i>House of Cards</i>, Netflix knew:</p>
+<ul>
+<li>A lot of users watched the David Fincher directed movie <i>The Social Network</i> from beginning to end.</li>
+<li>The British version of &#8220;<i>House of Cards</i>&#8221; has been well watched.</li>
+<li>Those who watched the British version &#8220;<i>House of Cards</i>&#8221; also watched Kevin Spacey films and/or films directed by David Fincher.</li>
+</ul>
+<p>Each of these 3 synergistic factors had to contain a certain volume of users. Otherwise, <i>House of Cards</i> might belong to a different network right now. Netflix had a lot of users in all 3 factors.</p>
+<p>This combination of <a href="http://www.salon.com/2013/02/01/how_netflix_is_turning_viewers_into_puppets/">factors had a lot of weight in Netflix&#8217;s decision to make the $100 million investment in creating a U.S. version of <i>House of Cards</i></a>. Jonathan Friedland, Chief Communications Officer, <a href="http://www.nytimes.com/2013/02/25/business/media/for-house-of-cards-using-big-data-to-guarantee-its-popularity.html?pagewanted=all&#038;_r=0">says</a> <i>“Because we have a direct relationship with consumers, we know what people like to watch and that helps us understand how big the interest is going to be for a given show. It gave us some confidence that we could find an audience for a show like </i>House of Cards<i>.”</i></p>
+<p><a href="http://gigaom.com/2011/03/18/netflix-big-data/">In an interview with Gigaom</a>, Steve Swasey, VP of Corporate Communications, expands:</p>
+<blockquote><p>&#8220;We have a high degree of confidence in [House of Cards] based on the director, the producer and the stars…. We don’t have to spend millions to get people to tune into this. Through our algorithms, we can determine who might be interested in Kevin Spacey or political drama and say to them ‘You might want to watch this.’”</p></blockquote>
+<p>Swasey says it&#8217;s not just the cast and director that predict whether the show will be a success. “<i>We can look at consumer data and see what the appeal is for the director, for the stars, and for similar dramas,”</i> he says. Add this to the fact that the British version of <i>House of Cards</i> has been a popular DVD pick for subscribers. Combining these factors (and the popularity of political thrillers) makes it seem like an easy decision for Netflix to make. The only question was how much they were willing to invest. We&#8217;ll get into the early ROI numbers a little later.</p>
+<h3>After the Green Light</h3>
+<p>Now that Netflix has made the $100 million investment, they are in part responsible for promoting it. And with the data they have, they can make a &#8220;personalized trailer&#8221; for each type of Netflix member, not a &#8220;one size fits all&#8221; trailer. Let me explain…</p>
+<p>Before a movie is released or TV show premiers, there&#8217;s typically one or a few trailers made and a few previews selected. <a href="http://gigaom.com/2013/02/12/netflix-ratings-big-data-original-content/">Netflix made 10 different cuts of the trailer</a> for <i>House of Cards</i>, each geared toward different audiences. The trailer you saw was based on your previous viewing behavior. If you watched a lot of Kevin Spacey films, you saw a trailer featuring him. Those who watched a lot of movies starring females saw a trailer featuring the women in the show. And David Fincher fans saw a trailer featuring his touch.</p>
+<p>So now that the first season has run, let&#8217;s look at some of the early metrics. These won&#8217;t determine immediately whether the <i>House of Cards</i> investment can be considered successful, but rather the trajectory that it&#8217;s on.</p>
+<p>What do you think the average success rate is for new TV shows? In other words, if a television network green lights a new TV show, what are the chances it will be profitable or won&#8217;t be cancelled after a couple of seasons?</p>
+<p>Your guess?</p>
+<p>The answer is 35%, on average.</p>
+<p>When a network green lights a show, there&#8217;s a 35% chance it succeeds and a <a href="http://screenrant.com/tv-success-rate-canceled-shows-aco-172162/all/1/">65% chance it gets cancelled</a>. At the time of this writing, Netflix has 7 TV shows, of which 5 have been renewed for another season. If this rate can continue for years, the Netflix success rate will be about 70%.</p>
+<p>So why does Netflix renew shows at a higher rate than conventional television networks? Does the data make the difference? Is the success rate legitimate or can you not compare an Internet television network to conventional TV networks?</p>
+<p>Has <i>House of Cards</i> been a success? It has brought in <a href="http://www.theatlanticwire.com/technology/2013/04/netflix-subscribers-house-of-cards/64458/">2 million new U.S. subscribers in the first quarter of 2013</a>, which was a 7% increase over the previous quarter. It also brought in 1 million new subscribers from elsewhere in the world. According to <i>The Atlantic Wire</i>, these 3 million subscribers almost paid Netflix back for the cost of <i>House of Cards</i>.</p>
+<p>And what about current subscribers? Does having <i>House of Cards</i> make them less likely to cancel their subscription?</p>
+<p>Yes, for 86% of them.</p>
+<p>A survey <a href="http://www.deadline.com/2013/02/house-of-cards-netflix-subscribers-loyalty-survey/">showed that 86% of subscribers are less likely to cancel because of <i>House of Cards</i></a> but only if Netflix stays at the $7.99 price point. While this may seem impressive, you should take this survey with a grain of salt. As the author points out:</p>
+<blockquote><p>&#8220;The sample size is small. Only 346 of the 1,229 U.S. consumers surveyed on February 12-13, 2013 are Netflix customers, although another 223 are classified as non-subscribers who have access to a Netflix subscription. About 10% of subscribers and those with access to Netflix viewed at least one episode of House Of Cards in the first 12 days after it became available. The average person who tuned in watched six episodes over that period, but 19.4% watched all 13.&#8221;</p></blockquote>
+<p>What can be safe to say is that <i>House of Cards</i> gives all Netflix subscribers one less reason to cancel. How big or how small the reason is arbitrary.</p>
+<h3><i>Orange is the New Black</i></h3>
+<p><i>Weeds</i> was a pretty popular show on Showtime. It also has been streaming on Netflix for quite some time and has been one of their most viewed shows, according to their &#8220;Popular on Netflix&#8221; section. So when creator Jenji Kohan had the idea for a new TV show, Netflix knew they had to jump in. To be able to get a series with the popularity and quality of <i>Weeds</i> would be a big hit, especially in a lineup next to <i>House of Cards</i>. <a href="http://allthingsd.com/20130723/netflixs-no-name-show-beating-house-of-cards-and-arrested-development/">Early metrics show that <i>Orange is the New Black</i> is getting off to a more successful start</a> than <i>Arrested Development</i> and even <i>House of Cards</i>.</p>
+<p>In the next section we&#8217;ll take a step back and look at the big picture of how analytics is helping Netflix.</p>
+<h2>How Netflix Decides on Movies to License</h2>
+<p>By now, you probably can guess that Netflix doesn&#8217;t blindly pick which movies to stream. Licensing movies from studios is expensive, so Netflix uses data to help them decide. There are only a limited number of movies to license. For example, a popular new release may not be available immediately, but a year later it might be. There is a vast number of movies available for Netflix to pick from, just not <i>every </i>movie available. So Netflix has to find which ones its users will enjoy the most.</p>
+<p>As John Ciancutti, former VP of Product Engineering (now at Facebook), says: </p>
+<blockquote><p>&#8220;<a href="http://www.quora.com/Netflix/Does-Netflix-add-content-based-on-your-searches/answer/John-Ciancutti">Netflix seeks the most efficient content.</a> Efficient here meaning content that will achieve the maximum happiness per dollar spent. There are various complicated metrics used, but what they are intended to measure is happiness among Netflix members. How much would it go up if Netflix licenses, say, Mad Men vs. Sons of Anarchy?&#8221;</p></blockquote>
+<p>Jenny McCabe, Director of Global Media Relations, <a href="http://www.youtube.com/watch?v=VvpoUh9gx58">puts it another way</a>:</p>
+<blockquote><p>&#8220;We look for those titles that deliver the biggest viewership relative to the licensing cost. This also means that we&#8217;ll forgo or choose not to renew some titles that aren&#8217;t watched enough relative to their cost.</p>
+<p>We always use our in depth knowledge (aka analytics and data) about what our members love to watch to decide what&#8217;s available on Netflix….If you keep watching, we&#8217;ll keep adding more of what you love.&#8221;</p></blockquote>
+<p>There you have it&#8230; That last sentence tells it all. They need to know what people watch and what people like in order to decide on new titles. If no one watched anything, they&#8217;d be in the dark. Now you can see that their analytics is a big help in deciding what movies and TV shows to select. They are not, as McCabe put it, a &#8220;broad distributor,&#8221; possibly stating a differentiation from Hulu.</p>
+<p>At a $7.99 per month per member pricing plan, Netflix cannot afford to add every box office hit. They need to be smart about their decisions and take full advantage of their analytics. Being cost efficient and making users happy is a skill that is central to Netflix&#8217;s success. Let&#8217;s use an example of how they might combine smart economics while also maximizing user happiness.</p>
+<p><i>The Dark Knight</i> was an extraordinarily popular movie, netting over $1 billion at the box office. Netflix knew that its users would enjoy it if they streamed it, but the studio wanted a very high price for it. Netflix could pay the rights to stream it for a few months, or they could get 6 other quality movies that they knew users would like. So what do they do? What brings the highest happiness per dollar?</p>
+<p>In other words, instead of getting <i>The Dark Knight</i>, they could get other movies with the same actors and director. They could add <i>Memento</i> (directed by Christopher Nolan), <i>Brokeback Mountain</i> and <i>A Knight&#8217;s Tale </i>(starring Heath Ledger), <i>Thank You for Smoking </i>(starring Aaron Eckhart), <i>Stranger than Fiction </i>(starring Maggie Gyllenhaal), and <i>The Machinist </i>(starring Christian Bale) for (or near) the price of one license to <i>The Dark Knight</i>. What route would you choose?</p>
+<p>Again, this is just a hypothetical, but it&#8217;s probably safe to say that this is a common situation Netflix faces. Let&#8217;s look at another example.</p>
+<p><i>Parks and Recreation</i> is popular for Netflix and has good metrics (people watch the entire show, re-watch some episodes, and frequently rewind certain parts). One of the actors is Adam Scott (maybe some users rewind scenes with him in it), and they have the option to add a few cost-efficient movies with him. Do they do it? At the time of this writing, they do. There are 7 Adam Scott movies available to stream instantly, <a href="http://dvd.netflix.com/Movie/The-Vicious-Kind/70112476">one an independent film where he is a main character</a>.</p>
+<p>Along with these tactics, Netflix also <a href="http://www.bbc.co.uk/news/technology-24108673">studies piracy sites to help them decide what content to purchase</a>. One show they picked up as a result is Prison Break, which has been heavily pirated. </p>
+<h2>Use Analytics Directionally</h2>
+<p>When asked to name the 3 things he learned form Reed Hastings, Netflix co-founder <a href="https://twitter.com/mitch__lowe">Mitch Lowe</a> said focus, analytics, and pour money into the things that are working best. </p>
+<p>When discussing analytics, he says:</p>
+<p><em>&#8220;He taught me how to use analytics to make decisions. I always thought you needed a clear answer before you made a decision and the thing that he taught me was [that] you&#8217;ve got to use analytics directionally&#8230;and never worry whether they are 100% sure. Just try to get them to point you in the right direction.&#8221;</em></p>
+<p>When pressed to give an example, Lowe says:</p>
+<p><em>&#8220;We couldn&#8217;t figure out what our core demographic was (this was in the early 2000&#8217;s) of our users and so we would spend bunches of time surveying our customers trying to figure out, you know, do they sit into the 18-24 year old group and 24-35, etc.  And the numbers were all over the place. But if you averaged them all out, it was clear that our customer was higher income, older, and more educated. But there was still big segments of younger people and [Hastings] said &#8220;listen, just go with where this is telling you directionally our customers are.&#8221; And it really paid off. When we started targeting places where those customers with that demographic hung out, and this got to our annoying pop up ads that we used to inundate the web with. Then our customer acquisition just went straight up.&#8221;</em></p>
+<p>Now, let&#8217;s take a step back, look at the big picture, and see Netflix&#8217;s aspiring goal.</p>
+<h2>Netflix&#8217;s Goal to Become the HBO of Internet TV</h2>
+<p>Netflix&#8217;s data and analytics are a big asset for them. It helps them build a better service for users and become a more cost efficient business by reducing waste and avoiding &#8220;shots in the dark.&#8221;</p>
+<p>In their own words, Netflix wants <i>“to become HBO faster than HBO can become Netflix.&#8221; </i>They&#8217;re adding shows at a rapid pace, <a href="http://www.gq.com/entertainment/movies-and-tv/201302/netflix-founder-reed-hastings-house-of-cards-arrested-development?currentPage=3">with the goal of adding at least 5 new shows per year</a> according to Ted Sarandos, Chief Content Officer. As of February 2013, he had $6 billion available to him to choose content for Netflix streaming. This money goes to pay for licensing fees from cable companies and studios, but $300 million is for original content, according to <i>GQ</i>.</p>
+<p>Some of that original content will not be just TV shows, but also <a href="http://www.theverge.com/2013/7/22/4546544/netflix-will-produce-feature-documentaries-stand-up-comedy-specials">exclusive documentaries and stand-up comedy specials</a>. Comedian Aziz Ansari will <a href="http://www.latimes.com/entertainment/tv/showtracker/la-et-st-aziz-ansari-comedy-special-buried-alive-netflix-20130830,0,1288413.story">debut his standup special, <i>Buried Alive</i>, on Netflix</a>. It&#8217;s slated to debut November 1st. And on October 14, Netflix will <a href="http://www.theverge.com/2013/9/3/4691088/netflix-signs-deal-with-russell-peters-for-original-comedy-special">debut another stand-up special and documentary series by comedian Russell Peters</a>. If you&#8217;re interested, Wikipedia has a great page that <a href="http://en.wikipedia.org/wiki/List_of_original_programs_distributed_by_Netflix">lists out all current and future Netflix programming</a>. </p>
+<p>HBO has a slew of original content in addition to their licensing of movies commonly not on networks such as TNT, TBS, USA, AMC, etc. In April 2013, HBO premiered the Louis CK standup <a href="http://www.youtube.com/watch?v=KEtAfAa67TY"><i>Oh My God</i></a>. Clearly the HBO model has been successful for Time Warner, its owner.</p>
+<p>As of April 2013, it has been estimated that <a href="http://www.redherring.com/internet/netflix-quarterly-revenue-tops-1b-subscribers-surpass-hbo/">Netflix surpassed HBO in subscribers</a>. This means they matched their goal of &#8220;becoming HBO faster than HBO can become Netflix.&#8221;</p>
+<p>Netflix, like HBO, has no plans to eventually be a distributor of original content only. CEO Reed Hastings has said &#8220;If we do our job right, <a href="http://brileyco.com/news_media/entry/analyst_eric_wold_in_news_analysis_churn_nightmare_with_home_media_magazine">there’s always a reason to be a Netflix member on the original side, in addition to the license side</a>.&#8221;</p>
+<h2>In Conclusion…</h2>
+<p>Now you see how Netflix makes informed decisions based on data. Clearly, data cannot make every decision; there are some situations where intuition has to take over. For instance, data could not predict that a show like <i>Breaking Bad</i> would be a success. The creator was a former writer on <i>The X-Files</i>, and dramas are 50/50. In these cases, decisions are heavily based on the people and team behind the idea of the show. Whether Netflix can make a successful show like this (one with little to no data) is yet to be seen.</p>
+<p>What analytics and data can do is give you insight so you can run a better business and offer a superior product. People with data have an advantage over those who run on intuition or &#8220;what feels right.&#8221;</p>
+<p>Do you have data to help you make decisions? If not, Netflix provides a good case for why you should do so.</p>
+<p>Let me hear your feedback in the comments.</p>
+<p><strong>About the Author:</strong> Zach Bulygo is the Blog Manager for Kissmetrics, you can find him on Twitter <a href="https://twitter.com/zachcb1">here</a>.</p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/how-netflix-measures-you/">How Netflix Measures You to Maximize Their Revenue & How It Can Help Your Business</a></li>
+<li><a href="https://blog.kissmetrics.com/pagerduty-used-analytics-to-improve/">How PagerDuty Used Analytics to Improve Their Trial Experience</a></li>
+<li><a href="https://blog.kissmetrics.com/agile-marketing/">The Agile Marketing Framework RealtimeBoard Used to Acquire 675k Signups</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-netflix-uses-analytics%2F&source=tweetbutton&text=How+Netflix+Uses+Analytics+To+Select+Movies%2C+Create+Content%2C+and+Make+Multimillion+Dollar+Decisions&url=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-netflix-uses-analytics%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-netflix-uses-analytics%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=How Netflix Uses Analytics To Select Movies, Create Content, and Make Multimillion Dollar Decisions&amp;body=https://blog.kissmetrics.com/how-netflix-uses-analytics/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-21570 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-120968">
+    <div id="comment-120968" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kevin</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-netflix-uses-analytics/#comment-120968" class="comment-date">Sep 06, 2013 at 6:46 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great indepth article.</p>
+<p>I think the summary would be &#8220;measure what matters.&#8221;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-netflix-uses-analytics/?replytocom=120968#respond' onclick='return addComment.moveForm( "comment-120968", "120968", "respond", "21570" )' aria-label='Reply to Kevin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-1200865">
+    <div id="comment-1200865" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Chris</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-netflix-uses-analytics/#comment-1200865" class="comment-date">Jan 04, 2016 at 3:49 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I think this is just a bunch of dribble. Statistics regarding a causes b in this equation means nothing. All this analysis shows is that the site owner thinks Netflix stuff doesn&#8217;t stink. Seems more like an Netflix employee than any actual analysis of the worthless algorithm that Netflix uses. Seriously why should a movie in animation be given as a result from a live action Seems very poor work to me.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-netflix-uses-analytics/?replytocom=1200865#respond' onclick='return addComment.moveForm( "comment-1200865", "1200865", "respond", "21570" )' aria-label='Reply to Chris'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-129126">
+    <div id="comment-129126" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Fraser</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-netflix-uses-analytics/#comment-129126" class="comment-date">Nov 11, 2013 at 11:50 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Very interesting article! Coupla things, tho:</p>
+<p>You mention briefly the people with *access* to Netflix who aren&#8217;t subscribers. Surely this is *most* people. My family has one subscription, but we all use the service. The kids&#8217; stuff is easy to filter out, but my wife&#8217;s and my preferences blend to a very odd amalgam. It must be tricky for the recommendation engine if it doesn&#8217;t know who is holding the remote.</p>
+<p>Time zones: Due to Netflix&#8217;s geolocation restrictions, I&#8217;m guessing there are a *lot* of subscribers claiming to be in the 90210 area, who aren&#8217;t necessarily using Pacific time&#8230;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-netflix-uses-analytics/?replytocom=129126#respond' onclick='return addComment.moveForm( "comment-129126", "129126", "respond", "21570" )' aria-label='Reply to Fraser'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-129392">
+    <div id="comment-129392" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Gregory Ng</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-netflix-uses-analytics/#comment-129392" class="comment-date">Nov 13, 2013 at 12:06 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Good points. I imagine that was the reason for adding the multiple user profiles on accounts. It allows them to get more specific on viewing behavior by household member.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-netflix-uses-analytics/?replytocom=129392#respond' onclick='return addComment.moveForm( "comment-129392", "129392", "respond", "21570" )' aria-label='Reply to Gregory Ng'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-146656">
+    <div id="comment-146656" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ewa</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-netflix-uses-analytics/#comment-146656" class="comment-date">Jan 05, 2014 at 8:57 am</a>      </div><!-- /.comment-meta -->
+
+      <p>very nice article, thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-netflix-uses-analytics/?replytocom=146656#respond' onclick='return addComment.moveForm( "comment-146656", "146656", "respond", "21570" )' aria-label='Reply to Ewa'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-158129">
+    <div id="comment-158129" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Linh Le</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-netflix-uses-analytics/#comment-158129" class="comment-date">Jan 29, 2014 at 7:52 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great Article! Could you give a list of references you used in this article?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-netflix-uses-analytics/?replytocom=158129#respond' onclick='return addComment.moveForm( "comment-158129", "158129", "respond", "21570" )' aria-label='Reply to Linh Le'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-158171">
+    <div id="comment-158171" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/how-netflix-uses-analytics/#comment-158171" class="comment-date">Jan 29, 2014 at 11:00 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>All my references are the hyperlinks within the post.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-netflix-uses-analytics/?replytocom=158171#respond' onclick='return addComment.moveForm( "comment-158171", "158171", "respond", "21570" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1159719">
+    <div id="comment-1159719" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">martha</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-netflix-uses-analytics/#comment-1159719" class="comment-date">Sep 22, 2015 at 4:57 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article. One suggestion- When you list the events that Netflix tracks, I think you meant to say 4 million ratings per day, not 4 billion (other articles on the topic are saying 4 million).</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-netflix-uses-analytics/?replytocom=1159719#respond' onclick='return addComment.moveForm( "comment-1159719", "1159719", "respond", "21570" )' aria-label='Reply to martha'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-admin even depth-2" id="li-comment-1160008">
+    <div id="comment-1160008" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/how-netflix-uses-analytics/#comment-1160008" class="comment-date">Sep 23, 2015 at 11:23 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Fixed, thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-netflix-uses-analytics/?replytocom=1160008#respond' onclick='return addComment.moveForm( "comment-1160008", "1160008", "respond", "21570" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">28 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/how-netflix-uses-analytics/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='21570' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="3f804c5263" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="123"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'How Netflix Uses Analytics To Select Movies, Create Content, and Make Multimillion Dollar Decisions', 'Post URL':'https://blog.kissmetrics.com/how-netflix-uses-analytics/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/marketing-panels-sxsw-2014/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/social-media-utm-parameters/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/how-netflix-uses-analytics/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/how-netflix-uses-analytics/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/how-netflix-uses-analytics/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="How Netflix Uses Analytics To Select Movies, Create Content, and Make Multimillion Dollar Decisions" data-url="http://blog.kissmetrics.com/how-netflix-uses-analytics/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'How Netflix Uses Analytics To Select Movies, Create Content, and Make Multimillion Dollar Decisions', 'Post URL':'https://blog.kissmetrics.com/how-netflix-uses-analytics/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'How Netflix Uses Analytics To Select Movies, Create Content, and Make Multimillion Dollar Decisions', 'Post URL':'https://blog.kissmetrics.com/how-netflix-uses-analytics/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'How Netflix Uses Analytics To Select Movies, Create Content, and Make Multimillion Dollar Decisions', 'Post URL':'https://blog.kissmetrics.com/how-netflix-uses-analytics/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":420,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>Learn More About Your Traffic: How to use UTM parameters in Google Analytics 5</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; How To Use UTM Parameters In Google Analytics 5 Comments Feed" href="https://blog.kissmetrics.com/how-to-use-utm-parameters/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Lower Your Cost Per Lead! The 3 Pronged Attack To Inbound Marketing' href='https://blog.kissmetrics.com/inbound-marketing/' />
+<link rel='next' title='Learn How To Increase Your Conversions From These 5 Consumer Psychology Studies' href='https://blog.kissmetrics.com/psychology-into-conversions/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/how-to-use-utm-parameters/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=8626' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-to-use-utm-parameters%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-to-use-utm-parameters%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,346] -->
+<meta name="description" content="What Are UTM Parameters: UTM parameters are simply tags that you add to a URL. When someone clicks on a URL with UTM parameters, those tags are sent back to your Google Analytics for tracking. Click here to learn more." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/118321989430962111396/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='Learn More About Your Traffic: How to use UTM parameters in Google Analytics 5' />
+<meta property='og:url' content='https://blog.kissmetrics.com/how-to-use-utm-parameters/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='What Are UTM Parameters: UTM parameters are simply tags that you add to a URL. When someone clicks on a URL with UTM parameters, those tags are sent back to your Google Analytics for tracking. Click here to learn more.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Learn More About Your Traffic: How to use UTM parameters in Google Analytics 5" />
+    <meta name="twitter:description" content="What Are UTM Parameters: UTM parameters are simply tags that you add to a URL. When someone clicks on a URL with UTM parameters, those tags are sent back to your Google Analytics for tracking. Click here to learn more." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-8626 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'How To Use UTM Parameters In Google Analytics 5',
+						'Post Category': 'Analytics',
+						'Post URL': 'https://blog.kissmetrics.com/how-to-use-utm-parameters/'
+		}
+	]);
+</script>
+
+<article id="post-8626" class="single-post post-8626 post type-post status-publish format-standard has-post-thumbnail hentry category-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">How To Use UTM Parameters In Google Analytics 5</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>In our recent post about finding out <a href="https://blog.kissmetrics.com/drive-the-best-traffic/">what online marketing strategy drives the best traffic to your website</a>, you learned how to use Advanced Segments to see your traffic from social media, local search, and other methods of marketing.  While this is a great guide to seeing your overall results, it may not answer all of your questions.</p>
+<p>You might, instead, want to dig deeper into your Analytics to see more details.  For example, you might not want to just see your incoming traffic from Twitter, but whether that traffic is the result of a particular tweet.  Or you might not want to see the influx of traffic from a newsletter blast, but whether that traffic is the result of a particular banner or link in the email itself.  If you want to get down to specifics, you need to start using UTM parameters for custom campaigns in Google Analytics 5.</p>
+<h2>What Are UTM Parameters</h2>
+<p>UTM parameters are simply tags that you add to a URL.  When someone clicks on a URL with UTM parameters, those tags are sent back to your Google Analytics for tracking.  For example, I do extensive tracking on any links for my eBook using a campaign <em>bpp</em>.  One URL I use on a 320px wide banner ad on my sidebar is as follows:</p>
+<p><em>http://kikolani.com/blog-post-promotion-ultimate-guide?utm_source=kikolani&#038;utm_medium=320banner&#038;utm_campaign=bpp</em></p>
+<p>When I go into Google Analytics, I can see the following about anyone who has clicked on that banner ad compared to other links I have for my eBook.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/google-analytics-5-campaign-source-view.png" /></p>
+<p>I can go further by clicking on Goal Set 1 under Explorer to see how this banner converts into sales compared to other links to my eBook using a goal I have set up for my eBook sales.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/google-analytics-5-campaign-source-view-goal-details.png" /></p>
+<p>As you can see, you can customize your UTM parameters to tell you almost anything you want to know about the details of how people are getting to the most important parts of your website. This can give you an even better idea of what really works in terms of your online marketing.</p>
+<h2>How to Create UTM Parameters for Your URL&#8217;s</h2>
+<p>The simplest way to create UTM parameters for your links is by using the <a href="http://www.google.com/support/analytics/bin/answer.py?answer=55578" target="_blank">Google Analytics URL Builder</a>. Using the above example, you would enter the following and click on the Generate URL button to get your link.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/google-analytics-url-builder-tool.png" /></p>
+<p>This page also has some helpful hints on how you can use each of the different UTM parameters.</p>
+<ul>
+<li><b>Campaign Source</b> (utm_source) &#8211; Required parameter to identify the source of your traffic such as: search engine, newsletter, or other referral.</li>
+<li><b>Campaign Medium</b> (utm_medium) &#8211; Required parameter to identify the medium the link was used upon such as: email, CPC, or other method of sharing.</li>
+<li><b>Campaign Term</b> (utm_term) &#8211; Optional parameter suggested for paid search to identify keywords for your ad.  You can skip this for Google AdWords if you have connected your AdWords and Analytics accounts and use the <a href="http://www.google.com/support/analytics/bin/answer.py?answer=55596" target="_blank">auto-tagging feature</a> instead.</li>
+<li><b>Campaign Content</b> (utm_content) &#8211; Optional parameter for additional details for A/B testing and content-targeted ads.</li>
+<li><b>Campaign Name</b> (utm_campaign) &#8211; Required parameter to identify a specific product promotion or strategic campaign such as a spring sale or other promotion.</li>
+</ul>
+<p>You can learn more about <a href="http://www.google.com/support/analytics/bin/answer.py?answer=55518" target="_Blank">how to tag your links</a> in Google Analytics Help.  It also has a handy chart view with an example of one campaign with different sources &#038; mediums.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/utm-parameter-usage-examples.png" /></p>
+<p>Note that UTM parameters are case sensitive, which means if you use <em>abc</em> for your utm_campaign tags on some links and <em>ABC</em> for your utm_campaign tags on other links, they will show up as separate campaigns in your Google Analytics.  Also note that UTM parameters will be shown in the browser&#8217;s address bar, so be sure you&#8217;re not using any tags that you would want to remain unseen.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/utm-parameters-in-browser-address-bar.png" /></p>
+<h2>How to View Custom Campaigns in Google Analytics 5</h2>
+<p>How you use your UTM parameters boils down to how you want to see your information displayed in Google Analytics.  To view your campaigns in Google Analytics 5, you will go to your website profile and click on Traffic Sources > Sources > Campaigns.  Here you will see an overview of your various campaigns as tagged using the utm_campaign UTM parameter on your links.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/google-analytics-5-campaigns-overview.png" /></p>
+<p>As shown earlier, you can click on each campaign name to see additional details as tagged using the utm_source / utm_medium UTM parameters on your links.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/google-analytics-5-campaign-source-medium-details.png" /></p>
+<p>You can use the links under Explorer when viewing your campaigns or campaign details to switch between Site Usage data&#8230;</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/google-analytics-5-campaign-site-usage-data.png"  /></p>
+<p>And Goal Set data&#8230;</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/google-analytics-5-campaign-goal-set-data.png" /></p>
+<p>You can also select Ecommerce and AdSense if you have your website profile set up to measure these details.  Visit these links to learn more about <a href="http://code.google.com/apis/analytics/docs/tracking/gaTrackingEcommerce.html" target="_Blank">Ecommerce tracking</a> and <a href="https://adsense.google.com/support/bin/answer.py?answer=92625">AdSense tracking</a> for your website.</p>
+<h2>10 Examples of Useful UTM Parameters</h2>
+<p>Now that you know how UTM parameters work in terms of showing you specific data under your campaigns in Google Analytics, let&#8217;s look at some specific ways you could use UTM parameters to learn more about your traffic and how it will affect the way you share your links.</p>
+<h3>Links on Your Website</h3>
+<p>Let&#8217;s say that you are promoting a specific product on different areas on your website.  In my case, I promote my eBook through different sized banners and text links within my footer, in my author bio, and so forth.  You can now track which link a visitor clicked by using the following breakdown.</p>
+<p><em>http://yourdomain.com/yourproduct.html?utm_source=yoursite&#038;utm_medium=postfooter&#038;utm_campaign=product</em></p>
+<p>In this case, when you click on the details for your <em>product</em> campaign, you would see that one of your traffic sources is <em>yoursite</em> and the medium is a <em>postfooter</em> link.  You can modify the utm_medium to include banner ads (bannerad), menu bar links (menulink), author bio (authorbio), sidebar link (sidebarlink), or any other area that you want to track specifically.</p>
+<p><em><strong>UPDATE:</strong> Thanks to Justin Cutroni who, in the comments, let us know that this no longer works due to changes made to Google Analytics in August 2011. While it does track the campaigns as shown, it will count it as a new visit.  To learn more about this change to Google Analytics, you can visit this post by Search Engine Land on <a href="http://searchengineland.com/update-made-to-definition-of-a-google-analytics-session-89300" target="_blank">Google Analytics session updates</a>.  To learn better ways to track internal campaigns, refer to this post by Justin on <a href="http://cutroni.com/blog/2010/03/30/tracking-internal-campaigns-with-google-analytics/" target="_blank">tracking internal campaigns with Google Analytics</a>.</em></p>
+<h3>Profile vs. Status Updates</h3>
+<p>Seeing social media sites such as Twitter, Facebook, Google+, and so forth in your referral sources can encompass a wide variety of things.  One thing you might want to distinguish is when a person has come to your site from a social media site via the link on your profile versus from links in status updates.  Since your profile link is likely to be your website or blog&#8217;s homepage, you could do the following.</p>
+<p><em>http://yourdomain.com/?utm_source=twitter&#038;utm_medium=profile&#038;utm_campaign=website</em></p>
+<p>While this would give you details about how effective your Twitter profile link really is, one thing to note is that if you do this, your links will look like this on your profiles.  Note how it is displayed on sites that display your full URL (Twitter &#038; Facebook) vs. sites where you can have anchor text (Google+ &#038; LinkedIn).</p>
+<p><strong>On Twitter</strong></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/twitter-profile-link-using-utm-parameters.png" /></p>
+<p><strong>On Facebook</strong></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/facebook-profile-link-using-utm-parameters.png" /></p>
+<p><strong>On Google+</strong></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/google+-profile-link-using-utm-parameters.png" /></p>
+<p><strong>On LinkedIn</strong></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/linkedin-profile-link-using-utm-parameters.png" /></p>
+<h3>Posts from Different Accounts</h3>
+<p>Another interesting issue you might find when it comes to social media traffic is how powerful each of your profiles are when it comes to generating traffic to your website.  Some businesses might have one main company account plus employees who have their own accounts that share the same links in their updates, or maybe you simply have more than one account on various networks.  Sure you can track this using Bit.ly or other shortening service analytics, but the goal here is to collect all of that data into Google Analytics so you can see it in one place and have it associated with your goal data.</p>
+<p>To see the difference in how different accounts perform, you could do the following.</p>
+<p><em>http://yourdomain.com/page/?utm_source=twitter&#038;utm_medium=username&#038;utm_campaign=blog</em></p>
+<p>UTM parameters are usually cut off when displayed in a tweet on Twitter and do not seem to affect the way thumbnails and other details from a specific link will come up on or appear in  Google+, LinkedIn, or Facebook updates.  </p>
+<p><strong>On Twitter</strong></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/twitter-status-update-with-utm-parameters.png" /></p>
+<p><strong>On Facebook</strong></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/facebook-status-update-with-utm-parameters.png" /></p>
+<p><strong>On Google+</strong></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/google+-status-update-with-utm-parameters.png" /></p>
+<p><strong>On LinkedIn</strong></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/linkedin-status-update-with-utm-parameters.png" /></p>
+<h3>Email Signatures</h3>
+<p>When it comes to email traffic, about all you can measure is whether visitors have come from online email providers such as Yahoo, Hotmail, and similar services.  What you don&#8217;t know is why they came to your website from an email.  If you incorporate an email signature into your messages, you can use UTM parameters for your links to designate email signatures in Google Analytics.</p>
+<p><em>http://yourdomain.com/?utm_source=email&#038;utm_medium=signature&#038;utm_campaign=website</em></p>
+<p>One easy way to create great email signatures is by using the free version of <a href="http://www.wisestamp.com/" target="_blank">WiseStamp</a>.  You can install it as an extension on your browser (Chrome, Firefox, and Safari) and it will embed signatures into emails from Gmail, Yahoo, AOL, and Hotmail.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/wisestamp-email-signature-with-utm-parameters.png" /></p>
+<p>Keep in mind that, if you use anchor text in your email signature that the URL may still be stripped out for users who have HTML emails disabled or blocked for security purposes. The most guaranteed way to get a link through is by entering it as http://yourdomain.com/, and using UTM parameters with a URL like that will make it lengthy in the body of an email.  Conversion specialists would point out that a long URL with UTM parameters would have less click-through rate compared to the shorter http://yourdomain.com/.</p>
+<h3>Different Types of Banner Advertisements</h3>
+<p>If you do a lot of banner advertising, you will obviously be interested in their performance so you know which sites to renew advertising upon.  But do you want to know, as a whole, which banners perform the best?  To find out, use the following parameter in your ads. </p>
+<p><em>http://yourdomain.com/?utm_source=bannerad&#038;utm_medium=300banner&#038;utm_campaign=website</em></p>
+<p>Just replace the <em>300banner</em> with the specifics of your banner.  You can designate tags for banner size, banner colors, or banner type depending on how you advertise.  Then you can see which banner types have the best results.  </p>
+<h3>Newsletters</h3>
+<p>Another particular type of email tracking you will want to do is clicks from newsletter links.  Similarly to how you might have different types of links (text vs. image) on a website, you might have a link to your latest promotion in your newsletter displayed in a variety of ways.  Place the following parameters in links from your newsletter.  </p>
+<p><em>http://yourdomain.com/page/?utm_source=newsletterdate&#038;utm_medium=productimage&#038;utm_campaign=product</em></p>
+<p>Try different UTM parameters to find out whether links using product images, sales graphics, or text get the most clicks on your newsletter.  This can be useful in helping implement a better design for newsletter conversions.</p>
+<h3>Online Documents</h3>
+<p>One way websites generate a lot of traffic is through giving away freebies such as PDF reports.  If you host these freebies on your website (or if someone else hosts it on theirs for online access), you can use UTM parameters to tell Google Analytics which reports are sending traffic back to your website.  </p>
+<p><em>http://yourdomain.com/?utm_source=freereport&#038;utm_medium=reporttitle&#038;utm_campaign=website</em></p>
+<p>This will give you an idea which topics are best for your free reports or other content which could help lead visitors back to your products or services.</p>
+<h3>RSS Feeds</h3>
+<p>Want to see details about your RSS feed subscriber clicks in Google Analytics?  Be sure to set up your RSS feed with Feedburner &#8211; it&#8217;s fast, free, and you can learn how by using these <a href="http://www.google.com/support/feedburner/bin/topic.py?topic=13055" target="_Blank">quickstart guides</a> for Blogger, WordPress, TypePad, Myspace, and Podcasting.  Be sure to share your new Feedburner URL on your website so people can subscribe via <a href="http://www.google.com/support/feedburner/bin/answer.py?answer=78982" target="_blank">email</a> and RSS to your latest posts.  </p>
+<p>To configure your Feedburner feed with Google Analytics, go to the Analyze tab and, under Services, click on Configure Stats.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/feedburner-configure-stats.png" /></p>
+<p>Check the boxes for Item link clicks &#038; Track clicks as a traffic source in Google Analytics, then click on the Customize link.  </p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/google-analytics-tracking-feedburner-configuration.png" /></p>
+<p>Feedburner has already configured the UTM parameters for you, but you can customize them if you wish to see different tags in your analytics.</p>
+<h3>Social Advertisements</h3>
+<p>If you do advertising on social networks like Facebook or LinkedIn, you may want to use UTM parameters to separate your ad traffic from those social networks.</p>
+<p><em>http://yourdomain.com/page/?utm_source=facebook&#038;utm_medium=springad&#038;utm_campaign=product</em></p>
+<p>Simply enter UTM parameters as a part of your URL during the ad creation.  It will not affect how your link is displayed on either network as both mask the links for internal tracking purposes.</p>
+<p><strong>Advertisement Creation on Facebook</strong></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/facebook-ad-using-utm-parameters.png" /></p>
+<p><strong>Advertisement Creation on LinkedIn</strong></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/12/linkedin-ad-using-utm-parameters.png" /></p>
+<div class="footer-dynamic-cta">
+<div class="cta-wrapper" style="background-color:#f0e8db;border-radius:4px;margin-top:-17px;">
+<div class="left-column" style="margin-bottom:-30px;">
+					<img src="https://kissmetrics-assets.s3.amazonaws.com/images/blog/aim_goal_business_arrow.svg" width="75%" style="border:none;">
+				</div>
+<div class="right-column" style="color:#555;margin-bottom:-30px;">
+<p><b>Run More Effective Marketing Campaigns!</b> <a href="https://blog.kissmetrics.com/track-marketing-campaigns/" target="_blank">Track your marketing campaigns</a> more effectively with Kissmetrics. Run a Kissmetrics report and segment your data by any UTM parameter. See which campaigns drive the most conversions, give you the most valuable customers, and where your marketing dollars are best spent. Our revolutionary software suite is used by top online marketers throughout the world. <a href="https://www.kissmetrics.com/signup?utm_source=blog&#038;utm_medium=tie_in&#038;utm_campaign=utmparameterstiein">Sign up for Kissmetrics today!</a></p>
+</p></div>
+<p>				<br class="clear" />
+			</div>
+</p></div>
+<h3>Featured vs. Regular Listings</h3>
+<p>This one applies to those who submit their sites to directories and want value beyond just link building for rankings.  If you&#8217;ve submitted your website to directories before, you know that there are various options, such as regular listings, featured listings, deep links, and so forth.  You can use your traffic referral sources (and Advanced Segments) to see traffic from particular directories, but if you want to know what kind of listings, as a whole, lead to the most traffic, then utilize UTM parameters.</p>
+<p><em>http://yourdomain.com/?utm_source=directory&#038;utm_medium=featuredlisting&#038;utm_campaign=website</em></p>
+<p>This will help you learn ultimately if you are getting better results with a particular type of listing, or if you are just spending too much for too little traffic as featured listings usually cost twice as much as regular listings.  </p>
+<p><em>As you can see, there are many, many ways to apply UTM parameters to measure specific traffic in Google Analytics.  Now it is your turn.  Do you use UTM parameters and how do you use them?</em></p>
+<p><strong>About the Author:</strong> Kristi Hines is a freelance writer, blogger, and social media enthusiast. Her blog Kikolani focuses on <a href="http://kikolani.com/" rel="nofollow">blog marketing</a>, including social networking strategies and blogging tips.</em></p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-to-use-utm-parameters%2F&source=tweetbutton&text=How+To+Use+UTM+Parameters+In+Google+Analytics+5&url=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-to-use-utm-parameters%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fhow-to-use-utm-parameters%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=How To Use UTM Parameters In Google Analytics 5&amp;body=https://blog.kissmetrics.com/how-to-use-utm-parameters/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-8626 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-13020">
+    <div id="comment-13020" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jesper</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13020" class="comment-date">Dec 06, 2011 at 4:30 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>The very long url might put some users off as it screams that &#8220;this link&#8221; is a campaign and might signal that the content is commercial &#8211; why would you otherwise track it so thoroughly? :)</p>
+<p>Small tip to use when people can see the actual url you&#8217;re using (some of the examples above shows the complete url including parameters etc.) is to use an URL shortener as bit.ly or goo.gl </p>
+<p>Cheers<br />
+J</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13020#respond' onclick='return addComment.moveForm( "comment-13020", "13020", "respond", "8626" )' aria-label='Reply to Jesper'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-35093">
+    <div id="comment-35093" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Leslie</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-35093" class="comment-date">Aug 31, 2012 at 12:23 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Do those link shorteners negatively affect the sources traffic in Google Analytics at all?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=35093#respond' onclick='return addComment.moveForm( "comment-35093", "35093", "respond", "8626" )' aria-label='Reply to Leslie'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-13022">
+    <div id="comment-13022" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Aman</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13022" class="comment-date">Dec 06, 2011 at 7:04 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Heres a handy tool for Chrome<br />
+chrome.google.com/webstore/detail/gaidpiakchgkapdgbnoglpnbccdepnpk?hc=search&amp;hcp=main</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13022#respond' onclick='return addComment.moveForm( "comment-13022", "13022", "respond", "8626" )' aria-label='Reply to Aman'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-13040">
+    <div id="comment-13040" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dimitri</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13040" class="comment-date">Dec 07, 2011 at 12:13 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Nice Post,<br />
+but i think it&#8217;s not correct to tag all your internal links with utm&#8217;s because you&#8217;re going to overwrite original referrer!!! So please be care if you&#8217;re going to tag internal links&#8230;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13040#respond' onclick='return addComment.moveForm( "comment-13040", "13040", "respond", "8626" )' aria-label='Reply to Dimitri'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-13056">
+    <div id="comment-13056" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ehren</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13056" class="comment-date">Dec 07, 2011 at 5:50 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;d agree with Dimitri here.  Tagging internal links with UTM is not the right approach to campaign tracking despite the fact that v5 has multi-channel.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13056#respond' onclick='return addComment.moveForm( "comment-13056", "13056", "respond", "8626" )' aria-label='Reply to Ehren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-13042">
+    <div id="comment-13042" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Azzam Sheikh</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13042" class="comment-date">Dec 07, 2011 at 12:59 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Have skimmed over the content somewhat but do get a better idea of how to track campaigns.  Can a tool like bit.ly be used in some of the campaigns?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13042#respond' onclick='return addComment.moveForm( "comment-13042", "13042", "respond", "8626" )' aria-label='Reply to Azzam Sheikh'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-13049">
+    <div id="comment-13049" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13049" class="comment-date">Dec 07, 2011 at 4:31 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Very indepth &amp; detailed post Kristi. Thanks for that.</p>
+<p>I also sometimes feel that the URL is very ugly which back out the user but I think there is no option to it. UTM parameter are very useful if you are sending newsletter. For tracking images on site &amp; pdfs &#8211; event tracking is very fruitful for that which provides your with each &amp; every data.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13049#respond' onclick='return addComment.moveForm( "comment-13049", "13049", "respond", "8626" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-13053">
+    <div id="comment-13053" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Alen</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13053" class="comment-date">Dec 07, 2011 at 5:14 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I will also add a pretty known (around here :) tool named utm.to that allwos you to preview your links in Google Analytics and also shorten them.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13053#respond' onclick='return addComment.moveForm( "comment-13053", "13053", "respond", "8626" )' aria-label='Reply to Alen'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-13055">
+    <div id="comment-13055" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Justin Cutroni</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13055" class="comment-date">Dec 07, 2011 at 5:49 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Kristi,</p>
+<p>There is one major error in your post. You should NEVER use utm parameters to track links on your website, We call these internal campaign. because when Google Analytics detect the utm parameters in a URL it starts a new visit. </p>
+<p>Let&#8217;s say I land on your website after clicking on a link in an email. Google will create a visit and attribute it to the email.</p>
+<p>Now, let&#8217;s say you have tagged a banner on your homepage promoting an ebook. I click on that link. Google Analytics will start ANOTHER visit and attribute it to your internal campaign. But in reality you&#8217;re inflating your visit count and messing up a lot of other metrics.</p>
+<p>This change was made a few months ago to accommodate multi-channel funnels.</p>
+<p>If you want to track internal campaigns you should use <a href="http://cutroni.com/blog/2010/03/30/tracking-internal-campaigns-with-google-analytics/" rel="nofollow">one of these methods</a>.</p>
+<p>Justin</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13055#respond' onclick='return addComment.moveForm( "comment-13055", "13055", "respond", "8626" )' aria-label='Reply to Justin Cutroni'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-13058">
+    <div id="comment-13058" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">hyderali</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13058" class="comment-date">Dec 07, 2011 at 6:23 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks a lot, Sir.</p>
+<p>It was really helpful. How about Event tracking? It also helps to track our banners on site &amp; other things.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13058#respond' onclick='return addComment.moveForm( "comment-13058", "13058", "respond", "8626" )' aria-label='Reply to hyderali'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-3" id="li-comment-13073">
+    <div id="comment-13073" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Justin Cutroni</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13073" class="comment-date">Dec 07, 2011 at 10:39 am</a>      </div><!-- /.comment-meta -->
+
+      <p>@hyderali: Event tracking is a good mechanism as is repurposing the Site Search feature.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13073#respond' onclick='return addComment.moveForm( "comment-13073", "13073", "respond", "8626" )' aria-label='Reply to Justin Cutroni'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt depth-2" id="li-comment-13592">
+    <div id="comment-13592" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Liviu Taloi</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13592" class="comment-date">Dec 13, 2011 at 11:55 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I also prefer the method &#8220;simulating a search&#8221; described by Justin on hist site. It&#8217;s far more better for internal campaigns then using URL builder.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13592#respond' onclick='return addComment.moveForm( "comment-13592", "13592", "respond", "8626" )' aria-label='Reply to Liviu Taloi'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even depth-2" id="li-comment-14291">
+    <div id="comment-14291" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/kikolani' rel='external nofollow' class='url'>Kristi Hines</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-14291" class="comment-date">Dec 20, 2011 at 8:41 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for the heads up Justin &#8211; I just found the article about when this change happened in August.  Will update this post with yours!  :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=14291#respond' onclick='return addComment.moveForm( "comment-14291", "14291", "respond", "8626" )' aria-label='Reply to Kristi Hines'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt depth-2" id="li-comment-27836">
+    <div id="comment-27836" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">nurs</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-27836" class="comment-date">May 14, 2012 at 11:32 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Justin,</p>
+<p>It&#8217;s really helpful and more justified information provided in a simplest term.. </p>
+<p>Thanks..<br />
+Nurs</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=27836#respond' onclick='return addComment.moveForm( "comment-27836", "27836", "respond", "8626" )' aria-label='Reply to nurs'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-13057">
+    <div id="comment-13057" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Juergen</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13057" class="comment-date">Dec 07, 2011 at 6:18 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Kristi,<br />
+excellent post with a lot to learn!<br />
+If anyone is interested in using utm parameters with shortening: Here I found a very good implementation within firefox: savio.no/blogg/a/82/google-analytics-campaign-url-builder-with-short-url-and-twitter-posting/</p>
+<p>Greetings,<br />
+ Juergen</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13057#respond' onclick='return addComment.moveForm( "comment-13057", "13057", "respond", "8626" )' aria-label='Reply to Juergen'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment byuser comment-author-seanwork odd alt thread-even depth-1" id="li-comment-13112">
+    <div id="comment-13112" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sean Work</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13112" class="comment-date">Dec 07, 2011 at 9:07 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I wanted to mention that if you are going to use a lot of UTM tracking URLs on your website or blog, be sure you have the canonical tag in the head of your site. UTM tracking URLs will create duplicate content.</p>
+<p><a href="http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html" rel="nofollow">http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html</a></p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13112#respond' onclick='return addComment.moveForm( "comment-13112", "13112", "respond", "8626" )' aria-label='Reply to Sean Work'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-13136">
+    <div id="comment-13136" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Christian</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-13136" class="comment-date">Dec 08, 2011 at 5:04 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I use these parameters on my blog for post promotion in social networks. I use a &#8220;blogpostpromotion&#8221; campaign with a &#8220;socialmedia&#8221; medium and &#8220;twitter&#8221;, &#8220;facebook&#8221;, &#8220;plus&#8221; and so on as source depending on where I post the link. It works like a charm.<br />
+I blogged about it here: testically.org/2011/09/21/have-url-shorteners-like-bit-ly-become-obsolete-by-now-easier-segmentation-with-google-analytics/</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=13136#respond' onclick='return addComment.moveForm( "comment-13136", "13136", "respond", "8626" )' aria-label='Reply to Christian'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-17162">
+    <div id="comment-17162" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kyle suss</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-17162" class="comment-date">Dec 30, 2011 at 11:03 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Yeah, why no mention of link shorteners like bit.ly? Much cleaner.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=17162#respond' onclick='return addComment.moveForm( "comment-17162", "17162", "respond", "8626" )' aria-label='Reply to Kyle suss'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-18309">
+    <div id="comment-18309" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Tommy Swanson</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-18309" class="comment-date">Jan 03, 2012 at 8:48 am</a>      </div><!-- /.comment-meta -->
+
+      <p>UTM tracking in Twitter profiles and Facebook pages is a bit much. Sure, it gives you better attribution, but to an average user, that URL string looks pretty scary. While I don&#8217;t have any evidence to back it up, I&#8217;d argue that it probably hurts CTR on the actual link.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=18309#respond' onclick='return addComment.moveForm( "comment-18309", "18309", "respond", "8626" )' aria-label='Reply to Tommy Swanson'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-75509">
+    <div id="comment-75509" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Bryan</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-75509" class="comment-date">Oct 15, 2012 at 1:31 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Just wanted to chime in and say I agree with this. I&#8217;ve noticed that the difference between giving straight links and, for example, bit.ly or something (not on social media sites, but in profiles and such) also has a major impact on clicks (with shorteners getting less due to not being transparent &#8212; people don&#8217;t know what the links are going to).</p>
+<p>I haven&#8217;t done in-depth testing on this yet, but that&#8217;s pretty much what has happened in the past for me.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=75509#respond' onclick='return addComment.moveForm( "comment-75509", "75509", "respond", "8626" )' aria-label='Reply to Bryan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-26729">
+    <div id="comment-26729" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">ketan raval</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-26729" class="comment-date">Apr 25, 2012 at 7:16 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Awesome post.. can you please let me know one thing when I click on statuses<br />
+?utm_source=[USERNAME1]&amp;utm_medium=twitter   ?utm_source=[USERNAME2]&amp;utm_medium=twitter  how it changes.. can u let me know?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=26729#respond' onclick='return addComment.moveForm( "comment-26729", "26729", "respond", "8626" )' aria-label='Reply to ketan raval'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-26756">
+    <div id="comment-26756" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guido</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-26756" class="comment-date">Apr 26, 2012 at 12:57 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Kristi, </p>
+<p>How are you?<br />
+Thanks for your post, it is really helpful. </p>
+<p>I am launching a massive email campaign next week and I will definetly use the UTM tagging. There is only one more thing I need to know. I need to track sales from this email campaign. How can I set up Analytics to tell me the sales coming from this email campaign? </p>
+<p>Regards, </p>
+<p>Guido.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=26756#respond' onclick='return addComment.moveForm( "comment-26756", "26756", "respond", "8626" )' aria-label='Reply to Guido'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-28348">
+    <div id="comment-28348" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Lorna</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-28348" class="comment-date">May 22, 2012 at 10:45 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Again, Kristi, you provide the most in depth answer to yet another marketing question I&#8217;ve been scouring the web to answer!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=28348#respond' onclick='return addComment.moveForm( "comment-28348", "28348", "respond", "8626" )' aria-label='Reply to Lorna'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-29931">
+    <div id="comment-29931" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sushant Arora</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-29931" class="comment-date">Jun 07, 2012 at 4:23 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi , this is a good info, cleared many of my doubts</p>
+<p>Just have few queries if you can help me with the answers:-</p>
+<p>1. how do i track utm_term and utm_content in Google analytics<br />
+2. is there any standard of utm tracking url , only through which above utms will be traceable??</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=29931#respond' onclick='return addComment.moveForm( "comment-29931", "29931", "respond", "8626" )' aria-label='Reply to Sushant Arora'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-30966">
+    <div id="comment-30966" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Brittany D</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-30966" class="comment-date">Jun 20, 2012 at 12:38 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Kristi, </p>
+<p>I read another post you wrote about bit.ly and tracking your promotions&#8211; I&#8217;m confused on how the google analytics campaigns and bitly integrate? Would I create a URL with UTM parameters and then insert that into bitly or does that mess up the tracking? </p>
+<p>Thank you!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=30966#respond' onclick='return addComment.moveForm( "comment-30966", "30966", "respond", "8626" )' aria-label='Reply to Brittany D'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-31383">
+    <div id="comment-31383" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">David</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-31383" class="comment-date">Jun 25, 2012 at 11:10 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Kristi,<br />
+Question about tracking display: If I want to track utm_medium as &#8216;display&#8217; can I use utm_source to track the site on which the ad is displayed, if I am using an ad server or exchange, spreading my banner ads across hundreds of websites? Is there anyway I can have utm_ source pick up the domain name automatically?<br />
+Cheers</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=31383#respond' onclick='return addComment.moveForm( "comment-31383", "31383", "respond", "8626" )' aria-label='Reply to David'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-34178">
+    <div id="comment-34178" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jake</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-34178" class="comment-date">Aug 16, 2012 at 12:32 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Minor typo up top, above the table of example UTM parameters&#8230;. The boldfaced bullet &#8220;Campaign Term&#8221; has an incorrect UTM param listed in parentheses right after it.</p>
+<p>Great write-up, BTW.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=34178#respond' onclick='return addComment.moveForm( "comment-34178", "34178", "respond", "8626" )' aria-label='Reply to Jake'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-52734">
+    <div id="comment-52734" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Richard</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-52734" class="comment-date">Oct 03, 2012 at 7:52 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Kristi,</p>
+<p>I have just begun using UTM parameters for email campaigns and this article provides a great source for how to digest them in Google analytics and use UTM parameters in other scenarios.</p>
+<p>Many thx.  Will definitely share this!</p>
+<p>Richard</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=52734#respond' onclick='return addComment.moveForm( "comment-52734", "52734", "respond", "8626" )' aria-label='Reply to Richard'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-83785">
+    <div id="comment-83785" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sean Pileski</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-83785" class="comment-date">Oct 26, 2012 at 7:25 am</a>      </div><!-- /.comment-meta -->
+
+      <p>You&#8217;ve got a typo/error under the parameter for Campaign Term:<br />
+Campaign Source (utm_source) &#8230;<br />
+Campaign Term (utm_source) &#8211; should be utm_term</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=83785#respond' onclick='return addComment.moveForm( "comment-83785", "83785", "respond", "8626" )' aria-label='Reply to Sean Pileski'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-89877">
+    <div id="comment-89877" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Scott</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-89877" class="comment-date">Jan 10, 2013 at 3:27 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Kristi,</p>
+<p>Thanks for the info. We have been using Google Analytics for some time now, and have used Google Website Optimizer for all A/B testing effort until Google killed GWO last year. Since, we have been using Optimizely for A/B testing, and also starting to use utm paramters in the URLs. Great article!  I will certainly read some of your other articles when I get a chance.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=89877#respond' onclick='return addComment.moveForm( "comment-89877", "89877", "respond", "8626" )' aria-label='Reply to Scott'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-98272">
+    <div id="comment-98272" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-98272" class="comment-date">Mar 27, 2013 at 1:42 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Your post features confirmed beneficial to us. It’s quite informative and you&#8217;re naturally really knowledgeable in this area. You have opened up my eye to varying opinion of this kind of matter using interesting and sound content material.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=98272#respond' onclick='return addComment.moveForm( "comment-98272", "98272", "respond", "8626" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-102991">
+    <div id="comment-102991" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Emma</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-102991" class="comment-date">Apr 21, 2013 at 1:52 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Search engine optimisation is a weird industry, because the work is technical it is best suited for workers who have learnt the industry and have practical experience,<br />
+this is not always the case with modern marketers though<br />
+Do you participate in any social sites</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=102991#respond' onclick='return addComment.moveForm( "comment-102991", "102991", "respond", "8626" )' aria-label='Reply to Emma'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-104506">
+    <div id="comment-104506" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Eddie Gear</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-104506" class="comment-date">May 02, 2013 at 4:36 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Is there a way you can tell where exactly the click came from? A sidebar ad, after post box ad, footer links and so on.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=104506#respond' onclick='return addComment.moveForm( "comment-104506", "104506", "respond", "8626" )' aria-label='Reply to Eddie Gear'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-104521">
+    <div id="comment-104521" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/kikolani' rel='external nofollow' class='url'>Kristi Hines</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-104521" class="comment-date">May 02, 2013 at 7:09 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Eddie! You have to specify in the UTM parameters where the clicks come from &#8211; most use the campaign Medium. :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=104521#respond' onclick='return addComment.moveForm( "comment-104521", "104521", "respond", "8626" )' aria-label='Reply to Kristi Hines'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-959956">
+    <div id="comment-959956" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Angel</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-959956" class="comment-date">Nov 15, 2014 at 5:18 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Is there any way to generate utm parameters for my website urls thas contains hashbangs?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=959956#respond' onclick='return addComment.moveForm( "comment-959956", "959956", "respond", "8626" )' aria-label='Reply to Angel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1073355">
+    <div id="comment-1073355" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Justin</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-1073355" class="comment-date">Mar 20, 2015 at 10:30 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;m really confused about UTMs. Where do I actually put the url with the utm code, and how do I make it so that google analytics can see it? </p>
+<p>I&#8217;m trying to track clicks from a CTA button on our facebook page. I want to use the utm code to track how many people click that button. How do I do this? We got a url generated from google, but now what? Sorry, but this is something new to me and I&#8217;m trying to learn how to use it.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=1073355#respond' onclick='return addComment.moveForm( "comment-1073355", "1073355", "respond", "8626" )' aria-label='Reply to Justin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1138774">
+    <div id="comment-1138774" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Rajesh Karunakaran</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-1138774" class="comment-date">Jul 20, 2015 at 3:18 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I am trying to implement campaign tracking through GA.  As read in various documents, I have given the URL with UTM parameter tags pointing to one of my website.  But I am not seeing any tracking info in GA.  For this to work, should I embed the GA track code in my website pages?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=1138774#respond' onclick='return addComment.moveForm( "comment-1138774", "1138774", "respond", "8626" )' aria-label='Reply to Rajesh Karunakaran'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1151396">
+    <div id="comment-1151396" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-1151396" class="comment-date">Aug 27, 2015 at 11:26 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great operate! That&#8217;s the variety of details to be contributed all over the internet.. show box app Pity on the search engines like yahoo without for a longer period placement this particular article second! Come on above and check out my website. Appreciate it Implies)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=1151396#respond' onclick='return addComment.moveForm( "comment-1151396", "1151396", "respond", "8626" )' aria-label='Reply to '>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1164633">
+    <div id="comment-1164633" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Luci Joil</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-1164633" class="comment-date">Oct 06, 2015 at 7:06 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Dear,</p>
+<p>I have some question. I have make my website UTM. But I have problem to add in my google Analytic. Please tel me how can I add my UTM in google Analytic. and also how can I track my UTM Trafic in google analytic.</p>
+<p>I am waiting for your quick response.</p>
+<p>Regard </p>
+<p>Luci</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=1164633#respond' onclick='return addComment.moveForm( "comment-1164633", "1164633", "respond", "8626" )' aria-label='Reply to Luci Joil'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1186279">
+    <div id="comment-1186279" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mike</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-1186279" class="comment-date">Dec 01, 2015 at 12:57 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I notice that in many of your campaign names you use &#8220;website.&#8221; Is that just for example purposes? This caught my attention specifically in your email signature example. What&#8217;s the strategy behind &#8220;website&#8221; as a campaign?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=1186279#respond' onclick='return addComment.moveForm( "comment-1186279", "1186279", "respond", "8626" )' aria-label='Reply to Mike'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-admin even depth-2" id="li-comment-1187604">
+    <div id="comment-1187604" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-1187604" class="comment-date">Dec 03, 2015 at 3:57 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Mike-<br />
+This is just for example purposes.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=1187604#respond' onclick='return addComment.moveForm( "comment-1187604", "1187604", "respond", "8626" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1258128">
+    <div id="comment-1258128" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kristin</cite>
+        
+        <a href="https://blog.kissmetrics.com/how-to-use-utm-parameters/#comment-1258128" class="comment-date">May 09, 2016 at 10:21 am</a>      </div><!-- /.comment-meta -->
+
+      <p>So, right now we just generate utm links then promote it?<br />
+and then links will be tracked in GA without any setup?</p>
+<p>Please correct my understanding..</p>
+<p>Thanks</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/how-to-use-utm-parameters/?replytocom=1258128#respond' onclick='return addComment.moveForm( "comment-1258128", "1258128", "respond", "8626" )' aria-label='Reply to Kristin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">105 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/how-to-use-utm-parameters/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='8626' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="dc4f92f71c" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="196"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'How To Use UTM Parameters In Google Analytics 5', 'Post URL':'https://blog.kissmetrics.com/how-to-use-utm-parameters/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/inbound-marketing/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/psychology-into-conversions/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/how-to-use-utm-parameters/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/how-to-use-utm-parameters/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/how-to-use-utm-parameters/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="How To Use UTM Parameters In Google Analytics 5" data-url="http://blog.kissmetrics.com/how-to-use-utm-parameters/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'How To Use UTM Parameters In Google Analytics 5', 'Post URL':'https://blog.kissmetrics.com/how-to-use-utm-parameters/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'How To Use UTM Parameters In Google Analytics 5', 'Post URL':'https://blog.kissmetrics.com/how-to-use-utm-parameters/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'How To Use UTM Parameters In Google Analytics 5', 'Post URL':'https://blog.kissmetrics.com/how-to-use-utm-parameters/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":808,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

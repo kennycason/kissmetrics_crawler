@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>What is the Difference Between Google Analytics and Kissmetrics?</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; What is the Difference Between Google Analytics and Kissmetrics? Comments Feed" href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='The One Metric Dashboard Helping SumoMe Reach 1 Billion Users' href='https://blog.kissmetrics.com/how-dashboards-can-help/' />
+<link rel='next' title='The Science Behind What People Love to Share on Social Media' href='https://blog.kissmetrics.com/share-on-social-media/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=24577' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-and-kissmetrics%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-and-kissmetrics%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,363] -->
+<meta name="description" content="There are a number of differences between the two services; for example, how they handle tracking, what use cases are best, and what you can and can’t do with each tool." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/117750912206547874889/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='What is the Difference Between Google Analytics and Kissmetrics?' />
+<meta property='og:url' content='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='There are a number of differences between the two services; for example, how they handle tracking, what use cases are best, and what you can and can’t do with each tool.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="What is the Difference Between Google Analytics and Kissmetrics?" />
+    <meta name="twitter:description" content="There are a number of differences between the two services; for example, how they handle tracking, what use cases are best, and what you can and can’t do with each tool." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-24577 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog ">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy active">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--academy">
+          <h1>Kissmetrics Academy</h1>
+          <h2>Learn how Kissmetrics can optimize your marketing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'What is the Difference Between Google Analytics and Kissmetrics?',
+						'Post Category': 'Academy',
+						'Post URL': 'https://blog.kissmetrics.com/google-analytics-and-kissmetrics/'
+		}
+	]);
+</script>
+
+<article id="post-24577" class="single-post post-24577 post type-post status-publish format-standard hentry category-academy category-the-basics-of-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">What is the Difference Between Google Analytics and Kissmetrics?</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>One of the most common questions we get from people is how Kissmetrics is different from Google Analytics. We understand the curiosity. Both services are in the analytics space, so it&#8217;s easy to think they&#8217;re the same tools.</p>
+<p>However, there are a number of differences between the two services; for example, how they handle tracking, what use cases are best, and what you can and can&#8217;t do with each tool. We&#8217;ll get into all that in this post.</p>
+<p>As a matter of clarification, we&#8217;ll be discussing the differences between Google’s Universal Analytics and Kissmetrics. Universal Analytics is the next version of Google Analytics and will soon be what every Google Analytics account uses by default.</p>
+<h2>How Google Analytics and Kissmetrics Track People</h2>
+<p>At its core, Kissmetrics analytics is focused on people. As you&#8217;ll soon see, every visit to your website gets tied to a person. Google Analytics added people tracking as a feature. It is not at the core of the product. Most people use Kissmetrics to track individual people, while most people who use Google Analytics will never touch that feature.</p>
+<p>When tracking people, you need two things to verify their identity:</p>
+<p><strong>User Identification</strong> – Your analytics tool must be able to identify users when they tell you who they are.</p>
+<p><strong>Signing In</strong> – Users must be able to sign in and identify themselves on each of their devices.</p>
+<p>But, even if an analytics tool helps you identify users as they log in, they all handle it a little differently.</p>
+<p>Let&#8217;s go through how Kissmetrics and Google Analytics handle people tracking.</p>
+<h3><em>1. What Happens to Session Activity Prior to Registration or Logging In?</em></h3>
+<p>When a person visits your website for the first time, both Kissmetrics and Google Analytics assign an anonymous ID to that person.</p>
+<p>For Google Analytics, the visit and registration must take place in the same visit session. If a person visits your website, leaves, and then comes back 10 days later and registers, only the last session is tied to the user ID. The first session is lost. Google Analytics connects data from only the session in which the user was identified. The only way around this is to find a way to identify people during as many sessions as possible.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/08/1-KISSmetrics-customer-ID-assignment.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/08/1-KISSmetrics-customer-ID-assignment.png" alt="KISSmetrics customer ID assignment" class="alignnone size-full wp-image-24579" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/08/1-KISSmetrics-customer-ID-assignment-300x123.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/08/1-KISSmetrics-customer-ID-assignment.png 783w" sizes="(max-width: 783px) 100vw, 783px" /></a></p>
+<p>With Kissmetrics, all data from a person’s previous sessions is assigned to an alias.</p>
+<p>That&#8217;s the core tracking summary of the two. But, they can differ depending on the situation.</p>
+<h3><em>2. What Happens to Data from Sessions after Someone is Identified?</em></h3>
+<p>Joey visits your site, registers, logs out, and closes the browser. He comes back a week later and doesn&#8217;t register or log back in. What happens to the data from the second visit?</p>
+<p>With Kissmetrics, all this data still gets tied to Joey because his device was cookied.</p>
+<p>Google Analytics isn&#8217;t as simple. You’ll need to send the user ID every time there’s a Google Analytics hit. So every piece of Google Analytics data needs a user ID attached to it. There is session unification that will stitch together any other hits that happen in the same session. But, every session needs a user ID defined in order to connect that session to a person. In Joey&#8217;s case, Google Analytics would assume that his second visit was a different person.</p>
+<h3><em>3. What Happens to Session Activity from Several Devices?</em></h3>
+<p>1) Anna registers on your site from her desktop. </p>
+<p>2) A week later, she visits your site on her iPad but doesn&#8217;t log in. </p>
+<p>3) Later that day, she visits your site again, this time logging in with her iPad.</p>
+<p>With Kissmetrics, all the data from her desktop gets assigned to her alias once she registers. When she visits on her iPad, Kissmetrics assigns her a new anonymous ID. Kissmetrics doesn&#8217;t know this visitor is Anna until she logs in on her iPad. Once she logs in, all the sessions from her iPad are tied back to the ID she originally created when she registered on her desktop.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/08/2-KISSmetrics-user-assignment.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/08/2-KISSmetrics-user-assignment.png" alt="KISSmetrics user assignment" class="alignnone size-full wp-image-24580" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/08/2-KISSmetrics-user-assignment-300x163.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/08/2-KISSmetrics-user-assignment.png 874w" sizes="(max-width: 874px) 100vw, 874px" /></a></p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/08/3-user-assignment-google-analytics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/08/3-user-assignment-google-analytics.png" alt="user assignment google analytics" class="alignnone size-full wp-image-24581" /></a></p>
+<p>Anna registered on her first visit, so the activity from that session gets tied to her newly registered User ID. Since Anna&#8217;s second visit was on a new device and she didn&#8217;t log in, that data gets lost.</p>
+<p>All her sessions going forward (on the same device) will be correctly assigned to her. The same goes for when she visits on another device. Once she logs in on a device, the data from that same session gets tied back to the User ID that was assigned when she registered on her desktop.</p>
+<p>Remember that Google Analytics connects data only from the session in which the user was verified.</p>
+<h3><em>4. What Happens When Multiple People Use the Same Device?</em></h3>
+<p>Brenda is looking for tickets to a show tonight. She visits your site via a hotel PC, doesn&#8217;t find any tickets that she likes, and leaves.</p>
+<p>Steve also is looking for tickets. He visits your site using the hotel&#8217;s PC, finds tickets that he likes, and registers and pays for them.</p>
+<p>How do Kissmetrics and Google Analytics handle this?</p>
+<p>With Kissmetrics, the data from Brenda gets assigned to Steve once he registers. So, all previous visits to your site from that same computer get tied to Steve. There is no technical way around this.</p>
+<p>On the other hand, Google Analytics will report the correct data in this case. Since Brenda visited the site but didn&#8217;t register, her session is lost. Since Steve registered on the same session as his visit, that data gets correctly tied to him.</p>
+<h3><em>5. What Happens When Multiple People Are Logging in on the Same Device?</em></h3>
+<p>Let&#8217;s go back to the previous example with Brenda and Steve using the same device to access the same website.</p>
+<p>This time, Brenda logs in, looks at a bunch of tickets, and then logs out. Steve comes by later that day and registers.</p>
+<p>How does Kissmetrics handle this?</p>
+<p>When Brenda visits the site and logs in, all the data gets correctly tied to her.</p>
+<p>But, when Steve visits and registers, Kissmetrics still thinks it is Brenda visiting the website. Anything that Steve does before he registers gets tied back to Brenda&#8217;s customer ID. Once Steve registers, Kissmetrics sees this as a new person and connects all future data to his customer ID.</p>
+<p>With Kissmetrics, you can do a <a href="https://s3.amazonaws.com/kissmetrics-support-files/assets/getting-started/understanding-identities/js-ids.pdf">clearIdentity call</a>. This would clear Brenda&#8217;s ID once she logs out and assign a new anonymous ID when the next person visits from that computer. Then, once Steve registers, all the data from Brenda&#8217;s logout to Steve&#8217;s registration gets tied to Steve&#8217;s customer ID.</p>
+<p>You will be able to do this only during logout events. You won&#8217;t be able to reset all named ID&#8217;s after each visit.</p>
+<p>Google Analytics handles this correctly. When Brenda visits and logs in, all the data from her session gets tied to her ID. Then, when Steve visits and registers, all the data from his visit gets correctly assigned to him.</p>
+<h2>Tracking Summary</h2>
+<p>Analytics need to make one of two assumptions when tracking users:</p>
+<ul>
+<li>Each visit from the same device is coming from the same person.</li>
+<li>Each visit should be treated as a new person until they identify themselves.</li>
+</ul>
+<p><strong>Kissmetrics</strong> assumes that activity on one device is coming from the same person. If one of your users visits your site on their desktop, tablet, and phone, Kissmetrics will recognize them once they sign in and tie them back to their customer ID.</p>
+<p><strong>Google Analytics</strong> assumes that each visit is from a new person. The only way around this is to identify people in each session in order to see everything that person does.</p>
+<h2>Use Cases</h2>
+<p>Kissmetrics is not a replica of Google Analytics. Yes, they both are analytics tools, but they each have their own use cases. Let&#8217;s run through some common use cases and which tool is a better fit.</p>
+<h3>Tracking Visitors and Visits</h3>
+<p>If this is what you want to track, go with Google Analytics. While Kissmetrics can track visitors, it doesn&#8217;t make sense to use it if that&#8217;s all you want to do.</p>
+<h3>Tracking Bounce Rate, Time on Page, and Exits</h3>
+<p>Use Google Analytics for these metrics. You cannot currently track these in Kissmetrics.</p>
+<h3>Funnels</h3>
+<p>You can set up funnels in Google Analytics, but there are a few disadvantages:</p>
+<ul>
+<li>When you set up funnels, you can view data going forward only. You will not be able to view data that happened before the funnel was set up.</li>
+<li>You can track consecutive steps that people go through only if they are on the same visit. So, the data is gone if people complete a process over multiple visits or drop out of the defined path. If you want to track only sign-up flows or e-commerce checkout (you won&#8217;t be able to track the number of people who put an item in the cart), you can go with Google Analytics. You won&#8217;t be able to build your entire customer acquisition funnel.</li>
+</ul>
+<p>By contrast, the Kissmetrics funnels are able to retrieve historical data. So, you can set up your sign-up funnel and view how it has been performing over the months that you&#8217;ve been tracking. And, it doesn&#8217;t matter if someone visits your website today but doesn’t complete the funnel until six months later. Kissmetrics retains all their data.</p>
+<h3>Conversion Tracking</h3>
+<p>Some people may want to get a little more advanced with their analytics and begin tracking conversions. By tracking conversions, you&#8217;re looking at the percentage of people who have done some important action on your site, such as signing up for your newsletter, downloading a white paper, or placing an order.</p>
+<p>With Google Analytics, you&#8217;ll have to set up goals. Also, there is a 90-day limit with conversions. By default, conversions have to happen on the same visit. This is useful if you&#8217;re testing and want a conversion to happen right away, such as signing up for a trial. But, if you want to go deeper, it&#8217;ll get a little more challenging. The only way around this is to use <a href="https://support.google.com/analytics/answer/1191180">multi-channel funnels</a>. You&#8217;ll have to use a specific report and be careful about which conversion data you&#8217;re looking at.</p>
+<p>In Kissmetrics, you&#8217;ll need to set up a funnel report to track conversions. A common funnel report is tracking the number of people who have signed up or placed an order. Here&#8217;s how it might look for a SaaS company:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/08/4-conversion-funnel-report.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/08/4-conversion-funnel-report.png" alt="conversion funnel report" class="alignnone size-full wp-image-24582" /></a></p>
+<p>Here, we are looking at people who have visited the site, signed up for a trial, and then converted to paying for a subscription. For an e-commerce company, a sales funnel might look like this:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/08/5-conversion-funnel-KISSmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/08/5-conversion-funnel-KISSmetrics.png" alt="conversion funnel KISSmetrics" class="alignnone size-full wp-image-24583" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/08/5-conversion-funnel-KISSmetrics-300x106.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/08/5-conversion-funnel-KISSmetrics.png 783w" sizes="(max-width: 783px) 100vw, 783px" /></a></p>
+<p>In this funnel, we&#8217;re tracking the number of people who visited the site, placed a product in their cart, and then proceeded to purchase.</p>
+<h3>A/B Testing</h3>
+<p>In Google Analytics, you can set up content experiments to act as your A/B testing tool. To run the test, you&#8217;ll have to build out two separate URLs (i.e., www.example.com/control and www.example.com/variant1). This can be challenging if you&#8217;re testing your home page, as there may be hundreds of backlinks to one URL. You&#8217;ll be able to get around this if you have developers on your team. But, it&#8217;ll be more difficult if you&#8217;re left to your own devices.</p>
+<p>Another downside is the conversions must happen on the same visit. If people leave your site between steps, they won&#8217;t get counted.</p>
+<p>With Kissmetrics, you can integrate with an A/B testing tool like Optimizely and connect that data to the A/B test report. All your data gets connected back to actual people. Here&#8217;s what the report looks like:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/08/6-ab-test-results-KISSmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/08/6-ab-test-results-KISSmetrics.png" alt="ab test results KISSmetrics" class="alignnone size-full wp-image-24584" /></a></p>
+<p><em>You can view people by clicking on a number under the People column, which shows you all the people in the variation. Or, you can view only the people who converted by clicking on a number under the Conversions column. </em></p>
+<h3>Cohort Reports</h3>
+<p>People can be divided into groups, or cohorts, based on actions they took. A prime example of this would be tracking login retention over time. With a cohort report, you would track people who logged in during a specified time range (typically a day or week), and then you would see how often those people log back in (by day or by week) after that specified time range. Here&#8217;s what a report like that would look like in Kissmetrics:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/08/7-cohort-report-KISSmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/08/7-cohort-report-KISSmetrics.png" alt="cohort report KISSmetrics" class="alignnone size-full wp-image-24585" /></a></p>
+<p>Google Analytics includes a <a href="https://support.google.com/analytics/answer/6074676?hl=en" target="_blank">Cohort Analysis</a> tool. It is still in the Beta stage, and usability is somewhat limited when compared to more advanced cohort reporting tools. Here&#8217;s the top half of the report:</p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/08/cohort-analysis-google-analytics-top-half.jpg"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/08/cohort-analysis-google-analytics-top-half.jpg" alt="cohort-analysis-google-analytics-top-half" class="alignnone size-full wp-image-29252" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/08/cohort-analysis-google-analytics-top-half-300x130.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/08/cohort-analysis-google-analytics-top-half-1024x442.jpg 1024w, https://blog.kissmetrics.com/wp-content/uploads/2014/08/cohort-analysis-google-analytics-top-half.jpg 1348w" sizes="(max-width: 1348px) 100vw, 1348px" /></a></center></p>
+<p>You have four options above the graph &#8211; the acquisition type, cohort size, metric, and date range. </p>
+<p><strong>Cohort Type </strong><br />
+This is where you choose a cohort. Acquisition Date, for example, groups people based on when they first came to your site.</p>
+<p><strong>Cohort Size</strong><br />
+Here you choose the time frame for each cohort. You can measure people on a daily, weekly, or monthly basis.</p>
+<p><strong>Metric</strong><br />
+Here you choose what you&#8217;ll be measuring for each cohort. There are a variety of choices. </p>
+<p><strong>Date Range</strong><br />
+You have a variety of date ranges you can choose from. This is determined by the size of your cohort. For example, if you choose a cohort size &#8220;by day&#8221; you&#8217;ll have the date range options of 7, 14, 21, and 30 days. You cannot choose a custom date range.</p>
+<p>You can mix and match this however you&#8217;d like and the graph underneath it will reflect the criteria. Underneath the graph is the individual metrics. Here we see it broken down by day:</p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/08/google-analytics-cohort-analysis-buckets.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/08/google-analytics-cohort-analysis-buckets.png" alt="google-analytics-cohort-analysis-buckets" class="alignnone size-full wp-image-29253" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/08/google-analytics-cohort-analysis-buckets-300x110.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/08/google-analytics-cohort-analysis-buckets-1024x374.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2014/08/google-analytics-cohort-analysis-buckets.png 1163w" sizes="(max-width: 1163px) 100vw, 1163px" /></a></center></p>
+<p>This is similar to the Kissmetrics Cohort Report layout. Each date range gets displayed in buckets, with darker colors representing higher percentages. If you already have a Google Analytics account, you can login (Audience > Cohort Analysis) and test it out to see if it meets your needs. If you&#8217;re looking for something more advanced and customizable (with support), the Kissmetrics Cohort Report would be your best choice. </p>
+<h2>Set Up Events on Kissmetrics With the Click of a Button</h2>
+<p>With <a href="https://www.kissmetrics.com/ctt">Click to Track from Kissmetrics</a>, you just point and click to track events on your website. Want to track when a person submits a form or clicks a button? No need to ask your developer for help. As long as you have a computer, you can do it yourself! No technical knowledge required. </p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2016/01/kissmetrics-click-to-track.gif"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/01/kissmetrics-click-to-track.gif" alt="kissmetrics-click-to-track" class="alignnone size-full wp-image-29786" /></a></center></p>
+<h2>Using Google Analytics in Conjunction with Kissmetrics</h2>
+<p>Google Analytics can provide a world of insight into how visitors interact with your website. Nearly every website you visit uses it, including the blog you&#8217;re on now. We also use it on our main Kissmetrics.com page.</p>
+<p>Many of our customers use Google Analytics alongside Kissmetrics. We use Google Analytics to get session data, view a general engagement on a page (time on page and site), and check referral data. We use our own product for our web app to get insights into how our customers are using our product, discover our customer acquisition channels, track our acquisition funnel, document our A/B tests, and gather data that can help us make better decisions.</p>
+<p><i>Some of the content from this post was inspired by the post <a href="http://blog.intlock.com/full-customer-journey-part-iimanaging-user-identities-google-universal-mixpanel-kissmetrics/" title="The Full Customer Journey – Managing User Identities with Google Universal, Mixpanel and Kissmetrics" rel="nofollow">The Full Customer Journey – Managing User Identities with Google Universal, Mixpanel and Kissmetrics</a> by Shay Sharon.</i></p>
+<p><i>To get started using people data, <a href="https://www.kissmetrics.com/signup?utm_source=blog&#038;utm_medium=academy&#038;utm_campaign=gakm">login or sign up for a Kissmetrics account</a> now.</i></p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/people-events-and-properties/">The Foundation of Kissmetrics: People, Events, and Properties</a></li>
+<li><a href="https://blog.kissmetrics.com/7-essential-intelligence-events/">7 Essential Intelligence Events for Your Google Analytics Account</a></li>
+<li><a href="https://blog.kissmetrics.com/5-easy-ga-reports/">5 Easy Google Analytics Reports to Help You Increase Conversions</a></li>
+<li><a href="https://blog.kissmetrics.com/google-analytics-and-salesforce/">Three Easy Hacks That Bring the Power of Google Analytics and Salesforce to Your Online Marketing</a></li>
+<li><a href="https://blog.kissmetrics.com/google-analytics-data-errors/">29 Common Google Analytics Data Errors And How To Fix Them</a></li>
+<li><a href="https://blog.kissmetrics.com/smart-insights-on-kissmetrics/">How Kissmetrics Helped Smart Insights Increase Monthly Revenue by 120%</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-and-kissmetrics%2F&source=tweetbutton&text=What+is+the+Difference+Between+Google+Analytics+and+Kissmetrics%3F&url=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-and-kissmetrics%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-and-kissmetrics%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=What is the Difference Between Google Analytics and Kissmetrics?&amp;body=https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-24577 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-487139">
+    <div id="comment-487139" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mohammed Obaid Khan</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/#comment-487139" class="comment-date">Aug 27, 2014 at 7:42 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Useful comparison. Would be curious to know how can one best use Kissmetrics on website where login is not required or max once in form of enquiry.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?replytocom=487139#respond' onclick='return addComment.moveForm( "comment-487139", "487139", "respond", "24577" )' aria-label='Reply to Mohammed Obaid Khan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-489175">
+    <div id="comment-489175" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/#comment-489175" class="comment-date">Aug 28, 2014 at 9:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Mohammed,<br />
+Before a user verifies themselves, they are assigned an anonymous ID. If people visit your website on multiple devices, they&#8217;ll each get assigned a separate anonymous ID until they register or login. </p>
+<p>Because of these multiple identities, it makes tracking and setting up reports a little more difficult as one person may be counted as four (ie if they access your website via their desktop, phone, tablet, iPad mini).</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?replytocom=489175#respond' onclick='return addComment.moveForm( "comment-489175", "489175", "respond", "24577" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-487892">
+    <div id="comment-487892" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Deependra Kumar</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/#comment-487892" class="comment-date">Aug 28, 2014 at 12:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>The idea you shared is just an amazing. Because we need to understand the both things in order to use in a proper way. Thanks for your effort. I appreciate it.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?replytocom=487892#respond' onclick='return addComment.moveForm( "comment-487892", "487892", "respond", "24577" )' aria-label='Reply to Deependra Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-487995">
+    <div id="comment-487995" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/#comment-487995" class="comment-date">Aug 28, 2014 at 1:29 am</a>      </div><!-- /.comment-meta -->
+
+      <p>For me the Kissmetrics is better than google analyctic.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?replytocom=487995#respond' onclick='return addComment.moveForm( "comment-487995", "487995", "respond", "24577" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-488195">
+    <div id="comment-488195" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Premnath321</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/#comment-488195" class="comment-date">Aug 28, 2014 at 3:10 am</a>      </div><!-- /.comment-meta -->
+
+      <p>The main actual difference is user behavior towards the product. We can&#8217;t expect all things at a time.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?replytocom=488195#respond' onclick='return addComment.moveForm( "comment-488195", "488195", "respond", "24577" )' aria-label='Reply to Premnath321'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-488958">
+    <div id="comment-488958" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Darrin Keller</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/#comment-488958" class="comment-date">Aug 28, 2014 at 8:10 am</a>      </div><!-- /.comment-meta -->
+
+      <p>You guys are analytics ninjas!!!</p>
+<p>How can I build the same level of understanding?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?replytocom=488958#respond' onclick='return addComment.moveForm( "comment-488958", "488958", "respond", "24577" )' aria-label='Reply to Darrin Keller'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-489037">
+    <div id="comment-489037" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/#comment-489037" class="comment-date">Aug 28, 2014 at 8:47 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Darrin &#8211; </p>
+<p>A great place to start is by picking up the book &#8220;Advanced Web Metrics&#8221;. </p>
+<p>You can also checkout the Google Analytics Help section:</p>
+<p><a href="https://support.google.com/analytics/#" rel="nofollow">https://support.google.com/analytics/#</a></p>
+<p>You can learn about KISSmetrics by viewing our support documentation:</p>
+<p><a href="http://support.kissmetrics.com/" rel="nofollow">http://support.kissmetrics.com/</a></p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?replytocom=489037#respond' onclick='return addComment.moveForm( "comment-489037", "489037", "respond", "24577" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-501619">
+    <div id="comment-501619" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Tal</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/#comment-501619" class="comment-date">Sep 01, 2014 at 2:26 am</a>      </div><!-- /.comment-meta -->
+
+      <p>This is one of the best posts I read, which explains in details about Google Analytics&#8217; strengths and weaknesses, compared to KISSmetrics</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?replytocom=501619#respond' onclick='return addComment.moveForm( "comment-501619", "501619", "respond", "24577" )' aria-label='Reply to Tal'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1138977">
+    <div id="comment-1138977" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/#comment-1138977" class="comment-date">Jul 20, 2015 at 8:07 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Fully Satisfied :)</p>
+<p>Thanks</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?replytocom=1138977#respond' onclick='return addComment.moveForm( "comment-1138977", "1138977", "respond", "24577" )' aria-label='Reply to '>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1239686">
+    <div id="comment-1239686" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Cédric Léonard</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/#comment-1239686" class="comment-date">Mar 31, 2016 at 9:35 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I have just randomly discovered this tool. Other possible integrations are using Facebook pixel to refocus/re-receach customers that are in the funnel and analyze it using kissmetrics. Did you try this?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?replytocom=1239686#respond' onclick='return addComment.moveForm( "comment-1239686", "1239686", "respond", "24577" )' aria-label='Reply to Cédric Léonard'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-admin even depth-2" id="li-comment-1242713">
+    <div id="comment-1242713" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/#comment-1242713" class="comment-date">Apr 05, 2016 at 2:44 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Cédric,<br />
+Are you talking about targeting these people based on the stage they are at in your funnel?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-and-kissmetrics/?replytocom=1242713#respond' onclick='return addComment.moveForm( "comment-1242713", "1242713", "respond", "24577" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">12 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/google-analytics-and-kissmetrics/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='24577' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="c25d1bad76" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="218"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'What is the Difference Between Google Analytics and Kissmetrics?', 'Post URL':'https://blog.kissmetrics.com/google-analytics-and-kissmetrics/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/how-dashboards-can-help/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/share-on-social-media/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="What is the Difference Between Google Analytics and Kissmetrics?" data-url="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'What is the Difference Between Google Analytics and Kissmetrics?', 'Post URL':'https://blog.kissmetrics.com/google-analytics-and-kissmetrics/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'What is the Difference Between Google Analytics and Kissmetrics?', 'Post URL':'https://blog.kissmetrics.com/google-analytics-and-kissmetrics/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'What is the Difference Between Google Analytics and Kissmetrics?', 'Post URL':'https://blog.kissmetrics.com/google-analytics-and-kissmetrics/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":398,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

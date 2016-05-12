@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>Why Modeling Churn is Difficult</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; Why Modeling Churn is Difficult Comments Feed" href="https://blog.kissmetrics.com/modeling-churn/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='5 Data-Backed Strategies That Will Get You More Mailing List Subscribers' href='https://blog.kissmetrics.com/more-mailing-list-subscribers/' />
+<link rel='next' title='How SaaS Marketing is Different from Every Other Type of Marketing' href='https://blog.kissmetrics.com/how-saas-marketing-is-different/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/modeling-churn/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=25875' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fmodeling-churn%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fmodeling-churn%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,330] -->
+<meta name="description" content="Customer churn is a really interesting problem. It appears to be a simple calculation, but the more you explore it the more complex it becomes." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='Why Modeling Churn is Difficult' />
+<meta property='og:url' content='https://blog.kissmetrics.com/modeling-churn/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Customer churn is a really interesting problem. It appears to be a simple calculation, but the more you explore it the more complex it becomes.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Why Modeling Churn is Difficult" />
+    <meta name="twitter:description" content="Customer churn is a really interesting problem. It appears to be a simple calculation, but the more you explore it the more complex it becomes." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-25875 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'Why Modeling Churn is Difficult',
+						'Post Category': 'Analytics',
+						'Post URL': 'https://blog.kissmetrics.com/modeling-churn/'
+		}
+	]);
+</script>
+
+<article id="post-25875" class="single-post post-25875 post type-post status-publish format-standard hentry category-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">Why Modeling Churn is Difficult</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Customer churn is a really interesting problem. It appears to be a simple calculation, but the more you explore it the more complex it becomes. Evidence of this complexity appears in the variety of articles written on the subject, such as:</p>
+<ul>
+<li><em>For Entrepreneurs</em> uses a <a href="http://www.forentrepreneurs.com/saas-metrics-2-definitions/">very straightforward method of calculation</a>, which is then used as the basis for a number of other important SaaS metrics.</li>
+<li><em>Chaotic Flow</em>&#8216;s <a href="http://chaotic-flow.com/saas-metrics/">SaaS metrics archive</a> presents some very interesting questions.</li>
+<li><em>HubSpot</em> expands the subject of churn rate into an <a href="http://cdn2.hubspot.net/hub/171901/file-18462400-pdf/ebooks/simple_guide_to_churn_analysis.pdf">entire e-book</a>.</li>
+<li><em>Shopify</em> has a great article on the <a href="http://www.shopify.com/technology/4018382-defining-churn-rate-no-really-this-actually-requires-an-entire-blog-post">complexities of calculating churn</a>.</li>
+</ul>
+<p>One of the best ways to understand a problem is to create a mathematical model of how it works.</p>
+<p>The question we need to answer is: &#8220;What exactly is Churn?&#8221;</p>
+<p>We start by defining churn as:</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/11/1-the-churn-equation.png" alt="the churn equation" class="alignnone size-full wp-image-26078" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/11/1-the-churn-equation-300x75.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/11/1-the-churn-equation.png 400w" sizes="(max-width: 400px) 100vw, 400px" /></p>
+<p>As an example, if we had 100 customers at the beginning of January, and during January, we lost 10 of those customers, our churn rate, for January, is 10%.</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/2-ten-percent-churn.png" alt="ten percent churn" class="alignnone size-full wp-image-26079" /></p>
+<p>We now have a <em>descriptive</em> model for churn. A descriptive model summarizes what has happened, but is limited if we want to understand trends in churn. With a <em>descriptive</em> model, the only thing we can say is, “We lost 10% of our customers this month.&#8221;</p>
+<p>This formula implies that the following churn rates are all the same:</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/3-sequence.png" alt="churn as a sequence" class="alignnone size-full wp-image-26080" /></p>
+<p>Problems with this model arise when we compare churn this month with churn last month. When comparing, we are forecasting because we are saying, &#8220;We expect to lose <em>n%</em> of customers next month since we lost <em>n%</em> this month.&#8221; Then, we use next month’s churn rate to determine whether we improve.</p>
+<p>We want to compare churn between periods since it is a key performance indicator of the health of a business. To compare two time periods, we can look at churn rates as values sampled from a probability distribution.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/4-churn-equation-two.png" alt="churn as a probability distribution" class="alignnone size-full wp-image-26081" /></p>
+<p>The above equation states we are looking at churn as being sampled from a <em>beta distribution</em>. Beta distributions model cases where the aim is to estimate the true rate of an event from its sample data.</p>
+<p>While the mean of the distribution is the most likely value you would see, a wide range of other churn rates are potentially observable due to mere chance. The probability distribution tells us how likely those alternatives are based on the area under the curve. Although 1/10 and 100/1000 are both 10% churn rates, they represent very different distributions. Pictured below are the 1/10, 10/100, and 100/1000 churn rates visualized as distributions rather than means.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/5-beta-distribution.png" alt="churn as a beta distribution" class="alignnone size-full wp-image-26082" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/12/5-beta-distribution-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/12/5-beta-distribution.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>These concepts are similar in A/B tests. When you observe a churn rate of 10%, you need to have significant data to determine if it’s actually 10%.</p>
+<p>As an example, if you have only 100 customers, and last month you lost 3%, and this month you lost 6%, it’s completely possible that your churn rate is actually the same for both months. Probability distributions allow us to determine how certain we are that our <em>true rate of churn</em> is reflected in the data we have collected.</p>
+<p>With A/B testing in mind, we might be tempted to treat churn as an A/B test and collect more data to overcome uncertainty. When we run an A/B test, if we don’t have enough data to determine a winning variant, we can collect more data until we reach our desired certainty. The assumption is the conversion rate for variant A and variant B remain the same as we collect data. Can we do this with churn data?</p>
+<p>A major challenge with our model is churn rates change each month. If the <em>true rate of churn</em> has changed between January and February, we cannot use February data to get a better estimate of the churn rate for January.</p>
+<p>We need a way to model the following:</p>
+<ol>
+<li>Observed losses, which are pulled from a <em>beta distribution</em> around whatever the true churn rate is.</li>
+<li>The churn rate as a moving target.</li>
+</ol>
+<p>A final complication is that each month we&#8217;re also acquiring people, and the number of people we’re acquiring is somewhat random. If we could model new customers as a constant number, we could reduce the model to a very simple formula, but unfortunately this is not the case.</p>
+<h2>Looking at the Big Picture – Modeling Churn&#8217;s Effects on Population</h2>
+<p>Let’s take a step back and create a model that ignores the issues regarding the uncertain rate of churn we’ve raised. Rather than focus on churn in isolation, let&#8217;s look at a model of our customer population over time. We&#8217;ll start with a simplified model, adding back in the aforementioned complexities once we have a basic understanding of how all the pieces fit together.</p>
+<p>We have these variables:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/6-the-key.png" alt="churn variables" class="alignnone size-full wp-image-26083" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/12/6-the-key-300x80.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/12/6-the-key.png 557w" sizes="(max-width: 557px) 100vw, 557px" /></p>
+<p>Let&#8217;s look at the formula for calculating the population in a given month.</p>
+<p>We&#8217;ll start with calculating <i>p<sub>1</sub></i> which is the population after the first month:</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/7-p-equation.png" alt="7 p equation" class="alignnone size-full wp-image-26084" /></p>
+<p>where</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/8-l-one-equation.png" alt="8 l one equation" class="alignnone size-full wp-image-26085" /></p>
+<p>Now, let&#8217;s see what this looks like over time for the following variables:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/missing-equation.png" alt="missing equation" class="alignnone size-full wp-image-26086" /></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/9-population-over-time.png" alt="population over time" class="alignnone size-full wp-image-26087" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/12/9-population-over-time-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/12/9-population-over-time.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>A good sanity check of any mathematical model is if the model’s description of the world reasonably matches our understanding of how the world behaves. The above plot shows growth as being much smoother than any real world data. It also reaches a plateau in which growth stops.</p>
+<p>This model uses constant values for churn (<em>c</em>) and new customers (<em>a</em>). In reality, neither of these values are constant. The model needs to change.</p>
+<p>Rather than using a constant <em>c</em> and <em>a</em> we can use a sequence of <i>c<sub>n</sub></i> and <i>a<sub>n</sub></i>.</p>
+<p>Let’s create a 12-month sequence of churn rates.</p>
+<p><i>c</i> = 0.1, 0.11, 0.1, 0.09, 0.085, 0.07, 0.073, 0.072, 0.07, 0.069, 0.07, 0.069</p>
+<p>Let’s also create a sequence of new customer acquisitions for the same period.</p>
+<p><i>a</i> = 200, 180, 210, 212, 230, 250, 240, 230, 245, 250, 255, 260</p>
+<p>These numbers model a year where churn went down and customer acquisition went up.</p>
+<p>Our formula to calculate <i>p<sub>n</sub></i> is now:</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/10-pn-equation.png" alt="10 pn equation" class="alignnone size-full wp-image-26088" /></p>
+<p>where</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/11-ln-equation.png" alt="11 ln equation" class="alignnone size-full wp-image-26089" /></p>
+<p>Remember that <i>p<sub>o</sub></i> is our initial starting population. For a calendar year, <i>p<sub>1</sub></i> would represent the population at the end of January.</p>
+<p>The following chart shows what the modeled year looks like:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/12-revised-population-model.png" alt="revised population model" class="alignnone size-full wp-image-26090" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/12/12-revised-population-model-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/12/12-revised-population-model.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>Now, that was a good year!</p>
+<p>But, another issue arises. There is a lot of uncertainty that isn&#8217;t modeled here. Let&#8217;s move to our final refinement by adding noise and a few stochastic processes.</p>
+<h2>A Note on Stochastic Processes</h2>
+<p>The word <em>stochastic</em> is mathematician speak for <em>random</em>. A <em>stochastic process</em> is any process that moves randomly. The most common stochastic process is <em>Brownian motion</em>. If you look up <a href="http://en.wikipedia.org/wiki/Brownian_motion">Brownian motion</a> on Wikipedia, you&#8217;ll encounter some terrifying equations, but the idea is profoundly simple.</p>
+<p>First, we start with a normal distribution. A normal distribution is defined by its mean, <i>μ</i> (the model’s center), and its standard deviation, <i>σ</i> (how wide the model is).</p>
+<p>A normal distribution with μ = 0 and σ= 1 looks like this:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/13-normal-distribution.png" alt="normal distribution" class="alignnone size-full wp-image-26091" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/12/13-normal-distribution-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/12/13-normal-distribution.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>Sampling from a normal distribution means picking random numbers from the model. The closer a number is to the big bump in the middle, the more likely we are to get that number.</p>
+<p>If we sample from <i>N</i> (0,1) (notation for a normal distribution with a mean of 0 and a standard deviation of 1) 1000 times and plot the data, we get the following plot:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/14-random-sample.png" alt="random sample" class="alignnone size-full wp-image-26092" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/12/14-random-sample-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/12/14-random-sample.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>To transform this noisy sample into Brownian motion, we take the <em>cumulative sum</em> of the sample. Taking the cumulative sum means that each point in the Brownian motion is the sum of all the previous points in the sample.</p>
+<p>Here&#8217;s what the exact sample above looks like when we plot it as a Brownian motion:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/15-brownian-motion.png" alt="brownian motion" class="alignnone size-full wp-image-26093" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/12/15-brownian-motion-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/12/15-brownian-motion.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>Although our samples look like noise, when we plot the cumulative sum, it looks like the movements of a stock price! In fact, Brownian motion is an essential component of the Black-Scholes model used in options pricing. Who knew trying to understand churn would lead us all the way to the world of quantitative finance!</p>
+<p>Finally, it is essential to note that if the <em>normal distribution</em> we&#8217;re using has a mean greater than zero, our Brownian motion model will have a tendency to move upward. If it has a mean less than zero, it will tend to move downward. This movement is called <em>drift</em> because the random process is drifting a certain direction.</p>
+<h2>Building Our Stochastic Model of Customer Population</h2>
+<p>Now, we&#8217;re going to build a <em>stochastic difference equation</em>. Equations usually return a single value (algebra) or a function (differential equation). A stochastic difference equation is different. It returns a stochastic process! This makes sense when you think about it.</p>
+<p>We are taking the stochastic processes used to describe churn and acquisition, and we are putting them together to come up with another stochastic process that represents the changes to our population of customers over time. To better understand this process, let’s look at the acquisition component of our model.</p>
+<p>We’ll define customer acquisition as Brownian motion with a mean of <i>μ<sub>acq</sub></i> and a standard deviation of <i>σ<sub>acq</sub></i></p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/16-An-equation.png" alt="An equation" class="alignnone size-full wp-image-26094" /></p>
+<p>This formula says that our customer acquisition at period <i>n</i> is equal to the <i>n<sup>th</sup></i> step in the Brownian motion we are defining with a specific mean and standard deviation (later on, we&#8217;ll touch on how we can estimate <i>μ<sub>acq</sub></i> and <i>σ<sub>acq</sub></i>). The tricky part about this is realizing that the <i>n<sup>th</sup></i> step in Brownian motion is a space of many possibilities and not simply a single value.</p>
+<p>Simulating churn is a bit more involved. Just as with customer acquisition, we’ll start by using Brownian motion as the basis for our model.</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/17-Cn-equation.png" alt="17 Cn equation" class="alignnone size-full wp-image-26095" /></p>
+<p>This equation models only our moving churn rate, which we can never directly observe. Another step must be added to accurately represent loss. Our loss is a random sampling from a <em>beta distribution</em> with the current value of <i>C<sub>n</sub></i> as the mean.</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/18-Cn-equation.png" alt="Cn equation" class="alignnone size-full wp-image-26096" /></p>
+<p>Solving for <i>l</i></p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/19-l-equation.png" alt="l equation" class="alignnone size-full wp-image-26097" /></p>
+<p>And so our loss function is</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/20-Ln-equation.png" alt="Ln equation" class="alignnone size-full wp-image-26098" /></p>
+<p>so finally we get</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/21-pn-equation.png" alt="21 pn equation" class="alignnone size-full wp-image-26099" /></p>
+<p>This is our stochastic difference equation. We can see that, once we have tucked away all the Brownian motion behind some symbols, we end up with a formula that is very similar to our last one. The key difference is that <i>A<sub>n</sub></i> and <i>L<sub>n</sub></i> represent stochastic processes at a point <i>n</i>, rather than fixed values in a sequence.</p>
+<p>Let’s see what the results of a single sampling from this process look like. All we need is some values to assign to our parameters.</p>
+<p><i>μ<sub>churn</sub></i> = 0.001, <i>σ<sub>churn</sub></i> = 0.001</p>
+<p><i>μ<sub>acq</sub></i> = 0.05,  <i>σ<sub>acq</sub></i> = 40</p>
+<p><i>p<sub>0</sub></i> = 1000</p>
+<p>We&#8217;re assuming that the starting value for churn is 0.1 and acquisition is 200 (meaning that our churn rate at the beginning is 10% and we&#8217;re getting 200 new customers). The image below is a single sample path from the stochastic process we defined over the period of 72 months.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/20-population-simulations.png" alt="population simulations" class="alignnone size-full wp-image-26100" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/12/20-population-simulations-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/12/20-population-simulations.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>But don&#8217;t forget: now we have a stochastic model, so every time we run it, we get a different answer!</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/23-population-simulations.png" alt="population simulations" class="alignnone size-full wp-image-26101" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/12/23-population-simulations-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/12/23-population-simulations.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>Above are the random paths that 120 very similar companies might have taken.</p>
+<p>At this point, you might be thinking &#8220;My company is not random! We aren&#8217;t just rolling dice all day!&#8221; Stochastic models don’t claim things are random; they claim things are <em>uncertain</em>.</p>
+<p>For example, every time you determine a winner of an A/B test, there is a chance your decision is wrong. Even if you run tests to 99.999% certainty, other things are out of your control. For example, there could have been a major outage in service that you couldn&#8217;t have planned for, or a popular blog could have published a piece on your company that sent more new customers than expected.</p>
+<p>Minor fluctuations are more common than major ones, and a <em>normal distribution</em> accounts for this. In addition, a normal distribution with a drift accounts for your product team always improving the product and your marketing team always increasing conversions.</p>
+<h2>Modeling Observed Data</h2>
+<p>We are still missing the parameters for the two Brownian motion functions we have in the model: <i>μ<sub>churn</sub></i>, <i>σ<sub>churn</sub></i>, <i>μ<sub>acq</sub></i>, <i>σ<sub>acq</sub></i></p>
+<p>Remember, we can think of <i>μ</i> as the general tendency of churn and acquisition (ideally churn would tend to go down and acquisition up), and we can think of <i>σ</i> as the amount of uncertainty we face.</p>
+<p>We can use the previous values we assumed for churn and acquisition:</p>
+<p><i>c</i> = 0.1, 0.11, 0.1, 0.09, 0.085, 0.07, 0.073, 0.072, 0.07, 0.069, 0.07, 0.069</p>
+<p><i>a</i> = 200, 180, 210, 212, 230, 250, 240, 230, 245, 250, 255, 260</p>
+<p>Then, we use the summary statistics from these to estimate the <i>μ</i> and <i>σ</i> for our models. Our model assumes a cumulative sum of output from normal distribution. We cannot simply take the mean and standard deviation of these values. Rather, we must look at the difference between each step (this effectively undoes the summing we did previously):</p>
+<p><i>c<sub>diff</sub></i> = 0.010, -0.010, -0.010, -0.005, -0.015, 0.003, -0.001, -0.002, -0.001, 0.001, -0.001</p>
+<p><i>a<sub>diff</sub></i> = -20, 30, 2, 18, 20, -10, -10, 15, 5, 5, 5</p>
+<p>Assuming this data comes from a normal distribution, we can use the following formulae to calculate mean and standard deviation:</p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/24-u-equation.png" alt="u equation" class="alignnone size-full wp-image-26102" /></p>
+<p align="center"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/25-the-final-equation.png" alt="the final equation" class="alignnone size-full wp-image-26103" /></p>
+<p>Calculating our churn values, we get:</p>
+<p><i>μ<sub>churn</sub></i> = -0.002818182</p>
+<p><i>σ<sub>churn</sub></i> = 0.006925578</p>
+<p>and for acquisition values, we get:</p>
+<p><i>μ<sub>acq</sub></i> = 5.454545</p>
+<p><i>μ<sub>acq</sub></i> = 5.454545</p>
+<p>A careful reader may notice that we cheated a bit in the above calculation for churn. Our calculation assumes we observed the actual churn rate. If we look at our model, we never get to observe this directly! There is always some noise added by randomly sampling from the Beta distribution.</p>
+<p>If we make some simplifying assumptions about the Beta distribution, we can solve this problem. However, for the sake of brevity, we’ll pretend we can see those churn rates.</p>
+<p>Let&#8217;s go back to our simulation, and this time we&#8217;ll use the parameters we arrived at empirically.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/26-sample-paths-and-original-data.png" alt="sample paths and original data" class="alignnone size-full wp-image-26104" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/12/26-sample-paths-and-original-data-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/12/26-sample-paths-and-original-data.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>In the chart above, the dark line in the middle is our original data – the data our model is based on. The fact that our original data is in the middle of all these samples is a good sanity check since we used this data as what our expected data should be. The sample paths that diverge from it are progressively less expected could-have-beens.</p>
+<p>Another important thing to observe about this data is that as we move forward in time, the range of possible future populations become wider. The further ahead we look, the less certain we become about what the future might look like.</p>
+<h2>Using Our Model – The Takeaway</h2>
+<p>Boards of Directors don&#8217;t usually want you to show them a stochastic process and say &#8220;Look at how much we don&#8217;t know! Isn&#8217;t that amazing?&#8221; We&#8217;ve described just how complex growth can be, but what can we do with this model?</p>
+<p>Reviewing the many different papers on churn at the beginning of this article, you can see the practical implications of choosing one model for a metric over another. If you are uncertain what the real pros and cons are of using any particular method to calculate a metric, you can try it on simulated data and see what happens now that you are omniscient.</p>
+<p>We also can use our knowledge of the past to attempt to gain insight into the future. Using the 12 months of data, we can see what futures that model predicts 6 months out:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/12/27-population-predictions.png" alt="population predictions" class="alignnone size-full wp-image-26105" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/12/27-population-predictions-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/12/27-population-predictions.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>If the CEO wants to see our imaginary company reach 4000 customers, our simulation shows that we aren&#8217;t going to get there by luck. Our stochastic model gives us futures that depend on us doing everything the same as we did in the period we used to estimate our parameters. To reach 4000 customers in 6 months, this model tells us we have to change how we&#8217;re doing things.</p>
+<p>The model also tells us that if we keep doing things the way we are, then our future looks bright. Even our worst case predictions look good! However, all changes involve risk. So, if the CEO’s goal is to reach 2500 customers in 6 months, it probably isn&#8217;t worth the risk to radically change how things are done.</p>
+<p>We also can predict how likely certain futures are. If we simulate 1000 sample paths, how many end up above 3000 after 6 months? How likely is it that in 6 months, due to a string of mistakes, we end up with fewer customers than today?</p>
+<h2>Conclusion</h2>
+<p>Modeling churn is difficult because there is inherent uncertainty when measuring churn. This uncertainty does not change churn’s status as an essential SaaS metric. What this uncertainty does change is how we utilize churn metrics.</p>
+<p>For any metric you use to calculate churn, make sure you understand its limitations. The smaller the number of customers you have, the more likely month-to-month churn may appear to move up or down based solely on chance. If you have a large number of customers, measuring quarterly and annual churn rates can give very different results depending on how churn is calculated and how much the <em>true rate of churn</em> changes during the longer period. Despite answering a simple question, churn is a complicated metric.</p>
+<p><b>About the Author:</b> Will Kurt is the Lead Data Scientist at KISSmetrics. You can reach out to him on twitter <a href="http://twitter.com/willkurt">@willkurt</a> and see what he’s hacking on at <a href="https://github.com/willkurt"rel="nofollow">github.com/willkurt</a>. </p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/kissmetrics-ab-testing-report/">Kissmetrics A/B Test Report: Know How Your Tests Impact Your Customer Acquisition Funnel</a></li>
+<li><a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/">Most of Your A/B Test Results Are Illusory and That’s Okay</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fmodeling-churn%2F&source=tweetbutton&text=Why+Modeling+Churn+is+Difficult&url=https%3A%2F%2Fblog.kissmetrics.com%2Fmodeling-churn%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fmodeling-churn%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=Why Modeling Churn is Difficult&amp;body=https://blog.kissmetrics.com/modeling-churn/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-25875 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-999756">
+    <div id="comment-999756" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://plus.google.com/109268926655243601047/posts' rel='external nofollow' class='url'>Ann Ellison</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-999756" class="comment-date">Dec 27, 2014 at 10:59 am</a>      </div><!-- /.comment-meta -->
+
+      <p>For many not-for-profits it happens every election season…in the bitter end, amongst all the attack advertisements, debates, and campaign appearances the question arises.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=999756#respond' onclick='return addComment.moveForm( "comment-999756", "999756", "respond", "25875" )' aria-label='Reply to Ann Ellison'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-1001385">
+    <div id="comment-1001385" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-1001385" class="comment-date">Dec 29, 2014 at 12:27 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for your comment Ann!</p>
+<p>Reading your comment made me realize there is another level of complexity that I didn&#8217;t even begin to explore: seasonality. This further proves the point that more closely you look at churn the more complex it becomes.</p>
+<p>The tricky thing is that because of seasonal trends your churn may naturally go up and down. How do you figure out if during seasons of naturally increased churn whether your churning more than expected? The same goes for seasons of naturally reduced churn.</p>
+<p>Fortunately there are a few models that will deal well with seasonality in data including HoltWinters and ARIMA, in many cases even a basic decomposition of a time series can provide a lot of insight in to whether or not your seeing more than expected churn.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=1001385#respond' onclick='return addComment.moveForm( "comment-1001385", "1001385", "respond", "25875" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1000012">
+    <div id="comment-1000012" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Karnchea Barchue</cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-1000012" class="comment-date">Dec 27, 2014 at 9:37 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This is a very simplified format and easy to understand explanation of churn. I believe that every CEO or person in postilion to make decision within a organization needs to read this article. This is a subject that often gets over looked until its took late. I belive it&#8217;s &#8220;it&#8217;s better to be pro active rather than reactive&#8221;.</p>
+<p>Thanks for sharing</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=1000012#respond' onclick='return addComment.moveForm( "comment-1000012", "1000012", "respond", "25875" )' aria-label='Reply to Karnchea Barchue'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-1001426">
+    <div id="comment-1001426" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-1001426" class="comment-date">Dec 29, 2014 at 12:57 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Karnchea! I definitely agree. One of the important lessons I&#8217;ve found in churn is how you measure it has a lot to do with what question you are asking. Different models of measuring churn will be more or less successful at capturing different behavior, so how you measure churn needs to take into account the question you are asking of it.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=1001426#respond' onclick='return addComment.moveForm( "comment-1001426", "1001426", "respond", "25875" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1001210">
+    <div id="comment-1001210" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ed Powers</cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-1001210" class="comment-date">Dec 29, 2014 at 9:05 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Helpful overview on the measurement problem, Will. Interesting approach using a beta distribution. </p>
+<p>In my view, the p-chart is a great solution for tracking churn, a method that&#8217;s been used in manufacturing for many years. The manager&#8217;s goal is to detect shifts (improvement or degradation) in churn, so a control chart is a handy way of separating the &#8220;signal&#8221; from the &#8220;noise.&#8221; While it&#8217;s possible to calculate statistical control limits for each data point, it&#8217;s much easier just to use fixed sample sizes in the rational subgroups (&#8220;cohorts&#8221;), even though they may not correspond cleanly to monthly intervals. The p-chart is very easy for managers to set up and use, so it offers a practical tradeoff between accuracy and usability, especially when the task is to show results from continuous process improvement. More: se-partners.com/cohort-analysis-done-right/</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=1001210#respond' onclick='return addComment.moveForm( "comment-1001210", "1001210", "respond", "25875" )' aria-label='Reply to Ed Powers'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-1001452">
+    <div id="comment-1001452" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-1001452" class="comment-date">Dec 29, 2014 at 1:54 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Ed! I really appreciate the info about p-charts! I&#8217;ll have to look into that more, but it definitely seems like a useful technique.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=1001452#respond' onclick='return addComment.moveForm( "comment-1001452", "1001452", "respond", "25875" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1002533">
+    <div id="comment-1002533" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Analee Miranda</cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-1002533" class="comment-date">Dec 30, 2014 at 5:05 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi, if you analyze the churn rate as time series, remember to do some smoothing and differential filtering. In signal processing, the smoothing removes the high frequency components and the differentiation removes the low frequency components. These filters essentially remove clutter and noise from the deterministic response. Of course this helps more with deterministic data immersed in a random environment. After reading your explanation though it seems that churn rates may have deterministic and random components which is important for a company to analyze. Hope my suggestion helps!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=1002533#respond' onclick='return addComment.moveForm( "comment-1002533", "1002533", "respond", "25875" )' aria-label='Reply to Analee Miranda'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-1006541">
+    <div id="comment-1006541" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-1006541" class="comment-date">Jan 04, 2015 at 11:58 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Analee!</p>
+<p>I&#8217;ve been using these techniques in some other projects but definitely should spend some more time with them when studying noisy business metrics. Very helpful comment, thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=1006541#respond' onclick='return addComment.moveForm( "comment-1006541", "1006541", "respond", "25875" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1002711">
+    <div id="comment-1002711" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-1002711" class="comment-date">Dec 30, 2014 at 7:50 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Really Informative Article, you Make is Really Easy by your Great Writing. Thanks.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=1002711#respond' onclick='return addComment.moveForm( "comment-1002711", "1002711", "respond", "25875" )' aria-label='Reply to '>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1040953">
+    <div id="comment-1040953" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Tim</cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-1040953" class="comment-date">Feb 09, 2015 at 2:45 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for helping me learn more about churn. I never really understood it until now.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=1040953#respond' onclick='return addComment.moveForm( "comment-1040953", "1040953", "respond", "25875" )' aria-label='Reply to Tim'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1147721">
+    <div id="comment-1147721" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sebastian</cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-1147721" class="comment-date">Aug 14, 2015 at 12:25 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Very great article! It would be nice if you included the code that went along with the graphs :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=1147721#respond' onclick='return addComment.moveForm( "comment-1147721", "1147721", "respond", "25875" )' aria-label='Reply to Sebastian'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1217768">
+    <div id="comment-1217768" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Marco</cite>
+        
+        <a href="https://blog.kissmetrics.com/modeling-churn/#comment-1217768" class="comment-date">Feb 11, 2016 at 5:21 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Will, great piece of work. Could you share the code with us? (on git or here) that would be awesome !<br />
+Marco</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/modeling-churn/?replytocom=1217768#respond' onclick='return addComment.moveForm( "comment-1217768", "1217768", "respond", "25875" )' aria-label='Reply to Marco'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">12 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/modeling-churn/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='25875' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="c8dd5d36e2" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="237"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'Why Modeling Churn is Difficult', 'Post URL':'https://blog.kissmetrics.com/modeling-churn/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/more-mailing-list-subscribers/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/how-saas-marketing-is-different/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="https://blog.kissmetrics.com/modeling-churn/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="https://blog.kissmetrics.com/modeling-churn/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="https://blog.kissmetrics.com/modeling-churn/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="Why Modeling Churn is Difficult" data-url="https://blog.kissmetrics.com/modeling-churn/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'Why Modeling Churn is Difficult', 'Post URL':'https://blog.kissmetrics.com/modeling-churn/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'Why Modeling Churn is Difficult', 'Post URL':'https://blog.kissmetrics.com/modeling-churn/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'Why Modeling Churn is Difficult', 'Post URL':'https://blog.kissmetrics.com/modeling-churn/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":430,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

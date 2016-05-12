@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From Comments Feed" href="https://blog.kissmetrics.com/using-channels-in-kissmetrics/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='12 Infographic Tips That You Wish You Knew Years Ago' href='https://blog.kissmetrics.com/12-infographic-tips/' />
+<link rel='next' title='How to Optimize Your Website Messaging to Increase Conversions' href='https://blog.kissmetrics.com/optimize-your-website-messaging/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/using-channels-in-kissmetrics/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=26160' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fusing-channels-in-kissmetrics%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fusing-channels-in-kissmetrics%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,382] -->
+<meta name="description" content="In this post, we’ll break down channel segmentation. By the end, you’ll know how people and customers find you and which channels are most effective in terms of both acquisition and retention." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/117750912206547874889/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From' />
+<meta property='og:url' content='https://blog.kissmetrics.com/using-channels-in-kissmetrics/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/01/ecommerce-funnel-channel-segmentation-kissmetrics.png' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/01/ecommerce-funnel-channel-segmentation-kissmetrics.png' />
+<meta property='og:image:width' content='1367' />
+<meta property='og:image:height' content='975' />
+<meta property='og:image:type' content='image/png' />
+<meta property='og:description' content='In this post, we’ll break down channel segmentation. By the end, you’ll know how people and customers find you and which channels are most effective in terms of both acquisition and retention.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From" />
+    <meta name="twitter:description" content="In this post, we’ll break down channel segmentation. By the end, you’ll know how people and customers find you and which channels are most effective in terms of both acquisition and retention." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-26160 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog ">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy active">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--academy">
+          <h1>Kissmetrics Academy</h1>
+          <h2>Learn how Kissmetrics can optimize your marketing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From',
+						'Post Category': 'Academy',
+						'Post URL': 'https://blog.kissmetrics.com/using-channels-in-kissmetrics/'
+		}
+	]);
+</script>
+
+<article id="post-26160" class="single-post post-26160 post type-post status-publish format-standard hentry category-academy category-acquiring-new-customers category-keeping-my-best-customers" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Marketers need to know where customers come from. Otherwise, they can&#8217;t grow a business.</p>
+<p>If marketers can get a complete picture of all their marketing channels that shows which ones are acquiring customers, they&#8217;ll know where to focus their acquisition dollars. But, many marketers don’t have information about where customers are coming from and how they can make informed decisions for marketing funds.</p>
+<p>Businesses try to fill in the gap with a &#8220;How did you hear about us?&#8221; form, but those aren&#8217;t 100% reliable, because many people make something up, have already forgotten, or skip the question.</p>
+<p>This is where channel segmentation in Kissmetrics helps. It not only shows you where people come from, <strong>but also how valuable</strong> they are as customers.</p>
+<p>In this post, we&#8217;ll break down channel segmentation. By the end, you&#8217;ll know how people and customers find you and which channels are most effective in terms of both acquisition and retention.</p>
+<p>We&#8217;ll start with explaining the channel property in Kissmetrics.</p>
+<h2>How the Channel Property Works</h2>
+<p>We&#8217;ve written extensively on properties, so if you want a refresher, we recommend checking out <a href="https://blog.kissmetrics.com/people-events-and-properties/">the post that covers properties</a>. In short, properties give us various characteristics about each person, such as where they came from (referrer), which campaign sent them, which URL they first landed on when they visited, etc.</p>
+<p>One of the automatically tracked properties in Kissmetrics is Channel. This property categorizes people based on their referrer. We have seven channels:</p>
+<ul>
+<li><strong>Direct</strong> &#8211; These are people who come from a direct referrer. In many cases, these are people who come to you directly by typing your URL into their browser.</li>
+<li><strong>Organic</strong> &#8211; People who come to your website via a search engine are included in this channel. Also, people who set up a UTM parameter and have the utm_medium as “organic” or “search” will be put in this channel.</li>
+<li><strong>Referral</strong> &#8211; This channel is for those who come to your site via a third party that isn’t a search engine or social site. If they aren’t from those referrers, they’ll be put in this channel.</li>
+<li><strong>Email</strong> &#8211; People who are referred via an email campaign with the utm_medium as “email” or “e-mail” are put in this channel.</li>
+<li><strong>Paid</strong> &#8211; This channel includes people who come from a paid campaign. They’ll be put in this channel if their referring URL has the <a href="https://support.google.com/analytics/answer/1033981?hl=en">gclid parameter</a> or a utm_medium of “cpc,” “cpm,” “display,” “cpv,” “cpa,” “cpp,” or “ppc.”</li>
+<li><strong>Social</strong> &#8211; These are people who come from a social network. We have a list of 276 domains and subdomains for such networks. If any visitor comes from one on our list, they’ll be put in the social channel. Also, people who come from a campaign URL with the utm_medium as “social,” “social-network,” “social-media,” “sm,” “social network,” or “social media” will be put in this channel.</li>
+<li><strong>None</strong> &#8211; People who don’t fit into any of the above channels will be put into the None channel.</li>
+</ul>
+<p>When you segment people by the Channel property, they will be broken down by one of the seven channels above. You also can choose the Channel: Origin property, which will display one of the seven channels <em>and </em>the specific URL or source. We&#8217;ll use an example of this in the Revenue Report segmentation a little later.</p>
+<h2>Kissmetrics Gives You the First Touch of Your Customers</h2>
+<p>Many SaaS and ecommerce companies have long sales cycles. A person’s first visit to a business (also known as first touch) and signing up rarely happen at the same time. People may visit, browse around the site, and then leave, shop around, and sleep on it. After a few weeks, they may return (or not) to sign up or purchase.</p>
+<p>Kissmetrics tracks every touch, from the very first to the last. You can see the very first traffic source and the very first channel that brought a customer to you.</p>
+<p>Viewing first touch channels is important because it shows which channels brought people into the top of your funnel. With most analytics tools, you can&#8217;t get those kinds of insights. Kissmetrics tells you the very first channel that brought you each customer, each signup, each conversion.</p>
+<p>A typical visitor &gt; customer timeline may look something like this:</p>
+<ol>
+<li>Visitor visits kissmetrics.com through a Google search (this is important)</li>
+<li>Six days later, visitor visits kissmetrics.com by typing the URL into their browser</li>
+<li>One month later, visitor visits kissmetrics.com from Twitter</li>
+<li>Three days later, visitor visits kissmetrics.com directly and signs up for a free trial</li>
+</ol>
+<p>In this example, the visitor’s first touch channel was an organic search. Chalk one up for organic because we know it has brought a user.</p>
+<p>Now, imagine this on a much larger scale with thousands of people. You&#8217;ll see what brings users and what doesn&#8217;t. And, when you know this, you&#8217;ll know what to focus on. You’ll also know what not to spend time and money on. This means a better ROI for your marketing dollars.</p>
+<p>We&#8217;ve discussed the Channel property and we understand why first touch is important for building more efficient marketing. Now, let&#8217;s quickly discuss using segmentation in Kissmetrics.</p>
+<h2>A Quick Rundown on Segmentation in Kissmetrics</h2>
+<p>We primarily use properties to segment people. When you segment people, you&#8217;re putting them into various groups based on a property. This is beneficial because you don&#8217;t just get one big bunch of people.</p>
+<p>You see how each segment performs, and you can compare them against each other. If you get enough data, you&#8217;ll see clear winners and losers. When you get these insights, you&#8217;ll know where to focus more time and money because you’ll see what works.</p>
+<p>Next, we&#8217;ll run through a couple of examples of using segmentation by the Channel property in a funnel report.</p>
+<h2>Channel Segmentation in a Funnel Report</h2>
+<p>We&#8217;ll be using a basic signup funnel and segmenting people by first touch. This will show us the first ever channel that people were referred by. First touch channels are important because they show us how people are hearing about us and what is bringing them to our site.</p>
+<p>Here&#8217;s an example funnel, using the Channel property to segment people and track them through each step of the conversion process:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/ecommerce-funnel-channel-segmentation-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/ecommerce-funnel-channel-segmentation-kissmetrics.png" alt="ecommerce funnel channel segmentation KISSmetrics" class="aligncenter size-full wp-image-26162" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/ecommerce-funnel-channel-segmentation-kissmetrics-1024x730.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/ecommerce-funnel-channel-segmentation-kissmetrics.png 1367w" sizes="(max-width: 1367px) 100vw, 1367px" /></a></p>
+<p>This is a typical ecommerce funnel that&#8217;s tracking people from their first visit to placing an order. We&#8217;re segmenting people by their first channel ever:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/channel-property-options-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/channel-property-options-kissmetrics.png" alt="channel property options KISSmetrics" class="aligncenter size-full wp-image-26163" /></a></p>
+<p>We have a few options for sorting people:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/channel-sorting-property-funnel-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/channel-sorting-property-funnel-kissmetrics.png" alt="channel sorting property funnel KISSmetrics" class="aligncenter size-full wp-image-26164" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/channel-sorting-property-funnel-kissmetrics-300x227.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/channel-sorting-property-funnel-kissmetrics.png 670w" sizes="(max-width: 670px) 100vw, 670px" /></a></p>
+<p>You&#8217;ll get these options with any property you select; they aren’t limited to the Channel property. Here&#8217;s a quick description for each option:</p>
+<ol>
+<li><strong>First &#8220;channel&#8221; ever</strong> &#8211; This is what is known as &#8220;first touch.&#8221; When a person first came to your site, this is the channel that referred them. It doesn&#8217;t matter if the first touch happened five years ago or yesterday, whichever channel was their first ever is used here.</li>
+<li><strong>Last &#8220;channel&#8221; ever</strong> &#8211; If you think of channel as a timeline, the last &#8220;channel&#8221; ever is always the most recent. It doesn&#8217;t matter if it fits into a date range, you get the most recent value for that property.</li>
+<li><strong>First &#8220;channel&#8221; starting Nov 1, 2013</strong> &#8211; Kissmetrics will show the first referrer that drove a person to your site within the selected funnel dates. The date here will be replaced by the date chosen in your funnel.</li>
+<li><strong>Last &#8220;channel&#8221; up to Dec 1, 2014 </strong>-For this option, Kissmetrics will show the referrer that drove a person to your site the most recent time within the selected funnel dates. Once again, the Dec 1 date will be replaced with whatever end date you chose.</li>
+<li><strong>&#8220;Channel&#8221; at the time of &#8220;event&#8221;</strong> &#8211; Just as it says, whatever channel a person came from when they triggered an event. This is super useful because you&#8217;ll be able to see which channel they came from right before they performed an event in your funnel. This means that it can tell you which channel immediately preceded the conversion event.</li>
+</ol>
+<p>Let&#8217;s break down each channel and see how they performed at bringing people to the site, and get the conversion rate for each channel:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/ecommerce-funnel-channel-segmentation-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/ecommerce-funnel-channel-segmentation-kissmetrics.png" alt="ecommerce funnel channel segmentation KISSmetrics" class="aligncenter size-full wp-image-26162" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/ecommerce-funnel-channel-segmentation-kissmetrics-1024x730.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/ecommerce-funnel-channel-segmentation-kissmetrics.png 1367w" sizes="(max-width: 1367px) 100vw, 1367px" /></a></p>
+<ul>
+<li><strong>Organic </strong>&#8211; By bringing over 380,000 people, organic delivers the most people to the site. Of the 381,628 who visited, 31,962 converted to placing an order. This channel has a solid conversion rate of 8.4%.</li>
+<li><strong>Direct </strong>&#8211; Of the people who visited the site, 82,809 first came directly. Of those, 6,626 people converted. Those who came directly converted relatively well through the funnel.</li>
+<li><strong>Referral </strong>&#8211; If this isn&#8217;t the best channel, it&#8217;s very close. It brought in 42,980 people, which is enough for 3rd best. But, its real strength is the conversion rate. With 8,113 people placing an order, the conversion rate is 18.9%.</li>
+<li><strong>Social </strong>&#8211; This channel&#8217;s conversion rate is one of the poorer ones: 312 of the 30,383 people converted to placing an order, making the conversion rate 1%. We should not spend any more time on this channel.</li>
+<li><strong>None </strong>-This channel can&#8217;t tell us much. We&#8217;ll ignore it because we cannot make informed decisions when there is no data.</li>
+<li><strong>Email </strong>&#8211; This channel doesn&#8217;t bring in many people, but its conversion rate is decent. Since we have other channels that perform much better, we shouldn&#8217;t spend any additional time on email marketing.</li>
+<li><strong>Paid </strong>-Before this channel is ruled out altogether, we may want to try testing different platforms (AdWords, Facebook, Twitter, etc.).</li>
+</ul>
+<p>Based on this data, we should focus a lot of our efforts on the organic and referral channels. The direct channel does well, but there really isn&#8217;t much we can do to improve that besides just &#8220;getting our name out.&#8221; Most people who visit a site directly hear about it through an advertisement, conference, or word of mouth. Direct also includes any traffic that doesn&#8217;t have a referrer with a URL (i.e., PDFs).</p>
+<p>How do we get more organic and referral traffic? Here are a few ideas:</p>
+<ul>
+<li>PR &#8211; Getting the site on various media outlets will increase referral traffic. The more we can scale this, the more customers we&#8217;ll have.</li>
+<li>Guest blogging &#8211; Writing content on sites in a similar niche is an important part of getting referrals.</li>
+<li>Ramping up our own content &#8211; More content = more traffic. The more quality we can produce, the more organic and referral traffic we&#8217;ll get as people link to our content.</li>
+</ul>
+<h2>Channel Segmentation in a Revenue Report</h2>
+<p>This is one of the coolest features of Kissmetrics and really builds off the channel segmentation in a funnel report.</p>
+<p>What if you could see how valuable those customers are? The actual revenue, churn, and lifetime value generated by those customers? You&#8217;d know exactly which channels were growing your business. Our Revenue Report gives you this information.</p>
+<h3>Setting up a Revenue Report</h3>
+<p>We&#8217;ve <a href="https://blog.kissmetrics.com/the-kissmetrics-revenue-report/">written extensively on the Revenue Report</a>, so we won&#8217;t go into too much detail on using it. For now, we&#8217;ll stick to setting it up and segmenting people by channel.</p>
+<p>Here&#8217;s the starting report configuration:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-configuration-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-configuration-kissmetrics.png" alt="revenue report configuration KISSmetrics" class="aligncenter size-full wp-image-26165" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-configuration-kissmetrics-1024x464.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-configuration-kissmetrics.png 1611w" sizes="(max-width: 1611px) 100vw, 1611px" /></a></p>
+<p>When you begin sending your revenue data to Kissmetrics, you’ll set up and name the property that records how much a customer pays. For us, that property is called Subscription billing amount.</p>
+<p>The date range shows the amount of revenue you&#8217;ve recorded during that time frame. We&#8217;ll want a big sample size because we&#8217;ll be making important decisions off this data and we want to make sure the data is settled. We&#8217;ll choose December 1, 2013 &#8211; November 30, 2014.</p>
+<p>Under Advanced options, we get a few more choices for setting up the parameters of the report.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-advanced-options-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-advanced-options-kissmetrics.png" alt="revenue report advanced options kissmetrics" class="aligncenter size-full wp-image-26166" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-advanced-options-kissmetrics-300x169.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-advanced-options-kissmetrics-1024x578.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-advanced-options-kissmetrics.png 1380w" sizes="(max-width: 1380px) 100vw, 1380px" /></a></p>
+<p>We&#8217;ll show our revenue by month, and we’ll calculate churn by an event we&#8217;ve set up (Subscription canceled). Churn events are not automatically tracked in Kissmetrics, so you&#8217;ll have to set this up yourself.</p>
+<p>We’ll click Run Report, and get our data:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-data-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-data-kissmetrics.png" alt="revenue data kissmetrics" class="aligncenter size-full wp-image-26167" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-data-kissmetrics-1024x825.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-data-kissmetrics.png 1240w" sizes="(max-width: 1240px) 100vw, 1240px" /></a></p>
+<p>The bottom section &#8220;By Segment&#8221; is where we&#8217;ll be focusing our time. We have four options on our segmentation:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-by-segmentation-options.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-by-segmentation-options.png" alt="revenue report by segmentation options" class="aligncenter size-full wp-image-26168" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-by-segmentation-options-300x41.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-by-segmentation-options-1024x140.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-by-segmentation-options.png 1570w" sizes="(max-width: 1570px) 100vw, 1570px" /></a></p>
+<p>Once again, we see that we can choose first touch, last touch, first touch within date range, and last touch within date range.</p>
+<p>We&#8217;ll stick with &#8220;First ever,&#8221; and we’ll use the Channel property:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-channel-segmentation-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-channel-segmentation-kissmetrics.png" alt="revenue report channel segmentation kissmetrics" class="aligncenter size-full wp-image-26169" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-channel-segmentation-kissmetrics-1024x644.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2015/01/revenue-report-channel-segmentation-kissmetrics.png 1588w" sizes="(max-width: 1588px) 100vw, 1588px" /></a></p>
+<p>In this segmentation, we&#8217;re looking at all the revenue that was recorded during our date range and breaking people down by their first ever channel, as well as exact origin. We get five metrics in each channel:</p>
+<ul>
+<li><strong>Total Revenue </strong>&#8211; The total amount of revenue recorded from customers in the channel. We are sorting people by this metric.</li>
+<li><strong>Average Revenue/Person</strong> &#8211; This is total revenue divided by the number of people.</li>
+<li><strong>Lifetime Value </strong>&#8211; The total amount of money you should expect to receive from your customers. (This metric provides an estimate of the lifetime value you’ll receive from each customer by dividing average revenue per person by total churn).</li>
+<li><strong>Paying Customers</strong> &#8211; The number of people who are still actively paying. These are people Kissmetrics has recorded revenue from who have not churned.</li>
+<li><strong>Total Churn</strong> &#8211; The percentage of customer churn in the channel. As a reminder, churn is a canceled subscription.</li>
+</ul>
+<p>Let&#8217;s break down each channel to see which ones bring us the most valuable customers:</p>
+<ul>
+<li><strong>Organic</strong> &#8211; This channel brings the most revenue, highest revenue per person, highest lifetime value, and most paying customers. Its churn is right about average with the rest. This is the strongest channel.</li>
+<li><strong>Direct </strong>&#8211; This channel brings a lot of valuable customers with an average churn rate. Its lifetime value is a strong point, achieving almost $4,800 per customer.</li>
+<li><strong>Referral </strong>&#8211; Total revenue takes a little dip here. This is due to a smaller customer base. Other than that, the metrics line up well with the other channels. This is a good channel for growth.</li>
+<li><strong>Social &#8211; </strong>A small customer base and shrinking lifetime value are the reasons for the diminished revenue numbers. This is not a good channel for growth.</li>
+<li><strong>Email </strong>&#8211; The unique thing about this channel is that despite its high churn, it still has solid revenue per person. If this channel could bring in more customers and get them to stick around, it could become the strongest channel.</li>
+<li><strong>Paid &#8211; </strong>This is a small channel, with only 2 customers. To make this a more valuable channel, we&#8217;ll have to do a lot of testing to get more data before we know how this channel really performs. The churn rate at this point doesn&#8217;t mean much as the base is so small.</li>
+</ul>
+<p>We&#8217;ll also select the Channel: Origin property. This will show the referring URL or source in addition to the channel. In the email channel, it will display the campaign name you chose in the UTM parameter. We&#8217;ll look at the top 15 in the Channel: Origin property. In this example, there are 270 total.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/01/channel-origin-revenue-segmentation.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/01/channel-origin-revenue-segmentation.png" alt="channel origin revenue segmentation" class="aligncenter size-full wp-image-26170" /></a></p>
+<p>The most important thing to do is reduce churn rate. The lower the churn rate, the more revenue we&#8217;ll have. If we can get it consistently below 4%, we&#8217;ll increase our revenue. Organic, direct, and referral are strong channels. Email has brought valuable customers, so we should step up our email marketing program.</p>
+<h2>Three Key Takeaways</h2>
+<ol>
+<li>To have efficient marketing, you need to know where your customers come from and which channels bring the most valuable customers. Kissmetrics has an automatically tracked property called Channel. It categorizes people into seven different channels based on their referrer.</li>
+<li>In the Kissmetrics funnel and revenue reports, you can segment people by any property, not just channel. Using Kissmetrics&#8217;s channel segmentation, you can get an understanding of where your customers come from. Since Kissmetrics connects every touchpoint to your customer, you can get the very first touchpoint and the very first channel that brought someone to you. You&#8217;ll be able to see how the channels at the very top of your funnel perform.</li>
+<li>When you know who is sending you visitors and customers, you&#8217;ll know where to target your time and money. You&#8217;ll also see which channels don&#8217;t work. Simply put, channel segmentation allows you to make better marketing decisions.</li>
+</ol>
+<p><i>To learn what channels are bringing in your most valuable customers, <a href="https://www.kissmetrics.com/signup?utm_source=blog&#038;utm_medium=academy&#038;utm_campaign=channels">login or sign up for a Kissmetrics account</a> now.</i></p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/tracking-marketing-campaigns/">How to Find out What Marketing Campaigns are the Best for Acquisition, ROI, & Retention</a></li>
+<li><a href="https://blog.kissmetrics.com/multichannel-marketing/">Managing Multi-Channel Marketing (Without Losing Your Mind!)</a></li>
+<li><a href="https://blog.kissmetrics.com/how-to-use-cohorts/">How to Use Cohorts to Track Your True Conversion Rate</a></li>
+<li><a href="https://blog.kissmetrics.com/the-kissmetrics-revenue-report/">Unlock Your Marketing Data to Reap its Full Potential with the Kissmetrics Revenue Report</a></li>
+<li><a href="https://blog.kissmetrics.com/kissmetrics-ab-testing-report/">Kissmetrics A/B Test Report: Know How Your Tests Impact Your Customer Acquisition Funnel</a></li>
+<li><a href="https://blog.kissmetrics.com/saas-companies-kissmetrics-funnels/">How SaaS Companies Can Use The Kissmetrics Funnel Report To Drive Their Growth</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fusing-channels-in-kissmetrics%2F&source=tweetbutton&text=Using+Channels+in+Kissmetrics+to+Learn+Where+Your+Most+Valuable+Customers+Come+From&url=https%3A%2F%2Fblog.kissmetrics.com%2Fusing-channels-in-kissmetrics%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fusing-channels-in-kissmetrics%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From&amp;body=https://blog.kissmetrics.com/using-channels-in-kissmetrics/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-26160 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-1009128">
+    <div id="comment-1009128" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">aleey</cite>
+        
+        <a href="https://blog.kissmetrics.com/using-channels-in-kissmetrics/#comment-1009128" class="comment-date">Jan 07, 2015 at 12:41 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Really very interesting and informative content.I really like to use Kissmetrics software  for watching Traffic on Daily basis for my website! thanks again for sharing this wonderful tool with us!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/using-channels-in-kissmetrics/?replytocom=1009128#respond' onclick='return addComment.moveForm( "comment-1009128", "1009128", "respond", "26160" )' aria-label='Reply to aleey'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-1009449">
+    <div id="comment-1009449" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/using-channels-in-kissmetrics/#comment-1009449" class="comment-date">Jan 07, 2015 at 11:36 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks aleey!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/using-channels-in-kissmetrics/?replytocom=1009449#respond' onclick='return addComment.moveForm( "comment-1009449", "1009449", "respond", "26160" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">2 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/using-channels-in-kissmetrics/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='26160' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a76f4a2739" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="64"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From', 'Post URL':'https://blog.kissmetrics.com/using-channels-in-kissmetrics/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/12-infographic-tips/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/optimize-your-website-messaging/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="https://blog.kissmetrics.com/using-channels-in-kissmetrics/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="https://blog.kissmetrics.com/using-channels-in-kissmetrics/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="https://blog.kissmetrics.com/using-channels-in-kissmetrics/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From" data-url="https://blog.kissmetrics.com/using-channels-in-kissmetrics/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From', 'Post URL':'https://blog.kissmetrics.com/using-channels-in-kissmetrics/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From', 'Post URL':'https://blog.kissmetrics.com/using-channels-in-kissmetrics/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'Using Channels in Kissmetrics to Learn Where Your Most Valuable Customers Come From', 'Post URL':'https://blog.kissmetrics.com/using-channels-in-kissmetrics/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":386,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

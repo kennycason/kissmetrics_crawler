@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>How to Run A/B Tests That Give Your Business Big Wins</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; How to Run A/B Tests That Give Your Business Big Wins Comments Feed" href="https://blog.kissmetrics.com/ab-tests-big-wins/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Why More Features Doesn&#8217;t Mean More Success' href='https://blog.kissmetrics.com/features-doesnt-mean-success/' />
+<link rel='next' title='5 Ways Quentin Tarantino Can Help You Increase Reader Engagement' href='https://blog.kissmetrics.com/tarantino-reader-engagement/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/ab-tests-big-wins/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=19372' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fab-tests-big-wins%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fab-tests-big-wins%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,352] -->
+<meta name="description" content="So you’ve decided to jump into A/B testing. And it sounds like the salvation you’ve been dreaming of. What’s not to like?" />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/u/0/+LarsLofgren"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='How to Run A/B Tests That Give Your Business Big Wins' />
+<meta property='og:url' content='https://blog.kissmetrics.com/ab-tests-big-wins/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='So you’ve decided to jump into A/B testing. And it sounds like the salvation you’ve been dreaming of. What’s not to like?' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How to Run A/B Tests That Give Your Business Big Wins" />
+    <meta name="twitter:description" content="So you’ve decided to jump into A/B testing. And it sounds like the salvation you’ve been dreaming of. What’s not to like?" />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-19372 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'How to Run A/B Tests That Give Your Business Big Wins',
+						'Post Category': 'Testing',
+						'Post URL': 'https://blog.kissmetrics.com/ab-tests-big-wins/'
+		}
+	]);
+</script>
+
+<article id="post-19372" class="single-post post-19372 post type-post status-publish format-standard has-post-thumbnail hentry category-testing" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">How to Run A/B Tests That Give Your Business Big Wins</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>So you&#8217;ve decided to jump into A/B testing.</p>
+<p>And it sounds like the salvation you’ve been dreaming of. What’s not to like? Being able to test two different pages on your site to see which one gives you the most customers sounds amazing. After running these things a few times, those extra customers sure will add up!</p>
+<p>You get everything set up and&#8230;</p>
+<p>&#8230;realize you don&#8217;t know what to test first. And the A/B testing euphoria starts to wear off.</p>
+<p>Right before you&#8217;re about to give up, you remember an argument you had with your designer (or was it the boss? Or the developer?) about the button color on one of your pages. They decided to go with green but you KNOW that orange is the better option. You&#8217;re so confident in your choice that you feel it in your BONES.</p>
+<p>You decide to settle the matter once and for all.</p>
+<p>The current button on your site looks like this:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/Green-CTA-Button.png" alt="" /></p>
+<p>And you test it against this stud of a button:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2012/12/Orange-CTA-Button.png" alt="" /></p>
+<p>Everything&#8217;s set up, the test is running, it&#8217;s only a matter of time.</p>
+<p>A week or two later, you log back into the account for your A/B testing tool, go to the test, scroll straight to the results&#8230;</p>
+<p>The green button out-performed the orange by 0.1%. What a letdown. You don&#8217;t know what&#8217;s worse:</p>
+<ul>
+<li>The orange button didn&#8217;t perform better than the green like you predicted</li>
+<li>The difference was so minor that it wasn&#8217;t worth worrying about in the first place.</li>
+</ul>
+<p><strong>This happens ALL the time</strong>. Especially for people just getting started with A/B testing. You see, <em>randomly picking elements to test produces lackluster results</em>. The needle doesn&#8217;t move at all.</p>
+<p>Right now, there are several big-win tests you could run that would make a HUGE difference to the growth of your company. Like 5-20% in customer growth kind of huge. These optimizations are just sitting there, waiting for you to start running A/B tests.</p>
+<p>Finding big-wins doesn&#8217;t happen by accident.</p>
+<p>Here’s the thing: <strong>if you A/B test all sorts of random stuff, you’ll never find these big-wins.</strong></p>
+<p>To find them, we&#8217;ll need a completely different process for deciding which tests to run. There’s a time and a place for testing everything we can think of (I’ll get to this in a second) but the big-wins require a completely different approach to testing.</p>
+<h2>Stage 1: Finding the Big Wins</h2>
+<p>If you&#8217;ve never tested before, you&#8217;ll find several 5-20% increases to your bottom line. I&#8217;m not talking about increases to some random conversion rate. <strong>This is an increase to your revenue and customer base</strong>. Finding a few 10% improvements to your revenue will take your business to a completely new level.</p>
+<p>The best part? These are usually permanent increases to your customer growth. Make a single change to your business and reap the rewards for years to come.</p>
+<p><strong>But randomly testing all sorts of stuff on your site won&#8217;t find these big wins for you.</strong></p>
+<p>We need some guidance on where to start looking.</p>
+<p>If you&#8217;re not an optimization pro that throws out A/B tests like candy, this is the process you want to use in order to get moving quickly.</p>
+<p>To find the big wins with A/B testing, follow these steps:</p>
+<ol>
+<li>Get qualitative insights (customer feedback)</li>
+<li>Predict how to improve</li>
+<li>Confirm the prediction with an A/B test</li>
+</ol>
+<p>Let&#8217;s work through each of them:</p>
+<h3>1. Get Qualitative Insights</h3>
+<p>Qualitative data does a great job with alerting us to problems. More importantly, it helps us learn the WHY behind the WHAT. Using analytics, you’ll see where you customers bail, which features they use, and who your most profitable customers are. But to understand why your customers are doing what they’re doing, you need to go talk to them. At Kissmetrics, here are our <a href="https://blog.kissmetrics.com/best-ways-to-get-feedback/">5 favorite ways to get customer feedback</a>:</p>
+<ol>
+<li>Surveys</li>
+<li>Feedback Boxes</li>
+<li>Reach Out Directly</li>
+<li>User Activity From Your Analytics</li>
+<li>Usability Tests</li>
+</ol>
+<p>To find the big-win optimizations, we want to continue to look for trends in the feedback we&#8217;re receiving while diving deeper into issues we think are stirring up trouble.</p>
+<p>Let&#8217;s say you&#8217;ve been looking at your funnel and you notice that only a few people upgrade to a paid plan or purchase your product. You have a TON of people clicking on your offers but as soon as they see the price, they bail.</p>
+<p>This is where we want to get surgical with our qualitative data.</p>
+<p>Throw up <a href="https://qualaroo.com/" rel="nofollow">a one-question survey</a> on the purchase page asking people if they have any questions about the product. You could also include a support button to collect feedback. And reach out to customers that HAVE purchased and ask them why they chose to become a customer. Once you&#8217;ve gotten feedback from 15-20 people, I bet you&#8217;ll be able to find a trend in the responses. Maybe you&#8217;ve oversold your offer in your marketing. Or maybe you haven&#8217;t addressed a critical objection in your copy.</p>
+<p>Here&#8217;s the main take-away: <strong>qualitative data helps us understand which elements will have the biggest impact when running A/B tests.</strong></p>
+<p>Set up you customer feedback systems so you can easily spot emerging trends. And when one pops up, dive deeper so you know exactly what&#8217;s going on.</p>
+<h3>2. Predict How to Improve</h3>
+<p>This step is pretty straight-forward. You&#8217;ve already collected a bunch of qualitative data on how your customers are behaving. And you know WHY they&#8217;re behaving that way.</p>
+<p>So it&#8217;s time to brainstorm some solutions to your problem.</p>
+<p>Remember, this is a &#8220;prediction.&#8221; It&#8217;s just a hypothesis. It might work, it might not. And we won&#8217;t know until we get data to back it up.</p>
+<h3>3. Confirm Your Prediction With an A/B Test</h3>
+<p>Notice how the actual test comes at the END of this process, not at the beginning? By using qualitative data to help us understand what changes could be the most important, we&#8217;re setting ourselves up to find big wins with these tests.</p>
+<p>Now it&#8217;s just a matter of testing to see if you&#8217;re right. You need to confirm that people will BEHAVE the same way they SAY they will (usually, they don&#8217;t). So get your hands on some data and run that A/B test.</p>
+<p>Focus on finding your big wins and solving the major problems that you find from customer feedback. You can then make a huge impact on the growth of your business with a small amount of work.</p>
+<p>But these big wins will run out. Before long, you&#8217;ll find the ideal funnel to acquire customers, the best pricing structure, and the most persuasive messaging. And if want to keep going, you&#8217;ll have to jump into Stage 2.</p>
+<h2>Stage 2: Get Methodical and Chase the Small Wins</h2>
+<p>Most improvements from A/B testing are small wins. Each one doesn&#8217;t amount to much. But if you can find dozens or hundreds of these things, you can double your growth several times.</p>
+<p>While it might be easy to find a small win here and there, it&#8217;s not easy to crank these out week after week. You&#8217;re going to have to commit a lot of resources to this process.</p>
+<p>Ideally, you&#8217;ll have a team of several people that can handle the marketing, development, and design of everything. If your conversion optimization team has to constantly fight for help from the engineering or design teams, they&#8217;ll never move fast enough to make a significant impact.</p>
+<p>Give them the resources they need to test rapidly. Speed is the name of the game.</p>
+<p>Also, your company needs to have enough data to work with. Typically, this means you need to be acquiring hundreds of new customers every month (thousands is even better). If you&#8217;re a smaller company, you could assign a single person to this task. Just remember that it&#8217;ll take a lot longer before you find enough small wins to make a difference.</p>
+<p>Even during Stage 2, we&#8217;re not testing stuff randomly. Instead, we&#8217;re testing EVERYTHING. Brainstorm a list of changes and start running them back-to-back. Your testing pace should be relentless.</p>
+<p>Some Joe Schmoe blogger swears that a photo of a person looking at your headline gives great results? TEST IT. Your best friend at the hottest startup in town says a video on the homepage makes money rain from the sky? TEST IT. You just found a list of 50 elements everyone should test from an A/B testing company? TEST IT ALL.</p>
+<p>To decide which tests to run first, throw them into a list. It really doesn’t matter which order they go in, start at the top and work your way down as fast as you can. Some will make a difference, most won&#8217;t. And there&#8217;s really no way to know beforehand. So pick fast and get moving.</p>
+<p>Here&#8217;s a list of tests to get you started:</p>
+<ul>
+<li>Headlines</li>
+<li>Remove or add steps to your funnel</li>
+<li>Social proof (testimonials, customer logos, etc.)</li>
+<li>Calls to action</li>
+<li>Copy</li>
+<li>Long-form vs. short-form</li>
+<li>Layout</li>
+<li>Add and remove elements from a page</li>
+<li>Pricing (changing your pricing structure usually gives you a big win but smaller tests like $37 vs. $39 can also help you grow)</li>
+<li>Purchase/signup bonuses</li>
+<li>Up-sells and cross-sells</li>
+</ul>
+<h2>The Common Pitfalls</h2>
+<p>Many people also run into a number of pitfalls when they start A/B testing. Here&#8217;s how to dodge them:</p>
+<h3>Get Statistical Significance</h3>
+<p>When you start getting results for your test, the data is completely random. It might LOOK like version A does better but in the long run, version B is the real winner.</p>
+<p>Flipping a coin works the same way. It&#8217;s entirely possible to get four heads in a row. But that doesn&#8217;t mean you&#8217;ll always get heads. The 50/50 split only shows up if you do hundreds and thousands of flips. Even then, it can get slanted one way or the other.</p>
+<p>We minimize (but we can never eliminate) the odds of getting a bad result by collecting lots data.</p>
+<p>So how do we know that we have enough data?</p>
+<p><strong>Statistical significance measures how confident we are that we&#8217;ll get the same results if we repeat the test.</strong> And we measure that confidence with a percentage.</p>
+<p>If we say that we have a 90% confidence level, that means we&#8217;ll get the same results 9 out of 10 times. At 99% confidence, 99 out of 100 tests will give us the same results. Getting more data will steadily increase your confidence level and help you hit statistical significance.</p>
+<p>Most people say they have statistical significance when they hit the 95% confidence level. That&#8217;s when they pick the winner and move to the next test. Don&#8217;t worry about trying to get to 99% confidence. It usually takes too long to get enough data. You&#8217;ll grow your business faster by picking the winner and focusing on the next A/B test as soon as you hit the 95% mark.</p>
+<p>But remember, the 95% mark is arbitrary. So if you&#8217;ve got a test that&#8217;s sitting at 87% or 93% confidence and you have other tests in the pipeline, it&#8217;s okay to pick a winner and move on. Balance speed with data and don&#8217;t sacrifice one for the other.</p>
+<p>Visual Website Optimizer has built an Excel sheet that does all the fancy math for you, <a href="http://visualwebsiteoptimizer.com/split-testing-blog/ab-testing-significance-calculator-spreadsheet-in-excel/">you can download it here</a>. Just plug in the results from your split test and it&#8217;ll tell you if you&#8217;ve hit statistical significance. If you haven&#8217;t, keep your test running until you do.</p>
+<h3>The &#8220;New&#8221; Effect</h3>
+<p>Introducing something new to your site can impact your conversion rate just because it&#8217;s new. This is the &#8220;new&#8221; effect. What this means is that the new version could out-perform your old version initially. But over time, the performance difference can shrink or even flip. The new version might perform better this week but over the long term, your old version might be the best choice.</p>
+<p>And in some cases, &#8220;new&#8221; will negatively impact conversion rates. This happens when you introduce changes that interrupt the habits of your users.</p>
+<p>Let&#8217;s say you&#8217;ve used the same navigation for a while. Even if you test a version that&#8217;s truly better, conversion rates will likely drop in the short term. Once people become familiar with your site, they don&#8217;t actively look through the navigation each time. Whenever they need something, they know right where to click. And anything that interrupts that habit will slow them down (at least in the short term). <strong>Tests that interrupt established habits will perform worse in the short term.</strong></p>
+<p>So how do we deal with these pitfalls? Even if you have a massive amount of data to work with and can establish statistical significance fairly quickly, give yourself more time if you suspect “newness” might be impacting the results. A couple of weeks will do it. And if time is of the essence, look at the trend lines of your conversion rates. Are they getting closer to each other? If they are, you might be looking at the &#8220;new&#8221; effect. If they look stable and you have a solid week&#8217;s worth of data, you&#8217;re good to go.</p>
+<h3>Track Your Entire Funnel</h3>
+<p>When testing improvements on how you acquire customers with your marketing funnel (making a change to your homepage falls into this group), be careful about only tracking the conversion rate for the next step. On a regular basis, you&#8217;ll find something that increases the next-step conversion but LOWERS the conversion rate for the entire funnel. So if you&#8217;re not tracking your A/B tests through the entire funnel, you might slow your customer growth by accident.</p>
+<p>You&#8217;ll need customer analytics to do this. Regular A/B testing tools like Optimizely and Visual Website Optimizer only track the next step.</p>
+<p><a href="http://www.kissmetrics.com/?utm_source=blog&amp;utm_medium=post&amp;utm_campaign=ab-tests-big-wins">Kissmetrics</a> has integrations with Optimizely and Visual Website Optimizer to help you avoid this trap.</p>
+<p>But there is ONE exception to this. If you&#8217;re just getting started and don&#8217;t have much data to work with, you might only be able to test changes at the top of your funnel. You won&#8217;t have enough data to go any further.</p>
+<p>For example, you might have enough traffic to measure free-trial sign ups from your home page but not enough data to track which version gives you more paid subscribers. If you spot a potential roadblock at the top of your funnel, don&#8217;t let a lack of data at the bottom get in your way of trying to fix it.</p>
+<div class="footer-dynamic-cta">
+<div class="cta-wrapper" style="background-color:#f0e8db;border-radius:4px;margin-top:-17px;">
+<div class="left-column" style="margin-bottom:-30px;">
+					<img src="https://kissmetrics-assets.s3.amazonaws.com/images/blog/aim_goal_business_arrow.svg" width="75%" style="border:none;">
+				</div>
+<div class="right-column" style="color:#555;margin-bottom:-30px;">
+<p><b>Did you know?</b> The Kissmetrics <a href="https://www.kissmetrics.com/ab-test-report">A/B Test Report</a> allows you to test any part of your funnel. Integrate with your favorite tool (Optimizely, VWO, <a href="http://support.kissmetrics.com/a-b-testing/integration/">etc</a>) and track the results in Kissmetrics! Our revolutionary software suite is used by top online marketers throughout the world. <a href="https://www.kissmetrics.com/signup?utm_source=blog&#038;utm_medium=tie_in&#038;utm_campaign=abtestbigwinslars">Sign up for Kissmetrics today!</a></p>
+</p></div>
+<p>				<br class="clear" />
+			</div>
+</p></div>
+<h3>Data is Always Changing</h3>
+<p>What&#8217;s true today may not be true tomorrow. Market&#8217;s shift, customer needs change, your business model evolves.</p>
+<p>So if you run a test today, you might get completely different results 6 months from now. When you find the &#8220;perfect&#8221; version, it won&#8217;t stay perfect. Everything has a half-life and the only way to stay on top is to periodically refresh by running another batch of tests.</p>
+<p>What about seasonality?</p>
+<p>Every business experiences fluctuations throughout the year, some more than others. In some cases, seasonality is blatantly obvious. Apple&#8217;s best quarter is the holiday season. Toy companies also bring home the majority of their revenue during November and December.</p>
+<p>But seasonality can impact our results in more subtle ways.</p>
+<p>Take the B2B market for example. Doesn&#8217;t seem like a candidate for seasonality right? Well, I reached out to several of our Kissmetrics customers to get feedback on a new feature we were building. Usually, I get a 75-90% response rate. But last August, only 1 out 10 replied. I was shocked. Was it the copy in my emails? What did I say to get such bad results?</p>
+<p>It had nothing to do with my emails, everyone was on summer vacation. Over the next 2 weeks, just about all of them got back to me once they returned to the office.</p>
+<p>The same thing can happen to your tests too, regardless of your industry.</p>
+<p>But don&#8217;t use seasonality as an excuse. We all love taking credit when things go well but avoid it like a deathly plague as soon as things aren&#8217;t so rosy. Don&#8217;t blame seasonality unless you have strong evidence to back it up. Just keep an eye out for it.</p>
+<h3>Multivariate Tests and Other Hoopla</h3>
+<p>If you spend much time in the conversion optimization space, you&#8217;ll hear about these fancy schmancy things called multivariate tests. Basically, they let you test dozens of variables all at the same time to find the ideal landing page, home page, checkout page, etc.</p>
+<p>Sounds great right? Here&#8217;s the rub: you need a MASSIVE amount of data before these become a viable option.</p>
+<p>They also take a ton of time to set up and manage. Until you become an A/B testing pro and have an entire team that can hunt for optimizations around the clock, multivariate tests just aren&#8217;t worth the effort.</p>
+<p>There are also other testing algorithms that get WAY more complicated than what most people need. Things like this will just get in the way because you&#8217;ll spend too much time trying to get started. Don&#8217;t sacrifice action for complexity.</p>
+<h2>Bottom Line</h2>
+<p>If you’ve never run an A/B test before, you’re in Stage 1 and there are several optimizations that will grow your company by 5-20%. But to find them, you can’t just test random stuff.</p>
+<p>Instead, use this 3-step A/B testing process:</p>
+<ol>
+<li>Use customer feedback to get your hands on qualitative data</li>
+<li>Predict which optimizations will make the biggest difference</li>
+<li>Run an A/B test to see if you’re right</li>
+</ol>
+<p>Once you’ve found your big-wins, it’s time to start Stage 2 of your optimization plan. At this point, dig in for the long-haul, build a growth team, and start hunting for every little conversion increase you can find.</p>
+<p>To make a dent in your growth, you’ll need to find hundreds of these little guys over the course of a year. To support tests at such a high frequency, you’ll need to be acquiring hundreds of customers every month, preferably thousands.</p>
+<p>When you get into the meat of your tests, don’t forget these common pitfalls:</p>
+<ol>
+<li>Get statistical significance</li>
+<li>Be careful of the “new” effect</li>
+<li>Track your entire funnel</li>
+<li>Your data will always be changing</li>
+<li>Stay simple and don’t use things like multivariate tests unless you have a good reason</li>
+</ol>
+<p>Happy testing!</p>
+<p><strong>About the Author:</strong> Lars Lofgren is the <a href="http://www.kissmetrics.com/">Kissmetrics</a> Marketing Analyst and has his Google Analytics Individual Qualification (he’s certified). Learn how to grow your business at his <a href="http://larslofgren.com/" rel="nofollow">marketing blog</a> or follow him on Twitter <a href="https://twitter.com/LarsLofgren">@larslofgren</a>.</p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/">Conversion Rate Optimization—Are You Shooting Yourself in the Foot?</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fab-tests-big-wins%2F&source=tweetbutton&text=How+to+Run+A%2FB+Tests+That+Give+Your+Business+Big+Wins&url=https%3A%2F%2Fblog.kissmetrics.com%2Fab-tests-big-wins%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fab-tests-big-wins%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=How to Run A/B Tests That Give Your Business Big Wins&amp;body=https://blog.kissmetrics.com/ab-tests-big-wins/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-19372 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-87745">
+    <div id="comment-87745" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Bryan Hackett</cite>
+        
+        <a href="https://blog.kissmetrics.com/ab-tests-big-wins/#comment-87745" class="comment-date">Dec 11, 2012 at 1:42 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article, Lars.  Are there any books or resources that you would recommend for A/B testing?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ab-tests-big-wins/?replytocom=87745#respond' onclick='return addComment.moveForm( "comment-87745", "87745", "respond", "19372" )' aria-label='Reply to Bryan Hackett'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-87837">
+    <div id="comment-87837" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/ab-tests-big-wins/#comment-87837" class="comment-date">Dec 12, 2012 at 11:53 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Bryan! For some more tools and resources, check out my response to Damien&#8217;s comment below. :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ab-tests-big-wins/?replytocom=87837#respond' onclick='return addComment.moveForm( "comment-87837", "87837", "respond", "19372" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-87782">
+    <div id="comment-87782" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Damien Harwin</cite>
+        
+        <a href="https://blog.kissmetrics.com/ab-tests-big-wins/#comment-87782" class="comment-date">Dec 12, 2012 at 1:37 am</a>      </div><!-- /.comment-meta -->
+
+      <p>This was a good article introducing the practicalities of A/B testing if you&#8217;re not sure where or how to get started, but you know that you must.</p>
+<p>One little slip I spotted:<br />
+&gt; &#8220;We all love taking credit when things go wrong but avoid it like a deathly plague as soon as<br />
+&gt; things aren’t so rosy.&#8221;</p>
+<p>Surely you meant &#8220;We all love taking credit when things go well&#8230;&#8221;, unless the fact that you&#8217;re A/B testing has such a positive effect that your entire outlook becomes positively euphoric :)</p>
+<p>I&#8217;d second Bryan&#8217;s request for any recommended starting places re A/B testing &#8211; books or online resources, as well as appropriate tools for the task in hand. . We&#8217;ve all heard of KISSMetrics and Google&#8217;s tools, but what other tools have people used and used successfully? At Bathcomms here in Bath, England, we&#8217;re particularly interested in ecommerce with Magento.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ab-tests-big-wins/?replytocom=87782#respond' onclick='return addComment.moveForm( "comment-87782", "87782", "respond", "19372" )' aria-label='Reply to Damien Harwin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-larsistheman bypostauthor odd alt depth-2" id="li-comment-87836">
+    <div id="comment-87836" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/ab-tests-big-wins/#comment-87836" class="comment-date">Dec 12, 2012 at 11:49 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for catching that typo Damien! I&#8217;ve just fixed it. :)</p>
+<p>For A/B testing tools, check out Optimizely and Visual Website Optimizer. Unbounce is another great tool for testing landing pages. And of course, there&#8217;s the Google Analytics Content Experiments in Google Analytics.</p>
+<p>For A/B testing resources, the Unbounce Blog (<a href="http://unbounce.com/blog/" rel="nofollow">http://unbounce.com/blog/</a>) is a great resource for diving into testing and conversion optimization. There aren&#8217;t many books I&#8217;d recommend on this topic because the industry moves so quickly. Within a year or two, most A/B testing and conversion optimization books get pretty outdated.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ab-tests-big-wins/?replytocom=87836#respond' onclick='return addComment.moveForm( "comment-87836", "87836", "respond", "19372" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-87847">
+    <div id="comment-87847" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Perttu Waldén</cite>
+        
+        <a href="https://blog.kissmetrics.com/ab-tests-big-wins/#comment-87847" class="comment-date">Dec 12, 2012 at 3:21 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you for great article.<br />
+Could you elaborate, perhaps on a separate article, relationship between finding market fit for a product and failure of copy/design etc.<br />
+That is how startup founder can know that her product is failing and not the marketing, presentation?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ab-tests-big-wins/?replytocom=87847#respond' onclick='return addComment.moveForm( "comment-87847", "87847", "respond", "19372" )' aria-label='Reply to Perttu Waldén'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-87939">
+    <div id="comment-87939" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Lars Lofgren</cite>
+        
+        <a href="https://blog.kissmetrics.com/ab-tests-big-wins/#comment-87939" class="comment-date">Dec 13, 2012 at 9:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>That&#8217;s a great idea, maybe I&#8217;ll do a webinar on it. ;)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ab-tests-big-wins/?replytocom=87939#respond' onclick='return addComment.moveForm( "comment-87939", "87939", "respond", "19372" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-88175">
+    <div id="comment-88175" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">jessica</cite>
+        
+        <a href="https://blog.kissmetrics.com/ab-tests-big-wins/#comment-88175" class="comment-date">Dec 16, 2012 at 10:17 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey,</p>
+<p>I read complete topic step by step and the 2nd step which Get Methodical and Chase the Small Wins is really impressive,i would like really to thankful to you for such a great post.</p>
+<p>Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ab-tests-big-wins/?replytocom=88175#respond' onclick='return addComment.moveForm( "comment-88175", "88175", "respond", "19372" )' aria-label='Reply to jessica'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-88267">
+    <div id="comment-88267" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/LarsLofgren' rel='external nofollow' class='url'>Lars Lofgren</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/ab-tests-big-wins/#comment-88267" class="comment-date">Dec 17, 2012 at 4:37 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Glad you liked it Jessica!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ab-tests-big-wins/?replytocom=88267#respond' onclick='return addComment.moveForm( "comment-88267", "88267", "respond", "19372" )' aria-label='Reply to Lars Lofgren'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-88641">
+    <div id="comment-88641" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Matt</cite>
+        
+        <a href="https://blog.kissmetrics.com/ab-tests-big-wins/#comment-88641" class="comment-date">Dec 22, 2012 at 12:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>hey Lars!<br />
+Great attempt. Thank you for informing us that we should include &#8220;New effects&#8221;. that will be helpful for us. and really it was bad that you got 1 out 10 replied,just because of summer vacations. well best of luck for future.<br />
+Thanks.<br />
+Matt</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ab-tests-big-wins/?replytocom=88641#respond' onclick='return addComment.moveForm( "comment-88641", "88641", "respond", "19372" )' aria-label='Reply to Matt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-88800">
+    <div id="comment-88800" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">John</cite>
+        
+        <a href="https://blog.kissmetrics.com/ab-tests-big-wins/#comment-88800" class="comment-date">Dec 24, 2012 at 5:51 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Excellent post. I think that you can make more beautiful images to do A/B testing !<br />
+Thank you</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/ab-tests-big-wins/?replytocom=88800#respond' onclick='return addComment.moveForm( "comment-88800", "88800", "respond", "19372" )' aria-label='Reply to John'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">32 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ab-tests-big-wins/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='19372' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f1941a01a6" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="96"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'How to Run A/B Tests That Give Your Business Big Wins', 'Post URL':'https://blog.kissmetrics.com/ab-tests-big-wins/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/features-doesnt-mean-success/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/tarantino-reader-engagement/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/ab-tests-big-wins/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/ab-tests-big-wins/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/ab-tests-big-wins/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="How to Run A/B Tests That Give Your Business Big Wins" data-url="http://blog.kissmetrics.com/ab-tests-big-wins/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'How to Run A/B Tests That Give Your Business Big Wins', 'Post URL':'https://blog.kissmetrics.com/ab-tests-big-wins/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'How to Run A/B Tests That Give Your Business Big Wins', 'Post URL':'https://blog.kissmetrics.com/ab-tests-big-wins/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'How to Run A/B Tests That Give Your Business Big Wins', 'Post URL':'https://blog.kissmetrics.com/ab-tests-big-wins/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":402,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

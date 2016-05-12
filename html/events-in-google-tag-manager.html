@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>How to Implement Google Analytics Events in Google Tag Manager</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; How to Implement Google Analytics Events in Google Tag Manager Comments Feed" href="https://blog.kissmetrics.com/events-in-google-tag-manager/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How Typography Affects Conversions' href='https://blog.kissmetrics.com/how-typography-affects-conversions/' />
+<link rel='next' title='A Recipe of Viral Features Used by the Fastest Growing Startups' href='https://blog.kissmetrics.com/recipe-of-viral-features/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/events-in-google-tag-manager/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=22516' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fevents-in-google-tag-manager%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fevents-in-google-tag-manager%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,361] -->
+<meta name="description" content="This video discusses the basics of both Google Tag Manager and Google Analytics event tracking, and how you can integrate the two." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='How to Implement Google Analytics Events in Google Tag Manager' />
+<meta property='og:url' content='https://blog.kissmetrics.com/events-in-google-tag-manager/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='This video discusses the basics of both Google Tag Manager and Google Analytics event tracking, and how you can integrate the two.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How to Implement Google Analytics Events in Google Tag Manager" />
+    <meta name="twitter:description" content="This video discusses the basics of both Google Tag Manager and Google Analytics event tracking, and how you can integrate the two." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-22516 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'How to Implement Google Analytics Events in Google Tag Manager',
+						'Post Category': 'Analytics',
+						'Post URL': 'https://blog.kissmetrics.com/events-in-google-tag-manager/'
+		}
+	]);
+</script>
+
+<article id="post-22516" class="single-post post-22516 post type-post status-publish format-standard hentry category-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">How to Implement Google Analytics Events in Google Tag Manager</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Google Tag Manager is designed to minimize your dependency on web developers when you want to add marketing and analytics codes (or &#8220;tags&#8221;) to your website.  This video discusses the basics of both Google Tag Manager and Google Analytics event tracking, and how you can integrate the two.</p>
+
+<div class="fve-video-wrapper fve-image-embed fve-thumbnail-image youtube" style="padding-bottom:56.25%;">
+    <iframe src="//www.youtube.com/embed/iknwOXX7jAs?wmode=transparent&modestbranding=1&autohide=1&showinfo=0&rel=0" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>    </div>
+
+
+<h2>Video Section &#038; Time Markers</h2>
+<ul>
+<li>(00:22) Event Basics</li>
+<li>(01:43) Manually Coding Events in Google Analytics</li>
+<li>(02:53) Google Tag Manager Container with Google Analytics Tag</li>
+<li>(06:17) Auto Event Tracking</li>
+<li>(09:13) Using the Data Layer for Dynamic Parameters and Non-Click Actions</li>
+<li>(12:30) Virtual Pageviews in Google Tag Manager</li>
+<li>(13:28) Social Tracking in Google Tag Manager</li>
+</ul>
+<h2>Video Transcription</h2>
+<p><i>[music]</p>
+<p>Eric Fetman:  Hi! I&#8217;m Eric Fetman, Analytics Trainer and Coach at E Norm, with a guest video for KISSmetrics.</p>
+<p>Google Tag Manager is designed to minimize our dependency on web developers for adding marketing and analytics code to our websites. This tutorial video is going to focus specifically on implementing Google Analytics Events in Google Tag Manager since this can be a little tricky the first time around.</p>
+<p>Let&#8217;s start off with some event basics. Why do we need event tracking in Google Analytics? When you install Google Analytics, either with the regular tracking code or as tag within Google Tag Manager, by default data is captured only when a page loads and the URL changes or the URL is refreshed as in this case.</p>
+<p>We&#8217;ve navigated to another page, the page has loaded, the page has changed, and data has been sent back to the Google Analytics servers. However there are many types of user interaction that don&#8217;t force a new URL to appear, that don&#8217;t force the page to reload and therefore by default don&#8217;t send data back to Google Analytics.</p>
+<p>What types of user actions don&#8217;t generate trackable page views? Links to other websites, links to PDF documents, mail to links, or tell links on smartphones, flash or e jacks types of interactions, video and even completion of individual form fields. None of these interactions cause a page load on your site and therefore none to them can generate Google Analytics for you.</p>
+<p>So these are all good candidates for events or possibly virtual page views, which we will also talk about. Let&#8217;s start off by looking at manually coded events so we can get a sense of what we no longer have to do when we track events through Google Tag Manager.</p>
+<p>Let&#8217;s look at the mail to link as an example. When we click this link, it&#8217;s going to open the mail client but it is not going to force additional page views so no Google Analytics data will be recorded. So here my email client has opened up but this action has not been tracked in Google Analytics.</p>
+<p>Here&#8217;s how a mail to link looks before any event tracking is added. And here&#8217;s the link with event tracking added. The code for event tracking itself is very simple but here&#8217;s the potential problem.</p>
+<p>What if you don&#8217;t directly control changes to page content? What if every change that you want to make is subject to an approval or a release cycle that could take weeks or even months. And what if, at some point, you want to change the action parameter of the event from email to mail to and you have to go through the same hassle again.<br />
+This is where Google Tag Manager comes in. Our first step in Google Tag Manager will be to create a container. </p>
+<p>Once you&#8217;ve created your account at googletagmanager.com, you need to create a container. A container is a code that will allow you to place tags on to your website, remove tags and modify tags.</p>
+<p>We&#8217;re going to go ahead and click new container. We&#8217;re going to call out container &#8220;mysite.com&#8221; for use on web pages and we&#8217;re going to click save. On the next screen, you see the actual container code that you need to place after the opening body tag on all pages of your site.</p>
+<p>Make sure that you work with your development and IT team when placing the Google Tag Manager code and make sure you confer with your marketing and the rest of your analytics team before you remove any analytics or marketing tags. And make sure to deploy the Google Tag Manager container code in a test environment before including it in a production environment.</p>
+<p>Once you have the container included on all pages of your website, you can start to deploy tags through the Google Tag Manager interface. Google Tag Manager provides a variety of templates for adding tags to the container. There are templates for Google services such as Analytics and AdWords.</p>
+<p>There are templates for non Google services such as AdRoll Remarketing or Click Tale heatmapping. If there is a tag that you want to add that there is not an existing template for within the Google Tag Manager, there is a free form html field that will allow you to add those types of tags as well.</p>
+<p>Let&#8217;s start by adding a regular Google Analytics tag to our container. We&#8217;re going to go ahead and click &#8220;Create a new tag&#8221;. Tag name&#8230;let&#8217;s call this, &#8220;Google Analytics page tracker&#8221;.</p>
+<p>Select tag type, we&#8217;re going to choose Google Analytics Universal. Tracking ID&#8230; we&#8217;re going to go to the tracking code page for our Google Analytics property and we are going to copy the tracking ID from that page. And that is what we&#8217;re going to paste into our tag to tell Google Tag Manager that this is the property and website that we&#8217;re tracking in Google Analytics.</p>
+<p>Add rule to fire tag, we&#8217;re going to select all pages, we will go ahead and click save and we&#8217;re done. In order to see any of our tags in action, we&#8217;re going to preview or publish the container. We&#8217;re already operating in a test environment so we&#8217;re going to go ahead and publish. Click create version, click publish.</p>
+<p>Let&#8217;s go back to our mail to page. Two things have changed on this page. One, we have removed that Google Analytics tracking code and two, we have added the Google Analytics container.</p>
+<p>And since this container now contains the Google Analytics tag, when we view this page it should show up as a page view within Google Analytics. We&#8217;re going to go ahead and refresh this page, check our Google Analytics and there is the page view. And we should see the active page. There we go.</p>
+<p>Now we&#8217;re tracking the page view of the mail to page but we still do not have an event track for a mail to link. Now we look at auto or automatic event tracking within Google Tag Manager that will allow us to track our event without actually changing the code on the page.</p>
+<p>To configure auto event tracking, we&#8217;re actually going to create two separate tags. The first tag will just generally listen for link clicks on the page. The second tag will be our actual Google Analytics event tag, which will use the link click as a trigger.</p>
+<p>We&#8217;re back in our mysite.com container. We&#8217;re going to go ahead and click &#8220;Create a new tag.&#8221; For tag name, let&#8217;s just say, &#8220;Link click listener&#8221;. For select tag type, we&#8217;re going to go down to event listener and we&#8217;re going to select link click listener.</p>
+<p>Keep in mind that event listener in this case does not refer specifically to Google Analytics events. This is just a general click event that can actually be used for anything. Select all pages for our rule fire tag and we&#8217;re going to click save.</p>
+<p>Now we have our link click listener tag and we&#8217;re going to use this tag as trigger for our actual Google Analytics event tag. We&#8217;re going to go ahead and click &#8220;Create a new tag&#8221; again. And we&#8217;re going to call this tag, &#8220;Google Analytics Event Mail to Click&#8221;.</p>
+<p>Select tag type, you&#8217;re going to select Google Analytics Universal again. You could use the regular Google Analytics tags for these examples as well but we are using universal. And we are going to paste in the same tracking ID that we used for a regular page view tag within Google Tag Manager.</p>
+<p>But this time, instead of page view track type, we&#8217;re going to use the event track type. For category, let&#8217;s say, &#8220;Link&#8221;. For action, let&#8217;s say, &#8220;Mail to&#8221;. And for label, we&#8217;re going to use a built in macro that&#8217;s going to dynamically populate the element URL, which in this case will be the destination of our mail to link.</p>
+<p>Now, the new rule that we are going to create to fire our Google Analytics event will be a little bit trickier. Let&#8217;s call the rule, &#8220;Mail to Click&#8221;. The rule has two conditions. The first condition is event equals GTM, then click. The link click listener that we defined in a separate tag is actually serving as a trigger for this tag.</p>
+<p>But we also need to add another condition. Element URL contains mail to. Go ahead and save. And now we have the two tags that we need to track mail to link clicks as Google Analytics events. So let&#8217;s make sure that our event tracking is working correctly. We&#8217;ll go ahead and click mail to link. The mail client opens up. Go over to Google Analytics and in our real time events report, we see that our event is tracking correctly. And we see that our event action is mail to. And our event label is the dynamically populated element URL.</p>
+<p>What if you want to track a user action other than a click as a Google Analytics event? This is going to require a little bit of manual coding on your web page to tie in to Google Tag Manager. Let&#8217;s say on your website, visitors can hover over pictures to display a larger pop up. You may want to track these hover actions as events in Google Analytics.</p>
+<p>However, in Google Tag Manger, there is no option for creating a hover event listener the same way we created a link click listener in the previous exercise. So we are going to need to manually code but we need to remember that we no longer have the Google Analytics tracking code on the page directly. We have the Google Tag Manager container.</p>
+<p>We can&#8217;t use the regular coding either for Google Analytics classic or Google Analytics Universal that we would normally use for event tracking. Instead, we&#8217;re going to use the data layer object to communicate with Google Tag manager. All we need to push into the data layer is an event.</p>
+<p>Now, again, this event is not the Google Analytics event. This is going to serve as the trigger for the Google Analytics event tag in Google Tag Manager the same way that GTM link click served as the trigger.</p>
+<p>But we are also going to push another piece of data into the data layer. We can distinguish between hovers over the different images by dynamically passing the image source to the data layer for use as the label parameter for the Google Analytics event tag.</p>
+<p>Back in Google Tag Manager, we&#8217;re creating a Google Analytics event tag for our photo hover action. We have set the tag type as universal, we have our tracking ID. Track type, we have set as event. Category and action, we have static values of photo and hover.</p>
+<p>Label, we are going to pull the event label value into the data layer by creating a new macro. We&#8217;re going to click the little macro icon, new macro, macro name, let&#8217;s call it, &#8220;Event Label.&#8221; Macro type; data layer variable.<br />
+Name; Event label. This is the variable name that we use in our codes so this is what we&#8217;re going to need to specify here. Data layer version, you want to change this to version one. Version two has to do with dot notation, which we are not using. Go ahead and click Save.</p>
+<p>For our rule to fire the tag, create new rule. Rule name; Photo hover. Event equals photo hover. Again, this event is the macro that we&#8217;re using to read the event value in the data layer. Click Save. There we have our Google Analytics event tag for photo hover action.</p>
+<p>Now, let&#8217;s test our events. Mouse over living room, mouse over dining room, mouse over bedroom. Now, let&#8217;s check our events on the Google Analytics real time report. There are our three events coming in. That category is photo, let&#8217;s scroll down then action is hover and there are our three image sources written to the data layer by code in our web page and read from the data layer by the macro in the Google Analytics event tag within Google Tag Manager.</p>
+<p>Earlier on we looked at several types of user interaction that don&#8217;t cause the page reload and that we might want to track either events or virtual page views. So now we&#8217;re looking at virtual page views through Google Tag Manager. Let&#8217;s say we want to track all PDF clicks as virtual page views. When we&#8217;re setting up our virtual page view tag, we are going to take advantage of the href value or the element URL as both the rule and as the value we’re passing in for our virtual page view.</p>
+<p>Tag for our virtual page view, track type is page view but we&#8217;re going to override page URL by specifying a value for a document path    in this case element URL. Rule; Event equals GTM link click. And element URL end with &#8220;.pdf&#8221;<br />
+Let&#8217;s test this out. Click the E book link. PDF opens real time content report. There is our virtual page view, active page: E book PDF.</p>
+<p>Social tracking is a special form of event tracking in both Google Analytics and Google Tag Manager. Let&#8217;s look at a &#8220;Follow us on Twitter&#8221; link. The html from the link would look something like this. So here we&#8217;re setting up our tag track type is social.</p>
+<p>Social Network, we&#8217;re specifying as twitter social action follow. Now we could use a more generic social tag and manually code the parameters through the data layer. But if we start to use the data layer too much, it somewhat defeats the purpose of having the Google Tag Manager in place.</p>
+<p>Finally the rule, event GTM link click element URL equals twitter URL. This action will appear in the social plug  ins report.</p>
+<p>Eric:  Thanks for watching this tutorial. Hope you found it useful. If you have any questions or comments, please tweet them to @enorinc or post them below.</p>
+<p>[music]</p>
+<p></i></p>
+<p><b>About the Author</b>: Eric Fettman is Analytics Trainer &#038; Coach at <a href="http://www.e-nor.com/google-analytics-training-course/" rel="nofollow">E-Nor</a>.  He is also the developer of <a href="http://googleanalyticstest.com" rel="nofollow">googleanalyticstest.com</a>, a free resource for Google Analytics training and GA Individual Qualification preparation, and he regularly provides GA pointers at <a href="http://gatipoftheday.com" rel="nofollow">gatipoftheday.com</a>.</p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fevents-in-google-tag-manager%2F&source=tweetbutton&text=How+to+Implement+Google+Analytics+Events+in+Google+Tag+Manager&url=https%3A%2F%2Fblog.kissmetrics.com%2Fevents-in-google-tag-manager%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fevents-in-google-tag-manager%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=How to Implement Google Analytics Events in Google Tag Manager&amp;body=https://blog.kissmetrics.com/events-in-google-tag-manager/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-22516 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-156521">
+    <div id="comment-156521" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ron K.</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-156521" class="comment-date">Jan 24, 2014 at 3:04 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great post, very helpful information. I was left wondering why the macro {{element url}} wasn&#8217;t available in my options. I discovered this article after some research; <a href="https://support.google.com/tagmanager/answer/2644341?hl=en" rel="nofollow">https://support.google.com/tagmanager/answer/2644341?hl=en</a></p>
+<p>but was unsure of the proper way to set up the macro so it populates in my dropdown within GTM. Any advice?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=156521#respond' onclick='return addComment.moveForm( "comment-156521", "156521", "respond", "22516" )' aria-label='Reply to Ron K.'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-156530">
+    <div id="comment-156530" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ron K.</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-156530" class="comment-date">Jan 24, 2014 at 3:15 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Solved my own problem&#8230; further digging uncovered this article on the same topic that describes how you have to create the new macros yourself. Instructions are about 2/3 down the page. whymeasurethat.com/2014/01/22/google-tag-manager-auto-event-tracking/</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=156530#respond' onclick='return addComment.moveForm( "comment-156530", "156530", "respond", "22516" )' aria-label='Reply to Ron K.'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-3" id="li-comment-160337">
+    <div id="comment-160337" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Raymond Chau</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-160337" class="comment-date">Feb 10, 2014 at 11:43 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Eric and Ron</p>
+<p>I am actually the blogger who write the article in Why Measure That, I think the problem is if you&#8217;ve registered your GTM account long time ago (like me, I registered it since last year when it first releases), those {{element}} related macros may not be there. </p>
+<p>I verified that since lately I created another account for my client, and at that time I can see those macros available. </p>
+<p>Hope it helps!</p>
+<p>Eric, enjoyed reading the KISSmetrics blog a lot, keep blogging!</p>
+<p>Raymond</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=160337#respond' onclick='return addComment.moveForm( "comment-160337", "160337", "respond", "22516" )' aria-label='Reply to Raymond Chau'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-156593">
+    <div id="comment-156593" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/ericfettman' rel='external nofollow' class='url'>Eric Fettman</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-156593" class="comment-date">Jan 24, 2014 at 6:02 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Ron, glad the post was helpful.</p>
+<p>You should not have to set up the {{element url}} macro yourself; it&#8217;s predefined.</p>
+<p>Where is it not displaying for you?  In the conditions drop-down when you&#8217;re setting up a rule?</p>
+<p>Eric</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=156593#respond' onclick='return addComment.moveForm( "comment-156593", "156593", "respond", "22516" )' aria-label='Reply to Eric Fettman'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-156726">
+    <div id="comment-156726" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ron K.</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-156726" class="comment-date">Jan 25, 2014 at 4:48 am</a>      </div><!-- /.comment-meta -->
+
+      <p>That&#8217;s correct Eric. I created the link click listener tag, and then the GA event tag &#8211; but when trying to setup the rule to fire it &#8211; none of the new element macros are there. I had to define them all as per the other link I provided.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=156726#respond' onclick='return addComment.moveForm( "comment-156726", "156726", "respond", "22516" )' aria-label='Reply to Ron K.'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-156821">
+    <div id="comment-156821" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Tushar Nagpal</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-156821" class="comment-date">Jan 25, 2014 at 12:13 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I was searching for the same for a client&#8217;s website. Google Analytics is becoming more confusing, I love the Real Time Visitors feature though.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=156821#respond' onclick='return addComment.moveForm( "comment-156821", "156821", "respond", "22516" )' aria-label='Reply to Tushar Nagpal'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-157513">
+    <div id="comment-157513" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/ericfettman' rel='external nofollow' class='url'>Eric Fettman</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-157513" class="comment-date">Jan 28, 2014 at 5:07 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Yes, the Real Time reports can be very useful for verifying correct implementation of events, virtual pageviews, and even the regular tracking code on specific pages.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=157513#respond' onclick='return addComment.moveForm( "comment-157513", "157513", "respond", "22516" )' aria-label='Reply to Eric Fettman'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-157001">
+    <div id="comment-157001" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">palvinder singh</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-157001" class="comment-date">Jan 26, 2014 at 4:38 am</a>      </div><!-- /.comment-meta -->
+
+      <p>really great post..<br />
+Google Analytics solves some major problems of mine..<br />
+and really thnkful to U as well Mr. Eric Fettman for writing this bolg .</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=157001#respond' onclick='return addComment.moveForm( "comment-157001", "157001", "respond", "22516" )' aria-label='Reply to palvinder singh'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-157156">
+    <div id="comment-157156" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ankt Bansal</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-157156" class="comment-date">Jan 26, 2014 at 11:16 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Google Analytic is one of the major tool for SEO and it helped me a lot to track my blog traffic. I really appreciate the tips you have shared in this blog. I will try these tips, hope it will work well for me.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=157156#respond' onclick='return addComment.moveForm( "comment-157156", "157156", "respond", "22516" )' aria-label='Reply to Ankt Bansal'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-157274">
+    <div id="comment-157274" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">ali</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-157274" class="comment-date">Jan 27, 2014 at 10:00 am</a>      </div><!-- /.comment-meta -->
+
+      <p>google helps alot to finds the static of my website<br />
+goforexmarket.com</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=157274#respond' onclick='return addComment.moveForm( "comment-157274", "157274", "respond", "22516" )' aria-label='Reply to ali'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-157488">
+    <div id="comment-157488" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://in.linkedin.com/in/vyasbhavik' rel='external nofollow' class='url'>Bhavik Vyas</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-157488" class="comment-date">Jan 28, 2014 at 2:50 am</a>      </div><!-- /.comment-meta -->
+
+      <p>The information you choose to track depends on what curiosities you want to quell. Being in touch with keyword searches can help a site with text-heavy content to boost search rankings, while knowing which products convert best can inspire ecommerce sites to increase visibility of these items.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=157488#respond' onclick='return addComment.moveForm( "comment-157488", "157488", "respond", "22516" )' aria-label='Reply to Bhavik Vyas'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-158242">
+    <div id="comment-158242" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Irene</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-158242" class="comment-date">Jan 30, 2014 at 4:24 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Doesn`t work for me ( if i put in element url contains mailto (i also have it on my website) universal analytics doesn`t show any events happening. if i only keep gtm.linkClick without mailto, then it shows the event BUT label is &#8220;null&#8221;</p>
+<p>So far your article is the best step-by-step solution for GTM.<br />
+Thank You very much, You`ve cleared lots of things for me, I was doubt about</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=158242#respond' onclick='return addComment.moveForm( "comment-158242", "158242", "respond", "22516" )' aria-label='Reply to Irene'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-158257">
+    <div id="comment-158257" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Irene</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-158257" class="comment-date">Jan 30, 2014 at 5:29 am</a>      </div><!-- /.comment-meta -->
+
+      <p>this.src also returns (not set)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=158257#respond' onclick='return addComment.moveForm( "comment-158257", "158257", "respond", "22516" )' aria-label='Reply to Irene'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-158502">
+    <div id="comment-158502" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Pravin</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-158502" class="comment-date">Jan 31, 2014 at 2:47 am</a>      </div><!-- /.comment-meta -->
+
+      <p>This is something new to me. Definitely will try.</p>
+<p>Thanks,<br />
+Pravin</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=158502#respond' onclick='return addComment.moveForm( "comment-158502", "158502", "respond", "22516" )' aria-label='Reply to Pravin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-162574">
+    <div id="comment-162574" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jake</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-162574" class="comment-date">Feb 18, 2014 at 4:05 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Eric,</p>
+<p>Brilliant video, the most succinct video of GTM I could find yet!</p>
+<p>I do have one question. I was hoping you would get to abandoned/incomplete forms, as you outlined this is one key advantage of event tracking at the start of the video.</p>
+<p>I have found the below article for form abandonment for regular event tracking, I was hoping you could help me implement it with GTM. Your video made everything crystal clear, so hoping you can help me again!</p>
+<p>Thanks Eric,</p>
+<p>Best regards,</p>
+<p>Jake</p>
+<p>lunametrics.com/blog/2012/11/13/track-form-abandonment-google-analytics/#sr=g&amp;m=o&amp;cp=or&amp;ct=-tmc&amp;st=iuuq%3B%2G%2Gxxx&amp;ts=1392724468</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=162574#respond' onclick='return addComment.moveForm( "comment-162574", "162574", "respond", "22516" )' aria-label='Reply to Jake'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-167082">
+    <div id="comment-167082" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Imtiaz Ali</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-167082" class="comment-date">Mar 01, 2014 at 9:28 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Nice way to implement Google analytics :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=167082#respond' onclick='return addComment.moveForm( "comment-167082", "167082", "respond", "22516" )' aria-label='Reply to Imtiaz Ali'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-177021">
+    <div id="comment-177021" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jasmine</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-177021" class="comment-date">Mar 19, 2014 at 3:18 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Best video on GTM and GA integration I&#8217;ve ever seen, thank you!  I&#8217;m an app marketer with no IT team and we often outsource our development work. I needed to understand how GTM and GA work together in order to coordinate with our developers, I spent 6 hours today pouring through GTM Google support documentation and couldn&#8217;t find anything.  Thank you SO MUCH for this video!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=177021#respond' onclick='return addComment.moveForm( "comment-177021", "177021", "respond", "22516" )' aria-label='Reply to Jasmine'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-180791">
+    <div id="comment-180791" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Albert</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-180791" class="comment-date">Apr 01, 2014 at 4:49 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article and tutorial. Very useful.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=180791#respond' onclick='return addComment.moveForm( "comment-180791", "180791", "respond", "22516" )' aria-label='Reply to Albert'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-181568">
+    <div id="comment-181568" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sharon</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-181568" class="comment-date">Apr 04, 2014 at 10:37 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Fantastic video.   Can&#8217;t wait for more.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=181568#respond' onclick='return addComment.moveForm( "comment-181568", "181568", "respond", "22516" )' aria-label='Reply to Sharon'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-185789">
+    <div id="comment-185789" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Manoj Varma</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-185789" class="comment-date">Apr 21, 2014 at 1:56 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hello,</p>
+<p>I am running with a telecom site &amp; it has app registered on App store &amp; iphone store.<br />
+I have download link to download app from my website, can you please help how I can track the same using GTM  </p>
+<p>Thnx in advance<br />
+Manoj</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=185789#respond' onclick='return addComment.moveForm( "comment-185789", "185789", "respond", "22516" )' aria-label='Reply to Manoj Varma'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-186746">
+    <div id="comment-186746" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Melissa</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-186746" class="comment-date">Apr 24, 2014 at 12:04 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>When you are using </p>
+<p>Are you adding to the data layer or referencing something in the data layer? You mentioned constant use of the data layer defeats the purpose of GTM so i&#8217;m assuming youhad to have a developer add something to the datalayer?</p>
+<p>Also within GA the event action comes in as the URL. How would i make it come in as bedroom instead?</p>
+<p>Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=186746#respond' onclick='return addComment.moveForm( "comment-186746", "186746", "respond", "22516" )' aria-label='Reply to Melissa'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-186747">
+    <div id="comment-186747" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Melissa</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-186747" class="comment-date">Apr 24, 2014 at 12:06 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Part of my comment was deleted, I am referring to the img src images jpg and the datalayer.push custom code</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=186747#respond' onclick='return addComment.moveForm( "comment-186747", "186747", "respond", "22516" )' aria-label='Reply to Melissa'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-206837">
+    <div id="comment-206837" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Greg</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-206837" class="comment-date">May 20, 2014 at 7:28 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank Eric,</p>
+<p>I&#8217;m just getting started with event tracking. Looking to track failed form events. Where someone starts a form but does not complete it. This helps.</p>
+<p>Greg<br />
+All Call Technologies</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=206837#respond' onclick='return addComment.moveForm( "comment-206837", "206837", "respond", "22516" )' aria-label='Reply to Greg'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-300901">
+    <div id="comment-300901" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jevan</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-300901" class="comment-date">Jun 23, 2014 at 9:43 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This is awesome however can you give an example for video clicks wtihin the specific page? I wanted to track video clicks on my page since the videos were embedded I am having hard time to  figure out how to track those video clicks. thanks</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=300901#respond' onclick='return addComment.moveForm( "comment-300901", "300901", "respond", "22516" )' aria-label='Reply to Jevan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-302846">
+    <div id="comment-302846" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-302846" class="comment-date">Jun 24, 2014 at 1:59 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Jevan, glad we could help. Thanks for the feedback :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=302846#respond' onclick='return addComment.moveForm( "comment-302846", "302846", "respond", "22516" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-317007">
+    <div id="comment-317007" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Hirthanu Mylsamy</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-317007" class="comment-date">Jun 30, 2014 at 11:04 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I have created tags for analytics code, remarketing code, evemnt code in Google Tag Manager.   My doubt is, while implementing tag manger snippet on the all webpages, Whether I need to remove other snippets like analytics code, remarketing code, which are already existing. Some one answer me﻿</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=317007#respond' onclick='return addComment.moveForm( "comment-317007", "317007", "respond", "22516" )' aria-label='Reply to Hirthanu Mylsamy'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-318528">
+    <div id="comment-318528" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-318528" class="comment-date">Jul 01, 2014 at 10:26 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hirthanu, what specifically seems to be the problem?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=318528#respond' onclick='return addComment.moveForm( "comment-318528", "318528", "respond", "22516" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-3" id="li-comment-319613">
+    <div id="comment-319613" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Hirthanu</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-319613" class="comment-date">Jul 01, 2014 at 8:04 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I have added Google Tag manager snippet on all web pages.  My doubt is, Whether I have to remove existing analytics tracking code, re-marketing code from web pages?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=319613#respond' onclick='return addComment.moveForm( "comment-319613", "319613", "respond", "22516" )' aria-label='Reply to Hirthanu'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-396403">
+    <div id="comment-396403" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jyoti</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-396403" class="comment-date">Jul 27, 2014 at 10:23 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>@Neil I have the same question as Hirthanu!! After publishing GTM, whether GA code should be removed or not? Kindly reply as I am unable to find its perfect answer from anywhere. Hope here I will get.</p>
+<p>Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=396403#respond' onclick='return addComment.moveForm( "comment-396403", "396403", "respond", "22516" )' aria-label='Reply to Jyoti'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-406719">
+    <div id="comment-406719" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Pavel</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-406719" class="comment-date">Jul 31, 2014 at 12:42 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi, very good explanation. Thank You!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=406719#respond' onclick='return addComment.moveForm( "comment-406719", "406719", "respond", "22516" )' aria-label='Reply to Pavel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-408368">
+    <div id="comment-408368" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-408368" class="comment-date">Jul 31, 2014 at 10:59 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Pavel, glad we could help :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=408368#respond' onclick='return addComment.moveForm( "comment-408368", "408368", "respond", "22516" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-549364">
+    <div id="comment-549364" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Thomas K.</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-549364" class="comment-date">Sep 11, 2014 at 3:44 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This helped me out a lot. Kudos and thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=549364#respond' onclick='return addComment.moveForm( "comment-549364", "549364", "respond", "22516" )' aria-label='Reply to Thomas K.'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-597708">
+    <div id="comment-597708" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Caroline</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-597708" class="comment-date">Sep 22, 2014 at 12:35 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Greg<br />
+I tried to use this, but i dont have an element macro.<br />
+Should i create a different ?Using Which parameters?<br />
+Thanks</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=597708#respond' onclick='return addComment.moveForm( "comment-597708", "597708", "respond", "22516" )' aria-label='Reply to Caroline'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-668207">
+    <div id="comment-668207" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Eric Fullerton</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-668207" class="comment-date">Oct 01, 2014 at 12:57 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great video, thanks for the information &#8211; very useful.  I have external website partners that use my ecommerce solution.  They also use their own GTM.  Can I add their GTM code to my GTM so their scripts track on the external ecommerce site?  Or is it sufficient to add their GA code to our GTM to get ecommerce tracking on both our GA reports? Otherwise the only other way I can see is adding 2 snippets of GTM to the ecommerce site.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=668207#respond' onclick='return addComment.moveForm( "comment-668207", "668207", "respond", "22516" )' aria-label='Reply to Eric Fullerton'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-918619">
+    <div id="comment-918619" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jay Murphy</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-918619" class="comment-date">Oct 23, 2014 at 4:09 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Eric</p>
+<p>Great video &#8211; clear explanations and love how you used real-time reporting to show the results.  GTM, Real-time test and ready to go to production!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=918619#respond' onclick='return addComment.moveForm( "comment-918619", "918619", "respond", "22516" )' aria-label='Reply to Jay Murphy'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-946420">
+    <div id="comment-946420" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ryan</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-946420" class="comment-date">Nov 04, 2014 at 12:22 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>How do you setup the Test Environment that shows Real-Time Analytics? Is this done on something like WAMP/MAMP? Should I signup for a completely different Analytics account while testing then change all of the Tracking ID&#8217;s in Tag Manager when it&#8217;s ready to deploy?</p>
+<p>Any guidance or tutorials you know of on this would be great. Really appreciate the video otherwise.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=946420#respond' onclick='return addComment.moveForm( "comment-946420", "946420", "respond", "22516" )' aria-label='Reply to Ryan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-964172">
+    <div id="comment-964172" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">jonathan</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-964172" class="comment-date">Nov 20, 2014 at 10:15 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Do you offer any tutorials on how to add GTM tracking for contact from submissions, I tried to get it working but have has no success.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=964172#respond' onclick='return addComment.moveForm( "comment-964172", "964172", "respond", "22516" )' aria-label='Reply to jonathan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1015216">
+    <div id="comment-1015216" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ty</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-1015216" class="comment-date">Jan 13, 2015 at 3:30 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;ve set up the  Auto Event Tracking in GTM and it&#8217;s working properly in real time reporting, however, the GA corresponding goal is not working. How should I set up the GA goal label field? Should it be blank or should it be {{element id}}? If it should be {{element id}} should the label equal, contain, or be regex?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=1015216#respond' onclick='return addComment.moveForm( "comment-1015216", "1015216", "respond", "22516" )' aria-label='Reply to Ty'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1025866">
+    <div id="comment-1025866" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mandeep Hooda</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-1025866" class="comment-date">Jan 24, 2015 at 3:15 am</a>      </div><!-- /.comment-meta -->
+
+      <p>How to call button click function on the website. Actually i placed my event code on my page but it is not calling properly, and no any event showing in Google analytics. please help me to get that code.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=1025866#respond' onclick='return addComment.moveForm( "comment-1025866", "1025866", "respond", "22516" )' aria-label='Reply to Mandeep Hooda'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1048613">
+    <div id="comment-1048613" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Eddie</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-1048613" class="comment-date">Feb 18, 2015 at 10:25 am</a>      </div><!-- /.comment-meta -->
+
+      <p>A very helpful video indeed. However, near to the end, looks like you were running out of time and started to rush and jumping steps, like in college when the teacher is about to end the class and decides to run to catch up with clock. Just saying&#8230;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=1048613#respond' onclick='return addComment.moveForm( "comment-1048613", "1048613", "respond", "22516" )' aria-label='Reply to Eddie'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1048621">
+    <div id="comment-1048621" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Eddie</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-1048621" class="comment-date">Feb 18, 2015 at 10:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>After going through the video a second time, since it seemed that I lost a couple of details; I need to ask the following: When tracking the new TAG (Google Analytics Event &#8211; Mailto Click) you define a new rule (Mailto Click) where one of the conditions is {{event}} equals gtm.linkClick. Where is this label (gtm.linkClick) coming from?. Thanks in advance for your time and response. Regards&#8230; A newbie</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=1048621#respond' onclick='return addComment.moveForm( "comment-1048621", "1048621", "respond", "22516" )' aria-label='Reply to Eddie'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-1097720">
+    <div id="comment-1097720" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Zaheer</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-1097720" class="comment-date">Apr 20, 2015 at 8:58 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;m also confused about the same situation. Do share this if you&#8217;ve figured it out somehow Eddie.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=1097720#respond' onclick='return addComment.moveForm( "comment-1097720", "1097720", "respond", "22516" )' aria-label='Reply to Zaheer'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1052468">
+    <div id="comment-1052468" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Michael</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-1052468" class="comment-date">Feb 24, 2015 at 2:26 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi thanks for the great vid ,but im still confused ? Should i use GA or GTM .</p>
+<p>witch is better sorry i did not get that from the video . Thanks Michael..</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=1052468#respond' onclick='return addComment.moveForm( "comment-1052468", "1052468", "respond", "22516" )' aria-label='Reply to Michael'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1066927">
+    <div id="comment-1066927" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">femi</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-1066927" class="comment-date">Mar 13, 2015 at 6:50 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great vid. Had some problems with other tuts but this showed me al the steps.<br />
+Thanks from holland</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=1066927#respond' onclick='return addComment.moveForm( "comment-1066927", "1066927", "respond", "22516" )' aria-label='Reply to femi'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1131122">
+    <div id="comment-1131122" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Nicolas Colombres</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-1131122" class="comment-date">Jun 29, 2015 at 8:11 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for this video. It was really helpfull for US in GTM :D</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=1131122#respond' onclick='return addComment.moveForm( "comment-1131122", "1131122", "respond", "22516" )' aria-label='Reply to Nicolas Colombres'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1133472">
+    <div id="comment-1133472" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Nicolas Colombres</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-1133472" class="comment-date">Jul 03, 2015 at 7:54 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Really aswesome post still. We are beggining our journey in GTM and this really helpfull!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=1133472#respond' onclick='return addComment.moveForm( "comment-1133472", "1133472", "respond", "22516" )' aria-label='Reply to Nicolas Colombres'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1201728">
+    <div id="comment-1201728" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Alexander Stöhr</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-1201728" class="comment-date">Jan 05, 2016 at 4:54 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This post is absolutely awesome! I really didn&#8217;t get the basics of implementing event tracking using gtm since almost two years. I was doing event tracking manually &#8211; until now!</p>
+<p>Huge THANK YOU to you guys!</p>
+<p>Mind blowing article &#8211; again!</p>
+<p>Best regards,<br />
+Alex</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=1201728#respond' onclick='return addComment.moveForm( "comment-1201728", "1201728", "respond", "22516" )' aria-label='Reply to Alexander Stöhr'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1219810">
+    <div id="comment-1219810" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sasikanth</cite>
+        
+        <a href="https://blog.kissmetrics.com/events-in-google-tag-manager/#comment-1219810" class="comment-date">Feb 17, 2016 at 3:48 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>We have installed the GTM tracking code in November in addition to the already existing GA tracking code. Then from GTM, I create a trigger to track page views for specific page paths ( I am sure GA already provides this option with out even using GTM) and have published it to live site. My GTM is connected to my GA Tracking Id.</p>
+<p>Now my question:- As I have both the tracking codes present on my web page, will it count page views twice if the event I am creating from GTM is of type Page view ?  I see from the Console that only one page view is being sent and one Event is being sent. But as the event type is page view I am wondering if I am counting some pages twice.</p>
+<p>I have checked lot of forums before posting this here. Please help</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/events-in-google-tag-manager/?replytocom=1219810#respond' onclick='return addComment.moveForm( "comment-1219810", "1219810", "respond", "22516" )' aria-label='Reply to Sasikanth'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">59 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/events-in-google-tag-manager/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='22516' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="ecab24cb33" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="34"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'How to Implement Google Analytics Events in Google Tag Manager', 'Post URL':'https://blog.kissmetrics.com/events-in-google-tag-manager/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/how-typography-affects-conversions/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/recipe-of-viral-features/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/events-in-google-tag-manager/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/events-in-google-tag-manager/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/events-in-google-tag-manager/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="How to Implement Google Analytics Events in Google Tag Manager" data-url="http://blog.kissmetrics.com/events-in-google-tag-manager/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'How to Implement Google Analytics Events in Google Tag Manager', 'Post URL':'https://blog.kissmetrics.com/events-in-google-tag-manager/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'How to Implement Google Analytics Events in Google Tag Manager', 'Post URL':'https://blog.kissmetrics.com/events-in-google-tag-manager/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'How to Implement Google Analytics Events in Google Tag Manager', 'Post URL':'https://blog.kissmetrics.com/events-in-google-tag-manager/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":618,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

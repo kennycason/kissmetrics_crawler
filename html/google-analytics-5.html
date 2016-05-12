@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>A Beginner's Guide to Google Analytics 5</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; A Beginner&#8217;s Guide to Google Analytics 5 Comments Feed" href="https://blog.kissmetrics.com/google-analytics-5/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How To Use Google AdWords To Reach The People Who Didn’t Click On Your Ad' href='https://blog.kissmetrics.com/re-marketing-guide/' />
+<link rel='next' title='The 2011 B2B Marketing Guide' href='https://blog.kissmetrics.com/2011-b2b-marketing-guide/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/google-analytics-5/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=4727' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-5%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-5%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,345] -->
+<meta name="description" content="Google Analytics is arguably one of the most powerful web analytics applications available today. The fact that, like many Google offerings, it's an entirely free program, makes it even more appealing. Click here to read what's new in Version 5!" />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='A Beginner&#039;s Guide to Google Analytics 5' />
+<meta property='og:url' content='https://blog.kissmetrics.com/google-analytics-5/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Google Analytics is arguably one of the most powerful web analytics applications available today. The fact that, like many Google offerings, it&#039;s an entirely free program, makes it even more appealing. Click here to read what&#039;s new in Version 5!' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="A Beginner's Guide to Google Analytics 5" />
+    <meta name="twitter:description" content="Google Analytics is arguably one of the most powerful web analytics applications available today. The fact that, like many Google offerings, it's an entirely free program, makes it even more appealing. Click here to read what's new in Version 5!" />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-4727 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'A Beginner&#8217;s Guide to Google Analytics 5',
+						'Post Category': 'Analytics',
+						'Post URL': 'https://blog.kissmetrics.com/google-analytics-5/'
+		}
+	]);
+</script>
+
+<article id="post-4727" class="single-post post-4727 post type-post status-publish format-standard has-post-thumbnail hentry category-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">A Beginner&#8217;s Guide to Google Analytics 5</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p><a href="https://www.google.com/analytics/">Google Analytics</a> is arguably one of the most powerful web analytics applications available today. The fact that, like many Google offerings, it&#8217;s an entirely free program, makes it even more appealing. Version 5 of Analytics has just rolled out to many users (look for the &#8220;New Version&#8221; link at the top of your page after you&#8217;ve logged into Analytics to check it out), and there have been some fairly significant user interface changes.</p>
+<p>Below we&#8217;ve compiled everything you need to know to get started with Analytics in general, and specifically with Version 5. (This is a beginner&#8217;s guide, aimed at users who may or may not be familiar with Analytics, and doesn&#8217;t cover some of the more in-depth features.)</p>
+<h2>A Brief History of Analytics</h2>
+<p>Google Analytics was originally developed from the Urchin on Demand software that Google acquired in the spring of 2005 (Urchin is still developed and available through value-added resellers, and is currently at version 7). The first Google-branded version was released in November 2005. In 2006, further ideas from Measure Map (developed by Adaptive Path) were integrated into Analytics when Google acquired them.</p>
+<p>Early on, Analytics was available by invitation only, as demand for the product was very high. It wasn&#8217;t fully available to all users until nearly a year after its initial release (August 2006).</p>
+<h2>Why Use Analytics?</h2>
+<p>Analytics is a powerful application for tracking traffic patterns on your website. The fact that it&#8217;s an entirely free program, and integrates with other Google programs, like AdSense and AdWords, only makes it that much more valuable.</p>
+<p>Considering most people already use at least some Google products, it makes sense to use Analytics, because it is such a powerful, yet easy-to-use, product.</p>
+<h2>What&#8217;s New in Analytics 5?</h2>
+<p>One of the biggest new features in Analytics 5 is the addition of <b>custom dashboards</b>. You can create custom dashboards for your sites that include whatever metrics you&#8217;re interested in. Beyond that, you can even choose how the information is displayed (table, chart, etc.).</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/07/customdashboard.jpg" alt="custom dashboard google analytics 5" title="customdashboard" class="aligncenter size-full wp-image-5047" /></p>
+<p>Some beta features in Analytics 4 have become primary features in Analytics 5, including Intelligence. Another nice addition is the JavaScript interface, which makes Analytics feel like a much smoother, more professional application. Overall, the biggest changes are in the interface layout, rather than the functionality of the program.</p>
+<p>There are also some features that have been removed from 5, including breadcrumb navigation within reports and links to external referring sites (which adds extra steps when you want to see exactly what page referred traffic to your site). The percentage change in metrics that was displayed in the chart when comparing date ranges is also missing (though the data is shown in the table below the chart). Whether these features will be added in future revisions or not remains to be seen. Since none of these affect the functionality of Analytics, they&#8217;re more of an annoyance than a real problem.</p>
+<h2>The Basic Interface</h2>
+<p>When you access the report for your site, you&#8217;ll first be brought to the Visitors Overview screen. This differs from the last version of Analytics, where you were first brought to a general overview screen that also showed information about traffic sources and content. At the top of the report, you&#8217;ll see a chart showing your traffic patterns for the past month. You can also use the dropdown to change the date this graph and the rest of your reports show (or you can choose to compare two date ranges).</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/06/basicinterface.jpg" alt="google analytics interface" /></p>
+<p>On the chart, you can choose to create annotations for specific days. Say, for example, you had a review of your product on a major industry site on a particular day. You could add an annotation to that day, so that when you look back on your traffic patterns at a later date you&#8217;ll know exactly what caused a spike in traffic. You can do the same if you have a sudden drop in traffic, say if your website goes down for a few hours.</p>
+<p>Along the left-hand side of the screen you&#8217;ll see your main report navigation. You can view more detailed reports for your Visitors from here, or switch to see overviews and detailed reports for traffic sources, content, and conversions. Below that you&#8217;ll also find Help links for common issues you might encounter.</p>
+<p>Along the top, you&#8217;ll see more navigation. There&#8217;s an additional link for conversions there, as well as a link to custom reports. In the sub-navigation, you&#8217;ll see a link to &#8220;Intelligence&#8221;, which we&#8217;ll cover later on.</p>
+<h2>Visitors</h2>
+<p>The visitors overview is the default screen you&#8217;ll see when you view the report for any of your sites. This screen gives you the number of visitors, unique visitors, and pageviews (along with the average pages/visit). It also shows you the average time spent on your site, the bounce rate, and the percentage of new visits (a pie chart comparing new to returning visitors is also shown). This gives you a good, high-level overview of how your site is doing. High pages/visit, high average time on your site, and a low bounce rate give you an idea of how useful visitors are finding your site once they arrive.</p>
+<p>You&#8217;ll also see that there are some basic demographics, system, and mobile reports at the bottom of the overview screen. You can view visitors by language, country/territory, or city; by browser, operating system, and service provider; and by mobile operating system, service provider, and screen resolution. The most useful reports here are the demographics reports (the system and mobile reports are more useful in a design and programming sense, than in a marketing sense, though you&#8217;ll want to make sure that your site is compatible with all the popular technical specs here).</p>
+<p>You can view more detailed reports on demographics by clicking on it in the left navigation. There you can view detailed information about your visitors&#8217; locations (including a map overlay) or language, as well as set up user defined and custom variables for more exact reporting. On the map, if you click on any country you&#8217;ll get a larger map of that country, with more detailed information about where your visitors are coming from.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/06/visitorslocation.jpg"  alt="google analytics visitor locations" /></p>
+<p>The next sub-report in the visitors section is behavior. This section gives you more information about new vs returning visitors, how frequently and recently visitors are returning to your site, and user engagement. <b>Looking at how many visitors you have returning frequently gives you an idea of how many true fans you have.</b> Users who have visited your site a dozen or more times are most likely fans of your site or company. These are the users you can more or less count on when asking for help in promoting a new product or otherwise getting the word out. You can also view the &#8220;days since last visit&#8221; report, which gives you an idea of how often your return visitors are coming back to your site.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/06/frequency.jpg"  alt="google analytics V5 frequency and recency" /></p>
+<p>The engagement report shows you two key metrics: the visit duration and the page depth (how many pages a visitor viewed). <b>Visitors who stay on your site longer and view more pages are more engaged.</b> You want a high number of visitors viewing more than one page, and staying on your site more than a few seconds. If that&#8217;s not happening, these reports will tell you so.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/06/pagedepth.jpg" alt="google analytics page depth" /></p>
+<p>The last two reports in the visitors section are for technology and mobile statistics. For the most part, these aren&#8217;t very helpful from a marketing standpoint. But, it is a good idea to monitor them and make sure that your site appears correctly in the more common combinations. It&#8217;s also vital to review these when you&#8217;re getting ready to redesign your site. If you still have a significant percentage of visitors coming to your site using older technology, you&#8217;re going to have to make sure your new site still appears correctly for them. Pay attention to trends, too. For example, if you see that a particular mobile platform is increasing by double-digits each month, you&#8217;ll want to make sure your site supports that platform, even if it still represents a small percentage of overall visits.</p>
+<h2>Traffic Sources</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/06/trafficsourcesoverview.jpg" alt="google analytics traffic sources overview" /></p>
+<p>Your traffic sources overview is one of the most important parts of your Analytics account. Where your traffic is coming from tells you a lot about the strength of your SEO, your incoming links, and your AdWords and other advertising campaigns. It also shows you where your weaknesses are. Ideally, you want traffic coming from a variety of sources, so that your traffic isn&#8217;t tied to closely to a single source that&#8217;s beyond your control. For example, if 80% of your traffic comes from organic Google results, and suddenly Google changes their algorithm and your site ends up on page 10 instead of the top of page 1, you&#8217;ll see a huge drop in traffic. But if only 40% of your traffic is coming from the same source, it&#8217;s easier to compensate (in this case you might increase your AdWords spending to compensate for a lack of presence in organic results).</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/06/organicsearchtrafficsource.jpg" alt="google analytics organic search traffic sources" /></p>
+<p>One of the most important reports in your traffic sources is the keyword reports. These are vital to figuring out how your search traffic is finding your site. Because Analytics tracks not only the top keywords driving traffic to your site, but <em>every</em> keyword used, you can see all the long-tail search results driving traffic to your site. There&#8217;s a brief keyword report on your overview page, but more detailed reports can be found under the &#8220;Search&#8221; sub-report.</p>
+<p>The search sub-report also tells you which page visitors are landing on most often, and which search engine they&#8217;re coming from. You can view your paid (AdWords) traffic and organic traffic, or a mix of the two. You can also view traffic in terms of campaigns, including traffic from RSS feeds.</p>
+<p>If you use AdWords, you can view detailed reports for traffic driven by your ads, including campaigns, keywords, day parts, destination URLs, placements, keyword positions, and TV ads. These reports show you the number of visits generated, how many pages/visit, the average time spent on the site, the percentage of new visits, the bounce rate, your total goal completions, and the revenue generated from each. The last two are the most important metrics to watch, as you want to make sure that the ads are generating enough revenue or conversions to make them worthwhile. <b>You may have some ads that only drive a small percentage of traffic, but a large number of those visitors convert (or vice versa).</b> Without knowing the goal completions or revenue, you might disregard those ads and throw away important revenue sources.</p>
+<h2>Content</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/06/contentoverview.jpg" alt="google analytics V5 content overview" /></p>
+<p>On the content overview page, the graph represents page views rather than visits, so you&#8217;ll notice the numbers used should be a lot larger than on the visits graph. One thing you&#8217;ll notice here is that both pageviews and unique pageviews are both shown. The difference is that a pageview is recorded every time a page is loaded (so if a user clicks refresh, a second pageview is logged, or if a user navigates to a different page and then uses their back button, a new pageview is counted), whereas a unique pageview is only logged once per browsing session.</p>
+<p>Also on the overview page is a list of AdSense revenue, and the <a href="http://www.google.com/support/analytics/bin/answer.py?hl=en&#038;answer=86205">$ Index</a> for a given page (which is the value of that page in your sales funnel). Your bounce rate and average time on each page is displayed here, too.</p>
+<p>At the bottom of the overview page you&#8217;ll see options to review your site content by page or page title, to view your site search stats (if you&#8217;re using Google Site Search), to view your events, and to view AdSense earnings by page.</p>
+<p>Other reports included in the content section include your more in-depth information about your pages viewed, as well as landing and exit pages. <b>Pay close attention to the exit pages, as these can provide clues as to where in your sales funnel visitors are getting hung up.</b> Landing pages can also be important, as you want to make sure that necessary information is included on the pages your visitors are actually viewing.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/06/exitpages.jpg" alt="google analytics exit pages" /></p>
+<p>It&#8217;s a good idea to check your site speed report occasionally to make sure there aren&#8217;t any pages that are incredibly slow to load. <b>Slow pages can deter visitors, and can interrupt your conversion process.</b> Be sure to check the page speed of any of your main exit pages, too, as slow loading times could be one reason people are abandoning your site.</p>
+<p>The other reports here are a bit more advanced, but if you use Google Site Search, or AdSense, or you&#8217;ve programmed Events into your site&#8217;s code, you&#8217;ll be able to monitor those things here.</p>
+<h2>Conversions</h2>
+<p>Conversions are broken down into two categories: goals and ecommerce. Goals are fairly easy to set up. You can have up to four sets of goals, each with five individual goals. This can be valuable for tracking different kinds of actions on your site (like length of time spent, reaching a specific page, or visiting a certain number of pages).</p>
+<p>There are four different kinds of goals. Some are simply pages on your site you want visitors to reach. This could be a thank you page after someone has placed an order or signed up. It could be a particular product page. Or it could be something like your contact page or a request for information. You can also set a goal for a length of time spent on your site, the number of pages/visit, or an event.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/06/goalsetup.jpg" alt="google analytics v5 goal set up" /></p>
+<p>To set up a goal, simply select which goal group you want to use, name your goal, and then define the goal type. You&#8217;ll have different options from there depending on which type of goal you&#8217;re setting up. It&#8217;s a good idea to at least set up goals for the last page in your conversion process. You can also set up a funnel, or a series of pages leading up to your goal page. If you set this up, you can more easily monitor at what point users abandon the conversion process.</p>
+<p>E-commerce conversions are much more complicated to set up, and require inserting code on your actual site. More information about ecommerce tracking can be found in the <a href="http://code.google.com/apis/analytics/docs/tracking/gaTrackingEcommerce.html">Google Analytics help files</a>.</p>
+<h2>Custom Reports</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/06/customreports.jpg" alt="google analytics v5 custom reports" /></p>
+<p>One of the biggest advantages of Google Analytics is that it allows you to create custom reports. Custom reports let you filter results based on a number of factors (basically anything included in any of the regular reports, plus custom filters), and then view any of the metrics included in Analytics (including custom goals). You can also add content drilldowns to further segment your reports. You&#8217;ll find the custom reports link in the top navigation.</p>
+<h2>Intelligence</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/06/customalert.jpg" alt="google analytics version 5 custom alert" /></p>
+<p>Intelligence is a relatively new feature of Analytics. There are automatic alerts built into the app, including pageviews, average time on site, visits, bounce rates, and other metrics (some of which are segmented). But you can also create custom alerts, for anything you define. Setting up an alert is simple: just set your alert conditions and decide whether you want an email notification if an alert is triggered, and you&#8217;re all set. Alerts can be set for all traffic or traffic segments, and you can set alerts for things like changes in visit numbers, goals, or similar metrics.</p>
+<p><b>Intelligence can be a powerful tool for tracking potential problems on your site, or sudden spikes in traffic or conversions.</b> Getting accurate, fast information about changes to your site means you can respond better to changes and make sure your visitors and customers are kept happy.</p>
+<p><strong>About the Author:</strong> <a href="http://cameronchapman.com" rel="nofollow">Cameron Chapman</a> is a freelance designer, blogger, and the author of <a href="http://www.amazon.com/Internet-Famous-Practical-Becoming-Celebrity/dp/0982538200/" rel="nofollow">Internet Famous: A Practical Guide to Becoming an Online Celebrity.</a></p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-5%2F&source=tweetbutton&text=A+Beginner%26%238217%3Bs+Guide+to+Google+Analytics+5&url=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-5%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fgoogle-analytics-5%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=A Beginner&#8217;s Guide to Google Analytics 5&amp;body=https://blog.kissmetrics.com/google-analytics-5/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-4727 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-7305">
+    <div id="comment-7305" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Gabriel Bianconi</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-7305" class="comment-date">Jul 12, 2011 at 12:30 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>GA is a very good tool and it is even more awesome because it is free! Really good post, covered all the basic.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=7305#respond' onclick='return addComment.moveForm( "comment-7305", "7305", "respond", "4727" )' aria-label='Reply to Gabriel Bianconi'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7310">
+    <div id="comment-7310" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Marcus</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-7310" class="comment-date">Jul 12, 2011 at 6:26 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Cameron,</p>
+<p>Thanks for this helpful guide! Even though I&#8217;ve used Google Analytics for a year now, your article taught me a lot. Please keep up the great work!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=7310#respond' onclick='return addComment.moveForm( "comment-7310", "7310", "respond", "4727" )' aria-label='Reply to Marcus'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-7349">
+    <div id="comment-7349" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">MadMike</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-7349" class="comment-date">Jul 13, 2011 at 10:30 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great guide. For the momment, i prefer to use older analytics to export data as PDF, because the newer version still fail at this.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=7349#respond' onclick='return addComment.moveForm( "comment-7349", "7349", "respond", "4727" )' aria-label='Reply to MadMike'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7352">
+    <div id="comment-7352" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">freddy</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-7352" class="comment-date">Jul 14, 2011 at 1:19 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great Post &#8211; thank you for the insights! As a fresh startup it is always helpful to learn the ropes of new products/versions with a little help. Keep up the great work!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=7352#respond' onclick='return addComment.moveForm( "comment-7352", "7352", "respond", "4727" )' aria-label='Reply to freddy'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-7353">
+    <div id="comment-7353" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Tom</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-7353" class="comment-date">Jul 14, 2011 at 2:29 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great review!  I learned a few more things and looking forward to GA 5.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=7353#respond' onclick='return addComment.moveForm( "comment-7353", "7353", "respond", "4727" )' aria-label='Reply to Tom'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7354">
+    <div id="comment-7354" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-7354" class="comment-date">Jul 14, 2011 at 3:32 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I love everything about google. The analytics 5 is easy to use and very useful. It has simple but artistic design, just like all of google&#8217;s products.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=7354#respond' onclick='return addComment.moveForm( "comment-7354", "7354", "respond", "4727" )' aria-label='Reply to '>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-7397">
+    <div id="comment-7397" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Lex Koff</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-7397" class="comment-date">Jul 16, 2011 at 9:50 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for a post. It actually triggered me to try out a New Google Analytics. Never clicked that that a &#8220;New Version&#8221; red link =))) My first impression is really positive and I made this interface default. Custom dashboards are awesome and I&#8217;ve created a few so far =)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=7397#respond' onclick='return addComment.moveForm( "comment-7397", "7397", "respond", "4727" )' aria-label='Reply to Lex Koff'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-7406">
+    <div id="comment-7406" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Linda</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-7406" class="comment-date">Jul 17, 2011 at 5:25 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you so much for this very explanation.  It is very helpful.  My hosting company actually told me that this would be a good one to use &#8211; because theirs only gets updated once per day or 2 (or 3).</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=7406#respond' onclick='return addComment.moveForm( "comment-7406", "7406", "respond", "4727" )' aria-label='Reply to Linda'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-7479">
+    <div id="comment-7479" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Emma</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-7479" class="comment-date">Jul 20, 2011 at 1:51 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for the great article; I&#8217;m working on my first website at the moment so I&#8217;ll be putting all this information into practice. Thank you for sharing!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=7479#respond' onclick='return addComment.moveForm( "comment-7479", "7479", "respond", "4727" )' aria-label='Reply to Emma'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-9608">
+    <div id="comment-9608" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dev Basu</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-9608" class="comment-date">Sep 19, 2011 at 5:56 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;ve made this required reading for all my new SEO/SEM recruits. What&#8217;s the biggest feature you love about the new GA? Mine has to be the multi-channel conversions view.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=9608#respond' onclick='return addComment.moveForm( "comment-9608", "9608", "respond", "4727" )' aria-label='Reply to Dev Basu'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-9621">
+    <div id="comment-9621" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ankur Oberoi</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-9621" class="comment-date">Sep 19, 2011 at 5:23 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article! I was wondering if you plan on updating this with a few changes that are now in GAv5. Specifically how Social Engagement works, and Advertising is broken out into a separate category.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=9621#respond' onclick='return addComment.moveForm( "comment-9621", "9621", "respond", "4727" )' aria-label='Reply to Ankur Oberoi'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-9644">
+    <div id="comment-9644" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Justyn</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-9644" class="comment-date">Sep 20, 2011 at 6:57 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Excellent article, thanks! I&#8217;m brand new to Google Analytics, so I learned a lot. My only question is whether or not I can somehow exclude my own views from the reports. I&#8217;ve had a few problems setting up, so I&#8217;ve had to view my blog as a guest quite often and it&#8217;s badly skewing my numbers. Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=9644#respond' onclick='return addComment.moveForm( "comment-9644", "9644", "respond", "4727" )' aria-label='Reply to Justyn'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-9664">
+    <div id="comment-9664" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Wendy</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-9664" class="comment-date">Sep 20, 2011 at 11:22 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article!  Your numbers brightened my day and helped me learn I have more faithful readers than I thought!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=9664#respond' onclick='return addComment.moveForm( "comment-9664", "9664", "respond", "4727" )' aria-label='Reply to Wendy'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-9956">
+    <div id="comment-9956" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ryan</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-9956" class="comment-date">Sep 28, 2011 at 12:34 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks, this is wonderful information it has helped me put together a small guide of my own for users of our software that opt to put GA into their own sites.<br />
+We cater to users that are new to website design and this guide is very easy for them to understand.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=9956#respond' onclick='return addComment.moveForm( "comment-9956", "9956", "respond", "4727" )' aria-label='Reply to Ryan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-11730">
+    <div id="comment-11730" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Spinner Smith</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-11730" class="comment-date">Nov 13, 2011 at 2:08 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This was just what I needed. Thanks for taking the time to do it. Nicely layed out etc too. I use Google Analytics but only now know how to get the most from it. I never really understood visits, pages views etc, but you cleared it all up. 5 stars!</p>
+<p>Thanks for this. Keep up the good work!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=11730#respond' onclick='return addComment.moveForm( "comment-11730", "11730", "respond", "4727" )' aria-label='Reply to Spinner Smith'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-21589">
+    <div id="comment-21589" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Amber Wallace</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-21589" class="comment-date">Jan 30, 2012 at 2:54 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>We use Google Analytics for all of our customers &#8212; great free tool! Nice description of the new changes. I do think the custom reports are the biggest (best?) new addition, and they&#8217;re fun!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=21589#respond' onclick='return addComment.moveForm( "comment-21589", "21589", "respond", "4727" )' aria-label='Reply to Amber Wallace'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-22386">
+    <div id="comment-22386" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Barry Feldman</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-22386" class="comment-date">Feb 17, 2012 at 8:32 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Cameron,</p>
+<p>What do you mean by this? &#8220;These are the users you can more or less count on when asking for help in promoting a new product or otherwise getting the word out.&#8221;</p>
+<p>GA won&#8217;t actually reveal WHO the user actually is, will it?</p>
+<p>Thanks for this post. Though I use GA, I always feel like a beginner. It&#8217;s work. I probably should personalize it so I can to what I&#8217;m actually after faster.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=22386#respond' onclick='return addComment.moveForm( "comment-22386", "22386", "respond", "4727" )' aria-label='Reply to Barry Feldman'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-91502">
+    <div id="comment-91502" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Chris Irwin</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-91502" class="comment-date">Feb 01, 2013 at 9:53 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks, great refresher on how to effectively setup Google Analytics.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=91502#respond' onclick='return addComment.moveForm( "comment-91502", "91502", "respond", "4727" )' aria-label='Reply to Chris Irwin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-104463">
+    <div id="comment-104463" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Nabeel</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-104463" class="comment-date">May 01, 2013 at 10:12 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Really helpful as you have covered all the basic elements in this. Good job!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=104463#respond' onclick='return addComment.moveForm( "comment-104463", "104463", "respond", "4727" )' aria-label='Reply to Nabeel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-114477">
+    <div id="comment-114477" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Rameez Ul haq</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-114477" class="comment-date">Jul 13, 2013 at 9:10 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I love this feature in GA, You can easily track your KPI&#8217;s by customize dashboards ;)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=114477#respond' onclick='return addComment.moveForm( "comment-114477", "114477", "respond", "4727" )' aria-label='Reply to Rameez Ul haq'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-905484">
+    <div id="comment-905484" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Shajee Fareedi</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-905484" class="comment-date">Oct 22, 2014 at 7:48 am</a>      </div><!-- /.comment-meta -->
+
+      <p>This tools is really Excellent, it help a lot to Monitor your Website&#8217;s performance !<br />
+Love it !</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=905484#respond' onclick='return addComment.moveForm( "comment-905484", "905484", "respond", "4727" )' aria-label='Reply to Shajee Fareedi'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-952293">
+    <div id="comment-952293" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Zain</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-952293" class="comment-date">Nov 09, 2014 at 7:06 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Yes exactly, by using this tool you can easily monitor your website performance. Thumbs up!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=952293#respond' onclick='return addComment.moveForm( "comment-952293", "952293", "respond", "4727" )' aria-label='Reply to Zain'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1030159">
+    <div id="comment-1030159" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Pawan</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-1030159" class="comment-date">Jan 29, 2015 at 6:28 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article. I got all the needed info. Thanks</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=1030159#respond' onclick='return addComment.moveForm( "comment-1030159", "1030159", "respond", "4727" )' aria-label='Reply to Pawan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1165946">
+    <div id="comment-1165946" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Zat</cite>
+        
+        <a href="https://blog.kissmetrics.com/google-analytics-5/#comment-1165946" class="comment-date">Oct 09, 2015 at 4:55 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article. I&#8217;m using whatagraph platform to get free infographic reports for my GA.<br />
+Definitely check it out. </p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/google-analytics-5/?replytocom=1165946#respond' onclick='return addComment.moveForm( "comment-1165946", "1165946", "respond", "4727" )' aria-label='Reply to Zat'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">68 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/google-analytics-5/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='4727' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f5c994e549" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="102"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'A Beginner&#8217;s Guide to Google Analytics 5', 'Post URL':'https://blog.kissmetrics.com/google-analytics-5/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/re-marketing-guide/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/2011-b2b-marketing-guide/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/google-analytics-5/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/google-analytics-5/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/google-analytics-5/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="A Beginner&#8217;s Guide to Google Analytics 5" data-url="http://blog.kissmetrics.com/google-analytics-5/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'A Beginner&#8217;s Guide to Google Analytics 5', 'Post URL':'https://blog.kissmetrics.com/google-analytics-5/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'A Beginner&#8217;s Guide to Google Analytics 5', 'Post URL':'https://blog.kissmetrics.com/google-analytics-5/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'A Beginner&#8217;s Guide to Google Analytics 5', 'Post URL':'https://blog.kissmetrics.com/google-analytics-5/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":493,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

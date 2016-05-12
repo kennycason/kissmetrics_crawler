@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>How to Use Kissmetrics to Improve an E-commerce Checkout Funnel</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; How to Use Kissmetrics to Improve an E-commerce Checkout Funnel Comments Feed" href="https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='5 Quick Pointers for Email List Segments You Can Use Right Now' href='https://blog.kissmetrics.com/5-quick-email-pointers/' />
+<link rel='next' title='Three Risky Ecommerce Techniques That Could Actually Increase Your Conversions' href='https://blog.kissmetrics.com/three-risky-ecommerce-techniques/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=24963' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fimprove-ecommerce-checkout-funnel%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fimprove-ecommerce-checkout-funnel%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,362] -->
+<meta name="description" content="In this post, we’ll concentrate on one key feature of KISSmetrics – the funnel report." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/117750912206547874889/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='How to Use Kissmetrics to Improve an E-commerce Checkout Funnel' />
+<meta property='og:url' content='https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2014/09/conversion-rate-funnel-setup-kissmetrics-placed-order.png' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2014/09/conversion-rate-funnel-setup-kissmetrics-placed-order.png' />
+<meta property='og:image:width' content='700' />
+<meta property='og:image:height' content='278' />
+<meta property='og:image:type' content='image/png' />
+<meta property='og:description' content='In this post, we’ll concentrate on one key feature of KISSmetrics – the funnel report.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How to Use Kissmetrics to Improve an E-commerce Checkout Funnel" />
+    <meta name="twitter:description" content="In this post, we’ll concentrate on one key feature of KISSmetrics – the funnel report." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-24963 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog ">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy active">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--academy">
+          <h1>Kissmetrics Academy</h1>
+          <h2>Learn how Kissmetrics can optimize your marketing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'How to Use Kissmetrics to Improve an E-commerce Checkout Funnel',
+						'Post Category': 'Academy',
+						'Post URL': 'https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/'
+		}
+	]);
+</script>
+
+<article id="post-24963" class="single-post post-24963 post type-post status-publish format-standard hentry category-academy category-acquiring-new-customers" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">How to Use Kissmetrics to Improve an E-commerce Checkout Funnel</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>One of the great things about Kissmetrics is that it helps you <em>continually optimize </em>your business. From revenue reports that tell you which ad campaigns bring the most customers to cohort reports that track critical metrics like login retention over time to many other insight-driven reports, Kissmetrics delivers pretty awesome tools for any marketer or manager.</p>
+<p>We couldn&#8217;t possibly cover all the benefits of Kissmetrics in one post. We would have to write a book.</p>
+<p>So, in this post, we’ll concentrate on one key feature of Kissmetrics – the funnel report.</p>
+<p>Specifically, we’ll focus on improving your e-commerce funnel. We&#8217;ll begin by viewing a funnel report and finding areas that need improvement. Then, we&#8217;ll form a hypothesis setting out changes that might improve conversions. We&#8217;ll run a test. And, then, we&#8217;ll close by viewing the hypothetical results.</p>
+<h2>1. View the Data</h2>
+<p>Our company, Acme Widgets, sells home goods. We&#8217;ve grown steadily over the years, but the bottom of our funnel (sales) hasn&#8217;t done very well when compared with our traffic. We want to get into the nitty-gritty to understand how each step performs and find the bottlenecks we can improve.</p>
+<p>We&#8217;ve <a href="http://support.kissmetrics.com/tutorial/installation/">installed the JavaScript tracking code and created our events</a>. Now, we need to set up our funnel. To do this, we go to the Reports section of Kissmetrics, click on Create New Report and select Funnel Report:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/create-funnel-report-kissmetrics.png" alt="create funnel report kissmetrics" class="alignnone size-full wp-image-24964" /></p>
+<p>We&#8217;ll name our report &#8220;Checkout Funnel&#8221;:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/setup-checkout-funnel-kissmetrics.png" alt="setup checkout funnel kissmetrics" class="alignnone size-full wp-image-24966" /></p>
+<p>We want to track a month&#8217;s worth of data, so we changed our date range to June 1 – 30, 2014.</p>
+<p>We&#8217;ll start with people who have put at least one item in their cart. The name for this event is &#8220;Cart Page&#8221;:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/checkout-funnel-step-one-kissmetrics.png" alt="checkout funnel step one kissmetrics" class="alignnone size-full wp-image-24967" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/checkout-funnel-step-one-kissmetrics-300x127.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/checkout-funnel-step-one-kissmetrics.png 659w" sizes="(max-width: 659px) 100vw, 659px" /></p>
+<p>The next step of our checkout funnel asks visitors to enter their shipping address, along with their name and email address.</p>
+<p>This event is called &#8220;Address Page.&#8221; We click on the + sign in our funnel, add this event, and hit enter:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-two-checkout-funnel-kissmetrics.png" alt="step two checkout funnel kissmetrics" class="alignnone size-full wp-image-24968" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-two-checkout-funnel-kissmetrics-300x133.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-two-checkout-funnel-kissmetrics.png 647w" sizes="(max-width: 647px) 100vw, 647px" /></p>
+<p>Once we enter the Address Page event, Kissmetrics runs the report. We see that 62% of people who placed an item in their cart went on to the Address Page. That means that a good percentage of people who place an item in their cart have the intention to buy (or at least want to see what the next step is).</p>
+<p>The next step of our checkout asks users to enter their billing information. This event is called &#8220;Billing Page.&#8221; We add this event to the funnel:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-three-kissmetrics-checkout-funnel.png" alt="step three kissmetrics checkout funnel" class="alignnone size-full wp-image-24969" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-three-kissmetrics-checkout-funnel-300x116.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-three-kissmetrics-checkout-funnel.png 711w" sizes="(max-width: 711px) 100vw, 711px" /></p>
+<p>We see that there is a drop-off of people. We&#8217;ll continue creating our funnel to see if it&#8217;s our major bottleneck.</p>
+<p>After our billing page, there is a confirmation page. It&#8217;s a summary of the order and a few forms for ordering, as well as a gift wrapping option. We&#8217;ve named this event &#8220;Confirmation Page.&#8221; We add it to our funnel and see our results:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-four-checkout-funnel-kissmetrics.png" alt="step four checkout funnel kissmetrics" class="alignnone size-full wp-image-24970" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-four-checkout-funnel-kissmetrics-300x99.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-four-checkout-funnel-kissmetrics.png 845w" sizes="(max-width: 845px) 100vw, 845px" /></p>
+<p>The last step of our checkout funnel is the &#8220;Placed Order&#8221; page. After the user confirms their order, they are taken to a webpage thanking them for their order. As the last step of our funnel, we add this event:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-five-kissmetrics-checkout-funnel.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-five-kissmetrics-checkout-funnel.png" alt="step five kissmetrics checkout funnel" class="alignnone size-full wp-image-24971" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-five-kissmetrics-checkout-funnel-300x92.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/step-five-kissmetrics-checkout-funnel.png 919w" sizes="(max-width: 919px) 100vw, 919px" /></a></p>
+<p>We see that we have about a 91% conversion rate from Confirmation Page to Placed Order. When people get this far in the funnel, few exit. The biggest drop-off in our funnel is our Billing Page. People see the page where they enter their payment information, get cold feet, and bounce.</p>
+<p>Overall, our conversion rate from Cart Page to Placed Order is only a little over 5%. We think there is room for improvement.</p>
+<p>We also want to see the big picture and get our overall site conversion, so we&#8217;ll set up a report for that as well. We&#8217;ll track people who visited our site, made it to cart page (triggered when a product was put in their cart), and placed their order:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/conversion-rate-funnel-setup-kissmetrics.png" alt="conversion rate funnel setup kissmetrics" class="alignnone size-full wp-image-24972" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/conversion-rate-funnel-setup-kissmetrics-300x130.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/conversion-rate-funnel-setup-kissmetrics.png 655w" sizes="(max-width: 655px) 100vw, 655px" /></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/conversion-rate-funnel-setup-kissmetrics-cart-page.png" alt="conversion rate funnel setup kissmetrics cart page" class="alignnone size-full wp-image-24973" /></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/conversion-rate-funnel-setup-kissmetrics-placed-order.png" alt="conversion rate funnel setup kissmetrics placed order" class="alignnone size-full wp-image-24974" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/conversion-rate-funnel-setup-kissmetrics-placed-order-300x119.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/conversion-rate-funnel-setup-kissmetrics-placed-order.png 700w" sizes="(max-width: 700px) 100vw, 700px" /></p>
+<p>Out of the 6,545 people who visited our site in June, 1.2% converted to purchasing a product. We think we can do better than this. We&#8217;ll start by focusing on improving our checkout funnel.</p>
+<h2>2. Form a Hypothesis</h2>
+<p>When conducting a funnel analysis, we need to pay special attention to those who decided not to purchase from us. Learning why people chose not to make a purchase can provide us with actionable insight for overcoming those barriers to purchasing.</p>
+<p>We decide to run a survey to get a better understanding of these barriers. We&#8217;ll use Qualaroo and ask our visitors, &#8220;If you did not make a purchase today, can you tell us why not?&#8221; It&#8217;s an open question. There are no pre-set multiple-choice answers.</p>
+<p>The survey displays after the visitor has been viewing a page for 20 seconds.</p>
+<p>Many people stated that they didn&#8217;t feel comfortable purchasing. They had doubts about the security and lack of general information about the company.</p>
+<p>The first thing we&#8217;ll need to address is the doubts around security. To make visitors feel more comfortable with purchasing on our site, we&#8217;ll be adding a few security elements throughout our website and on our cart page.</p>
+<p><strong><em>Our Hypothesis: Adding Security Elements Will Improve Checkout Conversions</em></strong></p>
+<p>Each page of the website will have the &#8220;Norton Secured&#8221; symbol in the bottom footer. This will provide visitors with reassurance that their data is safe because the website is protected by a known internet security company.</p>
+<p>We&#8217;ve also recently become a <a href="http://www.google.com/trustedstores/">Google Trusted Store</a> and will be embedding that symbol in our bottom footer.</p>
+<p>We&#8217;ll have both symbols on our cart page, along with a message stating that we&#8217;ve shipped over 5,000 orders since our founding just 3 years ago. Also, the following message will appear on the cart page:</p>
+<p><em>&#8220;Our website uses a 256-bit AES encryption to protect all your information. Your credit card will be processed through PayPal, which has handled well over $1 billion in transactions. Click here to learn more about our security practices.&#8221;</em></p>
+<p>The link takes visitors to a newly created webpage that outlines the security measures we’ve taken on our website.</p>
+<p>We believe adding these elements will provide reassurances to customers that our site is secure and our business is reputable.</p>
+<h2>3. Run the Test and View the Results</h2>
+<p>Our test will go live for every person who visits our site. We&#8217;ll let the test run for a month, and afterward we&#8217;ll see if our hypothesis proves correct.</p>
+<p>When testing changes to your website, you can either eyeball your data or run an A/B test.</p>
+<p>When you eyeball your data, you make changes to your website, all visitors to your site get the change, and you view your data to see if the change increases conversions.</p>
+<p>There are a few cases where you want to eyeball your data:</p>
+<ul>
+<li>If you&#8217;re a young company that doesn&#8217;t have a lot of traffic. In this case, it&#8217;ll take too much time to run an A/B test. Keep your focus at the top of the funnel and earning more traffic before you A/B test. Until then, eyeball top-of-the-funnel conversions, such as sign-up rate.</li>
+<li>If you&#8217;re a high price / low volume sales company. If you get only a few sales annually, keep to eyeballing your data.</li>
+<li>If you are, as in our case, responding to overwhelming feedback from visitors. For us, they&#8217;ve made it clear that they do not trust making a purchase from us.</li>
+</ul>
+<p>In some cases, you&#8217;ll want to set up an A/B test. The following situations generally warrant an A/B test:</p>
+<ul>
+<li>If you have enough traffic to run an A/B test. More traffic will allow you to get much more reliable results.</li>
+<li>If you&#8217;re making small changes that may not result in big conversion changes.</li>
+<li>If you&#8217;re expecting less than 30% improvement. Small changes need an A/B test in order to see an impact. Otherwise, the small improvement just gets lost in the noise of the data&#8217;s natural fluctuations.</li>
+<li>If you want to find wins more quickly. You can detect smaller wins.</li>
+</ul>
+<p>If you fit the A/B testing criteria, you&#8217;ll want to sign up for a service like Optimizely or Visual Website Optimizer. Kissmetrics has an <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/">A/B test report</a> that integrates with these services, and you&#8217;ll be able to view those results in Kissmetrics. The benefit of using the A/B test report is that you can view actual people who did or didn&#8217;t convert in an experiment.</p>
+<p>Going with our eyeball test, we come back one month later, and we view our funnel report. We select July 2014 for our date range. Our report loads, and here&#8217;s how it looks:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/one-month-later-funnel.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/one-month-later-funnel.png" alt="one month later funnel" class="alignnone size-full wp-image-24975" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/one-month-later-funnel-300x96.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/one-month-later-funnel.png 868w" sizes="(max-width: 868px) 100vw, 868px" /></a></p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-23-at-1.14.27-PM.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-23-at-1.14.27-PM.png" alt="one month later part two" class="alignnone size-full wp-image-24987" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-23-at-1.14.27-PM-300x91.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-23-at-1.14.27-PM-1024x311.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-23-at-1.14.27-PM.png 1217w" sizes="(max-width: 1217px) 100vw, 1217px" /></a></p>
+<p>Here are a few initial impressions:</p>
+<ul>
+<li>The number of people who placed items in their cart was lower than in June. This is because of less traffic to our site, which we&#8217;ll soon see in our main acquisition funnel. In the future, we may want to add the &#8220;Visited Site&#8221; event to our checkout funnel. This will show us how our checkout funnel performs relative to our traffic.</li>
+<li>Every step of our checkout funnel had an improvement in the percentage of conversions compared with last month, especially in the last 2 steps.</li>
+<li>Despite lower traffic, we still had many more customers place orders with us.</li>
+<li>Our conversion rate quadrupled. About one in every five people who placed an item in their cart completed their purchase.</li>
+</ul>
+<p>This is awesome news. It appears that our hypothesis was correct and the changes we made to our site instilled confidence in visitors, who were then more likely to buy.</p>
+<p>Now, we&#8217;ll run the report for our overall site conversion. Remember, in this one we&#8217;re tracking total people to our site, then people who put an item in their cart, and then those who proceed with their purchase.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/second-ecommerce-funnel-report-kissmetrics.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/second-ecommerce-funnel-report-kissmetrics.png" alt="second ecommerce funnel report kissmetrics" class="alignnone size-full wp-image-24977" /></a></p>
+<p>At the top of our funnel, we can see that we had less traffic in July than in June. But, a larger percentage of the visitors put items in their cart and placed orders. We got more customers on less traffic! Throughout our funnel, larger percentages of people converted to the next event step, especially in the last 2 steps.</p>
+<p>We have the essence of our main conversion funnel. It gives us a bird’s eye view of how well our website converts. If we want to further understand what&#8217;s driving it, we can segment these people in this funnel by properties. <a href="https://blog.kissmetrics.com/people-events-and-properties/">Properties</a> are various characteristics about the people.</p>
+<p>A common example of a property is “returning,” which tracks whether the person is a new visitor or returning. Also, if someone came to your site via a search engine, the property “search engine” will display which search engine the person came from.</p>
+<p><strong>Segmenting the Data</strong></p>
+<p>For this funnel report, we&#8217;ll segment our visitors by the property “channel.” It categorizes traffic into referrer segments. Here&#8217;s how it looks:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-funnel-channel-property.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-funnel-channel-property.png" alt="kissmetrics funnel channel property" class="alignnone size-full wp-image-24978" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-funnel-channel-property-300x285.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/kissmetrics-funnel-channel-property.png 729w" sizes="(max-width: 729px) 100vw, 729px" /></a></p>
+<p><em>For more information about the channel property, check out our article on </em><a href="http://support.kissmetrics.com/tools/channel-definition/"><em>Channel Definitions</em></a><em>. </em></p>
+<p>This report shows us how each channel performs, not just in bringing visitors, but throughout the funnel.</p>
+<p>We see that one of our strongest, top-of-the-funnel channels is organic. A lot of people find us by search, and a fair number of them convert to place an item in the cart and then purchase.</p>
+<p>A high-converting channel is Referral. These include sites that link to us. Since it&#8217;s successful for us, the more links we can get, the better.</p>
+<p>We see that our paid efforts bring us visitors and some of them place an item in their cart, but none of them place an order. We may want to consider some remarketing efforts for the people who abandon their cart. If we don&#8217;t want to add to our costs, we may want to cut off paid acquisition. But before we do, we&#8217;ll have to view our cohort report to see if some of these visitors make purchases later than those from other channels. We&#8217;ll get into the cohort report a little later.</p>
+<p>Email appears to be a strong channel for us. We may want to promote our email newsletter more. Here are some ideas for how to do that:</p>
+<ul>
+<li>Offer 5% off for new visitors who sign up for our email newsletter</li>
+<li>Place a modal on our homepage offering our newsletter</li>
+<li>Once customers place an order, have a message suggesting that they may want to sign up for the newsletter</li>
+</ul>
+<p>Throughout all messages, we need to explain the value of our newsletter, as well as how often subscribers are emailed. We could mention the tips we provide, exclusive deals, and new product arrivals.</p>
+<h3>Cohort Report</h3>
+<p>Up until now, we&#8217;ve been using the funnel report to tell us how our website converts for a specific date range. Moving forward, we&#8217;ll want to set up a cohort report. A <a href="http://support.kissmetrics.com/tools/cohort-report/">cohort</a> is a group of people who share a common characteristic or experience within a particular time span.</p>
+<p>Here&#8217;s how a cohort report looks in Kissmetrics:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/cohort-logged-in-retention.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/cohort-logged-in-retention.png" alt="cohort logged in retention" class="alignnone size-full wp-image-24979" /></a></p>
+<p><em>This report ties together two events: Signed up and Logged in. We first track people who signed up, and then we see the rate at which those people logged back in for the first time over a span of 12 weeks. This report keeps people separated, based on the time they signed up. This allows us to track how each group’s behavior changes over time.</em></p>
+<p>We can set up this report for any event. For our example of tracking conversion rates over time, we would want to tie the Visited Site event with the Placed Order event. Here&#8217;s how we would set that up:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/setting-up-cohort-report-two-events.png" alt="setting up cohort report two events" class="alignnone size-full wp-image-24980" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/setting-up-cohort-report-two-events-300x175.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/setting-up-cohort-report-two-events.png 616w" sizes="(max-width: 616px) 100vw, 616px" /></p>
+<p><em>The first step in creating a cohort report is to select the two events you want to track. We want to track the people who came to our site and ended up placing an order, so we are using Visited site and Placed Order as our events.</em></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/cohort-advanced-options.png" alt="cohort advanced options" class="alignnone size-full wp-image-24981" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/cohort-advanced-options-300x163.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/cohort-advanced-options.png 610w" sizes="(max-width: 610px) 100vw, 610px" /></p>
+<p><em>Under Advanced options, we can split people into groups by minute, hour, day, week, or month. We&#8217;ll set up weekly buckets. We&#8217;ll track people by when they visited the site, and we&#8217;ll group people by week.</em></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/cohort-visited-site-placed-order-kissmetrics.png" alt="cohort visited site placed order kissmetrics" class="alignnone size-full wp-image-24982" /></p>
+<p><em>We run our report and get our data. It appears that the majority of visitors place their orders within 2 weeks. After 2 weeks, there is a low chance visitors will place an order. As time goes by and we get more data, we&#8217;ll split people into monthly buckets.</em></p>
+<p>Most cohorts are broken down by time (month, week, day, etc.) In a Kissmetrics cohort report, you also have the ability to segment your cohort by any Kissmetrics property. In our case, we&#8217;ll want to view people by channel. This will show us if any of our previously unconverted paid visitors ended up placing an order. To set this up, we track the same events, but this time group people by channel property:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/cohort-report-by-property.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/cohort-report-by-property.png" alt="cohort report by property" class="alignnone size-full wp-image-24983" /></a></p>
+<p>And we get our data:</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-23-at-2.51.29-PM.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-23-at-2.51.29-PM.png" alt="cohort report channel property" class="alignnone size-full wp-image-24988" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-23-at-2.51.29-PM-300x140.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-23-at-2.51.29-PM-1024x479.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2014/09/Screen-Shot-2014-09-23-at-2.51.29-PM.png 1244w" sizes="(max-width: 1244px) 100vw, 1244px" /></a></p>
+<p>Grouping people by channel is useful for tracking how these channels perform at converting visitors over an extended period of time. We aren&#8217;t looking at a simple funnel report that sticks with a date range. We&#8217;re viewing our visitor behavior and how well our site performs at converting visitors.</p>
+<p>In our example cohort report, we see that nearly every channel, with the exception of paid, brings us the bulk of our customers within 2 weeks. Our paid customers are more hesitant to purchase within the first week, deciding instead to hold off and complete their purchase at least 1 week after visiting our site. The number of paid customers is still small compared with other channels, so we&#8217;ll have to check our marketing expense to see if it&#8217;s profitable for us to keep our paid acquisition running.</p>
+<p>As time goes on, we&#8217;ll continue to rely on these cohort reports to track how our conversion rates change over time and how each channel performs at converting visitors into customers.</p>
+<p>Before we go any further or conduct any more tests, we first need to move on to the next and final step of our test process.</p>
+<h2>4. Repeat</h2>
+<p>After we&#8217;ve run the test and gotten our results, we&#8217;ll move forward with our next test. We can pat ourselves on the back for this test knowing that we found the main bottlenecks in our funnel and made changes that positively impacted our conversion rates. Going forward, we&#8217;ll want to sign up for a service like Optimizely or Visual Website Optimizer to run our A/B tests.</p>
+<h2>Finding the Variables That Impact Your Audience</h2>
+<p>You probably have hundreds of ideas for tests you can run on your website. The bad news is that most tests you run won&#8217;t move the needle much. In light of that, focus on running tests to identify the variables that do impact your audience.</p>
+<h2>43-Second Demo</h2>
+<p>Want to quickly see the Funnel Report in action? Just click play below.</p>
+<p><iframe src="//fast.wistia.net/embed/iframe/apnuygikma?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="400"></iframe><script src="//fast.wistia.net/assets/external/E-v1.js"></script></p>
+<p><i>To get started using people data, <a href="https://www.kissmetrics.com/signup?utm_source=blog&#038;utm_medium=academy&#038;utm_campaign=funnelreportecommerce">login or sign up for a Kissmetrics account</a> now.</i></p>
+<p><em>Want to tour Kissmetrics without signing up? No problem, just head over to our <a href="https://demo.kissmetrics.com/metrics?utm_source=blog&#038;utm_medium=academy&#038;utm_campaign=funnelreportecommerce">Demo site</a> where you can see how Kissmetrics benefits both SaaS and Ecommerce companies.</em></p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/people-events-and-properties/">The Foundation of Kissmetrics: People, Events, and Properties</a></li>
+<li><a href="https://blog.kissmetrics.com/five-kissmetrics-reports-ecommerce-marketer/">The Top Five Kissmetrics Reports Every Ecommerce Marketer Needs</a></li>
+<li><a href="https://blog.kissmetrics.com/conversions-on-mobile/">Using Kissmetrics to Find Out If You Are Losing Conversions on Mobile</a></li>
+<li><a href="https://blog.kissmetrics.com/questions-to-boost-your-conversions/">7 Insightful Questions to Boost Your Conversions</a></li>
+<li><a href="https://blog.kissmetrics.com/saas-companies-kissmetrics-funnels/">How SaaS Companies Can Use The Kissmetrics Funnel Report To Drive Their Growth</a></li>
+<li><a href="https://blog.kissmetrics.com/the-kissmetrics-revenue-report/">Unlock Your Marketing Data to Reap its Full Potential with the Kissmetrics Revenue Report</a></li>
+<li><a href="https://blog.kissmetrics.com/ux-tweaks-to-increase-repeat-purchases/">Keep ‘Em Coming Back: 3 UX Tweaks to Increase Repeat Purchases</a></li>
+<li><a href="https://blog.kissmetrics.com/what-is-customer-analytics/">What is Customer Analytics?</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fimprove-ecommerce-checkout-funnel%2F&source=tweetbutton&text=How+to+Use+Kissmetrics+to+Improve+an+E-commerce+Checkout+Funnel&url=https%3A%2F%2Fblog.kissmetrics.com%2Fimprove-ecommerce-checkout-funnel%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fimprove-ecommerce-checkout-funnel%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=How to Use Kissmetrics to Improve an E-commerce Checkout Funnel&amp;body=https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-24963 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-608511">
+    <div id="comment-608511" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Judy</cite>
+        
+        <a href="https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/#comment-608511" class="comment-date">Sep 24, 2014 at 11:33 am</a>      </div><!-- /.comment-meta -->
+
+      <p>How is this functionality different from Google Analytics?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/?replytocom=608511#respond' onclick='return addComment.moveForm( "comment-608511", "608511", "respond", "24963" )' aria-label='Reply to Judy'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-622723">
+    <div id="comment-622723" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/#comment-622723" class="comment-date">Sep 26, 2014 at 12:06 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Judy,<br />
+I&#8217;d definitely recommend checking out our article which outlines the differences between KISSmetrics and Google Analytics:</p>
+<p><a href="https://blog.kissmetrics.com/google-analytics-and-kissmetrics/" rel="nofollow">https://blog.kissmetrics.com/google-analytics-and-kissmetrics/</a></p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/?replytocom=622723#respond' onclick='return addComment.moveForm( "comment-622723", "622723", "respond", "24963" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">3 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/improve-ecommerce-checkout-funnel/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='24963' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="6de9bc0416" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="24"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'How to Use Kissmetrics to Improve an E-commerce Checkout Funnel', 'Post URL':'https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/5-quick-email-pointers/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/three-risky-ecommerce-techniques/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="How to Use Kissmetrics to Improve an E-commerce Checkout Funnel" data-url="https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'How to Use Kissmetrics to Improve an E-commerce Checkout Funnel', 'Post URL':'https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'How to Use Kissmetrics to Improve an E-commerce Checkout Funnel', 'Post URL':'https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'How to Use Kissmetrics to Improve an E-commerce Checkout Funnel', 'Post URL':'https://blog.kissmetrics.com/improve-ecommerce-checkout-funnel/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":394,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

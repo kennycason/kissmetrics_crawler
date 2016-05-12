@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>What Your Analytics Software is Hiding From You</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; What Your Analytics Software is Hiding From You Comments Feed" href="https://blog.kissmetrics.com/what-analytics-is-hiding/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Does A Phone Number On Your Site Increase Conversions?' href='https://blog.kissmetrics.com/results-from-flowr/' />
+<link rel='next' title='4 Strategies For Engaging Facebook Fans No Matter How “Unsexy” Your Brand Is' href='https://blog.kissmetrics.com/engage-facebook-fans/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/what-analytics-is-hiding/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=8364' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fwhat-analytics-is-hiding%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fwhat-analytics-is-hiding%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,346] -->
+<meta name="description" content="While Google Analytics is one of the best free analytics applications out there for getting basic traffic and visitor data, it also has some pretty significant holes. Read this article to learn what they are." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/118321989430962111396/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='What Your Analytics Software is Hiding From You' />
+<meta property='og:url' content='https://blog.kissmetrics.com/what-analytics-is-hiding/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='While Google Analytics is one of the best free analytics applications out there for getting basic traffic and visitor data, it also has some pretty significant holes. Read this article to learn what they are.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="What Your Analytics Software is Hiding From You" />
+    <meta name="twitter:description" content="While Google Analytics is one of the best free analytics applications out there for getting basic traffic and visitor data, it also has some pretty significant holes. Read this article to learn what they are." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-8364 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'What Your Analytics Software is Hiding From You',
+						'Post Category': 'Analytics',
+						'Post URL': 'https://blog.kissmetrics.com/what-analytics-is-hiding/'
+		}
+	]);
+</script>
+
+<article id="post-8364" class="single-post post-8364 post type-post status-publish format-standard has-post-thumbnail hentry category-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">What Your Analytics Software is Hiding From You</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>While Google Analytics is one of the best free analytics applications out there for getting basic traffic and visitor data, it also has some pretty significant holes.  You&#8217;ve probably noticed some discrepancies when comparing your Google Analytics data to other analytics sources which can include anything from your hosting company&#8217;s own built in analytics to social analytics programs that track hits from shortened URLs sent through Twitter, Facebook, or other networks.</p>
+<p>There are many reasons for confusing and missing data.  Here are just a few examples of the areas from which you might be getting conflicting data and the reasons why.</p>
+<h2>Internal Traffic</h2>
+<p>If you are just one lone person operating a website that you visit maybe once a day, this may not be a big issue to contend with.  But if you are someone who looks at your site multiple times a day, or have a company whose employees are viewing the website multiple times a day, then one thing Google Analytics might be hiding from you is the fact that your visitor statistics, pageviews, and other data may include you, your webmaster, your employees, and other people you don&#8217;t need to analyze.  Just imagine <a href="https://blog.kissmetrics.com/what-you-can-learn-from-bounce-rate-how-to-improve-it/">how much your bounce rate is</a> if you are testing a page repeatedly by opening, refreshing, and closing it immediately after?</p>
+<p>To exclude one IP address in Google Analytics 5, you can go to your website profile settings, Filters, and click on +New Filter.  Name your filter appropriately, then use the dropdowns to Exclude traffic from the IP addresses that are equal to, and enter your IP address.  </p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-exclude-ip-address.png" alt="Google Analytics 5 exclude ip address" title="google-analytics-5-exclude-ip-address" class="aligncenter size-full wp-image-8385" srcset="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-exclude-ip-address-300x184.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-exclude-ip-address.png 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p>If you&#8217;re not sure what your IP address is, you can actually search Google using the query <a href="https://www.google.com/search?q=what+is+my+ip+address" target="_Blank"><em>what is my ip address</em></a> and it will tell you right at the top of search results.  </p>
+<p>If you need to exclude a range of IP addresses (like you would with an office), you can use the <a href="http://www.google.com/support/analyticshelp/bin/answer.py?answer=1034771" target="_blank">IP Address Range Tool</a> to enter the first and last IP address in the range that your office uses, and it will generate the expression you will need to use in your exclusion filter.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-ip-address-range-tool.png" alt="Google Analytics ip address range tool" title="google-analytics-ip-address-range-tool" class="aligncenter size-full wp-image-8383" srcset="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-ip-address-range-tool-300x208.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-ip-address-range-tool.png 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p>You can learn more about excluding internal traffic filters by IP in <a href="http://www.google.com/support/analyticshelp/bin/answer.py?hl=en&#038;answer=1034840&#038;topic=1034830" target="_blank">Google Analytics Help</a>.</p>
+<h2>Direct Traffic</h2>
+<p>The next missing piece of data in Google Analytics is direct traffic which can be found under Traffic Sources > Sources > All Traffic and is displayed as <em>(direct) / (none)</em>  This traffic is essentially any traffic that comes from an unidentifiable referral source.  It&#8217;s not from social media, search engines, or other referring URLs.  </p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-direct-traffic.png" alt="Google Analytics 5 Direct Traffic" title="google-analytics-5-direct-traffic" class="aligncenter size-full wp-image-8369" srcset="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-direct-traffic-300x115.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-direct-traffic.png 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p>Direct traffic includes people who have:</p>
+<ul>
+<li>Typed your URL into their browser&#8217;s address bar.</li>
+<li>Your website bookmarked on their browser&#8217;s bookmarks bar.</li>
+<li>Clicked on links in documents or emails.</li>
+<li>Come from sites that do not create a live hyperlink to your website, but rather just have an inactive link that has to be copied and pasted.</li>
+<li>Security settings preventing referring URL&#8217;s to pass through to another website.</li>
+</ul>
+<p>The upside is you still have the rest of their behavior tracked in Google Analytics once they have reached your site up until the point they leave.  You just don&#8217;t get to find out where they have come from.  You can learn more about traffic types, including direct traffic in <a href="http://www.google.com/support/analytics/bin/answer.py?answer=60126" target="_blank">Google Analytics Help</a>.</p>
+<p>A few things interesting to note about direct traffic is the percentage of new visits (people who have bookmarks on their browser are probably repeat visitors) and related data which you can find by going to Traffic Sources > Sources > Direct.  I have found traffic under the direct traffic area have a lower bounce rate, higher average time on site, and higher rate of goal completions.</p>
+<h2>Mobile Traffic</h2>
+<p>Google Analytics does give you data from mobile devices, but not everything.  You can view various stats such as your mobile vs. non-mobile visitors.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-mobile-traffic.png" alt="Google Analytics 5 Mobile Traffic" title="google-analytics-5-mobile-traffic" class="aligncenter size-full wp-image-8381" srcset="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-mobile-traffic-300x115.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-mobile-traffic.png 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p>You can also see specific mobile device info about your visitors.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-mobile-devices.png" alt="Google Analytics 5 Mobile Devices" title="google-analytics-5-mobile-devices" class="aligncenter size-full wp-image-8379" srcset="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-mobile-devices-300x195.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-mobile-devices.png 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p>Of course, you can see that you&#8217;re not getting the complete picture with the large number of <em>(not set)</em> devices.  When you add in the screen resolution and sort, you can see that the issue possibly lies in Google Analytics not being able to <a href="http://www.google.com/support/forum/p/Google+Analytics/thread?tid=312782dd67badf6c&#038;hl=en" target="_blank">track the latest iOS for Apple devices</a>.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-mobile-devices-not-set.png" alt="Google Analytics 5 Mobile Devices Not Set" title="google-analytics-5-mobile-devices-not-set" class="aligncenter size-full wp-image-8377" srcset="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-mobile-devices-not-set-300x172.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-mobile-devices-not-set.png 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p>Essentially, Google Analytics can only track so much from mobile phones, and traffic from mobile applications may not be included.  You can learn more about mobile reporting availability in <a href="http://www.google.com/support/googleanalytics/bin/answer.py?hl=en&#038;answer=163132" target="_blank">Google Analytics Help</a>.</p>
+<h2>Private Browsing Traffic</h2>
+<p>Popular browsers now offer users the option of private browsing.  This means that their activity on your website will not be tracked in Google Analytics at all.  </p>
+<p><a href="http://tools.google.com/dlpage/gaoptout" target="_blank">Google Analytics Opt-out Browser Add-on</a> is provided by Google itself and is available for all of the top browsers including Internet Explorer, Chrome, Firefox, Safari, and Opera.  There are also many extensions / add-ons made for specific browsers that blog all types of analytics software tracking, so no matter what you use, you may still be missing some data!</p>
+<h2>Keyword Traffic</h2>
+<p>The most recent change in Google Analytics has everyone stirring in the online marketing world is the loss of keyword data from organic search.  When you look under Traffic Sources > Sources > Search > Organic, you might see that your top referring keyword is now <em>(not provided)</em>.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-keywords-not-provided.png" alt="Google Analytics 5 Keywords Not Provided" title="google-analytics-5-keywords-not-provided" class="aligncenter size-full wp-image-8375" srcset="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-keywords-not-provided-300x185.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-analytics-5-keywords-not-provided.png 652w" sizes="(max-width: 652px) 100vw, 652px" /></p>
+<p>This recent change is the result of Google changing the way logged in users search.  When you search Google while logged into your Google account, you will be <a href="http://analytics.blogspot.com/2011/10/making-search-more-secure-accessing.html" target="_Blank">searching in SSL mode</a>.  Searches in SSL mode allow logged in users to have more privacy when they search by not allowing webmasters to see the keywords that these users searched to arrive to their website in organic search results.  </p>
+<p>Although the change was made for the sake of privacy, most believe that is not the case as logged in users will still have their keywords tracked and sent to webmasters who use Google AdWords.  In this case, the keywords that led to a logged in user clicking on a paid listing will show in Google Analytics.</p>
+<p>Regardless of whether the data can be accessed by webmasters in Google Analytics, the data is still being tracked.  If you are logged into your Google account right now, you can visit your <a href="https://www.google.com/history/" target="_blank">web history</a> to see what is still being collected about your search behavior by Google.  </p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/google-web-history.png" alt="Google Web History" title="google-web-history" class="aligncenter size-full wp-image-8373" /></p>
+<p>Even if you shut this off, <a href="http://www.google.com/history/privacyfaq.html?hl=en" target="_blank">Google will still collect this data</a>.</p>
+<h2>Social Media</h2>
+<p>Last, but not least, is the inconsistencies when it comes to social media tracking in Google Analytics.  I firmly believe you can learn a lot through Google Analytics through the use of advanced segments to see <a href="https://blog.kissmetrics.com/drive-the-best-traffic/">what drives traffic to your website</a> in terms of social media vs. other referral websites.  </p>
+<p>But if you start to compare other analytics data for social media to that of Google Analytics, you might be in for a surprise.  Several applications and tools such as Bit.ly, HootSuite, and Buffer will show you click data for links you share on Twitter or other social networks through their platform.  </p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2011/11/bitly-analytics.png" alt="bitly analytics" title="bitly-analytics" class="aligncenter size-full wp-image-8371" /></p>
+<p>Yet, if you look at your Google Analytics, these numbers may not match up.  Again, this can go back to any of the previously mentioned items such as mobile application traffic, direct traffic, or people using private browsing.</p>
+<p><em>Do you know of other pieces of data that Google Analytics is hiding from you?  Please share it in the comments as well as the ways or alternatives you use to find out more about this missing data.</em></p>
+<p><strong>About the Author:</strong> Kristi Hines is a freelance writer, blogger, and social media enthusiast. Her blog Kikolani focuses on <a href="http://kikolani.com/" rel="nofollow">blog marketing</a>, including social networking strategies and blogging tips.</em></p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fwhat-analytics-is-hiding%2F&source=tweetbutton&text=What+Your+Analytics+Software+is+Hiding+From+You&url=https%3A%2F%2Fblog.kissmetrics.com%2Fwhat-analytics-is-hiding%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fwhat-analytics-is-hiding%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=What Your Analytics Software is Hiding From You&amp;body=https://blog.kissmetrics.com/what-analytics-is-hiding/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-8364 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-12458">
+    <div id="comment-12458" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Maria</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-12458" class="comment-date">Nov 25, 2011 at 1:04 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Fantastic article!  I was just in the middle of trying to work out my Google Analytics and came across your Twit &#8211; Thanks for the help</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=12458#respond' onclick='return addComment.moveForm( "comment-12458", "12458", "respond", "8364" )' aria-label='Reply to Maria'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-12543">
+    <div id="comment-12543" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/kikolani' rel='external nofollow' class='url'>Kristi Hines</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-12543" class="comment-date">Nov 28, 2011 at 9:55 am</a>      </div><!-- /.comment-meta -->
+
+      <p>You&#8217;re welcome Maria!  :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=12543#respond' onclick='return addComment.moveForm( "comment-12543", "12543", "respond", "8364" )' aria-label='Reply to Kristi Hines'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-12459">
+    <div id="comment-12459" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mohamed</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-12459" class="comment-date">Nov 25, 2011 at 1:09 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>helpful article , thanks a lot.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=12459#respond' onclick='return addComment.moveForm( "comment-12459", "12459", "respond", "8364" )' aria-label='Reply to Mohamed'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-12475">
+    <div id="comment-12475" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Martin Voorzanger</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-12475" class="comment-date">Nov 26, 2011 at 1:05 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article. One question. It seems like iPhone screen resolution is shown in Google Analytics as 320&#215;480. This is true for the older iPhone, but not as of iPhone 4 (640&#215;960). Why is 640&#215;960 not listed?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=12475#respond' onclick='return addComment.moveForm( "comment-12475", "12475", "respond", "8364" )' aria-label='Reply to Martin Voorzanger'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-12545">
+    <div id="comment-12545" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/kikolani' rel='external nofollow' class='url'>Kristi Hines</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-12545" class="comment-date">Nov 28, 2011 at 10:21 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Not sure about that Martin.  I was just going off of my own analytics, and so far I don&#8217;t see that set of dimensions.  I did read that they were having issues tracking the new ios, so that may be a contributing factor.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=12545#respond' onclick='return addComment.moveForm( "comment-12545", "12545", "respond", "8364" )' aria-label='Reply to Kristi Hines'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-12492">
+    <div id="comment-12492" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dave Doolin</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-12492" class="comment-date">Nov 26, 2011 at 7:21 am</a>      </div><!-- /.comment-meta -->
+
+      <p>&#8220;&#8230;direct traffic area have a lower bounce rate, higher average time on site, and higher rate of goal completions.&#8221; </p>
+<p>This makes a lot of sense, and matches my experience with websites I have bookmarked.</p>
+<p>KISSMetrics should just hire you now while they can. Emeryville is very nice, nestled on San Francisco Bay. You could live in The City, reverse commute is a snap!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=12492#respond' onclick='return addComment.moveForm( "comment-12492", "12492", "respond", "8364" )' aria-label='Reply to Dave Doolin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-12546">
+    <div id="comment-12546" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/kikolani' rel='external nofollow' class='url'>Kristi Hines</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-12546" class="comment-date">Nov 28, 2011 at 10:22 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Dave, although I&#8217;m pretty attached to Arizona and working from home for the time being.  :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=12546#respond' onclick='return addComment.moveForm( "comment-12546", "12546", "respond", "8364" )' aria-label='Reply to Kristi Hines'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-12542">
+    <div id="comment-12542" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">hyderali</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-12542" class="comment-date">Nov 28, 2011 at 9:47 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Kristi for the post.</p>
+<p>Your first point regarding internal traffic is to the point &amp; I must adhere that I too think that google hides this data. In my company there are several developers &amp; they are working full 9 hrs on an ecommerce site testing, developing, adding new features etc.but after adding the IP address as you mention I normally get several visits from my own company which I don&#8217;t understand the purpose of google for providing this exclude your internal traffic filter.</p>
+<p>Direct traffic points are correct, except of clicking on links in document or emails, I was thinking tha that will come under referral. Can you explain on that?</p>
+<p>How can you be sure that it is the traffic from latest iOS 5 Apple device?</p>
+<p>Well, for private browsing, I think that Google will hide that results even if you bribe them to show it. Like, if I&#8217;m searching something private (without logged in) then why do I want that keywords to be shown to third party analytics software, isn&#8217;t that?</p>
+<p>And for SSL Encryption, the same applies as above &amp; also stated by matt cutts in pubcon that &#8220;if you search anything private with logged in those terms will not shown in analytics referral traffic&#8221; here I&#8217;ve to differ with him because if I want to search anything private I&#8217;ll without logged in.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=12542#respond' onclick='return addComment.moveForm( "comment-12542", "12542", "respond", "8364" )' aria-label='Reply to hyderali'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-12547">
+    <div id="comment-12547" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/kikolani' rel='external nofollow' class='url'>Kristi Hines</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-12547" class="comment-date">Nov 28, 2011 at 10:31 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Hyderali,</p>
+<p>You&#8217;re welcome, and thanks for the great questions!</p>
+<p>As far as documents or email referrals, Google Analytics can only pick up things that can be tracked by cookies in a browser.  Hence, if someone has a PDF or document open on their desktop through Adobe Reader or Microsoft Word on their desktop, or an email sitting in Outlook or Thunderbird, those links wouldn&#8217;t be clicked upon inside a browser so they couldn&#8217;t be tracked.  I think if the PDF or document were online and viewed through a browser, it could be tracked.  Actually makes me wonder if anyone sees docs.google.com as a referrer from links clicked within Google Docs, but I haven&#8217;t seen it as a referrer in my analytics as of yet.</p>
+<p>The only thing I heard about the Apple iOS tracking was in the support section (google.com/support/forum/p/Google+Analytics/thread?tid=312782dd67badf6c&amp;hl=en).  When I look in Analytics and click through to Mobile OS, I only see iPhone or iPad.  Clicking on those only reveals (not set) as opposed to when you click on Android, you can see versions 2.3.3, 2.3.4, and many others.  </p>
+<p>If you&#8217;re doing private browsing with an extension or setting in your browser, the data shouldn&#8217;t be passed.  The SSL encryption only hides organic keywords from searches performed by logged in users from Analytics.  Those searches still get recorded somewhere in the Google system in association with your account as noted in their Privacy FAQ (google.com/history/privacyfaq.html?hl=en).  </p>
+<p>Even if you are logged into your Google Account and using SSL, they will be sharing the keywords you search if you click on a sponsored link or other AdWords ad.  This is why the privacy thing is such a mess &#8211; if your website uses AdWords (paying Google for advertising), then you&#8217;ll still get the keyword data.  You just don&#8217;t get organic keyword data.</p>
+<p>I hope this helps!  :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=12547#respond' onclick='return addComment.moveForm( "comment-12547", "12547", "respond", "8364" )' aria-label='Reply to Kristi Hines'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-12712">
+    <div id="comment-12712" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dan</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-12712" class="comment-date">Dec 01, 2011 at 4:24 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great Post! Still trying to grasp whether the change Google made in October in tracking keywords can account for so many keywords appearing as (not set) in our PPC campaigns when viewed in analytics. From your article, and google&#8217;s initial blog post,  it appears the change should only impact organic searches.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=12712#respond' onclick='return addComment.moveForm( "comment-12712", "12712", "respond", "8364" )' aria-label='Reply to Dan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-13019">
+    <div id="comment-13019" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/kikolani' rel='external nofollow' class='url'>Kristi Hines</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-13019" class="comment-date">Dec 06, 2011 at 2:45 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Strange, it was only supposed to affect organic search.  That&#8217;s why everyone was up in arms over it &#8211; Google said it was for privacy, yet if you pay for AdWords, you could get past the privacy barrier.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=13019#respond' onclick='return addComment.moveForm( "comment-13019", "13019", "respond", "8364" )' aria-label='Reply to Kristi Hines'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-3" id="li-comment-13052">
+    <div id="comment-13052" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">hyderali</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-13052" class="comment-date">Dec 07, 2011 at 4:54 am</a>      </div><!-- /.comment-meta -->
+
+      <p>@Dan, here you are getting confused. That (not set) is something google used to show from the start &amp; it is not related to (not provided) which is above Kristi is talking about. I&#8217;ll explain you below.</p>
+<p>(not set) &#8211; If Google AdWords pay-per-clicks are coming through in your analytics keyword reports as (Not Set) this means that you have not properly linked your Google Analytics and Google AdWords accounts. Read more here analyticsseo.com/blog/why-google-analytics-not-tracking-my-adwords-ppc-campaigns-properly</p>
+<p>(not provided) &#8211; On Tuesday, October 18th, Google announced they&#8217;d be hiding search referral data for logged-in Google searchers. When questioned by Danny Sullivan of SearchEngineLand, Google provided the following estimate on the impact to search referral data. Read more here seomoz.org/blog/quantifying-googles-keyword-referral-data-shutdown</p>
+<p>There is a difference between (not set) &amp; (not provided) the former was an issue from long ago &amp; the latter is been released by google on oct 18th.</p>
+<p>Hope you get it clear.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=13052#respond' onclick='return addComment.moveForm( "comment-13052", "13052", "respond", "8364" )' aria-label='Reply to hyderali'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-13344">
+    <div id="comment-13344" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Techie</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-13344" class="comment-date">Dec 11, 2011 at 6:46 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Good post!</p>
+<p>But what are we supposed to do about this? Yes, there are flaws, but how are we supposed to address them? Is there some other visitor analysis software that works better?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=13344#respond' onclick='return addComment.moveForm( "comment-13344", "13344", "respond", "8364" )' aria-label='Reply to Techie'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-20338">
+    <div id="comment-20338" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Lindsay Hart</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-20338" class="comment-date">Jan 13, 2012 at 7:51 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Okay&#8230;here&#8217;s my question.  Do you trust bitly stats over Google Analytics?  I see there were problems a couple of years ago with bitly tracking spider hits, etc or having inflated numbers.</p>
+<p>Would you trust bitly numbers now over GA?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=20338#respond' onclick='return addComment.moveForm( "comment-20338", "20338", "respond", "8364" )' aria-label='Reply to Lindsay Hart'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-22064">
+    <div id="comment-22064" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sam</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-22064" class="comment-date">Feb 10, 2012 at 7:25 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Along with this point, I have seen massive click spikes due to bots/spiders.  You can test this yourself by creating a Twitter account with a random string of characters.  No follows or followers, and tweet out a shortened link that is also randomized (no vanity).  Last time I tried this I got 15-20 registered &#8220;clicks&#8221; on the link, that were clearly not human clicks.  </p>
+<p>It would only follow that any additional shares or &#8220;RTs&#8221; would cause this number to artifically rise further.  The click stats are interesting to track in relation to each other, but don&#8217;t aren&#8217;t a valid measure of actual user behavior.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=22064#respond' onclick='return addComment.moveForm( "comment-22064", "22064", "respond", "8364" )' aria-label='Reply to Sam'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-26011">
+    <div id="comment-26011" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://twitter.com/Dasnsandy' rel='external nofollow' class='url'>Sandeep Dash</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-26011" class="comment-date">Apr 09, 2012 at 5:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Kristi, great one with clear insights! I&#8217;m really getting sick of of those (not provided) figures. :(</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=26011#respond' onclick='return addComment.moveForm( "comment-26011", "26011", "respond", "8364" )' aria-label='Reply to Sandeep Dash'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-26739">
+    <div id="comment-26739" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ryan Phelps</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-26739" class="comment-date">Apr 25, 2012 at 10:30 am</a>      </div><!-- /.comment-meta -->
+
+      <p>When comparing more than one analytics software, how do you know which one is recording the right info and which isn&#8217;t?  Stats are never going to read the same across different analytics software.  In my experience it&#8217;s all just relative&#8230;stick to one, and compare stats only within that software.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=26739#respond' onclick='return addComment.moveForm( "comment-26739", "26739", "respond", "8364" )' aria-label='Reply to Ryan Phelps'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-26778">
+    <div id="comment-26778" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Melisa L.</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-26778" class="comment-date">Apr 26, 2012 at 8:57 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article Kristi! I was always curious if my Analytics stats were showing my own personal traffic to the website when updating, etc. And now that I know how to exclude my own IP maybe I&#8217;ll start seeing actual results :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=26778#respond' onclick='return addComment.moveForm( "comment-26778", "26778", "respond", "8364" )' aria-label='Reply to Melisa L.'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-26973">
+    <div id="comment-26973" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Rob Willox</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-26973" class="comment-date">May 01, 2012 at 8:26 am</a>      </div><!-- /.comment-meta -->
+
+      <p>One thing to remember and check fairly regularly is that you may not have a static ip address and have one that is dynamically allocated by your ISP. If so it may be renewed automatically every so often and if not updated it would again distort visitor data.</p>
+<p>If you occasionally or even if you never switch off your router you might find that your ISP forces/renews dynamically allocated ip addresses.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=26973#respond' onclick='return addComment.moveForm( "comment-26973", "26973", "respond", "8364" )' aria-label='Reply to Rob Willox'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-27003">
+    <div id="comment-27003" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='https://twitter.com/#!/Sai_Deep' rel='external nofollow' class='url'>deepti</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-27003" class="comment-date">May 01, 2012 at 10:07 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi Kristi<br />
+Love all your articles-always helpful:))</p>
+<p>Could you pleaseee explain how GA tracks users who are logged in? Because our boss just told us that GA tracks only the users who are logged into their google a/cs. Now if that is true wouldnt the visitors count really miss a lot of people who search without logging in?<br />
+Did read that ssl part above in the section &#8220;keyword traffic&#8221; but got only a rough picture. :(<br />
+And this is really urgent!</p>
+<p>Thankss a lot for your time<br />
+I do hope you reply:))<br />
+Best regards</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=27003#respond' onclick='return addComment.moveForm( "comment-27003", "27003", "respond", "8364" )' aria-label='Reply to deepti'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-27566">
+    <div id="comment-27566" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">mark williams</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-27566" class="comment-date">May 10, 2012 at 5:41 am</a>      </div><!-- /.comment-meta -->
+
+      <p>You can filter out employee logins with WordPress at least by using the Google analytics plugin for WordPress by yoast. its in advanced options. too hard to do VIA ip addresses unless they&#8217;re static. again only for WP &#8211; we build a lot of these sites and have them all hooked up to ga. you can control the tracking by user level.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=27566#respond' onclick='return addComment.moveForm( "comment-27566", "27566", "respond", "8364" )' aria-label='Reply to mark williams'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-27974">
+    <div id="comment-27974" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jules Webb</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-27974" class="comment-date">May 16, 2012 at 4:32 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Re: Internal Traffic<br />
+When I used to be on a cable internet connection I set up a filter for my IP address. Since that time I have experienced both a satellite and DSL connection. These types of service use a rotating IP address. I know I could exclude a range of IP addresses, but then I would also be filtering others who use the same internet provider that I am. </p>
+<p>I have not been able to figure out a way around this and am wondering if anyone has any ideas or techniques they&#8217;d be willing to share.</p>
+<p>Thanks!<br />
+Jules</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=27974#respond' onclick='return addComment.moveForm( "comment-27974", "27974", "respond", "8364" )' aria-label='Reply to Jules Webb'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-30163">
+    <div id="comment-30163" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">si</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-30163" class="comment-date">Jun 09, 2012 at 5:18 am</a>      </div><!-- /.comment-meta -->
+
+      <p>great post! very useful info for a noob like myself with only one self made site to his name lol</p>
+<p>question though. i use moble broadband .. which has no static ip (dynamic) which on testing several times can change significantly from one net login to the next (right down to the first 2 digit number altering a coouple of places) so&#8230; A. how can i filter myself out? B. does google think i am a &#8216;different person&#8217; each time also?.. which would leave unique click/search traffic stats open to abuse?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=30163#respond' onclick='return addComment.moveForm( "comment-30163", "30163", "respond", "8364" )' aria-label='Reply to si'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-33648">
+    <div id="comment-33648" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Natalia</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-33648" class="comment-date">Aug 08, 2012 at 8:54 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Since I do not have a static IP with my ISP and I use Chrome, I installed the extension &#8220;Google Analytics Opt-out Add-on&#8221; which tells the Google Analytics javascript not to send Analytics data.</p>
+<p>Thanks for clearing the mystery of direct traffic. I was just looking at my Analytics (and searching Google for direct traffic info, that&#8217;s how I found this page) and noticed direct traffic by new visitors to deep pages on my site, and had found that confusing&#8230; :-\ The security settings bit explains it.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=33648#respond' onclick='return addComment.moveForm( "comment-33648", "33648", "respond", "8364" )' aria-label='Reply to Natalia'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-44559">
+    <div id="comment-44559" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Caroline Mantel</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-44559" class="comment-date">Sep 27, 2012 at 9:37 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Wow- what an excellent article.  I have been on the phone with Google for hours over the past month trying to ensure we have everything set up correctly and are utilizing all of the tools they offer.  You have explained so much more in one article- Thank you for taking the time to spell it out and offer the step by step instructions.  Google Analytics is still somewhat of a mystery but you have certainly helped clear it up.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=44559#respond' onclick='return addComment.moveForm( "comment-44559", "44559", "respond", "8364" )' aria-label='Reply to Caroline Mantel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-50995">
+    <div id="comment-50995" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Asad</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-50995" class="comment-date">Oct 01, 2012 at 11:31 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>great article, now i have solved this kind issue in my google.analytics account. thanks Kristi Hines</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=50995#respond' onclick='return addComment.moveForm( "comment-50995", "50995", "respond", "8364" )' aria-label='Reply to Asad'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-91496">
+    <div id="comment-91496" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Amanda</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-91496" class="comment-date">Feb 01, 2013 at 3:17 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Is there a way to exclude a mobile device? Even while mobile is connected to the excluded ip address wifi connection, the data still gets entered into GA. Can you exclude a mobile device while not on an excluded wifi connection? I often use my phone to go visit the website, both wifi &amp; mobile network but I do not want that traffic included into Analytics. Thanks! You article is absolutely spot on &amp; so helpful!!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=91496#respond' onclick='return addComment.moveForm( "comment-91496", "91496", "respond", "8364" )' aria-label='Reply to Amanda'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-112946">
+    <div id="comment-112946" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Katrice</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-112946" class="comment-date">Jul 01, 2013 at 3:55 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Good day! Do you know if they make any plugins to help with Search Engine Optimization?<br />
+I&#8217;m trying to get my blog to rank for some targeted keywords but I&#8217;m not<br />
+seeing very good gains. If you know of any please share.<br />
+Appreciate it!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=112946#respond' onclick='return addComment.moveForm( "comment-112946", "112946", "respond", "8364" )' aria-label='Reply to Katrice'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-617928">
+    <div id="comment-617928" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mark H.</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-617928" class="comment-date">Sep 25, 2014 at 9:37 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for these insights. </p>
+<p>We know Google data even many a times gives misleading results but don&#8217;t have nay other option than Google Analytics. So, no options.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=617928#respond' onclick='return addComment.moveForm( "comment-617928", "617928", "respond", "8364" )' aria-label='Reply to Mark H.'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1165151">
+    <div id="comment-1165151" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Michael D'Amico</cite>
+        
+        <a href="https://blog.kissmetrics.com/what-analytics-is-hiding/#comment-1165151" class="comment-date">Oct 07, 2015 at 3:20 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Great Article. I just wish I could find my Website Profile Settings</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/what-analytics-is-hiding/?replytocom=1165151#respond' onclick='return addComment.moveForm( "comment-1165151", "1165151", "respond", "8364" )' aria-label='Reply to Michael D&#039;Amico'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">43 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/what-analytics-is-hiding/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='8364' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="416decf3db" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="19"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'What Your Analytics Software is Hiding From You', 'Post URL':'https://blog.kissmetrics.com/what-analytics-is-hiding/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/results-from-flowr/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/engage-facebook-fans/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/what-analytics-is-hiding/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/what-analytics-is-hiding/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/what-analytics-is-hiding/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="What Your Analytics Software is Hiding From You" data-url="http://blog.kissmetrics.com/what-analytics-is-hiding/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'What Your Analytics Software is Hiding From You', 'Post URL':'https://blog.kissmetrics.com/what-analytics-is-hiding/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'What Your Analytics Software is Hiding From You', 'Post URL':'https://blog.kissmetrics.com/what-analytics-is-hiding/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'What Your Analytics Software is Hiding From You', 'Post URL':'https://blog.kissmetrics.com/what-analytics-is-hiding/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":498,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

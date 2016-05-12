@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>How We Built a Partner Network That Increased Revenue by 1,983%</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; How We Built a Partner Network That Increased Revenue by 1,983% Comments Feed" href="https://blog.kissmetrics.com/build-a-partner-network/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='An Overlooked Method for Increasing Conversions' href='https://blog.kissmetrics.com/overlooked-method-increasing-conversions/' />
+<link rel='next' title='How to Avoid a Google Penalty (Infographic)' href='https://blog.kissmetrics.com/avoid-google-penalty/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/build-a-partner-network/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=27748' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fbuild-a-partner-network%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fbuild-a-partner-network%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,362] -->
+<meta name="description" content="What if I told you our B2B startup increased our annual revenue by 1,983% and increased our user base by over 1,000% within six months with no upfront costs?" />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='How We Built a Partner Network That Increased Revenue by 1,983%' />
+<meta property='og:url' content='https://blog.kissmetrics.com/build-a-partner-network/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='What if I told you our B2B startup increased our annual revenue by 1,983% and increased our user base by over 1,000% within six months with no upfront costs?' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="How We Built a Partner Network That Increased Revenue by 1,983%" />
+    <meta name="twitter:description" content="What if I told you our B2B startup increased our annual revenue by 1,983% and increased our user base by over 1,000% within six months with no upfront costs?" />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-27748 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'How We Built a Partner Network That Increased Revenue by 1,983%',
+						'Post Category': 'Launch Strategies',
+						'Post URL': 'https://blog.kissmetrics.com/build-a-partner-network/'
+		}
+	]);
+</script>
+
+<article id="post-27748" class="single-post post-27748 post type-post status-publish format-standard hentry category-launch-strategies" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">How We Built a Partner Network That Increased Revenue by 1,983%</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p><i>Today&#8217;s article is a guest contribution by <a href="https://www.linkedin.com/in/katrinarazavi">Katrina Razavi</a>. Some of the ideas in this article require legal help in order to execute. KISSmetrics in no way suggests or endorses these strategies. They are provided merely as a business development case study.</i></p>
+<p>What if I told you our B2B startup increased our annual revenue by 1,983% and increased our user base by over 1,000% within six months with <em>no upfront costs</em>?</p>
+<p>Oh, and we went from failed cold calls to <em>conversations</em> with prospects who said, “Hmm, I think I’ve heard of you,” even though we were the new kid on the block in one of the most difficult industries to gain credibility in.</p>
+<p>Let me be clear, this is not a case study about a “unicorn club” consumer-focused startup.</p>
+<p>This is my story of our B2B startup and how we jump-started the business.</p>
+<p>We created our own partner network. We developed relationships with marketing partners who promoted our company to their much bigger audiences to help us get and close more leads.</p>
+<p>Today I will show you exactly how we did it in four steps. These are lessons I learned the hard way when I was leading business development at Ringadoc, a cloud-based answering service in the healthcare industry.</p>
+<p>I’ll also get into the specifics of each step, including how to target the right companies, word-for-word email scripts to get your foot in the door (and <em>why</em> they work), how to structure your first call with a partner, and the exact deal points you can cover in advance to save <em>thousands</em> of dollars in legal fees.</p>
+<p>Although your company may be in a different industry or the partnerships you’re trying to create may be unrelated, these principles still hold true when it comes to business development and building partnerships in your space.</p>
+<h2>Step One: Make Your Hit List</h2>
+<p>I’m a huge fan of the 80/20 rule, also known as the Pareto Principle. If you’re not familiar, it states that 80% of effects come from 20% of causes. For example, in a business, generally 80% of your revenue comes from 20% of your customers. This can also hold true for customer complaints :)</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Pareto.jpg"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Pareto.jpg" alt="Pareto" class="aligncenter size-full wp-image-27752" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Pareto-300x214.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/05/Pareto.jpg 525w" sizes="(max-width: 525px) 100vw, 525px" /></a></p>
+<p align="center"><em>Pareto Principle (<a href="http://cdn.onextrapixel.com/wp-content/uploads/2011/06/pareto.jpg">Source</a>)</em></p>
+<p>You can use this principle to stay laser-focused on identifying partners who will give you the biggest bang for your buck. Cultivating partnerships requires a lot of time and energy. You have to deep dive into the partners, understand their businesses, figure out who the decision makers are, and eventually&#8230;close a deal! You want to make sure you’re spending your valuable time in the right place.</p>
+<p>By doing your prep work ahead of time, you will front-load a lot of this hard work, saving you from a lot of potential disappointments later.</p>
+<h3>1. Define Your Criteria</h3>
+<p>Start off by defining your criteria. What’s the goal of a partnership? Is it to increase your user base? Is it a product type of partnership? Affiliate play? Whatever it is, get really clear on how it will benefit your business, while also considering the most important question you’ll have to answer from partners: what’s in it for them?</p>
+<p>Once you’ve put some thought into those questions, note down your criteria. Here are more questions to trigger thought:</p>
+<ul>
+<li>What type of reach should the partner have (e.g., over 1m+ users)?</li>
+<li>What size of partner are you looking for (startup, medium-sized, VC-backed)?</li>
+<li>What <em>type</em> of partner are you looking for in the industry (marketing, product, business)?</li>
+<li>What things DON’T you want in a partner (for example, if liquidity is important, you probably don’t want to partner with an early-stage startup)?</li>
+<li>Is there any legislation or changes in your industry that you can use to target a certain type of partner?</li>
+</ul>
+<p>At Ringadoc, my criteria was tangential companies that had a strong base of doctors (our target market) and that were among the top 20 market leaders in the electronic health records (EHR) space because I wanted to make sure they had a strong base of prospects <em>and</em> the credibility in the industry that we wanted to align with.</p>
+<p>In the healthcare space, “rookies” aren’t really seen as innovative, rather they’re perceived as inexperienced. Striking marketing deals with the bigger players in the space helped us establish credibility in the industry.</p>
+<p>We focused on EHR partners because, at the time, there was <a href="http://en.wikipedia.org/wiki/Health_Information_Technology_for_Economic_and_Clinical_Health_Act">legislation</a> that incentivized doctors to adopt electronic patient charts. It led to thousands of doctors flocking to EHR companies, so our team knew those companies had the eyeballs.</p>
+<h3>2. Build Your List</h3>
+<p>Once you’ve defined your criteria, you’re ready to build your list. Here’s a screenshot of the exact spreadsheet I used. Customize it as you see fit with the different pieces of criteria you identified.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Build-your-list.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Build-your-list.png" alt="Build your list" class="aligncenter size-full wp-image-27749" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Build-your-list-300x23.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/05/Build-your-list.png 520w" sizes="(max-width: 520px) 100vw, 520px" /></a></p>
+<p align="center"><em>Build your List</em></p>
+<p>Once you have your list, the next thing I suggest you do is set up <a href="https://www.google.com/alerts">Google alerts</a> for companies to keep tabs on them and their recent developments. It’s so important to keep your ear to the ground in your industry. You can find industry blogs by checking out <a href="http://alltop.com">Alltop</a>, doing Google searches, and adding blogs or news sites to a category on Feedly. If your partner prospect has a company blog, also throw that into your dedicated Feedly category. Below is a screenshot of my “Healthcare” category on <a href="http://feedly.com/">Feedly</a>. You can create an industry category so you can easily track news in your space.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Feedly.jpg"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Feedly.jpg" alt="Feedly" class="aligncenter size-full wp-image-27750" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Feedly-300x163.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/05/Feedly.jpg 570w" sizes="(max-width: 570px) 100vw, 570px" /></a></p>
+<p align="center"><em>My “Health” category on Feedly to help me stay in the loop.</em></p>
+<p><a href="http://quora.com">Quora</a>, <a href="http://linkedin.com">LinkedIn groups</a>, and potential partners’ user forums are other great ways to figure out what’s happening in your market. You can find out what users <em>really</em> think of a potential partner, what users’ pain points are, etc. If they have public user forums, go digging around in there and see if you can find any threads about a pain point that your product is addressing. If you can, it’s a great way to get your foot in the door.</p>
+<h2>Step Two: Get Your Foot in the Door</h2>
+<p>All right, you have your hit list completed; now for the fun stuff. You have to find the<em> right people</em> at the right companies so you can pitch them on the partnership.</p>
+<p>In step one, you front-loaded a lot of the prep work by digging into each of your potential partners and learning the challenges their businesses and customers may face. Now is when your sales skills have to kick in.</p>
+<p><a href="http://en.wikipedia.org/wiki/Foot-in-the-door_technique">In a classic study</a> about the “foot-in-the-door technique,” two groups were asked to place a huge sign on their lawn that said “Drive Carefully.” The members of one of the groups had <em>previously</em> been approached and asked to put a smaller sign on their home’s window that said “Be a Safe Driver.”</p>
+<p>The study found that 76% of the people who put the smaller sign on their window first complied with the request to put the bigger sign on their lawn, compared with only 17% of those in the other group who had not been exposed to the initial, smaller request.</p>
+<p>What can we take away from this? Before you do any pitching or selling, the first thing you want to do is get your potential partner to make a “micro commitment” in the form of taking an introductory call from you.</p>
+<p>This is a 15-minute call where you can introduce each other to your businesses. You also can confirm if you will be able to truly provide value to your partner and if they’ll be open to a partnership. This will increase your odds of closing an eventual deal, since you’re asking for a smaller commitment upfront and you&#8217;ll be asking for a bigger one later.</p>
+<h3>1. Get a Warm Introduction</h3>
+<p>The best way to talk to the right person is to get a personal introduction. You may have to go through a few rounds of introductions to get to the right person, but that’s totally fine. It beats a cold email. Besides, nothing is better than a qualified person giving another qualified person an introduction.</p>
+<p>I usually start by scouring LinkedIn. Check your LinkedIn network and see if anyone at the company you’re interested in has common connections with you. Identify your strongest connection (aka someone you feel the most comfortable asking) so you can email the person and ask for an introduction.</p>
+<p>I advise against the LinkedIn introductions since LinkedIn InMails have only a <a href="http://sironaconsulting.com/2014/07/23/stop-relying-on-linkedin-inmails-and-use-these-contact-methods-instead/">25% open rate.</a> Although InMails are more “promotional” in nature, I know I personally fail to check my LinkedIn messages regardless of how I’m messaged since they go to my “social” folder on Gmail. The point is this: just go straight to their inbox if you can.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Linkedin.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Linkedin.png" alt="Linkedin" class="aligncenter size-full wp-image-27751" srcset="https://blog.kissmetrics.com/wp-content/uploads/2015/05/Linkedin-300x72.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2015/05/Linkedin.png 570w" sizes="(max-width: 570px) 100vw, 570px" /></a></p>
+<p align="center"><em>You can search “people” who work at a specific company to find common connections</em></p>
+<p>If you have a wide network or a group of investors, it’s also worth asking them for introductions via email, as some people may not be that active on LinkedIn. Here’s a sample email you can use to ask your network via email:</p>
+<p><em>Hi Friends,</em></p>
+<p><em>As you know, I’m working hard on my SaaS startup called EditYourSelfie, which allows people to send a selfie to a professional designer who will edit the photo and get it back to them within an hour so they always look their best on Instagram.</em></p>
+<p><em>I’m looking to build win-win partnerships with local colleges and universities to reach design students who may be interested in helping people look their best in exchange for a revenue share. If you know anyone in higher education who would be open to hearing more via a 15-minute call, I’d love to connect with them.</em></p>
+<p><em>I appreciate your support, and if a connection is made, I will be sure to keep you in the loop. You can simply forward this email along to anyone who may be interested. (Deck attached).</em></p>
+<p><em>Best,</em></p>
+<p><em>Katrina</em></p>
+<p>Here’s why the email is effective:</p>
+<ul>
+<li>It’s easy for people to forward and make the introduction (gives them context, informational links, etc.).</li>
+<li>It explains why you’re reaching out (to set up a 15-minute call).</li>
+<li>It promises to follow up and keep people in the loop. People want to know when they’ve been helpful.</li>
+</ul>
+<h3>2. Pick up the Phone</h3>
+<p>Another strategy I use if I can’t get a warm introduction is the phone. Shocking, right?! The phone is so underrated. Don’t be shy; picking it up can pay off! You can check out the company’s website to find the right person’s phone number or call the general line and ask an operator to connect you. (Tips on targeting the right person are in the next step). Okay, so what if they pick up?! Yikes!</p>
+<p>Here are some pointers to help you:</p>
+<ul>
+<li>Introduce yourself by name, title, and company,<em> clearly and concisely.</em></li>
+<li>Show interest in their company.</li>
+<li>Tell them why you’re calling. (You want to set up a 15-minute call with them at a later time. If it turns out that they have time then and there, seize it! We’ll cover talking points in the next step.)</li>
+</ul>
+<h3>3. Use These Other Jay-Z Approved Hustling Techniques</h3>
+<p>Okay, I don’t know if Jay-Z actually would approve of these&#8230;but something tells me he would.</p>
+<p>If you can’t seem to find a common contact or get hold of your prospect through their phone, you still have options. This is when you have to get resourceful.</p>
+<p>Let’s start with the cold email (or message).</p>
+<p>Clearly, the first step is to find the right person and get in touch with them. Do this by searching for the company on LinkedIn and find out who the right person in the right department is. In most cases, it will be someone in Business Development, Strategic Partnerships, Marketing, or Corporate Development.</p>
+<p>Here are a few options for getting in touch with the person:</p>
+<ul>
+<li>Figure out the company’s email format (i.e., <a href="mailto:firstinitiallastname@companyname.com">firstinitiallastname@companyname.com</a>). You can do this by Google searching or finding someone else at the company’s email address on LinkedIn or social networks.</li>
+<li>Google them. These days many people have their own blog or website with an email address or contact form you can use.</li>
+<li>Some people publicly put their email address on their Twitter or LinkedIn profile.</li>
+<li>There are also some extensions that help with this, like <a href="http://www.connect6.com/">Connect6</a>.</li>
+<li>Find out which groups the person is a part of on LinkedIn and join that group. You’re allowed to message users who are in the same group as you. <a href="https://help.linkedin.com/app/answers/detail/a_id/192/~/communicating-with-a-fellow-group-member">Here’s how</a>.</li>
+<li>Follow the person on Twitter, and favorite or retweet some of their posts. If they follow you back, you can direct message them. If they don’t, you can simply mention them and see if they respond.</li>
+</ul>
+<p>Once you find the right person and method of contacting them, the next step is to craft your outreach email.</p>
+<p>Here is an example:</p>
+<p><em>Subject: 15-minute call</em></p>
+<p><em>Hi Jenny,</em></p>
+<p><em>Hope this note finds you well. Like you, I work in Business Development at [company name]. I’ve been following [company name] for a while and love what you’re doing to [their value prop]. I’ve been thinking about some potential business opportunities that could benefit your users when it comes to [common value prop between both companies].</em></p>
+<p><em>Do you have some time next Wed or Thu at 11am PT for a quick 15-minute call? I’d love to share what we’re working on and get to know your business a bit better. </em></p>
+<p><em>Best,<br />
+Katrina</em></p>
+<p>Here are some helpful tips:</p>
+<ul>
+<li>Use <a href="https://blog.kissmetrics.com/your-next-email-subject-line/">short and concise subject lines</a>. <a href="https://www.mailermailer.com/resources/metrics/2013/subject-lines.rwp">Research </a>shows shorter subject lines have better click-through rates.</li>
+<li>Keep it short. Use bullet points, and avoid hanging lines when possible. Try to limit your email to 7 sentences max.</li>
+<li>Give people a genuine reason for why you’re reaching out.</li>
+<li>Use links rather than attachments to avoid Spam filters.</li>
+<li>If you’re using links, use clean ones like Bit.ly, not long, ugly ones.</li>
+<li>Include a call-to-action. This is the most important part. What do you want people to do? Commit to a call? In-person meeting? Be specific. If you’re proposing times, give them only a few options, and specify times in <em>their</em> time zone so they don’t have to think too much.</li>
+</ul>
+<p><strong>Pro Tip: Email tracking</strong></p>
+<p>If you want to track which emails or subject lines are best, I highly recommend using a software like <a href="http://yesware.com">Yesware</a> where you can save template emails, figure out conversion rates, and get notifications when someone opens or clicks on a link in your email. Don’t be afraid to experiment. Try different subject lines and sentences within your email to see what works best for you.</p>
+<h2>Step 3: Place Your Discovery Call</h2>
+<p>Now that you’ve confirmed your 15-minute call with your prospect, you’re probably wondering what’s next.</p>
+<p>The point of the call is to <em>discover.</em> It is not to close a deal (unless things go extremely well). The point is to briefly introduce your business and validate that what you may be thinking in terms of a partnership is interesting to them and viable:</p>
+<ul>
+<li><strong>Interesting to them </strong>&#8211; Companies get approached all the time for partnerships. You have to validate that the idea you have in your mind in terms of a partnership is something they find interesting as well. Their first question will always be “what’s in it for me?” And that’s the question you’re trying to answer in your 15-minute call. Can you provide something interesting to them?</li>
+<li><strong>Viable </strong>&#8211; Some companies have terms, partners, or weird agreements that may prohibit them from partnering with you in some way. By having a discovery call, you can figure out any blockers you may face upfront. This helps you figure out how to overcome them or realize that a partnership is not viable before spending more valuable time.</li>
+</ul>
+<p>At Ringadoc, the idea I wanted to validate was whether partner companies in the health-tech space were interested in marketing Ringadoc on our behalf in exchange for a revenue share.</p>
+<p>By making these discovery calls, I figured out that our partners were interested in introducing new technologies that would help doctors run more efficient and affordable practices. I also learned that offering a revenue share was incentive enough for marketing our product to their users.</p>
+<p>On our end, these relationships were helpful to lower user acquisition costs and lower the risk of spending cash upfront on advertising. They also helped us establish credibility by working with identifiable players in the space.</p>
+<h3>Here’s a four-step process to follow for your call:</h3>
+<p><strong>1. Introduce yourself and share stories</strong></p>
+<p>Explain who you are and what you do. Then share your story. Everyone loves a good story, so tell them <a href="https://blog.kissmetrics.com/create-authentic-brand-story/">your company’s startup story</a> and why you guys love doing what you do. Let them share their story as well. People love talking about themselves.</p>
+<p><strong>2. Share your partnership idea</strong></p>
+<p>Talk about the high-level idea of a partnership. Make sure you are clear about what’s in it for them and how you’ll add value to their business. After you briefly mention it, pause for a few moments to see if they have any initial thoughts. Make sure you effectively listen. You don’t want to ramble on and on about why a partnership would be great without getting quick feedback first.</p>
+<p>Remember, you may come across instances where a partnership isn’t viable for some reason. The point of this call is to make sure a partnership is both interesting <em>and</em> viable. If you run into an obstacle, that’s fine. By understanding what blockers may be in your way, you can adjust accordingly.</p>
+<p><strong>3. Define next steps</strong></p>
+<p>If there is even a tad bit of interest, your job on this call is to figure out what the best next steps are for both parties. Perhaps the person you’re speaking with has to have a conversation with higher ups, or maybe they love the idea so much they want a basic term sheet, or the two of you may need another call to solidify details. Whatever it is, figure it out and quickly move to the next step.</p>
+<p><strong>4. Get commitment</strong></p>
+<p>Once you identify those next steps, get specific on <em>when</em> they will happen. It could be a follow-up call or looping in another executive. Whatever it is, try to get that commitment while you’re on the phone with them. For example, if you need to have another call, set that day/time while you’re on the phone. You can set the tone by saying, “I have my calendar up and next Friday works well for me. Does that work for you?”</p>
+<p><strong>Pro Tip: The importance of the first deal</strong></p>
+<p>The great part about putting together an awesome first partnership is that it sets a precedent. From then on, when you’re closing new partners and building out your network, you have a “standard” template, which reduces a lot of the negotiating and costs associated with creating new contracts and terms. It doesn’t mean you <em>must</em> stick to the same exact terms of the first deal for every subsequent partner; but if they’re pretty good terms, you can use them as negotiating leverage if need be.</p>
+<h2>Step 4: Establish Deal Points in Advance</h2>
+<p>Let’s say it is a few weeks later, and you and your prospect have been in touch in terms of a potential partnership. It seems like things are looking up and both parties agree that a partnership of some sort benefits both parties.</p>
+<p>In order to save a ridiculous amount of time and money in legal costs, I highly advise getting a very basic, non-binding term sheet on the table.</p>
+<p>Here are some reasons a non-binding term sheet is the first step:</p>
+<ul>
+<li><strong>Transparency</strong> &#8211; It’s in plain English so both parties can agree in principle, and the terms are as transparent as they can be, which helps engender good will on both sides.</li>
+<li><strong>Saves Thousands</strong> &#8211; You can negotiate terms upfront rather than negotiating terms <em>after</em> a lawyer has drafted up a huge document. Additional changes to a long contract can translate into thousands of dollars.</li>
+<li><strong>Gets a commitment</strong> &#8211; If you can get a “yes” on the basic term sheet upfront, you know the rest of it will basically be a breeze once you do send it to a lawyer.</li>
+</ul>
+<p>I’m not a lawyer, but based on my experience, here are some basic things to cover in a non-binding term sheet. You can quickly consult your lawyer about your use case. Tell the lawyer you’re working on a deal and want to send the prospective partner a basic, non-binding term sheet before having the lawyer draft you a longer one. What points should you cover?</p>
+<ul>
+<li><strong>Basics</strong>
+<ul>
+<li>Corporate names, business address, what state they’re incorporated in</li>
+<li>Date</li>
+<li>Signature blocks for both parties at the bottom</li>
+</ul>
+</li>
+<li><strong>Term</strong> &#8211; Also known as the length of the contract. Will it be a few months, a year, or two? It’s totally up to both parties. Some contracts have an “Initial Term” to kick off the contract with an automatic renewal following a 30-day window where one or both parties can cancel. In essence, this gives each party an out if they want to take it.
+<ul>
+<li>What happens if someone cancels early? Is there a fee? Is there a wind-down period? How will confidential information be handled? What parts (if any) of the contract will survive termination?</li>
+<li>Do both parties have an “out?”</li>
+</ul>
+</li>
+<li><strong>Consideration</strong> &#8211; What are each of the partners doing? For our Ringadoc agreements, our partners were promoting our software. We included what channels and at what frequency this would happen in exchange for a defined revenue share paid out over a certain period of time. Your scenario may be different, so figure out what each partner is giving and getting, and be specific.
+<ul>
+<li>If it’s a rev share, what’s the percentage, when will you pay them, and in what method?</li>
+<li>Are you paying per lead or per won customer? How do you define that?</li>
+<li>How will it be reported and audited?</li>
+</ul>
+</li>
+<li><strong>Governing Law</strong> &#8211; If disputes arise, how will they be handled?
+<ul>
+<li>Arbitration &#8211; Perhaps litigation could kill you or your partner. You can always include mandatory arbitration to replace costly litigation.</li>
+<li>Litigation &#8211; If arbitration is a first resort or is not mandatory and suits are allowable, in which state or city will any disputes be handled? The easiest way to handle this is the company that’s initiating a claim or lawsuit will have to do so at the defendant’s location.</li>
+</ul>
+</li>
+<li><strong>Intellectual Property and Confidentiality</strong>
+<ul>
+<li>In most cases, each party will retain their IP rights, but in the case of a product-related partnership, make sure your IP is protected and that you consult with your lawyer on these types of matters.</li>
+<li>Confidentiality clauses are pretty generic, preventing both parties from sharing proprietary information about each other with anyone else. You may want to make an exception if you’d like to publicize the partnership via a press release.</li>
+</ul>
+</li>
+</ul>
+<p>Once you’ve gotten your non-binding term sheet drafted based on a few calls with your partner, you can send it over and get their feedback. You can negotiate on any pieces that need negotiating and come to a mutual understanding. When that piece is complete, you can then send it to your lawyer to draft up an agreement.</p>
+<p><strong>Pro Tip: Get a template</strong></p>
+<p>I’d also advise you to ask your lawyer to draft this up as a template so you can use it for future agreements. Again, this will save you thousands of dollars by just getting the template right the first time around.</p>
+<p>Once you have the agreement, you can share it with your partner, who should have no problem signing off, given that your non-binding term sheet covered the most controversial pieces of the partnership.</p>
+<p>Before we conclude, here are a few tips to help you make the most of your partnership:</p>
+<ul>
+<li><strong>The Domino Effect</strong> &#8211; Your first big partner is that first domino that will help other partners follow suit. Once you land the big partner, you can begin your calls and outreach mentioning that you have that partner in order to establish credibility and build out your network. If it makes sense, you may even want to add to the first contract that you’d like to use your first partner’s logo on your website.</li>
+<li><strong>PR</strong> &#8211; Consider announcing the partnership through a mutual press release.</li>
+<li><strong>Points of Contact</strong> &#8211; Make sure you have a point person assigned on both sides.</li>
+<li><strong>Build Rapport</strong> &#8211; You have the systems designed to stay up-to-date with recent news from your partners so you can congratulate them and give them ideas on their businesses. Also, make it a point to meet face-to-face with your partner contacts when you can. This went a long way for us. We would meet up with our partners at healthcare conferences and events, and establishing that in-person rapport was key.</li>
+<li><strong>Communicate</strong> &#8211; It’s a good idea to let your partners and your co-workers know the progress on the partnership. Is the partnership providing value? If so, how much, and in what way? What is the status of the results, payments, contracts, etc.? Communication, both internally and externally, is vital.</li>
+</ul>
+<h2>Conclusion</h2>
+<p>Partnership networks can help drive more revenue and users to your business. Understanding your industry, your potential partners, and their pain points will put you in a position to make effective pitches and close deals to build your partner network.</p>
+<p>Regardless of your business or use case for a partnership, these principles can still work with some creativity and gumption.</p>
+<p><b>About the Author:</b> Katrina Razavi is a business development expert and communication coach in San Francisco, CA. She has helped startups raise capital, go to market, scale, and improve operational processes in a number of different industries. Razavi also blogs at <a href="http://www.communicationfornerds.com/welcome-kissmetrics-peeps/?utm_source=blogutm_medium=kissmetricsutm_campaign=kissmetricsguest" rel="nofollow">Communication for Nerds</a> where she helps professionals who struggle with social skills and anxiety become socially attractive and live their best lives. You can grab her free eBook: <a href="http://www.communicationfornerds.com/welcome-kissmetrics-peeps/?utm_source=blogutm_medium=kissmetricsutm_campaign=kissmetricsguest" rel="nofollow">5 Easy Ways to Avoid Awkward Conversations</a> right now! You can also connect with her on <a href="https://www.linkedin.com/in/katrinarazavi">LinkedIn</a>.</p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/online-business-strategic-partnerships/">4 Real-Life Examples of Online Businesses That Have Thrived on Strategic Partnerships</a></li>
+<li><a href="https://blog.kissmetrics.com/linkedin-strategies-b2b-marketing/">7 Advanced LinkedIn Strategies for B2B Marketing</a></li>
+<li><a href="https://blog.kissmetrics.com/rule-linkedin-groups/">How to Rule LinkedIn Groups</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fbuild-a-partner-network%2F&source=tweetbutton&text=How+We+Built+a+Partner+Network+That+Increased+Revenue+by+1%2C983%25&url=https%3A%2F%2Fblog.kissmetrics.com%2Fbuild-a-partner-network%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fbuild-a-partner-network%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=How We Built a Partner Network That Increased Revenue by 1,983%&amp;body=https://blog.kissmetrics.com/build-a-partner-network/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-27748 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-1111413">
+    <div id="comment-1111413" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Raul Tiru</cite>
+        
+        <a href="https://blog.kissmetrics.com/build-a-partner-network/#comment-1111413" class="comment-date">May 15, 2015 at 7:03 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Nice article Katrina, I&#8217;m very reluctant to pay upfront since we can track everything and people are open for creative solutions. Big fan of making your own distribution channels. Let the competitors fight over AdWords and Social Media ads while you fish in a different river :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/build-a-partner-network/?replytocom=1111413#respond' onclick='return addComment.moveForm( "comment-1111413", "1111413", "respond", "27748" )' aria-label='Reply to Raul Tiru'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-1167509">
+    <div id="comment-1167509" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Katrina</cite>
+        
+        <a href="https://blog.kissmetrics.com/build-a-partner-network/#comment-1167509" class="comment-date">Oct 13, 2015 at 10:43 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Exactly Raul, I hope it was helpful! It&#8217;s all about thinking outside of the box!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/build-a-partner-network/?replytocom=1167509#respond' onclick='return addComment.moveForm( "comment-1167509", "1167509", "respond", "27748" )' aria-label='Reply to Katrina'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1111840">
+    <div id="comment-1111840" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Petjoy</cite>
+        
+        <a href="https://blog.kissmetrics.com/build-a-partner-network/#comment-1111840" class="comment-date">May 16, 2015 at 6:59 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article Katrina! I didn&#8217;t know some of this tools, i&#8217;m gonna work on figure out how to build a partner network for my business right now :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/build-a-partner-network/?replytocom=1111840#respond' onclick='return addComment.moveForm( "comment-1111840", "1111840", "respond", "27748" )' aria-label='Reply to Petjoy'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-1167510">
+    <div id="comment-1167510" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Katrina</cite>
+        
+        <a href="https://blog.kissmetrics.com/build-a-partner-network/#comment-1167510" class="comment-date">Oct 13, 2015 at 10:43 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you&#8230;Awesome, best of luck!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/build-a-partner-network/?replytocom=1167510#respond' onclick='return addComment.moveForm( "comment-1167510", "1167510", "respond", "27748" )' aria-label='Reply to Katrina'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1174793">
+    <div id="comment-1174793" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Thomas Wambui</cite>
+        
+        <a href="https://blog.kissmetrics.com/build-a-partner-network/#comment-1174793" class="comment-date">Nov 04, 2015 at 5:24 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Saviour!!!<br />
+We build a Saas app in healthcare space, and STALLED!!!, We have limited marketing resources, can&#8217;t figure out B2B marketing strategies, and cold calling was a BIG NIGHTMARE!! We felt like failures, we don&#8217;t know go to market strategies, we are healthcare providers and truly believe in our product, as we are the first users, and experience the pain. I don&#8217;t think you will ever realize the magnitude of this blog towards our spirits. You really talked directly into our ears!!! Thank you.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/build-a-partner-network/?replytocom=1174793#respond' onclick='return addComment.moveForm( "comment-1174793", "1174793", "respond", "27748" )' aria-label='Reply to Thomas Wambui'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">5 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/build-a-partner-network/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='27748' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="f3ddaff692" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="80"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'How We Built a Partner Network That Increased Revenue by 1,983%', 'Post URL':'https://blog.kissmetrics.com/build-a-partner-network/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/overlooked-method-increasing-conversions/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/avoid-google-penalty/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="https://blog.kissmetrics.com/build-a-partner-network/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="https://blog.kissmetrics.com/build-a-partner-network/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="https://blog.kissmetrics.com/build-a-partner-network/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="How We Built a Partner Network That Increased Revenue by 1,983%" data-url="https://blog.kissmetrics.com/build-a-partner-network/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'How We Built a Partner Network That Increased Revenue by 1,983%', 'Post URL':'https://blog.kissmetrics.com/build-a-partner-network/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'How We Built a Partner Network That Increased Revenue by 1,983%', 'Post URL':'https://blog.kissmetrics.com/build-a-partner-network/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'How We Built a Partner Network That Increased Revenue by 1,983%', 'Post URL':'https://blog.kissmetrics.com/build-a-partner-network/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":359,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

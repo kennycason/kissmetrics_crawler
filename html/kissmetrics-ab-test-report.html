@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>Supercharge Your Testing With The New Kissmetrics A/B Test Report</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; Supercharge Your Testing With The New Kissmetrics A/B Test Report Comments Feed" href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How to Do Content Marketing on a Shoestring Budget' href='https://blog.kissmetrics.com/content-marketing-on-a-shoestring/' />
+<link rel='next' title='How to Include Video in Your Email Marketing' href='https://blog.kissmetrics.com/video-email-marketing/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=23386' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fkissmetrics-ab-test-report%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fkissmetrics-ab-test-report%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,364] -->
+<meta name="description" content="Now you can do all of your A/B test reporting from within Kissmetrics! Any event being tracked in Kissmetrics can be used as conversion event!" />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='Supercharge Your Testing With The New Kissmetrics A/B Test Report' />
+<meta property='og:url' content='https://blog.kissmetrics.com/kissmetrics-ab-test-report/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Now you can do all of your A/B test reporting from within Kissmetrics! Any event being tracked in Kissmetrics can be used as conversion event!' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Supercharge Your Testing With The New Kissmetrics A/B Test Report" />
+    <meta name="twitter:description" content="Now you can do all of your A/B test reporting from within Kissmetrics! Any event being tracked in Kissmetrics can be used as conversion event!" />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-23386 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'Supercharge Your Testing With The New Kissmetrics A/B Test Report',
+						'Post Category': 'Testing',
+						'Post URL': 'https://blog.kissmetrics.com/kissmetrics-ab-test-report/'
+		}
+	]);
+</script>
+
+<article id="post-23386" class="single-post post-23386 post type-post status-publish format-standard hentry category-testing" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">Supercharge Your Testing With The New Kissmetrics A/B Test Report</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>We have a very cool feature coming out today in Kissmetrics: <strong>our new A/B Test Report!</strong> In the past if you wanted to run an A/B test using your Kissmetrics data you would need to first run a funnel report and then manually enter your data into whatever external tools you use for your analysis. Now you can do all of your A/B test reporting from within Kissmetrics!</p>
+<h2>Turning your Kissmetrics data into insights</h2>
+<p>Let me give you a quick walkthrough of what you’ll find.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/1-report-ab-test.png" alt="1 report ab test" class="aligncenter size-full wp-image-23387" /></p>
+<p>To start out we have to choose a target event which we’ll consider our “conversion event”, and the Kissmetrics property that will serve as our “experiment”.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/2-report-configuration.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/2-report-configuration.png" alt="2 report configuration" class="aligncenter size-full wp-image-23388" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/2-report-configuration-300x194.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/2-report-configuration.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p>For this test we’re going to use the ‘Signed up’ event as our conversion event. The really cool thing to note here is that <i>any event being tracked in Kissmetrics can be used as conversion event!</i></p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/3-report-configuration.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/3-report-configuration.png" alt="3 report configuration" class="aligncenter size-full wp-image-23389" /></a></p>
+<p>Next we have to select which experiment we’re going to look at. In this case we’re going to use the property associated with an Optimizely test we’re running. This is a great example of the fact that you don’t have to give up on using your favorite A/B testing tools in order to get all your data and reports in one place.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/4-select-a-baseline.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/4-select-a-baseline.png" alt="4 select a baseline" class="aligncenter size-full wp-image-23390" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/4-select-a-baseline-300x85.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/4-select-a-baseline.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p>A/B Testing is all about making a comparison; so all of your results are given in relation to a baseline. Normally this would be your control or original variant, but our reporting tool lets you choose any of the values of your property to serve as a baseline. It’s also important to point out that while this example only has 2 values for the property this report will work with any number of values that a property might have. <strong>Testing more than one variant at a time is no problem.</strong></p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/5-variation-1-the-winner.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/5-variation-1-the-winner.png" alt="5 variation 1 the winner" class="aligncenter size-full wp-image-23391" /></a></p>
+<p>When you run the report it gives you a nice summary of the results. Notice at the top we provide you with a simple explanation of your results. In this case there is enough data and <strong>strong enough significance</strong> to make the call. </p>
+<p>We also give you all the key summary data you’ll need to understand your results: </p>
+<ul>
+<li>How long the test ran</li>
+<li>The number of people in the test</li>
+<li>Total conversions</li>
+<li>The improvement you’re likely to see</li>
+<li><i>How sure you can be of seeing an improvement</i></li>
+</ul>
+<h2>Exploring in Your Data</h2>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/6-improvement-over-time.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/6-improvement-over-time.png" alt="6 improvement over time" class="aligncenter size-full wp-image-23392" /></a></p>
+<p>For those looking for information beyond a simple summary we have more for you! </p>
+<p>First the report provides a visual history of the estimated improvement as more data is collected. This is important because just looking at significance alone can be deceptive. We mark when the results have achieved what is commonly considered to be statistical significance with a trophy icon and shading in the timeline after this has occurred. However in the early stages of a test it is not unlikely that the inferior variant will temporarily look like the winning one. </p>
+<p>Looking at this history you can clearly see how much your improvement is jumping around and likewise use that to get a better intuition of how trustworthy your results are. The more stable your estimate of improvement the more likely it is to be accurate.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/7-variation-winner.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/7-variation-winner.png" alt="7 variation winner" class="aligncenter size-full wp-image-23393" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/7-variation-winner-300x53.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/7-variation-winner.png 658w" sizes="(max-width: 658px) 100vw, 658px" /></a></p>
+<p>Finally, for anyone that is looking to do more analysis on their own, our report provides all the data you’ll need. This gives you much of the information found in our typical funnel report plus you get the likely improvement of each variant as well as the certainty that there is an improvement.</p>
+<h2>Kissmetrics is about People!</h2>
+<p>The focus of Kissmetrics is people, and so we have also built in the ability to explore the individual people that are going through your test.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/8-ab-test-metrics.png" alt="8 ab test metrics" class="aligncenter size-full wp-image-23394" /></p>
+<p>Click on any of the points in the improvement timeline and you’ll be presented with links to run a <a href="https://demo.kissmetrics.com/people">People Report</a> so you can see who in each variant converted, or simply everyone who passed through that variant.</p>
+<h2>Changing Your Conversion Event</h2>
+<p>Now let’s go back to the feature that you can leverage all of your Kissmetrics data in this report. We have our result for conversion to signups, and things look great, but thinking about it maybe we should also see how the result look if we swap out ‘Signed up’ for a more important conversion event ‘Received data’.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/9-report-configuration.png" alt="9 report configuration" class="aligncenter size-full wp-image-23395" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/9-report-configuration-300x87.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/9-report-configuration.png 520w" sizes="(max-width: 520px) 100vw, 520px" /></p>
+<p>All we have to do is go back to the top of the report, change our conversion event and rerun our report!</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/10-there-is-no-clear-winner.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/10-there-is-no-clear-winner.png" alt="10 there is no clear winner" class="aligncenter size-full wp-image-23396" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/10-there-is-no-clear-winner-300x40.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/10-there-is-no-clear-winner.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p>Now we can see that if ‘Received data’ is the conversion event we really care about, we don’t have enough data to call our test. In this case the results are looking pretty close even after over 40,000 observations. The report is letting us know that maybe in this case it is best just to stop the test and stick to our original. Of course we’re free to continue running our test, and eventually we should reach a conversion, however it is unlikely we’ll see the real gains were looking for.</p>
+<h2>Comparing Multiple Variants</h2>
+<p>To highlight a few more features let’s go back and look at results from a test that we ran a few months back, long before work was even started on this report! Because of the way we can make use of any of our Kissmetrics data &#8211; <b>the event/property combination we’re investigating can be a test we ran long ago</b>, or even a combination that was never even thought of as being an A/B test in the first place!</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/11-experiment-variations.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/11-experiment-variations.png" alt="11 experiment variations" class="aligncenter size-full wp-image-23397" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/11-experiment-variations-300x196.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/11-experiment-variations.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p>In this report we’re comparing 3 variations against the original page. Here we can see how the report handles this. We get 3 lines, one for the comparison of each variant against the baseline. The report tells you which of the 3 variants is the superior.</p>
+<p>This is great, but it looks like the variants are all doing well against the original, let’s see how they do against each other.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/04/12-experiment-variations.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/12-experiment-variations.png" alt="12 experiment variations" class="aligncenter size-full wp-image-23398" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/12-experiment-variations-300x196.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/12-experiment-variations.png 800w" sizes="(max-width: 800px) 100vw, 800px" /></a></p>
+<p>This time you can see we’ve switched our baseline from the original to variant 2, the clearly superior variant. We’ve also deselected the original so that it no longer appears in our visualization. In our data table all of our improvements and certainties are expressed in terms of our new baseline. Right away we can see that variant 2 and variant 3 are actually very close, certainly too close to call. This is extremely useful to know, maybe your design team prefers variant 3, now you know you’re free to make that choice with likely little or no loss in conversion.</p>
+<p>The new A/B Test report will open up many new ways to explore and gain insights from your existing Kissmetrics data. I hope you find it as exciting and useful as I have!</p>
+<h2>Google Analytics tells you what’s happening. Kissmetrics tells you who’s doing it.</h2>
+<p>If you&#8217;re interested in trying Kissmetrics to gain actionable insights <i>about the people who pay you</i>, then sign up today:</p>
+<p><a href="https://www.kissmetrics.com/auth/google"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/04/try-kissmetrics.png" alt="try kissmetrics" class="aligncenter size-full wp-image-23400" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/04/try-kissmetrics-300x39.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/04/try-kissmetrics.png 645w" sizes="(max-width: 645px) 100vw, 645px" /></a></p>
+<p><b>About the Author:</b> Will Kurt is a Data Scientist/Growth Engineer at Kissmetrics. You can reach out to him on twitter <a href="http://twitter.com/willkurt">@willkurt</a> and see what he’s hacking on at <a href="https://github.com/willkurt">github.com/willkurt</a>. </p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/ab-testing-introduction/">A Beginner's Guide To A/B Testing: An Introduction</a></li>
+<li><a href="https://blog.kissmetrics.com/19-obvious-ab-tests/">19 Obvious A/B Tests You Should Run on Your Website</a></li>
+<li><a href="https://blog.kissmetrics.com/psychological-principles-converting-website/">5 Psychological Principles of High Converting Websites (+ 20 Case Studies)</a></li>
+<li><a href="https://blog.kissmetrics.com/conversions-statistical-confidence/">Conversions and Statistical Confidence – What Does it Mean?</a></li>
+<li><a href="https://blog.kissmetrics.com/know-about-ab-testing/">10 Things Every Marketer Should Know About A/B Testing</a></li>
+<li><a href="https://blog.kissmetrics.com/people-events-and-properties/">The Foundation of Kissmetrics: People, Events, and Properties</a></li>
+<li><a href="https://blog.kissmetrics.com/how-ab-testing-works/">How A/B Testing Works (for Non-Mathematicians)</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fkissmetrics-ab-test-report%2F&source=tweetbutton&text=Supercharge+Your+Testing+With+The+New+Kissmetrics+A%2FB+Test+Report&url=https%3A%2F%2Fblog.kissmetrics.com%2Fkissmetrics-ab-test-report%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fkissmetrics-ab-test-report%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=Supercharge Your Testing With The New Kissmetrics A/B Test Report&amp;body=https://blog.kissmetrics.com/kissmetrics-ab-test-report/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-23386 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-186745">
+    <div id="comment-186745" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Geo</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-186745" class="comment-date">Apr 24, 2014 at 11:58 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Amazing! This is something I&#8217;ve wanted to see built into Google Analytics for such a long time I can&#8217;t even begin to tell you. You might just win me over as a client with this one :-)</p>
+<p>One thing I&#8217;m curious about &#8211; what algorithm do you use to correct for multiple comparisons errors &#8211; when you calculate certainty for several variations?</p>
+<p>Also &#8211; how do you cope with the &#8220;peeking&#8221; problem, which introduces basically the same type of error as the multiple comparison issue (type I)?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=186745#respond' onclick='return addComment.moveForm( "comment-186745", "186745", "respond", "23386" )' aria-label='Reply to Geo'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-186754">
+    <div id="comment-186754" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-186754" class="comment-date">Apr 24, 2014 at 1:10 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Geo!</p>
+<p>First off thanks for your feedback, these are all great questions!</p>
+<p>For multiple variants the key is that we focus on what the user has selected as a baseline, we then essentially treat it as a series of A/B tests against the baseline. The way we decide an overall winner is the one that has achieved ‘significance’ (I know this can be problematic and I’ll touch on this in a bit) and has the highest likely improvement over the baseline. To get more fine tuned results among the variants you can simply change the baseline to one of the variants and compare from there.</p>
+<p>Now as for ‘peeking’ we don’t do anything to stop it, but I actually have put a lot of thought into this. If you have the chance I recommend reading through this post I put up earlier this week: <a href="https://blog.kissmetrics.com/your-ab-tests-are-illusory/" rel="nofollow">https://blog.kissmetrics.com/your-ab-tests-are-illusory/</a> it covers my thoughts on the ‘peeking problem’. But the short answer is: to avoid error requires more observations, but the reason most people call tests early is because getting more observations is costly for them. While stopping as soon as a test reaches 95% certainty will lead to an increase in type 1 error, I feel the issue isn&#8217;t really between users that stop early or wait, but people who don’t even wait until 95% to call a test. </p>
+<p>That said I view this as an evolving report. I believe (and user feedback has shown) that simply providing more data to the user is confusing, which in turn can lead to poorer decision making. What I would love to see happen is to study the efficacy of different decision making strategies and build them into this report. In the meantime making it so the basic tools for decision making are available is a big first step.</p>
+<p>Thanks again for your questions and I definitely hope we can win you over as a client!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=186754#respond' onclick='return addComment.moveForm( "comment-186754", "186754", "respond", "23386" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-3" id="li-comment-186768">
+    <div id="comment-186768" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Geo</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-186768" class="comment-date">Apr 24, 2014 at 3:54 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you for your reply, Will.</p>
+<p>I understand what you are doing there with the baseline change and the changing tails of the significance test, clever :-)</p>
+<p>However, I still haven&#8217;t understood how you cope with the multiple comparisons problem. The problem is that if you choose a 95% significance level and do more than one pairwise comparison, then you&#8217;ve actually increased the chance that one or more of those comparisons will yield a false possitive at that level (type I error).</p>
+<p>If you do 13 pairwise tests against a baseline and you aim for a 95% significance level then you have statistically about 50% chance that at least one of those tests will report a significant result at the 95% level whilst it is not really significant (is a false possitive). So, the reported 95% significance is not really 95%, but much lower. Thus the need to adjust the significance values for those pairwise comparisons based on the number of the tests conducted and their results.</p>
+<p>Looking at the screenshots posted and doing some math I can&#8217;t see any p-value adjustment being applied, but I might be simply unfamiliar with the method you are applying, so that&#8217;s why I asked.</p>
+<p>Now, about the &#8220;peeking&#8221; problem: if I am to rephrase your point: people still don&#8217;t get statistical significance and I&#8217;m expecting them to worry about multiple comparisons :-) Point taken! I hope features like these can help change this situation and I salute your efforts since statistical significance is what makes or breaks data-driven decision making.</p>
+<p>Let me know if what I wrote above makes sense.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=186768#respond' onclick='return addComment.moveForm( "comment-186768", "186768", "respond", "23386" )' aria-label='Reply to Geo'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt depth-3" id="li-comment-186906">
+    <div id="comment-186906" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Will Kurt</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-186906" class="comment-date">Apr 25, 2014 at 10:52 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Geo!</p>
+<p>I definitely get your point now! In the current iteration we do not currently adjust p-values for multiple variants, but I did see you mentioned the False Discovery Method in another post which I will definitely look into. Thanks for your feedback!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=186906#respond' onclick='return addComment.moveForm( "comment-186906", "186906", "respond", "23386" )' aria-label='Reply to Will Kurt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-186833">
+    <div id="comment-186833" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Evan Webb</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-186833" class="comment-date">Apr 25, 2014 at 2:30 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Dear Concern,<br />
+Do you have any free tools that I can use to verify how much profit I am going to make when purchasing from Kissmetrics?</p>
+<p>Thanks,<br />
+Evan Webb</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=186833#respond' onclick='return addComment.moveForm( "comment-186833", "186833", "respond", "23386" )' aria-label='Reply to Evan Webb'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-186856">
+    <div id="comment-186856" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kim Pomares</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-186856" class="comment-date">Apr 25, 2014 at 6:38 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Is there any chance that using KissMetrics rather than Google Analytics will have an impact on our SEO? Google Analytics allows for duplicate content while testing and handles it to avoid penalties. How would KissMetrics protect us against the penalties of duplicate content?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=186856#respond' onclick='return addComment.moveForm( "comment-186856", "186856", "respond", "23386" )' aria-label='Reply to Kim Pomares'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-186866">
+    <div id="comment-186866" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">suri</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-186866" class="comment-date">Apr 25, 2014 at 7:21 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you for sharing ..!!<br />
+Till today I didnt understood the A/B test, After red this article Completely understood What is A/B testing and How to Do it in Proper way.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=186866#respond' onclick='return addComment.moveForm( "comment-186866", "186866", "respond", "23386" )' aria-label='Reply to suri'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel odd alt depth-2" id="li-comment-186878">
+    <div id="comment-186878" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-186878" class="comment-date">Apr 25, 2014 at 9:18 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Suri, glad we could help. Thanks for the feedback. We look forward to hearing more from you :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=186878#respond' onclick='return addComment.moveForm( "comment-186878", "186878", "respond", "23386" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-187580">
+    <div id="comment-187580" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-187580" class="comment-date">Apr 29, 2014 at 12:03 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Wow.. Amazing KISSmetrics free trial. I will ask my officials to purchase your complete package.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=187580#respond' onclick='return addComment.moveForm( "comment-187580", "187580", "respond", "23386" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel odd alt depth-2" id="li-comment-187682">
+    <div id="comment-187682" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-187682" class="comment-date">Apr 29, 2014 at 10:55 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for the support!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=187682#respond' onclick='return addComment.moveForm( "comment-187682", "187682", "respond", "23386" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-187895">
+    <div id="comment-187895" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/cometrico' rel='external nofollow' class='url'>Brian Lang</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-187895" class="comment-date">Apr 30, 2014 at 11:03 am</a>      </div><!-- /.comment-meta -->
+
+      <p>For some reason it won&#8217;t let me reply to a threaded comment, but in regards to the back and forth with Geo and Will:</p>
+<p>“So, the reported 95% significance is not really 95%, but much lower.” </p>
+<p>To clarify, the reported significance (95%) would be correct for the individual comparison, though you are correct that the probability of committing at least one Type I error within the experiment as a whole will be above 5%. </p>
+<p>Your ~50% figure is based on the Family Wise Error Rate, which is really quite stringent as you are trying to control the probability of making at least one false discovery among all comparisons. In a business setting such as with A/B testing, the tolerance for “risk” and making incorrect decisions can be a bit higher than say, in the medical field, where the cost of a false positive could mean doing harm to someone by giving them the wrong treatment. As a result, it’s probability more practical here to manage using the False Discovery Rate.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=187895#respond' onclick='return addComment.moveForm( "comment-187895", "187895", "respond", "23386" )' aria-label='Reply to Brian Lang'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-230027">
+    <div id="comment-230027" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jenifar Lopez</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-230027" class="comment-date">May 28, 2014 at 9:39 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I would like check first with free trail how much I would be benefited after buy this one. Is there any chance to evaluate the performance of KISSmetrics? Thanks!!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=230027#respond' onclick='return addComment.moveForm( "comment-230027", "230027", "respond", "23386" )' aria-label='Reply to Jenifar Lopez'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-231189">
+    <div id="comment-231189" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-231189" class="comment-date">May 29, 2014 at 5:56 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Jenifar, free trials are great at determining how effective a product is. If you check out our case studies and testimonials you&#8217;ll see that people have benefited greatly from KISS.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=231189#respond' onclick='return addComment.moveForm( "comment-231189", "231189", "respond", "23386" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-329047">
+    <div id="comment-329047" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Larry</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-329047" class="comment-date">Jul 05, 2014 at 3:56 am</a>      </div><!-- /.comment-meta -->
+
+      <p>You have done a good job. Keep it up.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=329047#respond' onclick='return addComment.moveForm( "comment-329047", "329047", "respond", "23386" )' aria-label='Reply to Larry'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-332802">
+    <div id="comment-332802" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/kissmetrics-ab-test-report/#comment-332802" class="comment-date">Jul 06, 2014 at 8:40 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Larry, glad I can help :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/kissmetrics-ab-test-report/?replytocom=332802#respond' onclick='return addComment.moveForm( "comment-332802", "332802", "respond", "23386" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">19 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/kissmetrics-ab-test-report/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='23386' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="c49fd9c349" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="105"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'Supercharge Your Testing With The New Kissmetrics A/B Test Report', 'Post URL':'https://blog.kissmetrics.com/kissmetrics-ab-test-report/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/content-marketing-on-a-shoestring/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/video-email-marketing/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/kissmetrics-ab-test-report/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/kissmetrics-ab-test-report/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/kissmetrics-ab-test-report/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="Supercharge Your Testing With The New Kissmetrics A/B Test Report" data-url="http://blog.kissmetrics.com/kissmetrics-ab-test-report/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'Supercharge Your Testing With The New Kissmetrics A/B Test Report', 'Post URL':'https://blog.kissmetrics.com/kissmetrics-ab-test-report/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'Supercharge Your Testing With The New Kissmetrics A/B Test Report', 'Post URL':'https://blog.kissmetrics.com/kissmetrics-ab-test-report/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'Supercharge Your Testing With The New Kissmetrics A/B Test Report', 'Post URL':'https://blog.kissmetrics.com/kissmetrics-ab-test-report/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":411,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>Inside the Development Process of Our My Analytics App</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; Inside the Development Process of Our My Analytics App Comments Feed" href="https://blog.kissmetrics.com/development-of-my-analytics/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How Do Colors Affect Purchases? The Video' href='https://blog.kissmetrics.com/color-psychology-video/' />
+<link rel='next' title='A Simple Guide to Increasing Customer Lifetime Value: Focus on the First 5 Minutes' href='https://blog.kissmetrics.com/the-first-5-minutes/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/development-of-my-analytics/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=21268' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fdevelopment-of-my-analytics%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fdevelopment-of-my-analytics%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,353] -->
+<meta name="description" content="Before we at KISSmetrics embark on anything, we first make sure we are solving a problem for people. KISSmetrics is in business to give people actionable data and insights they can use to make decisions." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/117750912206547874889/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='Inside the Development Process of Our My Analytics App' />
+<meta property='og:url' content='https://blog.kissmetrics.com/development-of-my-analytics/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Before we at KISSmetrics embark on anything, we first make sure we are solving a problem for people. KISSmetrics is in business to give people actionable data and insights they can use to make decisions. ' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Inside the Development Process of Our My Analytics App" />
+    <meta name="twitter:description" content="Before we at KISSmetrics embark on anything, we first make sure we are solving a problem for people. KISSmetrics is in business to give people actionable data and insights they can use to make decisions. " />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-21268 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'Inside the Development Process of Our My Analytics App',
+						'Post Category': 'Analytics',
+						'Post URL': 'https://blog.kissmetrics.com/development-of-my-analytics/'
+		}
+	]);
+</script>
+
+<article id="post-21268" class="single-post post-21268 post type-post status-publish format-standard hentry category-analytics" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">Inside the Development Process of Our My Analytics App</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Before we at KISSmetrics embark on anything, we first make sure we are solving a problem for people. KISSmetrics is in business to give people actionable data and insights they can use to make decisions. We are here to make sure our customers have access to the information they need.</p>
+<p>In the development of the <a href="https://itunes.apple.com/us/app/my-analytics-app/id668231062?mt=8">My Analytics app</a>, we used the same approach of solving problems. The problem wasn’t that there weren’t any Google Analytics iPhone apps. (In fact, there are around 30 apps available.) The problem was that there was a gap. Some apps were too simple and limiting while others were too complicated.</p>
+<p>So, as analytics enthusiasts ourselves, we wanted to give back and make an app that hit a happy medium. My Analytics gives you the data you need, yet avoids the complications of trying to cram every Google Analytics feature into an app.</p>
+<p>In this post, you&#8217;ll get an insider&#8217;s look at our product development process. We&#8217;ll get into the original vision for the app, how we promoted it, how we got feedback, and how we iterated. You&#8217;ll learn how we created the app and maybe get a few takeaways for yourself.</p>
+<p>Before we get into the details, I first want to introduce you to a few integral people behind the app. They&#8217;ll be mentioned frequently in this post through quotes, and I relied heavily on them to put this post together. Here are the five key people who were involved in the app:</p>
+<p><a href="https://twitter.com/clevelandWill">Will Rust</a> &#8211; Developer behind the app</p>
+<p><a href="https://twitter.com/ianmain">Ian Main</a> &#8211; Creative Director at KISSmetrics and designer behind My Analytics</p>
+<p><a href="https://twitter.com/LarsLofgren">Lars Lofgren</a> &#8211; Marketer behind My Analytics and a key player in talking to users and getting feedback</p>
+<p><a href="http://www.twitter.com/hnshah">Hiten Shah</a> &#8211; KISSmetrics Co-Founder who assisted in customer development interviews</p>
+<p><a href="https://twitter.com/evanish">Jason Evanish</a> &#8211; Product Manager for My Analytics who helped form customer development questions and conducted interviews.</p>
+<p>For a background on structuring customer development interviews, <a href="http://jasonevanish.com/2012/01/18/how-to-structure-and-get-the-most-out-of-customer-development-interviews/">check out his post</a>.</p>
+<h2>The Original Vision</h2>
+<p><i>&#8220;</i><a href="http://searchenginewatch.com/article/2280464/KISSMetrics-Introduces-My-Analytics-A-New-Mobile-Google-Analytics-Checker"><i>We saw the gap</i></a><i>. We wanted to build an app and give back to the analytics community. People have supported us immensely through our blog and by using KISSmetrics so we wanted to say thanks</i>.<i>&#8221; </i></p>
+<p>-Lars Lofgren</p>
+<p>Once we confirmed the product hypothesis based on a dozen interviews with Google Analytics and KISSmetrics customers, we set about defining the primary key tasks for the app.</p>
+<p>Such key tasks were:</p>
+<ul>
+<li>Quickly see an overview of the health status of your sites</li>
+<li>Be able to compare metrics across appropriate dates</li>
+<li>Get a general overview of your metrics in one place</li>
+<li>Quickly act on results by emailing data to people on your team</li>
+</ul>
+<p>I asked Will Rust to pinpoint the main use case for My Analytics. Rust said, <i>&#8220;</i><i>From the point where I got involved, which was pretty early on, we knew that the app was going to be more about helping the user answer the question &#8220;How are things going?&#8221; rather than just &#8220;Where are things at?&#8221; and to be able to do that quickly on the go or in a meeting. We just needed to find the right way to do that.&#8221;</i></p>
+<p>Let&#8217;s get into the details and explain the process of developing the My Analytics app.</p>
+<h2>How We Communicated the Vision and Early Progress to Our Team</h2>
+<p>In the early conception of My Analytics, this was sent to the KISSmetrics team. It explains our beginning interviews with users, the feedback they gave us, and what key tasks they were looking to accomplish with a Google Analytics app. It also gets a little into the product development process:</p>
+<p><center><iframe src="https://www.slideshare.net/slideshow/embed_code/24524600" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></center></p>
+<h2>How We Got Out Word about My Analytics</h2>
+<p>We had the original vision for the app. In short, <em>create a Google Analytics iPhone app that lets users compare and track goals across relevant time frames</em>. Users can view metrics such as visits, unique visitors, page views, goals, ecommerce transactions, and ecommerce revenue on the go.</p>
+<p>So how did we get people to sign up for early access to the app?</p>
+<p>We used a resource which already was getting a lot of traffic – our blog. We used CTAs to spread the word and send people to our <a href="http://www.myanalyticsapp.com">landing page</a>:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/MAA-landing-page-one.png" alt="MAA landing page one"></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/MAA-landing-page-two1.png" alt="" class="aligncenter size-full wp-image-21306" srcset="https://blog.kissmetrics.com/wp-content/uploads/2013/07/MAA-landing-page-two1-300x182.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2013/07/MAA-landing-page-two1.png 892w" sizes="(max-width: 892px) 100vw, 892px" /></p>
+<p>Many of us added links to the landing page in our email signatures. Just these simple steps brought us 3,257 opt-ins after 2 months.</p>
+<p>How did we distribute our app when it wasn&#8217;t in the App Store or available publicly?</p>
+<p>We used a platform called <a href="http://hockeyapp.net/">HockeyApp</a> to distribute our early access versions of My Analytics.</p>
+<p>Our early testing was done internally and with a dozen other people we know personally.</p>
+<h2>The Emails We Used to Invite People</h2>
+<p>As mentioned, we had 3,257 people who signed up for our email list from the My Analytics page. We sent a number of emails to users before our launch, but we&#8217;ll feature only three of them here that helped us kick things off and get the ball rolling. These three emails helped us get lots of feedback so we could focus on iterating instead of figuring out how to get more feedback.</p>
+<p>For our emails, we used <a href="https://www.intercom.io/">Intercom</a>. Will Rust said,<i> &#8220;Intercom helped us narrow our list to people in San Francisco. From those, we randomly emailed about 30 and invited them to come into the office to check out the app. I believe around 8-10 actually made it into the office, each separately.&#8221;</i></p>
+<p>As Rust stated, we invited a few locals to our San Francisco office. This was all done before we released it to remote users. Rust explains how the users internally tested it:</p>
+<p><i>&#8220;We provided an iPod touch with the early version of our app. (At that point, we weren&#8217;t deploying to devices outside of the office.) We observed their use of the app, noted any features that seemed to be hard to find or figure out quickly, asked them for their opinion and what they might want to see added to the app. These interviews gave us our first hint that swiping to change date ranges wasn&#8217;t easy to pick up quickly and that people wanted more metrics (goals). </i></p>
+<p><i>“Outside of asking friends to check it out, this was the extent of our 1-on-1 user testing.&#8221;</i></p>
+<p>This first email was sent to all members on our mailing list. Essentially, it was a mass invite, because we needed around 50 people to test the app and give us feedback on it.</p>
+<p><b>Email One:</b></p>
+<p><i>“Subject: More Invites for My Analytics are Going Out Soon</i></p>
+<p><i>“Hey (name)!</i></p>
+<p><i>“We just started sending out some invites for My Analytics to a very small list of people (like teeny weeny small). Mostly internal team members and such.</i></p>
+<p><i>“Our early access users have already sent us some amazing feedback. We&#8217;ve got a list of improvements that we&#8217;re cranking through as fast as we can. Even if you&#8217;re not one of the first to get an invite, you&#8217;ll get a much better product when you do. ;)</i></p>
+<p><i>“Now it&#8217;s time for us to send out another batch of invites.</i></p>
+<p><i>“I don&#8217;t know about you but I can&#8217;t stand waiting. And it just so happens that we&#8217;ll be sending another batch of invites in the very near future. If you want access to the My Analytics app as soon as possible, reply to this email and let me know. I&#8217;ll see if I can sneak your name into the list. :)</i></p>
+<p><i>“BUT I have one condition.</i></p>
+<p><i>“I can&#8217;t bump you to the front of the line unless you really want access. I don&#8217;t mean kinda-sorta want access. I mean REALLY OMG GIVE ME GIVE ME want access. So if that&#8217;s you, hit me up.</i></p>
+<p><i>(signature)”</i></p>
+<p>As you can see, we notified those who wanted to get in the front of the line that they would need to reply to the email and tell us they wanted the app right away.</p>
+<p>This email garnered 330 responses, a 10% response rate. As mentioned, we needed only 50 or so people to start testing the app at that point, so we had to roll out invites in stages because we got so many replies. We initially gave 89 of the 330 access to the app.</p>
+<p>When we had the next version of the app ready for more feedback, Lofgren invited another 236 people.</p>
+<p><b>Email Two:</b></p>
+<p><i>“Subject: You&#8217;ve been added to the next batch of invites for My Analytics!</i></p>
+<p><i>“Congrats!</i></p>
+<p><i>“When the next batch of invites go out for My Analytics, one of them will have your name on it. :)</i></p>
+<p><i>Now, our goal is to help you keep tabs on how you&#8217;re doing when you&#8217;re away from your desk.</i></p>
+<p><i>And I want to give you an overview of what to expect in the coming weeks as we work through this.</i></p>
+<p><i>“Here&#8217;s how it&#8217;ll all go down:</i></p>
+<ol>
+<li>In the next week or so, you&#8217;ll get another email with your invite.</i></li>
+<li>Using your iPhone, you&#8217;ll need to click on the link in that email. This will give you access to the app.</i></li>
+<li>You NEED to allow push notifications from us. We&#8217;re not going to spam you, this is how we notify you about updates. We&#8217;ll use the normal update process once we&#8217;re in the App Store.</i></li>
+</ol>
+<p><i>“I know you&#8217;re really, really excited about using the app. And for giving you an invite to our Early Access list, I do need one thing from you. <b>Each time we push an update, I need at least one piece of feedback from you.</b></i></p>
+<p><i>“Remember: each update = 1 piece of feedback.</i></p>
+<p><i>“If you&#8217;re super swamped with work and won&#8217;t have time for this, let me know and I&#8217;ll move you to another batch of invites.</i></p>
+<p><i>“Hope you&#8217;re ready. ;)”</i></p>
+<p>A few days after this email was sent, Lofgren sent this email that included the actual invite with the link to download.</p>
+<p><b>Email Three:</b></p>
+<p><i>“Subject: Your invite for My Analytics has arrived!</i></p>
+<p><i>“The time is now! Woohoo!</i></p>
+<p><i>“Here we go.</i></p>
+<p><i>“When you install the app, don&#8217;t forget to allow push notifications. Otherwise, you won&#8217;t get updates from us. That&#8217;ll make me a sad panda.</i></p>
+<p><b><i>“And remember the deal we have: each update = one piece of feedback from you.</i></b><i> The best way to send us feedback is within the app itself.</i></p>
+<p><i>“Click this link with your iPhone to get My Analytics. Go go go!</i></p>
+<p><i>“Enjoy!”</i></p>
+<p>By the time of App Store launch, we had 7,000 people on our email list. We achieved this number by using the resources we already had – a big Twitter following, Facebook fans, blog readers, and our email signatures.</p>
+<h2>How We Got Feedback from People</h2>
+<p>We got feedback on My Analytics through a few channels:</p>
+<ul>
+<li>We embedded an email modal view to get feedback from users. (Thanks to the guys over at <a href="http://www.roversf.com/home">Rover</a> for the suggestion.) We made it very simple for users to give their feedback. They just loaded up the My Analytics app:</li>
+</ul>
+<p><center><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/my-analytics-homepage.png" alt="my analytics homepage"></center></p>
+<p>And they tapped on the action button:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/my-analytics-action-button-email-modal-view.png" alt="my analytics action button email modal view"></p>
+<p>And they emailed us their feedback:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/my-analytics-email-feedback.png" alt="my analytics email feedback"></p>
+<p>We didn’t make users categorize their feedback (i.e., Bug Report, General Comments, Idea, Technical Support, etc.). We sorted all that out ourselves and responded to every email.</p>
+<p>We previously used a third party feedback service that was integrated into the app, but to us, it didn&#8217;t feel like the right solution.</p>
+<ul>
+<li>As mentioned, we met with people in our office. This allowed them to see the product, and we could see how they interacted with it. We found that email brings more honest feedback. As Rust explained, <i>&#8220;I&#8217;d say that we&#8217;ve received more honest feedback from within the app as opposed to our early 1-on-1s. It&#8217;s just easier for people to criticize via email than in person. Plus, they&#8217;re not on the spot. They get to use it for a few days and see what they really like or don&#8217;t like.&#8221;</i></li>
+<li>We used KISSmetrics to see the average amount of time between application install and discovery of features. We also used it to see the average number of profiles and date ranges viewed per use.</li>
+</ul>
+<h2>The Design History of My Analytics</h2>
+<p>We went through a lot of different design iterations (and we&#8217;re still not done) throughout our time developing My Analytics. After this section, we&#8217;ll get a little into the design changes we made based on feedback.</p>
+<p>I asked Ian Main to give me a design overview of the app. This was his response:</p>
+<p><i>&#8220;Once the overall product hypothesis was confirmed based on conducting a dozen interviews with Google Analytics and KISSmetrics account holders, we set about defining what the primary key tasks were that made My Analytics the app users wanted.</i></p>
+<p><i>“Understanding these key tasks let us progress to wireframing layouts so we visually could start to see patterns around hierarchy and task flows.&#8221;</i></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/my-analytics-wireframes-1.png" alt="my analytics wireframes"></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/my-analytics-wireframes-2.png"></p>
+<p align="center"><i>My Analytics wireframe layout mockups</i></p>
+<p><i>&#8220;Creating wireframes let us rapidly design many layouts and data scenarios, as well as mix and match components and other UI elements. </i></p>
+<p><i>“Having the wireframes side by side also allowed us to visually assess hierarchy and visual flow and determine which layouts did the best at representing the data. We could study up close or take multiple steps back from the screen and see if that layout still appeared visually strong among the others from afar. </i></p>
+<p><i>“Once we got down to one layout, we could start to apply more detail and color to the layout. This would help us define and group specific patterns for familiarity and consistency.</i></p>
+<p><i>“It took us quite a while to get the overall tone right. This was done by exploring many color combinations and palettes. We realized we have a connection with Google Analytics; however, if we used the Google Analytics color palette, we wouldn’t be able to expand our app to other services in the future.&#8221;</i></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-colors.jpg" alt="maa colors" style="border:none;"></p>
+<p align="center"><i>My Analytics Photoshop layout color iterations</i></p>
+<h2>Step-by-Step Version and Design Evolution of My Analytics</h2>
+<p>Now we&#8217;ll get into the specific version history of My Analytics along with comments from developer Will Rust.</p>
+<p><b>First Version:</b></p>
+<p>Dashboard:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-dashboard-version-two.jpg" alt="maa dashboard version two"></p>
+<p>Product selection:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/my-analytics-alpha-product-selection.jpg" alt="my analytics alpha product selection"></p>
+<p><i>&#8220;The very first version of the app showed only one metric at a time. You would pick the profile that you wanted to view, much as it is now, but where it took you was to a dashboard view where you would change metrics and date ranges all from the same place. This worked while we had a limited number of metrics and date ranges but wasn&#8217;t going to be able to support users with 20+ goals or more than 5 or 6 date ranges.&#8221;</i></p>
+<p><b>Second Version:</b></p>
+<p>Dashboard:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/Screen-Shot.png"></p>
+<p><i>&#8220;We tried to future proof the metrics menu by using a popover menu. But it seemed a little busy, the buttons were still small, and this didn&#8217;t solve the problem with changing date ranges.&#8221;</i></p>
+<p>Export menu:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/export-menu-maa.jpg"  alt="export menu maa"></p>
+<p>Email export:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/my-analytics-email-export-version-two.jpg"></p>
+<p>The feedback tool (before our current email modal view):</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-feedback-one.jpg" alt="analytics feedback"></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-feedback-two.jpg"></p>
+<p><b>Third Version:</b></p>
+<p>Dashboard (unchanged from version 2):</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/my-analytics-third-version2.png" alt="my analytics third version"></p>
+<p>Metric selection, where users had the ability to “favorite” a metric by tapping on a heart. Upon “favoriting” a metric, it would automatically show in the dashboard:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-metric-selection.jpg" alt="maa metric selection"></p>
+<p><i>&#8220;Then we got to the expanding table view concept that we&#8217;re using now. It just looked a little different along the way. </i></p>
+<p><i>“But we still had the issue of handling more than 5 or 6 date ranges. Plus, the paging dots we were using (above the chart) weren&#8217;t really helping the users to understand that swiping would show them more date range options. This issue was raised several times in user feedback.&#8221;</i></p>
+<p><b>Fourth Version:</b></p>
+<p>Version 4.1 Dashboard:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-version-four-dashboard.jpg" alt="maa version four dashboard"></p>
+<p>Metrics selection:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-version-four-metric-selection.jpg" alt="maa version four metric selection"></p>
+<p>4.2 Dashboard:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-4.2-dashboard.jpg" alt="maa 4.2 dashboard"></p>
+<p>4.3 Date Selection:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-4.3-date-selection.jpg" alt="maa 4.3 date selection"></p>
+<p><i>&#8220;Next, we tried a combination picker view for date range selection. But after using it for a few days, it was obvious that there was too much work for the user. It was big, clunky, and kinda slow to use. I don&#8217;t think that anyone outside of the company even got to see this one. But it got us to a better option.&#8221;</i></p>
+<p>4.4 (Current Version) Dashboard:</p>
+<p>Dashboard:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-4.4-dashboard.jpg" alt="maa 4.4 dashboard"></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-date-selection-4.4.png" alt="maa date selection 4.4"></p>
+<p>Date Selection:</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/my-analytics-version-five-two.png" alt="my analytics version five two"></p>
+<p><i>&#8220;We reduced the selection of new date ranges to 3 actions. Tapping anywhere in the date range bar would bring </i><i>down a 2 part menu. You select 2 related date ranges, and you&#8217;re done. I still believe we can do better than this, but you can see where we&#8217;ve come from.&#8221;</i></p>
+<h2>The Design Changes We Made Based on Feedback</h2>
+<p>Ian Main discusses the design evolution and how the iterations were based on user feedback:</p>
+<h3>Metric Selection</h3>
+<p>Learning what metrics people wanted determined how we built metric selection. We designed the first metric selection with a limited number of metrics. Visits, Uniques, and Page Views were the only metrics. To those, we added one more item in the metric menu called “More.” This was a feedback button that let us gauge early on what metrics people wanted. We quickly learned people wanted a greater selection of metrics to view, which also told us we needed to change the UI component that selects metrics.</p>
+<p>The original concept focused on tapping through full screen views of each metric. Originally, you could see only one metric in detail at a time. You would have to tap the metric selection menu to view other metrics.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-early-version.png" style="border:none;"></p>
+<p align="center"><i>My Analytics early version of metric selection</i></p>
+<p>In the next iteration of metric selection, instead of using a horizontal menu of metrics, we contained the metrics into a dropdown menu. This allowed us to save space in the UI and reduce the noise so people could focus on their data. Unfortunately, the dropdown menu wasn’t going to be flexible enough to support the metric selection flow people wanted.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-metric-selection.png" style="border:none;"></p>
+<p align="center"><i>My Analytics version containing the metric selection in a dropdown menu</i></p>
+<p>After further discussion and feedback, we decided to remove metric selection entirely from the data view screen. Although we still believed fast selection was a key task, we wanted a flexible clean approach. In the next iteration, we moved the metric selection menu to an independent screen before the data details screen.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-drill-down-menu.png" style="border:none;"></p>
+<p align="center"><i>Exploring a drill-down menu that contains metrics and metric types</i></p>
+<p>The final and current version went back to an inline approach. Rather than showing the whole metric detail, we minimized each metric to show only the key metric comparison data. Then on top, it could be expanded to show more detail.</p>
+<p>This let us list out all available metrics for that profile on a single screen without taking up the whole screen real estate. We could show 4-5 metrics on a single screen and cues that more were below if scrolled.</p>
+<p>Also, users didn’t need to tap for basic metric data. So we could focus on our original hypothesis that people wanted to load the app and see results quickly and, if desired, dive deeper into specific metrics.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/iPhone5-Dashboard-2.png"></p>
+<p align="center"><i>Final My Analytics App version of metric selection</i></p>
+<h3>Date Range Selection</h3>
+<p>Another high level key task was comparing a single metric over a period of time. This component also went through dramatic changes based on feedback during the development of My Analytics.</p>
+<p>We ended up creating a custom selection system that is fast, intuitive, and allows for expansion of more date ranges over time.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/iPhone5-Dashboard-Date-Range-No-Selection.png"></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/iPhone5-Dashboard-Date-Range-First-Selection.png"></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/iPhone5-Dashboard-Date-Range.png"></p>
+<p align="center"><i>Simple process of selecting a date range with My Analytics</i></p>
+<h3>Icon Iteration</h3>
+<p>Interestingly, when changes are made throughout the app based on feedback, learning, and maturity, whole design aspects change with it. Here are icon designs that changed while the app was going through the iteration learning process.</p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-icon-1.png" style="border:none;"></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-icon-2.png" style="border:none;"></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-icon-3.png" style="border:none;"></p>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2013/07/maa-icon-4.png" style="border:none;"></p>
+<p align="center"><i>My Analytics icon iteration</i></p>
+<h2>A Few Final Words&#8230;</h2>
+<p>What we&#8217;ve covered is a &#8220;behind the scenes&#8221; view of how My Analytics was built. Looking forward, we&#8217;ll continue much of what we&#8217;ve always done – build product, get feedback, and iterate. We use this same process every day with KISSmetrics because it&#8217;s how to build the best product. With My Analytics, we&#8217;re striving to make the best Google Analytics iPhone app available. We&#8217;d love to have you <a href="https://itunes.apple.com/us/app/my-analytics-app/id668231062">try it out</a>, give us feedback, and tell your friends about us.</p>
+<p>I&#8217;d also like your feedback on this post. Let me hear it in the comments!</p>
+<p><strong>About the Author:</strong> Zach Bulygo is a blogger for KISSmetrics, you can find him on Twitter <a href="https://twitter.com/#!/zachcb1">here</a>. You can also follow him on <a href="https://plus.google.com/117750912206547874889?rel=author">Google+</a>.</p>
+			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fdevelopment-of-my-analytics%2F&source=tweetbutton&text=Inside+the+Development+Process+of+Our+My+Analytics+App&url=https%3A%2F%2Fblog.kissmetrics.com%2Fdevelopment-of-my-analytics%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fdevelopment-of-my-analytics%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=Inside the Development Process of Our My Analytics App&amp;body=https://blog.kissmetrics.com/development-of-my-analytics/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-21268 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-115625">
+    <div id="comment-115625" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Sean Hull</cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-115625" class="comment-date">Jul 23, 2013 at 8:49 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>You guys are just so damn cool. From finding &amp; filling a niche, to putting out great tools, to sharing with the rest of us your process.  Bravo</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=115625#respond' onclick='return addComment.moveForm( "comment-115625", "115625", "respond", "21268" )' aria-label='Reply to Sean Hull'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-115626">
+    <div id="comment-115626" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-115626" class="comment-date">Jul 23, 2013 at 8:54 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Sean, we aim to please.</p>
+<p>:)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=115626#respond' onclick='return addComment.moveForm( "comment-115626", "115626", "respond", "21268" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-115642">
+    <div id="comment-115642" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Yamel</cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-115642" class="comment-date">Jul 24, 2013 at 12:08 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Is this app ever going to be available for android devices?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=115642#respond' onclick='return addComment.moveForm( "comment-115642", "115642", "respond", "21268" )' aria-label='Reply to Yamel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-115722">
+    <div id="comment-115722" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-115722" class="comment-date">Jul 24, 2013 at 8:57 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey Yamel,<br />
+Hit up Lars on Twitter and he&#8217;ll fill you in with the details:</p>
+<p><a href="https://twitter.com/LarsLofgren" rel="nofollow">https://twitter.com/LarsLofgren</a></p>
+<p>We&#8217;ll be able to put you on a list and notify you if and when the Android app is developed.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=115722#respond' onclick='return addComment.moveForm( "comment-115722", "115722", "respond", "21268" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-115696">
+    <div id="comment-115696" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Chantal</cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-115696" class="comment-date">Jul 24, 2013 at 4:59 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you so much for sharing the process, lessons learned and the final product!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=115696#respond' onclick='return addComment.moveForm( "comment-115696", "115696", "respond", "21268" )' aria-label='Reply to Chantal'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-115916">
+    <div id="comment-115916" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kris</cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-115916" class="comment-date">Jul 25, 2013 at 9:43 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Excellent article. Just excellent</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=115916#respond' onclick='return addComment.moveForm( "comment-115916", "115916", "respond", "21268" )' aria-label='Reply to Kris'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-115918">
+    <div id="comment-115918" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-115918" class="comment-date">Jul 25, 2013 at 9:52 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>What did you like most about it? Is there any area where you had the biggest takeaway?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=115918#respond' onclick='return addComment.moveForm( "comment-115918", "115918", "respond", "21268" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-115933">
+    <div id="comment-115933" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Payroll Bureau</cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-115933" class="comment-date">Jul 26, 2013 at 12:54 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Kissmetrics Rocks!!!!!!</p>
+<p>I would love too see this on my android device.</p>
+<p>Thanks &amp; keep sharing.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=115933#respond' onclick='return addComment.moveForm( "comment-115933", "115933", "respond", "21268" )' aria-label='Reply to Payroll Bureau'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-119490">
+    <div id="comment-119490" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Andrea De Gaetano</cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-119490" class="comment-date">Aug 24, 2013 at 12:23 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I have not tested the app yet but thanks you for this great analysis report!<br />
+I&#8217;ve really enjoyed it<br />
+I think you could use landscape mode on the phone to show chart better&#8230;a pattern that it is also present on iPhone default stock quotes app <a href="http://m.tuaw.com/2013/05/15/iphone-101-getting-more-out-of-apples-stocks-app-on-ios/" rel="nofollow">http://m.tuaw.com/2013/05/15/iphone-101-getting-more-out-of-apples-stocks-app-on-ios/</a></p>
+<p>What about ios7?..did you think about it during design process?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=119490#respond' onclick='return addComment.moveForm( "comment-119490", "119490", "respond", "21268" )' aria-label='Reply to Andrea De Gaetano'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-130051">
+    <div id="comment-130051" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ivan Romero</cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-130051" class="comment-date">Nov 17, 2013 at 9:19 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hi! How long does it take the whole process? Its a great blog post!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=130051#respond' onclick='return addComment.moveForm( "comment-130051", "130051", "respond", "21268" )' aria-label='Reply to Ivan Romero'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-130056">
+    <div id="comment-130056" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.twitter.com/zachcb1' rel='external nofollow' class='url'>Zach</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-130056" class="comment-date">Nov 17, 2013 at 10:07 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Disclosed, sorry</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=130056#respond' onclick='return addComment.moveForm( "comment-130056", "130056", "respond", "21268" )' aria-label='Reply to Zach'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-595482">
+    <div id="comment-595482" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Macy Jones</cite>
+        
+        <a href="https://blog.kissmetrics.com/development-of-my-analytics/#comment-595482" class="comment-date">Sep 22, 2014 at 2:28 am</a>      </div><!-- /.comment-meta -->
+
+      <p>hi&#8230; Thanks for sharing nice information. Is this analytic is available for android and iOS both???/</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/development-of-my-analytics/?replytocom=595482#respond' onclick='return addComment.moveForm( "comment-595482", "595482", "respond", "21268" )' aria-label='Reply to Macy Jones'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">13 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/development-of-my-analytics/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='21268' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="dd96aad027" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="51"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'Inside the Development Process of Our My Analytics App', 'Post URL':'https://blog.kissmetrics.com/development-of-my-analytics/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/color-psychology-video/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/the-first-5-minutes/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/development-of-my-analytics/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/development-of-my-analytics/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/development-of-my-analytics/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="Inside the Development Process of Our My Analytics App" data-url="http://blog.kissmetrics.com/development-of-my-analytics/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'Inside the Development Process of Our My Analytics App', 'Post URL':'https://blog.kissmetrics.com/development-of-my-analytics/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'Inside the Development Process of Our My Analytics App', 'Post URL':'https://blog.kissmetrics.com/development-of-my-analytics/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'Inside the Development Process of Our My Analytics App', 'Post URL':'https://blog.kissmetrics.com/development-of-my-analytics/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":394,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

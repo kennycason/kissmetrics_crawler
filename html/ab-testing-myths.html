@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>It's Time to Bust These 7 A/B Testing Myths</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; It&#8217;s Time to Bust These 7 A/B Testing Myths Comments Feed" href="https://blog.kissmetrics.com/ab-testing-myths/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How to Optimize Your SlideShare Presentations for Conversions' href='https://blog.kissmetrics.com/optimize-slideshare-for-conversions/' />
+<link rel='next' title='Find Where in the World Your Best Customers Are From With Locations in Kissmetrics' href='https://blog.kissmetrics.com/locations-in-kissmetrics/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/ab-testing-myths/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=30322' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fab-testing-myths%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fab-testing-myths%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,348] -->
+<meta name="description" content="So, before you dismiss running A/B tests, there are a few things you need to know. Here are the 7 A/B testing myths." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='It&#039;s Time to Bust These 7 A/B Testing Myths' />
+<meta property='og:url' content='https://blog.kissmetrics.com/ab-testing-myths/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2016/03/bust-these-ab-testing-myths.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2016/03/bust-these-ab-testing-myths.jpg' />
+<meta property='og:image:width' content='950' />
+<meta property='og:image:height' content='534' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='So, before you dismiss running A/B tests, there are a few things you need to know. Here are the 7 A/B testing myths.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="It's Time to Bust These 7 A/B Testing Myths" />
+    <meta name="twitter:description" content="So, before you dismiss running A/B tests, there are a few things you need to know. Here are the 7 A/B testing myths." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-30322 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'It&#8217;s Time to Bust These 7 A/B Testing Myths',
+						'Post Category': 'Testing',
+						'Post URL': 'https://blog.kissmetrics.com/ab-testing-myths/'
+		}
+	]);
+</script>
+
+<article id="post-30322" class="single-post post-30322 post type-post status-publish format-standard hentry category-testing" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">It&#8217;s Time to Bust These 7 A/B Testing Myths</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>A/B testing is a familiar practice to many marketers and businesses. But, if you’re just getting started, here’s a quick, dirty definition of A/B testing – it’s basically exactly what it sounds like. </p>
+<p>You take two different variants of a test subject and categorize them as the control variant and the challenger variant. Then, you conduct a performance test against a set of specific success metrics to determine which variant is better.</p>
+<p>Quiz any industry expert on the best way to optimize conversion rates, and we bet the answer you’ll get is A/B testing. In fact, TruConversion.com explains that correct A/B tests can boost <a href="http://blog.truconversion.com/conversion-rate-optimization/how-ab-testing-can-make-you-super-marketer/" target="_blank">conversions up to 300 percent</a>.</p>
+<p>But, there is a fair share of marketers and businesses that constantly choose not to use A/B test experiments. Don’t take our word for it. Check out these stats: </p>
+<ul>
+<li>For most businesses, <a href="http://www.steelhouse.com/wp-content/uploads/2011/10/AB-Split-Testing-Guide-SteelHouse.pdf" target="_blank">conversion rates range from just 1 to 3%</a>.</li>
+<li><a href="http://blog.capterra.com/b2b-lead-generation-statistics-2014/" target="_blank">25% of marketers don’t know their conversion rates</a>.</li>
+<li>Only <a href="http://unbounce.com/conversion-rate-optimization/conversion-landing-page-ab-testing-stats/" target="_blank">22% of businesses are satisfied with their conversion rates</a>.</li>
+<li><a href="https://econsultancy.com/blog/64210-what-is-conversion-rate-optimisation-cro-and-why-do-you-need-it/" target="_blank">67% of companies use A/B testing</a> when trying to optimize conversion rates.</li>
+<li><a href="http://www.marketingcharts.com/wp/uncategorized/ppc-professionals-2014-will-be-about-conversion-rate-optimization-35963/" target="_blank">85% of marketers</a> plan to focus more on conversion rate optimization this year.</li>
+</ul>
+<p>Given these stats, it’s not difficult to understand why most businesses and marketers steer clear of A/B testing for optimizing conversions. One of the major reasons marketers don’t A/B test is the string of myths associated with it. </p>
+<p>So, before you dismiss running A/B tests, there are a few things you need to know. Here are 7 A/B testing myths we’ve busted to help you stay ahead of the curve in 2016:</p>
+<h2>Myth #1: A/B Testing and Conversion Optimization Are the Same Thing</h2>
+<p><a href="https://en.wikipedia.org/wiki/A/B_testing#History" target="_blank">A/B testing started way back in 1908</a> when William Sealy Gosset altered the Z-test to create Student&#8217;s t-test. However, it took a really long time for A/B testing to hit the mainstream. Until recently, it wasn’t a popular technique for boosting conversions.</p>
+<p>By testing a feature or an element of your website, landing page, or even your emails, you can maximize conversions and minimize the impact of the ever-changing market dynamics. Take the example of Nature Air, a popular Costa Rican airline. <a href="https://www.truconversion.com/blog/conversion-rate-optimization/how-ab-testing-can-make-you-a-super-marketer/" target="_blank">Nature Air conducted an A/B test experiment on its landing pages</a> to understand why its conversions were low. They found out that their CTA wasn’t prominently placed. So, they put a contextual CTA in the content area, and their conversions improved by 591%!</p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2016/03/nature-air-ab-test.jpg"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/nature-air-ab-test.jpg" alt="nature-air-ab-test" class="alignnone size-full wp-image-30324" srcset="https://blog.kissmetrics.com/wp-content/uploads/2016/03/nature-air-ab-test-300x124.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2016/03/nature-air-ab-test.jpg 520w" sizes="(max-width: 520px) 100vw, 520px" /></a></center></p>
+<p>Given this example, it isn’t too difficult to understand why A/B testing has become a familiar practice for a large majority of marketers and businesses. In fact, Unbounce reports that <a href="http://unbounce.com/conversion-rate-optimization/conversion-landing-page-ab-testing-stats/" target="_blank">48% of businesses plan to spend more on A/B testing</a> in 2016.</p>
+<p>But, its superb efficiency in terms of conversion optimization and its ever-increasing popularity have also caused confusion. A large number of businesses and marketers believe that A/B testing and conversion optimization are the same. However, this is not true. </p>
+<p>Let’s understand the difference between the two: </p>
+<p>Conversion rate optimization is a structured and systematic process of increasing the percentage of website visitors who convert, meaning they take the action the website wants them to take. For example, conversion for an e-commerce website could be a product purchase. But, conversion isn’t necessarily always a purchase. Conversion for a media site could be a survey completion. </p>
+<p>Commonly referred to as CRO, conversion rate optimization is a collective term for all the tools and methodologies marketers use to optimize their sites and campaigns. Pretty much every marketing tactic can fit under the CRO umbrella, including personalization, web data analysis, retargeting, user surveys, and A/B testing. </p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2016/03/CRO-web.jpg"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/CRO-web.jpg" alt="CRO-web" class="alignnone size-full wp-image-30325" srcset="https://blog.kissmetrics.com/wp-content/uploads/2016/03/CRO-web-300x168.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2016/03/CRO-web.jpg 800w" sizes="(max-width: 800px) 100vw, 800px" /></a></center></p>
+<p>Remember, CRO is about using tools and methods to squeeze out the most conversions from your website. A/B testing is one of the many conversion optimization tools that help marketers gather data and understand what’s working and what’s not in order to help them make necessary changes and boost conversions. </p>
+<p><strong>Myth Busted:</strong> A/B testing is actually a small part of the conversion optimization process. There are a host of other activities included in conversion optimization strategies. In fact, ConversionXL has found that <a href="http://conversionxl.com/ab-tests-fail/" target="_blank">A/B testing is just 20% of the overall conversion process</a>. The site describes conversion optimization as an elaborate process where: </p>
+<ul>
+<li>60% of the total conversion optimization project time goes to managing the project and navigating client internal politics.</li>
+<li>20% of the time is focused on understanding the problems on a page and getting insights about visitor behavior.</li>
+<li>20% of the time goes to designing, developing, testing, and reporting. This is the part that involves A/B testing and the actual test setup.</li>
+</ul>
+<h2>Myth #2: Inconclusive Tests Are Total Failures</h2>
+<p>The success rate for A/B testing is marginal. And, many people believe that tests that make no real statistical difference are just a waste of time and resources. Indeed, given the following stats, it’s no wonder most entrepreneurs and marketers tend to steer clear of tests that provide inconclusive tests:</p>
+<ul>
+<li>Approximately 61% of companies run <a href="http://www.slideshare.net/Emerce/emerce-performance-bryan-eisenberg" target="_blank">fewer than five tests every month</a>.</li>
+<li>5 out of every 7 tests fail <a href="https://www.linkedin.com/pulse/fail-less-better-quick-tip-avoid-inconclusive-ab-tests-zglinicki" target="_blank">because the results are inconclusive</a>.</li>
+</ul>
+<p>If you’re reading this, chances are you’re already aware of what an inconclusive test is. But, in case you’ve been living under a rock, here’s a quick, dirty definition of an inconclusive test – it’s a test that doesn’t show a solid, statistical difference in your conversions. </p>
+<p>As an example of an inconclusive test, here’s a <a href="https://www.groovehq.com/blog/failed-ab-tests" target="_blank">case study from Groove HQ</a>. In a bid to lure in more customers and increase its credibility, the company decided to test customer logo examples from a variety of industries to determine which logo designs were most relatable to visitors. </p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2016/03/control-challenger-groove.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/control-challenger-groove.png" alt="control-challenger-groove" class="alignnone size-full wp-image-30326" srcset="https://blog.kissmetrics.com/wp-content/uploads/2016/03/control-challenger-groove-300x117.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2016/03/control-challenger-groove.png 584w" sizes="(max-width: 584px) 100vw, 584px" /></a></center></p>
+<p>But, the results of the test were inconclusive. Logo design of their customers and clients in the challenger version made no drastic difference in influencing prospects’ buying decisions. </p>
+<p>Now, we’re sure you must be thinking it’s better to steer clear of inconclusive tests in the first place in order to save time, money, and resources. You are not alone. Most people think that inconclusive tests are a curse. </p>
+<p>But, contrary to popular belief, inconclusive tests can actually point you in the right direction. They can direct your attention toward things you’ve missed and things that can make a radical difference.  </p>
+<p>Let’s take another example of <a href="https://blog.optimizely.com/2014/10/30/the-problem-with-ab-testing-success-stories/" target="_blank">an A/B test on Ruby Lane conducted by Grigoriy Kogan</a>. Kogan tested the original checkout page against a simple checkout page that included the most essential information and prominent checkout buttons. </p>
+<p>The hypothesis for the test was that prominent checkout buttons and fewer distractions would increase the checkout rate.</p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ruby-lane-case-study.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ruby-lane-case-study.png" alt="ruby-lane-case-study" class="alignnone size-full wp-image-30327" srcset="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ruby-lane-case-study-300x157.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2016/03/ruby-lane-case-study-1024x535.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2016/03/ruby-lane-case-study.png 1486w" sizes="(max-width: 1486px) 100vw, 1486px" /></a></center><br />
+<center><em><a href="https://blog.optimizely.com/2014/10/30/the-problem-with-ab-testing-success-stories/" target="_blank">Image Source</a></em></center></p>
+<p>But, the test proved to be inconclusive. Taking a cue from the test, Kogan scrutinized the targeted audience data more closely and found that due to a minor difference in checkout flows between existing users and guests, some guests never saw the new variation but were included in the results anyway. After learning this, he conducted a retest with a more precise activation method. In the retest, the test variation improved checkout rates by 5%. </p>
+<p><strong>Myth Busted:</strong> Inconclusive tests aren’t failures. Instead, they give you an opportunity to rethink your interpretations. Inconclusive test results could mean either your customers did not like the changes you made, only a few of them liked the changes, or your test was measuring the wrong things.  </p>
+<p>If you devote a little time to mulling over the inconclusive test results, you may find where your interpretations are wrong and how you can fix them. The success of your A/B tests are essentially underpinned by what you learned from your previous tests. So, analyze the results and iterate. A day without a test should be considered a wasted day.</p>
+<h2>Myth #3: It Is Important to Test Everything and Anything</h2>
+<p>This one is perhaps the biggest myth of them all. But, why is that? Let’s look at some stats to understand this point a little better:</p>
+<ul>
+<li>Dell <a href="http://assets.ioninteractive.com/storage/content/infographics/ion_Infographic_LandingPagesWork.pdf" target="_blank">increased conversion rates by 300%</a> by testing landing pages against website pages.</li>
+<li>Nature Air was able to <a href="https://blog.kissmetrics.com/100-conversion-optimization-case-studies/">improve its conversions by 591%</a> by A/B testing its call-to-action.</li>
+<li>Sony was able to <a href="https://blog.optimizely.com/2014/02/03/case-study-sony-ab-tests-banner-ads/" target="_blank">increase its CTR by 6%</a> by A/B testing banner ads.</li>
+<li>CloudSponge was able to <a href="https://blog.kissmetrics.com/100-conversion-optimization-case-studies/">achieve a 33% conversion increase</a> by A/B testing its website design.</li>
+<li>Adspresso was able to <a href="http://blog.wishpond.com/post/98235786280/50-a-b-split-test-conversion-optimization-case-studies" target="_blank">increase Facebook likes from 0 to 70</a> by A/B testing Facebook ads.</li>
+</ul>
+<p>Given these stats, it’s not difficult to understand that A/B testing different elements can lead to a substantial increase in conversions. Unfortunately, it’s the lucrative benefits associated with A/B testing that tempt impatient marketers to run simultaneous tests and test everything and anything possible under the sun. As a result, they aren’t able to get the desired results. In fact, most marketers who test everything fail miserably. </p>
+<p>Let’s take the example of Timothy Sykes <a href="https://www.quicksprout.com/the-definitive-guide-to-conversion-optimization-chapter-8/" target="_blank">as featured on Quick Sprout</a>. He made the mistake of changing his video, headline, copy, and the form field design all at the same time. It resulted in a dramatic decrease in conversions. In addition, he didn’t find out if changes he made were worth implementing. </p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2016/03/timothy-sykes-millionaire-challenge.jpg"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/timothy-sykes-millionaire-challenge.jpg" alt="timothy-sykes-millionaire-challenge" class="alignnone size-full wp-image-30328" srcset="https://blog.kissmetrics.com/wp-content/uploads/2016/03/timothy-sykes-millionaire-challenge-300x223.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2016/03/timothy-sykes-millionaire-challenge.jpg 485w" sizes="(max-width: 485px) 100vw, 485px" /></a></center></p>
+<p>Now, the big question here is what should you test? The answer to this question is a little tricky. So, let us simplify it for you. </p>
+<p>Though there isn’t really a silver bullet as to what you can test, it makes sense to test things that affect conversion. Testing and changing elements that do not affect your customer’s decision-making ability doesn’t make any sense. </p>
+<p>Prioritize elements with high potential for improvement. Check analytics data to find the problem areas of your website. ConversionXL.com suggests you select test subjects based on value and cost. You must <a href="http://conversionxl.com/how-to-build-a-strong-ab-testing-plan-that-gets-results/" target="_blank">start with high-value, low-cost testing ideas</a>.</p>
+<p>In addition, testing and changing elements that aren’t backed by solid, actionable data won’t bring you any positive results. The major objective of A/B tests is to find out what your user wants and demands from your brand, and then make the changes accordingly. </p>
+<p><strong>Myth Busted:</strong> As a marketer, you may become infatuated with metrics, but remember that A/B test experiments are all about persuading your customers to take a desired action on your site. Testing everything, every time won’t be of any use in leading your clients or customers toward conversion. </p>
+<p>Your test subjects must depend on your business objectives and goals. Though there are a lot of things you may test, Daniel Louis from <a href="https://www.truconversion.com/blog/conversion-rate-optimization/how-ab-testing-can-make-you-a-super-marketer/" target="_blank">TruConversion.com explains that the pages listed below are tested in almost all cases</a>:</p>
+<ul>
+<li>Main landing pages</li>
+<li>Conversion (SEM) pages</li>
+<li>Page templates</li>
+</ul>
+<h2>Myth #4: A/B Testing Is for Everyone</h2>
+<p>A large percentage of marketers believe that everyone should run A/B test experiments to optimize conversion rates. Sadly, this is just a myth. </p>
+<p>Though conversion is the highest leverage point for any business, it doesn’t mean that everyone should run A/B test experiments. Remember, A/B testing is just 20% of the overall conversion optimization process. </p>
+<p>So, who shouldn’t run A/B tests? Well, if you don’t care about sample size, A/B tests aren’t the thing for you. An insufficient sample size may tilt your test results toward figures that wouldn’t be anywhere close to real life. </p>
+<p>In addition, if you have solid data indicating there are some elements that aren’t working well, it makes sense to go ahead and change them without waiting to A/B test. You will optimize your conversion rate much quicker without diluting your information with a test. You can find elements that need changing in a host of other ways, including:</p>
+<ul>
+<li><strong>Qualitative Insights</strong> – Gather insights from non-analytical sources such as <a href="http://www.crazyegg.com" rel="nofollow" target="_blank">heatmaps</a>, <a href="https://qualaroo.com" rel="nofollow" target="_blank">user surveys</a>, or personas in order to understand what’s stopping people from visiting your site or what’s putting them off at your site.</li>
+<li><strong>Buyer Persona</strong> – Build buyer personas and develop your strategies accordingly.</li>
+<li><strong>Personalization</strong> – Monetate.com reveals that marketers witness an average <a href="http://www.monetate.com/blog/the-tipping-point-for-personalized-website-experiences/" rel="nofollow" target="_blank">20% increase in sales</a> when using personalized web experiences. Remember, personalization is fundamental to your conversion optimization strategies.</li>
+<li><strong>Marketing Automation</strong> – Auto Pilot HQ says brands that use marketing automation software witness <a href="http://blog.autopilothq.com/marketing-automation-statistics/" rel="nofollow" target="_blank">53% higher conversion rates</a>. So, you can use marketing automation to convert better.</li>
+<li><strong>Mobile Optimization</strong> – If traffic is your concern, you don’t need to A/B test. You probably need to ensure mobile optimization. Remember, visitors who have good experiences are the easiest to convert. So, you must aim to provide the best possible experiences for your visitors, no matter what device they’re using.</li>
+<li><strong>Retargeting</strong> – Make sure visitors who visit your site return to your site. Hammad Akbar from TruConversion says that <a href="https://www.truconversion.com/blog/conversion-rate-optimization/7-conversion-rate-optimization-tips-to-boost-conversions/" rel="nofollow" target="_blank">retargeting deeply impacts conversion rates</a>.</li>
+</ul>
+<p><strong>Myth Busted:</strong> Contrary to popular belief, A/B testing isn’t for everyone. For small fixes and issues, such as broken pages and driving traffic, you do not necessarily need to run A/B test experiments. You can simply use one of the many other CRO strategies to make improvements effectively. In addition, testing with an insufficient sample size will produce inaccurate data anyway.  </p>
+<h2>Myth #5: Once Your Test Is Over, Results Will Remain Constant</h2>
+<p>This is yet another myth that surrounds the phenomena of A/B testing. A considerably large segment of marketers are of the belief that test results remain constant after you complete your test. </p>
+<p>However, test results are never constant, they keep on changing. No matter how well your website or landing pages are doing, they may always experience changes. Remember, test results are nothing but a picture of your A/B test’s performance for a specific time period. And, there are a host of factors that can make your conversion data change dramatically in the future.</p>
+<p>It wouldn’t be an exaggeration to say that time impacts conversion rates in a big way, such that test results obtained in the month of October may vary dramatically from results of the same tests carried out six months earlier in April.</p>
+<p>But, why is that? There may be a host of reasons. Maybe your visitors’ intentions about visiting your site or spending on your site are different during those two months. Therefore, it makes sense to periodically monitor the conversion rate of your A/B test’s winning variation. </p>
+<p>It will help you track any imaginary lifts that materialize later. Imaginary lifts are common scenarios that occur due to insufficient sample sizes or unrealistic metrics. Besides helping you understand false positives, monitoring will also help you identify more optimization opportunities. </p>
+<p>Check out the example below: </p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2016/03/need-for-speed-ab-test.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/need-for-speed-ab-test.png" alt="need-for-speed-ab-test" class="alignnone size-full wp-image-30329" srcset="https://blog.kissmetrics.com/wp-content/uploads/2016/03/need-for-speed-ab-test-300x95.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2016/03/need-for-speed-ab-test.png 589w" sizes="(max-width: 589px) 100vw, 589px" /></a></center><br />
+<center><em><a href="http://blog.ads.pof.com/2012/04/03/throw-everything-you-know-about-ads-out-the-window-pics-inside/" target="_blank">Image Source</a></em></center></p>
+<p>In this test, the joke version of the ad garnered more clicks than the carefully created one. Though the challenger version of the test generated more clicks, it doesn’t mean that the second ad “worked” better for the business. This is a false positive. </p>
+<p>Other common factors that may change your conversion rate include: </p>
+<ul>
+<li>Change in source of traffic</li>
+<li>Impact of discounts and promotions</li>
+<li>Impact of design changes</li>
+</ul>
+<p>It makes sense to monitor all these factors in order to get an idea of how your conversion rate changes. </p>
+<p><strong>Myth Busted:</strong> False positives may impact your test data. As a result, your data may gradually change over the course of time. So, don’t forget to monitor your data for a considerable period of time before making any projections. Remember, the only way to stay ahead in the game is to keep testing. And, if your tests are successful, don’t get complacent. Start a new test experiment and look for other optimization opportunities in order to minimize the impact of false positives.</p>
+<h2>Myth #6: A/B Testing Is Guaranteed to Boost Conversions</h2>
+<ul>
+<li>For the last 2 years, <a href="https://www.truconversion.com/blog/conversion-rate-optimization/7-conversion-rate-optimization-tips-to-boost-conversions/" target="_blank">A/B testing is the most used method for increasing conversions</a>.</li>
+<li><a href="http://unbounce.com/conversion-rate-optimization/conversion-landing-page-ab-testing-stats/" target="_blank">Obama campaign raised $60 million</a> by running A/B test experiments.</li>
+<li>The popularity of A/B testing has increased and now <a href="http://www.adpushup.com/blog/stats-conversion-rate-optimization-ab-testing/" target="_blank">38% of companies use A/B testing as compared to 27%</a> recorded earlier.</li>
+</ul>
+<p>Given these stats, we’re sure that almost every marketer with even a hint of experience in the industry is plagued by this myth. A large fraction of marketers believe that A/B testing can fix their conversion rate. Sadly, this isn’t true. </p>
+<p>As discussed earlier, A/B testing is a part of the bigger conversion optimization process. It helps you gather data that facilitates decision making. A/B testing can help you find out what’s working and what’s not working on your site, but it can’t turn your site into a conversion machine. </p>
+<p>Based on the insights you get by running A/B test experiments, you can devise a strategy or plan a solution to increase your conversions. But, you do this with the statistical data you get from the test, not the actual test itself.   </p>
+<p>Remember, you’re just one click away from oblivion. And, A/B testing won’t prove to be helpful if your website design, offers, and content fail to capture your target audience’s interest right from the get-go. </p>
+<p><strong>Myth Busted:</strong> A/B testing can’t fix your conversion optimization. It can only offer you insight into what’s not working on your site. You’ll need to devise strategies to fix your conversion based on the data or insights you gather from your A/B test experiments. In addition, your A/B tests won’t bear fruitful results if your site is broken. </p>
+<p>In order to boost conversions, you’ll need to ensure that everything on your website – from the content to the overall voice of the design – comes together in a way that makes your customers and prospects want to know more about your brand and want to stay.   </p>
+<h2>Myth #7: A/B Testing is Only for Tech-Savvy Marketers</h2>
+<p>This is another popular myth that constantly haunts marketers and has plagued the A/B testing industry. Many marketers believe they need to gain some technical knowledge before they run A/B test experiments. Some even believe that A/B testing is only for the tech-savvy marketers. Here’s a disturbing fact: A large number of marketers believe that A/B testing involves adding complex scripts and updating algorithms. </p>
+<p>On the contrary, A/B testing isn’t rocket science to understand and put into practice. You don’t need to depend on your tech team or learn complex technologies to run A/B test experiments. A/B testing is what it sounds like: You take two different variations of a test subject and test them against defined success metrics. Then, depending on the results, you choose the winning variant. Simple, isn’t it? </p>
+<p>Remember, testing technologies just reveal numbers. You are the one who is responsible for applying them to increase your conversions. </p>
+<p>Myth Busted: A/B test experiments aren’t just for tech-savvy marketers. All you need is to know how to run A/B tests and have are the right tools in your arsenal. Here’s is a list of easy steps that will help you run A/B tests:</p>
+<ol>
+<li>Define your goals.
+<li>Choose an A/B testing tool.</li>
+<li>Select what you want to test.</li>
+<li>Pick one variable or feature from your test subject that you wish to test.</li>
+<li>Segment your traffic.</li>
+<li>Start your A/B test.</li>
+<li>Analyze your results and retest.</li>
+</ol>
+<p>Here are a few tools to help you run A/B tests without having to attend tech classes:</p>
+<ul>
+<li><a href="http://www.google.com/analytics/standard/features/" target="_blank">Google Analytics Experiments</a></li>
+<li><a href="http://www.bingocardcreator.com/abingo" target="_blank">A/Bingo</a></li>
+<li><a href="http://fivesecondtest.com/" target="_blank">Five Second Test</a></li>
+<li><a href="https://www.optimizely.com/" target="_blank">Optimizely</a></li>
+<li><a href="http://unbounce.com/" target="_blank">Unbounce</a></li>
+</ul>
+<p>Now that you know the steps and resources for successfully running A/B test experiments, you are all set to take the plunge. Here’s a piece of advice from TruConversion’s Hammad Akbar: <a href="https://www.truconversion.com/blog/conversion-rate-optimization/7-conversion-rate-optimization-tips-to-boost-conversions/" rel="nofollow" target="_blank">Refrain from content cloaking</a>, use 302 redirects, and most important don’t be impatient. </p>
+<h2>Conclusion</h2>
+<p>So, there you have it: 7 of the deadliest myths that have long been keeping marketers away from A/B testing! But, fortunately, the world seems to be awakening to the power of A/B testing. It’s slowly becoming a fad among marketers who earlier were apprehensive about it. We’re sure these debunked A/B testing myths will help you recognize right from wrong and truth from lies!</p>
+<p>So, if you’re really looking forward to converting the strangers to your site into paying customers, we suggest you get over these 7 A/B testing myths and start fresh. </p>
+<p>As always, please share your thoughts in the comments. Don’t hesitate to hit us up with any questions, critiques, or feedback.</p>
+<p><strong>About the Author:</strong> Shruti Gupta works as a Digital Marketing Manager and Ghost writer at <a href="http://www.designhill.com/" rel="nofollow" target="_blank">Designhill.com</a>, world’s fastest-growing crowdsourcing platform for <a href="http://www.designhill.com/contests" rel="nofollow" target="_blank">logo design contests</a>, website design, and a host of other graphic designs. She live and breathe in digital marketing. With her profound professional, technical and people management skills, she has spent 8 years of extensive experience in SEO, affiliate marketing, digital marketing, blogging, and content marketing.</p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/deadly-online-marketing-myths/">It’s Time to Kill These 8 Deadly Online Marketing Myths</a></li>
+<li><a href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/">Conversion Rate Optimization—Are You Shooting Yourself in the Foot?</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fab-testing-myths%2F&source=tweetbutton&text=It%26%238217%3Bs+Time+to+Bust+These+7+A%2FB+Testing+Myths&url=https%3A%2F%2Fblog.kissmetrics.com%2Fab-testing-myths%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fab-testing-myths%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=It&#8217;s Time to Bust These 7 A/B Testing Myths&amp;body=https://blog.kissmetrics.com/ab-testing-myths/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-30322 -->
+        
+        <div id="comments">
+		
+							<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">No comments yet <small><a rel="nofollow" id="cancel-comment-reply-link" href="/ab-testing-myths/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='30322' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="13e9951b62" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="83"/></p>				</form>
+					</div><!-- #respond -->
+				
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'It&#8217;s Time to Bust These 7 A/B Testing Myths', 'Post URL':'https://blog.kissmetrics.com/ab-testing-myths/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/optimize-slideshare-for-conversions/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/locations-in-kissmetrics/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="https://blog.kissmetrics.com/ab-testing-myths/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="https://blog.kissmetrics.com/ab-testing-myths/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="https://blog.kissmetrics.com/ab-testing-myths/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="It&#8217;s Time to Bust These 7 A/B Testing Myths" data-url="https://blog.kissmetrics.com/ab-testing-myths/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'It&#8217;s Time to Bust These 7 A/B Testing Myths', 'Post URL':'https://blog.kissmetrics.com/ab-testing-myths/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'It&#8217;s Time to Bust These 7 A/B Testing Myths', 'Post URL':'https://blog.kissmetrics.com/ab-testing-myths/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'It&#8217;s Time to Bust These 7 A/B Testing Myths', 'Post URL':'https://blog.kissmetrics.com/ab-testing-myths/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":377,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>The Anatomy Of A Perfect Landing Page</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; Anatomy Of A Perfect Landing Page Comments Feed" href="https://blog.kissmetrics.com/landing-page-design-infographic/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='5 Truly Awful Landing Pages You Won’t Believe are from Well-Known Companies' href='https://blog.kissmetrics.com/5-awful-landing-pages/' />
+<link rel='next' title='101 Conversion Tips To Help Improve Your Website' href='https://blog.kissmetrics.com/101-conversion-tips-to-help-improve-your-website/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/landing-page-design-infographic/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=2059' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Flanding-page-design-infographic%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Flanding-page-design-infographic%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,332] -->
+<meta name="description" content="Although there is no exact formula to making a perfect landing page, there are some common rules of thumb to increase your chances of making a winning one. The infographic is a great place to begin." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/112759904453577892472/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='The Anatomy Of A Perfect Landing Page' />
+<meta property='og:url' content='https://blog.kissmetrics.com/landing-page-design-infographic/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Although there is no exact formula to making a perfect landing page, there are some common rules of thumb to increase your chances of making a winning one. The infographic is a great place to begin.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The Anatomy Of A Perfect Landing Page" />
+    <meta name="twitter:description" content="Although there is no exact formula to making a perfect landing page, there are some common rules of thumb to increase your chances of making a winning one. The infographic is a great place to begin." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-2059 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'Anatomy Of A Perfect Landing Page',
+						'Post Category': 'Conversion',
+						'Post URL': 'https://blog.kissmetrics.com/landing-page-design-infographic/'
+		}
+	]);
+</script>
+
+<article id="post-2059" class="single-post post-2059 post type-post status-publish format-standard has-post-thumbnail hentry category-conversion category-design" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">Anatomy Of A Perfect Landing Page</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Although there is no exact formula to making a perfect landing page, there are some common rules of thumb to increase your chances of making a winning one. If you’re looking for ideas on where to start with your next landing page design, the infographic below is a great place to begin. And remember, after you build your first landing page you must continually test variations to improve your conversion metrics.</p>
+<p><a href="https://blog.kissmetrics.com/landing-page-design-infographic/?wide=1"><img src="https://blog.kissmetrics.com/wp-content/uploads/2010/12/Perfect-Landing-Page-sm.jpg" alt="Landing Page Design" /></a><br /><small>via <a href="http://www.formstack.com/the-anatomy-of-a-perfect-landing-page/" target="_blank">Formstack</a></small><br />
+<center><a href="https://blog.kissmetrics.com/landing-page-design-infographic/?wide=1">View an enlarged version of this Infographic »</a></center></p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/landing-pages-that-convert/">How to Create Landing Pages That Convert</a></li>
+<li><a href="https://blog.kissmetrics.com/landing-page-flaws/">Landing Page Flaws That Kill Your Conversions</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Flanding-page-design-infographic%2F&source=tweetbutton&text=Anatomy+Of+A+Perfect+Landing+Page&url=https%3A%2F%2Fblog.kissmetrics.com%2Flanding-page-design-infographic%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Flanding-page-design-infographic%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=Anatomy Of A Perfect Landing Page&amp;body=https://blog.kissmetrics.com/landing-page-design-infographic/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-2059 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-3527">
+    <div id="comment-3527" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mo</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3527" class="comment-date">Dec 15, 2010 at 11:15 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great article, and beautiful diagram. I particularly like the attention paid to trust indicators and the color legend. There are, of course, a lot of other tricks, such as adding time-sensitivity to the offer, and knowing when to use reversed text (lightly-colored text on a dark background). This article, though, is a phenomenally easy to follow start for anyone.</p>
+<p>I have an ebook that has over 70 optimization tricks ( moluv.com/70ways ), but following this blog post will take care of the basics.  Thanks for putting this together.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3527#respond' onclick='return addComment.moveForm( "comment-3527", "3527", "respond", "2059" )' aria-label='Reply to Mo'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-3568">
+    <div id="comment-3568" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>ajkumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3568" class="comment-date">Dec 17, 2010 at 9:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for sharing that, we&#8217;ll definitely have to take a look at that.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3568#respond' onclick='return addComment.moveForm( "comment-3568", "3568", "respond", "2059" )' aria-label='Reply to ajkumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-3" id="li-comment-7508">
+    <div id="comment-7508" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">RP</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-7508" class="comment-date">Jul 20, 2011 at 10:23 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Yup. Found this really useful. Thanks for this. Visual information is so much easier. Check out this interesting visual timeline on the News of the World saga &#8211; creately.com/blog/diagrams/murdoch-the-news-of-the-world-saga-a-visual-timeline/</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=7508#respond' onclick='return addComment.moveForm( "comment-7508", "7508", "respond", "2059" )' aria-label='Reply to RP'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt depth-3" id="li-comment-28190">
+    <div id="comment-28190" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Niraj</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-28190" class="comment-date">May 21, 2012 at 1:40 am</a>      </div><!-- /.comment-meta -->
+
+      <p>even I liked your response.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=28190#respond' onclick='return addComment.moveForm( "comment-28190", "28190", "respond", "2059" )' aria-label='Reply to Niraj'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-3529">
+    <div id="comment-3529" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Cody Gibbs</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3529" class="comment-date">Dec 15, 2010 at 11:22 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;m always impressed by how much time and thought goes into your articles. Best corporate blog IMHO. Nice work.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3529#respond' onclick='return addComment.moveForm( "comment-3529", "3529", "respond", "2059" )' aria-label='Reply to Cody Gibbs'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-3569">
+    <div id="comment-3569" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>ajkumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3569" class="comment-date">Dec 17, 2010 at 9:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Cody, we have some amazing people writing awesome and incredibly useful articles. </p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3569#respond' onclick='return addComment.moveForm( "comment-3569", "3569", "respond", "2059" )' aria-label='Reply to ajkumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-3532">
+    <div id="comment-3532" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Eduardo Gasparetto</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3532" class="comment-date">Dec 15, 2010 at 3:01 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I realy like the article. What realy surprise me is the color factors. Realy will use this tips on my next landing pages.<br />
+Im thinking to translate this infografic to portuguese, if i do, will keep the credits.<br />
+Great Post.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3532#respond' onclick='return addComment.moveForm( "comment-3532", "3532", "respond", "2059" )' aria-label='Reply to Eduardo Gasparetto'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-3571">
+    <div id="comment-3571" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>ajkumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3571" class="comment-date">Dec 17, 2010 at 9:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>That&#8217;s perfectly fine with us :) Glad to hear you enjoyed the article.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3571#respond' onclick='return addComment.moveForm( "comment-3571", "3571", "respond", "2059" )' aria-label='Reply to ajkumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-3538">
+    <div id="comment-3538" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mike Stickney</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3538" class="comment-date">Dec 16, 2010 at 7:06 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Nice article and visual. I wrote a similar article earlier this year that might be helpful:<br />
+mikestickney.com/wordpress/anatomy-of-a-landing-page-part-2/</p>
+<p>The biggest challenge I&#8217;ve found working with marketing teams is that they do believe that there is a one &#8220;Magic Template&#8221; for LPs, which is not the case&#8230; just a set of &#8220;best practices&#8221; that can be a great starting point. Defintiely need to test, test, test.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3538#respond' onclick='return addComment.moveForm( "comment-3538", "3538", "respond", "2059" )' aria-label='Reply to Mike Stickney'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-3572">
+    <div id="comment-3572" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>ajkumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3572" class="comment-date">Dec 17, 2010 at 9:47 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for sharing that, I&#8217;ll take a look. Also I agree that there isn&#8217;t a magic page, but there are &#8220;best practices&#8221;. And yes, testing is KEY!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3572#respond' onclick='return addComment.moveForm( "comment-3572", "3572", "respond", "2059" )' aria-label='Reply to ajkumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-3547">
+    <div id="comment-3547" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Humphrey</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3547" class="comment-date">Dec 16, 2010 at 2:20 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This is by far the best educational blog for startups!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3547#respond' onclick='return addComment.moveForm( "comment-3547", "3547", "respond", "2059" )' aria-label='Reply to Humphrey'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-3574">
+    <div id="comment-3574" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>ajkumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3574" class="comment-date">Dec 17, 2010 at 9:48 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Glad to have you as a reader with us Humphrey.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3574#respond' onclick='return addComment.moveForm( "comment-3574", "3574", "respond", "2059" )' aria-label='Reply to ajkumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-3627">
+    <div id="comment-3627" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Kamil Skrzypiński</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3627" class="comment-date">Dec 21, 2010 at 3:05 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Again&#8230; &#8216;World class&#8217; and practical article. Big thank you! :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3627#respond' onclick='return addComment.moveForm( "comment-3627", "3627", "respond", "2059" )' aria-label='Reply to Kamil Skrzypiński'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-3685">
+    <div id="comment-3685" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>ajkumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3685" class="comment-date">Dec 25, 2010 at 9:39 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I agree, it&#8217;s great information and very helpful and simple to apply with our own sites.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3685#respond' onclick='return addComment.moveForm( "comment-3685", "3685", "respond", "2059" )' aria-label='Reply to ajkumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-3680">
+    <div id="comment-3680" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Avinash D'Souza</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3680" class="comment-date">Dec 25, 2010 at 5:12 am</a>      </div><!-- /.comment-meta -->
+
+      <p>This is a fantastically educational post Neil!! As a wanna-blogger, I look for ways and means to finesse my design and I&#8217;ve forgotten more about design than I&#8217;ve learned. Infographics are #WIN and this one has a nice bit about colour theory too.</p>
+<p>I&#8217;m not fully in sync with the colour theory advice but I&#8217;m definitely going to use some of these tips while templating some WordPress stuff. Thanks again.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3680#respond' onclick='return addComment.moveForm( "comment-3680", "3680", "respond", "2059" )' aria-label='Reply to Avinash D&#039;Souza'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-3686">
+    <div id="comment-3686" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>ajkumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-3686" class="comment-date">Dec 25, 2010 at 9:42 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I can see how for some people it&#8217;s hard for someone to comprehend the information because many people can provide contradictions. At the same time, these studies were done thoroughly and more so to generalize the people who use the web.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=3686#respond' onclick='return addComment.moveForm( "comment-3686", "3686", "respond", "2059" )' aria-label='Reply to ajkumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-4120">
+    <div id="comment-4120" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Peter</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4120" class="comment-date">Jan 25, 2011 at 7:17 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I agree with the commenters.  Very good article and nice diagram.  In my line of work, Landing Pages are essential and too many times I see the boring affiliate pages, 8 or nine page downs to get the end.  this is concise, and too the point.<br />
+good job</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4120#respond' onclick='return addComment.moveForm( "comment-4120", "4120", "respond", "2059" )' aria-label='Reply to Peter'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-4183">
+    <div id="comment-4183" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4183" class="comment-date">Jan 30, 2011 at 9:22 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Very true&#8230; some pages convert much better with shorter landing pages while others do better with really long sales letters. It&#8217;s just something you need to do trial and error with.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4183#respond' onclick='return addComment.moveForm( "comment-4183", "4183", "respond", "2059" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-4146">
+    <div id="comment-4146" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Manuel</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4146" class="comment-date">Jan 28, 2011 at 1:50 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I&#8217;m curious: Is this &#8220;color legend&#8221; universal ? For isntance, green being associated with wealth &#8211; didn&#8217;t ring a bell at all with me, until I remembered the USD bills were green &#8211; but in many other countries money is of entirely different colours&#8230; wonder if this spectrum has other &#8220;cultural shifts&#8221;.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4146#respond' onclick='return addComment.moveForm( "comment-4146", "4146", "respond", "2059" )' aria-label='Reply to Manuel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-4191">
+    <div id="comment-4191" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4191" class="comment-date">Jan 30, 2011 at 9:30 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>It may not be the case for EVERYONE, but it&#8217;s more of a general assumption. Generalizing certain psychology beliefs work pretty well for online conversions. It&#8217;s not absolute, but it never hurts to AB test it.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4191#respond' onclick='return addComment.moveForm( "comment-4191", "4191", "respond", "2059" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-3" id="li-comment-9754">
+    <div id="comment-9754" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Stevie</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-9754" class="comment-date">Sep 22, 2011 at 12:20 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This was so helpful and easy! Do you have any artilecs on rehab?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=9754#respond' onclick='return addComment.moveForm( "comment-9754", "9754", "respond", "2059" )' aria-label='Reply to Stevie'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4330">
+    <div id="comment-4330" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4330" class="comment-date">Feb 12, 2011 at 12:54 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for extremely useful informations here. I am looking to improve my lp page too. actually my bounce rate is a bit high. I would like to reduce that. Thanks again</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4330#respond' onclick='return addComment.moveForm( "comment-4330", "4330", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar even depth-2" id="li-comment-4364">
+    <div id="comment-4364" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4364" class="comment-date">Feb 14, 2011 at 10:37 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Well then this was probably the perfect read for you. Come back and let us know how you apply it and the results you get.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4364#respond' onclick='return addComment.moveForm( "comment-4364", "4364", "respond", "2059" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-4355">
+    <div id="comment-4355" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Peter</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4355" class="comment-date">Feb 13, 2011 at 11:37 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I will try to test a various of landing page for good performance to my site</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4355#respond' onclick='return addComment.moveForm( "comment-4355", "4355", "respond", "2059" )' aria-label='Reply to Peter'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar even depth-2" id="li-comment-4366">
+    <div id="comment-4366" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4366" class="comment-date">Feb 14, 2011 at 10:42 am</a>      </div><!-- /.comment-meta -->
+
+      <p>That&#8217;s a great idea! You may want to try out 2-3 variations. Let us know what you discover.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4366#respond' onclick='return addComment.moveForm( "comment-4366", "4366", "respond", "2059" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4469">
+    <div id="comment-4469" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4469" class="comment-date">Feb 17, 2011 at 8:58 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>hi Niel, its one of the most important thing to optimize conversion ratio, and your guides are really good for newbie as well as an expert web designers to help optimize.</p>
+<p>thanks for this great tutorial.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4469#respond' onclick='return addComment.moveForm( "comment-4469", "4469", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar even depth-2" id="li-comment-4550">
+    <div id="comment-4550" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4550" class="comment-date">Feb 21, 2011 at 8:15 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Neil really does a great job at explaining this. I think this info applies to newbies and veterans who need to brush up on the basics.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4550#respond' onclick='return addComment.moveForm( "comment-4550", "4550", "respond", "2059" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-4504">
+    <div id="comment-4504" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mike Johnson</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4504" class="comment-date">Feb 19, 2011 at 7:42 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for a great article. In my experience the best improvement have come from testing different layouts all together rather than improving the details on a particular layout. With that said I think you make some great points that apply to almost all layout choices. Thanks for a great article with specifics!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4504#respond' onclick='return addComment.moveForm( "comment-4504", "4504", "respond", "2059" )' aria-label='Reply to Mike Johnson'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment byuser comment-author-ajkumar even thread-odd thread-alt depth-1" id="li-comment-4554">
+    <div id="comment-4554" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-4554" class="comment-date">Feb 21, 2011 at 8:22 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Yeah I agree with you&#8230; sometimes it&#8217;s the shifts of objects and forms that make a significant impact.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=4554#respond' onclick='return addComment.moveForm( "comment-4554", "4554", "respond", "2059" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-5810">
+    <div id="comment-5810" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-5810" class="comment-date">May 10, 2011 at 10:00 am</a>      </div><!-- /.comment-meta -->
+
+      <p>In your next article on LPs can you talk a little more about how long the messages should be in certain places like the header. Like lets say for the title don&#8217;t make it over 75 characters in length. But in general this is all so helpful and even the comments especially from Mo were very good.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=5810#respond' onclick='return addComment.moveForm( "comment-5810", "5810", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar even depth-2" id="li-comment-6124">
+    <div id="comment-6124" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-6124" class="comment-date">May 24, 2011 at 6:38 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Yeah, that&#8217;s definitely something we can get into on later posts.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=6124#respond' onclick='return addComment.moveForm( "comment-6124", "6124", "respond", "2059" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt depth-2" id="li-comment-9744">
+    <div id="comment-9744" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Servena</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-9744" class="comment-date">Sep 22, 2011 at 9:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>If not for your writing this topic could be very conlovuetd and oblique.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=9744#respond' onclick='return addComment.moveForm( "comment-9744", "9744", "respond", "2059" )' aria-label='Reply to Servena'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-6014">
+    <div id="comment-6014" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">tlash</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-6014" class="comment-date">May 19, 2011 at 11:07 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Often we create landing pages that are within an existing website&#8211;and therefore have menus at the top. What&#8217;s your opinion of pages that fit within an existing website vs. special landing pages that stand alone?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=6014#respond' onclick='return addComment.moveForm( "comment-6014", "6014", "respond", "2059" )' aria-label='Reply to tlash'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-ajkumar odd alt depth-2" id="li-comment-6180">
+    <div id="comment-6180" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-6180" class="comment-date">May 25, 2011 at 8:11 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I think it varies and would recommend testing both options out to see which works better.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=6180#respond' onclick='return addComment.moveForm( "comment-6180", "6180", "respond", "2059" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment byuser comment-author-ajkumar even depth-2" id="li-comment-6184">
+    <div id="comment-6184" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.kissmetrics.com' rel='external nofollow' class='url'>AJ Kumar</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-6184" class="comment-date">May 25, 2011 at 8:17 am</a>      </div><!-- /.comment-meta -->
+
+      <p>It really just depends on what you&#8217;re goals are. Are you selling something?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=6184#respond' onclick='return addComment.moveForm( "comment-6184", "6184", "respond", "2059" )' aria-label='Reply to AJ Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-6086">
+    <div id="comment-6086" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">joel</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-6086" class="comment-date">May 22, 2011 at 4:47 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I see &#8220;click here&#8221; everywhere and I&#8217;m concerned that I&#8217;m seeing here in this example.<br />
+Wouldn&#8217;t you want a call to action that explains what the action produces?<br />
+i.e the button below this comment form is &#8220;add comment&#8221; which is very explainatory.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=6086#respond' onclick='return addComment.moveForm( "comment-6086", "6086", "respond", "2059" )' aria-label='Reply to joel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-6513">
+    <div id="comment-6513" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dianne</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-6513" class="comment-date">Jun 09, 2011 at 5:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I don&#8217;t believe there&#8217;s such thing as a &#8220;perfect landing page&#8221;. It all depends on what you actually want your visitors to do. The example related here could help a webmaster to have more client accounts maybe..</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=6513#respond' onclick='return addComment.moveForm( "comment-6513", "6513", "respond", "2059" )' aria-label='Reply to Dianne'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-6998">
+    <div id="comment-6998" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Gagan</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-6998" class="comment-date">Jun 28, 2011 at 8:48 am</a>      </div><!-- /.comment-meta -->
+
+      <p>The tips are really superb. I would also like to show my landing pages to all your visitors. </p>
+<p>My site target local visitors from a small city in India. I get around 10-15 visits daily and due to this super landing page I get around 5-10 calls daily for my local business.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=6998#respond' onclick='return addComment.moveForm( "comment-6998", "6998", "respond", "2059" )' aria-label='Reply to Gagan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-7872">
+    <div id="comment-7872" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Felipe Assunção</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-7872" class="comment-date">Aug 06, 2011 at 9:42 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Good lesson, i go try it on a personal website.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=7872#respond' onclick='return addComment.moveForm( "comment-7872", "7872", "respond", "2059" )' aria-label='Reply to Felipe Assunção'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-12405">
+    <div id="comment-12405" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">minijuegos gratis</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-12405" class="comment-date">Nov 24, 2011 at 5:19 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Hello, I think a very interesting article, it is true that any website can have a significant potential in the network, but if that site is optimized, a good SEO, good structure, easy navigation and user-focused the chances of success are greater . I liked the article, the structure of a site has to be well defined to achieve success. A page with good structure facing is seo juegostt.com mini web by web design and anatomy parame think that meets the most important.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=12405#respond' onclick='return addComment.moveForm( "comment-12405", "12405", "respond", "2059" )' aria-label='Reply to minijuegos gratis'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-13726">
+    <div id="comment-13726" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Missi</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-13726" class="comment-date">Dec 14, 2011 at 7:16 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This is an artlice that makes you think &#8220;never thought of that!&#8221;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=13726#respond' onclick='return addComment.moveForm( "comment-13726", "13726", "respond", "2059" )' aria-label='Reply to Missi'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-18158">
+    <div id="comment-18158" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-18158" class="comment-date">Jan 03, 2012 at 12:13 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Very good article on landing page design anatomy.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=18158#respond' onclick='return addComment.moveForm( "comment-18158", "18158", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-18597">
+    <div id="comment-18597" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Matt</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-18597" class="comment-date">Jan 04, 2012 at 11:13 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Cool info-graphic, it&#8217;s always nice to see people taking the time to create useful and nice looking content. Cheers</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=18597#respond' onclick='return addComment.moveForm( "comment-18597", "18597", "respond", "2059" )' aria-label='Reply to Matt'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-19164">
+    <div id="comment-19164" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Shawn</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-19164" class="comment-date">Jan 06, 2012 at 10:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for the article and the graphic on the topic! Other than rule #9 about the fold and the use of words like &#8220;never&#8221; I think the article generally outlines some good practices. However, clever use of the entire page and the appropriate application of interest above the mythical fold can lead to an efficient landing page as well. After all, with people&#8217;s adapted browsing behaviors and the wide variety of screen dimensions and resolutions in use, isn&#8217;t the fold an antiquated object? And at least a wide gray area, rather than a single black line? I&#8217;m curious: how would you illustrate this anatomy on several different phones and tablets?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=19164#respond' onclick='return addComment.moveForm( "comment-19164", "19164", "respond", "2059" )' aria-label='Reply to Shawn'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-20000">
+    <div id="comment-20000" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Antonio</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-20000" class="comment-date">Jan 10, 2012 at 5:31 am</a>      </div><!-- /.comment-meta -->
+
+      <p>No one &#8220;social interactor&#8221; is present&#8230; it&#8217;s is not &#8220;socializable&#8221;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=20000#respond' onclick='return addComment.moveForm( "comment-20000", "20000", "respond", "2059" )' aria-label='Reply to Antonio'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-20754">
+    <div id="comment-20754" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">joel s</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-20754" class="comment-date">Jan 17, 2012 at 11:34 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for the great article.  I am a really small business, do you have any companies that create easy landing pages for people?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=20754#respond' onclick='return addComment.moveForm( "comment-20754", "20754", "respond", "2059" )' aria-label='Reply to joel s'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-21543">
+    <div id="comment-21543" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-21543" class="comment-date">Jan 29, 2012 at 8:19 am</a>      </div><!-- /.comment-meta -->
+
+      <p>You can also check some more landing pages here <a href="http://www.semanticlp.com/" rel="nofollow">http://www.semanticlp.com/</a> for inspiration.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=21543#respond' onclick='return addComment.moveForm( "comment-21543", "21543", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-21884">
+    <div id="comment-21884" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-21884" class="comment-date">Feb 07, 2012 at 12:38 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I couldn’t agree, more. You’ve got some amazing tips, I’ll be sure to use when writing my next post. Thanks :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=21884#respond' onclick='return addComment.moveForm( "comment-21884", "21884", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-21989">
+    <div id="comment-21989" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jonathan</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-21989" class="comment-date">Feb 09, 2012 at 6:18 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Wow. I knew my landing pages were bad but now I see just how shocking they are. I&#8217;ll have to make fixing them into a whole project by it&#8217;s self. Thanks for the infographic.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=21989#respond' onclick='return addComment.moveForm( "comment-21989", "21989", "respond", "2059" )' aria-label='Reply to Jonathan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-23286">
+    <div id="comment-23286" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ravi Kumar</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-23286" class="comment-date">Feb 29, 2012 at 11:36 am</a>      </div><!-- /.comment-meta -->
+
+      <p>this was really helpful&#8230;good insight&#8230;can you also suggest some small size landing pages&#8230;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=23286#respond' onclick='return addComment.moveForm( "comment-23286", "23286", "respond", "2059" )' aria-label='Reply to Ravi Kumar'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-26104">
+    <div id="comment-26104" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-26104" class="comment-date">Apr 10, 2012 at 11:21 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>great presentation tool for conveying a very important (often overlooked) action point for reducing bounce rate and improving click-thru. Works best as part of an SEO campaign</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=26104#respond' onclick='return addComment.moveForm( "comment-26104", "26104", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-26500">
+    <div id="comment-26500" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-26500" class="comment-date">Apr 19, 2012 at 10:45 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Readers must follow this blog post. Discover new ideas and tips here. Great stuff indeed!Its very helpful. Good Luck for the upcoming post. :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=26500#respond' onclick='return addComment.moveForm( "comment-26500", "26500", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-27715">
+    <div id="comment-27715" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">sue-ellen</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-27715" class="comment-date">May 12, 2012 at 9:46 am</a>      </div><!-- /.comment-meta -->
+
+      <p>great post.  this may help me spend less time this Mother&#8217;s Day weekend actually redoing my website.<br />
+good job!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=27715#respond' onclick='return addComment.moveForm( "comment-27715", "27715", "respond", "2059" )' aria-label='Reply to sue-ellen'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-27950">
+    <div id="comment-27950" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">AB</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-27950" class="comment-date">May 16, 2012 at 9:52 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Your guys&#8217; corporate blog really is the best. It&#8217;s all in the data, and you guys really embrace that philosophy. Keep it up.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=27950#respond' onclick='return addComment.moveForm( "comment-27950", "27950", "respond", "2059" )' aria-label='Reply to AB'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-30526">
+    <div id="comment-30526" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-30526" class="comment-date">Jun 13, 2012 at 12:20 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>i am so much excited after reading your blog. your blog is very much innovative and much helpful. i will use it in future. thanks for the efforts to make this ! must admit that you are one of the coolest bloggers i ever saw.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=30526#respond' onclick='return addComment.moveForm( "comment-30526", "30526", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-30620">
+    <div id="comment-30620" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Roger</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-30620" class="comment-date">Jun 14, 2012 at 2:47 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Where can I get a template just like this as this is exaclty what I am looking for for my website </p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=30620#respond' onclick='return addComment.moveForm( "comment-30620", "30620", "respond", "2059" )' aria-label='Reply to Roger'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment even depth-2" id="li-comment-86862">
+    <div id="comment-86862" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Gareth Rees</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-86862" class="comment-date">Nov 29, 2012 at 10:30 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I made one a while ago github.com/garethrees/landing-page</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=86862#respond' onclick='return addComment.moveForm( "comment-86862", "86862", "respond", "2059" )' aria-label='Reply to Gareth Rees'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-30768">
+    <div id="comment-30768" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ann</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-30768" class="comment-date">Jun 16, 2012 at 3:07 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Generally helpful and interesting.</p>
+<p>Unsubtle use of pink will turn off lots of women. It smacks of stereotyping and many of us don&#8217;t enjoy that and will be repelled instead. Try smaller highlights or blending it in, or just a nicely balanced set of colours.</p>
+<p>Too much of any colour can be aggressive and may not only lose its effectiveness, but also drive people away. Lots of sites use way too much orange.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=30768#respond' onclick='return addComment.moveForm( "comment-30768", "30768", "respond", "2059" )' aria-label='Reply to Ann'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-31395">
+    <div id="comment-31395" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-31395" class="comment-date">Jun 26, 2012 at 12:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>reallly like this and feel your colours are spot!  orange as a call to action button works well in all the testing we have done</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=31395#respond' onclick='return addComment.moveForm( "comment-31395", "31395", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-31398">
+    <div id="comment-31398" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-31398" class="comment-date">Jun 26, 2012 at 12:55 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Your advice is great, we are continually testing our landing page and looking for continual improvement, I think you have really covered the topic well &#8211; great advice. Thanks!!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=31398#respond' onclick='return addComment.moveForm( "comment-31398", "31398", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-31557">
+    <div id="comment-31557" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-31557" class="comment-date">Jun 27, 2012 at 8:04 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hey this is a wonderful looking website, is wordpress? Forgive me for the foolish question  but if so, what theme is? Thanks!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=31557#respond' onclick='return addComment.moveForm( "comment-31557", "31557", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-31826">
+    <div id="comment-31826" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Erik</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-31826" class="comment-date">Jun 30, 2012 at 9:14 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Very nice, besides that (3) is dead content.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=31826#respond' onclick='return addComment.moveForm( "comment-31826", "31826", "respond", "2059" )' aria-label='Reply to Erik'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-35518">
+    <div id="comment-35518" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Romeo Espree</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-35518" class="comment-date">Sep 06, 2012 at 6:34 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Thank you for making this website so easy to find info. wonderful stuff. Saving this one for later.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=35518#respond' onclick='return addComment.moveForm( "comment-35518", "35518", "respond", "2059" )' aria-label='Reply to Romeo Espree'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-46001">
+    <div id="comment-46001" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Optimator</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-46001" class="comment-date">Sep 28, 2012 at 6:34 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Just what I was looking for, thank you very much! Great website btw!!!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=46001#respond' onclick='return addComment.moveForm( "comment-46001", "46001", "respond", "2059" )' aria-label='Reply to Optimator'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-62111">
+    <div id="comment-62111" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">David</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-62111" class="comment-date">Oct 08, 2012 at 12:11 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Very nice.. Excelente material. We saw it in a course of SEO.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=62111#respond' onclick='return addComment.moveForm( "comment-62111", "62111", "respond", "2059" )' aria-label='Reply to David'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-67237">
+    <div id="comment-67237" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jay Dacuycuy</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-67237" class="comment-date">Oct 10, 2012 at 4:32 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I really like the tips on call to action. There&#8217;s definitely a big difference between traffic and what you ultimately want &#8230; Conversion!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=67237#respond' onclick='return addComment.moveForm( "comment-67237", "67237", "respond", "2059" )' aria-label='Reply to Jay Dacuycuy'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-86776">
+    <div id="comment-86776" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">olivier</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-86776" class="comment-date">Nov 28, 2012 at 9:09 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Hello</p>
+<p>is there somebody who can send to me<br />
+links of websites than sell templates<br />
+which respect the </p>
+<p>Anatomy Of A Perfect Landing Page</p>
+<p>or templates which are the most close than<br />
+suggest  Anatomy Of A Perfect Landing Page</p>
+<p>Thanks</p>
+<p>Olivier</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=86776#respond' onclick='return addComment.moveForm( "comment-86776", "86776", "respond", "2059" )' aria-label='Reply to olivier'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-89408">
+    <div id="comment-89408" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mary</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-89408" class="comment-date">Jan 03, 2013 at 8:20 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great info graphic! I&#8217;ll be quoting you in a blog post at Mequoda.com on Jan. 8!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=89408#respond' onclick='return addComment.moveForm( "comment-89408", "89408", "respond", "2059" )' aria-label='Reply to Mary'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-90319">
+    <div id="comment-90319" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Mrinal</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-90319" class="comment-date">Jan 17, 2013 at 3:45 am</a>      </div><!-- /.comment-meta -->
+
+      <p>This one is a great post on landing page design using info graphics, I am inspired on this post and come up with some good landing page design, you can check my landing page design portfolio here semanticlayout.com/portfolio/</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=90319#respond' onclick='return addComment.moveForm( "comment-90319", "90319", "respond", "2059" )' aria-label='Reply to Mrinal'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-91615">
+    <div id="comment-91615" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-91615" class="comment-date">Feb 03, 2013 at 9:52 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Nice Post, Very helpful for noobs&#8230;</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=91615#respond' onclick='return addComment.moveForm( "comment-91615", "91615", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-92330">
+    <div id="comment-92330" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Peter</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-92330" class="comment-date">Feb 12, 2013 at 7:44 am</a>      </div><!-- /.comment-meta -->
+
+      <p>landing page makes your website more effective, More business and makes better ROI. We landingpagesdesigns.com make high Conversion Landing Pages. We offer creative and custom landing pages designs at affordable price.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=92330#respond' onclick='return addComment.moveForm( "comment-92330", "92330", "respond", "2059" )' aria-label='Reply to Peter'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-92829">
+    <div id="comment-92829" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Jordan J. Caron</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-92829" class="comment-date">Feb 19, 2013 at 12:12 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Love, love, love this! Clear, concise and not too cluttered. It&#8217;s not about having pretty landing pages, it&#8217;s about conversion rates and growing your leads.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=92829#respond' onclick='return addComment.moveForm( "comment-92829", "92829", "respond", "2059" )' aria-label='Reply to Jordan J. Caron'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-92942">
+    <div id="comment-92942" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Roger</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-92942" class="comment-date">Feb 20, 2013 at 2:29 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This is perfect for what I am looking for, do you know where I can get the template from?</p>
+<p>Thanks </p>
+<p>Roger</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=92942#respond' onclick='return addComment.moveForm( "comment-92942", "92942", "respond", "2059" )' aria-label='Reply to Roger'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-93480">
+    <div id="comment-93480" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">William</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-93480" class="comment-date">Feb 25, 2013 at 7:32 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This is really great informational tips for creating the perfect landing page. If you&#8217;re really serious about creating landing pages and you want them to not only look professional but be able to build incredible lists to generate a nice income, I found an incredible software that&#8217;s novice friendly, works with wordpress, and is integrated for mobile devices called Lead Rocket Plugin.. The guys that created this software, Anthony Aires &amp; Derek Pierce not only help you train and learn the software but they show you step by step how to build huge lists and convert incredible landing pages in minutes.. This is something that will last the life of your business&#8230;For more information just go to leadrocketplugin.net&#8230; I can assure you, you won&#8217;t find a more powerful software as affordable as this&#8230;.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=93480#respond' onclick='return addComment.moveForm( "comment-93480", "93480", "respond", "2059" )' aria-label='Reply to William'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-94171">
+    <div id="comment-94171" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Tom London</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-94171" class="comment-date">Mar 02, 2013 at 5:49 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This is such a cool piece of information, I really want to play with it on my site. I am still trying to work out whether my website follows these pointers on the perfect landing page. Tell me if you think I have followed these tips well or whether I need to make some changes. Thanks.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=94171#respond' onclick='return addComment.moveForm( "comment-94171", "94171", "respond", "2059" )' aria-label='Reply to Tom London'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-979186">
+    <div id="comment-979186" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-979186" class="comment-date">Dec 06, 2014 at 4:55 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Everyone loves what you guys tend to be up too. This kind of clever work and coverage! Keep up the good works guys I&#8217;ve added you guys to our blogroll.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=979186#respond' onclick='return addComment.moveForm( "comment-979186", "979186", "respond", "2059" )' aria-label='Reply to '>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1014412">
+    <div id="comment-1014412" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-1014412" class="comment-date">Jan 12, 2015 at 8:27 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>My brother recommended I might like this website. He was entirely right.<br />
+This put up truly made my day. You can not imagine just how much time I<br />
+had spent for this info! Thank you!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=1014412#respond' onclick='return addComment.moveForm( "comment-1014412", "1014412", "respond", "2059" )' aria-label='Reply to '>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1044640">
+    <div id="comment-1044640" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-1044640" class="comment-date">Feb 13, 2015 at 4:13 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Without this input, we will be nowhere in building our landing pages and promotion. Thank you Kissmetrics Team.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=1044640#respond' onclick='return addComment.moveForm( "comment-1044640", "1044640", "respond", "2059" )' aria-label='Reply to '>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1133232">
+    <div id="comment-1133232" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Chris</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-1133232" class="comment-date">Jul 02, 2015 at 10:35 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Top article, top website. Keep doing what you do and thank you for that :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=1133232#respond' onclick='return addComment.moveForm( "comment-1133232", "1133232", "respond", "2059" )' aria-label='Reply to Chris'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1159176">
+    <div id="comment-1159176" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Guest</cite>
+        
+        <a href="https://blog.kissmetrics.com/landing-page-design-infographic/#comment-1159176" class="comment-date">Sep 21, 2015 at 6:39 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great tips. EVERY website or landing page MUST use in order to increase their conversions. The graphics are just spot on for message delivery: heard you loud and clear.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/landing-page-design-infographic/?replytocom=1159176#respond' onclick='return addComment.moveForm( "comment-1159176", "1159176", "respond", "2059" )' aria-label='Reply to Guest'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">355 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/landing-page-design-infographic/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='2059' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="8accdfa115" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="128"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'Anatomy Of A Perfect Landing Page', 'Post URL':'https://blog.kissmetrics.com/landing-page-design-infographic/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/5-awful-landing-pages/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/101-conversion-tips-to-help-improve-your-website/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/landing-page-design-infographic/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/landing-page-design-infographic/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/landing-page-design-infographic/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="Anatomy Of A Perfect Landing Page" data-url="http://blog.kissmetrics.com/landing-page-design-infographic/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'Anatomy Of A Perfect Landing Page', 'Post URL':'https://blog.kissmetrics.com/landing-page-design-infographic/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'Anatomy Of A Perfect Landing Page', 'Post URL':'https://blog.kissmetrics.com/landing-page-design-infographic/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'Anatomy Of A Perfect Landing Page', 'Post URL':'https://blog.kissmetrics.com/landing-page-design-infographic/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":785,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

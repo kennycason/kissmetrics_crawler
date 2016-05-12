@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>CRO—Are You Shooting Yourself in the Foot?</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; Conversion Rate Optimization—Are You Shooting Yourself in the Foot? Comments Feed" href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Content Strategy: A Development Guide' href='https://blog.kissmetrics.com/content-strategy-a-development-guide/' />
+<link rel='next' title='More Trial Users Is Not The Answer For Your Startup&#8217;s Growth' href='https://blog.kissmetrics.com/trial-users-not-the-answer/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=29970' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fcro-shooting-yourself-in-foot%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2Fcro-shooting-yourself-in-foot%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,368] -->
+<meta name="description" content="Not getting the results you want from CRO? You could be falling victim to one of the four CRO traps. Hear what they are and how to overcome them in this post." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='CRO—Are You Shooting Yourself in the Foot?' />
+<meta property='og:url' content='https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='Not getting the results you want from CRO? You could be falling victim to one of the four CRO traps. Hear what they are and how to overcome them in this post.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="CRO—Are You Shooting Yourself in the Foot?" />
+    <meta name="twitter:description" content="Not getting the results you want from CRO? You could be falling victim to one of the four CRO traps. Hear what they are and how to overcome them in this post." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-29970 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': 'Conversion Rate Optimization—Are You Shooting Yourself in the Foot?',
+						'Post Category': 'Conversion',
+						'Post URL': 'https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/'
+		}
+	]);
+</script>
+
+<article id="post-29970" class="single-post post-29970 post type-post status-publish format-standard hentry category-conversion" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">Conversion Rate Optimization—Are You Shooting Yourself in the Foot?</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Conversion rate optimization (CRO) has become the go-to solution for online marketing performance woes.</p>
+<p><i>Astronomical cost-per-click?</i> <a href="http://www.disruptiveadvertising.com/conversion-rate-optimization/why-your-website-isnt-converting/" target="_blank" rel="nofollow">Improve your conversion rate</a> and it won’t matter anymore.</span></p>
+<p><i>Unsure about your website design?</i><a href="http://conversionxl.com/half-of-your-site-elements-are-useless-which-half/" target="_blank"> Test all your ideas</a>&#8230;and see what works!</p>
+<p><i>Limited budget?</i> You don’t have to pay for more traffic—<a href="http://marketingland.com/wrong-web-traffic-ruining-landing-page-test-159005" target="_blank">just get more conversions from the traffic you already have</a>.</p>
+<p>Whatever ails your online marketing, it can be fixed with a little CRO, right?</p>
+<p><center><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/02/riiight.gif" alt="riiight" class="alignnone size-full wp-image-30065" /></a></center></p>
+<p><a href="https://blog.kissmetrics.com/100-conversion-optimization-case-studies/">With all the case studies out there</a> touting results like <a href="https://vwo.com/blog/increase-trust-to-increase-sales/" target="_blank">41% increase in sales</a>, <a href="http://www.conversion-rate-experts.com/voices-case-study/" target="_blank">400% more conversions</a>, or <a href="https://vwo.com/blog/amd-3600-social-sharing-increase/" target="_blank">600% increase in social shares</a>, it’s easy to believe that the ROI of your dreams is just a few tests away.</p>
+<p>Unfortunately, conversion rate optimization isn’t quite that simple. Simply putting together a test is not enough to guarantee you a better conversion rate—in fact, according to VWO, <a href="https://vwo.com/blog/cro-industry-insights/" target="_blank">only 1 in 7 A/B tests produce a winning result</a>!</p>
+<p>So, does that mean CRO isn’t all that it’s cracked up to be?</p>
+<h2>Why CRO Fails</h2>
+<p>Conversion rate optimization <i>is</i> an awesome way to get more conversions out of your web traffic, but only if you approach it the right way.</p>
+<p>At Disruptive, we’ve run thousands of tests, so we’ve seen our fair share of both <a href="http://www.disruptiveadvertising.com/adwords/how-an-rlsa-strategy-increased-sales-by-125-9/" target="_blank">amazing</a> and <a href="http://www.disruptiveadvertising.com/conversion-rate-optimization/what-chickens-taught-me-about-ab-testing/" target="_blank">not so amazing results</a>.</p>
+<p>After helping so many companies improve their conversion rate, it’s become clear that <b>CRO often falls short of its potential because companies set their tests up to fail</b>.</p>
+<p>Of course, nobody intentionally rigs their tests to fail, but most companies fall victim to one of four CRO traps:</p>
+<ol>
+<li>No overall strategy</span></li>
+<li>Goal confusion</span></li>
+<li>Ending early</span></li>
+<li>Ignoring traffic</span></li>
+</ol>
+<p>Each of these traps will ruin a CRO test, so it’s important to understand each trap and how to avoid it.</p>
+<p>Fortunately, if you can steer clear of these test-killers, you can expect a much higher success rate—in our case, about 5/7 of our tests improve conversion rate (and we learn something from <i>every</i> test).</p>
+<p>Let’s dive into the details.</p>
+<h2>1. No Overall Strategy</h2>
+<p>If you want to be successful at CRO, you need to look at each test as part of a bigger whole.</p>
+<p>In general, most companies tend to look at tests in isolation. They have an idea and run a test to see if it performs better.</p>
+<p>If it works, they cheer and switch everything to their new idea. If it fails, they assume the idea was bad and toss it.</p>
+<p>Unfortunately, this sort of approach doesn&#8217;t teach you <em>why</em> a specific page was a success or a failure. That means you can&#8217;t effectively use that test to guide future CRO efforts.</p>
+<p>Remember the old <a href="https://en.wikiquote.org/wiki/George_Santayana" target="_blank">George Santayana quote</a>?</p>
+<p><center><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/02/george-santayana.jpg" alt="george-santayana" class="alignnone size-full wp-image-30066" srcset="https://blog.kissmetrics.com/wp-content/uploads/2016/02/george-santayana-300x122.jpg 300w, https://blog.kissmetrics.com/wp-content/uploads/2016/02/george-santayana.jpg 570w" sizes="(max-width: 570px) 100vw, 570px" /></a></center></p>
+<p>Okay, so that&#8217;s not <em>exactly</em> how George&#8217;s original quote went&#8230;but the point still holds. If you don&#8217;t learn from your tests, you&#8217;re never going to make much progress with CRO.</p>
+<h3>Documentation—the Secret to Successful CRO</h3>
+<p>A good testing strategy ensures you learn something from <em>every</em> test. To do that, you need great documentation.</p>
+<p>The problem with a haphazard approach to testing is that your tests become very difficult to track. It doesn&#8217;t take many tests before it is hard to remember what you were testing with which tests and why.</p>
+<p>To really get the most out of your tests, it&#8217;s best to write out your strategy in advance. For example, if you want to know if a new CTA improves your conversion rate, you might put together a spreadsheet like this:</p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2016/02/cta-test-documentation.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/02/cta-test-documentation.png" alt="cta-test-documentation" class="alignnone size-full wp-image-30067" srcset="https://blog.kissmetrics.com/wp-content/uploads/2016/02/cta-test-documentation-300x197.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2016/02/cta-test-documentation-1024x673.png 1024w, https://blog.kissmetrics.com/wp-content/uploads/2016/02/cta-test-documentation.png 1040w" sizes="(max-width: 1040px) 100vw, 1040px" /></a></center></p>
+<p>See how each test sets up the next test? You learn something from each iteration and then use that to guide your next test.</p>
+<p>Plus, everything is thoroughly documented, so if anyone ever wonders why you made a certain choice, you&#8217;ve always got a handy reference!</p>
+<p>A lot of testing tools will document your results, which is helpful, but if you don&#8217;t document the thinking behind the test, the results won&#8217;t do you much good.</p>
+<h3>What Approach is Best for Your Business?</h3>
+<p>Once you&#8217;ve got a plan in place for documenting and analyzing your testing results, you need to decide <em>how</em> you want to approach testing.</p>
+<p>Depending on the needs and constraints of your business, your testing strategy will probably fall into one of two camps:</p>
+<p><strong>The Dramatic Change Approach</strong><br />
+Big page changes often result in big conversion rate changes (good or bad), so this approach is great when you need results fast.</p>
+<p>For example, if your conversion rate is so low that there&#8217;s nowhere to go but up, this approach can be a lifesaver.</p>
+<p>So, try an entirely new page setup or interface. Experiment with new content or an alternate color scheme. The goal is to compare a radically different design with your current setup to see if you can figure out what your audience is looking for.</p>
+<p>The problem with this approach, however, is that you can only learn about your audience in the broadest of ways.</p>
+<p>Sure, you know that X is better than Y, but that&#8217;s about all you know.</p>
+<p>That being said, this approach can be an effective range-finding strategy if you don&#8217;t know where to start or have limited traffic. You can try a variety of very different designs and then refine your best performer.</p>
+<p><strong>The Minor Adjustment Approach</strong><br />
+On the other hand, if your site is producing fairly well and you want to truly optimize things, it&#8217;s better to start small and work your way up.</p>
+<p>Making relatively small changes to your site allows you to be truly methodical about CRO.</p>
+<p>Each change reveals something new about your target audience and how they interact with your site, which makes it easy to come up with new ideas for improving your conversion rate.</p>
+<p>Success won&#8217;t come all at once, but all those little adjustments add up to truly impressive results.</p>
+<p><center><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/02/when-did-that-happen.gif" alt="when-did-that-happen" class="alignnone size-full wp-image-30068" /></a></center></p>
+<p>This approach is particularly effective for websites with more that 6,000 site visits/month. If you have fewer visits than that, it&#8217;s hard to get your site optimized within a reasonable time frame.</p>
+<p>Either approach is valid, but it&#8217;s important to decide which strategy fits your needs before you start testing. Otherwise, you&#8217;ll have a hard time making any real progress.</p>
+<h2>2. Goal Confusion</h2>
+<p>A lot of companies think they are testing one thing when they are actually testing something else.</p>
+<p>For example, if you&#8217;re taking the dramatic change approach, there&#8217;s nothing wrong with simultaneously testing a new call-to-action, hero shot and page layout.</p>
+<p>The problem is, if your new page design performs better, you can&#8217;t assume it was due to the new CTA.</p>
+<p>Sure, it could have been the CTA, but it also might have been the new hero shot, the page layout or a combination of all three!</p>
+<p>This is where things get sticky for a lot of businesses.</p>
+<p>They ran the test because they had an idea for a new CTA, but along the way they decided, <em>hey, while I&#8217;m running this test, I should also try a new hero shot&#8230;and a new layout&#8230;and&#8230;</em></p>
+<p><center><a href="https://blog.kissmetrics.com/wp-content/uploads/2016/02/i-better-take-them-all.gif"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/02/i-better-take-them-all.gif" alt="i-better-take-them-all" class="alignnone size-full wp-image-30069" /></a></center></p>
+<p>By the time the test runs, they are testing a lot more than their CTA. However, since the original goal was to test the new CTA, most of the benefit is ascribed to the new CTA.</p>
+<p>Even when companies recognize that they&#8217;ve muddied the waters by testing extra stuff, they still tend to attribute most of the gain to whichever change they &#8220;feel&#8221; contributed the most.</p>
+<p>However, if you&#8217;re judging test results based on gut instinct, you just wasted a lot of time (and possibly money) on acquiring data you aren&#8217;t even using.</p>
+<p>In other words, if you aren&#8217;t clear about what you&#8217;re testing, you shouldn&#8217;t be testing.</p>
+<h2>3. Ending Early</h2>
+<p><a href="http://www.disruptiveadvertising.com/conversion-rate-optimization/whats-really-killing-your-conversion-rate/" target="_blank">Testing can be a bit of an emotional roller coaster</a>.</p>
+<p>Often, if your variant design is producing better results, it can be easy to get excited! On the other hand, if it starts performing worse than your original design, there&#8217;s a natural inclination to cut your losses.</p>
+<div class="footer-dynamic-cta">
+<div class="cta-wrapper" style="background-color:#f0e8db;border-radius:4px;margin-top:-17px;">
+<div class="left-column" style="margin-bottom:-30px;">
+					<img src="https://kissmetrics-assets.s3.amazonaws.com/images/blog/aim_goal_business_arrow.svg" width="75%" style="border:none;">
+				</div>
+<div class="right-column" style="color:#555;margin-bottom:-30px;">
+<p><b>Did you know?</b> The Kissmetrics <a href="https://www.kissmetrics.com/ab-test-report">A/B Test Report</a> allows you to test any part of your funnel. Integrate with your favorite tool (Optimizely, VWO, <a href="http://support.kissmetrics.com/a-b-testing/integration/">etc</a>) and track the results in Kissmetrics! <a href="http://grow.kissmetrics.com/request-a-demo">Request a Personal Demo to learn more.</a></p>
+</p></div>
+<p>				<br class="clear" />
+			</div>
+</p></div>
+<p>While it can be tempting to call a test early, remember, CRO is all about data, not emotion. No matter how thrilling or chilling your results seem to be, <a href="http://conversionxl.com/12-ab-split-testing-mistakes-i-see-businesses-make-all-the-time/" target="_blank">you need to wait until you have meaningful data</a>.</p>
+<h3>How Confident are You?</h3>
+<p>Ultimately, test duration boils down to statistics—the more traffic you push through your tests, the more accurate your results will be.</p>
+<p>To make sure you get enough data, you need to decide in advance how much data you need to make an informed decision.</p>
+<p>Typically, you&#8217;ll want to set your confidence level at 95%. That being said, for low traffic sites or pages, achieving 95% confidence can take a <em>really</em> long time (<em>eg, </em>6-12 months).</p>
+<p>If you are only sending a few visitors per day to your site, you may need to set your confidence at around 75-80%.</p>
+<p>In this case, the risk of not being able to run tests is often bigger than the risk of picking the wrong page, so you&#8217;ll have to find a way to balance speed and accuracy.</p>
+<p>That being said, the only time I recommend shooting for anything lower than 95% confidence is when waiting to achieve 95% confidence means you are only running a test every few months.</p>
+<p>Otherwise, if you&#8217;re getting decent traffic, <em>don&#8217;t pull the trigger early.</em></p>
+<p>A few extra days isn&#8217;t going to cost you all that much and it will save you from a lot of potential frustration.</p>
+<p>Believe me, it&#8217;s no fun to jump the gun, pick a winner and then watch your conversion rate slowly crumble as statistics asserts itself.</p>
+<h3>How Much Traffic Do You Need?</h3>
+<p>To put it simply, the faster you can get to 95% confidence, the faster you can learn from your results and start the next test.</p>
+<p>How fast you can get to 95% confidence, however, depends on how much traffic you can herd onto your page and how much of that traffic you are willing to risk on your test.</p>
+<p><center><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/02/herding-cats.gif" alt="herding-cats" class="alignnone size-full wp-image-30070" /></a></center></p>
+<p>To decide how much traffic to include in your test, you need to look at your goals and how your page is performing.</p>
+<p>If you are just starting out or you&#8217;re thoroughly unhappy with your current performance, you might as well go all in. Send 50% of your traffic to your variant and 50% to your original.</p>
+<p>A 50/50 approach like this is the best way to quickly get out of the conversion rate doldrums. It allows you to rapidly test a large number of iterations, which means you&#8217;ll quickly get your conversion rate to a more acceptable level.</p>
+<p>Once your page is converting at an acceptable rate (or if it&#8217;s already converting well), the risk-benefit equation starts to change. At this point, if your variant turns out to be a lemon, you could lose a lot of conversions.</p>
+<p>In this situation, I generally recommend sending only 25-40% of your traffic to a new variant. That way, you&#8217;ve lowered your risk without overly limiting your testing ability.</p>
+<p>If you really want to be conservative, you can cut back traffic to your variants to less than 25%. However, doing so makes it difficult to make any real progress with your tests, so I rarely encourage that sort of approach.</p>
+<h3>Testing and Waiting Go Hand-in-Hand</h3>
+<p>At the end of the day, if you want great test results, you can&#8217;t afford to pull the plug early. Impatience ruins CRO.</p>
+<p>So, once you&#8217;ve picked your target confidence and decided how to split your traffic, it&#8217;s time to find your happy place and get used to waiting.</p>
+<h2>4. Ignoring Traffic</h2>
+<p>Finally, one of the biggest mistakes companies make with CRO is to assume that CRO will solve their conversion rate problems.</p>
+<p>Unfortunately, your website is only part of the conversion rate equation. If you&#8217;re sending the wrong traffic to your site, even a perfect page won&#8217;t produce the conversions you&#8217;re looking for.</p>
+<p>For example, after conducting over 2,000 AdWords audits, I discovered that <a href="https://blog.kissmetrics.com/lessons-learned-from-adwords-audits/">61% of PPC budgets are spent on search terms that <em>never</em> convert</a>.</p>
+<p><center><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/02/throwing-money-away.gif" alt="throwing-money-away" class="alignnone size-full wp-image-30071" /></a></center></p>
+<p>That&#8217;s a problem no amount of CRO will fix.</p>
+<p>So, if you really want to make your CRO efforts effective, you have to look at your entire online marketing strategy. <em>Do you have the right traffic? Are you sending it to the right page? Is that page providing an optimal experience?</em></p>
+<p>CRO is just one piece of the marketing puzzle—don&#8217;t expect it to solve all your conversion rate woes.</p>
+<h2>Conclusion</h2>
+<p>Does CRO have the potential to dramatically improve the performance of your website?</p>
+<p>Absolutely, but a lot of companies make simple mistakes that end up shooting their CRO efforts in the foot.</p>
+<p>However, if you can avoid some of the most common CRO pitfalls and put a great strategy in place with clear goals, appropriate timelines and great traffic, you can expect to be writing your own case study in no time!</p>
+<p><i>That&#8217;s my two cents, now I want to hear yours! Have you seen CRO tests fall prey to any of these traps? Are there any other common CRO mistakes you&#8217;d add to this list?</i></p>
+<p><strong>About the Author:</strong> Jacob Baadsgaard is the CEO and fearless leader of <a href="http://bit.ly/1Y9YHM5" target="_blank">Disruptive Advertising</a>, an online marketing agency dedicated to using PPC advertising and website optimization to drive sales. His face is as big as his heart and he loves to help businesses achieve their online potential. Connect with him on <a href="https://www.linkedin.com/in/jakebaadsgaard" target="_blank">LinkedIn</a> or <a href="https://twitter.com/jakebaadsgaard" target="_blank">Twitter</a>.</p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/ab-tests-big-wins/">How to Run A/B Tests That Give Your Business Big Wins</a></li>
+<li><a href="https://blog.kissmetrics.com/finding-areas-that-need-testing/">How to Find Which Areas of Your Site Need A/B Testing</a></li>
+<li><a href="https://blog.kissmetrics.com/reasons-your-cro-campaign-failed/">10 Reasons Your Latest CRO Campaign Failed (And What to Do About It)</a></li>
+<li><a href="https://blog.kissmetrics.com/ab-testing-myths/">It's Time to Bust These 7 A/B Testing Myths</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2Fcro-shooting-yourself-in-foot%2F&source=tweetbutton&text=Conversion+Rate+Optimization%E2%80%94Are+You+Shooting+Yourself+in+the+Foot%3F&url=https%3A%2F%2Fblog.kissmetrics.com%2Fcro-shooting-yourself-in-foot%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2Fcro-shooting-yourself-in-foot%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=Conversion Rate Optimization—Are You Shooting Yourself in the Foot?&amp;body=https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-29970 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-1219586">
+    <div id="comment-1219586" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Michelle Martin</cite>
+        
+        <a href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/#comment-1219586" class="comment-date">Feb 17, 2016 at 12:16 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Great post! The CTA test spreadsheet documentation was especially helpful&#8230; and the reminder to keep tests aligned with the overall strategy, something that can be easy to forget. :) Thanks for the tips!</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/?replytocom=1219586#respond' onclick='return addComment.moveForm( "comment-1219586", "1219586", "respond", "29970" )' aria-label='Reply to Michelle Martin'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-jacob-baadsgaard bypostauthor odd alt depth-2" id="li-comment-1220557">
+    <div id="comment-1220557" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.disruptiveadvertising.com' rel='external nofollow' class='url'>Jacob Baadsgaard</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/#comment-1220557" class="comment-date">Feb 19, 2016 at 12:43 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Glad to hear you found the spreadsheet example helpful! A good testing strategy doesn&#8217;t have to be enormously complex—just well thought out.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/?replytocom=1220557#respond' onclick='return addComment.moveForm( "comment-1220557", "1220557", "respond", "29970" )' aria-label='Reply to Jacob Baadsgaard'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1219737">
+    <div id="comment-1219737" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Gerardo A dada</cite>
+        
+        <a href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/#comment-1219737" class="comment-date">Feb 17, 2016 at 10:08 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Jacob, your points are important. I found two more CRO traps</p>
+<p>1. Too much testing. Sometimes, there are clear opportunities guided by common sense AND experience, of what need to be done on a website. However, the desire to test everything, one thing at a time, creates a long backlog of tests waiting for statistical significance that slows down innovation and results in lost opportunity.</p>
+<p>2. Short term goals. In the absence of full data, digital marketers are quick to assume the data they have is the best data, and they guide their decisions by this data alone. For example, CRO efforts will optimize for short term conversions to a free trial, or for a white paper download, without any intelligence about downstream activity such as propensity to buy and ARPU.</p>
+<p>Cheers</p>
+<p>@gerardodada</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/?replytocom=1219737#respond' onclick='return addComment.moveForm( "comment-1219737", "1219737", "respond", "29970" )' aria-label='Reply to Gerardo A dada'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-jacob-baadsgaard bypostauthor odd alt depth-2" id="li-comment-1220561">
+    <div id="comment-1220561" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://www.disruptiveadvertising.com' rel='external nofollow' class='url'>Jacob Baadsgaard</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/#comment-1220561" class="comment-date">Feb 19, 2016 at 12:48 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>I completey agree, Gerardo.</p>
+<p>1. Your point here is exactly why you sometime have to just take the bull by the horns and make a dramatic change. If things aren&#8217;t working out at the moment, you can&#8217;t afford to wait for a bunch of little tests to finally produce results. Just make sure you test your major change and don&#8217;t make the mistake of assuming that your overall results can be attributed to one of your specific minor changes.</p>
+<p>2. Spot on here again. This is the catch-22 for testing—it has to be paired with great ROI data. Otherwise, you might be testing yourself out of profitability!</p>
+<p>I hit on this point at length in this article, if you&#8217;re curious what my in-depth take is: <a href="https://blog.kissmetrics.com/analytics-ignorance-is-not-bliss/" rel="nofollow">https://blog.kissmetrics.com/analytics-ignorance-is-not-bliss/</a></p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/?replytocom=1220561#respond' onclick='return addComment.moveForm( "comment-1220561", "1220561", "respond", "29970" )' aria-label='Reply to Jacob Baadsgaard'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-even depth-1" id="li-comment-1223609">
+    <div id="comment-1223609" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Brendon</cite>
+        
+        <a href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/#comment-1223609" class="comment-date">Feb 27, 2016 at 2:22 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Fantastic article. But it occurs to me that the title is misleading! This applies to so many parts of the market, sales, on-boarding and customer retention activities &#8212; the focus on CRO is just way to limiting to the value!</p>
+<p>This will help our efforts in so many areas. Thanks.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/?replytocom=1223609#respond' onclick='return addComment.moveForm( "comment-1223609", "1223609", "respond", "29970" )' aria-label='Reply to Brendon'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1249344">
+    <div id="comment-1249344" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Ashu</cite>
+        
+        <a href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/#comment-1249344" class="comment-date">Apr 18, 2016 at 5:42 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Jacob, Awesome post!<br />
+There is one query I would like to raise however.<br />
+When you say &#8220;Impatience ruins CRO&#8221; and we should wait for the results to kick in, how long should be the approximate waiting period? I know that it totally depends on the type of test I am running, the type of audience I&#8217;m targeting and many other factors but is there any benchmark that you&#8217;d suggest?</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/?replytocom=1249344#respond' onclick='return addComment.moveForm( "comment-1249344", "1249344", "respond", "29970" )' aria-label='Reply to Ashu'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">6 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/cro-shooting-yourself-in-foot/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='29970' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="41db487bda" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="243"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'Conversion Rate Optimization—Are You Shooting Yourself in the Foot?', 'Post URL':'https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/content-strategy-a-development-guide/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/trial-users-not-the-answer/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="Conversion Rate Optimization—Are You Shooting Yourself in the Foot?" data-url="https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'Conversion Rate Optimization—Are You Shooting Yourself in the Foot?', 'Post URL':'https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'Conversion Rate Optimization—Are You Shooting Yourself in the Foot?', 'Post URL':'https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'Conversion Rate Optimization—Are You Shooting Yourself in the Foot?', 'Post URL':'https://blog.kissmetrics.com/cro-shooting-yourself-in-foot/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":650,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

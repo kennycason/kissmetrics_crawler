@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+
+  <head>
+    <meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="apple-itunes-app" content="app-id=643048719">
+
+    <title>10 Things I Learned From Taking 100 Usability Tests</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7336974/792868/css/fonts.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/skeleton-m1424806461.css" />
+    <link rel="stylesheet" media="all"  href="https://blog.kissmetrics.com/wp-content/themes/kissblog/stylesheets/style-m1450997771.css" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400" />
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+      <!-- Favicons -->
+    <link rel="shortcut icon" href="https://blog.kissmetrics.com/wp-content/themes/kissblog/images/favicon.ico" />
+
+    <link rel="pingback" href="https://blog.kissmetrics.com/xmlrpc.php" />
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="Kissmetrics RSS" href="http://feeds.feedburner.com/KISSmetrics" />
+
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/418001.js"></script><link rel="alternate" type="application/rss+xml" title="The Kissmetrics Marketing Blog &raquo; 10 Things I Learned From Taking 100 Usability Tests Comments Feed" href="https://blog.kissmetrics.com/100-usability-tests/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.kissmetrics.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.3"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='swiftype-css'  href='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/autocomplete.css?ver=4.4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-paginate-css'  href='https://blog.kissmetrics.com/wp-content/plugins/wp-paginate/wp-paginate.css?ver=1.2.4' type='text/css' media='screen' />
+<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var swiftypeParams = {"engineKey":"gzhaqAzRjscgXFaKQHXB"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/swiftype-search/assets/install_swiftype.js?ver=4.4.3'></script>
+<link rel='https://api.w.org/' href='https://blog.kissmetrics.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kissmetrics.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kissmetrics.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Your Customers Don’t Need Pepperoni Pizzas When They’re Sleeping' href='https://blog.kissmetrics.com/location-based-marketing/' />
+<link rel='next' title='Growing Your Company Through Customer Referrals' href='https://blog.kissmetrics.com/growing-through-referrals/' />
+<link rel="canonical" href="https://blog.kissmetrics.com/100-usability-tests/" />
+<link rel='shortlink' href='https://blog.kissmetrics.com/?p=24095' />
+<link rel="alternate" type="application/json+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2F100-usability-tests%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://blog.kissmetrics.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fblog.kissmetrics.com%2F100-usability-tests%2F&#038;format=xml" />
+
+<!-- All in One SEO Pack 1.6.12.1 by Michael Torbert of Semper Fi Web Design[269,351] -->
+<meta name="description" content="After taking more than 100 usability tests (I took them all on Usability Hub), I’ve noticed some interesting things about how people are using usability tests today." />
+<!-- /all in one seo pack -->
+<!-- Start Fluid Video Embeds Style Tag -->
+<style type="text/css">
+/* Thanks to Web Designer Wall for writing about this technique: http://webdesignerwall.com/tutorials/css-elastic-videos */
+/* And to A List Apart: http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/ */
+.fve-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background-color: transparent;
+    padding-bottom: 56.25%; /* This is default, but will be overriden */
+    margin: 0.5em 0; /* A bit of margin at the bottom */
+}
+.fve-video-wrapper iframe,
+.fve-video-wrapper object,
+.fve-video-wrapper embed {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fve-video-wrapper a.hyperlink-image {
+    position: relative;
+    display: none;
+}
+.fve-video-wrapper a.hyperlink-image img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.fve-video-wrapper a.hyperlink-image .fve-play-button {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    right: 35%;
+    bottom: 35%;
+    z-index: 3;
+    background-color: rgba(40, 40, 40, 0.75);
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+.fve-video-wrapper a.hyperlink-image:hover .fve-play-button {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+/* End of standard styles */
+</style>
+<!-- End Fluid Video Embeds Style Tag -->
+<link rel="author" href="https://plus.google.com/112151938601894985204/"/>
+
+
+<!-- Open Graph Protocol Meta -->
+<meta property='og:site_name' value='The Kissmetrics Marketing Blog'/>
+<meta property='og:title' content='10 Things I Learned From Taking 100 Usability Tests ' />
+<meta property='og:url' content='https://blog.kissmetrics.com/100-usability-tests/' />
+<meta property='og:image' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:url' content='https://blog.kissmetrics.com/wp-content/uploads/2015/10/open-graph-logo.jpg' />
+<meta property='og:image:width' content='1200' />
+<meta property='og:image:height' content='630' />
+<meta property='og:image:type' content='image/jpeg' />
+<meta property='og:description' content='After taking more than 100 usability tests (I took them all on Usability Hub), I’ve noticed some interesting things about how people are using usability tests today.' />
+<!-- END Open Graph Protocol Meta -->
+
+<style type="text/css" media="screen"></style>
+    
+    
+    <!-- Twitter Deep Linking -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="10 Things I Learned From Taking 100 Usability Tests " />
+    <meta name="twitter:description" content="After taking more than 100 usability tests (I took them all on Usability Hub), I’ve noticed some interesting things about how people are using usability tests today." />
+    <meta name="twitter:site" content="@kissmetrics" />
+    <!--<meta name="twitter:app:name:iphone" content="KISSmetrics Reader" />-->
+    <!--<meta name="twitter:app:id:iphone" content="643048719" />-->
+
+    
+    <script type="text/javascript">
+    // Tag Manager pre-initialization
+      var _kmq = _kmq || [],
+          _kiq = _kiq || [], // Qualaroo
+          piAId = '27622', // Pardot
+          piCId = '3440'; // Pardot
+      _kmq.push(['record', 'Visited Blog']);
+    </script>
+
+    <!-- KISSmetrics code -->
+    <script type="text/javascript">
+            var _kmk = _kmk || 'e4756f9bee2a2cfc9c8a4aed3197e68a590c2dc3';
+            function _kms(u){
+      setTimeout(function(){
+        var d = document, f = d.getElementsByTagName('script')[0],
+        s = d.createElement('script');
+        s.type = 'text/javascript'; s.async = true; s.src = u;
+        f.parentNode.insertBefore(s, f);
+      }, 1);
+      }
+      _kms('//i.kissmetrics.com/i.js');
+      _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+    </script>
+
+    <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+    <script>
+    (function(d) {
+       var e = d.createElement('script');
+       e.src = d.location.protocol + '//bounceexchange.com/tag/811/i.js';
+       e.async = true;
+       d.getElementsByTagName("head")[0].appendChild(e);
+    }(document));
+    </script>
+
+  </head>
+
+  <body class="single single-post postid-24095 single-format-standard">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJJKWV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PJJKWV');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FACEBOOK JS SDK -->
+    <div id="fb-root"></div>
+
+            <header id="blog-header">
+      <div class="bh-container">
+        <a class="bh-logo" href="https://www.kissmetrics.com">Kissmetrics</a>
+        <ul class="bh-nav">
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/products/" class="bh-nav-link">Features</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/saas" class="bh-nav-link">Solutions</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/pricing/" class="bh-nav-link">Pricing</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/customers/" class="bh-nav-link">Customers</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="/" class="bh-nav-link">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li class="bh-nav-item bh-phone"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+          <li class="bh-nav-item">
+            <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo" class="bh-nav-signup">Request a Demo</a>
+          </li>
+          <li class="bh-nav-item">
+            <a href="https://www.kissmetrics.com/signin" class="bh-nav-signin">Sign In</a>
+          </li>
+        </ul>
+        <a class="bh-mobl-icon" href="#"></a>
+      </div>
+      <div class="bh-subnav-container">
+        <ul class="bh-subnav">
+          <li class="bh-subnav-item">
+            <a href="/"
+              class="bh-subnav-link bh-blog active">
+              Blog Home
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/topics/academy/"
+              class="bh-subnav-link bh-academy ">
+              Academy
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/infographics/"
+              class="bh-subnav-link bh-infographics ">
+              Infographics
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/marketing-guides/"
+              class="bh-subnav-link bh-guides ">
+              Marketing Guides
+            </a>
+          </li>
+          <li class="bh-subnav-item">
+            <a href="/webinars/"
+              class="bh-subnav-link bh-webinars ">
+              Webinars
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="bh-nav-mobl">
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/products/">Features</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/saas">Solutions</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/pricing/">Pricing</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="https://www.kissmetrics.com/customers/">Customers</a>
+        </li>
+        <li class="bh-nav-item-mobl">
+          <a class="bh-nav-link-mobl" href="/">Blog</a>
+          <ul class="bh-subnav-mobl">
+            <li>
+              <a class="bh-subnav-link-mobl" href="/infographics/">Infographics</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/marketing-guides/">Marketing Guides</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/webinars/">Webinars</a>
+            </li>
+            <li>
+              <a class="bh-subnav-link-mobl" href="/topics/academy/">Kissmetrics Academy</a>
+            </li>
+          </ul>
+        </li>
+        <li class="bh-nav-item-mobl bh-phone-mobl"><a href="tel:+18887675477" class="bh-nav-link">1-888-767-5477</a></li>
+      </ul>
+    </header>
+
+    <section id="main">
+              <div class="header-hero header-hero--blog">
+          <h1>Kissmetrics Blog</h1>
+          <h2>A blog about analytics, marketing and testing</h2>
+        </div>
+            <div class="header-welcome-mat">
+        <div class="header-welcome-mat-container">
+          <h2>Built to optimize marketing. <span>Track, analyze and optimize your digital marketing.</span></h2>
+
+          <form accept-charset="UTF-8" method="get" action="http://grow.kissmetrics.com/blog-trial-cta-demo" class="form-wrapper cf form-signup-google-blog-header">
+            <input autofocus type="text" name="account_url" id="account_url" placeholder="Your Website URL">
+            <input type="hidden" name="signup_campaign" value="Blog">
+            <button type="submit">Try Kissmetrics</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="container ">
+
+
+
+
+  <div class="primary eleven columns clearfix omega">
+
+    <div class="post-content nine columns alpha">
+              
+<script type="text/javascript">
+	_kmq.push(['record',
+		'Viewed Blog Post',
+		{
+			'Post Title': '10 Things I Learned From Taking 100 Usability Tests',
+						'Post Category': 'Testing',
+						'Post URL': 'https://blog.kissmetrics.com/100-usability-tests/'
+		}
+	]);
+</script>
+
+<article id="post-24095" class="single-post post-24095 post type-post status-publish format-standard hentry category-testing" data-swiftype-index="true">
+	<header class="entry-header">
+		<h1 class="entry-title">10 Things I Learned From Taking 100 Usability Tests</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+	
+		<p>Usability testing is a technique to evaluate a product or service by testing it with users. The users work on tasks while observers take notes, listen, and learn.</p>
+<p>After taking more than 100 usability tests (I took them all on <a href="https://usabilityhub.com/">Usability Hub</a>), I&#8217;ve noticed some interesting things about how people are using usability tests today.</p>
+<p>For starters, take a look at what to avoid when creating your own usability tests. Jared Spool&#8217;s 2005 article on <a href="http://www.uie.com/articles/usability_testing_mistakes/">Seven Common Usability Testing Mistakes</a> is a good primer.</p>
+<p>So, what do people do with usability tests now in 2014? Have we learned to avoid the pitfalls?</p>
+<h2>1. People Test Color Choices for Their Website</h2>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/07/1-different-colors-for-website.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/1-different-colors-for-website.png" alt="different colors for website" class="alignnone size-full wp-image-24098" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/07/1-different-colors-for-website-300x166.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/07/1-different-colors-for-website.png 750w" sizes="(max-width: 750px) 100vw, 750px" /></a></p>
+<p align="center"><i>What do you want me to do here exactly?</i></p>
+<p>The goal of a usability test is to find the critical problems that prevent people from completing tasks. Unfortunately, this test doesn&#8217;t clearly state a task that I need to complete. It asks which background color is the nicest.</p>
+<p>This is more of a brand identity question that helps answer things like &#8220;Does the color match what the website is about? Does the color go with the emotion the product is trying to invoke?&#8221; I believe topics like this really should be defined by a creative director who oversees the brand identity, or the designer should work more closely with the client to determine if the colors represent the brand values.</p>
+<h2>2. People Make Tests Too Difficult for Users to Complete</h2>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/07/2-where-do-you-click.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/2-where-do-you-click.png" alt="where do you click?" class="alignnone size-full wp-image-24099" /></a></p>
+<p align="center"><i>It&#8217;s really hard to read anything here.</i></p>
+<p>This is a very straightforward click test to measure where I will click. However, since I can&#8217;t easily read any of the selections, it&#8217;s hard for me to correctly click where I want. I think if the screenshot were more zoomed in, I&#8217;d be able to correctly provide the tester with the information they want. I know what I&#8217;m supposed to do, but there&#8217;s just not any good way for me to see what I&#8217;m clicking.</p>
+<h2>3. People Test Which Logos Are Preferred</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/3-which-logo-do-you-prefer.png" alt="which logo do you prefer?" class="alignnone size-full wp-image-24100" /></p>
+<p align="center"><i>Not sure if this counts as a usability test&#8230;</i></p>
+<p>Is this logo presenting a critical problem internally? What does the business need to learn about the logo? I think the problem I have with the logo choices in usability tests is that I don&#8217;t understand what could be learned that would affect the outcome of the design. Here, I&#8217;m asked what I prefer, which I think is highly subjective.</p>
+<p>Do you remember the <a href="http://www.vanityfair.com/online/daily/2010/10/new-gap-logo-despised-symbol-of-corporate-banality-dead-at-one-week">Gap logo fiasco</a>? Logos have long-term impact on a brand&#8217;s identity. I think random usability testing on a logo presents risks because the results will be meaningless if the business or client does not know whether a logo is a good representation of their values.</p>
+<p>For example, if I&#8217;m being shown an architectural firm here, I could care less which logo I pick because I may just prefer colors over large text. But the impact of my decision goes far into the brand identity of this company even though I may never interact with them. I think that&#8217;s a risk that is too much to put into the hands of testing with a random demographic. If a company cares about its brand identity, it should take great care in choosing a logo among its partners, customers, and other stakeholders, rather than letting the random demographic in Usability Hub determine it.</p>
+<h2>4. People Crowdsource Logo Design from Scratch</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/4-click-on-logo.png" alt="click on a logo" class="alignnone size-full wp-image-24101" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/07/4-click-on-logo-300x178.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/07/4-click-on-logo.png 726w" sizes="(max-width: 726px) 100vw, 726px" /></p>
+<p align="center"><i>This shouldn&#8217;t be a usability test. It can really endanger your business by soliciting logo design from random people not in your target demographic.</i></p>
+<p>This one was surprising. I didn&#8217;t expect to see a usability click test to select which design I liked better as a logo and whether the letters should be lower case or upper case.</p>
+<p>As I mentioned in the previous example, it&#8217;s more appropriate to take these considerations to prospective customers or clients of the company, not random people. Come up with a few logo ideas and show them to a small representative group of potential customers to see how they react. What you care about is how your potential or existing customers or clients react to your logo.</p>
+<h2>5. People Should Test what&#8217;s Best for their Business</h2>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/07/5-register-prompts.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/5-register-prompts.png" alt="register prompts" class="alignnone size-full wp-image-24102" /></a></p>
+<p>I&#8217;ve worked in customer support for over 4 years and have seen variations of this screen many times. In this case, I don&#8217;t think a usability test is the right way to measure customer feedback about a transaction or store experience. That&#8217;s because the critical business metrics shouldn&#8217;t be determined by a usability test. What they really should be asking is why they want to show this screen at all.</p>
+<p>For example, let&#8217;s say the Yes/No screen wins the click test because it&#8217;s simpler and quicker for the user to select. Then, whenever the business needs to figure out what to improve, all they can see is how many customers responded Yes or No to the survey with no other qualitative information. The Yes/No screen doesn’t help the business improve because it doesn&#8217;t provide information on what it is that needs improvement.</p>
+<h2>6. People Test Options that are nearly Identical</h2>
+<p>In the test below, I didn’t notice the difference until I looked at it twice.</p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/07/6-theatre-date-range.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/6-theatre-date-range.png" alt="theater date range" class="alignnone size-full wp-image-24103" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/07/6-theatre-date-range-300x159.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/07/6-theatre-date-range.png 750w" sizes="(max-width: 750px) 100vw, 750px" /></a></p>
+<p>Can you see the difference?</p>
+<p>The left Filters column has a gray fill color. In the right variation, the gray fill color expands along the top of the right column. It&#8217;s very subtle. I don&#8217;t find the difference &#8220;obvious&#8221; at all, which is what the test was telling me to pick. I was expecting a whole different layout to make those interactions more obvious.</p>
+<p>Tests like these often leave me frustrated when neither choice is obvious for the user. There should a more dramatic difference in design between choices.</p>
+<h2>7. People Use Usability Tests When They Should Use A/B Tests</h2>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/07/7-personal-loans.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/7-personal-loans.png" alt="personal loans" class="alignnone size-full wp-image-24104" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/07/7-personal-loans-300x170.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/07/7-personal-loans.png 667w" sizes="(max-width: 667px) 100vw, 667px" /></a></p>
+<p>This click test changes only one element – the copy on the green call-to-action buttons. I argue that this should be A/B tested in order to come up with even better results than a usability test.</p>
+<p>Why?</p>
+<p>With an A/B test, you can test each variant&#8217;s performance instead of waiting for a usability test to be completed. You also can test with real potential customers instead of random usability test takers who may never see the product.</p>
+<h2>8. People Don&#8217;t Set Up Usability Tests Correctly</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/8-form-improvements.png" alt="form improvements" class="alignnone size-full wp-image-24105" /></p>
+<p align="center"><i>If this is an improvement, I don&#8217;t see how&#8230;</i></p>
+<p>First, framing the situation is really important so a user knows what the situation is. You can accomplish this with an &#8220;Imagine that you are [doing something] [in a location/state of mind/occasion]&#8221; statement.</p>
+<p>Example: Imagine that you are shopping for a dress for a wedding.</p>
+<p>Second, stating a task is important so a user knows what they should be doing. For a five-second test, generally the user is asked to recall what stood out or if they could tell what the company does.</p>
+<p>Example: Could you tell what services or products this company offers?</p>
+<p>For a click test, the task is related to what a designer thinks a person should click on.</p>
+<p>Example: Click where you would find the sale section.</p>
+<p>In the above test, there is no framing of a situation nor is there a task stated. It&#8217;s really hard for a user to figure out what form is easier to see if we don&#8217;t know what we&#8217;re supposed to be doing in the first place.</p>
+<p>Aside from the above test showing two of the same images (so there&#8217;s really nothing to choose from), the setup of this test also failed to define what the test was even supposed to accomplish. This doesn&#8217;t help a business.</p>
+<h2>9. People Don&#8217;t Select the Right Test to Use</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/9-playing-golf.png" alt="golf club question" class="alignnone size-full wp-image-24106" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/07/9-playing-golf-300x161.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/07/9-playing-golf.png 520w" sizes="(max-width: 520px) 100vw, 520px" /></p>
+<p align="center"><i>This question in a five-second test really should have been a separate click test.</i></p>
+<p>I took a five-second test where I stared at a website, but the subsequent questions asked me where I would click.</p>
+<p>A five-second test helps you fine tune your designs by analyzing the most prominent elements of your design. It also tests first impressions and how easy your design is to understand.</p>
+<p>A click test is used for placement/layout and helps determine if people can do what you are asking them to do.</p>
+<p>The above test should have been separated into a five-second test and a click test. Because the question about where to click was lumped together with the five-second test, I wasn&#8217;t able to accurately describe where to click because I couldn&#8217;t see the image anymore nor did I remember where the element was to describe it thoroughly.</p>
+<h2>10. People Love Testing Headline Copy</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/10-read-both-titles.png" alt="read both titles" class="alignnone size-full wp-image-24107" /></p>
+<p><a href="https://blog.kissmetrics.com/wp-content/uploads/2014/07/11-reliability-test.png"><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/11-reliability-test.png" alt="reliability test" class="alignnone size-full wp-image-24108" srcset="https://blog.kissmetrics.com/wp-content/uploads/2014/07/11-reliability-test-300x119.png 300w, https://blog.kissmetrics.com/wp-content/uploads/2014/07/11-reliability-test.png 648w" sizes="(max-width: 648px) 100vw, 648px" /></a></p>
+<p>I saw a lot of headline copy tests, more than I would have expected. Also, they were all five-second tests, so I&#8217;m wondering if they were made by the same person. In five seconds, it was hard to read all the headlines before the timer expired if there were more than two headlines.</p>
+<p>If these were to be made into Google AdWords links, I would say just list them all and see which performs the best at generating clicks and maximizing for the metric of how many additional content pieces were read as a result of the link coming in.</p>
+<p>If these were being tested for a content site, I would assume an editor would have the role of deciding which headline to run. If you want to learn how to write great headlines, head on over to <a href="http://www.copyblogger.com/copywriting-101/">Copyblogger</a>.</p>
+<h2>11. (Bonus) People Test to Choose Domain Names</h2>
+<p><img src="https://blog.kissmetrics.com/wp-content/uploads/2014/07/12-testing-domain-name-choices.png" alt="testing domain name choices" class="alignnone size-full wp-image-24109" /></p>
+<p>I&#8217;m not sure how to explain this one, especially for something as important as a Belgian embassy.</p>
+<h2>Takeaways</h2>
+<p>About one of every three usability tests I took had some issues or questionable reasoning behind the test. I think we’ve learned quite a bit since Jared Spool’s 2005 article, but successful usability testing still seems to be far from perfect.</p>
+<p>Make sure you know why you&#8217;re testing and that you’re testing with the right audience. More sensitive items like logos should be put in front of a targeted demographic rather than a random demographic like Usability Hub. Setting up the right test is just as important as what you will do with the test results. Also, make sure the tasks you design are in line with what you want to learn.</p>
+<p>Usability tests are great for identifying problems. Use them to find existing problems with your product or service. Just make sure to test again after you implement solutions to see if you&#8217;ve solved the problem.</p>
+<p>Happy testing!</p>
+<p>Have you done any usability tests yourself? What did you test? I&#8217;d love to hear about them and what you learned.</p>
+<p><strong>About the Author:</strong> Chuck Liu is on the <a href="http://www.kissmetrics.com/">KISSmetrics</a> Product team and loves to cook in his spare time. Find him on Twitter <a href="https://twitter.com/chuckjliu">@chuckjliu</a> and <a href="http://www.quora.com/Charles-Liu">Quora</a>.</p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Related Posts</h2>
+<ul>
+<li><a href="https://blog.kissmetrics.com/7-usability-mistakes/">7 Usability Mistakes That Will Kill Your Online Sales</a></li>
+<li><a href="https://blog.kissmetrics.com/when-not-to-test/">When NOT to A/B Test Your Mobile App</a></li>
+<li><a href="https://blog.kissmetrics.com/19-obvious-ab-tests/">19 Obvious A/B Tests You Should Run on Your Website</a></li>
+</ul></div>
+</div>			
+	</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+
+
+	
+		<div class="footer-dynamic-cta">
+			<div class="cta-wrapper">
+				<div class="left-column">
+					<img src="https://blog.kissmetrics.com/wp-content/uploads/2016/03/ab-testing-pdf-cover-232x300.png" />
+				</div>
+				<div class="right-column">
+			        <h3>Start Getting Results With Your A/B Testing</h3>
+			        <p>In this free guide, we'll outline a step-by-step process for getting results from your A/B testing.</p>
+					<a href="http://grow.kissmetrics.com/ab-testing-guide" class="cta" alt="Free Download" title="Free Download" target="_new">Free Download</a>
+				</div>
+				<br class="clear" />
+			</div>
+		</div>
+
+	
+
+		
+	
+	
+
+
+	
+	
+	
+		
+
+	<center>
+	<!--	
+	<p><b>Sign in with Google to get early access to our new free Google Analytics app</b><br />
+	<iframe src="http://www.myanalyticsapp.com/km-modal/" width="300" height="90" frameborder="0" scrolling="no" seamless></iframe></p>
+	
+	
+	<p class="social-share-link-mobile"><a href="https://twitter.com/intent/tweet?original_referrer=https%3A%2F%2Fblog.kissmetrics.com%2F100-usability-tests%2F&source=tweetbutton&text=10+Things+I+Learned+From+Taking+100+Usability+Tests&url=https%3A%2F%2Fblog.kissmetrics.com%2F100-usability-tests%2F&via=KISSmetrics" class="button" style="display:block">Share on Twitter</a></p>
+	<p class="social-share-link-mobile"><a href="http://facebook.com/sharer.php?u=https%3A%2F%2Fblog.kissmetrics.com%2F100-usability-tests%2F" class="button" style="display:block">Share on Facebook</a></p>
+
+	</center>
+
+
+<!--		<div class="kmad row">
+				<p>Email this content!<br />
+				<a href="mailto:?subject=10 Things I Learned From Taking 100 Usability Tests&amp;body=https://blog.kissmetrics.com/100-usability-tests/?utm_source=epostshare" title="Send this
+				article to a friend!" class="button">Email to a friend or colleague</a></p>
+				<p>A free Google Analytics app!<br />
+				<a href="http://myanalyticsapp.com/?utm_source=kmblog-post" title="Get the free app" class="button" target="_blank">Get the free iPhone app</a></p>
+				<p>Measure people, not pageviews!<br />
+				<a href="https://www.kissmetrics.com/?utm_source=blog-post-cta" title="Try KISSmetrics for free" class="button" target="_blank">Try KISSmetrics</a></p>
+		</div>
+-->
+
+			</footer><!-- .entry-meta -->
+</article><!-- #post-24095 -->
+        
+        <div id="comments">
+		
+					
+		<ol class="commentlist">
+			  <li class="comment even thread-even depth-1" id="li-comment-338495">
+    <div id="comment-338495" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author"><a href='http://twitter.com/spencerpadway' rel='external nofollow' class='url'>Spencer padway</a></cite>
+        
+        <a href="https://blog.kissmetrics.com/100-usability-tests/#comment-338495" class="comment-date">Jul 08, 2014 at 9:45 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>This is great.  I have used sites like usertesting.com but never usability hub.  Definitely going to look into this and keep your what not to dos in mind.<br />
+Thanks</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100-usability-tests/?replytocom=338495#respond' onclick='return addComment.moveForm( "comment-338495", "338495", "respond", "24095" )' aria-label='Reply to Spencer padway'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment odd alt depth-2" id="li-comment-340895">
+    <div id="comment-340895" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Chuck Liu</cite>
+        
+        <a href="https://blog.kissmetrics.com/100-usability-tests/#comment-340895" class="comment-date">Jul 09, 2014 at 9:49 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks Spencer. Usabilla is another qualitative feedback/research tool if you&#8217;re interested in digging in further. Whatever tool you may be using though, just be sure to watch out for the pitfalls.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100-usability-tests/?replytocom=340895#respond' onclick='return addComment.moveForm( "comment-340895", "340895", "respond", "24095" )' aria-label='Reply to Chuck Liu'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-341463">
+    <div id="comment-341463" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/100-usability-tests/#comment-341463" class="comment-date">Jul 09, 2014 at 12:44 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Spencer, glad we could help. Thanks for providing feedback :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100-usability-tests/?replytocom=341463#respond' onclick='return addComment.moveForm( "comment-341463", "341463", "respond", "24095" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-414311">
+    <div id="comment-414311" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Dan</cite>
+        
+        <a href="https://blog.kissmetrics.com/100-usability-tests/#comment-414311" class="comment-date">Aug 02, 2014 at 5:20 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I just tested out UsabilityHub after reading this article. The website is a great idea and could provide some quick feedback, but should only be used when needing a quick answer. </p>
+<p>I found that it was being used mostly by amateur designers, likely thinking that they&#8217;ll be able to make their designs better. While not necessarily wrong, I did get some tests that just did not work. Such as a 5 second test on a complete webpage with a search form. </p>
+<p>The other issue is that this should work in conjunction with someone&#8217;s usability testing with live users a part of the target audience. While imagining yourself being an automotive person searching for a specific part number is fine from a functionality standpoint, some test situations I saw should really be saved for the target audience.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100-usability-tests/?replytocom=414311#respond' onclick='return addComment.moveForm( "comment-414311", "414311", "respond", "24095" )' aria-label='Reply to Dan'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+<ul class="children">
+  <li class="comment byuser comment-author-npatel even depth-2" id="li-comment-418231">
+    <div id="comment-418231" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Neil Patel</cite>
+        
+        <a href="https://blog.kissmetrics.com/100-usability-tests/#comment-418231" class="comment-date">Aug 03, 2014 at 6:33 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>Dan, glad we could help. Thanks for the feedback :)</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100-usability-tests/?replytocom=418231#respond' onclick='return addComment.moveForm( "comment-418231", "418231", "respond", "24095" )' aria-label='Reply to Neil Patel'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1051577">
+    <div id="comment-1051577" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Anonymous</cite>
+        
+        <a href="https://blog.kissmetrics.com/100-usability-tests/#comment-1051577" class="comment-date">Feb 23, 2015 at 1:03 pm</a>      </div><!-- /.comment-meta -->
+
+      <p>#8 has different images &#8211; the one on the left has labels that are left aligned, and the right image has the labels right aligned.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100-usability-tests/?replytocom=1051577#respond' onclick='return addComment.moveForm( "comment-1051577", "1051577", "respond", "24095" )' aria-label='Reply to Anonymous'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1054977">
+    <div id="comment-1054977" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Rob</cite>
+        
+        <a href="https://blog.kissmetrics.com/100-usability-tests/#comment-1054977" class="comment-date">Feb 27, 2015 at 9:51 am</a>      </div><!-- /.comment-meta -->
+
+      <p>Thanks for confirming a lot of things I thought were odd.</p>
+<p>I&#8217;ve used usability hub quite a bit and there are many people on there that just need a basic primer in what usability testing is.  HINT HINT usability hub. Another thing that is always in the back of my mind is that the test base IS all designers / professionals in some context or another. To me this some what alters the accuracy of your results. Also some of the tests I feel are people just clicking through to get credits</p>
+<p>• On the plus side you can test worldwide. Great for picking out major stumbling blocks<br />
+• You can do rapid iterations<br />
+• You can bring your own users to test good combined with usabilla</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100-usability-tests/?replytocom=1054977#respond' onclick='return addComment.moveForm( "comment-1054977", "1054977", "respond", "24095" )' aria-label='Reply to Rob'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment odd alt thread-even depth-1" id="li-comment-1059454">
+    <div id="comment-1059454" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">Shari Thurow</cite>
+        
+        <a href="https://blog.kissmetrics.com/100-usability-tests/#comment-1059454" class="comment-date">Mar 05, 2015 at 7:21 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I wrote an article about what you have so nicely written about as well. Usability tests are usability tests. Just because a test is conducted with users does not automatically make it a usability test.</p>
+<p>In other words, usability testing and user testing are NOT the same thing. </p>
+<p>We should all be aware of the distinction. I see too many people/firms tout themselves as usability pros when, in fact, they have never properly conducted a usability test in their professional careers.</p>
+<p>My 2 cents.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100-usability-tests/?replytocom=1059454#respond' onclick='return addComment.moveForm( "comment-1059454", "1059454", "respond", "24095" )' aria-label='Reply to Shari Thurow'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+  <li class="comment even thread-odd thread-alt depth-1" id="li-comment-1194948">
+    <div id="comment-1194948" class="comment-body">
+      <div class="comment-meta">
+        
+        <cite class="comment-author">karishma</cite>
+        
+        <a href="https://blog.kissmetrics.com/100-usability-tests/#comment-1194948" class="comment-date">Dec 22, 2015 at 12:19 am</a>      </div><!-- /.comment-meta -->
+
+      <p>I did few tests, using User Testing, and thought that their qualitative insights seem to accomplish the objectives. </p>
+<p>User Testing is the best way to do onboading for mobile apps. As always the best way to onboard any mobile app is to see if the interface and buttons are getting understood. </p>
+<p>A UAT, or User Test has to have the right set of questions to throw in the relevant answers that give harsh feedback on the customer pain points. Thanks.</p>
+
+      <div class="reply">
+         <a rel='nofollow' class='comment-reply-link' href='https://blog.kissmetrics.com/100-usability-tests/?replytocom=1194948#respond' onclick='return addComment.moveForm( "comment-1194948", "1194948", "respond", "24095" )' aria-label='Reply to karishma'>Reply</a>      </div><!-- /.reply -->
+    </div><!-- /.comment-body -->
+</li><!-- #comment-## -->
+		</ol>
+		
+						<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">11 comments <small><a rel="nofollow" id="cancel-comment-reply-link" href="/100-usability-tests/#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="https://blog.kissmetrics.com/wp-comments-post.php?wpe-comment-post=kissmetrics" method="post" id="commentform" class="comment-form">
+					<p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p><i>Please use your real name and a corresponding social media profile when commenting. Otherwise, your comment may be deleted.</i></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='24095' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="e414be0a56" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="73"/></p>				</form>
+					</div><!-- #respond -->
+				
+		
+	<script type="text/javascript">
+		$(function(){
+		  $('#commentform').submit(function(){
+				var commentAuthor = $('#commentform input#author').val();
+				var commentEmail = $('#commentform input#email').val();
+				var commentWebsite = $('#commentform input#url').val();
+
+				_kmq.push(['record', 'Commented on Post', {'Post Title':'10 Things I Learned From Taking 100 Usability Tests', 'Post URL':'https://blog.kissmetrics.com/100-usability-tests/', 'Comment Author':commentAuthor, 'Comment Email':commentEmail, 'Comment Website':commentWebsite}]);
+				_kmq.push(['identify', commentEmail]);
+			});
+		}); 
+	</script>
+	
+	</div><!-- #comments -->      
+      <div class="post-navigation clearfix">
+        <a href="https://blog.kissmetrics.com/location-based-marketing/">&larr; Previous Article</a><a href="https://blog.kissmetrics.com/growing-through-referrals/">Next Article &rarr;</a>      </div><!-- .post-navigation -->
+    </div><!-- .post-content -->
+
+
+
+    <div class="post-share two columns omega">
+      <div class="sharer">
+        <div class="fb-like" data-href="http://blog.kissmetrics.com/100-usability-tests/" data-send="false" data-layout="box_count" data-width="50" data-show-faces="false"></div>
+      </div>
+      <div class="sharer">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blog.kissmetrics.com/100-usability-tests/" data-via="Kissmetrics" data-count="vertical">Tweet</a>
+      </div>
+      <div class="sharer">
+        <div class="g-plusone" data-size="tall" data-callback="plusone_vote" data-href="http://blog.kissmetrics.com/100-usability-tests/"></div>
+      </div>
+      <div class="sharer">
+        <script type="IN/Share" data-counter="top"></script>
+      </div>
+      <!--<div class="sharer">
+        <a href="http://bufferapp.com/add" class="buffer-add-button" data-text="10 Things I Learned From Taking 100 Usability Tests" data-url="http://blog.kissmetrics.com/100-usability-tests/" data-count="vertical" data-via="KISSmetrics" >Buffer</a>
+      </div>-->
+    </div><!-- .post-share -->
+
+  </div><!-- .primary -->
+
+  <script>
+    $(function(){
+      var postShareOffset = $('#site-footer').height() + 100;
+      $(".post-share").sticky({topSpacing:112, bottomSpacing: postShareOffset });
+    });
+  </script>
+
+  <div class="sidebar five columns">
+<style>
+.sidebar-list {
+padding-top: 0px !important;
+}
+</style>
+  <div class="module">
+    <div class="sidebar-list">
+      <div class="email-signup" id="sidebar-sticky">
+        <h3 id="free-email-updates" style="padding-top: 50px;">Free Email Updates</h3>
+        <form method="post" id="blog_subscription_signup" action="https://go.pardot.com/l/26622/2014-03-21/6814h" class="form-newsletter-blog-sidebar">
+          <p>Get the latest content first.</p>
+          <input type="text" name="First Name" class="name" placeholder="First Name" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="501">
+          <input type="text" name="email" class="email" placeholder="Your Email" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" tabindex="502">
+          <input name="submit" type="submit" value="Join Us" tabindex="503" class="button" style="margin-bottom: 20px;">
+        </form>
+      </div>
+      <script type="text/javascript">
+        $(function(){
+          $('#blog_subscription_signup').submit(function(){
+            var signupName = $('#blog_subscription_signup input.name').val();
+            var signupEmail = $('#blog_subscription_signup input.email').val();
+            _kmq.push(['record', 'Signed up for Newsletter', {'Name':signupName, 'Email':signupEmail}]);
+            _kmq.push(['identify', signupEmail]);
+          });
+        });
+      </script>
+      <hr />
+      <div id="text-17" class="widget widget_text">			<div class="textwidget">     
+<div class="Webinar_sidebar_ad_blog">      
+      <a href="http://grow.kissmetrics.com/personal-kissmetrics-demo?utm_medium=blog_nav&utm_source=km_blog&utm_content=demo-request" target="_blank" class="link-webinar-blog-sidebar"><img src="https://blog.kissmetrics.com/wp-content/uploads/2016/05/Webinar-Ad-Blog-153.jpg" style="width:100%; max-width:210px; padding-bottom: 10px;" /></a>
+</div></div>
+		</div>    </div> <!-- end sidebar-list -->
+  </div> <!-- end module -->
+    <!-- Button Widget Area goes here -->
+      <script type="text/javascript">
+    $(function(){
+      var sidebarCtaOffset = $('#site-footer').height() + 120;
+      $("#sidebar-sticky").sticky({topSpacing:0, bottomSpacing: sidebarCtaOffset});
+      $("#sidebar-sticky").width(210);
+    });
+  </script>
+</div><!-- .sidebar -->
+
+
+      </div><!-- .container -->
+    </section><!-- #main -->
+
+    <footer id="site-footer">
+      <div class="container">
+        <div class="five columns">
+          <h3>Follow Us</h3>
+          <div class="sidebar-social-links">
+            <ul>
+              <li class="sidebar-social-links-twitter"><a href="https://twitter.com/kissmetrics" title="Follow Kissmetrics on Twitter" target="_blank"></a></li>
+              <li class="sidebar-social-links-facebook"><a href="https://www.facebook.com/KISSmetrics" title="Follow Kissmetrics on Facebook" target="_blank"></a></li>
+              <li class="sidebar-social-links-youtube"><a href="http://www.youtube.com/user/kissmetrics" title="Follow Kissmetrics on Youtube" target="_blank"></a></li>
+              <li class="sidebar-social-links-linkedin"><a href="http://www.linkedin.com/company/kissmetrics" title="Follow Kissmetrics on LinkedIn" target="_blank"></a></li>
+              <li class="sidebar-social-links-pinterest"><a href="http://pinterest.com/kissmetrics/" title="Follow Kissmetrics on Pinterest" target="_blank"></a></li>
+            </ul>
+          </div>
+        </div><!-- .five.columns -->
+
+        <div class="five columns offset-by-quarter">
+          <h3>Article Categories</h3>
+          <ul class="article-categories">
+            	<li class="cat-item cat-item-29"><a href="https://blog.kissmetrics.com/topics/academy/" title="Learn how to use Kissmetrics">Academy</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://blog.kissmetrics.com/topics/advertising/" >Advertising</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="https://blog.kissmetrics.com/topics/analytics/" >Analytics</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="https://blog.kissmetrics.com/topics/blogging/" >Blogging</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="https://blog.kissmetrics.com/topics/branding/" >Branding</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="https://blog.kissmetrics.com/topics/conversion/" >Conversion</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="https://blog.kissmetrics.com/topics/copywriting/" >Copywriting</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://blog.kissmetrics.com/topics/design/" >Design</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="https://blog.kissmetrics.com/topics/e-commerce/" >E-Commerce</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.kissmetrics.com/topics/facebook/" >Facebook</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="https://blog.kissmetrics.com/topics/infographics/" >Infographics</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="https://blog.kissmetrics.com/topics/launch-strategies/" >Launch Strategies</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="https://blog.kissmetrics.com/topics/marketing/" >Marketing</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="https://blog.kissmetrics.com/topics/release-notes/" >Release Notes</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="https://blog.kissmetrics.com/topics/seo/" >SEO</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="https://blog.kissmetrics.com/topics/social-media/" >Social Media</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="https://blog.kissmetrics.com/topics/testing/" >Testing</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://blog.kissmetrics.com/topics/twitter/" >Twitter</a>
+</li>
+          </ul>
+          <!--
+          <h3>Email updates straight to your inbox</h3>
+          <p>Get fresh articles, infographics, marketing guides, and KISSmetrics happenings delivered to your inbox each week.</p>
+          <p><a href="http://eepurl.com/EFqeX" class="button">Subscribe</a></p>
+          -->
+        </div><!-- .five.columns.offset-by-quarter -->
+
+        <div class="five columns offset-by-half">
+          <h3>What is Kissmetrics?</h3>
+          <p>We're more than just a blog! Our online software helps marketers turn analytics into insights that guide decision-making and growth. Kissmetrics is different because it ties every visit on your website to a person – even if they're using multiple devices.</p>
+          <p><a href="https://www.kissmetrics.com/?utm_source=blog-footer-cta" class="button quarter-bottom link-signup-blog-footer">Start your free 14-day trial</a><br /><em style="font-size:0.9em;">No credit card required.</em></p>
+        </div><!-- .five.columns.offset-by-half -->
+      </div><!-- .container -->
+
+      <div id="site-footer-nav">
+        <div class="container">
+          <div class="five columns">
+            <p>&copy; 2016 Kissmetrics, San Francisco</p>
+          </div><!-- .five.columns -->
+          <div class="eleven columns">
+            <ul>
+              <li><a href="https://www.kissmetrics.com/?utm_source=blog-footer-link">Kissmetrics</a></li>
+              <li><a href="https://kissmetricsfeedback.wufoo.com/forms/kissmetrics-blog-guest-posting-process/">Guest Post Submission</a></li>
+              <li><a href="http://www.kissmetrics.com/careers/?utm_source=blog-footer-link">Careers</a></li>
+              <li><a href="http://www.kissmetrics.com/terms/?utm_source=blog-footer-link">Terms of Use</a></li>
+              <li><a href="http://www.kissmetrics.com/privacy/?utm_source=blog-footer-link">Privacy Policy</a></li>
+            </ul>
+          </div><!-- .eleven.columns -->
+        </div><!-- .container -->
+      </div><!-- #site-footer-nav -->
+    </footer><!-- #site-footer -->
+
+    <!-- Include compressed site javascript -->
+    <script src="https://blog.kissmetrics.com/wp-content/themes/kissblog/javascripts/compressed_20130108.js"></script>
+    <script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0010/7317.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-content/plugins/akismet/_inc/form.js?ver=3.1.7'></script>
+<script type='text/javascript' src='https://blog.kissmetrics.com/wp-includes/js/wp-embed.min.js?ver=4.4.3'></script>
+
+    <script type="text/javascript">
+      window.onload = function () {
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        window.fbAsyncInit = function() {
+          FB.Event.subscribe('edge.create', function(response) {
+            _kmq.push(['record', 'Shared Post', {'Share Type':'Facebook Like', 'Post Title':'10 Things I Learned From Taking 100 Usability Tests', 'Post URL':'https://blog.kissmetrics.com/100-usability-tests/'}]);
+          });
+
+          //Buffer?
+          //jQuery.getScript('https://d389zggrogs7qo.cloudfront.net/js/button.js');
+        };
+
+        // Google +
+        jQuery.getScript('https://apis.google.com/js/plusone.js');
+
+        // LinkedIn
+        jQuery.getScript('https://platform.linkedin.com/in.js');
+
+        // Twitter
+        jQuery.getScript('https://platform.twitter.com/widgets.js').done(function () {
+          if (twttr) {
+            twttr.events.bind('tweet', function(event) {
+              _kmq.push(['record', 'Shared Post', {'Share Type':'Twitter', 'Post Title':'10 Things I Learned From Taking 100 Usability Tests', 'Post URL':'https://blog.kissmetrics.com/100-usability-tests/'}]);
+            });
+          }
+        });
+
+        // If the page has a pinit button, load js
+        if (jQuery('.pin-it-button').length > 0) {
+          jQuery.getScript('https://assets.pinterest.com/js/pinit.js');
+        }
+
+        // Manipulate Popup Domination
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="text"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom input[type="submit"]').addClass("popup-dom-fixer-class");
+        jQuery('.popup-dom-lightbox-wrapper .lightbox-bottom .form').css("padding-top",25);
+
+        function plusone_vote( obj ) {
+          _kmq.push(['record', 'Shared Post', {'Share Type':'Google Plus', 'Post Title':'10 Things I Learned From Taking 100 Usability Tests', 'Post URL':'https://blog.kissmetrics.com/100-usability-tests/'}]);
+        }
+      };
+    </script>
+
+    <!-- JavaScript for blog header. -->
+    <script type="text/javascript">
+      $(function() {
+        // Enable open/close of the mobile menu.
+        $('.bh-mobl-icon').click(function() {
+          $(this).toggleClass('open');
+          $('.bh-nav-mobl').toggleClass('open');
+        });
+      });
+    </script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"40195a0833","applicationID":"8559243","transactionName":"b1NRMRdTChAEBRFaDlYZcgYRWwsNShUMXQZUUw==","queueTime":0,"applicationTime":371,"atts":"QxRSR19JGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
